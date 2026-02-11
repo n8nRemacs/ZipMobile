@@ -28,6 +28,8 @@ PUBLIC_PREFIXES = [
     "/auth/v1/verify-otp",
     "/auth/v1/refresh",
     "/auth/v1/billing/plans",
+    "/auth/v1/billing/v2/services",
+    "/auth/v1/billing/v2/seats",
     "/auth/v1/team/invites/",  # accept invite (token in URL)
     "/auth/v1/telegram/",  # Telegram Mini App auth (initData-based)
 ]

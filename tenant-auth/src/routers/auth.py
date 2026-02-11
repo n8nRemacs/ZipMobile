@@ -5,7 +5,12 @@ from src.models.auth import (
     RegisterRequest, LoginRequest, VerifyOtpRequest,
     RefreshRequest, TokenPair, OtpSentResponse, LogoutRequest,
 )
-from src.services import otp_service, jwt_service, user_service
+from src.models.telegram_auth import (
+    WebRegisterViaTelegramRequest,
+    WebRegisterViaTelegramResponse,
+)
+from src.services import otp_service, jwt_service, user_service, telegram_auth_service
+from src.config import settings
 
 logger = logging.getLogger("tenant-auth")
 
@@ -162,3 +167,49 @@ async def logout_all(req: LogoutRequest):
     user_id = resp.data[0]["user_id"]
     count = jwt_service.revoke_all_user_tokens(user_id)
     return {"message": f"Revoked {count} sessions"}
+
+
+@router.post("/register-via-telegram", response_model=WebRegisterViaTelegramResponse)
+async def register_via_telegram(req: WebRegisterViaTelegramRequest):
+    """Register or login via Telegram Login Widget / Dev Login."""
+    # If hash is provided, validate Login Widget signature
+    if req.hash and req.auth_date:
+        widget_data: dict = {
+            "id": req.telegram_id,
+            "first_name": req.first_name,
+            "auth_date": req.auth_date,
+            "hash": req.hash,
+        }
+        if req.last_name:
+            widget_data["last_name"] = req.last_name
+        if req.username:
+            widget_data["username"] = req.username
+        if req.photo_url:
+            widget_data["photo_url"] = req.photo_url
+        try:
+            telegram_auth_service.validate_login_widget(
+                widget_data,
+                settings.telegram_bot_token,
+            )
+        except ValueError as e:
+            raise HTTPException(status_code=401, detail=str(e))
+
+    # Register or login
+    try:
+        result = telegram_auth_service.register_or_login_via_web(
+            telegram_id=req.telegram_id,
+            username=req.username,
+            first_name=req.first_name,
+            last_name=req.last_name,
+            photo_url=req.photo_url,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+
+    return WebRegisterViaTelegramResponse(
+        access_token=result["access_token"],
+        refresh_token=result["refresh_token"],
+        token_type=result.get("token_type", "bearer"),
+        expires_in=result["expires_in"],
+        is_new_user=result["is_new_user"],
+    )

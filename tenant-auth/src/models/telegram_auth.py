@@ -77,3 +77,23 @@ class TelegramUpdateAndLoginRequest(BaseModel):
     address: str | None = None
     available_channels: list[str] | None = None
     preferred_channel: str | None = None
+
+
+class WebRegisterViaTelegramRequest(BaseModel):
+    """Регистрация/вход через Telegram Login Widget или Dev Login."""
+    telegram_id: int
+    username: str | None = None
+    first_name: str
+    last_name: str | None = None
+    photo_url: str | None = None
+    auth_date: int | None = None
+    hash: str | None = None
+
+
+class WebRegisterViaTelegramResponse(BaseModel):
+    """Ответ регистрации/входа через Telegram."""
+    access_token: str
+    refresh_token: str
+    token_type: str = "bearer"
+    expires_in: int
+    is_new_user: bool

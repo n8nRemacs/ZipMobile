@@ -1,5 +1,5 @@
 # tenant-auth — Микросервис авторизации
-Обновлено: 2026-02-09 20:11 (GMT+4)
+Обновлено: 2026-02-12 02:00 (GMT+4)
 
 ## Назначение
 Авторизация тенантов, управление пользователями, биллинг, API-ключи, команда.
@@ -48,15 +48,17 @@ tenant-auth/
     │   ├── user.py              ← UserProfile, UserUpdate, ChangePhoneRequest, ChangeEmailRequest
     │   ├── api_key.py           ← ApiKeyCreate, ApiKeyResponse, ApiKeyCreatedResponse
     │   ├── billing.py           ← PlanInfo, CurrentPlanResponse, UsageStats, UpgradeRequest
+    │   ├── billing_v2.py       ← PlatformServiceResponse, ServicePlanResponse, TenantBillingSummary, UsageResponse, CheckLimit*
     │   ├── invite.py            ← InviteCreate, InviteResponse, InviteAcceptRequest, TeamMemberResponse
     │   ├── notification.py      ← NotificationPref, NotificationPrefsUpdate, NotificationHistoryItem
     │   └── common.py            ← HealthResponse, ReadyResponse, ErrorResponse
     ├── routers/                 ← FastAPI роутеры (тонкие — вызывают services)
-    │   ├── auth.py              ← /register, /login, /verify-otp, /refresh, /logout, /logout-all
+    │   ├── auth.py              ← /register, /login, /verify-otp, /refresh, /logout, /logout-all, /register-via-telegram
     │   ├── telegram_auth.py     ← /telegram/register, /telegram/auto-login
     │   ├── profile.py           ← /profile (GET/PATCH), change-phone/email, verify-phone/email
     │   ├── api_keys.py          ← /api-keys (CRUD + rotate)
     │   ├── billing.py           ← /billing/plans, /current, /usage, /upgrade
+    │   ├── billing_v2.py       ← /billing/v2/services, /seats, /my, /usage, /check-limit
     │   ├── invites.py           ← /team, /team/invite, /team/invites, role, remove
     │   ├── sessions.py          ← /sessions (GET, DELETE all, DELETE one)
     │   ├── notifications.py     ← /notifications/preferences, /history
@@ -71,6 +73,7 @@ tenant-auth/
         ├── telegram_auth_service.py ← validate_init_data(), register_via_telegram(), auto_login_via_telegram()
         ├── api_key_service.py   ← generate/create/list/update/delete/rotate_api_key()
         ├── billing_service.py   ← list_plans(), get_current_plan(), get_usage(), upgrade_plan()
+        ├── billing_v2_service.py ← get_platform_services(), get_tenant_subscriptions(), create_free_subscriptions(), check_limit(), increment_usage()
         ├── invite_service.py    ← create/list/cancel/accept_invite()
         └── notification_service.py ← get/update_preferences(), get_history()
 ```
@@ -79,6 +82,8 @@ tenant-auth/
 001_init.sql: supervisors, tenants, billing_plans, api_keys, tenant_users, verification_codes, refresh_tokens, tenant_invites, notification_preferences, notification_history, avito_sessions
 002_seed.sql: billing_plans (free/starter/pro), supervisor (dev default a0000000-...)
 003_telegram_auth.sql: +telegram_chat_id/username/phone/first_name/last_name + available_channels, preferred_channel в tenant_users; +company_name/city/address в tenants
+004_billing_v2.sql: platform_services, service_plans, tenant_subscriptions, seat_packages, tenant_seat_subscriptions, usage_counters, payment_history
+005_billing_v2_seed.sql: 3 сервиса (parts_search, avito_messenger, api_access), 9 планов, 5 пакетов мест
 
 ## Переменные окружения
 ```
@@ -114,6 +119,7 @@ CORS_ORIGINS=["http://localhost:3000","http://localhost:3001","https://localhost
 /health, /ready, /docs, /openapi.json, /redoc
 /auth/v1/register, /auth/v1/login, /auth/v1/verify-otp, /auth/v1/refresh
 /auth/v1/billing/plans
+/auth/v1/billing/v2/services, /auth/v1/billing/v2/seats
 /auth/v1/team/invites/{token}/accept
 /auth/v1/telegram/* (Telegram Mini App, защита через initData подпись)
 /auth/v1/tenants/* (internal, защищён X-Internal-Secret)

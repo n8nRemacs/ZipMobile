@@ -2,26 +2,42 @@
 import { ref, onMounted } from 'vue'
 import { NCard, NText, NSpace, NSpin, NTag } from 'naive-ui'
 import { useAuthStore } from '../stores/auth'
-import { getProfile, getBillingCurrent } from '../api/auth'
-import type { ProfileResponse, BillingCurrentResponse } from '../api/auth'
+import { getProfile, getBillingV2My } from '../api/auth'
+import type { ProfileResponse, BillingV2Summary } from '../api/auth'
 
 const authStore = useAuthStore()
 
 const profile = ref<ProfileResponse | null>(null)
-const billing = ref<BillingCurrentResponse | null>(null)
+const billing = ref<BillingV2Summary | null>(null)
 const loading = ref(true)
+
+function formatLimit(limits: Record<string, number>, key: string): string {
+  const val = limits[key]
+  if (val === undefined) return ''
+  if (val === -1) return 'безлимит'
+  return String(val)
+}
+
+function planLabel(sub: BillingV2Summary['subscriptions'][0]): string {
+  const parts: string[] = []
+  for (const [key, val] of Object.entries(sub.limits)) {
+    const label = val === -1 ? 'безлимит' : String(val) + '/день'
+    parts.push(label)
+  }
+  return `${sub.plan_name}${parts.length ? ' (' + parts[0] + ')' : ''}`
+}
 
 onMounted(async () => {
   try {
     const token = authStore.accessToken!
     const [p, b] = await Promise.all([
       getProfile(token),
-      getBillingCurrent(token),
+      getBillingV2My(token),
     ])
     profile.value = p
     billing.value = b
   } catch {
-    // silent fail — data will be null
+    // silent fail
   } finally {
     loading.value = false
   }
@@ -42,40 +58,31 @@ onMounted(async () => {
         <NText depth="3" style="display: block; margin-top: 4px">
           {{ profile.phone }}
         </NText>
-        <NTag v-if="billing?.plan" size="small" type="info" style="margin-top: 8px">
-          {{ billing.plan.name }}
+        <NTag v-if="billing" size="small" type="info" style="margin-top: 8px">
+          {{ billing.total_monthly > 0 ? billing.total_monthly + ' ₽/мес' : 'Free' }}
         </NTag>
       </div>
 
       <NSpace vertical :size="12" style="margin-top: 24px">
-        <NCard size="small" hoverable>
+        <NCard
+          v-for="sub in billing?.subscriptions || []"
+          :key="sub.service_slug"
+          size="small"
+          hoverable
+        >
           <template #header>
-            <NText>Поиск запчастей</NText>
+            <NText>{{ sub.service_name }}</NText>
           </template>
-          <NText depth="3">Скоро</NText>
+          <NText depth="3">{{ planLabel(sub) }}</NText>
         </NCard>
 
-        <NCard size="small" hoverable>
-          <template #header>
-            <NText>Авито Мессенджер</NText>
-          </template>
-          <NText depth="3">Скоро</NText>
-        </NCard>
-
-        <NCard size="small" hoverable>
-          <template #header>
-            <NText>API-ключи</NText>
-          </template>
-          <NText depth="3">
-            {{ billing?.usage?.api_keys_used ?? 0 }} / {{ billing?.usage?.api_keys_limit ?? 1 }}
-          </NText>
-        </NCard>
-
-        <NCard size="small" hoverable>
+        <NCard v-if="billing" size="small" hoverable>
           <template #header>
             <NText>Команда</NText>
           </template>
-          <NText depth="3">Скоро</NText>
+          <NText depth="3">
+            {{ billing.seats_used }} / {{ billing.seats_total }} мест
+          </NText>
         </NCard>
 
         <NCard size="small">

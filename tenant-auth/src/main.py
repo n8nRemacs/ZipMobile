@@ -7,7 +7,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from src.config import settings
 from src.middleware.error_handler import ErrorHandlerMiddleware
 from src.middleware.jwt_auth import JwtAuthMiddleware
-from src.routers import health, auth, profile, api_keys, sessions, invites, billing, notifications, tenant_params, telegram_auth
+from src.routers import health, auth, profile, api_keys, sessions, invites, billing, billing_v2, notifications, tenant_params, telegram_auth
 
 logging.basicConfig(
     level=getattr(logging, settings.log_level.upper(), logging.INFO),
@@ -51,4 +51,5 @@ app.include_router(invites.router)
 app.include_router(billing.router)
 app.include_router(notifications.router)
 app.include_router(tenant_params.router)
+app.include_router(billing_v2.router)
 app.include_router(telegram_auth.router)

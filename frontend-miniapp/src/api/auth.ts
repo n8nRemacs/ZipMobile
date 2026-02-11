@@ -159,6 +159,41 @@ export function getBillingCurrent(accessToken: string): Promise<BillingCurrentRe
   })
 }
 
+// Billing V2
+
+export interface BillingV2Subscription {
+  service_slug: string
+  service_name: string
+  plan_slug: string
+  plan_name: string
+  price_monthly: number
+  limits: Record<string, number>
+  status: string
+}
+
+export interface BillingV2SeatPackage {
+  id: string
+  slug: string
+  name: string
+  max_seats: number
+  price_monthly: number
+  price_per_seat: number | null
+}
+
+export interface BillingV2Summary {
+  subscriptions: BillingV2Subscription[]
+  seat_package: BillingV2SeatPackage | null
+  seats_used: number
+  seats_total: number
+  total_monthly: number
+}
+
+export function getBillingV2My(accessToken: string): Promise<BillingV2Summary> {
+  return request('/auth/v1/billing/v2/my', {
+    headers: { Authorization: `Bearer ${accessToken}` },
+  })
+}
+
 export type {
   AutoLoginResponse, RegisterResponse, RegisterData,
   ExistingUserData, ExistingUserResponse, UpdateAndLoginData,

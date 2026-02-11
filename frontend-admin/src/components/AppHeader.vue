@@ -1,29 +1,47 @@
 <script setup lang="ts">
-import { NButton, NText, NSpace } from 'naive-ui'
+import { NButton, NText, NSpace, useMessage } from 'naive-ui'
 import { useRouter } from 'vue-router'
-import { useAuthStore } from '../stores/auth'
+import { useAuth } from '../composables/useAuth'
 
 const router = useRouter()
-const authStore = useAuthStore()
+const { user, logout } = useAuth()
+const message = useMessage()
 
-function goProfile() {
-  router.push('/profile')
+function showComingSoon() {
+  message.info('Скоро')
 }
 
-function doLogout() {
-  authStore.logout()
-  router.replace('/')
+async function doLogout() {
+  await logout()
+}
+
+function getUserDisplayName(): string {
+  if (user.value?.name) return user.value.name
+  if (user.value?.telegram_first_name) {
+    let name = user.value.telegram_first_name
+    if (user.value.telegram_last_name) name += ` ${user.value.telegram_last_name}`
+    return name
+  }
+  return 'Пользователь'
 }
 </script>
 
 <template>
   <header class="app-header">
     <div class="header-inner">
-      <NText tag="span" class="logo" @click="router.push('/dashboard')" style="cursor: pointer">
-        ZipMobile
-      </NText>
-      <NSpace :size="8">
-        <NButton size="small" quaternary @click="goProfile">Профиль</NButton>
+      <div class="header-left">
+        <NText tag="span" class="logo" @click="router.push('/dashboard')" style="cursor: pointer">
+          ZipMobile
+        </NText>
+        <nav class="nav-links">
+          <NButton size="small" text type="primary" @click="router.push('/dashboard')">Дашборд</NButton>
+          <NButton size="small" text @click="showComingSoon">Биллинг</NButton>
+          <NButton size="small" text @click="showComingSoon">Команда</NButton>
+          <NButton size="small" text @click="showComingSoon">API-ключи</NButton>
+        </nav>
+      </div>
+      <NSpace :size="12" align="center">
+        <NText depth="2" style="font-size: 13px">{{ getUserDisplayName() }}</NText>
         <NButton size="small" quaternary @click="doLogout">Выйти</NButton>
       </NSpace>
     </div>
@@ -33,7 +51,7 @@ function doLogout() {
 <style scoped>
 .app-header {
   background: #fff;
-  border-bottom: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e5e7eb;
   padding: 0 24px;
 }
 .header-inner {
@@ -44,8 +62,22 @@ function doLogout() {
   justify-content: space-between;
   height: 56px;
 }
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 .logo {
   font-size: 20px;
   font-weight: 700;
+}
+.nav-links {
+  display: flex;
+  gap: 4px;
+}
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+  }
 }
 </style>

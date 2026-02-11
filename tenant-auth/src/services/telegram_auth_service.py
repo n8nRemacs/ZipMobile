@@ -8,7 +8,7 @@ from urllib.parse import parse_qs, unquote
 
 from src.config import settings
 from src.storage.supabase import get_supabase
-from src.services import jwt_service, user_service
+from src.services import jwt_service, user_service, billing_v2_service
 
 logger = logging.getLogger("tenant-auth")
 
@@ -198,6 +198,9 @@ def register_via_telegram(
         "address": address,
     }).eq("id", user["tenant_id"]).execute()
 
+    # Create free billing v2 subscriptions
+    billing_v2_service.create_free_subscriptions(user["tenant_id"])
+
     # telegram_phone: if provided separately — use it; otherwise same as phone
     tg_phone_value = telegram_phone if telegram_phone else phone
 
@@ -347,6 +350,78 @@ def auto_login_via_telegram(tg_user: dict) -> dict | None:
         "tenant_id": user["tenant_id"],
         "phone_verified": user.get("phone_verified", False),
         "is_new": False,
+    }
+
+
+def register_or_login_via_web(
+    telegram_id: int,
+    username: str | None = None,
+    first_name: str = "User",
+    last_name: str | None = None,
+    photo_url: str | None = None,
+) -> dict:
+    """
+    Register a new user or login existing one via Telegram Web Login / Dev Login.
+    Returns dict with tokens and is_new_user flag.
+    """
+    sb = get_supabase()
+
+    # Check if user exists by telegram_chat_id
+    resp = (
+        sb.table("tenant_users")
+        .select("*")
+        .eq("telegram_chat_id", telegram_id)
+        .limit(1)
+        .execute()
+    )
+
+    if resp.data:
+        # Existing user — login
+        user = resp.data[0]
+        if not user.get("is_active", True):
+            raise ValueError("Account deactivated")
+
+        token_pair = jwt_service.create_token_pair(
+            user_id=user["id"],
+            tenant_id=user["tenant_id"],
+            role=user["role"],
+        )
+        return {
+            **token_pair,
+            "is_new_user": False,
+        }
+
+    # New user — register
+    display_name = first_name
+    if last_name:
+        display_name += f" {last_name}"
+
+    user = user_service.create_tenant_and_user(
+        phone=f"+0{telegram_id}",  # placeholder phone
+        email=None,
+        name=display_name,
+    )
+
+    # Update user with telegram data
+    sb.table("tenant_users").update({
+        "telegram_chat_id": telegram_id,
+        "telegram_username": username,
+        "telegram_first_name": first_name,
+        "telegram_last_name": last_name,
+        "phone_verified": False,
+    }).eq("id", user["id"]).execute()
+
+    # Create free billing v2 subscriptions
+    billing_v2_service.create_free_subscriptions(user["tenant_id"])
+
+    token_pair = jwt_service.create_token_pair(
+        user_id=user["id"],
+        tenant_id=user["tenant_id"],
+        role=user["role"],
+    )
+    return {
+        **token_pair,
+        "is_new_user": True,
     }
 
 

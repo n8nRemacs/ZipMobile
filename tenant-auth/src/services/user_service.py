@@ -2,6 +2,7 @@ import logging
 from datetime import datetime, timezone
 
 from src.storage.supabase import get_supabase
+from src.services import billing_v2_service
 
 logger = logging.getLogger("tenant-auth")
 
@@ -75,6 +76,9 @@ def create_tenant_and_user(phone: str, email: str, name: str) -> dict:
     user_resp = sb.table("tenant_users").insert(user_data).execute()
     if not user_resp.data:
         raise ValueError("Failed to create user")
+
+    # Create free billing v2 subscriptions for new tenant
+    billing_v2_service.create_free_subscriptions(tenant["id"])
 
     return user_resp.data[0]
 
