@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  tenant-auth:
+    build: ./tenant-auth
+    ports:
+      - "8090:8090"
+    env_file:
+      - ./tenant-auth/.env
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8090/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # parts-api:
+  #   build: ./parts-api
+  #   ports:
+  #     - "8000:8000"
+  #   env_file:
+  #     - ./parts-api/.env
+  #   restart: unless-stopped
+
+  # frontend-admin:
+  #   build: ./frontend-admin
+  #   ports:
+  #     - "3000:3000"
+  #   restart: unless-stopped
