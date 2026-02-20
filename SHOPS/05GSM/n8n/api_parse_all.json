@@ -1,0 +1,360 @@
+{
+  "name": "05GSM - Parse All (with Proxy)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "05gsm/parse/all",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "POST /parse/all",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 300],
+      "webhookId": "05gsm-parse-all",
+      "notes": "POST body:\n{\n  \"category\": \"zapchasti_dlya_telefonov\",\n  \"max_pages\": 50,\n  \"use_proxy\": true,\n  \"save_to_db\": true\n}"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $input.first().json.body || {};\n\n// Available categories\nconst CATEGORIES = {\n  'zapchasti_dlya_telefonov': 'Запчасти для телефонов',\n  'zapchasti_dlya_noutbukov': 'Запчасти для ноутбуков'\n};\n\nconst category = body.category || 'zapchasti_dlya_telefonov';\n\nreturn [{\n  json: {\n    category_slug: category,\n    category_name: CATEGORIES[category] || category,\n    max_pages: body.max_pages || 50,\n    use_proxy: body.use_proxy !== false,\n    save_to_db: body.save_to_db !== false,\n    delay_seconds: body.delay_seconds || 1\n  }\n}];"
+      },
+      "id": "validate",
+      "name": "Validate Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://proxy-manager:8000/get",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {"name": "type", "value": "http"},
+            {"name": "exclude", "value": "05gsm"}
+          ]
+        },
+        "options": {
+          "timeout": 5000,
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "get-proxy",
+      "name": "Get Proxy",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 300],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const config = $('Validate Input').first().json;\nconst proxyResult = $input.first().json;\n\nlet proxyUrl = null;\nlet proxyAddress = null;\n\nif (config.use_proxy && proxyResult?.proxy) {\n  proxyAddress = proxyResult.proxy;\n  proxyUrl = `http://${proxyResult.proxy}`;\n}\n\nreturn [{\n  json: {\n    ...config,\n    proxy_url: proxyUrl,\n    proxy_address: proxyAddress,\n    base_url: 'https://05gsm.ru',\n    current_page: 1,\n    products: [],\n    errors: 0\n  }\n}];"
+      },
+      "id": "setup",
+      "name": "Setup",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "under-limit",
+              "leftValue": "={{ $json.current_page }}",
+              "rightValue": "={{ $json.max_pages }}",
+              "operator": {
+                "type": "number",
+                "operation": "lte"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-continue",
+      "name": "Continue?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [880, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const state = $input.first().json;\nconst url = `${state.base_url}/catalog/${state.category_slug}/?PAGEN_1=${state.current_page}`;\n\nreturn [{\n  json: {\n    ...state,\n    fetch_url: url\n  }\n}];"
+      },
+      "id": "build-url",
+      "name": "Build URL",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1100, 200]
+    },
+    {
+      "parameters": {
+        "amount": "={{ $json.delay_seconds }}",
+        "unit": "seconds"
+      },
+      "id": "wait",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1320, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $json.fetch_url }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000,
+          "proxy": "={{ $json.proxy_url }}"
+        },
+        "headerParameters": {
+          "parameters": [
+            {"name": "User-Agent", "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"},
+            {"name": "Accept", "value": "text/html,application/xhtml+xml"},
+            {"name": "Accept-Language", "value": "ru-RU,ru;q=0.9"}
+          ]
+        }
+      },
+      "id": "fetch-page",
+      "name": "Fetch Page",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1540, 200],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\nconst state = $('Wait').first().json;\nconst response = $input.first().json;\n\nif (!response.data || response.data.includes('ERROR') || response.data.length < 1000) {\n  console.log('[ERROR] Failed to fetch page');\n  return [{\n    json: {\n      ...state,\n      current_page: state.max_pages + 1,\n      errors: state.errors + 1\n    }\n  }];\n}\n\nconst $ = cheerio.load(response.data);\nconst newProducts = [];\n\n// Parse products from 05gsm catalog\n$('.catalog_item, .product-item, .item').each((i, el) => {\n  try {\n    const $item = $(el);\n    const product = {};\n    \n    // Name and link\n    const link = $item.find('a[href*=\"/catalog/\"]').first();\n    if (link.length) {\n      product.name = link.text().trim() || link.attr('title') || '';\n      product.url = link.attr('href') || '';\n      if (product.url && !product.url.startsWith('http')) {\n        product.url = state.base_url + product.url;\n      }\n    }\n    \n    // Article/SKU\n    const skuElem = $item.find('.article, .sku, [class*=\"artic\"]');\n    if (skuElem.length) {\n      product.article = skuElem.text().replace(/[^a-zA-Z0-9-]/g, '').trim();\n    }\n    \n    // Price\n    const priceElem = $item.find('.price, .cost, [class*=\"price\"]');\n    if (priceElem.length) {\n      const priceText = priceElem.text().replace(/[^\\d]/g, '');\n      product.price = priceText ? parseInt(priceText) : 0;\n    }\n    \n    // Availability\n    const stockElem = $item.find('.availability, .stock, [class*=\"stock\"]');\n    product.in_stock = stockElem.length > 0 && !stockElem.text().toLowerCase().includes('нет');\n    \n    product.category = state.category_name;\n    \n    if (product.name && product.article) {\n      newProducts.push(product);\n    }\n  } catch (e) {\n    console.log('Parse error:', e.message);\n  }\n});\n\nconsole.log(`[PAGE ${state.current_page}] Found ${newProducts.length} products`);\n\n// Check for next page\nconst hasNextPage = $('a[href*=\"PAGEN_1=\"]').length > 0 && newProducts.length > 0;\n\nreturn [{\n  json: {\n    ...state,\n    products: [...state.products, ...newProducts],\n    current_page: hasNextPage ? state.current_page + 1 : state.max_pages + 1\n  }\n}];"
+      },
+      "id": "parse-page",
+      "name": "Parse Products",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1760, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "save-db",
+              "leftValue": "={{ $json.save_to_db }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "has-products",
+              "leftValue": "={{ $json.products.length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-save",
+      "name": "Save to DB?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1100, 400]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO outlets (code, city, name, is_active) VALUES ('05gsm-online', 'Москва', '05GSM', true) ON CONFLICT (code) DO NOTHING;",
+        "options": {}
+      },
+      "id": "ensure-outlet",
+      "name": "Ensure Outlet",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1320, 400],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL 05GSM"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "={{ \n  const products = $('Check-save').first().json.products;\n  \n  const values = products.filter(p => p.article).map(p => {\n    const name = (p.name || '').replace(/'/g, \"''\").slice(0, 500);\n    const article = (p.article || '').replace(/'/g, \"''\");\n    const category = (p.category || '').replace(/'/g, \"''\");\n    return `('${name}', '${article}', '${category}', NOW(), NOW())`;\n  }).join(',');\n  \n  if (!values) return 'SELECT 1';\n  \n  `INSERT INTO gsm05_nomenclature (name, article, category, first_seen_at, updated_at) VALUES ${values} ON CONFLICT (article) DO UPDATE SET name = EXCLUDED.name, category = EXCLUDED.category, updated_at = NOW();`;\n}}",
+        "options": {}
+      },
+      "id": "save-nomenclature",
+      "name": "Save Nomenclature",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1540, 400],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL 05GSM"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "={{ \n  const products = $('Check-save').first().json.products;\n  \n  const queries = products.filter(p => p.article).map(p => {\n    const article = (p.article || '').replace(/'/g, \"''\");\n    const price = p.price || 0;\n    const inStock = p.in_stock ? 'true' : 'false';\n    const url = (p.url || '').replace(/'/g, \"''\");\n    \n    return `INSERT INTO gsm05_prices (nomenclature_id, outlet_id, price, in_stock, product_url, updated_at) SELECT n.id, o.id, ${price}, ${inStock}, '${url}', NOW() FROM gsm05_nomenclature n, outlets o WHERE n.article = '${article}' AND o.code = '05gsm-online' ON CONFLICT (nomenclature_id, outlet_id) DO UPDATE SET price = EXCLUDED.price, in_stock = EXCLUDED.in_stock, product_url = EXCLUDED.product_url, updated_at = NOW();`;\n  }).join('');\n  \n  queries || 'SELECT 1';\n}}",
+        "options": {}
+      },
+      "id": "save-prices",
+      "name": "Save Prices",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1760, 400],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL 05GSM"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const state = $input.first().json;\nreturn [{\n  json: {\n    success: true,\n    shop: '05gsm',\n    category: state.category_name,\n    products_total: state.products.length,\n    saved_to_db: true,\n    in_stock: state.products.filter(p => p.in_stock).length,\n    proxy_used: state.proxy_address\n  }\n}];"
+      },
+      "id": "summary-saved",
+      "name": "Summary (Saved)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1980, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "const state = $input.first().json;\nreturn [{\n  json: {\n    success: true,\n    shop: '05gsm',\n    category: state.category_name,\n    products_total: state.products.length,\n    saved_to_db: false,\n    in_stock: state.products.filter(p => p.in_stock).length,\n    products: state.products\n  }\n}];"
+      },
+      "id": "summary-nosave",
+      "name": "Summary (No Save)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1320, 600]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://proxy-manager:8000/report",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {"name": "proxy", "value": "={{ $json.proxy_used }}"},
+            {"name": "success", "value": "={{ $json.success ? 'true' : 'false' }}"}
+          ]
+        },
+        "options": {"timeout": 5000}
+      },
+      "id": "report-proxy",
+      "name": "Report Proxy",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2200, 400],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $('Summary (Saved)').first().json || $('Summary (No Save)').first().json }}",
+        "options": {}
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [2420, 400]
+    }
+  ],
+  "connections": {
+    "POST /parse/all": {
+      "main": [[{ "node": "Validate Input", "type": "main", "index": 0 }]]
+    },
+    "Validate Input": {
+      "main": [[{ "node": "Get Proxy", "type": "main", "index": 0 }]]
+    },
+    "Get Proxy": {
+      "main": [[{ "node": "Setup", "type": "main", "index": 0 }]]
+    },
+    "Setup": {
+      "main": [[{ "node": "Continue?", "type": "main", "index": 0 }]]
+    },
+    "Continue?": {
+      "main": [
+        [{ "node": "Build URL", "type": "main", "index": 0 }],
+        [{ "node": "Save to DB?", "type": "main", "index": 0 }]
+      ]
+    },
+    "Build URL": {
+      "main": [[{ "node": "Wait", "type": "main", "index": 0 }]]
+    },
+    "Wait": {
+      "main": [[{ "node": "Fetch Page", "type": "main", "index": 0 }]]
+    },
+    "Fetch Page": {
+      "main": [[{ "node": "Parse Products", "type": "main", "index": 0 }]]
+    },
+    "Parse Products": {
+      "main": [[{ "node": "Continue?", "type": "main", "index": 0 }]]
+    },
+    "Save to DB?": {
+      "main": [
+        [{ "node": "Ensure Outlet", "type": "main", "index": 0 }],
+        [{ "node": "Summary (No Save)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Ensure Outlet": {
+      "main": [[{ "node": "Save Nomenclature", "type": "main", "index": 0 }]]
+    },
+    "Save Nomenclature": {
+      "main": [[{ "node": "Save Prices", "type": "main", "index": 0 }]]
+    },
+    "Save Prices": {
+      "main": [[{ "node": "Summary (Saved)", "type": "main", "index": 0 }]]
+    },
+    "Summary (Saved)": {
+      "main": [[{ "node": "Report Proxy", "type": "main", "index": 0 }]]
+    },
+    "Summary (No Save)": {
+      "main": [[{ "node": "Response", "type": "main", "index": 0 }]]
+    },
+    "Report Proxy": {
+      "main": [[{ "node": "Response", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["05gsm", "api", "parser", "proxy-manager"]
+}

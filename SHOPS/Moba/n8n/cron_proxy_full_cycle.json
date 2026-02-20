@@ -1,0 +1,66 @@
+{
+  "name": "Proxy Manager - Full Cycle (Cron)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {"triggerAtHour": 0},
+            {"triggerAtHour": 8},
+            {"triggerAtHour": 16}
+          ]
+        }
+      },
+      "id": "schedule",
+      "name": "Schedule (3x daily)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 300],
+      "notes": "Runs at 00:00, 08:00, 16:00"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://proxy-manager:8000/full-cycle",
+        "options": {
+          "timeout": 600000,
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "full-cycle",
+      "name": "Run Full Cycle",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [220, 300],
+      "notes": "Scrape → Check → Recheck → Cleanup\nTimeout: 10 minutes"
+    },
+    {
+      "parameters": {
+        "jsCode": "const result = $input.first().json;\n\nconst scrape = result.scrape || {};\nconst recheck = result.recheck || {};\nconst cleanup = result.cleanup || {};\nconst final = result.final_stats || {};\n\nconst summary = `\n📊 Proxy Manager Full Cycle Complete\n\n🔍 Scrape:\n  - Collected: ${scrape.scraped || 0}\n  - Working: ${scrape.working || 0}\n  - Saved: ${scrape.saved || 0}\n\n🔄 Recheck:\n  - Checked: ${recheck.checked || 0}\n  - Still working: ${recheck.still_working || 0}\n  - Removed: ${recheck.removed || 0}\n\n🧹 Cleanup:\n  - Deleted: ${cleanup.deleted || 0}\n\n📈 Final Stats:\n  - Total working: ${final.total_working || 0}\n  - HTTP: ${final.by_type?.http || 0}\n  - HTTPS: ${final.by_type?.https || 0}\n  - SOCKS5: ${final.by_type?.socks5 || 0}\n`;\n\nconsole.log(summary);\n\nreturn [{ json: { ...result, summary } }];"
+      },
+      "id": "summary",
+      "name": "Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [440, 300]
+    }
+  ],
+  "connections": {
+    "Schedule (3x daily)": {
+      "main": [[{ "node": "Run Full Cycle", "type": "main", "index": 0 }]]
+    },
+    "Run Full Cycle": {
+      "main": [[{ "node": "Summary", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["proxy-manager", "cron"]
+}

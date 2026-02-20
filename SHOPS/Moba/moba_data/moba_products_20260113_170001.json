@@ -1,0 +1,367 @@
+{
+  "source": "Moba.ru",
+  "date": "2026-01-13T17:00:01.479926",
+  "total": 40,
+  "products": [
+    {
+      "name": "Беспроводные наушники Bluetooth Acefast W6 (TWS, вакуумные, с диплеем, активное шумоподавление) Черный",
+      "url": "/catalog/besprovodnye-naushniki-bluetooth/189413/",
+      "article": "MOBA-189413",
+      "price": 1350.0,
+      "image": "/upload/resize_cache/iblock/ab6/180_180_0/ugl8s9vtme0xf0llx18rf9rhexpq25dz.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Адаптер Type-C - Type-C + Type-C Acefast J14 Черный",
+      "url": "/catalog/adaptery-otg/189412/",
+      "article": "MOBA-189412",
+      "price": 275.0,
+      "image": "/upload/resize_cache/iblock/ff7/180_180_0/ehj1aktr3zwfm6ujvwuopn9dq3eegnh5.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Автомобильный держатель Acefast D59 (раздвижной, в дефлектор) Серый",
+      "url": "/catalog/razdvizhnye-derzhateli/189410/",
+      "article": "MOBA-189410",
+      "price": 640.0,
+      "image": "/upload/resize_cache/iblock/6db/180_180_0/lefhropv6vgshr30wkm3ici7opfxp7iq.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Беспроводные наушники Bluetooth Acefast H12 (накладные, активное шумоподавление) Черный",
+      "url": "/catalog/besprovodnye-naushniki-bluetooth/189408/",
+      "article": "MOBA-189408",
+      "price": 1420.0,
+      "image": "/upload/resize_cache/iblock/ce0/180_180_0/5a98a37njqunol0oco298tvutpozazif.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Беспроводные наушники Bluetooth Acefast H12 (накладные, активное шумоподавление) Белый",
+      "url": "/catalog/besprovodnye-naushniki-bluetooth/189406/",
+      "article": "MOBA-189406",
+      "price": 1420.0,
+      "image": "/upload/resize_cache/iblock/fc3/180_180_0/q2q1gh3ax2f18ot0p1lip3wxx9szohv1.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Беспроводные наушники Bluetooth Acefast W7 (TWS, вакуумные, активное шумоподавление) Белый",
+      "url": "/catalog/besprovodnye-naushniki-bluetooth/189404/",
+      "article": "MOBA-189404",
+      "price": 835.0,
+      "image": "/upload/resize_cache/iblock/ba7/180_180_0/5g1wzmefirrh1tn0l640te3fay5cnhez.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Адаптер USB Acefast QC1 (CarPlay/Android Auto, беспроводной, с адаптером Type-C) Серый",
+      "url": "/catalog/adaptery-otg/189402/",
+      "article": "MOBA-189402",
+      "price": 1620.0,
+      "image": "/upload/resize_cache/iblock/569/180_180_0/n8u3xpklplism4zg4u3kbfpdp339prms.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Беспроводное зарядное устройство Acefast E20 (для смартфона + гарнитуры + iWatch) Черный",
+      "url": "/catalog/besprovodnye-zaryadnye-ustroystva/189399/",
+      "article": "MOBA-189399",
+      "price": 2090.0,
+      "image": "/upload/resize_cache/iblock/fcd/180_180_0/gq4mvt8j5ct2u0csihdogarq399asbr8.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Автомобильное зарядное устройство USB/Type-C Acefast B16 (95W, QC3.0, PD, 1Type-C, 1USB) Серый",
+      "url": "/catalog/avtomobilnye-zaryadnye-ustroystva-bez-kabelya_1/189205/",
+      "article": "MOBA-189205",
+      "price": 505.0,
+      "image": "/upload/resize_cache/iblock/8ed/180_180_0/mtxrsnebb1chz2eh5iz0kjxvou1tvvm3.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Набор магнитных ковриков MaAnt (двусторонние, с раскладкой для iPhone, (X-15PM) 12 шт.)",
+      "url": "/catalog/prochie-instrumenty/189109/",
+      "article": "MOBA-189109",
+      "price": 2020.0,
+      "image": "/upload/resize_cache/iblock/c31/180_180_0/rxbvzfsnflrqvmutyyq51fyv2tn24gy7.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Тестер магнитного поля MagSafe Relife TO4 (5*4 см)",
+      "url": "/catalog/testery/189106/",
+      "article": "MOBA-189106",
+      "price": 310.0,
+      "image": "/upload/resize_cache/iblock/f34/180_180_0/k3zl5s3b1b9kdz8u4ri6ic345kpzi4k6.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Универсальная магнитная платформа для реболлинга MaAnt C2",
+      "url": "/catalog/derzhateli-fiksatory/189101/",
+      "article": "MOBA-189101",
+      "price": 1420.0,
+      "image": "/upload/resize_cache/iblock/536/180_180_0/v4173vk074gkgt2kbe57mejnsor5iuvh.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Звонок (buzzer) для Realme 11 Pro 5G/11 Pro+ 5G (RMX3771/RMX3741/RMX3740) в сборе",
+      "url": "/catalog/zvonok-buzzer/188796/",
+      "article": "MOBA-188796",
+      "price": 80.0,
+      "image": "/upload/resize_cache/iblock/bf0/180_180_0/3y0bpai267sx89k1lilibxs0x48jjts9.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Звонок (buzzer) для Inifinix Hot 40i/40/Realme C51",
+      "url": "/catalog/zvonok-buzzer/188795/",
+      "article": "MOBA-188795",
+      "price": 50.0,
+      "image": "/upload/resize_cache/iblock/35f/180_180_0/agfnggnabxcxn2xs3y5o9oqjaykeumvg.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Скотч задней крышки для iPhone Air (A3517) - Премиум (водонепроницаемый)",
+      "url": "/catalog/skotch-zadney-kryshki/188794/",
+      "article": "MOBA-188794",
+      "price": 95.0,
+      "image": "/upload/resize_cache/iblock/bd4/180_180_0/rqy2yaju2m40q4ae5nf77iw9h6tf27p6.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Скотч задней крышки для iPhone 17 Pro Max (A3526) - Премиум (водонепроницаемый)",
+      "url": "/catalog/skotch-zadney-kryshki/188793/",
+      "article": "MOBA-188793",
+      "price": 95.0,
+      "image": "/upload/resize_cache/iblock/ee3/180_180_0/3eh8hs2f3dhq9amilrcxokb9d3w2l3vl.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Скотч задней крышки для iPhone 17 Pro (A3523) - Премиум (водонепроницаемый)",
+      "url": "/catalog/skotch-zadney-kryshki/188791/",
+      "article": "MOBA-188791",
+      "price": 95.0,
+      "image": "/upload/resize_cache/iblock/03f/180_180_0/eoecoka3lbe9hbx3ur8995func6r7krm.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Скотч задней крышки для iPhone 17 (A3520) - Премиум (водонепроницаемый)",
+      "url": "/catalog/skotch-zadney-kryshki/188789/",
+      "article": "MOBA-188789",
+      "price": 95.0,
+      "image": "/upload/resize_cache/iblock/8f3/180_180_0/s90zpvlc8yvudc87ulsl22fkm65pcqox.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Скотч дисплея для iPhone 17 Pro Max (A3526) водонепроницаемый Черный - Премиум",
+      "url": "/catalog/skotch-lcd/188787/",
+      "article": "MOBA-188787",
+      "price": 95.0,
+      "image": "/upload/resize_cache/iblock/e22/180_180_0/kwtwie4j801yazsl3dn3j65pusv2fw34.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Скотч дисплея для iPhone 17 Pro (A3523) водонепроницаемый Черный - Премиум",
+      "url": "/catalog/skotch-lcd/188784/",
+      "article": "MOBA-188784",
+      "price": 95.0,
+      "image": "/upload/resize_cache/iblock/439/180_180_0/ibdv2aax0fn14r0z4v01pychsdt7m584.jpg",
+      "in_stock": true,
+      "category": "Новинки"
+    },
+    {
+      "name": "Аккумулятор для Realme 8 5G (BLP803) - Battery Collection (Премиум)",
+      "url": "/catalog/akb/184221/",
+      "article": "MOBA-184221",
+      "price": 605.0,
+      "image": "/upload/resize_cache/iblock/bad/50_50_0/1o2lt0yesqaz2esad3eenj5emxbjhap2.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для Tecno Spark 30 5G/4G/30C 4G (BL-5ABT) - Battery Collection (Премиум)",
+      "url": "/catalog/akb/184220/",
+      "article": "MOBA-184220",
+      "price": 650.0,
+      "image": "/upload/resize_cache/iblock/c79/50_50_0/9nf903kh5ftprbkhljtvggxitxuo0qv9.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для Samsung Galaxy A72 (A725F)/M32 (M325F)/M22 (M225F) (EB-BA426ABY) - Battery Collection (Премиум)",
+      "url": "/catalog/akb/183123/",
+      "article": "MOBA-183123",
+      "price": 525.0,
+      "image": "/upload/resize_cache/iblock/878/50_50_0/umk0ly7yvhndgtcradkxrq2dnwxvba4f.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для iPhone 15 - Battery Collection с верификацией - усиленная 3520 mAh - (Коробка + скотч + отвертка)",
+      "url": "/catalog/akb/181731/",
+      "article": "MOBA-181731",
+      "price": 2310.0,
+      "image": "/upload/resize_cache/iblock/957/50_50_0/earm8btl99qvg8sp4shr8g03i2j7cza7.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для iPhone 12 mini - Battery Collection с верификацией - усиленная 2400 mAh - (Коробка + скотч + отвертка)",
+      "url": "/catalog/akb/181734/",
+      "article": "MOBA-181734",
+      "price": 1510.0,
+      "image": "/upload/resize_cache/iblock/c00/50_50_0/i7b5yqaf4ooy0c11gvdu4x732k2h2erl.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для iPhone 12/12 Pro - Battery Collection с верификацией - усиленная 3310 mAh - (Коробка + скотч + отвертка)",
+      "url": "/catalog/akb/181741/",
+      "article": "MOBA-181741",
+      "price": 1510.0,
+      "image": "/upload/resize_cache/iblock/5ee/50_50_0/f8mfhrhl1gu84g2hffuiha01mhlhkcod.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для iPhone 15 Plus - Battery Collection с верификацией - усиленная 4620 mAh - (Коробка + скотч + отвертка)",
+      "url": "/catalog/akb/181733/",
+      "article": "MOBA-181733",
+      "price": 2420.0,
+      "image": "/upload/resize_cache/iblock/da5/50_50_0/6b11q27rbxe54drj031v4ese22pp0mdu.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для iPhone 12 Pro Max - Battery Collection с верификацией - усиленная 4310 mAh - (Коробка + скотч + отвертка)",
+      "url": "/catalog/akb/181738/",
+      "article": "MOBA-181738",
+      "price": 1930.0,
+      "image": "/upload/resize_cache/iblock/be3/50_50_0/m3i9w4bz1g42ko3i3wl8lhkd3qec5mos.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для iPhone 13 Pro Max - Battery Collection с верификацией - усиленная 4700 mAh - (Коробка + скотч + отвертка)",
+      "url": "/catalog/akb/181749/",
+      "article": "MOBA-181749",
+      "price": 2240.0,
+      "image": "/upload/resize_cache/iblock/784/50_50_0/6ex1ozx69rm5okrlaxuuhx8t4ttjbi4h.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для iPhone 14 - Battery Collection с верификацией - усиленная 3610 mAh - (Коробка + скотч + отвертка)",
+      "url": "/catalog/akb/181750/",
+      "article": "MOBA-181750",
+      "price": 2080.0,
+      "image": "/upload/resize_cache/iblock/a35/50_50_0/eah4l5gub7ohvf3u7zsplk0e9i4zuckr.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для iPhone 13 mini - Battery Collection с верификацией - усиленная 2500 mAh - (Коробка + скотч + отвертка)",
+      "url": "/catalog/akb/181745/",
+      "article": "MOBA-181745",
+      "price": 1670.0,
+      "image": "/upload/resize_cache/iblock/f31/50_50_0/iy0mho660mehuw0b42ibe5oy02di96ts.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для iPhone 15 Pro Max - Battery Collection с верификацией - усиленная 4770 mAh - (Коробка + скотч + отвертка)",
+      "url": "/catalog/akb/181739/",
+      "article": "MOBA-181739",
+      "price": 2800.0,
+      "image": "/upload/resize_cache/iblock/dab/50_50_0/h8llhdr56x6sf7w79nbnszwc7vb8k280.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для iPhone 14 Plus - Battery Collection с верификацией - усиленная 4810 mAh - (Коробка + скотч + отвертка)",
+      "url": "/catalog/akb/181751/",
+      "article": "MOBA-181751",
+      "price": 2160.0,
+      "image": "/upload/resize_cache/iblock/63a/50_50_0/vwxt8907dhnb2g0w2y0z4byzkc3xqh27.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для Realme GT Neo 2/3T/GT 2 Pro/OPPO Reno 13 F 4G (BLP887) - Battery Collection (Премиум)",
+      "url": "/catalog/akb/178656/",
+      "article": "MOBA-178656",
+      "price": 905.0,
+      "image": "/upload/resize_cache/iblock/cf2/50_50_0/4y34d1tcn485wlc1qszbb4fe4s26srxw.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для Xiaomi 13 Lite (BP4E) - Battery Collection (Премиум)",
+      "url": "/catalog/akb/177453/",
+      "article": "MOBA-177453",
+      "price": 675.0,
+      "image": "/upload/resize_cache/iblock/df8/50_50_0/jxx77jivnyuob8aambltwb9jl77v0hjv.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для Huawei Nova 10 SE/11/11 SE/12 SE/12s (HB456493EGW) - Battery Collection (Премиум)",
+      "url": "/catalog/akb/176762/",
+      "article": "MOBA-176762",
+      "price": 1760.0,
+      "image": "/upload/resize_cache/iblock/b23/50_50_0/fktzoxykeoxkhsc5wmamj3keskdn7vrk.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для Xiaomi Redmi 14C/Poco C75 (BN5X) - Battery Collection (Премиум)",
+      "url": "/catalog/akb/175842/",
+      "article": "MOBA-175842",
+      "price": 550.0,
+      "image": "/upload/resize_cache/iblock/edd/50_50_0/d8ymi7p7iweqb8rot0b0goatqv0enfs1.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для Huawei Nova Y90/11i/12i/13i (HB496493EGW) - Battery Collection (Премиум)",
+      "url": "/catalog/akb/172348/",
+      "article": "MOBA-172348",
+      "price": 1910.0,
+      "image": "/upload/resize_cache/iblock/dd2/50_50_0/33t1lzi50dd6ohuec0zeybpq6rttr2xi.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для Xiaomi 13T/Note 13 Pro 4G/14S/Poco M6 Pro 4G/X6 Pro 5G/14T (BM5T) - Battery Collection (Премиум)",
+      "url": "/catalog/akb/171044/",
+      "article": "MOBA-171044",
+      "price": 745.0,
+      "image": "/upload/resize_cache/iblock/41b/50_50_0/830zfios56nil4uqcv5pvkutjtzzlaof.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    },
+    {
+      "name": "Аккумулятор для iPhone 15 Plus - Battery Collection - усиленная 4620 mAh",
+      "url": "/catalog/akb/171041/",
+      "article": "MOBA-171041",
+      "price": 1170.0,
+      "image": "/upload/resize_cache/iblock/df1/50_50_0/yflj190rzki6b6m4ks8cu3u01n736x6k.jpg",
+      "in_stock": true,
+      "category": "Аккумуляторы"
+    }
+  ]
+}

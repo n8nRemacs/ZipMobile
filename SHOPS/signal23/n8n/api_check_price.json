@@ -1,0 +1,19 @@
+{
+  "name": "Signal23 - Check Price",
+  "nodes": [
+    {"parameters": {"httpMethod": "POST", "path": "signal23/price", "responseMode": "responseNode", "options": {}}, "id": "webhook", "name": "POST /price", "type": "n8n-nodes-base.webhook", "typeVersion": 2, "position": [0, 300]},
+    {"parameters": {"jsCode": "const body = $input.first().json.body || {};\nconst article = body.article || '';\nconst url = body.url || '';\nif (!article && !url) throw new Error('Article or URL required');\nreturn [{ json: { article, url } }];"}, "id": "validate", "name": "Validate", "type": "n8n-nodes-base.code", "typeVersion": 2, "position": [220, 300]},
+    {"parameters": {"operation": "executeQuery", "query": "={{ `SELECT n.article, n.name, n.category, p.price, p.in_stock, p.product_url, p.updated_at FROM signal23_nomenclature n JOIN signal23_prices p ON p.nomenclature_id = n.id WHERE ${$json.article ? \"n.article = '\" + $json.article.replace(/'/g, \"''\") + \"'\" : \"p.product_url LIKE '%\" + $json.url.replace(/'/g, \"''\") + \"%'\"} LIMIT 1;` }}", "options": {}}, "id": "get-price", "name": "Get Price", "type": "n8n-nodes-base.postgres", "typeVersion": 2.5, "position": [440, 300], "credentials": {"postgres": {"id": "POSTGRES_CREDENTIAL_ID", "name": "PostgreSQL Signal23"}}},
+    {"parameters": {"jsCode": "const result = $input.first().json;\nconst input = $('Validate').first().json;\nif (!result || !result.article) return [{ json: { success: false, error: 'Not found', article: input.article, url: input.url } }];\nreturn [{ json: { success: true, shop: 'signal23', article: result.article, name: result.name, category: result.category, price: parseFloat(result.price) || 0, in_stock: result.in_stock, url: result.product_url, updated_at: result.updated_at } }];"}, "id": "format", "name": "Format", "type": "n8n-nodes-base.code", "typeVersion": 2, "position": [660, 300]},
+    {"parameters": {"respondWith": "json", "responseBody": "={{ $json }}", "options": {}}, "id": "response", "name": "Response", "type": "n8n-nodes-base.respondToWebhook", "typeVersion": 1.1, "position": [880, 300]}
+  ],
+  "connections": {
+    "POST /price": {"main": [[{"node": "Validate", "type": "main", "index": 0}]]},
+    "Validate": {"main": [[{"node": "Get Price", "type": "main", "index": 0}]]},
+    "Get Price": {"main": [[{"node": "Format", "type": "main", "index": 0}]]},
+    "Format": {"main": [[{"node": "Response", "type": "main", "index": 0}]]}
+  },
+  "settings": {"executionOrder": "v1"},
+  "staticData": null,
+  "tags": ["signal23", "api", "price"]
+}

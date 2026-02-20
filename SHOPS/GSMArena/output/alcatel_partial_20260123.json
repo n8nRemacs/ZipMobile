@@ -1,0 +1,2884 @@
+[
+  {
+    "name": "A62",
+    "url": "https://www.gsmarena.com/alcatel_a62-14319.php",
+    "parsed_at": "2026-01-23T03:39:14.987607",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, November 18",
+      "status": "Available. Released 2025, November"
+    },
+    "body": {
+      "dimensions": "-",
+      "weight": "-",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.8 inches, 111.6 cm2",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~258 ppi density)"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Unisoc T7200 (12 nm)",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, (wide), 1/5.0\", 1.12µm",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Yes",
+      "bluetooth": "Yes",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted); unspecified sensors"
+    },
+    "battery": {
+      "type": "5010 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Sky Blue, Dawn Gold, Black",
+      "price": "About 70 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-a62.jpg",
+    "price": "About 70 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "V3 Ultra",
+    "url": "https://www.gsmarena.com/alcatel_v3_ultra_5g-13885.php",
+    "parsed_at": "2026-01-23T03:39:16.634401",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 17, 20, 26, 28, 32, 38, 40, 41, 42",
+      "5g_bands": "1, 3, 5, 7, 8, 20, 26, 28, 38, 40, 41, 48, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, May 27",
+      "status": "Available. Released 2025, June 02"
+    },
+    "body": {
+      "dimensions": "167.6 x 75.5 x 8 mm (6.60 x 2.97 x 0.31 in)",
+      "weight": "196 g (6.91 oz)",
+      "sim": "Nano-SIM +eSIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz, 650 nits",
+      "size": "6.8 inches, 109.8 cm2(~86.8% screen-to-body ratio)",
+      "resolution": "1080 x 2460 pixels (~395 ppi density)",
+      "protection": "Mohs level 7"
+    },
+    "platform": {
+      "os": "Android 14, up to 3 major Android upgrades",
+      "chipset": "Mediatek Dimensity 6300 (6 nm)",
+      "cpu": "Octa-core (2x2.4 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "128GB 6GB RAM, 128GB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "108 MP, f/1.8, (wide), 1/1.67\", 0.64µm, PDAF8 MP, f/2.2, 120˚ (ultrawide), 1/4.0\", 1.12µm2 MP (macro)",
+      "features": "LED flash, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.0, (wide), 1/3.45\", 0.64µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS, GALILEO",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass, barometer"
+    },
+    "battery": {
+      "type": "5010 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Hyper Blue, Champagne Gold, Ocean Grey",
+      "models": "T803D",
+      "price": "About 210 EUR"
+    },
+    "eu_label": {
+      "energy": "Class B",
+      "battery": "44:33h endurance, 1000 cycles",
+      "free_fall": "Class B (180 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-v3-ultra.jpg",
+    "price": "About 210 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "V3 Pro",
+    "url": "https://www.gsmarena.com/alcatel_v3_pro_5g-13893.php",
+    "parsed_at": "2026-01-23T03:39:18.215673",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 20, 26, 28, 32, 38, 40, 41, 42, 66",
+      "5g_bands": "1, 3, 5, 7, 8, 20, 26, 28, 38, 40, 41, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, May 27",
+      "status": "Available. Released 2025, June 02"
+    },
+    "body": {
+      "dimensions": "165.6 x 76.2 x 8.2 mm (6.52 x 3.00 x 0.32 in)",
+      "weight": "190 g (6.70 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz, 570 nits (typ)",
+      "size": "6.67 inches, 107.4 cm2(~85.1% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~263 ppi density)",
+      "protection": "Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15, up to 3 major Android upgrades",
+      "chipset": "Mediatek Dimensity 6300 (6 nm)",
+      "cpu": "Octa-core (2x2.4 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.8, 26mm (wide), 1/2.5\", 0.7µm, PDAF5 MP, f/2.2, 115˚ (ultrawide), 1/5.0\", 1.12µm",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0, (wide), 1/4.0\", 1.12µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.4, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS, GALILEO",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "5200 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Matcha Green, Metallic Grey",
+      "models": "T521D",
+      "price": "About 190 EUR"
+    },
+    "eu_label": {
+      "energy": "Class B",
+      "battery": "60:54h endurance, 1000 cycles",
+      "free_fall": "Class B (180 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-v3-pro.jpg",
+    "price": "About 190 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "V3 Classic",
+    "url": "https://www.gsmarena.com/alcatel_v3_classic_5g-13894.php",
+    "parsed_at": "2026-01-23T03:39:20.271608",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 20, 26, 28, 32, 38, 40, 41, 42, 66",
+      "5g_bands": "1, 3, 5, 7, 8, 20, 26, 28, 38, 40, 41, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, May 27",
+      "status": "Available. Released 2025, June 02"
+    },
+    "body": {
+      "dimensions": "165.6 x 76.2 x 8.2 mm (6.52 x 3.00 x 0.32 in)",
+      "weight": "187 g (6.60 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz, 570 nits",
+      "size": "6.67 inches, 108.2 cm2(~85.8% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~262 ppi density)",
+      "protection": "Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15, up to 3 major Android upgrades",
+      "chipset": "Mediatek Dimensity 6300 (6 nm)",
+      "cpu": "Octa-core (2x2.4 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 4GB RAM, 128GB 6GB RAM"
+    },
+    "main_camera": {
+      "single": "50 MP, f/1.8, 26mm (wide), 1/2.5\", 0.7µm, PDAFAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0, (wide), 1/4.0\", 1.12µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.4, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS, GALILEO",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "5200 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Halo White, Cosmic Grey",
+      "models": "T519H",
+      "price": "About 130 EUR"
+    },
+    "eu_label": {
+      "energy": "Class B",
+      "battery": "52:48h endurance, 1000 cycles",
+      "free_fall": "Class B (180 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-v3-classic.jpg",
+    "price": "About 130 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3 (2025)",
+    "url": "https://www.gsmarena.com/alcatel_3_(2025)-13886.php",
+    "parsed_at": "2026-01-23T03:39:21.818939",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, May 21",
+      "status": "Available. Released 2025, June"
+    },
+    "body": {
+      "dimensions": "164.4 x 75.8 x 8.8 mm (6.47 x 2.98 x 0.35 in)",
+      "weight": "185 g (6.53 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 400 nits",
+      "size": "6.52 inches, 102.6 cm2(~82.4% screen-to-body ratio)",
+      "resolution": "576 x 1280 pixels, 20:9 ratio (~215 ppi density)"
+    },
+    "platform": {
+      "os": "Android 15 (Go edition)",
+      "chipset": "Unisoc SC9863A1 (22 nm)",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+      "gpu": "IMG8322"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "64GB 3GB RAM, 128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/1.8, (wide), 1/4.0\", 1.12µm, AFor13 MP, AF (region dependent)",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, (wide), 1/5.0\", 1.12µm",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5010 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Space Gray, Teal Blue",
+      "models": "T451H"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-3-2025.jpg",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1B (2022)",
+    "url": "https://www.gsmarena.com/alcatel_1b_(2022)-11706.php",
+    "parsed_at": "2026-01-23T03:39:23.743022",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41 - 5031D, 5031G",
+      "speed": "HSPA 42.2/11.1 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2022, May 31",
+      "status": "Available. Released 2022, May 31"
+    },
+    "body": {
+      "dimensions": "146.7 x 71.9 x 10 mm (5.78 x 2.83 x 0.39 in)",
+      "weight": "172 g (6.07 oz)",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "5.5 inches, 78.1 cm2(~74.0% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~293 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11 (Go edition)",
+      "chipset": "Mediatek MT6761 Helio A22 (12 nm)",
+      "cpu": "Quad-core 2.0 GHz Cortex-A53",
+      "gpu": "PowerVR GE8300"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.0, 25 mm (wide), 1/4.0\", 1.12µm, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, 24 mm (wide), 1/5.0\", 1.12µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh battery, removable"
+    },
+    "misc": {
+      "colors": "Prime Black, Atlantic Blue",
+      "models": "5031D, 5031G, 5031A, 5031J",
+      "price": "About 100 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1b-2022.jpg",
+    "price": "About 100 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1L Pro (2021)",
+    "url": "https://www.gsmarena.com/alcatel_1l_pro_(2021)-10981.php",
+    "parsed_at": "2026-01-23T03:39:25.385714",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "2, 3, 4, 5, 7, 8, 12, 17, 28, 66 - USA",
+      "speed": "HSPA 21.1/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2021, June 25",
+      "status": "Available. Released 2021, Q2"
+    },
+    "body": {
+      "dimensions": "156.4 x 74.8 x 9.7 mm (6.16 x 2.94 x 0.38 in)",
+      "weight": "190 g (6.70 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.1 inches, 91.3 cm2(~78.1% screen-to-body ratio)",
+      "resolution": "720 x 1560 pixels, 19.5:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11 (Go edition)",
+      "chipset": "Unisoc SC9863A (28 nm)",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+      "gpu": "IMG8322"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, f/2.2, 26mm (wide), 1/3.06\", 1.12µm, AFAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, 27mm (wide), 1/5.0\", 1.12µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh"
+    },
+    "misc": {
+      "colors": "Power Grey, Twilight Blue",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1l-pro-2021.jpg",
+    "price": "About 110 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1 (2021)",
+    "url": "https://www.gsmarena.com/alcatel_1_(2021)-10980.php",
+    "parsed_at": "2026-01-23T03:39:27.407346",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA 42.2/11.5 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2021, June 25",
+      "status": "Available. Released 2021, October 22"
+    },
+    "body": {
+      "dimensions": "137.6 x 65.7 x 9.8 mm (5.42 x 2.59 x 0.39 in)",
+      "weight": "134 g (4.73 oz)",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "5.0 inches, 64.5 cm2(~71.4% screen-to-body ratio)",
+      "resolution": "480 x 960 pixels, 18:9 ratio (~215 ppi density)",
+      "protection": "Asahi Glass"
+    },
+    "platform": {
+      "os": "Android 11 (Go edition)",
+      "chipset": "Mediatek MT6739 (28 nm)",
+      "cpu": "Quad-core 1.28 GHz Cortex-A53",
+      "gpu": "PowerVR GE8100"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM, 16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, f/2.4, 1/5.0\", 1.12µm",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP, f/2.8",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2000 mAh"
+    },
+    "misc": {
+      "colors": "Volcano Black, AI Aqua",
+      "price": "About 60 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1-2021.jpg",
+    "price": "About 60 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3L (2021)",
+    "url": "https://www.gsmarena.com/alcatel_3l_(2021)-10679.php",
+    "parsed_at": "2026-01-23T03:39:29.391848",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20, 28",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2021, January 12",
+      "status": "Available. Released 2021, April 26"
+    },
+    "body": {
+      "dimensions": "165.6 x 75.6 x 8.7 mm (6.52 x 2.98 x 0.34 in)",
+      "weight": "194 g (6.84 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.52 inches, 102.6 cm2(~82.0% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~269 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Mediatek MT6762D Helio P22 (12 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A53 & 4x1.5 GHz Cortex-A53)",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (only single sim model)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, f/1.8, 26mm (wide), 1/2.0\", 0.8µm, PDAF2 MP (macro)Auxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0, 26mm (wide), 1/4.0\", 1.12µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Jewelry Blue, Jewelry Black",
+      "models": "6056D",
+      "price": "About 330 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-a3l-2021.jpg",
+    "price": "About 330 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1S (2021)",
+    "url": "https://www.gsmarena.com/alcatel_1s_(2021)-10680.php",
+    "parsed_at": "2026-01-23T03:39:31.049080",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2021, January 12",
+      "status": "Available. Released 2021, March 25"
+    },
+    "body": {
+      "dimensions": "165.6 x 75.6 x 8.8 mm (6.52 x 2.98 x 0.35 in)",
+      "weight": "190 g (6.70 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.52 inches, 102.6 cm2(~82.0% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~269 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Mediatek MT6762D Helio P22 (12 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A53 & 4x1.5 GHz Cortex-A53)",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "triple": "13 MP, f/2.0, 27mm (wide), 1/3.06\", 1.12µm, PDAF2 MP (macro)Auxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, 27mm (wide), 1/5.0\", 1.12µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Elegant Black, Twilight Blue",
+      "models": "6025H, 6025H_EEA, 6025D, 6025D_EEA",
+      "price": "About 130 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1s-2021.jpg",
+    "price": "About 130 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1L (2021)",
+    "url": "https://www.gsmarena.com/alcatel_1l_(2021)-10682.php",
+    "parsed_at": "2026-01-23T03:39:32.996289",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "2, 3, 4, 5, 7, 8, 12, 17, 28, 66 - USA",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2021, January 12",
+      "status": "Available. Released 2021, April 26"
+    },
+    "body": {
+      "dimensions": "155.9 x 74.5 x 9.9 mm (6.14 x 2.93 x 0.39 in)",
+      "weight": "179 g (6.31 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.1 inches, 91.3 cm2(~78.6% screen-to-body ratio)",
+      "resolution": "720 x 1560 pixels, 19.5:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11 (Go edition)",
+      "chipset": "Mediatek MT6761D Helio A20 (12 nm)",
+      "cpu": "Quad-core 1.8 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, f/1.9, 27mm (wide), 1/3.06\", 1.12µm, AF2 MP (macro)",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, 27mm (wide), 1/5.0\", 1.12µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh"
+    },
+    "misc": {
+      "colors": "Power Grey, Twilight Blue",
+      "models": "4063F, 4063T",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1l-2021.jpg",
+    "price": "About 110 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1V (2021)",
+    "url": "https://www.gsmarena.com/alcatel_1v_(2021)-11659.php",
+    "parsed_at": "2026-01-23T03:39:34.433602",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100 - 6002A",
+      "4g_bands": "2, 3, 4, 5, 7, 8, 12, 13, 17, 26, 28, 66 - 6002A",
+      "speed": "HSPA 42.2/11.5 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2021, February",
+      "status": "Available. Released 2021, April"
+    },
+    "body": {
+      "dimensions": "165.2 x 75.5 x 8.9 mm (6.50 x 2.97 x 0.35 in)",
+      "weight": "190 g (6.70 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.52 inches, 102.6 cm2(~82.3% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~269 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11 (Go edition)",
+      "chipset": "Mediatek MT6761 Helio A22 (12 nm)",
+      "cpu": "Quad-core 2.0 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 2GB RAM, 64GB 2GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, f/2.2, (wide), 1/3.0\", 1.12µm, AF2 MP (macro)Auxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, (wide), 1/5.0\", 1.12µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "FM radio (market/operator dependent)",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 5000 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Space Gray, Atlantic Blue",
+      "models": "6002A, 6002D",
+      "price": "About 100 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1v-2021.jpg",
+    "price": "About 100 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1SE (2020)",
+    "url": "https://www.gsmarena.com/alcatel_1se_(2020)-10618.php",
+    "parsed_at": "2026-01-23T03:39:36.834817",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20, 28",
+      "speed": "HSPA 21.1/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2020, October 28. Released 2020, October 28",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "159.2 x 75.2 x 8.7 mm (6.27 x 2.96 x 0.34 in)",
+      "weight": "175 g (6.17 oz)",
+      "build": "Glass front, plastic frame, plastic back",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.22 inches, 96.6 cm2(~80.7% screen-to-body ratio)",
+      "resolution": "720 x 1520 pixels, 19:9 ratio (~270 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Unisoc SC9863A (28 nm)",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+      "gpu": "IMG8322"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 64GB 2GB RAM, 128GB 4GB RAM"
+    },
+    "main_camera": {
+      "triple": "13 MP, f/2.2, (wide), 1/3.06\", 1.12µm, AF5 MP, f/2.2, (ultrawide), 1/5.0\", 1.12µmAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, (wide), 1/5.0\", 1.12µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh"
+    },
+    "misc": {
+      "colors": "Agate Greeen, Power Gray",
+      "models": "5030F, 5030U, 5030D_EEA, 5030F_EEA, 5030D, 5030E, 5030A, 5030E_TCL, 5030I, 5030M",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1-se-2020.jpg",
+    "price": "About 150 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "Go Flip 4",
+    "url": "https://www.gsmarena.com/alcatel_go_flip_4-12017.php",
+    "parsed_at": "2026-01-23T03:39:38.283778",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 1900",
+      "3g_bands": "HSDPA 850 / 1700(AWS) / 1900",
+      "4g_bands": "2, 4, 5, 12, 25, 26, 41, 66, 71",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2021, September",
+      "status": "Available. Released 2021, September"
+    },
+    "body": {
+      "dimensions": "107.3 x 55.6 x 19.9 mm (4.22 x 2.19 x 0.78 in)",
+      "weight": "133 g (4.69 oz)",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "TN TFT LCD",
+      "size": "2.8 inches, 24.3 cm2(~40.7% screen-to-body ratio)",
+      "resolution": "240 x 320 pixels, 4:3 ratio (~143 ppi density)"
+    },
+    "platform": {
+      "os": "KaiOS 3.0",
+      "chipset": "QM215 Snapdragon 215 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "Adreno 308"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "4GB 512MB RAM"
+    },
+    "main_camera": {
+      "single": "2 MP",
+      "video": "480p@30fps"
+    },
+    "selfie_camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {},
+    "battery": {
+      "type": "Li-Ion 1850 mAh"
+    },
+    "misc": {
+      "colors": "Midnight Blue",
+      "models": "4056W",
+      "sar": "0.78 W/kg (head) 1.27 W/kg (body)",
+      "price": "About 120 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-go-flip-4.jpg",
+    "price": "About 120 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "Go Flip 3",
+    "url": "https://www.gsmarena.com/alcatel_go_flip_3-10500.php",
+    "parsed_at": "2026-01-23T03:39:40.149454",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 1700(AWS) / 1900",
+      "4g_bands": "2, 4, 5, 12, 25, 26, 41, 66, 71",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2019, September 19. Released 2019, September 19",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "104.9 x 53.1 x 20.1 mm (4.13 x 2.09 x 0.79 in)",
+      "weight": "118 g (4.16 oz)",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "TN TFT LCD",
+      "size": "2.8 inches, 24.3 cm2(~43.6% screen-to-body ratio)",
+      "resolution": "240 x 320 pixels, 4:3 ratio (~143 ppi density)"
+    },
+    "platform": {
+      "os": "KaiOS 2.5.2",
+      "chipset": "Qualcomm MSM8909 Snapdragon 210 (28 nm)",
+      "cpu": "Quad-core 1.1 GHz Cortex-A7",
+      "gpu": "Adreno 304"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "4GB 512MB RAM"
+    },
+    "main_camera": {
+      "single": "2 MP",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {},
+    "battery": {
+      "type": "Li-Ion 1350 mAh, removable"
+    },
+    "misc": {
+      "colors": "Prime Black",
+      "sar": "1.28 W/kg (head) 1.16 W/kg (body)",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-go-flip3.jpg",
+    "price": "About 80 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "Go Flip V",
+    "url": "https://www.gsmarena.com/alcatel_go_flip_v-10501.php",
+    "parsed_at": "2026-01-23T03:39:42.183356",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 1900",
+      "3g_bands": "HSDPA 850 / 1700(AWS) / 1900",
+      "4g_bands": "2, 4, 5, 13",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2019, July 11. Released 2019, July 11",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "104.9 x 52.8 x 18.7 mm (4.13 x 2.08 x 0.74 in)",
+      "weight": "118 g (4.16 oz)",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "TN TFT LCD",
+      "size": "2.8 inches, 24.3 cm2(~43.8% screen-to-body ratio)",
+      "resolution": "240 x 320 pixels, 4:3 ratio (~143 ppi density)"
+    },
+    "platform": {
+      "os": "KaiOS 2.5.2",
+      "chipset": "Qualcomm MSM8909 Snapdragon 210 (28 nm)",
+      "cpu": "Quad-core 1.1 GHz Cortex-A7",
+      "gpu": "Adreno 304"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "2 MP",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {},
+    "battery": {
+      "type": "Li-Ion 1350 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black",
+      "models": "4051S",
+      "sar": "1.08 W/kg (head) 1.32 W/kg (body)",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-go-flipv.jpg",
+    "price": "About 80 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3T10 2020",
+    "url": "https://www.gsmarena.com/alcatel_3t10_2020-12041.php",
+    "parsed_at": "2026-01-23T03:39:43.637808",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020, Q4. Released 2020, Q4",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "243.3 x 161.2 x 9.4 mm (9.58 x 6.35 x 0.37 in)",
+      "weight": "475 g (1.05 lb)",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~75.4% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~149 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "MediaTek MT8766B",
+      "cpu": "Quad-core 1.8 GHz"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with dual speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 5500 mAh"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 170 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-3t10-2020.jpg",
+    "price": "About 170 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3X (2020)",
+    "url": "https://www.gsmarena.com/alcatel_3x_(2020)-10490.php",
+    "parsed_at": "2026-01-23T03:39:45.110169",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41",
+      "speed": "HSPA 42.2/11.5 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2020, June. Released 2020, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "165 x 75 x 9.1 mm (6.50 x 2.95 x 0.36 in)",
+      "weight": "186 g (6.56 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.52 inches, 102.6 cm2(~82.9% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~269 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6762 Helio P22 (12 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM, 128GB 4GB RAM, 128GB 6GB RAM"
+    },
+    "main_camera": {
+      "quad": "16 MP, f/1.8, (wide), 1/2.8\", 1.12µm, PDAF5 MP, f/2.2, (ultrawide), 1/5.0\", 1.12µm2 MP (macro)Auxiliary lens",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0, (wide), 1/4.0\", 1.12µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 5000 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Black, Blue",
+      "models": "5061U, 5061K_EEA, 5061K, 5061U_EEA, 5061A",
+      "price": "About 170 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-3x-2020.jpg",
+    "price": "About 170 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3L (2020)",
+    "url": "https://www.gsmarena.com/alcatel_3l_(2020)-10016.php",
+    "parsed_at": "2026-01-23T03:39:46.470901",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2020, January. Released 2020, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "158.7 x 74.6 x 8.5 mm (6.25 x 2.94 x 0.33 in)",
+      "weight": "165 g (5.82 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.22 inches, 96.6 cm2(~81.6% screen-to-body ratio)",
+      "resolution": "720 x 1520 pixels, 19:9 ratio (~270 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6762 Helio P22 (12 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, f/1.8, (wide), 1/2.25\", 0.8µm, PDAF5 MP, f/2.4, (ultrawide/depth sensor), 1/5.0\", 1.12µm2 MP (macro)",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0, (wide), 1/4.0\", 1.12µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Chameleon Blue, Dark Chrome, Agate Green",
+      "models": "5029Y, 5029, 5029D, 5029D_EEA, 5029Y_EEA",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-a3l-2020-.jpg",
+    "price": "About 150 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1S (2020)",
+    "url": "https://www.gsmarena.com/alcatel_1s_(2020)-10017.php",
+    "parsed_at": "2026-01-23T03:39:48.537322",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2020, January. Released 2020, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "158.7 x 74.6 x 8.5 mm (6.25 x 2.94 x 0.33 in)",
+      "weight": "165 g (5.82 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.22 inches, 96.6 cm2(~81.6% screen-to-body ratio)",
+      "resolution": "720 x 1520 pixels, 19:9 ratio (~270 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6762D Helio P22 (12 nm)",
+      "cpu": "Octa-core 1.8 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "triple": "13 MP, f/1.8, (wide), 1/3.1\", 1.12µm, AF5 MP, f/2.2, (ultrawide/depth sensor), 1/5.0\", 1.12µm2 MP (macro)",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, (wide), 1/5.0\", 1.12µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh"
+    },
+    "misc": {
+      "colors": "Agate Green, Power Grey",
+      "models": "5028Y, 5028D, 5028D_EEA, 5028Y_EEA, 5028A",
+      "price": "About 100 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-a3l-2020-.jpg",
+    "price": "About 100 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1V (2020)",
+    "url": "https://www.gsmarena.com/alcatel_1v_(2020)-10018.php",
+    "parsed_at": "2026-01-23T03:39:50.173195",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - 5007U",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41 - 5007U",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2020, January. Released 2020, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "158.7 x 74.8 x 8.9 mm (6.25 x 2.94 x 0.35 in)",
+      "weight": "160 g (5.64 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.22 inches, 96.6 cm2(~81.3% screen-to-body ratio)",
+      "resolution": "720 x 1520 pixels, 19:9 ratio (~270 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6762D Helio P22 (12 nm)",
+      "cpu": "Octa-core 1.8 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, f/1.8, (wide), 1/3.1\", 1.12µm, AFAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, (wide), 1/5.0\", 1.12µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh"
+    },
+    "misc": {
+      "colors": "Prime Black, Pine Green, Metallic Black, Agate Green",
+      "models": "5007U, 5007G, 5007A, 5007U_EEA",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-a3l-2020-.jpg",
+    "price": "About 80 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1B (2020)",
+    "url": "https://www.gsmarena.com/alcatel_1b_(2020)-10019.php",
+    "parsed_at": "2026-01-23T03:39:51.734634",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 28",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2020, January. Released 2020, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "146.1 x 71.6 x 9.9 mm (5.75 x 2.82 x 0.39 in)",
+      "weight": "168 g (5.93 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 78.1 cm2(~74.6% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~293 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10 (Go edition)",
+      "chipset": "Qualcomm QM215 Snapdragon 215 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "Adreno 308"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.0, (wide), 1/4.0\", 1.12µm, AF",
+      "features": "LED flash, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, (wide), 1/5.0\", 1.12µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh battery"
+    },
+    "misc": {
+      "colors": "Prime Black, Pine Green",
+      "models": "5002A, 5002D, 5002F, 5002I, 5002M, 5002X, 5002S, 5002R, 5002D_EEA, 5002H_EEA, 5002H, 5002B, 5002C, 5002W, 5002H_TR",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1b-2020.jpg",
+    "price": "About 80 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3v (2019)",
+    "url": "https://www.gsmarena.com/alcatel_3v_(2019)-10042.php",
+    "parsed_at": "2026-01-23T03:39:53.766716",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 12, 13, 17, 20, 25, 26, 41, 66, 71",
+      "speed": "HSPA 42.2/11.5 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2019, Q2. Released 2019, Q4",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "174.5 x 83.3 x 8.4 mm (6.87 x 3.28 x 0.33 in)",
+      "weight": "197.9 g (6.98 oz)",
+      "build": "Glass front (DragonTrail Pro glass), plastic back, plastic frame",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.7 inches, 115.8 cm2(~79.7% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~240 ppi density)",
+      "protection": "DragonTrail Pro"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie)",
+      "chipset": "Mediatek MT6762 Helio P22 (12 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "dual": "16 MP, PDAFAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh",
+      "charging": "15W wired"
+    },
+    "misc": {
+      "colors": "Elegant Black",
+      "models": "5032W",
+      "price": "About 170 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-3v-2019.jpg",
+    "price": "About 170 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3x (2019)",
+    "url": "https://www.gsmarena.com/alcatel_3x_(2019)-9842.php",
+    "parsed_at": "2026-01-23T03:39:55.290781",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - 5048Y",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40 - 5048Y",
+      "speed": "HSPA 42.2/11.5 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2019, September. Released 2019, Q4",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "164.9 x 75.8 x 8.4 mm (6.49 x 2.98 x 0.33 in)",
+      "weight": "178 g (6.28 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.52 inches, 102.6 cm2(~82.1% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~269 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie)",
+      "chipset": "Mediatek MT6763V Helio P23 (16 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A53 & 4x1.5 GHz Cortex-A53)",
+      "gpu": "Mali-G71 MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "64GB 4GB RAM, 128GB 6GB RAM"
+    },
+    "main_camera": {
+      "triple": "16 MP, f/1.8, 27mm (wide), 1/2.8\", 1.12µm, PDAF8 MP, f/2.2, 17mm (ultrawide), 1/4.0\", 1.12µmAuxiliary lens",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0, 25mm (wide), 1/4.0\", 1.12µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh, non-removable",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Jewelry Black, Jewelry Green, Jewelry Rose",
+      "models": "5048Y, 5048A, 5048Y_EEA, 5048I, 5048U_EEA",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-3x-2019.jpg",
+    "price": "About 150 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1v (2019)",
+    "url": "https://www.gsmarena.com/alcatel_1v_(2019)-9843.php",
+    "parsed_at": "2026-01-23T03:39:57.174242",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1900 / 2100 - 5001D/5001U/5001T",
+      "4g_bands": "1, 3, 7, 8, 20, 28 - 5001D",
+      "speed": "HSPA 21.1/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2019, September. Released 2019, Q4",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "149.1 x 72.2 x 8.9 mm (5.87 x 2.84 x 0.35 in)",
+      "weight": "153.2 g (5.40 oz)",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 78.1 cm2(~72.5% screen-to-body ratio)",
+      "resolution": "480 x 960 pixels, 18:9 ratio (~195 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 Pie (Go edition)",
+      "chipset": "Unisoc SC9863A (28 nm)",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+      "gpu": "IMG8322"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "16GB 1GB RAM, 16GB 2GB RAM, 16GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, f/2.2, 28mm (wide), 1/5.0\", 1.12µmor8 MP, f/2.2, 28mm (wide), 1/4.0\", 1.12µm",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, 28mm (wide), 1/5.0\", 1.12µm",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical) - market dependant, accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2460 mAh, removable"
+    },
+    "misc": {
+      "colors": "Anthracite Black, Metallic Blue, Metallic Gold, Metallic Rose",
+      "models": "5001D, 5001A, 5001U, 5001T, 5001J, 5001D_EEA",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1v-2019.jpg",
+    "price": "About 80 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3T 8",
+    "url": "https://www.gsmarena.com/alcatel_3t_8-10108.php",
+    "parsed_at": "2026-01-23T03:39:59.313507",
+    "network": {
+      "technology": "LTE",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "2, 4, 5, 12, 66, 71",
+      "speed": "LTE",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2018, October 08. Released 2018, October 08",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "209.5 x 125 x 8.3 mm (8.25 x 4.92 x 0.33 in)",
+      "weight": "279 g (9.84 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "8.0 inches, 185.6 cm2(~70.9% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~189 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.1 (Oreo)",
+      "chipset": "Mediatek MT8765",
+      "cpu": "Quad-core 1.28 GHz"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 1GB RAM, 32GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, f/2.4, (wide), 1/5.0\", 1.12µm",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP, f/2.8, (wide), 1/5.0\", 1.65µm",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Po 4080 mAh"
+    },
+    "misc": {
+      "colors": "Black, Blue",
+      "models": "9027Q, 9027W, 9032X, 9032T, 9032X_EEA",
+      "price": "About 140 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-3t-8.jpg",
+    "price": "About 140 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "Smart Tab 7",
+    "url": "https://www.gsmarena.com/alcatel_smart_tab_7-9837.php",
+    "parsed_at": "2026-01-23T03:40:00.949653",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2019, September. Released 2019, Q4",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "176 x 126 x 12 mm (6.93 x 4.96 x 0.47 in)",
+      "weight": "268 g (9.45 oz)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TN TFT LCD",
+      "size": "7.0 inches, 137.9 cm2(~62.2% screen-to-body ratio)",
+      "resolution": "600 x 1024 pixels, 16:9 ratio (~170 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie)",
+      "chipset": "Mediatek MT8167D",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "IMG GE8300"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 1.5GB RAM"
+    },
+    "main_camera": {
+      "single": "0.3 MP, f/2.4, 1/5.0\""
+    },
+    "selfie_camera": {
+      "single": "2 MP, f/2.4, 1/5.0\", 1.65µm"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with dual speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 2580 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-smart-tab-7-2019.jpg",
+    "price": "About 80 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3T 10",
+    "url": "https://www.gsmarena.com/alcatel_3t_10-9601.php",
+    "parsed_at": "2026-01-23T03:40:02.872612",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20, 28",
+      "speed": "HSPA 42.2/11.5 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2019, February. Released 2019, Q1",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "260 x 156.6 x 9 mm (10.24 x 6.17 x 0.35 in)",
+      "weight": "440 g (15.52 oz)",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.0 inches, 290.0 cm2(~71.2% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~151 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.1 (Oreo), upgradable to Android 9.0 (Pie)",
+      "chipset": "Mediatek MT8765WB",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "PowerVR GE8100"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "2 MP, f/2.8, 1/5.0\", 1.65µm",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP, f/2.8, 1/5.0\", 1.65µm",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 4080 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Prime Black, Midnight Blue",
+      "models": "8088L, 8088Q, 8088X, 8088X_EEA"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-3t-10-2019.jpg",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3L",
+    "url": "https://www.gsmarena.com/alcatel_3l-9600.php",
+    "parsed_at": "2026-01-23T03:40:04.612121",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2019, February. Released 2019, Q1",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151.1 x 69.7 x 8 mm (5.95 x 2.74 x 0.31 in)",
+      "weight": "145 g (5.11 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.94 inches, 86.6 cm2(~82.2% screen-to-body ratio)",
+      "resolution": "720 x 1560 pixels, 19.5:9 ratio (~289 ppi density)",
+      "protection": "Asahi Dragontrail Glass"
+    },
+    "platform": {
+      "os": "Android 8.1 (Oreo)",
+      "chipset": "Mediatek MT6739 (28 nm) - EuropeQualcomm SDM429 Snapdragon 429 (12 nm)",
+      "cpu": "Quad-core 1.5 GHz Cortex-A53 - EuropeQuad-core 1.8 GHz Cortex-A53",
+      "gpu": "PowerVR GE8100 - EuropeAdreno 504"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, f/2.0, 1/3.1\", 1.12µmAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0, 1/4.0\", 1.12µm",
+      "features": "HDR",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "Yes (market dependent)",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted, market dependent), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 3500 mAh battery"
+    },
+    "misc": {
+      "colors": "Anthracite black, Metallic Blue",
+      "models": "5039U, 5039D, 5039D_EEA"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-3l.jpg",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3 (2019)",
+    "url": "https://www.gsmarena.com/alcatel_3_(2019)-9599.php",
+    "parsed_at": "2026-01-23T03:40:06.354284",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20, 28",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2019, February. Released 2019, Q1",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151.1 x 69.7 x 8 mm (5.95 x 2.74 x 0.31 in)",
+      "weight": "145 g (5.11 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.94 inches, 86.6 cm2(~82.2% screen-to-body ratio)",
+      "resolution": "720 x 1560 pixels, 19.5:9 ratio (~289 ppi density)",
+      "protection": "Asahi Dragontrail Glass"
+    },
+    "platform": {
+      "os": "Android 8.1 (Oreo)",
+      "chipset": "Qualcomm SDM439 Snapdragon 439 (12 nm)",
+      "cpu": "Octa-core (4x1.95 GHz Cortex-A53 & 4x1.45 GHz Cortex A53)",
+      "gpu": "Adreno 505"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, f/2.0, 1/3.1\", 1.12µmAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0, 1/4.0\", 1.12µm",
+      "features": "HDR",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "Yes (market dependent)",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3500 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Blue-purple gradient, Black-blue gradien",
+      "models": "5053K, 5053A, 5053Y, 5053D, 5053Y_EEA, 5053D_EEA"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-3-2019.jpg",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1s",
+    "url": "https://www.gsmarena.com/alcatel_1s-9598.php",
+    "parsed_at": "2026-01-23T03:40:08.004666",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20, 28",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2019, February. Released 2019, Q1",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "147.8 x 70.7 x 8.6 mm (5.82 x 2.78 x 0.34 in)",
+      "weight": "146 g (5.15 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 78.1 cm2(~74.7% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~293 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie)",
+      "chipset": "Unisoc SC9863 (28 nm)",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+      "gpu": "IMG8322"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, f/2.0, 1/3.1\", 1.12µmAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, 1/5.0\", 1.12µm",
+      "features": "HDR",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 3060 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Blue, Black, Rose, Gold",
+      "models": "5024A, 5024D, 5024I, 5024J, 5024D_EEA, 5024F, 5024F_EEA, 5024D_RU"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1s.jpg",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1x (2019)",
+    "url": "https://www.gsmarena.com/alcatel_1x_(2019)-9510.php",
+    "parsed_at": "2026-01-23T03:40:09.898528",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100 - 5059A",
+      "4g_bands": "1, 3, 5, 7, 8, 28, 38, 40 - 5008T",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2019, January. Released 2019, Q1",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "146.4 x 68.8 x 8.3 mm (5.76 x 2.71 x 0.33 in)",
+      "weight": "130 g (4.59 oz)",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 78.1 cm2(~77.5% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~293 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.1 (Oreo)",
+      "chipset": "Mediatek MT6739 (28 nm)",
+      "cpu": "Quad-core 1.5 GHz Cortex-A53",
+      "gpu": "PowerVR GE8100"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP2 MP",
+      "features": "LED flash, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "features": "LED flash",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted, 5008T only), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Pebble Blue, Pebble Black",
+      "models": "5008T, 5008Y, 5008U, 5008R, 5008D_EEA, 5008Y_EEA, 5008D",
+      "price": "About 120 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1x-2019.jpg",
+    "price": "About 120 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1c (2019)",
+    "url": "https://www.gsmarena.com/alcatel_1c_(2019)-9511.php",
+    "parsed_at": "2026-01-23T03:40:11.860113",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2019, January. Released 2019, Q1",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "136.6 x 65.3 x 10 mm (5.38 x 2.57 x 0.39 in)",
+      "weight": "148 g (5.22 oz)",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 64.5 cm2(~72.3% screen-to-body ratio)",
+      "resolution": "480 x 960 pixels, 18:9 ratio (~215 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.1 Oreo (Go edition)",
+      "chipset": "Spreadtrum SC7731E",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53"
+    },
+    "memory": {
+      "card_slot": "microSDHC",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP",
+      "features": "LED flash, HDR",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2000 mAh battery"
+    },
+    "misc": {
+      "colors": "Enamel Blue, Blush Pink, Volcano Black",
+      "models": "5009A, 5009D, 5003G, 5003D_EEA, 5003D, 5003A, 5003U",
+      "price": "About 70 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1c-2019.jpg",
+    "price": "About 70 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "1",
+    "url": "https://www.gsmarena.com/alcatel_1-9985.php",
+    "parsed_at": "2026-01-23T03:40:13.703653",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2018, July. Released 2018, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "137.6 x 65.7 x 9.8 mm (5.42 x 2.59 x 0.39 in)",
+      "weight": "134 g (4.73 oz)",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "5.0 inches, 64.5 cm2(~71.4% screen-to-body ratio)",
+      "resolution": "480 x 960 pixels, 18:9 ratio (~215 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.1 Oreo (Go edition)",
+      "chipset": "Mediatek MT6739 (28 nm)",
+      "cpu": "Quad-core 1.28 GHz Cortex-A53",
+      "gpu": "PowerVR GE8100"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM, 16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, f/2.4, 1/5.0\", 1.12µm",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP, f/2.8",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2000 mAh"
+    },
+    "misc": {
+      "colors": "Black, Blue, Gold, Pink",
+      "models": "5033X, 5033J, 5033T, 5033D, 5033G, 5033M, 5033X_EEA, 5033F, 5033E, 5033D_EEA, 5033Q, 5033O, 5033G_EEA, 5033EP, 5033XR, 5033F_EEA, 5033S, 5033D_RU",
+      "price": "About 60 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-1-2018.jpg",
+    "price": "About 60 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "Tetra",
+    "url": "https://www.gsmarena.com/alcatel_tetra-9574.php",
+    "parsed_at": "2026-01-23T03:40:15.122335",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 1700(AWS) / 1900",
+      "4g_bands": "2, 4, 5, 12, 14",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2018, September. Released 2018, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "142.5 x 71.9 x 9.4 mm (5.61 x 2.83 x 0.37 in)",
+      "weight": "150 g (5.29 oz)",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.2% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~196 ppi density)",
+      "protection": "Asahi Dragontrail Glass"
+    },
+    "platform": {
+      "os": "Android 8.1 (Oreo)",
+      "chipset": "Mediatek MT6739WM (28 nm)",
+      "cpu": "Quad-core 1.1 GHz Cortex-A53",
+      "gpu": "PowerVR GE8100"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "features": "LED flash, HDR",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2050 mAh, removable"
+    },
+    "misc": {
+      "colors": "Stealth Black",
+      "price": "About 40 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-tetra.jpg",
+    "price": "About 40 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "7",
+    "url": "https://www.gsmarena.com/alcatel_7-9291.php",
+    "parsed_at": "2026-01-23T03:40:16.658792",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 1700(AWS) / 1900",
+      "4g_bands": "2, 4, 5, 12, 66, 71",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2018, August. Released 2018, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "162.1 x 75 x 8.6 mm (6.38 x 2.95 x 0.34 in)",
+      "weight": "175 g (6.17 oz)",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.0 inches, 93.8 cm2(~77.1% screen-to-body ratio)",
+      "resolution": "1080 x 2180 pixels, 18:9 ratio (~402 ppi density)",
+      "protection": "Asahi Glass"
+    },
+    "platform": {
+      "os": "Android 8.1 (Oreo)",
+      "chipset": "Mediatek MT6763T Helio P23 (16 nm)",
+      "cpu": "Octa-core 2.5 GHz Cortex-A53",
+      "gpu": "Mali-G71 MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/2.2, 27mm (wide), 1/2.8\", 1.25 μm, PDAFAuxiliary lens",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps (gyro-EIS)"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.8, 1/4.0\", 1.12µm",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4000 mAh, non-removable",
+      "charging": "10W wired",
+      "stand-by": "Up to 700 h (3G)",
+      "talk_time": "Up to 28 h (3G)"
+    },
+    "misc": {
+      "colors": "Black",
+      "models": "6062W",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-7-.jpg",
+    "price": "About 150 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "5v",
+    "url": "https://www.gsmarena.com/alcatel_5v-9271.php",
+    "parsed_at": "2026-01-23T03:40:18.079048",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20, 28",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2018, July. Released 2018, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.7 x 74.5 x 8.5 mm (6.05 x 2.93 x 0.33 in)",
+      "weight": "158 g (5.57 oz)",
+      "sim": "Single SIM (Micro-SIM) or Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.2 inches, 96.7 cm2(~84.5% screen-to-body ratio)",
+      "resolution": "720 x 1500 pixels (~268 ppi density)",
+      "protection": "Asahi Dragontrail Glass"
+    },
+    "platform": {
+      "os": "Android 8.1 (Oreo)",
+      "chipset": "Mediatek MT6762 Helio P22 (12 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/2.2, 1/2.8\", 1.25 μm, PDAFAuxiliary lens",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps (gyro-EIS)"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.8, 1/4.0\", 1.12µm",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black, Blue",
+      "models": "5060D, 5060A, 5060J",
+      "price": "About 180 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-5v.jpg",
+    "price": "About 180 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "5",
+    "url": "https://www.gsmarena.com/alcatel_5-9012.php",
+    "parsed_at": "2026-01-23T03:40:19.776930",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - 5086D/Y",
+      "4g_bands": "1, 3, 7, 8, 20, 28 - 5086D/Y",
+      "speed": "HSPA 42.2/11.5 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2018, February. Released 2018, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.3 x 71.1 x 8.4 mm (6.00 x 2.80 x 0.33 in)",
+      "weight": "144 g (5.08 oz)",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.7 inches, 83.8 cm2(~77.4% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 7.1 (Nougat)",
+      "chipset": "Mediatek MT6750 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "12 MP, f/2.2, 1/2.9\", 1.25µm, AF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "dual": "13 MP, f/2.0, 1.4µm5 MP, depth sensor",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "Yes (5086Y only)",
+      "radio": "Wireless FM radio (no wired headphones required)",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Metallic Gold, Metallic Black",
+      "models": "5086D, , 5086Y, 5086A",
+      "price": "About 230 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-5-.jpg",
+    "price": "About 230 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3v",
+    "url": "https://www.gsmarena.com/alcatel_3v-9004.php",
+    "parsed_at": "2026-01-23T03:40:21.214998",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - 5099Y/D/U/I",
+      "4g_bands": "1, 3, 7, 8, 20, 28, 38 - 5099Y/D",
+      "speed": "HSPA 42.2/11.5 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2018, February. Released 2018, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "162 x 76 x 8.1 mm (6.38 x 2.99 x 0.32 in)",
+      "weight": "155 g (5.47 oz)",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.0 inches, 92.9 cm2(~75.5% screen-to-body ratio)",
+      "resolution": "1080 x 2160 pixels, 18:9 ratio (~402 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.0 (Oreo)",
+      "chipset": "Mediatek MT8735A",
+      "cpu": "Quad-core 1.45 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/2.2, 1/2.8\", 1.25 μm, PDAFAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "features": "LED flash",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "Yes (5099Y only)",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Spectrum Black, Spectrum Blue, Spectrum Gold",
+      "models": "5099Y, 5099A, 5099D, 5099U, 5099I",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-3v.jpg",
+    "price": "About 160 EUR",
+    "brand": "alcatel"
+  },
+  {
+    "name": "3x (2018)",
+    "url": "https://www.gsmarena.com/alcatel_3x_(2018)-9084.php",
+    "parsed_at": "2026-01-23T03:40:22.907203",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100 - 5058A/J",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 28 - 5058A/J",
+      "speed": "HSPA 42.2/11.5 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2018, February. Released 2018, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.5 x 71.6 x 8.5 mm (6.04 x 2.82 x 0.33 in)",
+      "weight": "144 g (5.08 oz)",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.7 inches, 83.8 cm2(~76.3% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 7.1 (Nougat)",
+      "chipset": "Mediatek MT6739 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "PowerVR GE8100"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "features": "LED flash"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "Yes (5058Y only)",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Metallic Black, Metallic Blue, Metallic Gold - EU/MEASpectrum Black, Spectrum Blue, Spectrum Gold - LATAM",
+      "models": "5058, 5058I, 5058T, 5058Y, 5058A, 5058J",
+      "price": "About 130 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/alcatel-3x-.jpg",
+    "price": "About 130 EUR",
+    "brand": "alcatel"
+  }
+]

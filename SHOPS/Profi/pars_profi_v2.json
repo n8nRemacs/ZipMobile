@@ -1,0 +1,160 @@
+{
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [-200, 0],
+      "id": "manual-trigger",
+      "name": "Start"
+    },
+    {
+      "parameters": {
+        "url": "http://host.docker.internal:8765/parse/all",
+        "options": {
+          "timeout": 1800000
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [40, 0],
+      "id": "http-parse-all",
+      "name": "Парсим все прайсы"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- Нормализация brand_attr и model_attr\nUPDATE public.profi_price_for_update\nSET \n  brand_attr = CASE \n    WHEN brand_attr LIKE '1.%APPLE%' THEN 'Apple'\n    WHEN brand_attr LIKE '2.%СОТОВЫХ%' THEN 'Сотовые'\n    WHEN brand_attr LIKE '3.%АКСЕССУАРЫ%' THEN 'Аксессуары'\n    ELSE TRIM(regexp_replace(brand_attr, '^\\d+\\.\\s*', '', 'g'))\n  END,\n  model_attr = CASE\n    WHEN model_attr LIKE '%IPAD%' THEN 'iPad'\n    WHEN model_attr LIKE '%IPHONE%' THEN 'iPhone'\n    WHEN model_attr LIKE '%WATCH%' THEN 'Watch'\n    ELSE TRIM(regexp_replace(model_attr, '^ЗАПЧАСТИ ДЛЯ\\s+', '', 'gi'))\n  END\nWHERE brand_attr IS NOT NULL OR model_attr IS NOT NULL;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [280, 0],
+      "id": "normalize",
+      "name": "1. Нормализация",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- Удаляем записи без артикула\nDELETE FROM public.profi_price_for_update\nWHERE article IS NULL OR TRIM(article) = '';",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [520, 0],
+      "id": "clean-no-article",
+      "name": "2. Удаляем без артикула",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- UPSERT номенклатуры\nINSERT INTO public.profi_nomenclature \n  (article, barcode, name, brand_raw, model_raw, part_type_raw, updated_at)\nSELECT DISTINCT ON (article)\n  article,\n  barcode,\n  name,\n  brand_attr,\n  model_attr,\n  part_type_attr,\n  NOW()\nFROM public.profi_price_for_update\nWHERE article IS NOT NULL\nON CONFLICT (article) DO UPDATE SET\n  barcode = COALESCE(EXCLUDED.barcode, profi_nomenclature.barcode),\n  name = EXCLUDED.name,\n  brand_raw = EXCLUDED.brand_raw,\n  model_raw = EXCLUDED.model_raw,\n  part_type_raw = EXCLUDED.part_type_raw,\n  updated_at = NOW();",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [760, 0],
+      "id": "upsert-nomenclature",
+      "name": "3. UPSERT номенклатуры",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- Записываем историю для изменившихся цен\nINSERT INTO public.profi_price_history (nomenclature_id, outlet_code, price, stock_stars, recorded_at)\nSELECT \n  p.nomenclature_id,\n  p.outlet_code,\n  p.price,\n  p.stock_stars,\n  p.loaded_at\nFROM public.profi_prices p\nJOIN public.profi_nomenclature n ON n.id = p.nomenclature_id\nJOIN public.profi_price_for_update u ON u.article = n.article\nWHERE (\n  -- Получаем outlet_code из city+shop\n  p.outlet_code = (\n    SELECT code FROM zip_outlets o\n    JOIN zip_cities c ON c.id = o.city_id\n    WHERE c.name = u.city AND o.name = u.shop\n    LIMIT 1\n  )\n  OR p.outlet_code = CONCAT('profi-', LOWER(REPLACE(u.city, ' ', '-')))\n)\nAND (p.price IS DISTINCT FROM u.price_rub OR p.stock_stars IS DISTINCT FROM u.stock_stars);",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [1000, 0],
+      "id": "save-history",
+      "name": "4. Сохраняем историю",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- UPSERT цен\nWITH outlet_map AS (\n  SELECT \n    u.article,\n    u.price_rub,\n    u.stock_stars,\n    u.city,\n    u.shop,\n    COALESCE(\n      (SELECT o.code FROM zip_outlets o\n       JOIN zip_cities c ON c.id = o.city_id\n       WHERE c.name = u.city AND o.name = u.shop\n       LIMIT 1),\n      CONCAT('profi-', LOWER(REPLACE(REPLACE(u.city, ' ', '-'), 'ё', 'е')))\n    ) AS outlet_code\n  FROM public.profi_price_for_update u\n  WHERE u.article IS NOT NULL\n)\nINSERT INTO public.profi_prices (nomenclature_id, outlet_code, price, stock_stars, in_stock, loaded_at)\nSELECT \n  n.id,\n  om.outlet_code,\n  om.price_rub,\n  om.stock_stars,\n  om.stock_stars IS NOT NULL AND om.stock_stars > 0,\n  NOW()\nFROM outlet_map om\nJOIN public.profi_nomenclature n ON n.article = om.article\nON CONFLICT (nomenclature_id, outlet_code) DO UPDATE SET\n  price = EXCLUDED.price,\n  stock_stars = EXCLUDED.stock_stars,\n  in_stock = EXCLUDED.in_stock,\n  loaded_at = NOW();",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [1240, 0],
+      "id": "upsert-prices",
+      "name": "5. UPSERT цен",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- Статистика\nSELECT \n  (SELECT COUNT(*) FROM profi_nomenclature) AS total_nomenclature,\n  (SELECT COUNT(*) FROM profi_prices) AS total_prices,\n  (SELECT COUNT(DISTINCT outlet_code) FROM profi_prices) AS outlets_with_prices,\n  (SELECT COUNT(*) FROM profi_price_history WHERE recorded_at > NOW() - INTERVAL '1 hour') AS history_last_hour;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [1480, 0],
+      "id": "stats",
+      "name": "6. Статистика",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [[{"node": "Парсим все прайсы", "type": "main", "index": 0}]]
+    },
+    "Парсим все прайсы": {
+      "main": [[{"node": "1. Нормализация", "type": "main", "index": 0}]]
+    },
+    "1. Нормализация": {
+      "main": [[{"node": "2. Удаляем без артикула", "type": "main", "index": 0}]]
+    },
+    "2. Удаляем без артикула": {
+      "main": [[{"node": "3. UPSERT номенклатуры", "type": "main", "index": 0}]]
+    },
+    "3. UPSERT номенклатуры": {
+      "main": [[{"node": "4. Сохраняем историю", "type": "main", "index": 0}]]
+    },
+    "4. Сохраняем историю": {
+      "main": [[{"node": "5. UPSERT цен", "type": "main", "index": 0}]]
+    },
+    "5. UPSERT цен": {
+      "main": [[{"node": "6. Статистика", "type": "main", "index": 0}]]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "instanceId": "530b9caf6d3d0554c7f433b384abca845599b24ecefd5677a8384fe2f03fd69b"
+  }
+}

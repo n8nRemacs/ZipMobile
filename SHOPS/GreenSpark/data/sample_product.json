@@ -1,0 +1,41 @@
+{
+  "id": 130659,
+  "name": "Дисплей для Doogee S40 + тачскрин (черный)",
+  "url": "/catalog/komplektuyushchie_dlya_remonta/zapchasti_dlya_mobilnykh_ustroystv/displei_2/dlya_doogee/displey_dlya_doogee_s40_tachskrin_chernyy.html",
+  "isNew": false,
+  "isHit": false,
+  "picture": {
+    "original": "https://green-spark.ru/upload/img_cache/catalog/small/b77/displeiy_dlia_doogee_s40_tachskrin_chernyiy_gs-00015762_1.jpg",
+    "webp": "https://green-spark.ru/upload/img_cache/catalog/small/b77/displeiy_dlia_doogee_s40_tachskrin_chernyiy_gs-00015762_1.webp"
+  },
+  "quantity": "none",
+  "additionalQuantity": "none",
+  "deliveryTimeFromAdditional": 10,
+  "showOrderFormForAdditional": false,
+  "prices": [
+    {
+      "id": "607580",
+      "name": "Розница",
+      "priceWithoutDiscount": "1250.00",
+      "priceWithoutDiscountFormatted": "1 250 ₽",
+      "price": 1250,
+      "priceFormatted": "1 250 ₽",
+      "discountDiff": 0,
+      "discountDiffFormatted": "0 ₽",
+      "discountPercent": 0
+    },
+    {
+      "id": "607578",
+      "name": "Тариф Грин 5",
+      "priceWithoutDiscount": "1140.00",
+      "priceWithoutDiscountFormatted": "1 140 ₽",
+      "price": 1140,
+      "priceFormatted": "1 140 ₽",
+      "discountDiff": 0,
+      "discountDiffFormatted": "0 ₽",
+      "discountPercent": 0
+    }
+  ],
+  "availableStores": [],
+  "transit": null
+}

@@ -1,0 +1,435 @@
+[
+  {
+    "name": "iPad Pro 13 (2025)",
+    "url": "https://www.gsmarena.com/apple_ipad_pro_13_5g_(2025)-14233.php",
+    "parsed_at": "2026-01-20T21:26:52.186049",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - cellular model only",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100 - cellular model only",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 11, 12, 13, 14, 17, 18, 19, 20, 21, 25, 26, 28, 29, 30, 32, 34, 38, 39, 40, 41, 42, 48, 66, 71 - A3361 - cellular model only",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 12, 14, 20, 25, 26, 28, 29, 30, 38, 40, 41, 48, 66, 70, 71, 75, 77, 78, 79 SA/NSA/Sub6 - A3361, A3362 - cellular model only",
+      "speed": "HSPA, LTE, 5G - cellular model only"
+    },
+    "launch": {
+      "announced": "2025, October 16",
+      "status": "Available. Released 2025, October 22"
+    },
+    "body": {
+      "dimensions": "281.6 x 215.5 x 5.1 mm (11.09 x 8.48 x 0.20 in)",
+      "weight": "579 g (Wi-Fi), 582 g (5G) (1.28 lb)",
+      "build": "Glass front, aluminum back, aluminum frame",
+      "sim": "eSIM- cellular model only"
+    },
+    "display": {
+      "type": "Ultra Retina Tandem OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (HBM), 1600 nits (peak)",
+      "size": "13.0 inches, 523.4 cm2(~86.2% screen-to-body ratio)",
+      "resolution": "2064 x 2752 pixels, 4:3 ratio (~265 ppi density)",
+      "protection": "Scratch-resistant glass, oleophobic coating, Mohs level 4"
+    },
+    "platform": {
+      "os": "iPadOS 26, upgradable to iPadOS 26.2",
+      "chipset": "Apple M5",
+      "cpu": "9-core (3 performance cores, 6 efficiency cores) - 256/512GB models10-core (4 performance cores, 6 efficiency cores) - 1/2TB models",
+      "gpu": "Apple GPU (10-core graphics)"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 16GB RAM, 2TB 16GB RAM"
+    },
+    "main_camera": {
+      "single": "12 MP, f/1.8, (wide), dual pixel PDAFTOF 3D LiDAR scanner (depth)",
+      "features": "Quad-LED dual-tone flash, HDR",
+      "video": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps; gyro-EIS, ProRes (4K, 1080p)"
+    },
+    "selfie_camera": {
+      "single": "12 MP, f/2.0, 122˚ (ultrawide)",
+      "features": "Face detection, HDR, panorama",
+      "video": "1080p@25/30/60fps, gyro-EIS, HDR"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers (4 speakers)",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, dual-band, hotspot",
+      "bluetooth": "6.0, A2DP, LE, EDR",
+      "positioning": "GPS, GLONASS, GALILEO, QZSS (Wi‑Fi + Cellular model only)",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 4 (Thunderbolt 3), DisplayPort, magnetic connector"
+    },
+    "features": {
+      "sensors": "Face ID, accelerometer, gyro, compass, barometer"
+    },
+    "battery": {
+      "type": "Li-Po 10290 mAh",
+      "charging": "50% in 30 min"
+    },
+    "misc": {
+      "colors": "Silver, Space Black",
+      "models": "A3360, A3361, A3362",
+      "price": "About 1450 EUR"
+    },
+    "eu_label": {
+      "energy": "Class G",
+      "battery": "76:00h endurance, 1000 cycles",
+      "free_fall": "Class E (40 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-13-2024.jpg",
+    "price": "About 1450 EUR",
+    "brand": "Apple"
+  },
+  {
+    "name": "iPad Pro 11 (2025)",
+    "url": "https://www.gsmarena.com/apple_ipad_pro_11_5g_(2025)-14234.php",
+    "parsed_at": "2026-01-20T21:26:54.070911",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - cellular model only",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100 - cellular model only",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 11, 12, 13, 14, 17, 18, 19, 20, 21, 25, 26, 28, 29, 30, 32, 34, 38, 39, 40, 41, 42, 48, 66, 71 - A3358 - cellular model only",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 12, 14, 20, 25, 26, 28, 29, 30, 38, 40, 41, 48, 66, 70, 71, 75, 77, 78, 79 SA/NSA/Sub6 - A3358, A3359 - cellular model only",
+      "speed": "HSPA, LTE, 5G - cellular model only"
+    },
+    "launch": {
+      "announced": "2025, October 16",
+      "status": "Available. Released 2025, October 22"
+    },
+    "body": {
+      "dimensions": "249.7 x 177.5 x 5.3 mm (9.83 x 6.99 x 0.21 in)",
+      "weight": "444 g (Wi-Fi), 446 g (5G) (1.03 lb)",
+      "build": "Glass front, aluminum back, aluminum frame",
+      "sim": "eSIM- cellular model only"
+    },
+    "display": {
+      "type": "Ultra Retina Tandem OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (HBM), 1600 nits (peak)",
+      "size": "11.0 inches, 364.8 cm2(~82.3% screen-to-body ratio)",
+      "resolution": "1668 x 2420 pixels, 3:2 ratio (~267 ppi density)",
+      "protection": "Scratch-resistant glass, oleophobic coating, Mohs level 4"
+    },
+    "platform": {
+      "os": "iPadOS 26, upgradable to iPadOS 26.2",
+      "chipset": "Apple M5",
+      "cpu": "9-core (3 performance cores, 6 efficiency cores) - 256/512GB models10-core (4 performance cores, 6 efficiency cores) - 1/2TB models",
+      "gpu": "Apple GPU (10-core graphics)"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 16GB RAM, 2TB 16GB RAM"
+    },
+    "main_camera": {
+      "single": "12 MP, f/1.8, (wide), dual pixel PDAFTOF 3D LiDAR scanner (depth)",
+      "features": "Quad-LED dual-tone flash, HDR",
+      "video": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps; gyro-EIS, ProRes (4K, 1080p)"
+    },
+    "selfie_camera": {
+      "single": "12 MP, f/2.0, 122˚ (ultrawide)",
+      "features": "Face detection, HDR, panorama",
+      "video": "1080p@25/30/60fps, gyro-EIS, HDR"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers (4 speakers)",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, dual-band, hotspot",
+      "bluetooth": "6.0, A2DP, LE, EDR",
+      "positioning": "GPS, GLONASS, GALILEO, QZSS (Wi‑Fi + Cellular model only)",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 4 (Thunderbolt 3), DisplayPort, magnetic connector"
+    },
+    "features": {
+      "sensors": "Face ID, accelerometer, gyro, compass, barometer"
+    },
+    "battery": {
+      "type": "Li-Po 8160 mAh",
+      "charging": "50% in 30 min"
+    },
+    "misc": {
+      "colors": "Silver, Space Black",
+      "models": "A3357, A3358, A3359",
+      "price": "About 1100 EUR"
+    },
+    "eu_label": {
+      "energy": "Class G",
+      "battery": "71:00h endurance, 1000 cycles",
+      "free_fall": "Class E (47 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-ipad-pro-11-2024.jpg",
+    "price": "About 1100 EUR",
+    "brand": "Apple"
+  },
+  {
+    "name": "iPhone 17 Pro Max",
+    "url": "https://www.gsmarena.com/apple_iphone_17_pro_max-13964.php",
+    "parsed_at": "2026-01-20T21:26:55.996131",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / EVDO / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 32, 34, 38, 39, 40, 41, 42, 48, 53, 66 - A3526",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 12, 20, 25, 26, 28, 30, 38, 40, 41, 48, 53, 66, 70, 75, 77, 78, 79 SA/NSA/Sub6 - A3526",
+      "speed": "HSPA, LTE, 5G, EV-DO Rev.A 3.1 Mbps"
+    },
+    "launch": {
+      "announced": "2025, September 09",
+      "status": "Available. Released 2025, September 19"
+    },
+    "body": {
+      "dimensions": "163.4 x 78 x 8.8 mm (6.43 x 3.07 x 0.35 in)",
+      "weight": "233 g (8.22 oz)",
+      "build": "Glass front (Ceramic Shield 2), aluminum alloy frame, aluminum alloy back/ glass back (Ceramic Shield)",
+      "sim": "· Nano-SIM +eSIM+ eSIM (max 2 at a time; International)· eSIM + eSIM (8 or more, max 2 at a time; USA)· Nano-SIM + Nano-SIM (China)"
+    },
+    "display": {
+      "type": "LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 1600 nits (HBM), 3000 nits (peak)",
+      "size": "6.9 inches, 115.6 cm2(~90.7% screen-to-body ratio)",
+      "resolution": "1320 x 2868 pixels, 19.5:9 ratio (~460 ppi density)",
+      "protection": "Ceramic Shield 2, Mohs level 5"
+    },
+    "platform": {
+      "os": "iOS 26, upgradable to iOS 26.2",
+      "chipset": "Apple A19 Pro (3 nm)",
+      "cpu": "Hexa-core (2x4.26 GHz + 4xX.X GHz)",
+      "gpu": "Apple GPU (6-core graphics)"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM, 2TB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, f/1.8, 24mm (wide), 1/1.28\", 1.22µm, dual pixel PDAF, sensor-shift OIS48 MP, f/2.8, 100mm (periscope telephoto), 1/2.55\", 0.7µm, PDAF, 3D sensor‑shift OIS, 4x optical zoom48 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 0.7µm, PDAFTOF 3D LiDAR scanner (depth)",
+      "features": "Dual-LED dual-tone flash, HDR (photo/panorama)",
+      "video": "4K@24/25/30/60/100/120fps, 1080p@25/30/60/120/240fps, 10-bit HDR, Dolby Vision HDR (up to 120fps), ProRes, ProRes RAW (up to 120fps), Apple Log 2, 3D (spatial) video/audio, stereo sound rec."
+    },
+    "selfie_camera": {
+      "single": "18 MP multi-aspect, f/1.9, 20mm (ultrawide), PDAFSL 3D, (depth/biometrics sensor)",
+      "features": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec., ProRes RAW, Apple Log 2",
+      "video": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, hotspot",
+      "bluetooth": "6.0, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, GALILEO, BDS, QZSS, NavIC",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 3.2 Gen 2, DisplayPort"
+    },
+    "features": {
+      "sensors": "Face ID, accelerometer, gyro, proximity, compass, barometer"
+    },
+    "battery": {
+      "type": "Market-dependent versions:· Li-Ion 4823 mAh - Nano SIM model· Li-Ion 5088 mAh - eSIM only model",
+      "charging": "Wired, PD3.2, AVS, 50% in 20 min25W wireless MagSafe/Qi2, 50% in 30 min (15W - China)4.5W reverse wired"
+    },
+    "misc": {
+      "colors": "Silver, Cosmic Orange, Deep Blue",
+      "models": "iPhone18,2, A3526, A3257, A3527, A3525",
+      "sar": "1.19 W/kg (head) 1.19 W/kg (body)",
+      "sar_eu": "1.49 W/kg (head) 1.49 W/kg (body)",
+      "price": "£ 1,149.99 / € 1,250.00 / $ 1,419.00"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 2600583 (v10)GeekBench: 10118 (v6)3DMark: 6010 (Wild Life Extreme)",
+      "display": "1000 nits max brightness (measured)",
+      "loudspeaker": "-26.2 LUFS (Good)",
+      "battery": "Active use score 17:58h"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "53:00h endurance, 1000 cycles",
+      "free_fall": "Class B (180 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro-max.jpg",
+    "price": "£ 1,149.99 / € 1,250.00 / $ 1,419.00",
+    "brand": "Apple"
+  },
+  {
+    "name": "iPhone 17 Pro",
+    "url": "https://www.gsmarena.com/apple_iphone_17_pro-14049.php",
+    "parsed_at": "2026-01-20T21:26:58.023474",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / EVDO / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 32, 34, 38, 39, 40, 41, 42, 48, 53, 66 - A3523",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 12, 20, 25, 26, 28, 30, 38, 40, 41, 48, 53, 66, 70, 75, 77, 78, 79 SA/NSA/Sub6 - A3523",
+      "speed": "HSPA, LTE, 5G, EV-DO Rev.A 3.1 Mbps"
+    },
+    "launch": {
+      "announced": "2025, September 09",
+      "status": "Available. Released 2025, September 19"
+    },
+    "body": {
+      "dimensions": "150 x 71.9 x 8.8 mm (5.91 x 2.83 x 0.35 in)",
+      "weight": "206 g (7.27 oz)",
+      "build": "Glass front (Ceramic Shield 2), aluminum alloy frame, aluminum alloy back/ glass back (Ceramic Shield)",
+      "sim": "· Nano-SIM +eSIM+ eSIM (max 2 at a time; International)· eSIM + eSIM (8 or more, max 2 at a time; USA)· Nano-SIM + Nano-SIM (China)"
+    },
+    "display": {
+      "type": "LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 1600 nits (HBM), 3000 nits (peak)",
+      "size": "6.3 inches, 96.4 cm2(~89.4% screen-to-body ratio)",
+      "resolution": "1206 x 2622 pixels, 19.5:9 ratio (~460 ppi density)",
+      "protection": "Ceramic Shield 2, Mohs level 5"
+    },
+    "platform": {
+      "os": "iOS 26, upgradable to iOS 26.2",
+      "chipset": "Apple A19 Pro (3 nm)",
+      "cpu": "Hexa-core (2x4.26 GHz + 4xX.X GHz)",
+      "gpu": "Apple GPU (6-core graphics)"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, f/1.8, 24mm (wide), 1/1.28\", 1.22µm, dual pixel PDAF, sensor-shift OIS48 MP, f/2.8, 100mm (periscope telephoto), 1/2.55\", 0.7µm, PDAF, 3D sensor‑shift OIS, 4x optical zoom48 MP, f/2.2, 13mm, 120˚ (ultrawide), 1/2.55\", 0.7µm, PDAFTOF 3D LiDAR scanner (depth)",
+      "features": "Dual-LED dual-tone flash, HDR (photo/panorama)",
+      "video": "4K@24/25/30/60/100/120fps, 1080p@25/30/60/120/240fps, 10-bit HDR, Dolby Vision HDR (up to 120fps), ProRes, ProRes RAW (up to 120fps), Apple Log 2, 3D (spatial) video/audio, stereo"
+    },
+    "selfie_camera": {
+      "single": "18 MP multi-aspect, f/1.9, 20mm (ultrawide), PDAFSL 3D, (depth/biometrics sensor)",
+      "features": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec., ProRes RAW, Apple Log 2",
+      "video": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, hotspot",
+      "bluetooth": "6.0, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, GALILEO, BDS, QZSS, NavIC",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 3.2 Gen 2, DisplayPort"
+    },
+    "features": {
+      "sensors": "Face ID, accelerometer, gyro, proximity, compass, barometer"
+    },
+    "battery": {
+      "type": "Market-dependent versions:· Li-Ion 3998 mAh - Nano SIM model· Li-Ion 4252 mAh - eSIM only model",
+      "charging": "Wired, PD3.2, AVS, 50% in 20 min25W wireless MagSafe/Qi2, 50% in 30 min (15W - China)4.5W reverse wired"
+    },
+    "misc": {
+      "colors": "Silver, Cosmic Orange, Deep Blue",
+      "models": "iPhone18,1, A3256, A3523, A3522, A3524",
+      "sar": "1.19 W/kg (head) 1.19 W/kg (body)",
+      "sar_eu": "1.49 W/kg (head) 1.49 W/kg (body)",
+      "price": "£ 998.62 / € 1,176.59 / $ 1,259.97"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 2430575 (v10)GeekBench: 9923 (v6)3DMark: 5868 (Wild Life Extreme)",
+      "display": "1012 nits max brightness (measured)",
+      "loudspeaker": "-28.9 LUFS (Average)",
+      "battery": "Active use score 15:23h"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "47:00h endurance, 1000 cycles",
+      "free_fall": "Class B (180 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-17-pro.jpg",
+    "price": "£ 998.62 / € 1,176.59 / $ 1,259.97",
+    "brand": "Apple"
+  },
+  {
+    "name": "iPhone Air",
+    "url": "https://www.gsmarena.com/apple_iphone_17_air-13502.php",
+    "parsed_at": "2026-01-20T21:27:00.825172",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / EVDO / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 32, 34, 38, 39, 40, 41, 42, 48, 53, 66 - A3517",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 12, 20, 25, 26, 28, 30, 38, 40, 41, 48, 53, 66, 70, 75, 77, 78, 79 SA/NSA/Sub6 - A3517",
+      "speed": "HSPA, LTE, 5G, EV-DO Rev.A 3.1 Mbps"
+    },
+    "launch": {
+      "announced": "2025, September 09",
+      "status": "Available. Released 2025, September 19"
+    },
+    "body": {
+      "dimensions": "156.2 x 74.7 x 5.6 mm (6.15 x 2.94 x 0.22 in)",
+      "weight": "165 g (5.82 oz)",
+      "build": "Glass front (Ceramic Shield 2), titanium frame (grade 5), glass back (Ceramic Shield)",
+      "sim": "eSIM+ eSIM (8 or more, max 2 at a time)"
+    },
+    "display": {
+      "type": "LTPO Super Retina XDR OLED, 120Hz, HDR10, Dolby Vision, 1000 nits (typ), 1600 nits (HBM), 3000 nits (peak)",
+      "size": "6.5 inches, 104.9 cm2(~89.9% screen-to-body ratio)",
+      "resolution": "1260 x 2736 pixels, 19.5:9 ratio (~460 ppi density)",
+      "protection": "Ceramic Shield 2, Mohs level 5"
+    },
+    "platform": {
+      "os": "iOS 26, upgradable to iOS 26.2",
+      "chipset": "Apple A19 Pro (3 nm)",
+      "cpu": "Hexa-core (2x4.26 GHz + 4xX.X GHz)",
+      "gpu": "Apple GPU (5-core graphics)"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 12GB RAM"
+    },
+    "main_camera": {
+      "single": "48 MP, f/1.6, 26mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, sensor-shift OIS",
+      "features": "Dual-LED dual-tone flash, HDR (photo/panorama)",
+      "video": "4K@24/25/30/60fps, 1080p@25/30/60/120/240fps, HDR, Dolby Vision HDR (up to 60fps), stereo sound rec."
+    },
+    "selfie_camera": {
+      "single": "18 MP multi-aspect, f/1.9, 20mm (ultrawide), PDAFSL 3D, (depth/biometrics sensor)",
+      "features": "HDR, Dolby Vision HDR, 3D (spatial) audio, stereo sound rec.",
+      "video": "4K@24/25/30/60fps, 1080p@25/30/60/120fps, gyro-EIS"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e/7, tri-band, hotspot",
+      "bluetooth": "6.0, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, QZSS, BDS, NavIC",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Face ID, accelerometer, gyro, proximity, compass, barometer"
+    },
+    "battery": {
+      "type": "Li-Ion 3149 mAh",
+      "charging": "Wired, PD2.0, 50% in 30 min20 wireless MagSafe/Qi2, 50% in 30 min (15W - China)4.5W reverse wired"
+    },
+    "misc": {
+      "colors": "Space Black, Cloud White, Light Gold, Sky Blue",
+      "models": "iPhone18,4, A3517, A3260, A3518, A3516",
+      "sar": "1.19 W/kg (head) 1.19 W/kg (body)",
+      "sar_eu": "1.49 W/kg (head) 1.49 W/kg (body)",
+      "price": "£ 713.99 / € 869.18 / $ 849.00"
+    },
+    "our_tests": {
+      "display": "998 nits max brightness (measured)",
+      "loudspeaker": "-29.8 LUFS (Average)",
+      "battery": "Active use score 12:44h"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "40:00h endurance, 1000 cycles",
+      "free_fall": "Class B (180 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-air.jpg",
+    "price": "£ 713.99 / € 869.18 / $ 849.00",
+    "brand": "Apple"
+  }
+]

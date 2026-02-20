@@ -1,0 +1,342 @@
+{
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        3136,
+        -848
+      ],
+      "id": "0e500bd8-b60c-4f56-8f39-be992373e79e",
+      "name": "Start"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- ==========================================\n-- 0. Создаём tmp таблицу для нормализации\n-- ==========================================\n\nDROP TABLE IF EXISTS public.profi_nomenclature_tmp;\n\nCREATE TABLE public.profi_nomenclature_tmp (\n    id SERIAL PRIMARY KEY,\n    article TEXT,\n    barcode TEXT,\n    name TEXT,\n    \n    -- Нормализованные поля (будем заполнять)\n    brand VARCHAR(100),\n    model VARCHAR(200),\n    part_type VARCHAR(100),\n    \n    -- Исходные данные (копируем как есть)\n    brand_raw TEXT,\n    model_raw TEXT,\n    part_type_raw TEXT,\n    \n    -- Метаданные\n    category TEXT,\n    product_url TEXT,\n    \n    updated_at TIMESTAMPTZ DEFAULT NOW()\n);\n\nSELECT 'Таблица profi_nomenclature_tmp создана' as status;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        3344,
+        -848
+      ],
+      "id": "1a4c74ca-fc9a-4657-b7e2-69c9f30f228e",
+      "name": "0. Создаём tmp таблицу",
+      "credentials": {
+        "postgres": {
+          "id": "FqVzz0Keo78hRzQ9",
+          "name": "Profi_DB"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- Копируем данные из profi_nomenclature в tmp\n-- brand -> brand_raw, brand\n-- model -> model_raw, model  \n-- part_type -> part_type_raw, part_type\n-- Данные из parser.py (парсит Excel по font-size)\n\nINSERT INTO public.profi_nomenclature_tmp (\n    article, barcode, name,\n    brand, model, part_type,\n    brand_raw, model_raw, part_type_raw,\n    category, product_url,\n    updated_at\n)\nSELECT\n    article,\n    NULL as barcode,\n    name,\n    brand,\n    model,\n    part_type,\n    brand AS brand_raw,\n    model AS model_raw,\n    part_type AS part_type_raw,\n    category,\n    product_url,\n    NOW() as updated_at\nFROM public.profi_nomenclature\nWHERE article IS NOT NULL AND TRIM(article) != '';\n\nSELECT COUNT(*) as total_rows FROM public.profi_nomenclature_tmp;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        3568,
+        -848
+      ],
+      "id": "4a823e18-7ab5-40b5-a520-a0981e90c7e6",
+      "name": "0.1 Копируем из profi_nomenclature",
+      "credentials": {
+        "postgres": {
+          "id": "FqVzz0Keo78hRzQ9",
+          "name": "Profi_DB"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- 2.1 Удаляем все что не запчасти\n-- Оставляем только:\n--   - Запчасти для Apple\n--   - Запчасти для сотовых\n--   - АКБ для мобильной техники (из аксессуаров)\n\nDELETE FROM public.profi_nomenclature_tmp\nWHERE NOT (\n    (brand_raw = '3. АКСЕССУАРЫ' AND model_raw = 'АКБ ДЛЯ МОБИЛЬНОЙ ТЕХНИКИ')\n    OR brand_raw IN ('2. ЗАПЧАСТИ ДЛЯ СОТОВЫХ', '1. ЗАПЧАСТИ ДЛЯ APPLE')\n);\n\nSELECT \n    'После фильтрации' as step,\n    COUNT(*) as remaining_rows,\n    COUNT(*) FILTER (WHERE brand_raw = '1. ЗАПЧАСТИ ДЛЯ APPLE') as apple_count,\n    COUNT(*) FILTER (WHERE brand_raw = '2. ЗАПЧАСТИ ДЛЯ СОТОВЫХ') as android_count,\n    COUNT(*) FILTER (WHERE brand_raw = '3. АКСЕССУАРЫ') as akb_count\nFROM public.profi_nomenclature_tmp;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        3776,
+        -848
+      ],
+      "id": "70c18855-c94d-4625-9a8f-2d7e1a6b1847",
+      "name": "2.1 Удаляем не запчасти",
+      "credentials": {
+        "postgres": {
+          "id": "FqVzz0Keo78hRzQ9",
+          "name": "Profi_DB"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- 2.2 Нормализация brand и model\n-- brand_raw: \"1. ЗАПЧАСТИ ДЛЯ APPLE\" -> brand: \"Apple\"\n-- model_raw: \"ЗАПЧАСТИ ДЛЯ APPLE IPHONE\" -> model: \"iPhone\"\n\nUPDATE public.profi_nomenclature_tmp\nSET \n    brand = CASE \n        WHEN brand_raw = '1. ЗАПЧАСТИ ДЛЯ APPLE' THEN 'Apple'\n        WHEN brand_raw = '2. ЗАПЧАСТИ ДЛЯ СОТОВЫХ' THEN 'Android'\n        WHEN brand_raw = '3. АКСЕССУАРЫ' THEN 'АКБ'\n        ELSE brand_raw\n    END,\n    model = CASE\n        WHEN model_raw = 'ЗАПЧАСТИ ДЛЯ APPLE IPAD' THEN 'iPad'\n        WHEN model_raw = 'ЗАПЧАСТИ ДЛЯ APPLE IPHONE' THEN 'iPhone'\n        WHEN model_raw = 'ЗАПЧАСТИ ДЛЯ APPLE WATCH' THEN 'Apple Watch'\n        WHEN model_raw = 'ЗАПЧАСТИ ДЛЯ APPLE MACBOOK' THEN 'MacBook'\n        WHEN model_raw = 'ЗАПЧАСТИ ДЛЯ APPLE AIRPODS' THEN 'AirPods'\n        ELSE regexp_replace(model_raw, '^ЗАПЧАСТИ ДЛЯ\\s+', '', 'gi')\n    END;\n\nSELECT \n    brand, \n    COUNT(*) as cnt \nFROM public.profi_nomenclature_tmp \nGROUP BY brand \nORDER BY cnt DESC;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        4000,
+        -848
+      ],
+      "id": "6a1cc525-e65b-4548-b03f-940ed6488276",
+      "name": "2.2 Нормализация brand/model",
+      "credentials": {
+        "postgres": {
+          "id": "FqVzz0Keo78hRzQ9",
+          "name": "Profi_DB"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- 2.3 Расставляем тип запчасти для iPhone\n-- Обрезаем part_type до слова \"ДЛЯ\"\n-- \"Дисплеи для iPhone 14\" -> \"Дисплеи\"\n\nWITH dla_data AS (\n    SELECT \n        id,\n        part_type,\n        (LENGTH(UPPER(part_type)) - LENGTH(REPLACE(UPPER(part_type), 'ДЛЯ', ''))) / 3 as dla_count,\n        POSITION('ДЛЯ' IN UPPER(part_type)) as first_dla_pos\n    FROM public.profi_nomenclature_tmp\n    WHERE model ILIKE '%iPhone%' \n      AND part_type IS NOT NULL\n      AND part_type ILIKE '%ДЛЯ%'\n)\nUPDATE public.profi_nomenclature_tmp p\nSET part_type = CASE \n    WHEN d.dla_count >= 1 AND d.first_dla_pos > 1 \n    THEN TRIM(SUBSTRING(d.part_type FROM 1 FOR d.first_dla_pos - 1))\n    ELSE p.part_type\nEND\nFROM dla_data d\nWHERE p.id = d.id;\n\nSELECT 'iPhone part_type обработан' as status, COUNT(*) as affected\nFROM public.profi_nomenclature_tmp\nWHERE model ILIKE '%iPhone%';",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        4224,
+        -848
+      ],
+      "id": "deaebcdc-2acb-471d-9acc-917b80687871",
+      "name": "2.3 Тип запчасти iPhone",
+      "credentials": {
+        "postgres": {
+          "id": "FqVzz0Keo78hRzQ9",
+          "name": "Profi_DB"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- 2.4 Перенос model -> brand (исправление структуры)\n-- После нормализации в model лежит бренд (iPhone, iPad)\n-- Переносим его в brand, model обнуляем\n\n-- Для Apple: brand='Apple', model='iPhone' -> brand='iPhone', model=NULL\nUPDATE public.profi_nomenclature_tmp\nSET \n    brand = TRIM(model),\n    model = NULL\nWHERE brand = 'Apple'\n  AND model IS NOT NULL \n  AND TRIM(model) != '';\n\n-- Для Android: brand='Android', model='SAMSUNG' -> brand='SAMSUNG', model=NULL  \nUPDATE public.profi_nomenclature_tmp\nSET \n    brand = TRIM(model),\n    model = NULL\nWHERE brand = 'Android'\n  AND model IS NOT NULL \n  AND TRIM(model) != '';\n\nSELECT \n    brand, \n    COUNT(*) as cnt \nFROM public.profi_nomenclature_tmp \nGROUP BY brand \nORDER BY cnt DESC\nLIMIT 20;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        4448,
+        -848
+      ],
+      "id": "2dc29d70-d093-48fc-9b7b-a70d3f6363e5",
+      "name": "2.4 Перенос model в brand",
+      "credentials": {
+        "postgres": {
+          "id": "FqVzz0Keo78hRzQ9",
+          "name": "Profi_DB"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- 2.6 АКБ для мобильной техники\n-- Ищем model_raw = 'АКБ ДЛЯ МОБИЛЬНОЙ ТЕХНИКИ'\n-- Из part_type_raw убираем ведущие 'АКБ ' и 'ДЛЯ '\n-- Результат -> brand\n-- part_type = 'АКБ'\n--\n-- Пример: part_type_raw='АКБ XIAOMI' -> brand='XIAOMI', part_type='АКБ'\n-- Пример: part_type_raw='АКБ ДЛЯ SAMSUNG' -> brand='SAMSUNG', part_type='АКБ'\n\nUPDATE public.profi_nomenclature_tmp\nSET \n    brand = TRIM(\n        REGEXP_REPLACE(\n            REGEXP_REPLACE(part_type_raw, '^АКБ\\s+', '', 'i'),\n            '^ДЛЯ\\s+', '', 'i'\n        )\n    ),\n    part_type = 'АКБ'\nWHERE model_raw = 'АКБ ДЛЯ МОБИЛЬНОЙ ТЕХНИКИ';\n\nSELECT 'АКБ для мобильной техники обработаны' as status,\n    COUNT(*) FILTER (WHERE model_raw = 'АКБ ДЛЯ МОБИЛЬНОЙ ТЕХНИКИ') as total,\n    COUNT(DISTINCT brand) FILTER (WHERE model_raw = 'АКБ ДЛЯ МОБИЛЬНОЙ ТЕХНИКИ') as brands\nFROM public.profi_nomenclature_tmp;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        4656,
+        -848
+      ],
+      "id": "a9dd3484-e72c-4b64-834d-18bdcb58a834",
+      "name": "2.6 АКБ для Android",
+      "credentials": {
+        "postgres": {
+          "id": "FqVzz0Keo78hRzQ9",
+          "name": "Profi_DB"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- 2.7 Нормализация \"УНИВЕРСАЛЬНЫЕ ЗАПЧАСТИ\" -> \"УНИВЕРСАЛЬНЫЙ\"\n\nUPDATE public.profi_nomenclature_tmp\nSET brand = 'УНИВЕРСАЛЬНЫЙ'\nWHERE brand = 'УНИВЕРСАЛЬНЫЕ ЗАПЧАСТИ';\n\n-- Также исправляем другие вариации\nUPDATE public.profi_nomenclature_tmp\nSET brand = 'УНИВЕРСАЛЬНЫЙ'\nWHERE brand ILIKE '%УНИВЕРСАЛ%' \n  AND brand != 'УНИВЕРСАЛЬНЫЙ';\n\nSELECT 'Универсальные нормализованы' as status,\n    COUNT(*) FILTER (WHERE brand = 'УНИВЕРСАЛЬНЫЙ') as universal_count\nFROM public.profi_nomenclature_tmp;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        4880,
+        -848
+      ],
+      "id": "aa51b09f-d1ae-4cbf-b2d8-08eaa7a2e31c",
+      "name": "2.7 УНИВЕРСАЛЬНЫЙ",
+      "credentials": {
+        "postgres": {
+          "id": "FqVzz0Keo78hRzQ9",
+          "name": "Profi_DB"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- 2.9 Приводим part_type к единому виду\n\nUPDATE public.profi_nomenclature_tmp\nSET part_type = CASE TRIM(UPPER(part_type))\n    WHEN 'ДИСПЛЕИ' THEN 'ДИСПЛЕЙ'\n    WHEN 'ДИСПЛЕИ INCELL' THEN 'ДИСПЛЕЙ'\n    WHEN 'ДИСПЛЕИ OLED' THEN 'ДИСПЛЕЙ'\n    WHEN 'ДИСПЛЕИ ORIGINAL' THEN 'ДИСПЛЕЙ'\n    WHEN 'ДИСПЛЕИ PREMIUM' THEN 'ДИСПЛЕЙ'\n    WHEN 'ДИСПЛЕИ TIANMA' THEN 'ДИСПЛЕЙ'\n    WHEN 'КАМЕРЫ' THEN 'КАМЕРА'\n    WHEN 'ДЕРЖАТЕЛИ SIM' THEN 'SIM-ЛОТОК'\n    WHEN 'ДЕРЖАТЕЛИ, КОННЕКТОРЫ SIM/КАРТЫ ПАМЯТИ' THEN 'SIM-ЛОТОК'\n    WHEN 'КОННЕКТОРЫ SIM/КАРТЫ ПАМЯТИ' THEN 'SIM-ЛОТОК'\n    WHEN 'ДЖОЙСТИКИ' THEN 'ДЖОЙСТИК'\n    WHEN 'ДИНАМИК' THEN 'ДИНАМИК'\n    WHEN 'ЗВОНКИ, ВИБРОЗВОНКИ, ДИНАМИКИ' THEN 'ДИНАМИК'\n    WHEN 'ЗВОНКИ, ДИНАМИКИ' THEN 'ДИНАМИК'\n    WHEN 'ЗВОНКИ, ДИНАМИКИ, ВИБРОМОТОРЫ' THEN 'ДИНАМИК'\n    WHEN 'ЗАГЛУШКИ' THEN 'ЗАГЛУШКА'\n    WHEN 'ЗАДНИЕ КРЫШКИ' THEN 'КРЫШКА ЗАДНЯЯ'\n    WHEN 'ЗАДНЯЯ КРЫШКИ' THEN 'КРЫШКА ЗАДНЯЯ'\n    WHEN 'КНОПКИ' THEN 'КНОПКА'\n    WHEN 'КНОПКИ ВКЛЮЧЕНИЯ' THEN 'КНОПКА'\n    WHEN 'КНОПКИ ВКЛЮЧЕНИЯ, ТОЛКАТЕЛИ' THEN 'КНОПКА'\n    WHEN 'КОРПУСА' THEN 'КОРПУС'\n    WHEN 'МИКРОСХЕМЫ' THEN 'МИКРОСХЕМА'\n    WHEN 'МИКРОФОНЫ' THEN 'МИКРОФОН'\n    WHEN 'ПЛАТЫ КЛАВИАТУРЫ' THEN 'ПЛАТА'\n    WHEN 'ПРОКЛЕЙКИ ДЛЯ ДИСПЛЕЙНЫХ МОДУЛЕЙ И ЗАДНИХ КРЫШЕК' THEN 'СКОТЧ'\n    WHEN 'СКОТЧ ДЛЯ ФИКСАЦИИ АКБ' THEN 'СКОТЧ'\n    WHEN 'РАЗЪЕМЫ' THEN 'РАЗЪЕМ'\n    WHEN 'РАЗЪЕМЫ ДЛЯ ЗАРЯДКИ' THEN 'РАЗЪЕМ ЗАРЯДКИ'\n    WHEN 'РАЗЪЕМЫ ДЛЯ ЗАРЯДКИ, АУДИО РАЗЪЕМЫ' THEN 'РАЗЪЕМ ЗАРЯДКИ'\n    WHEN 'РАЗЪЕМЫ ЗАРЯДКИ' THEN 'РАЗЪЕМ ЗАРЯДКИ'\n    WHEN 'РАМКИ' THEN 'РАМКА'\n    WHEN 'СТЕКЛА КАМЕРЫ' THEN 'СТЕКЛО КАМЕРЫ'\n    WHEN 'СТЕКЛО КАМЕРЫ' THEN 'СТЕКЛО КАМЕРЫ'\n    WHEN 'ТАЧСКРИНЫ' THEN 'ТАЧСКРИН'\n    WHEN 'ТАЧСКРИНЫ ДЛЯ IPAD' THEN 'ТАЧСКРИН'\n    WHEN 'ШЛЕЙФА' THEN 'ШЛЕЙФ'\n    WHEN 'ШЛЕЙФА ДЛЯ IPAD' THEN 'ШЛЕЙФ'\n    WHEN 'ШЛЕЙФЫ' THEN 'ШЛЕЙФ'\n    ELSE TRIM(part_type)\nEND\nWHERE part_type IS NOT NULL;\n\nSELECT part_type, COUNT(*) as cnt \nFROM public.profi_nomenclature_tmp \nWHERE part_type IS NOT NULL\nGROUP BY part_type \nORDER BY cnt DESC\nLIMIT 20;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        5104,
+        -848
+      ],
+      "id": "ccba045e-56e9-4526-be95-5b531f9e2850",
+      "name": "2.9 Нормализация part_type",
+      "credentials": {
+        "postgres": {
+          "id": "FqVzz0Keo78hRzQ9",
+          "name": "Profi_DB"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "-- Финальная статистика\nSELECT \n    'ИТОГО' as report,\n    COUNT(*) as total_rows,\n    COUNT(DISTINCT article) as unique_articles,\n    COUNT(DISTINCT brand) as brands,\n    COUNT(DISTINCT part_type) as part_types\nFROM public.profi_nomenclature_tmp;\n\n-- TOP бренды\nSELECT \n    brand,\n    COUNT(*) as cnt\nFROM public.profi_nomenclature_tmp\nGROUP BY brand\nORDER BY cnt DESC\nLIMIT 15;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        5328,
+        -848
+      ],
+      "id": "0b342cb6-5031-44e0-b56c-bddcc51a8f53",
+      "name": "Финальная статистика",
+      "credentials": {
+        "postgres": {
+          "id": "FqVzz0Keo78hRzQ9",
+          "name": "Profi_DB"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "0. Создаём tmp таблицу",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "0. Создаём tmp таблицу": {
+      "main": [
+        [
+          {
+            "node": "0.1 Копируем из profi_nomenclature",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "0.1 Копируем из profi_nomenclature": {
+      "main": [
+        [
+          {
+            "node": "2.1 Удаляем не запчасти",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2.1 Удаляем не запчасти": {
+      "main": [
+        [
+          {
+            "node": "2.2 Нормализация brand/model",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2.2 Нормализация brand/model": {
+      "main": [
+        [
+          {
+            "node": "2.3 Тип запчасти iPhone",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2.3 Тип запчасти iPhone": {
+      "main": [
+        [
+          {
+            "node": "2.4 Перенос model в brand",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2.4 Перенос model в brand": {
+      "main": [
+        [
+          {
+            "node": "2.6 АКБ для Android",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2.6 АКБ для Android": {
+      "main": [
+        [
+          {
+            "node": "2.7 УНИВЕРСАЛЬНЫЙ",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2.7 УНИВЕРСАЛЬНЫЙ": {
+      "main": [
+        [
+          {
+            "node": "2.9 Нормализация part_type",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2.9 Нормализация part_type": {
+      "main": [
+        [
+          {
+            "node": "Финальная статистика",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "530b9caf6d3d0554c7f433b384abca845599b24ecefd5677a8384fe2f03fd69b"
+  }
+}

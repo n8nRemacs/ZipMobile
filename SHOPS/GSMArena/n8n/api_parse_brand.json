@@ -1,0 +1,352 @@
+{
+  "name": "GSMArena API - Parse Brand",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "gsmarena/parse/brand",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "POST /parse/brand",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 200],
+      "webhookId": "gsmarena-parse-brand"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $input.first().json.body;\n\nconst brandCode = body?.brand?.toLowerCase();\nif (!brandCode) {\n  throw new Error('Missing required field: brand');\n}\n\nreturn [{\n  json: {\n    brand_code: brandCode,\n    max_models: body?.max_models || 0,\n    delay_seconds: body?.delay_seconds || 2,\n    save_to_db: body?.save_to_db !== false\n  }\n}];"
+      },
+      "id": "validate",
+      "name": "Validate Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://www.gsmarena.com/makers.php3",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+          ]
+        }
+      },
+      "id": "http-brands",
+      "name": "Fetch Brands",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\n\nconst config = $('Validate Input').first().json;\nconst html = $input.first().json.data;\nconst $ = cheerio.load(html);\n\nlet brandInfo = null;\n\n$('div.st-text a').each((i, el) => {\n  const href = $(el).attr('href') || '';\n  const text = $(el).text().trim();\n  const match = text.match(/(.+?)\\s*(\\d+)\\s*devices?/);\n  \n  if (match && href.includes('-phones-')) {\n    const code = href.replace('-phones-', '_').replace('.php', '').split('_')[0].toLowerCase();\n    if (code === config.brand_code) {\n      brandInfo = {\n        name: match[1].trim(),\n        url: `https://www.gsmarena.com/${href}`,\n        device_count: parseInt(match[2])\n      };\n      return false;\n    }\n  }\n});\n\nif (!brandInfo) {\n  throw new Error(`Brand '${config.brand_code}' not found`);\n}\n\nreturn [{\n  json: {\n    ...config,\n    brand_name: brandInfo.name,\n    brand_url: brandInfo.url,\n    device_count: brandInfo.device_count,\n    current_page: 1,\n    models: [],\n    has_more: true\n  }\n}];"
+      },
+      "id": "find-brand",
+      "name": "Find Brand",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "has-more",
+              "leftValue": "={{ $json.has_more }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-pages",
+      "name": "More Pages?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [880, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const state = $input.first().json;\nlet url;\n\nif (state.current_page === 1) {\n  url = state.brand_url;\n} else {\n  const match = state.brand_url.match(/-(\\d+)\\.php/);\n  const brandId = match ? match[1] : null;\n  const brandSlug = state.brand_url.split('/').pop().replace(`-${brandId}.php`, '');\n  url = brandId ? `https://www.gsmarena.com/${brandSlug}-f-${brandId}-0-p${state.current_page}.php` : null;\n}\n\nif (!url) return [{ json: { ...state, has_more: false } }];\nreturn [{ json: { ...state, fetch_url: url } }];"
+      },
+      "id": "build-models-url",
+      "name": "Build URL",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1140, 100]
+    },
+    {
+      "parameters": {
+        "amount": "={{ $json.delay_seconds }}",
+        "unit": "seconds"
+      },
+      "id": "wait-models",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1360, 100]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $json.fetch_url }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+          ]
+        }
+      },
+      "id": "http-models",
+      "name": "Fetch Models",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1580, 100]
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\nconst state = $('Wait').first().json;\nconst html = $input.first().json.data;\nconst $ = cheerio.load(html);\n\nconst newModels = [];\n$('div.makers ul li').each((i, el) => {\n  const link = $(el).find('a');\n  const href = link.attr('href') || '';\n  const nameElem = link.find('span');\n  const imgElem = link.find('img');\n  \n  if (nameElem.length && href) {\n    const idMatch = href.match(/-(\\d+)\\.php/);\n    newModels.push({\n      brand: state.brand_name,\n      name: nameElem.text().trim(),\n      url: `https://www.gsmarena.com/${href}`,\n      thumbnail: imgElem.attr('src') || '',\n      brief_specs: imgElem.attr('title') || '',\n      gsmarena_id: idMatch ? idMatch[1] : null\n    });\n  }\n});\n\nconst navPages = $('div.nav-pages a');\nconst nextPage = state.current_page + 1;\nlet hasNext = navPages.toArray().some(el => ($(el).attr('href') || '').includes(`p${nextPage}`));\n\nconst allModels = [...state.models, ...newModels];\nlet shouldStop = state.max_models > 0 && allModels.length >= state.max_models;\n\nreturn [{ json: { ...state, models: allModels, current_page: nextPage, has_more: hasNext && newModels.length > 0 && !shouldStop } }];"
+      },
+      "id": "parse-models-page",
+      "name": "Parse Models",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1800, 100]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Prepare models for specs parsing\nconst state = $input.first().json;\nlet models = state.models;\nif (state.max_models > 0) models = models.slice(0, state.max_models);\n\nreturn models.map((m, i) => ({\n  json: { ...m, index: i + 1, total: models.length, delay_seconds: state.delay_seconds, save_to_db: state.save_to_db }\n}));"
+      },
+      "id": "to-items",
+      "name": "To Items",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1140, 300]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "loop",
+      "name": "Loop Models",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [1360, 300]
+    },
+    {
+      "parameters": {
+        "amount": "={{ $json.delay_seconds }}",
+        "unit": "seconds"
+      },
+      "id": "wait-spec",
+      "name": "Wait Spec",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1580, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $json.url }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+          ]
+        }
+      },
+      "id": "http-specs",
+      "name": "Fetch Specs",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1800, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\nconst modelInfo = $('Wait Spec').first().json;\nconst html = $input.first().json.data;\nconst $ = cheerio.load(html);\n\nfunction extractYear(t) { const m = (t||'').match(/20\\d{2}/); return m ? parseInt(m[0]) : null; }\nfunction extractWeight(t) { const m = (t||'').toLowerCase().match(/(\\d+(?:\\.\\d+)?)\\s*g\\b/); return m ? parseInt(parseFloat(m[1])) : null; }\nfunction extractBattery(t) { const m = (t||'').toLowerCase().match(/(\\d+)\\s*mah/); return m ? parseInt(m[1]) : null; }\nfunction extractPrice(t) { const m = (t||'').toLowerCase().match(/(\\d+(?:\\.\\d+)?)\\s*eur/); return m ? parseFloat(m[1]) : null; }\nfunction extractDisplay(t) { const m = (t||'').toLowerCase().match(/(\\d+(?:\\.\\d+)?)\\s*inch/); return m ? parseFloat(m[1]) : null; }\nfunction extractCamera(t) { const m = (t||'').toLowerCase().match(/(\\d+)\\s*mp/); return m ? m[1] + ' MP' : null; }\n\nconst specs = { name: modelInfo.name, url: modelInfo.url, parsed_at: new Date().toISOString() };\n\n$('table[cellspacing=\"0\"]').each((i, table) => {\n  let cat = null;\n  $(table).find('tr').each((j, row) => {\n    const th = $(row).find('th');\n    if (th.length && th.attr('rowspan')) {\n      cat = th.text().trim().toLowerCase().replace(/\\s+/g, '_');\n      if (!specs[cat]) specs[cat] = {};\n    }\n    const tds = $(row).find('td');\n    if (tds.length >= 2 && cat) {\n      const pn = $(tds[0]).text().trim().toLowerCase().replace(/\\s+/g, '_');\n      const pv = $(tds[1]).text().trim().replace(/\\s+/g, ' ');\n      if (pn && pv) specs[cat][pn] = pv;\n    }\n  });\n});\n\nconst img = $('div.specs-photo-main img');\nif (img.length) specs.image_url = img.attr('src') || '';\nconst pe = $('td[data-spec=\"price\"]');\nif (pe.length) specs.price = pe.text().trim();\n\nconst launch = specs.launch || {};\nconst body = specs.body || {};\nconst display = specs.display || {};\nconst platform = specs.platform || {};\nconst memory = specs.memory || {};\nconst mainCam = specs.main_camera || {};\nconst selfie = specs.selfie_camera || {};\nconst battery = specs.battery || {};\nconst network = specs.network || {};\nconst comms = specs.comms || {};\nconst sound = specs.sound || {};\nconst features = specs.features || {};\nconst misc = specs.misc || {};\n\nconst mcs = mainCam.single || mainCam.dual || mainCam.triple || mainCam.quad || '';\nconst scs = selfie.single || selfie.dual || '';\nconst chg = battery.charging || '';\n\nlet ip = null; const ipm = JSON.stringify(body).match(/IP\\d+/); if (ipm) ip = ipm[0];\nlet rr = null; const rrm = (display.type || '').match(/(\\d+)\\s*Hz/); if (rrm) rr = rrm[1] + 'Hz';\nlet ram = null; const ramm = (memory.internal || '').match(/(\\d+)\\s*GB\\s*RAM/); if (ramm) ram = ramm[1] + ' GB';\nlet wc = null; if (chg.toLowerCase().includes('wireless')) { const wcm = chg.toLowerCase().match(/(\\d+W)\\s*wireless/); wc = wcm ? wcm[1] : 'Yes'; }\n\nconst row = {\n  brand: modelInfo.brand, model_name: specs.name, model_url: specs.url,\n  image_url: specs.image_url || '', gsmarena_id: modelInfo.gsmarena_id,\n  announced: launch.announced || '', release_status: launch.status || '', release_year: extractYear(launch.announced),\n  dimensions: body.dimensions || '', weight: body.weight || '', weight_grams: extractWeight(body.weight),\n  build: body.build || '', sim: body.sim || '', ip_rating: ip,\n  display_type: display.type || '', display_size: display.size || '', display_size_inches: extractDisplay(display.size),\n  display_resolution: display.resolution || '', display_protection: display.protection || '', refresh_rate: rr,\n  os: platform.os || '', chipset: platform.chipset || '', cpu: platform.cpu || '', gpu: platform.gpu || '',\n  ram: ram, storage: memory.internal || '', card_slot: memory.card_slot || '',\n  main_camera_mp: extractCamera(mcs), main_camera_setup: mcs, main_camera_features: mainCam.features || '', main_camera_video: mainCam.video || '',\n  selfie_camera_mp: extractCamera(scs), selfie_camera_setup: scs, selfie_camera_video: selfie.video || '',\n  battery_capacity: battery.type || '', battery_capacity_mah: extractBattery(battery.type), battery_type: battery.type || '',\n  charging_wired: chg, charging_wireless: wc,\n  network_technology: network.technology || '', network_2g: network['2g_bands'] || '', network_3g: network['3g_bands'] || '',\n  network_4g: network['4g_bands'] || '', network_5g: network['5g_bands'] || '',\n  wlan: comms.wlan || '', bluetooth: comms.bluetooth || '', nfc: comms.nfc || '', gps: comms.positioning || '', usb: comms.usb || '', radio: comms.radio || '',\n  loudspeaker: sound.loudspeaker || '', audio_jack: sound['3.5mm_jack'] || '', sensors: features.sensors || '',\n  colors: misc.colors || '', models_list: misc.models || '', price: misc.price || specs.price || '', price_eur: extractPrice(misc.price || specs.price || ''),\n  specs_json: JSON.stringify(specs), save_to_db: modelInfo.save_to_db\n};\n\nconsole.log(`[${modelInfo.index}/${modelInfo.total}] Parsed: ${row.model_name}`);\nreturn [{ json: row }];"
+      },
+      "id": "parse-specs",
+      "name": "Parse Specs",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2020, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "save-db",
+              "leftValue": "={{ $json.save_to_db }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-save",
+      "name": "Save to DB?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [2240, 300]
+    },
+    {
+      "parameters": {
+        "operation": "upsert",
+        "schema": { "__rl": true, "mode": "list", "value": "public" },
+        "table": { "__rl": true, "mode": "list", "value": "zip_gsmarena_raw" },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "brand": "={{ $json.brand }}", "model_name": "={{ $json.model_name }}", "model_url": "={{ $json.model_url }}",
+            "image_url": "={{ $json.image_url }}", "gsmarena_id": "={{ $json.gsmarena_id }}",
+            "announced": "={{ $json.announced }}", "release_status": "={{ $json.release_status }}", "release_year": "={{ $json.release_year }}",
+            "dimensions": "={{ $json.dimensions }}", "weight": "={{ $json.weight }}", "weight_grams": "={{ $json.weight_grams }}",
+            "build": "={{ $json.build }}", "sim": "={{ $json.sim }}", "ip_rating": "={{ $json.ip_rating }}",
+            "display_type": "={{ $json.display_type }}", "display_size": "={{ $json.display_size }}",
+            "display_size_inches": "={{ $json.display_size_inches }}", "display_resolution": "={{ $json.display_resolution }}",
+            "display_protection": "={{ $json.display_protection }}", "refresh_rate": "={{ $json.refresh_rate }}",
+            "os": "={{ $json.os }}", "chipset": "={{ $json.chipset }}", "cpu": "={{ $json.cpu }}", "gpu": "={{ $json.gpu }}",
+            "ram": "={{ $json.ram }}", "storage": "={{ $json.storage }}", "card_slot": "={{ $json.card_slot }}",
+            "main_camera_mp": "={{ $json.main_camera_mp }}", "main_camera_setup": "={{ $json.main_camera_setup }}",
+            "main_camera_features": "={{ $json.main_camera_features }}", "main_camera_video": "={{ $json.main_camera_video }}",
+            "selfie_camera_mp": "={{ $json.selfie_camera_mp }}", "selfie_camera_setup": "={{ $json.selfie_camera_setup }}",
+            "selfie_camera_video": "={{ $json.selfie_camera_video }}",
+            "battery_capacity": "={{ $json.battery_capacity }}", "battery_capacity_mah": "={{ $json.battery_capacity_mah }}",
+            "battery_type": "={{ $json.battery_type }}", "charging_wired": "={{ $json.charging_wired }}", "charging_wireless": "={{ $json.charging_wireless }}",
+            "network_technology": "={{ $json.network_technology }}", "network_2g": "={{ $json.network_2g }}",
+            "network_3g": "={{ $json.network_3g }}", "network_4g": "={{ $json.network_4g }}", "network_5g": "={{ $json.network_5g }}",
+            "wlan": "={{ $json.wlan }}", "bluetooth": "={{ $json.bluetooth }}", "nfc": "={{ $json.nfc }}",
+            "gps": "={{ $json.gps }}", "usb": "={{ $json.usb }}", "radio": "={{ $json.radio }}",
+            "loudspeaker": "={{ $json.loudspeaker }}", "audio_jack": "={{ $json.audio_jack }}", "sensors": "={{ $json.sensors }}",
+            "colors": "={{ $json.colors }}", "models_list": "={{ $json.models_list }}",
+            "price": "={{ $json.price }}", "price_eur": "={{ $json.price_eur }}", "specs_json": "={{ $json.specs_json }}"
+          }
+        },
+        "conflictColumns": ["brand", "model_name"],
+        "options": {}
+      },
+      "id": "postgres",
+      "name": "PostgreSQL Upsert",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [2500, 200],
+      "credentials": { "postgres": { "id": "POSTGRES_CREDENTIAL_ID", "name": "PostgreSQL GSMArena" } }
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "id": "merge-results",
+      "name": "Merge",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [2720, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst savedCount = items.filter(i => i.json.save_to_db).length;\n\nreturn [{\n  json: {\n    success: true,\n    brand: items[0]?.json?.brand,\n    total_parsed: items.length,\n    saved_to_db: savedCount\n  }\n}];"
+      },
+      "id": "summary",
+      "name": "Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1580, 500]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1800, 500]
+    }
+  ],
+  "connections": {
+    "POST /parse/brand": { "main": [[{ "node": "Validate Input", "type": "main", "index": 0 }]] },
+    "Validate Input": { "main": [[{ "node": "Fetch Brands", "type": "main", "index": 0 }]] },
+    "Fetch Brands": { "main": [[{ "node": "Find Brand", "type": "main", "index": 0 }]] },
+    "Find Brand": { "main": [[{ "node": "More Pages?", "type": "main", "index": 0 }]] },
+    "More Pages?": { "main": [[{ "node": "Build URL", "type": "main", "index": 0 }], [{ "node": "To Items", "type": "main", "index": 0 }]] },
+    "Build URL": { "main": [[{ "node": "Wait", "type": "main", "index": 0 }]] },
+    "Wait": { "main": [[{ "node": "Fetch Models", "type": "main", "index": 0 }]] },
+    "Fetch Models": { "main": [[{ "node": "Parse Models", "type": "main", "index": 0 }]] },
+    "Parse Models": { "main": [[{ "node": "More Pages?", "type": "main", "index": 0 }]] },
+    "To Items": { "main": [[{ "node": "Loop Models", "type": "main", "index": 0 }]] },
+    "Loop Models": { "main": [[{ "node": "Wait Spec", "type": "main", "index": 0 }], [{ "node": "Summary", "type": "main", "index": 0 }]] },
+    "Wait Spec": { "main": [[{ "node": "Fetch Specs", "type": "main", "index": 0 }]] },
+    "Fetch Specs": { "main": [[{ "node": "Parse Specs", "type": "main", "index": 0 }]] },
+    "Parse Specs": { "main": [[{ "node": "Save to DB?", "type": "main", "index": 0 }]] },
+    "Save to DB?": { "main": [[{ "node": "PostgreSQL Upsert", "type": "main", "index": 0 }], [{ "node": "Merge", "type": "main", "index": 1 }]] },
+    "PostgreSQL Upsert": { "main": [[{ "node": "Merge", "type": "main", "index": 0 }]] },
+    "Merge": { "main": [[{ "node": "Loop Models", "type": "main", "index": 0 }]] },
+    "Summary": { "main": [[{ "node": "Response", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "staticData": null,
+  "tags": ["gsmarena", "api", "parser"]
+}

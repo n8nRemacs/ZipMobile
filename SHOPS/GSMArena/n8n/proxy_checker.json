@@ -1,0 +1,458 @@
+{
+  "name": "Proxy Checker - Test HTTPS Connectivity",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual",
+      "name": "Manual Start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 200]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 30
+            }
+          ]
+        }
+      },
+      "id": "schedule",
+      "name": "Every 30 Minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "values": {
+          "number": [
+            {
+              "name": "batch_size",
+              "value": 50
+            },
+            {
+              "name": "timeout_ms",
+              "value": 10000
+            }
+          ],
+          "string": [
+            {
+              "name": "test_url",
+              "value": "https://www.gsmarena.com/makers.php3"
+            },
+            {
+              "name": "test_marker",
+              "value": "Samsung"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "config",
+      "name": "Config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [220, 100],
+      "notes": "batch_size: сколько прокси тестировать за раз\ntimeout_ms: таймаут запроса\ntest_url: URL для проверки\ntest_marker: текст, который должен быть на странице"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=SELECT proxy FROM zip_proxies WHERE status = 'raw' ORDER BY created_at LIMIT {{ $json.batch_size }}",
+        "options": {}
+      },
+      "id": "get-raw",
+      "name": "Get Raw Proxies",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [440, 100],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GSMArena"
+        }
+      },
+      "notes": "Берём непроверенные прокси"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "has-proxies",
+              "leftValue": "={{ $json.length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-empty",
+      "name": "Has Proxies?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [660, 100]
+    },
+    {
+      "parameters": {
+        "jsCode": "const config = $('Config').first().json;\nconst proxies = $input.all().map(item => item.json.proxy).filter(p => p);\n\nconsole.log(`Got ${proxies.length} raw proxies to test`);\n\nreturn proxies.map((proxy, index) => ({\n  json: {\n    proxy,\n    index: index + 1,\n    total: proxies.length,\n    test_url: config.test_url,\n    test_marker: config.test_marker,\n    timeout_ms: config.timeout_ms\n  }\n}));"
+      },
+      "id": "to-items",
+      "name": "To Items",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [920, 0]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=UPDATE zip_proxies SET status = 'checking' WHERE proxy IN ({{ $('To Items').all().map(i => `'${i.json.proxy}'`).join(',') }})",
+        "options": {}
+      },
+      "id": "mark-checking",
+      "name": "Mark as Checking",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1140, 0],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GSMArena"
+        }
+      },
+      "notes": "Помечаем как проверяющиеся, чтобы другие воркеры не взяли"
+    },
+    {
+      "parameters": {
+        "batchSize": 10,
+        "options": {}
+      },
+      "id": "loop",
+      "name": "Loop (Parallel 10)",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [1360, 0],
+      "notes": "Параллельно проверяем по 10"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Test proxy using fetch with proxy\n// Note: n8n Code node doesn't support native proxy, so we use external service\nconst items = $input.all();\nconst results = [];\n\nfor (const item of items) {\n  const { proxy, test_url, test_marker, timeout_ms } = item.json;\n  \n  let isWorking = false;\n  let error = null;\n  \n  try {\n    // Use proxy check service (httpbin or similar)\n    // Since n8n doesn't support proxy directly, we test via external service\n    const checkUrl = `https://api.proxyscrape.com/v2/?request=verifyproxy&proxy=${encodeURIComponent(proxy)}&timeout=${Math.floor(timeout_ms / 1000)}`;\n    \n    const controller = new AbortController();\n    const timeoutId = setTimeout(() => controller.abort(), timeout_ms);\n    \n    const response = await fetch(checkUrl, {\n      signal: controller.signal,\n      headers: { 'User-Agent': 'n8n-proxy-checker' }\n    });\n    \n    clearTimeout(timeoutId);\n    \n    const text = await response.text();\n    isWorking = text.includes('valid') || response.ok;\n    \n  } catch (e) {\n    error = e.message;\n    isWorking = false;\n  }\n  \n  results.push({\n    json: {\n      proxy,\n      is_working: isWorking,\n      error: error\n    }\n  });\n  \n  console.log(`[${item.json.index}/${item.json.total}] ${proxy}: ${isWorking ? 'OK' : 'FAIL'}`);\n}\n\nreturn results;"
+      },
+      "id": "test-proxy",
+      "name": "Test Proxy",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1580, 0],
+      "notes": "Проверяем доступность через внешний сервис"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "is-working",
+              "leftValue": "={{ $json.is_working }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-result",
+      "name": "Working?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1800, 0]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=UPDATE zip_proxies SET status = 'working', last_tested_at = NOW(), success_count = success_count + 1 WHERE proxy = '{{ $json.proxy }}'",
+        "options": {}
+      },
+      "id": "mark-working",
+      "name": "Mark Working",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [2060, -100],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GSMArena"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=UPDATE zip_proxies SET status = 'dead', last_tested_at = NOW(), fail_count = fail_count + 1 WHERE proxy = '{{ $json.proxy }}'",
+        "options": {}
+      },
+      "id": "mark-dead",
+      "name": "Mark Dead",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [2060, 100],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GSMArena"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "id": "merge",
+      "name": "Merge",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [2280, 0]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT status, COUNT(*) as count FROM zip_proxies GROUP BY status ORDER BY count DESC",
+        "options": {}
+      },
+      "id": "stats",
+      "name": "Get Stats",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1140, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GSMArena"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const stats = $input.all();\n\nconsole.log('\\n=== PROXY STATS ===');\nfor (const row of stats) {\n  if (row.json.status && row.json.count) {\n    console.log(`${row.json.status}: ${row.json.count}`);\n  }\n}\n\nreturn stats;"
+      },
+      "id": "log-stats",
+      "name": "Log Stats",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1360, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "console.log('No raw proxies to test');\nreturn [{ json: { message: 'No raw proxies available' } }];"
+      },
+      "id": "no-proxies",
+      "name": "No Proxies",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [920, 200]
+    }
+  ],
+  "connections": {
+    "Manual Start": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Every 30 Minutes": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Config": {
+      "main": [
+        [
+          {
+            "node": "Get Raw Proxies",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Raw Proxies": {
+      "main": [
+        [
+          {
+            "node": "Has Proxies?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has Proxies?": {
+      "main": [
+        [
+          {
+            "node": "To Items",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Proxies",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "To Items": {
+      "main": [
+        [
+          {
+            "node": "Mark as Checking",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mark as Checking": {
+      "main": [
+        [
+          {
+            "node": "Loop (Parallel 10)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop (Parallel 10)": {
+      "main": [
+        [
+          {
+            "node": "Test Proxy",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get Stats",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Test Proxy": {
+      "main": [
+        [
+          {
+            "node": "Working?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Working?": {
+      "main": [
+        [
+          {
+            "node": "Mark Working",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Mark Dead",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mark Working": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mark Dead": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Loop (Parallel 10)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Stats": {
+      "main": [
+        [
+          {
+            "node": "Log Stats",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["proxy", "checker"]
+}

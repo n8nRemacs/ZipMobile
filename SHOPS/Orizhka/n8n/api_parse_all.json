@@ -1,0 +1,276 @@
+{
+  "name": "Orizhka - Parse All (Tilda API)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "orizhka/parse/all",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "POST /parse/all",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 300],
+      "webhookId": "orizhka-parse-all",
+      "notes": "POST body:\n{\n  \"categories\": [\"346541913282\", \"776914721572\"],\n  \"save_to_db\": true\n}"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $input.first().json.body || {};\n\n// All Orizhka categories (iPhone, iPad, Watch, MacBook parts)\nconst ALL_CATEGORIES = {\n  '346541913282': 'iPhone 7',\n  '776914721572': 'iPhone 7 Plus',\n  '553331889302': 'iPhone 8',\n  '381404029652': 'iPhone 8 Plus',\n  '133757333162': 'iPhone X',\n  '512547526732': 'iPhone XS',\n  '894668999552': 'iPhone XS Max',\n  '647621281332': 'iPhone XR',\n  '685529849602': 'iPhone 11',\n  '270513488312': 'iPhone 11 Pro',\n  '457325399132': 'iPhone 11 Pro Max',\n  '861463486052': 'iPhone 12',\n  '601615617652': 'iPhone 12 Mini',\n  '641694305782': 'iPhone 12 Pro',\n  '646033160842': 'iPhone 12 Pro Max',\n  '699239210582': 'iPhone 13',\n  '542123349722': 'iPhone 13 Mini',\n  '525005961452': 'iPhone 13 Pro',\n  '200559278262': 'iPhone 13 Pro Max',\n  '322696400962': 'iPhone 14',\n  '546796606802': 'iPhone 14 Plus',\n  '211493978242': 'iPhone 14 Pro',\n  '844936907582': 'iPhone 14 Pro Max',\n  '960390868672': 'iPhone 15',\n  '550674235482': 'iPhone 15 Plus',\n  '748555222622': 'iPhone 15 Pro',\n  '734533983092': 'iPhone 15 Pro Max',\n  '292850428202': 'iPhone 16',\n  '568380906832': 'iPhone 16 Plus',\n  '853707969302': 'iPhone 16 Pro',\n  '988341629032': 'iPhone 16 Pro Max',\n  '458225102632': 'Apple Watch',\n  '869303579112': 'iPad',\n  '345714019292': 'MacBook'\n};\n\nconst selectedCategories = body.categories || Object.keys(ALL_CATEGORIES);\n\nreturn selectedCategories.map(catId => ({\n  json: {\n    storepart_uid: catId,\n    category_name: ALL_CATEGORIES[catId] || catId,\n    save_to_db: body.save_to_db !== false\n  }\n}));"
+      },
+      "id": "prepare-categories",
+      "name": "Prepare Categories",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "loop-categories",
+      "name": "Loop Categories",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://store.tildaapi.com/api/getproductslist/",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {"name": "storepartuid", "value": "={{ $json.storepart_uid }}"},
+            {"name": "getparts", "value": "true"},
+            {"name": "getoptions", "value": "true"},
+            {"name": "slice", "value": "1"},
+            {"name": "size", "value": "100"}
+          ]
+        },
+        "options": {
+          "timeout": 30000,
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "json"
+            }
+          }
+        },
+        "headerParameters": {
+          "parameters": [
+            {"name": "User-Agent", "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"},
+            {"name": "Accept", "value": "application/json"},
+            {"name": "Referer", "value": "https://orizhka.ru/catalog"}
+          ]
+        }
+      },
+      "id": "fetch-products",
+      "name": "Fetch from Tilda API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [660, 300],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "jsCode": "const config = $('Loop Categories').first().json;\nconst data = $input.first().json;\n\nconst products = (data.products || []).map(p => {\n  let price = 0;\n  try {\n    price = parseFloat((p.price || '0').replace(',', '.').replace(/\\s/g, ''));\n  } catch (e) {}\n  \n  let oldPrice = 0;\n  try {\n    oldPrice = parseFloat((p.priceold || '0').replace(',', '.').replace(/\\s/g, ''));\n  } catch (e) {}\n  \n  const quantity = parseInt(p.quantity || '0') || 0;\n  \n  return {\n    article: p.sku || p.uid || '',\n    name: p.title || '',\n    price: price,\n    old_price: oldPrice,\n    category: config.category_name,\n    in_stock: quantity > 0,\n    quantity: quantity,\n    url: p.url || '',\n    uid: p.uid || ''\n  };\n});\n\nreturn [{\n  json: {\n    category: config.category_name,\n    products: products,\n    total: data.total || products.length,\n    save_to_db: config.save_to_db\n  }\n}];"
+      },
+      "id": "process-products",
+      "name": "Process Products",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [880, 300]
+    },
+    {
+      "parameters": {
+        "amount": 300,
+        "unit": "milliseconds"
+      },
+      "id": "wait",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1100, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Aggregate all products from all categories\nconst items = $input.all();\nlet allProducts = [];\nlet savedToDb = false;\n\nfor (const item of items) {\n  if (item.json.products) {\n    allProducts = allProducts.concat(item.json.products);\n    savedToDb = item.json.save_to_db;\n  }\n}\n\n// Remove duplicates by article\nconst unique = {};\nfor (const p of allProducts) {\n  if (p.article && !unique[p.article]) {\n    unique[p.article] = p;\n  }\n}\n\nconst products = Object.values(unique);\n\nreturn [{\n  json: {\n    products: products,\n    total: products.length,\n    in_stock: products.filter(p => p.in_stock).length,\n    save_to_db: savedToDb\n  }\n}];"
+      },
+      "id": "aggregate",
+      "name": "Aggregate Products",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1320, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "save-db",
+              "leftValue": "={{ $json.save_to_db }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-save",
+      "name": "Save to DB?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1540, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO outlets (code, city, name, is_active) VALUES ('orizhka-spb', 'Санкт-Петербург', 'Orizhka СПб', true) ON CONFLICT (code) DO NOTHING;",
+        "options": {}
+      },
+      "id": "ensure-outlet",
+      "name": "Ensure Outlet",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1760, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL Orizhka"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "={{ \n  const products = $('Aggregate Products').first().json.products;\n  const BATCH_SIZE = 50;\n  const batch = products.slice(0, BATCH_SIZE);\n  \n  const values = batch.filter(p => p.article).map(p => {\n    const name = (p.name || '').replace(/'/g, \"''\").slice(0, 500);\n    const article = (p.article || '').replace(/'/g, \"''\");\n    const category = (p.category || '').replace(/'/g, \"''\");\n    return `('${name}', '${article}', '${category}', 'Apple', NOW(), NOW())`;\n  }).join(',');\n  \n  if (!values) return 'SELECT 1';\n  \n  `INSERT INTO orizhka_nomenclature (name, article, category, brand, first_seen_at, updated_at) VALUES ${values} ON CONFLICT (article) DO UPDATE SET name = EXCLUDED.name, category = EXCLUDED.category, updated_at = NOW();`;\n}}",
+        "options": {}
+      },
+      "id": "save-nomenclature",
+      "name": "Save Nomenclature",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1980, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL Orizhka"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "={{ \n  const products = $('Aggregate Products').first().json.products;\n  \n  const queries = products.filter(p => p.article).map(p => {\n    const article = (p.article || '').replace(/'/g, \"''\");\n    const price = p.price || 0;\n    const oldPrice = p.old_price || 0;\n    const inStock = p.in_stock ? 'true' : 'false';\n    const quantity = p.quantity || 0;\n    const url = (p.url || '').replace(/'/g, \"''\");\n    \n    return `INSERT INTO orizhka_prices (nomenclature_id, outlet_id, price, old_price, quantity, in_stock, product_url, updated_at) SELECT n.id, o.id, ${price}, ${oldPrice > 0 ? oldPrice : 'NULL'}, ${quantity}, ${inStock}, '${url}', NOW() FROM orizhka_nomenclature n, outlets o WHERE n.article = '${article}' AND o.code = 'orizhka-spb' ON CONFLICT (nomenclature_id, outlet_id) DO UPDATE SET price = EXCLUDED.price, old_price = EXCLUDED.old_price, quantity = EXCLUDED.quantity, in_stock = EXCLUDED.in_stock, product_url = EXCLUDED.product_url, updated_at = NOW();`;\n  }).join('');\n  \n  queries || 'SELECT 1';\n}}",
+        "options": {}
+      },
+      "id": "save-prices",
+      "name": "Save Prices",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [2200, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL Orizhka"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $('Aggregate Products').first().json;\nreturn [{\n  json: {\n    success: true,\n    shop: 'orizhka',\n    products_total: data.total,\n    in_stock: data.in_stock,\n    saved_to_db: true\n  }\n}];"
+      },
+      "id": "summary-saved",
+      "name": "Summary (Saved)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2420, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.first().json;\nreturn [{\n  json: {\n    success: true,\n    shop: 'orizhka',\n    products_total: data.total,\n    in_stock: data.in_stock,\n    saved_to_db: false,\n    products: data.products\n  }\n}];"
+      },
+      "id": "summary-nosave",
+      "name": "Summary (No Save)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1760, 400]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [2640, 300]
+    }
+  ],
+  "connections": {
+    "POST /parse/all": {
+      "main": [[{ "node": "Prepare Categories", "type": "main", "index": 0 }]]
+    },
+    "Prepare Categories": {
+      "main": [[{ "node": "Loop Categories", "type": "main", "index": 0 }]]
+    },
+    "Loop Categories": {
+      "main": [
+        [{ "node": "Fetch from Tilda API", "type": "main", "index": 0 }],
+        [{ "node": "Aggregate Products", "type": "main", "index": 0 }]
+      ]
+    },
+    "Fetch from Tilda API": {
+      "main": [[{ "node": "Process Products", "type": "main", "index": 0 }]]
+    },
+    "Process Products": {
+      "main": [[{ "node": "Wait", "type": "main", "index": 0 }]]
+    },
+    "Wait": {
+      "main": [[{ "node": "Loop Categories", "type": "main", "index": 0 }]]
+    },
+    "Aggregate Products": {
+      "main": [[{ "node": "Save to DB?", "type": "main", "index": 0 }]]
+    },
+    "Save to DB?": {
+      "main": [
+        [{ "node": "Ensure Outlet", "type": "main", "index": 0 }],
+        [{ "node": "Summary (No Save)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Ensure Outlet": {
+      "main": [[{ "node": "Save Nomenclature", "type": "main", "index": 0 }]]
+    },
+    "Save Nomenclature": {
+      "main": [[{ "node": "Save Prices", "type": "main", "index": 0 }]]
+    },
+    "Save Prices": {
+      "main": [[{ "node": "Summary (Saved)", "type": "main", "index": 0 }]]
+    },
+    "Summary (Saved)": {
+      "main": [[{ "node": "Response", "type": "main", "index": 0 }]]
+    },
+    "Summary (No Save)": {
+      "main": [[{ "node": "Response", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["orizhka", "api", "parser", "tilda"]
+}

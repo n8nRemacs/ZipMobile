@@ -1,0 +1,472 @@
+{
+  "name": "GSMArena - Single Brand Parser",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 200]
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "brand_code",
+              "value": "apple"
+            }
+          ],
+          "number": [
+            {
+              "name": "max_models",
+              "value": 10
+            },
+            {
+              "name": "delay_seconds",
+              "value": 2
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "config",
+      "name": "Config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [200, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://www.gsmarena.com/makers.php3",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.5"
+            }
+          ]
+        }
+      },
+      "id": "get-brands",
+      "name": "GET Brands List",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [400, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\n\nconst html = $input.first().json.data;\nconst config = $('Config').first().json;\nconst brandCode = config.brand_code.toLowerCase();\nconst $ = cheerio.load(html);\n\nlet brandInfo = null;\n\n$('div.st-text a').each((i, el) => {\n  const href = $(el).attr('href') || '';\n  const text = $(el).text().trim();\n  \n  const match = text.match(/(.+?)\\s*(\\d+)\\s*devices?/);\n  \n  if (match && href.includes('-phones-')) {\n    const name = match[1].trim();\n    const deviceCount = parseInt(match[2]);\n    const code = href.replace('-phones-', '_').replace('.php', '').split('_')[0];\n    \n    if (code.toLowerCase() === brandCode) {\n      brandInfo = {\n        name: name,\n        code: code,\n        url: `https://www.gsmarena.com/${href}`,\n        device_count: deviceCount,\n        max_models: config.max_models,\n        delay_seconds: config.delay_seconds\n      };\n      return false;\n    }\n  }\n});\n\nif (!brandInfo) {\n  throw new Error(`Brand '${brandCode}' not found! Check spelling.`);\n}\n\nconsole.log(`Found brand: ${brandInfo.name} (${brandInfo.device_count} devices)`);\nreturn [{ json: brandInfo }];"
+      },
+      "id": "find-brand",
+      "name": "Find Brand",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [600, 200]
+    },
+    {
+      "parameters": {
+        "amount": "={{ $json.delay_seconds }}",
+        "unit": "seconds"
+      },
+      "id": "wait-1",
+      "name": "Wait 1",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [800, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $json.url }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+            }
+          ]
+        }
+      },
+      "id": "get-models",
+      "name": "GET Models Page",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1000, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\n\nconst brandInfo = $('Wait 1').first().json;\nconst html = $input.first().json.data;\nconst $ = cheerio.load(html);\n\nconst models = [];\n\n$('div.makers ul li').each((i, el) => {\n  const link = $(el).find('a');\n  const href = link.attr('href') || '';\n  const nameElem = link.find('span');\n  const imgElem = link.find('img');\n  \n  if (nameElem.length && href) {\n    const modelName = nameElem.text().trim();\n    const briefSpecs = imgElem.attr('title') || imgElem.attr('alt') || '';\n    \n    const idMatch = href.match(/-(\\d+)\\.php/);\n    const gsmId = idMatch ? idMatch[1] : null;\n    \n    models.push({\n      brand: brandInfo.name,\n      name: modelName,\n      url: `https://www.gsmarena.com/${href}`,\n      brief_specs: briefSpecs,\n      gsmarena_id: gsmId,\n      delay_seconds: brandInfo.delay_seconds\n    });\n  }\n});\n\n// Limit models\nconst limitedModels = models.slice(0, brandInfo.max_models || 10);\n\nconsole.log(`Found ${models.length} models, processing ${limitedModels.length}`);\n\nreturn limitedModels.map((m, i) => ({\n  json: { ...m, index: i + 1, total: limitedModels.length }\n}));"
+      },
+      "id": "parse-models",
+      "name": "Parse Models List",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1200, 200]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "loop-models",
+      "name": "Loop Models",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [1400, 200]
+    },
+    {
+      "parameters": {
+        "amount": "={{ $json.delay_seconds }}",
+        "unit": "seconds"
+      },
+      "id": "wait-2",
+      "name": "Wait 2",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1600, 100]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $json.url }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+            }
+          ]
+        }
+      },
+      "id": "get-specs",
+      "name": "GET Specs",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1800, 100]
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\n\nconst modelInfo = $('Wait 2').first().json;\nconst html = $input.first().json.data;\nconst $ = cheerio.load(html);\n\n// Helper functions\nfunction extractYear(text) {\n  if (!text) return null;\n  const m = text.match(/20\\d{2}/);\n  return m ? parseInt(m[0]) : null;\n}\n\nfunction extractWeight(text) {\n  if (!text) return null;\n  const m = text.toLowerCase().match(/(\\d+(?:\\.\\d+)?)\\s*g\\b/);\n  return m ? parseInt(parseFloat(m[1])) : null;\n}\n\nfunction extractBattery(text) {\n  if (!text) return null;\n  const m = text.toLowerCase().match(/(\\d+)\\s*mah/);\n  return m ? parseInt(m[1]) : null;\n}\n\nfunction extractPrice(text) {\n  if (!text) return null;\n  const m = text.toLowerCase().match(/(\\d+(?:\\.\\d+)?)\\s*eur/);\n  return m ? parseFloat(m[1]) : null;\n}\n\nfunction extractDisplay(text) {\n  if (!text) return null;\n  const m = text.toLowerCase().match(/(\\d+(?:\\.\\d+)?)\\s*inch/);\n  return m ? parseFloat(m[1]) : null;\n}\n\nfunction extractCamera(text) {\n  if (!text) return null;\n  const m = text.toLowerCase().match(/(\\d+)\\s*mp/);\n  return m ? m[1] + ' MP' : null;\n}\n\n// Parse specs tables\nconst specs = { name: modelInfo.name, url: modelInfo.url, parsed_at: new Date().toISOString() };\n\n$('table[cellspacing=\"0\"]').each((i, table) => {\n  let category = null;\n  $(table).find('tr').each((j, row) => {\n    const th = $(row).find('th');\n    if (th.length && th.attr('rowspan')) {\n      category = th.text().trim().toLowerCase().replace(/\\s+/g, '_');\n      if (!specs[category]) specs[category] = {};\n    }\n    const tds = $(row).find('td');\n    if (tds.length >= 2 && category) {\n      const pn = $(tds[0]).text().trim().toLowerCase().replace(/\\s+/g, '_');\n      const pv = $(tds[1]).text().trim().replace(/\\s+/g, ' ');\n      if (pn && pv) specs[category][pn] = pv;\n    }\n  });\n});\n\n// Image & Price\nconst img = $('div.specs-photo-main img');\nif (img.length) specs.image_url = img.attr('src') || '';\nconst pe = $('td[data-spec=\"price\"]');\nif (pe.length) specs.price = pe.text().trim();\n\n// Build row\nconst launch = specs.launch || {};\nconst body = specs.body || {};\nconst display = specs.display || {};\nconst platform = specs.platform || {};\nconst memory = specs.memory || {};\nconst mainCam = specs.main_camera || {};\nconst selfie = specs.selfie_camera || {};\nconst battery = specs.battery || {};\nconst network = specs.network || {};\nconst comms = specs.comms || {};\nconst sound = specs.sound || {};\nconst features = specs.features || {};\nconst misc = specs.misc || {};\n\nconst mcs = mainCam.single || mainCam.dual || mainCam.triple || mainCam.quad || '';\nconst scs = selfie.single || selfie.dual || '';\nconst chg = battery.charging || '';\n\nlet ip = null;\nconst ipm = JSON.stringify(body).match(/IP\\d+/);\nif (ipm) ip = ipm[0];\n\nlet rr = null;\nconst rrm = (display.type || '').match(/(\\d+)\\s*Hz/);\nif (rrm) rr = rrm[1] + 'Hz';\n\nlet ram = null;\nconst ramm = (memory.internal || '').match(/(\\d+)\\s*GB\\s*RAM/);\nif (ramm) ram = ramm[1] + ' GB';\n\nlet wc = null;\nif (chg.toLowerCase().includes('wireless')) {\n  const wcm = chg.toLowerCase().match(/(\\d+W)\\s*wireless/);\n  wc = wcm ? wcm[1] : 'Yes';\n}\n\nconst row = {\n  brand: modelInfo.brand,\n  model_name: specs.name,\n  model_url: specs.url,\n  image_url: specs.image_url || '',\n  gsmarena_id: modelInfo.gsmarena_id,\n  announced: launch.announced || '',\n  release_status: launch.status || '',\n  release_year: extractYear(launch.announced),\n  dimensions: body.dimensions || '',\n  weight: body.weight || '',\n  weight_grams: extractWeight(body.weight),\n  build: body.build || '',\n  sim: body.sim || '',\n  ip_rating: ip,\n  display_type: display.type || '',\n  display_size: display.size || '',\n  display_size_inches: extractDisplay(display.size),\n  display_resolution: display.resolution || '',\n  display_protection: display.protection || '',\n  refresh_rate: rr,\n  os: platform.os || '',\n  chipset: platform.chipset || '',\n  cpu: platform.cpu || '',\n  gpu: platform.gpu || '',\n  ram: ram,\n  storage: memory.internal || '',\n  card_slot: memory.card_slot || '',\n  main_camera_mp: extractCamera(mcs),\n  main_camera_setup: mcs,\n  main_camera_features: mainCam.features || '',\n  main_camera_video: mainCam.video || '',\n  selfie_camera_mp: extractCamera(scs),\n  selfie_camera_setup: scs,\n  selfie_camera_video: selfie.video || '',\n  battery_capacity: battery.type || '',\n  battery_capacity_mah: extractBattery(battery.type),\n  battery_type: battery.type || '',\n  charging_wired: chg,\n  charging_wireless: wc,\n  network_technology: network.technology || '',\n  network_2g: network['2g_bands'] || '',\n  network_3g: network['3g_bands'] || '',\n  network_4g: network['4g_bands'] || '',\n  network_5g: network['5g_bands'] || '',\n  wlan: comms.wlan || '',\n  bluetooth: comms.bluetooth || '',\n  nfc: comms.nfc || '',\n  gps: comms.positioning || '',\n  usb: comms.usb || '',\n  radio: comms.radio || '',\n  loudspeaker: sound.loudspeaker || '',\n  audio_jack: sound['3.5mm_jack'] || '',\n  sensors: features.sensors || '',\n  colors: misc.colors || '',\n  models_list: misc.models || '',\n  price: misc.price || specs.price || '',\n  price_eur: extractPrice(misc.price || specs.price || ''),\n  specs_json: JSON.stringify(specs)\n};\n\nconsole.log(`[${modelInfo.index}/${modelInfo.total}] Parsed: ${row.model_name}`);\nreturn [{ json: row }];"
+      },
+      "id": "parse-specs",
+      "name": "Parse Specs",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2000, 100]
+    },
+    {
+      "parameters": {
+        "operation": "upsert",
+        "schema": {
+          "__rl": true,
+          "mode": "list",
+          "value": "public"
+        },
+        "table": {
+          "__rl": true,
+          "mode": "list",
+          "value": "zip_gsmarena_raw"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "brand": "={{ $json.brand }}",
+            "model_name": "={{ $json.model_name }}",
+            "model_url": "={{ $json.model_url }}",
+            "image_url": "={{ $json.image_url }}",
+            "gsmarena_id": "={{ $json.gsmarena_id }}",
+            "announced": "={{ $json.announced }}",
+            "release_status": "={{ $json.release_status }}",
+            "release_year": "={{ $json.release_year }}",
+            "dimensions": "={{ $json.dimensions }}",
+            "weight": "={{ $json.weight }}",
+            "weight_grams": "={{ $json.weight_grams }}",
+            "build": "={{ $json.build }}",
+            "sim": "={{ $json.sim }}",
+            "ip_rating": "={{ $json.ip_rating }}",
+            "display_type": "={{ $json.display_type }}",
+            "display_size": "={{ $json.display_size }}",
+            "display_size_inches": "={{ $json.display_size_inches }}",
+            "display_resolution": "={{ $json.display_resolution }}",
+            "display_protection": "={{ $json.display_protection }}",
+            "refresh_rate": "={{ $json.refresh_rate }}",
+            "os": "={{ $json.os }}",
+            "chipset": "={{ $json.chipset }}",
+            "cpu": "={{ $json.cpu }}",
+            "gpu": "={{ $json.gpu }}",
+            "ram": "={{ $json.ram }}",
+            "storage": "={{ $json.storage }}",
+            "card_slot": "={{ $json.card_slot }}",
+            "main_camera_mp": "={{ $json.main_camera_mp }}",
+            "main_camera_setup": "={{ $json.main_camera_setup }}",
+            "main_camera_features": "={{ $json.main_camera_features }}",
+            "main_camera_video": "={{ $json.main_camera_video }}",
+            "selfie_camera_mp": "={{ $json.selfie_camera_mp }}",
+            "selfie_camera_setup": "={{ $json.selfie_camera_setup }}",
+            "selfie_camera_video": "={{ $json.selfie_camera_video }}",
+            "battery_capacity": "={{ $json.battery_capacity }}",
+            "battery_capacity_mah": "={{ $json.battery_capacity_mah }}",
+            "battery_type": "={{ $json.battery_type }}",
+            "charging_wired": "={{ $json.charging_wired }}",
+            "charging_wireless": "={{ $json.charging_wireless }}",
+            "network_technology": "={{ $json.network_technology }}",
+            "network_2g": "={{ $json.network_2g }}",
+            "network_3g": "={{ $json.network_3g }}",
+            "network_4g": "={{ $json.network_4g }}",
+            "network_5g": "={{ $json.network_5g }}",
+            "wlan": "={{ $json.wlan }}",
+            "bluetooth": "={{ $json.bluetooth }}",
+            "nfc": "={{ $json.nfc }}",
+            "gps": "={{ $json.gps }}",
+            "usb": "={{ $json.usb }}",
+            "radio": "={{ $json.radio }}",
+            "loudspeaker": "={{ $json.loudspeaker }}",
+            "audio_jack": "={{ $json.audio_jack }}",
+            "sensors": "={{ $json.sensors }}",
+            "colors": "={{ $json.colors }}",
+            "models_list": "={{ $json.models_list }}",
+            "price": "={{ $json.price }}",
+            "price_eur": "={{ $json.price_eur }}",
+            "specs_json": "={{ $json.specs_json }}"
+          }
+        },
+        "conflictColumns": ["brand", "model_name"],
+        "options": {}
+      },
+      "id": "postgres-save",
+      "name": "Save to PostgreSQL",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [2200, 100],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GSMArena"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const row = $input.first().json;\nconsole.log(`Saved to DB: ${row.model_name}`);\nreturn $input.all();"
+      },
+      "id": "log-done",
+      "name": "Log Done",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2400, 100]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Summary after all models processed\nconst items = $input.all();\nconsole.log(`\\n=== COMPLETED ===`);\nconsole.log(`Total models saved: ${items.length}`);\nreturn items;"
+      },
+      "id": "summary",
+      "name": "Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1600, 300]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Config": {
+      "main": [
+        [
+          {
+            "node": "GET Brands List",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET Brands List": {
+      "main": [
+        [
+          {
+            "node": "Find Brand",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Find Brand": {
+      "main": [
+        [
+          {
+            "node": "Wait 1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait 1": {
+      "main": [
+        [
+          {
+            "node": "GET Models Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET Models Page": {
+      "main": [
+        [
+          {
+            "node": "Parse Models List",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Models List": {
+      "main": [
+        [
+          {
+            "node": "Loop Models",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Models": {
+      "main": [
+        [
+          {
+            "node": "Wait 2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Summary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait 2": {
+      "main": [
+        [
+          {
+            "node": "GET Specs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET Specs": {
+      "main": [
+        [
+          {
+            "node": "Parse Specs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Specs": {
+      "main": [
+        [
+          {
+            "node": "Save to PostgreSQL",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save to PostgreSQL": {
+      "main": [
+        [
+          {
+            "node": "Log Done",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log Done": {
+      "main": [
+        [
+          {
+            "node": "Loop Models",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["parser", "gsmarena"]
+}

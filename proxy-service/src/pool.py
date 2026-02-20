@@ -1,0 +1,241 @@
+"""
+ProxyPool — orchestrates scrape → check → serve cycle.
+"""
+import asyncio
+import logging
+from typing import Optional
+
+from .database import ProxyDatabase
+from .scraper import ProxyScraper
+from .checker import ProxyChecker
+from .cookie_fetcher import CookieFetcher
+from .config import settings
+
+logger = logging.getLogger(__name__)
+
+
+class ProxyPool:
+    def __init__(self):
+        self.db = ProxyDatabase()
+        self.scraper = ProxyScraper()
+        self.checker = ProxyChecker(
+            timeout=settings.check_timeout,
+            concurrency=settings.check_concurrency,
+        )
+        self.cookie_fetcher = CookieFetcher()
+        self._refresh_lock = asyncio.Lock()
+
+    async def connect(self):
+        await self.db.connect()
+
+    async def close(self):
+        await self.db.close()
+
+    async def get_proxy(
+        self,
+        protocol: str = "http",
+        for_site: Optional[str] = None,
+        verify_timeout: int = 5,
+    ) -> Optional[dict]:
+        """
+        Get a working proxy with pre-delivery verification.
+        Tries up to 3 candidates, quick-tests each before returning.
+        """
+        candidates = await self.db.get_working_proxies(protocol, for_site, limit=10)
+        if not candidates:
+            return None
+
+        attempts = 0
+        for candidate in candidates:
+            if attempts >= 3:
+                break
+            attempts += 1
+
+            host, port = candidate["host"], candidate["port"]
+
+            # Quick verification
+            old_timeout = self.checker.timeout
+            self.checker.timeout = verify_timeout
+            ok, rt = await self.checker.quick_test(host, port, protocol)
+            self.checker.timeout = old_timeout
+
+            if ok:
+                await self.db.mark_used(host, port)
+                result = {
+                    "host": host,
+                    "port": port,
+                    "protocol": protocol,
+                    "response_time_ms": rt,
+                }
+                if for_site:
+                    cookies = await self.db.get_cookies(host, port, for_site)
+                    if cookies:
+                        result["cookies"] = cookies
+                return result
+            else:
+                # Mark dead on verification failure
+                await self.db.set_check_result(host, port, "dead")
+                logger.debug(f"Pre-check failed for {host}:{port}, trying next")
+
+        return None
+
+    async def report(
+        self,
+        host: str,
+        port: int,
+        success: bool,
+        response_time: Optional[float] = None,
+        banned_site: Optional[str] = None,
+    ):
+        if success:
+            await self.db.report_success(host, port, response_time)
+        else:
+            await self.db.report_failure(host, port, banned_site)
+            if banned_site:
+                # Invalidate cached cookies — they're tied to the banned IP session
+                await self.db.delete_cookies_for_proxy(host, port)
+
+    async def refresh(self):
+        """Full refresh: scrape → check raw → recheck working → cleanup."""
+        if self._refresh_lock.locked():
+            logger.info("Refresh already in progress, skipping")
+            return {"status": "already_running"}
+
+        async with self._refresh_lock:
+            logger.info("Starting proxy pool refresh...")
+
+            # 1. Scrape
+            raw_proxies = await self.scraper.scrape_all()
+            inserted = await self.db.upsert_proxies(raw_proxies)
+            logger.info(f"Scraped {len(raw_proxies)} proxies, {inserted} new inserted")
+
+            # 2. Check unchecked (raw)
+            checked, working = await self._check_unchecked(limit=500)
+
+            # 3. Recheck existing working proxies
+            rechecked, still_working = await self._recheck_working(limit=500)
+
+            # 4. Cleanup old dead
+            cleaned = await self.db.cleanup_dead(hours=48)
+
+            # 5. Fetch cookies for working SOCKS5 proxies without fresh cookies
+            try:
+                cookies_fetched = await self._fetch_missing_cookies(
+                    site_key="greenspark",
+                    limit=settings.cookie_fetch_limit,
+                )
+            except Exception as e:
+                logger.error(f"Cookie fetch step failed (non-critical): {e}")
+                cookies_fetched = 0
+
+            stats = await self.db.get_stats()
+            logger.info(f"Refresh complete. Stats: {stats}")
+
+            return {
+                "status": "completed",
+                "scraped": len(raw_proxies),
+                "new_inserted": inserted,
+                "checked": checked,
+                "new_working": working,
+                "rechecked": rechecked,
+                "still_working": still_working,
+                "cleaned_dead": cleaned,
+                "cookies_fetched": cookies_fetched,
+            }
+
+    async def _check_unchecked(self, limit: int = 500) -> tuple:
+        """Check raw proxies. Returns (total_checked, working_count)."""
+        unchecked = await self.db.get_unchecked(limit)
+        if not unchecked:
+            return 0, 0
+
+        logger.info(f"Checking {len(unchecked)} raw proxies...")
+        results = await self.checker.check_batch(unchecked)
+
+        working = 0
+        for proxy, result in zip(unchecked, results):
+            if isinstance(result, Exception):
+                await self.db.set_check_result(proxy["host"], proxy["port"], "dead")
+                continue
+
+            any_working = result["http"] or result["https"] or result["socks4"] or result["socks5"]
+            status = "working" if any_working else "dead"
+            await self.db.set_check_result(
+                proxy["host"], proxy["port"], status,
+                http=result["http"],
+                https=result["https"],
+                socks4=result["socks4"],
+                socks5=result["socks5"],
+                response_time_ms=result["response_time_ms"],
+            )
+            if any_working:
+                working += 1
+
+        logger.info(f"Raw check: {working}/{len(unchecked)} working")
+        return len(unchecked), working
+
+    async def _recheck_working(self, limit: int = 500) -> tuple:
+        """Recheck existing working proxies. Returns (total, still_working)."""
+        proxies = await self.db.get_working_for_recheck(limit)
+        if not proxies:
+            return 0, 0
+
+        logger.info(f"Rechecking {len(proxies)} working proxies...")
+        results = await self.checker.check_batch(proxies)
+
+        still_working = 0
+        for proxy, result in zip(proxies, results):
+            if isinstance(result, Exception):
+                await self.db.set_check_result(proxy["host"], proxy["port"], "dead")
+                continue
+
+            any_working = result["http"] or result["https"] or result["socks4"] or result["socks5"]
+            status = "working" if any_working else "dead"
+            await self.db.set_check_result(
+                proxy["host"], proxy["port"], status,
+                http=result["http"],
+                https=result["https"],
+                socks4=result["socks4"],
+                socks5=result["socks5"],
+                response_time_ms=result["response_time_ms"],
+            )
+            if any_working:
+                still_working += 1
+
+        logger.info(f"Recheck: {still_working}/{len(proxies)} still working")
+        return len(proxies), still_working
+
+    async def _fetch_missing_cookies(self, site_key: str, limit: int = 20) -> int:
+        """Fetch cookies for working SOCKS5 proxies that have no fresh cookies.
+
+        Returns count of successfully fetched cookies.
+        """
+        proxies = await self.db.get_proxies_without_cookies(site_key, "socks5", limit)
+        if not proxies:
+            logger.info(f"No proxies need cookie refresh for {site_key}")
+            return 0
+
+        logger.info(f"Fetching cookies for {len(proxies)} proxies (site={site_key})...")
+        fetched = 0
+
+        async def _fetch_one(proxy: dict) -> bool:
+            host, port = proxy["host"], proxy["port"]
+            cookies = await self.cookie_fetcher.fetch_cookies(host, port, site_key)
+            if cookies:
+                await self.db.save_cookies(host, port, site_key, cookies)
+                return True
+            return False
+
+        # Run concurrently (Semaphore inside CookieFetcher limits actual parallelism)
+        tasks = [_fetch_one(p) for p in proxies]
+        results = await asyncio.gather(*tasks, return_exceptions=True)
+
+        for r in results:
+            if r is True:
+                fetched += 1
+
+        logger.info(f"Cookie fetch done: {fetched}/{len(proxies)} succeeded for {site_key}")
+        return fetched
+
+    async def get_stats(self) -> dict:
+        return await self.db.get_stats()

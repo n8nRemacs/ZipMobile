@@ -1,0 +1,1041 @@
+[
+  {
+    "name": "Phone (3a) Lite",
+    "url": "https://www.gsmarena.com/nothing_phone_(3a)_lite_5g-14267.php",
+    "parsed_at": "2026-01-22T18:37:00.827382",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 20, 26, 28, 38, 40, 41, 42, 48, 66, 71",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 12, 20, 28, 38, 40, 41, 66, 71, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, October 29",
+      "status": "Available. Released 2025, October 29"
+    },
+    "body": {
+      "dimensions": "164 x 78 x 8.3 mm (6.46 x 3.07 x 0.33 in)",
+      "weight": "199 g (7.02 oz)",
+      "build": "Glass front (Panda Glass), plastic frame, glass back (Panda Glass)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED, 1B colors, 120Hz, 2160Hz PWM, HDR, 800 nits (typ), 1300 nits (HBM), 3000 nits (peak)",
+      "size": "6.77 inches, 110.9 cm2(~86.7% screen-to-body ratio)",
+      "resolution": "1080 x 2392 pixels (~388 ppi density)",
+      "protection": "Panda Glass, Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15, up to 3 major Android upgrades, Nothing OS 3.5",
+      "chipset": "Mediatek Dimensity 7300 Pro (4 nm)",
+      "cpu": "Octa-core (4x2.5 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G615 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.9, 24mm (wide), 1/1.57\", 1.0µm, dual pixel PDAF, OIS8 MP, f/2.2, 15mm, 120˚ (ultrawide), 1/4.0\", 1.12µm2 MP (macro)",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30/60/120fps, gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.5, 24mm (wide), 1/3.0\", 1.0µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS, QZSS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "33W wired, 50% in 20 min5W reverse wired"
+    },
+    "misc": {
+      "colors": "Black, White, Blue",
+      "models": "A001T",
+      "sar_eu": "0.98 W/kg (head) 1.28 W/kg (body)",
+      "price": "About 250 EUR"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 691743 (v10), 939571 (v11)GeekBench: 2996 (v6)3DMark: 853 (Wild Life Extreme)",
+      "display": "1228 nits max brightness (measured)",
+      "loudspeaker": "-29.8 LUFS (Average)",
+      "battery": "Active use score 15:07h"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "53:56h endurance, 1400 cycles",
+      "free_fall": "Class C (90 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-3a-lite-.jpg",
+    "price": "About 250 EUR",
+    "brand": "Nothing"
+  },
+  {
+    "name": "CMF Watch 3 Pro",
+    "url": "https://www.gsmarena.com/nothing_cmf_watch_3_pro-14217.php",
+    "parsed_at": "2026-01-22T18:37:02.438261",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2025, July 22",
+      "status": "Available. Released 2025, July 22"
+    },
+    "body": {
+      "dimensions": "47 x 47 x 14.4 mm (1.85 x 1.85 x 0.57 in)",
+      "weight": "51 g (1.80 oz)",
+      "build": "Glass front, aluminum frame",
+      "sim": "No"
+    },
+    "display": {
+      "type": "AMOLED, 650 nits (typ)",
+      "size": "1.43 inches",
+      "resolution": "466 x 466 pixels (~326 ppi density)"
+    },
+    "memory": {
+      "card_slot": "No",
+      "phonebook": "No",
+      "call_records": "Yes",
+      "internal": "256 MB"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, GALILEO, BDS, QZSS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, heart rate, SpO2",
+      "messaging": "SMS(threaded view), Email, IM",
+      "games": "No",
+      "java": "No"
+    },
+    "battery": {
+      "type": "Li-Ion 350 mAh"
+    },
+    "misc": {
+      "colors": "Dark Grey, Light Grey",
+      "models": "D399",
+      "price": "$ 65.70 / € 53.90"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-cmf-watch-3-pro.jpg",
+    "price": "$ 65.70 / € 53.90",
+    "brand": "Nothing"
+  },
+  {
+    "name": "CMF Watch Pro 2",
+    "url": "https://www.gsmarena.com/nothing_cmf_watch_pro_2-14218.php",
+    "parsed_at": "2026-01-22T18:37:04.108088",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2024, July 08",
+      "status": "Available. Released 2024, July 08"
+    },
+    "body": {
+      "dimensions": "45 x 45 x 13.6 mm (1.77 x 1.77 x 0.54 in)",
+      "weight": "44.4 g (1.55 oz)",
+      "build": "Glass front, aluminum frame",
+      "sim": "No"
+    },
+    "display": {
+      "type": "AMOLED, 2160Hz PWM, 620 nits (typ)",
+      "size": "1.32 inches",
+      "resolution": "466 x 466 pixels (~353 ppi density)"
+    },
+    "memory": {
+      "card_slot": "No",
+      "phonebook": "No",
+      "call_records": "Yes",
+      "internal": "Unspecified"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS, QZSS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, heart rate, SpO2",
+      "messaging": "SMS(threaded view), Email, IM",
+      "games": "No",
+      "java": "No"
+    },
+    "battery": {
+      "type": "Li-Ion 305 mAh"
+    },
+    "misc": {
+      "colors": "Dark Grey Curved, Dark Grey Flat, Ash Grey Curved, Ash Grey Flat",
+      "price": "$ 44.80"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-cmf-watch-2.jpg",
+    "price": "$ 44.80",
+    "brand": "Nothing"
+  },
+  {
+    "name": "CMF Watch Pro",
+    "url": "https://www.gsmarena.com/nothing_cmf_watch_pro-14219.php",
+    "parsed_at": "2026-01-22T18:37:05.683867",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2023, September 26",
+      "status": "Available. Released 2023, September 26"
+    },
+    "body": {
+      "dimensions": "46.9 x 39.9 x 11.4 mm (1.85 x 1.57 x 0.45 in)",
+      "weight": "31.1 g (1.09 oz)",
+      "build": "Glass front, aluminum frame",
+      "sim": "No"
+    },
+    "display": {
+      "type": "AMOLED, 600 nits",
+      "size": "1.96 inches",
+      "resolution": "502 x 410 pixels (~331 ppi density)"
+    },
+    "memory": {
+      "card_slot": "No",
+      "phonebook": "No",
+      "call_records": "Yes",
+      "internal": "Unspecified"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS, QZSS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, heart rate, SpO2",
+      "messaging": "SMS(threaded view), Email, IM",
+      "games": "No",
+      "java": "No"
+    },
+    "battery": {
+      "type": "Li-Ion 340 mAh"
+    },
+    "misc": {
+      "colors": "Dark Gray, Ash Gray, Metallic Gray",
+      "models": "D395",
+      "price": "About 40 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-cmf-watch-pro.jpg",
+    "price": "About 40 EUR",
+    "brand": "Nothing"
+  },
+  {
+    "name": "Phone (3)",
+    "url": "https://www.gsmarena.com/nothing_phone_(3)_5g-13969.php",
+    "parsed_at": "2026-01-22T18:37:07.733972",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 6, 7, 8, 12, 17, 18, 19, 20, 25, 26, 28, 30, 34, 38, 39, 40, 41, 42, 48, 66, 71 LTE",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 12, 20, 25, 28, 30, 38, 40, 41, 48, 66, 71, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, July 02",
+      "status": "Available. Released 2025, July 15"
+    },
+    "body": {
+      "dimensions": "160.6 x 75.6 x 9 mm (6.32 x 2.98 x 0.35 in)",
+      "weight": "218 g (7.69 oz)",
+      "build": "Glass front (Gorilla Glass 7i), glass back (Gorilla Glass Victus), aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM +eSIM(max 2 at a time)"
+    },
+    "display": {
+      "type": "OLED, 1B colors, 120Hz, 960Hz PWM, HDR10+, 4500 nits (peak)",
+      "size": "6.67 inches, 107.4 cm2(~88.5% screen-to-body ratio)",
+      "resolution": "1260 x 2800 pixels, 20:9 ratio (~460 ppi density)",
+      "protection": "Corning Gorilla Glass 7i, Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15, upgradable to Android 16, Nothing OS 4.0, up to 5 major Android upgrades",
+      "chipset": "Qualcomm SM8735 Snapdragon 8s Gen 4 (4 nm)",
+      "cpu": "Octa-core (1x3.21 GHz Cortex-X4 & 3x3.0 GHz Cortex-A720 & 2x2.8 GHz Cortex-A720 & 2x2.0 GHz Cortex-A720)",
+      "gpu": "Adreno 825"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 12GB RAM, 512GB 16GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.7, 24mm (wide), 1/1.3\", PDAF, OIS50 MP, f/2.7, (periscope telephoto), 1/2.75\", PDAF, 3x optical zoom. OIS50 MP, f/2.2, 114˚ (ultrawide), 1/2.76\"",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30/60fps, 1080p@30/60fps, gyro-EIS, OIS"
+    },
+    "selfie_camera": {
+      "single": "50 MP, f/2.2, (wide), 1/2.76\"",
+      "features": "HDR",
+      "video": "4K@60fps, 1080p@60fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6/7, tri-band, Wi-Fi Direct",
+      "bluetooth": "6.0, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, BDS, GALILEO, QZSS, NavIC, SBAS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, proximity, gyro, compass"
+    },
+    "battery": {
+      "type": "Market-dependent versions:· Si/C 5150 mAh - International model· Si/C 5500 mAh - India model",
+      "charging": "65W wired, PD3.0, PPS, QC415W wireless7.5W reverse charging5W reverse wireless"
+    },
+    "misc": {
+      "colors": "White, Black",
+      "models": "A024",
+      "price": "$ 719.00 / £ 629.00 / € 596.96 / ₹ 47,799"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 1948966 (v10)GeekBench: 6900 (v6)3DMark: 4588 (Wild Life Extreme)",
+      "display": "1507 nits max brightness (measured)",
+      "loudspeaker": "-23.9 LUFS (Very good)",
+      "battery": "Active use score 12:56h"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "56:23h endurance, 1400 cycles",
+      "free_fall": "Class C (90 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-3-new.jpg",
+    "price": "$ 719.00 / £ 629.00 / € 596.96 / ₹ 47,799",
+    "brand": "Nothing"
+  },
+  {
+    "name": "CMF Phone 2 Pro",
+    "url": "https://www.gsmarena.com/nothing_cmf_phone_2_pro_5g-13821.php",
+    "parsed_at": "2026-01-22T18:37:09.387319",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 26, 20, 28, 38, 40, 41, 42, 48, 66, 71 - International",
+      "5g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 26, 20, 28, 38, 40, 41, 42, 48, 66, 71 SA/NSA - International",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, April 28",
+      "status": "Available. Released 2025, May 05"
+    },
+    "body": {
+      "dimensions": "164 x 78 x 7.8 mm (6.46 x 3.07 x 0.31 in)",
+      "weight": "185 g (6.53 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED, 1B colors, 120Hz, 2160Hz PWM, HDR10+, 800 nits (typ), 1300 nits (HBM), 3000 nits (peak)",
+      "size": "6.77 inches, 110.9 cm2(~86.7% screen-to-body ratio)",
+      "resolution": "1080 x 2392 pixels (~388 ppi density)",
+      "protection": "Panda Glass, Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15, up to 3 major Android upgrades, Nothing OS 3.2",
+      "chipset": "Mediatek Dimensity 7300 Pro (4 nm)",
+      "cpu": "Octa-core (4x2.5 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G615 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.9, 24mm (wide), 1/1.57\", 1.0µm, dual pixel PDAF50 MP, f/1.9, 50mm (telephoto), 1/2.88\", PDAF, 2x optical zoom8 MP, f/2.2, 15mm, 120˚ (ultrawide), 1/4.0\", 1.12µm",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30/60/120fps, gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.0, 22mm (wide), 1/3.0\"",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS, QZSS",
+      "nfc": "Yes (market/region dependent)",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "33W wired5W reverse wired"
+    },
+    "misc": {
+      "colors": "White, Black, Orange, Light Green",
+      "models": "A001",
+      "price": "£ 202.91 / € 249.00 / ₹ 18,100"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 683318 (v10)GeekBench: 2963 (v6)3DMark: 855 (Wild Life Extreme)",
+      "display": "1255 nits max brightness (measured)",
+      "loudspeaker": "-27.0 LUFS (Good)",
+      "battery": "Active use score 14:38h"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "53:56h endurance, 1400 cycles",
+      "free_fall": "Class C (90 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-cmf-phone-2-pro.jpg",
+    "price": "£ 202.91 / € 249.00 / ₹ 18,100",
+    "brand": "Nothing"
+  },
+  {
+    "name": "Phone (3a) Pro",
+    "url": "https://www.gsmarena.com/nothing_phone_(3a)_pro-13649.php",
+    "parsed_at": "2026-01-22T18:37:10.869428",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 20, 26, 28, 38, 40, 41, 42, 48, 66",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 12, 20, 28, 38, 40, 41, 48, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, March 04",
+      "status": "Available. Released 2025, March 25"
+    },
+    "body": {
+      "dimensions": "163.5 x 77.5 x 8.4 mm (6.44 x 3.05 x 0.33 in)",
+      "weight": "211 g (7.44 oz)",
+      "build": "Glass front (Panda Glass), plastic frame, glass back",
+      "sim": "· Nano-SIM + Nano-SIM +eSIM(max 2 at a time)· Nano-SIM + Nano-SIM - India only"
+    },
+    "display": {
+      "type": "AMOLED, 1B colors, 120Hz, 2160Hz PWM, HDR10+, 800 nits (typ), 1300 nits (HBM), 3000 nits (peak)",
+      "size": "6.77 inches, 111.5 cm2(~88.0% screen-to-body ratio)",
+      "resolution": "1080 x 2392 pixels (~387 ppi density)",
+      "protection": "Panda Glass, Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15, upgradable to Android 16, Nothing OS 4.0, up to 3 major Android upgrades",
+      "chipset": "Qualcomm SM7635 Snapdragon 7s Gen 3 (4 nm)",
+      "cpu": "Octa-core (1x2.5 GHz Cortex-A720 & 3x2.4 GHz Cortex-A720 & 4x1.8 GHz Cortex-A520)",
+      "gpu": "Adreno 810"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.9, 24mm (wide), 1/1.56\", 1.0µm, dual pixel PDAF, OIS50 MP, f/2.6, 70mm (periscope telephoto) (15cm - ∞), 1/1.95\", 0.8µm, PDAF, OIS, 3x optical zoom8 MP, f/2.2, 15mm, 120˚ (ultrawide), 1/4.0\", 1.12µm",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30/60/120fps, gyro-EIS, OIS"
+    },
+    "selfie_camera": {
+      "single": "50 MP, f/2.2, 24mm (wide), 1/2.76\"",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.4, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS, QZSS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "50W wired, 50% in 19 min, 100% in 56 min"
+    },
+    "misc": {
+      "colors": "Black, Gray",
+      "models": "A059P",
+      "price": "$ 474.25 / € 398.81"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 820097 (v10)GeekBench: 3327 (v6)3DMark: 1061 (Wild Life Extreme)",
+      "display": "1307 nits max brightness (measured)",
+      "loudspeaker": "-23.3 LUFS (Very good)",
+      "battery": "Active use score 13:37h"
+    },
+    "eu_label": {
+      "energy": "Class C",
+      "battery": "43:17h endurance, 1400 cycles",
+      "free_fall": "Class C (90 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-3a-pro-new.jpg",
+    "price": "$ 474.25 / € 398.81",
+    "brand": "Nothing"
+  },
+  {
+    "name": "Phone (3a)",
+    "url": "https://www.gsmarena.com/nothing_phone_(3a)-13672.php",
+    "parsed_at": "2026-01-22T18:37:12.747624",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 20, 26, 28, 38, 40, 41, 42, 48, 66",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 12, 20, 28, 38, 40, 41, 48, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, March 04",
+      "status": "Available. Released 2025, March 11"
+    },
+    "body": {
+      "dimensions": "163.5 x 77.5 x 8.4 mm (6.44 x 3.05 x 0.33 in)",
+      "weight": "201 g (7.09 oz)",
+      "build": "Glass front (Panda Glass), plastic frame, glass back",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED, 1B colors, 120Hz, 2160Hz PWM, HDR10+, 800 nits (typ), 1300 nits (HBM), 3000 nits (peak)",
+      "size": "6.77 inches, 111.5 cm2(~88.0% screen-to-body ratio)",
+      "resolution": "1080 x 2392 pixels (~387 ppi density)",
+      "protection": "Panda Glass, Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15, upgradable to Android 16, Nothing OS 4.0, up to 3 major Android upgrades",
+      "chipset": "Qualcomm SM7635 Snapdragon 7s Gen 3 (4 nm)",
+      "cpu": "Octa-core (1x2.5 GHz Cortex-A720 & 3x2.4 GHz Cortex-A720 & 4x1.8 GHz Cortex-A520)",
+      "gpu": "Adreno 810"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.9, 24mm (wide), 1/1.57\", 1.0µm, dual pixel PDAF, OIS50 MP, f/2.0, 50mm (telephoto), 1/2.74\", 0.64µm, PDAF (25cm - ∞), 2x optical zoom8 MP, f/2.2, 15mm, 120˚ (ultrawide), 1/4.0\", 1.12µm",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30/60/120fps, gyro-EIS, OIS"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.2, 22mm (wide), 1/3.44\"",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.4, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS, QZSS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "50W wired, 50% in 19 min, 100% in 56 min"
+    },
+    "misc": {
+      "colors": "Black, White, Blue, Community Edition green",
+      "models": "A059",
+      "price": "€ 299.52"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 828429 (v10)GeekBench: 3278 (v6)3DMark: 1064 (Wild Life Extreme)",
+      "display": "1273 nits max brightness (measured)",
+      "loudspeaker": "-24.1 LUFS (Very good)",
+      "battery": "Active use score 13:38h"
+    },
+    "eu_label": {
+      "energy": "Class C",
+      "battery": "43:56h endurance, 1400 cycles",
+      "free_fall": "Class C (90 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-3a-new.jpg",
+    "price": "€ 299.52",
+    "brand": "Nothing"
+  },
+  {
+    "name": "Phone (2a) Plus",
+    "url": "https://www.gsmarena.com/nothing_phone_(2a)_plus-13243.php",
+    "parsed_at": "2026-01-22T18:37:14.157490",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 3, 4, 5, 7, 8, 18, 19, 20, 26, 28, 38, 39, 40, 41, 42, 66",
+      "5g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2024, July 31",
+      "status": "Available. Released 2024, August 03"
+    },
+    "body": {
+      "dimensions": "161.7 x 76.3 x 8.5 mm (6.37 x 3.00 x 0.33 in)",
+      "weight": "190 g (6.70 oz)",
+      "build": "Glass front (Gorilla Glass 5), plastic frame, plastic back",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED, 1B colors, 120Hz, 2160Hz PWM, HDR10+, 700 nits (typ), 1100 nits (HBM), 1300 nits (peak)",
+      "size": "6.7 inches, 107.5 cm2(~87.1% screen-to-body ratio)",
+      "resolution": "1080 x 2412 pixels, 20:9 ratio (~395 ppi density)",
+      "protection": "Corning Gorilla Glass 5"
+    },
+    "platform": {
+      "os": "Android 14, up to 3 major Android upgrades, Nothing OS 3.0",
+      "chipset": "Mediatek Dimensity 7350 Pro (4 nm)",
+      "cpu": "Octa-core (2x3.0 GHz Cortex-A715 & 6x 2.0 GHz Cortex-A510)",
+      "gpu": "Mali-G610 MC4"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.9, 24mm (wide), 1/1.57\", 1.0µm, PDAF, OIS50 MP, f/2.2, 114˚ (ultrawide), 1/2.76\", 0.64µm",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@60/120fps, gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "50 MP, f/2.2, (wide), 1/2.76\"",
+      "features": "HDR",
+      "video": "4K@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS, QZSS",
+      "nfc": "Yes, 360˚",
+      "radio": "No",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "50W wired, 50% in 21 min, 100% in 56 min"
+    },
+    "misc": {
+      "colors": "Black, Grey",
+      "models": "A142P",
+      "price": "€ 266.90"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 620762 (v9), 774023 (v10)GeekBench: 2234 (v5), 2648 (v6)3DMark: 1377 (Wild Life Extreme)",
+      "display": "1097 nits max brightness (measured)",
+      "loudspeaker": "-26.6 LUFS (Good)",
+      "battery": "Active use score 16:34h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-2a-plus.jpg",
+    "price": "€ 266.90",
+    "brand": "Nothing"
+  },
+  {
+    "name": "CMF Phone 1",
+    "url": "https://www.gsmarena.com/nothing_cmf_phone_1-13122.php",
+    "parsed_at": "2026-01-22T18:37:15.639670",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 3, 4, 5, 7, 8, 20, 28, 38, 40, 41, 66",
+      "5g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2024, July 08",
+      "status": "Available. Released 2024, July 09"
+    },
+    "body": {
+      "dimensions": "164 x 77 x 8.2 mm (6.46 x 3.03 x 0.32 in)",
+      "weight": "197 g or 202 g (6.95 oz)",
+      "build": "Glass front, plastic back or silicone polymer back (eco leather)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED, 120Hz, 960Hz PWM, 500 nits (typ), 2000 nits (peak)",
+      "size": "6.67 inches, 107.4 cm2(~85.1% screen-to-body ratio)",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~395 ppi density)"
+    },
+    "platform": {
+      "os": "Android 14, upgradable to Android 16, up to 2 major Android upgrades, Nothing OS 4.0",
+      "chipset": "Mediatek Dimensity 7300 (4 nm)",
+      "cpu": "Octa-core (4x2.5 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G615 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.8, (wide), PDAFAuxiliary lens",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30/60fps, gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.0, (wide)",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.3, A2DP, BLE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS, QZSS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "33W wired5W reverse wired"
+    },
+    "misc": {
+      "colors": "Black, Orange, Light Green",
+      "models": "A015",
+      "price": "€ 149.00"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 536089 (v9), 646635 (v10)GeekBench: 2801 (v5), 2920 (v6)3DMark: 851 (Wild Life Extreme)",
+      "display": "1259 nits max brightness (measured)",
+      "loudspeaker": "-28.0 LUFS (Good)",
+      "battery": "Active use score 16:13h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-cmf-phone-1-ofic.jpg",
+    "price": "€ 149.00",
+    "brand": "Nothing"
+  },
+  {
+    "name": "Phone (2a)",
+    "url": "https://www.gsmarena.com/nothing_phone_(2a)-12760.php",
+    "parsed_at": "2026-01-22T18:37:17.753568",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 3, 4, 5, 7, 8, 18, 19, 20, 26, 28, 38, 39, 40, 41, 42, 66",
+      "5g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2024, March 05",
+      "status": "Available. Released 2024, March 12"
+    },
+    "body": {
+      "dimensions": "161.7 x 76.3 x 8.6 mm (6.37 x 3.00 x 0.34 in)",
+      "weight": "190 g (6.70 oz)",
+      "build": "Glass front (Gorilla Glass 5), plastic frame, plastic back",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED, 1B colors, 120Hz, 2160Hz PWM, HDR10+, 700 nits (typ), 1100 nits (HBM), 1300 nits (peak)",
+      "size": "6.7 inches, 108.0 cm2(~87.6% screen-to-body ratio)",
+      "resolution": "1080 x 2412 pixels, 20:9 ratio (~394 ppi density)",
+      "protection": "Corning Gorilla Glass 5"
+    },
+    "platform": {
+      "os": "Android 14, upgradable to Android 15, up to 3 major Android upgrades, Nothing OS 3.0",
+      "chipset": "Mediatek Dimensity 7200 Pro (4 nm)",
+      "cpu": "Octa-core (2x2.8 GHz Cortex-A715 & 6x 2.0 Cortex-A510)",
+      "gpu": "Mali-G610 MC4"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.9, 24mm (wide), 1/1.56\", 1.0µm, PDAF, OIS50 MP, f/2.2, 114˚ (ultrawide), 1/2.76\", 0.64µm",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@60/120fps, gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.2, (wide), 1/2.74\", 0.8µm",
+      "features": "HDR",
+      "video": "1080p@60fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS, QZSS",
+      "nfc": "Yes, 360˚",
+      "radio": "No",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "45W wired, 50% in 23 min, 100% in 1 hour"
+    },
+    "misc": {
+      "colors": "Black, White, Milk, Blue",
+      "models": "A142",
+      "price": "$ 449.00 / € 300.88"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 578493 (v9), 684574 (v10)GeekBench: 2184 (v5), 2592 (v6)3DMark: 1151 (Wild Life Extreme)",
+      "display": "981 nits max brightness (measured)",
+      "loudspeaker": "-26.3 LUFS (Good)",
+      "battery": "Active use score 15:53h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-2a.jpg",
+    "price": "$ 449.00 / € 300.88",
+    "brand": "Nothing"
+  },
+  {
+    "name": "Phone (2)",
+    "url": "https://www.gsmarena.com/nothing_phone_(2)-12386.php",
+    "parsed_at": "2026-01-22T18:37:19.879781",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 20, 25, 26, 28, 30, 32, 34, 38, 39, 40, 41, 42, 48, 66, 71",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 12, 20, 25, 28, 30, 38, 40, 41, 66, 71, 75, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2023, July 11",
+      "status": "Available. Released 2023, July 17"
+    },
+    "body": {
+      "dimensions": "162.1 x 76.4 x 8.6 mm (6.38 x 3.01 x 0.34 in)",
+      "weight": "201.2 g (7.09 oz)",
+      "build": "Glass front (Gorilla Glass 5), glass back (Gorilla Glass 5), aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "LTPO OLED, 1B colors, 120Hz, 1920Hz PWM, HDR10+, 1600 nits (HBM), 1600 nits (peak)",
+      "size": "6.7 inches, 108.0 cm2(~87.2% screen-to-body ratio)",
+      "resolution": "1080 x 2412 pixels, 20:9 ratio (~394 ppi density)",
+      "protection": "Corning Gorilla Glass 5"
+    },
+    "platform": {
+      "os": "Android 13, upgradable to Android 15, up to 3 major Android upgrades, Nothing OS 3.0",
+      "chipset": "Qualcomm SM8475 Snapdragon 8+ Gen 1 (4 nm)",
+      "cpu": "Octa-core (1x3.0 GHz Cortex-X2 & 3x2.5 GHz Cortex-A710 & 4x1.80 GHz Cortex-A510)",
+      "gpu": "Adreno 730"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 12GB RAM, 512GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.9, 24mm (wide), 1/1.56\", 1.0µm, PDAF, OIS50 MP, f/2.2, 114˚ (ultrawide), 1/2.76\", 0.64µm, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30/60fps, 1080p@30/60fps, gyro-EIS, live HDR, OIS"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.5, (wide), 1/2.74\", 0.8µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.3, A2DP, LE, aptX HD, aptX Adaptive",
+      "positioning": "GPS (L1+L5), GLONASS (L1), BDS (B1I+B1c), GALILEO (E1), QZSS (L1), NavIC",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, proximity, gyro, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4700 mAh",
+      "charging": "45W wired, PD3.0, PPS, QC4, 100% in 55 min15W wireless, 100% in 130 min5W reverse wireless"
+    },
+    "misc": {
+      "colors": "White, Dark Gray",
+      "models": "A065",
+      "price": "$ 619.99 / £ 428.45"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 895434 (v9), 972126 (v10)GeekBench: 3957 (v5.5), 4219 (v6.0)GFXBench: 60fps (ES 3.1 onscreen)",
+      "display": "998 nits max brightness (measured)",
+      "camera": "Photo/Video",
+      "loudspeaker": "-23.9 LUFS (Very good)",
+      "battery": "Active use score 14:21h",
+      "battery_(old)": "Endurance rating 103h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone2_.jpg",
+    "price": "$ 619.99 / £ 428.45",
+    "brand": "Nothing"
+  },
+  {
+    "name": "Phone (1)",
+    "url": "https://www.gsmarena.com/nothing_phone_(1)-11636.php",
+    "parsed_at": "2026-01-22T18:37:21.936650",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 20, 26, 28, 32, 34, 38, 39, 40, 41, 66",
+      "5g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2022, July 12",
+      "status": "Available. Released 2022, July 16"
+    },
+    "body": {
+      "dimensions": "159.2 x 75.8 x 8.3 mm (6.27 x 2.98 x 0.33 in)",
+      "weight": "193.5 g (6.84 oz)",
+      "build": "Glass front (Gorilla Glass 5), glass back (Gorilla Glass 5), aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "OLED, 1B colors, 120Hz, 1440Hz PWM, HDR10+, 500 nits (typ), 1200 nits (peak)",
+      "size": "6.55 inches, 103.6 cm2(~85.8% screen-to-body ratio)",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~402 ppi density)",
+      "protection": "Corning Gorilla Glass 5"
+    },
+    "platform": {
+      "os": "Android 12, upgradable to Android 15, up to 3 major Android upgrades, Nothing OS 3.0",
+      "chipset": "Qualcomm SM7325-AE Snapdragon 778G+ 5G (6 nm)",
+      "cpu": "Octa-core (1x2.5 GHz Cortex-A78 & 3x2.4 GHz Cortex-A78 & 4x1.9 GHz Cortex-A55)",
+      "gpu": "Adreno 642L"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.9, 24mm (wide), 1/1.56\", 1.0µm, PDAF, OIS50 MP, f/2.2, 114˚ (ultrawide), 1/2.76\", 0.64µm, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30/60fps, gyro-EIS, live HDR"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.5, (wide), 1/3.1\", 1.0µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS (L1), GLONASS (L1), BDS (B1I+B1c), GALILEO (E1), QZSS (L1)",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, proximity, gyro, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4500 mAh (17.42 Wh)",
+      "charging": "33W wired, PD3.0, QC4, 50% in 30 min, 100% in 70 min15W wireless5W reverse wireless"
+    },
+    "misc": {
+      "colors": "White, Black",
+      "models": "A063",
+      "sar": "1.29 W/kg (head) 1.09 W/kg (body)",
+      "sar_eu": "0.99 W/kg (head) 1.48 W/kg (body)",
+      "price": "$ 555.00 / £ 219.49 / ₹ 21,999"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 592789 (v9)GeekBench: 3024 (v5.1)GFXBench: 33fps (ES 3.1 onscreen)",
+      "display": "663 nits max brightness (measured)",
+      "camera": "Photo/Video",
+      "loudspeaker": "-24.4 LUFS (Very good)",
+      "battery_(old)": "Endurance rating 108h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nothing-phone-1.jpg",
+    "price": "$ 555.00 / £ 219.49 / ₹ 21,999",
+    "brand": "Nothing"
+  }
+]

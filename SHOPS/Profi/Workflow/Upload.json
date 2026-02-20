@@ -1,0 +1,746 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE public.profi_price_for_update\nSET \n  brand_attr = CASE \n    WHEN brand_attr = '1. ЗАПЧАСТИ ДЛЯ APPLE' THEN 'Apple'\n    WHEN brand_attr = '2. ЗАПЧАСТИ ДЛЯ СОТОВЫХ' THEN 'ЗАПЧАСТИ ДЛЯ СОТОВЫХ'\n    ELSE brand_attr\n  END,\n  model_attr = CASE\n    WHEN model_attr = 'ЗАПЧАСТИ ДЛЯ APPLE IPAD'   THEN 'iPad'\n    WHEN model_attr = 'ЗАПЧАСТИ ДЛЯ APPLE IPHONE' THEN 'iPhone'\n    ELSE regexp_replace(model_attr, '^ЗАПЧАСТИ ДЛЯ\\s+', '', 'g')\n  END;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        560,
+        240
+      ],
+      "id": "aa69dd70-4da1-454a-bf02-6acbf29076e8",
+      "name": "Нормализация",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://www.siriust.ru/club/price/Astraxan.xls",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1056,
+        -32
+      ],
+      "id": "bb68277d-24f0-48d0-be13-f95906ea84bb",
+      "name": "Получаем прайс XLS"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH ins AS ( INSERT INTO public.profi_price ( fix, article, barcode, name, price_rub, stock_stars, note, brand_attr, model_attr, part_type_attr, seller, source_url, loaded_at ) SELECT NULL::text AS fix, u.article, u.barcode, u.name, u.price_rub, u.stock_stars, u.note, u.brand_attr, u.model_attr, u.part_type_attr, u.seller, NULL::text AS source_url, NOW() AS loaded_at FROM public.profi_price_for_update u LEFT JOIN public.profi_price p ON p.article = u.article WHERE p.article IS NULL RETURNING id, article, barcode, name, price_rub, stock_stars, note, brand_attr, model_attr, part_type_attr, seller, loaded_at ) SELECT (SELECT COUNT(*) FROM ins) AS changed_count, ( SELECT json_agg(t) FROM ( SELECT article, barcode, name, price_rub, stock_stars, note, brand_attr, model_attr, part_type_attr, seller, loaded_at FROM ins ORDER BY article LIMIT 20 ) AS t ) AS sample;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        2400,
+        240
+      ],
+      "id": "72f0ea72-e89e-4bef-b47e-6b4e5b69608a",
+      "name": "Search for update",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH candidates AS (\n  SELECT\n    p.id,\n    p.article,\n\n    -- старые значения из price\n    p.brand_attr      AS old_brand_attr,\n    p.model_attr      AS old_model_attr,\n    p.part_type_attr  AS old_part_type_attr,\n    p.seller          AS old_seller,\n\n    -- кандидаты новых значений из price_for_update (если не пустые)\n    CASE\n      WHEN (p.brand_attr IS NULL OR btrim(p.brand_attr) = '')\n       AND COALESCE(btrim(u.brand_attr), '') <> '' THEN u.brand_attr\n      ELSE p.brand_attr\n    END AS new_brand_attr,\n\n    CASE\n      WHEN (p.model_attr IS NULL OR btrim(p.model_attr) = '')\n       AND COALESCE(btrim(u.model_attr), '') <> '' THEN u.model_attr\n      ELSE p.model_attr\n    END AS new_model_attr,\n\n    CASE\n      WHEN (p.part_type_attr IS NULL OR btrim(p.part_type_attr) = '')\n       AND COALESCE(btrim(u.part_type_attr), '') <> '' THEN u.part_type_attr\n      ELSE p.part_type_attr\n    END AS new_part_type_attr,\n\n    CASE\n      WHEN (p.seller IS NULL OR btrim(p.seller) = '')\n       AND COALESCE(btrim(u.seller), '') <> '' THEN u.seller\n      ELSE p.seller\n    END AS new_seller\n\n  FROM public.profi_price p\n  JOIN public.profi_price_for_update u\n    ON u.article = p.article\n  WHERE\n    (\n      (p.brand_attr IS NULL OR btrim(p.brand_attr) = '') AND COALESCE(btrim(u.brand_attr), '') <> ''\n    ) OR (\n      (p.model_attr IS NULL OR btrim(p.model_attr) = '') AND COALESCE(btrim(u.model_attr), '') <> ''\n    ) OR (\n      (p.part_type_attr IS NULL OR btrim(p.part_type_attr) = '') AND COALESCE(btrim(u.part_type_attr), '') <> ''\n    ) OR (\n      (p.seller IS NULL OR btrim(p.seller) = '') AND COALESCE(btrim(u.seller), '') <> ''\n    )\n  FOR UPDATE\n),\nupd AS (\n  UPDATE public.profi_price AS p\n  SET\n    brand_attr     = c.new_brand_attr,\n    model_attr     = c.new_model_attr,\n    part_type_attr = c.new_part_type_attr,\n    seller         = c.new_seller\n  FROM candidates c\n  WHERE p.id = c.id\n    AND (\n      p.brand_attr     IS DISTINCT FROM c.new_brand_attr OR\n      p.model_attr     IS DISTINCT FROM c.new_model_attr OR\n      p.part_type_attr IS DISTINCT FROM c.new_part_type_attr OR\n      p.seller         IS DISTINCT FROM c.new_seller\n    )\n  RETURNING\n    p.article,\n    -- до/после + флаги что изменилось\n    c.old_brand_attr      AS old_brand_attr,\n    p.brand_attr          AS new_brand_attr,\n    (c.old_brand_attr IS DISTINCT FROM p.brand_attr)      AS changed_brand_attr,\n\n    c.old_model_attr      AS old_model_attr,\n    p.model_attr          AS new_model_attr,\n    (c.old_model_attr IS DISTINCT FROM p.model_attr)      AS changed_model_attr,\n\n    c.old_part_type_attr  AS old_part_type_attr,\n    p.part_type_attr      AS new_part_type_attr,\n    (c.old_part_type_attr IS DISTINCT FROM p.part_type_attr) AS changed_part_type_attr,\n\n    c.old_seller          AS old_seller,\n    p.seller              AS new_seller,\n    (c.old_seller IS DISTINCT FROM p.seller)              AS changed_seller\n)\nSELECT\n  (SELECT COUNT(*) FROM upd) AS changed_count,\n  (\n    SELECT json_agg(t)\n    FROM (\n      SELECT\n        article,\n        json_build_object(\n          'brand_attr',       json_build_object('old', old_brand_attr,      'new', new_brand_attr,      'changed', changed_brand_attr),\n          'model_attr',       json_build_object('old', old_model_attr,      'new', new_model_attr,      'changed', changed_model_attr),\n          'part_type_attr',   json_build_object('old', old_part_type_attr,  'new', new_part_type_attr,  'changed', changed_part_type_attr),\n          'seller',           json_build_object('old', old_seller,          'new', new_seller,          'changed', changed_seller)\n        ) AS changes\n      FROM upd\n      ORDER BY article\n      LIMIT 20\n    ) AS t\n  ) AS sample;\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        2800,
+        240
+      ],
+      "id": "fa88dd41-f3ba-4cc2-bd10-148fc913af58",
+      "name": "Execute a SQL query1",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH upd AS (\n  UPDATE public.profi_price AS p\n  SET price_rub = u.price_rub\n  FROM public.profi_price_for_update AS u\n  WHERE u.article = p.article\n    AND p.price_rub IS DISTINCT FROM u.price_rub\n  RETURNING\n    p.article,\n    p.price_rub AS old_price_rub,\n    u.price_rub AS new_price_rub\n)\nSELECT\n  (SELECT COUNT(*) FROM upd) AS changed_count,\n  (\n    SELECT json_agg(t)\n    FROM (\n      SELECT article, old_price_rub, new_price_rub\n      FROM upd\n      ORDER BY article\n      LIMIT 20\n    ) AS t\n  ) AS sample;\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        2992,
+        240
+      ],
+      "id": "e8f836c7-3994-43c0-8e51-839e8ae079aa",
+      "name": "Обновление цен",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "truncate table public.profi_price_for_update restart identity;\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        624,
+        -32
+      ],
+      "id": "72f26352-f463-4ce3-ad21-458f6292f6f2",
+      "name": "Чистим Price For UIpdate",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH batch_sellers AS (\n  -- Продавцы, присутствующие в текущем батче, но только \"Профи\"\n  SELECT DISTINCT seller\n  FROM public.profi_price_for_update\n  WHERE seller = 'Профи'\n),\ncandidates AS (\n  -- 1) Обновляем, если (article, seller) есть в батче и stock_stars отличается\n  SELECT\n    p.id,\n    p.article,\n    p.seller,\n    p.stock_stars AS old_stock_stars,\n    u.stock_stars AS new_stock_stars\n  FROM public.profi_price p\n  JOIN public.profi_price_for_update u\n    ON u.article = p.article\n   AND u.seller  IS NOT DISTINCT FROM p.seller\n  JOIN batch_sellers bs\n    ON bs.seller IS NOT DISTINCT FROM p.seller\n  WHERE p.seller = 'Профи'\n    AND p.stock_stars IS DISTINCT FROM u.stock_stars\n\n  UNION ALL\n\n  -- 2) Обнуляем, если (article, seller) нет в батче у того же продавца\n  SELECT\n    p.id,\n    p.article,\n    p.seller,\n    p.stock_stars AS old_stock_stars,\n    0             AS new_stock_stars\n  FROM public.profi_price p\n  JOIN batch_sellers bs\n    ON bs.seller IS NOT DISTINCT FROM p.seller\n  WHERE p.seller = 'Профи'\n    AND p.stock_stars IS DISTINCT FROM 0\n    AND NOT EXISTS (\n      SELECT 1\n      FROM public.profi_price_for_update u\n      WHERE u.article = p.article\n        AND u.seller  IS NOT DISTINCT FROM p.seller\n    )\n),\nupd AS (\n  UPDATE public.profi_price AS p\n  SET stock_stars = c.new_stock_stars\n  FROM candidates c\n  WHERE p.id = c.id\n  RETURNING\n    p.article,\n    c.old_stock_stars,\n    c.new_stock_stars\n)\nSELECT\n  (SELECT COUNT(*) FROM upd) AS changed_count,\n  (\n    SELECT json_agg(t)\n    FROM (\n      SELECT article, old_stock_stars, new_stock_stars\n      FROM upd\n      ORDER BY article\n      LIMIT 20\n    ) AS t\n  ) AS sample;\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        2608,
+        240
+      ],
+      "id": "399ed6ed-fa1c-4418-9010-dc4d3b620b01",
+      "name": "Если нет в наличии",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO profi_price (\n    id, \n    article, \n    barcode, \n    name, \n    price_rub, \n    stock_stars, \n    loaded_at,\n    note,\n    brand_attr,\n    model_attr,\n    part_type_attr,\n    seller\n)\nSELECT \n    gen_random_uuid() as id,\n    article,\n    barcode,\n    name,\n    price_rub,\n    stock_stars,\n    NOW() as loaded_at,\n    note,\n    brand_attr,\n    model_attr,\n    part_type_attr,\n    seller\nFROM profi_price_for_update u\nWHERE NOT EXISTS (\n    SELECT 1 \n    FROM profi_price p \n    WHERE p.article = u.article \n      AND p.barcode IS NOT DISTINCT FROM u.barcode\n);\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        3200,
+        240
+      ],
+      "id": "c48e6ed4-298e-4465-8215-1cf5259a182e",
+      "name": "Copy data from price_for_update to price",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH dla_data AS (\n    SELECT \n        id,\n        part_type_attr,\n        -- Считаем количество вхождений \"ДЛЯ\"\n        (LENGTH(UPPER(part_type_attr)) - LENGTH(REPLACE(UPPER(part_type_attr), 'ДЛЯ', ''))) / 3 as dla_count,\n        -- Находим позицию первого \"ДЛЯ\"\n        POSITION('ДЛЯ' IN UPPER(part_type_attr)) as first_dla_pos,\n        -- Находим позицию второго \"ДЛЯ\" (если есть)\n        CASE \n            WHEN (LENGTH(UPPER(part_type_attr)) - LENGTH(REPLACE(UPPER(part_type_attr), 'ДЛЯ', ''))) / 3 >= 2 THEN\n                POSITION('ДЛЯ' IN UPPER(SUBSTRING(part_type_attr FROM POSITION('ДЛЯ' IN UPPER(part_type_attr)) + 3)))\n            ELSE 0\n        END as second_dla_pos_relative\n    FROM profi_price_for_update\n    WHERE model_attr ILIKE '%iPhone%' \n    AND part_type_attr IS NOT NULL\n    AND part_type_attr ILIKE '%ДЛЯ%'\n)\nUPDATE profi_price_for_update p\nSET part_type_attr = CASE \n    WHEN d.dla_count = 1 THEN\n        TRIM(SUBSTRING(d.part_type_attr FROM 1 FOR d.first_dla_pos - 1))\n    WHEN d.dla_count >= 2 THEN\n        TRIM(SUBSTRING(\n            d.part_type_attr \n            FROM 1 \n            FOR d.first_dla_pos + d.second_dla_pos_relative + 1\n        ))\n    ELSE p.part_type_attr\nEND\nFROM dla_data d\nWHERE p.id = d.id;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        752,
+        240
+      ],
+      "id": "e7bb1fa3-11ef-4111-861d-1dba1461f8ff",
+      "name": "Расставляем тип запчасти iPhone",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE profi_price_for_update\nSET \n    brand_attr = TRIM(model_attr),\n    model_attr = NULL\nWHERE model_attr IS NOT NULL \n  AND TRIM(model_attr) != '';",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        960,
+        240
+      ],
+      "id": "a35fb961-7002-407e-b265-c1c1ff78a36e",
+      "name": "перенос моделей в Бренд",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH model_patterns AS (\n  SELECT unnest(ARRAY[\n    '16 Pro Max','15 Pro Max','14 Pro Max','13 Pro Max','12 Pro Max','11 Pro Max',\n    '16 Plus','15 Plus','14 Plus',\n    '16 Pro','15 Pro','14 Pro','13 Pro','12 Pro','11 Pro',\n    '13 Mini','12 Mini',\n    'XS Max','8 Plus','7 Plus','6S Plus','6 Plus',\n    'SE 2022','SE 2020',\n    '16e',\n    '16','15','14','13','12','11',\n    'XS','XR','X','8','7','6S','6','5S','5C','5','SE','4S','4'\n  ]) AS model\n),\nrows AS (\n  SELECT id, name\n  FROM public.profi_price_for_update\n  WHERE brand_attr = 'iPhone' AND name IS NOT NULL\n),\npat AS (\n  SELECT '(?i)\\y(' || string_agg(regexp_replace(model, '\\s+', ' ', 'g'), '|') || ')\\y' AS rx\n  FROM model_patterns\n),\nhits AS (\n  SELECT r.id,\n         mp.model AS canonical_model,\n         m.m[1]   AS matched_text,\n         position(lower(mp.model) in lower(r.name)) AS pos,\n         length(mp.model) AS len\n  FROM rows r\n  CROSS JOIN pat p\n  CROSS JOIN LATERAL regexp_matches(r.name, p.rx, 'g') AS m(m)\n  JOIN model_patterns mp\n    ON lower(m.m[1]) = lower(mp.model)\n),\nuniq AS (\n  SELECT id, canonical_model, MIN(pos) AS pos, MAX(len) AS len\n  FROM hits\n  GROUP BY id, canonical_model\n),\ndedup AS (\n  SELECT id,\n         string_agg(canonical_model, '|' ORDER BY pos, len DESC) AS models_pipe\n  FROM uniq\n  GROUP BY id\n)\nUPDATE public.profi_price_for_update pfu\nSET model_attr = d.models_pipe\nFROM dedup d\nWHERE d.id = pfu.id\n  -- обновляем только если значение реально изменится\n  AND COALESCE(pfu.model_attr,'') IS DISTINCT FROM COALESCE(d.models_pipe,'')\nRETURNING\n  pfu.id,\n  pfu.name,\n  COALESCE(pfu.model_attr,'')  AS old_model_attr,\n  COALESCE(d.models_pipe,'')   AS new_model_attr;\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        1248,
+        240
+      ],
+      "id": "59b8d394-682e-4aad-af27-a448b7a91e80",
+      "name": "Обработка моделей",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE profi_price p\nSET model_attr     = u.model_attr,\n    brand_attr     = u.brand_attr,\n    part_type_attr = u.part_type_attr\nFROM profi_price_for_update u\nWHERE p.article = u.article\n  -- обновляем только если значения реально отличаются\n  AND (\n    COALESCE(p.model_attr,'')     IS DISTINCT FROM COALESCE(u.model_attr,'')\n    OR COALESCE(p.brand_attr,'')  IS DISTINCT FROM COALESCE(u.brand_attr,'')\n    OR COALESCE(p.part_type_attr,'') IS DISTINCT FROM COALESCE(u.part_type_attr,'')\n  )\nRETURNING\n  p.id,\n  p.article,\n  p.name,\n  p.model_attr     AS new_model_attr,\n  p.brand_attr     AS new_brand_attr,\n  p.part_type_attr AS new_part_type_attr;\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        3424,
+        240
+      ],
+      "id": "07008102-9406-4a0f-90e0-b4bf09901060",
+      "name": "Execute a SQL query2",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH src AS (\n  SELECT\n    id,\n    -- 1) brand_attr -> \"АКБ\"\n    'АКБ'::text AS interim_brand,\n    -- 2) part_type_attr: если \"АККУМУЛЯТОРЫ\" → \"УНИВЕРСАЛЬНЫЙ\",\n    --    иначе отрезаем первые 4 символа (с 5-го до конца)\n    CASE\n      WHEN part_type_attr IS NULL THEN NULL\n      WHEN btrim(part_type_attr) = 'АККУМУЛЯТОРЫ' THEN 'УНИВЕРСАЛЬНЫЙ'\n      ELSE btrim(SUBSTRING(part_type_attr FROM 5))\n    END AS interim_part\n  FROM public.profi_price_for_update\n  WHERE brand_attr ILIKE 'АКБ ДЛЯ МОБИЛЬНОЙ ТЕХНИКИ'\n),\nswapped AS (\n  -- 3) Итог: меняем местами рассчитанные значения\n  SELECT\n    id,\n    interim_part  AS new_brand_attr,\n    interim_brand AS new_part_type_attr\n  FROM src\n)\nUPDATE public.profi_price_for_update p\nSET\n  brand_attr     = s.new_brand_attr,\n  part_type_attr = s.new_part_type_attr\nFROM swapped s\nWHERE p.id = s.id\nRETURNING p.id, p.name, p.brand_attr AS brand_after, p.part_type_attr AS part_type_after;\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        1488,
+        240
+      ],
+      "id": "c4600b4f-bf0b-4af9-8102-48564e498c2c",
+      "name": "Правильно ставим АКБ для Android",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE public.profi_price_for_update\nSET brand_attr = 'УНИВЕРСАЛЬНЫЙ'\nWHERE brand_attr = 'УНИВЕРСАЛЬНЫЕ ЗАПЧАСТИ'\nRETURNING id, name, brand_attr;\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        1728,
+        240
+      ],
+      "id": "d0a2077d-f7e0-498e-9e21-69b7a75d3dae",
+      "name": "Execute a SQL query3",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE public.profi_price_for_update\nSET part_type_attr = CASE TRIM(part_type_attr)\n  WHEN 'АКБ' THEN 'АКБ'\n  WHEN 'АНТЕННЫЙ ПРОВОД' THEN 'АНТЕННЫЙ ПРОВОД'\n  WHEN 'ВИНТЫ' THEN 'ВИНТЫ'\n  WHEN 'ДЕРЖАТЕЛИ SIM' THEN 'ДЕРЖАТЕЛИ, КОННЕКТОРЫ SIM/КАРТЫ ПАМЯТИ'\n  WHEN 'ДЕРЖАТЕЛИ, КОННЕКТОРЫ SIM/КАРТЫ ПАМЯТИ' THEN 'ДЕРЖАТЕЛИ, КОННЕКТОРЫ SIM/КАРТЫ ПАМЯТИ'\n  WHEN 'КОННЕКТОРЫ SIM/КАРТЫ ПАМЯТИ' THEN 'ДЕРЖАТЕЛИ, КОННЕКТОРЫ SIM/КАРТЫ ПАМЯТИ'\n  WHEN 'ДЖОЙСТИКИ' THEN 'ДЖОЙСТИК'\n  WHEN 'ДИНАМИК' THEN 'ЗВОНКИ, ДИНАМИКИ, ВИБРОМОТОРЫ'\n  WHEN 'ЗВОНКИ, ВИБРОЗВОНКИ, ДИНАМИКИ' THEN 'ЗВОНКИ, ДИНАМИКИ, ВИБРОМОТОРЫ'\n  WHEN 'ЗВОНКИ, ДИНАМИКИ' THEN 'ЗВОНКИ, ДИНАМИКИ, ВИБРОМОТОРЫ'\n  WHEN 'ДИСПЛЕИ' THEN 'ДИСПЛЕЙ'\n  WHEN 'ДИСПЛЕИ INCELL' THEN 'ДИСПЛЕЙ'\n  WHEN 'ДИСПЛЕИ OLED' THEN 'ДИСПЛЕЙ'\n  WHEN 'ДИСПЛЕИ ORIGINAL' THEN 'ДИСПЛЕЙ'\n  WHEN 'ДИСПЛЕИ PREMIUM' THEN 'ДИСПЛЕЙ'\n  WHEN 'ДИСПЛЕИ TIANMA' THEN 'ДИСПЛЕЙ'\n  WHEN 'ЗАГЛУШКИ' THEN 'ЗАГЛУШКА'\n  WHEN 'ЗАДНИЕ КРЫШКИ' THEN 'КРЫШКА ЗАДНЯЯ'\n  WHEN 'ЗАДНЯЯ КРЫШКИ' THEN 'КРЫШКА ЗАДНЯЯ'\n  WHEN 'КАМЕРЫ' THEN 'КАМЕРА'\n  WHEN 'КНОПКИ' THEN 'КНОПКИ'\n  WHEN 'КНОПКИ ВКЛЮЧЕНИЯ' THEN 'КНОПКИ'\n  WHEN 'КНОПКИ ВКЛЮЧЕНИЯ, ТОЛКАТЕЛИ' THEN 'КНОПКИ'\n  WHEN 'КОРПУСА' THEN 'КОРПУС'\n  WHEN 'МИКРОСХЕМЫ' THEN 'МИКРОСХЕМА'\n  WHEN 'МИКРОФОНЫ' THEN 'МИКРОФОН'\n  WHEN 'ПЛАТЫ КЛАВИАТУРЫ' THEN 'ПЛАТА КЛАВИАТУРЫ'\n  WHEN 'ПРОКЛЕЙКИ ДЛЯ ДИСПЛЕЙНЫХ МОДУЛЕЙ И ЗАДНИХ КРЫШЕК' THEN 'СКОТЧ, ПРОКЛЕЙКА'\n  WHEN 'РАЗЪЕМЫ' THEN 'РАЗЪЕМ'\n  WHEN 'РАЗЪЕМЫ ДЛЯ ЗАРЯДКИ' THEN 'РАЗЪЕМ'\n  WHEN 'РАЗЪЕМЫ ДЛЯ ЗАРЯДКИ, АУДИО РАЗЪЕМЫ' THEN 'РАЗЪЕМ'\n  WHEN 'РАЗЪЕМЫ ЗАРЯДКИ' THEN 'РАЗЪЕМ'\n  WHEN 'РАМКИ' THEN 'РАМКА'\n  WHEN 'СКОТЧ ДЛЯ ФИКСАЦИИ АКБ' THEN 'СКОТЧ, ПРОКЛЕЙКА'\n  WHEN 'СТЕКЛА КАМЕРЫ' THEN 'СТЕКЛО'\n  WHEN 'СТЕКЛО КАМЕРЫ' THEN 'СТЕКЛО'\n  WHEN 'ТАЧСКРИНЫ' THEN 'ТАЧСКРИН'\n  WHEN 'ТАЧСКРИНЫ ДЛЯ IPAD' THEN 'ТАЧСКРИН'\n  WHEN 'ШЛЕЙФА' THEN 'ШЛЕЙФ'\n  WHEN 'ШЛЕЙФА ДЛЯ IPAD' THEN 'ШЛЕЙФ'\n  ELSE TRIM(part_type_attr)\nEND\nWHERE TRIM(part_type_attr) IN (\n  'АКБ','АНТЕННЫЙ ПРОВОД','ВИНТЫ',\n  'ДЕРЖАТЕЛИ SIM','ДЕРЖАТЕЛИ, КОННЕКТОРЫ SIM/КАРТЫ ПАМЯТИ','КОННЕКТОРЫ SIM/КАРТЫ ПАМЯТИ',\n  'ДЖОЙСТИКИ','ДИНАМИК','ЗВОНКИ, ВИБРОЗВОНКИ, ДИНАМИКИ','ЗВОНКИ, ДИНАМИКИ',\n  'ДИСПЛЕИ','ДИСПЛЕИ INCELL','ДИСПЛЕИ OLED','ДИСПЛЕИ ORIGINAL','ДИСПЛЕИ PREMIUM','ДИСПЛЕИ TIANMA',\n  'ЗАГЛУШКИ','ЗАДНИЕ КРЫШКИ','ЗАДНЯЯ КРЫШКИ',\n  'КАМЕРЫ','КНОПКИ','КНОПКИ ВКЛЮЧЕНИЯ','КНОПКИ ВКЛЮЧЕНИЯ, ТОЛКАТЕЛИ',\n  'КОРПУСА','МИКРОСХЕМЫ','МИКРОФОНЫ','ПЛАТЫ КЛАВИАТУРЫ',\n  'ПРОКЛЕЙКИ ДЛЯ ДИСПЛЕЙНЫХ МОДУЛЕЙ И ЗАДНИХ КРЫШЕК',\n  'РАЗЪЕМЫ','РАЗЪЕМЫ ДЛЯ ЗАРЯДКИ','РАЗЪЕМЫ ДЛЯ ЗАРЯДКИ, АУДИО РАЗЪЕМЫ','РАЗЪЕМЫ ЗАРЯДКИ',\n  'РАМКИ','СКОТЧ ДЛЯ ФИКСАЦИИ АКБ',\n  'СТЕКЛА КАМЕРЫ','СТЕКЛО КАМЕРЫ',\n  'ТАЧСКРИНЫ','ТАЧСКРИНЫ ДЛЯ IPAD',\n  'ШЛЕЙФА','ШЛЕЙФА ДЛЯ IPAD'\n)\nRETURNING id, part_type_attr;\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        2176,
+        240
+      ],
+      "id": "7661469e-2ca3-43eb-9dc9-ac7d50c72ecc",
+      "name": "Приводим к единому виду тип запчасти",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// вернёт ровно один пустой item\nreturn [{}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1952,
+        240
+      ],
+      "id": "74fea02b-27ac-41e1-973c-b76e93593582",
+      "name": "Code"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE profi_price p\nSET\n    model_attr     = u.model_attr,\n    brand_attr     = u.brand_attr,\n    part_type_attr = u.part_type_attr\nFROM profi_price_for_update u\nWHERE p.article = u.article\n  AND p.seller  = u.seller;\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        3632,
+        240
+      ],
+      "id": "636f855f-a542-4a35-beac-547c63b5a664",
+      "name": "Execute a SQL query4",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "DELETE FROM public.profi_price_for_update\nWHERE NOT (\n  (brand_attr = '3. АКСЕССУАРЫ' AND model_attr = 'АКБ ДЛЯ МОБИЛЬНОЙ ТЕХНИКИ')\n  OR brand_attr IN ('2. ЗАПЧАСТИ ДЛЯ СОТОВЫХ','1. ЗАПЧАСТИ ДЛЯ APPLE')\n);\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        352,
+        240
+      ],
+      "id": "92ce4c7a-371c-49a9-bb79-091c399ab349",
+      "name": "Удаляем все что не запчасти",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        304,
+        -32
+      ],
+      "id": "31e6773d-ed14-4e30-86f3-0ffa779e1d49",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "schema": {
+          "__rl": true,
+          "value": "public",
+          "mode": "list",
+          "cachedResultName": "public"
+        },
+        "table": {
+          "__rl": true,
+          "value": "profi_price_for_update",
+          "mode": "list",
+          "cachedResultName": "profi_price_for_update"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "name": "={{ $json.__EMPTY_4 }}",
+            "article": "={{ $json.__EMPTY_2 }}",
+            "barcode": "={{ $json.__EMPTY_3 }}",
+            "brand_attr": "={{ $json['Признак бренда'] }}",
+            "model_attr": "={{ $json['Признак модели'] }}",
+            "part_type_attr": "={{ $json['Тип запчасти'] }}",
+            "seller": "Профи",
+            "stock_stars": "={{$json[\"Количество\"] \n   ? ( ($json[\"Количество\"].length - $json[\"Количество\"].replace(/\\*/g, '').length) || null )\n   : null}}\n",
+            "price_rub": "={{\n  $json[\"Цена\"]\n    ? parseFloat(\n        $json[\"Цена\"]\n          .replace(/[^\\d.,]/g, '')   // убираем всё, кроме цифр, запятой и точки\n          .replace(',', '.')         // заменяем запятую на точку\n      )\n    : null\n}}"
+          },
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "removed": true
+            },
+            {
+              "id": "name",
+              "displayName": "name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "article",
+              "displayName": "article",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "barcode",
+              "displayName": "barcode",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "price_rub",
+              "displayName": "price_rub",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "stock_stars",
+              "displayName": "stock_stars",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "note",
+              "displayName": "note",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "brand_attr",
+              "displayName": "brand_attr",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "model_attr",
+              "displayName": "model_attr",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "part_type_attr",
+              "displayName": "part_type_attr",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "seller",
+              "displayName": "seller",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        2048,
+        -32
+      ],
+      "id": "65c04b83-e500-4193-b6f2-52b5db7e6fba",
+      "name": "Обновляем Price for Update",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Нормализация": {
+      "main": [
+        [
+          {
+            "node": "Расставляем тип запчасти iPhone",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Получаем прайс XLS": {
+      "main": [
+        [
+          {
+            "node": "Обновляем Price for Update",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Search for update": {
+      "main": [
+        [
+          {
+            "node": "Если нет в наличии",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute a SQL query1": {
+      "main": [
+        [
+          {
+            "node": "Обновление цен",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Обновление цен": {
+      "main": [
+        [
+          {
+            "node": "Copy data from price_for_update to price",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Чистим Price For UIpdate": {
+      "main": [
+        [
+          {
+            "node": "Получаем прайс XLS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Если нет в наличии": {
+      "main": [
+        [
+          {
+            "node": "Execute a SQL query1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Copy data from price_for_update to price": {
+      "main": [
+        [
+          {
+            "node": "Execute a SQL query2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Расставляем тип запчасти iPhone": {
+      "main": [
+        [
+          {
+            "node": "перенос моделей в Бренд",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "перенос моделей в Бренд": {
+      "main": [
+        [
+          {
+            "node": "Обработка моделей",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Обработка моделей": {
+      "main": [
+        [
+          {
+            "node": "Правильно ставим АКБ для Android",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute a SQL query2": {
+      "main": [
+        [
+          {
+            "node": "Execute a SQL query4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Правильно ставим АКБ для Android": {
+      "main": [
+        [
+          {
+            "node": "Execute a SQL query3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute a SQL query3": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Приводим к единому виду тип запчасти": {
+      "main": [
+        [
+          {
+            "node": "Search for update",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Приводим к единому виду тип запчасти",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Удаляем все что не запчасти": {
+      "main": [
+        [
+          {
+            "node": "Нормализация",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Чистим Price For UIpdate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Обновляем Price for Update": {
+      "main": [
+        [
+          {
+            "node": "Удаляем все что не запчасти",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "530b9caf6d3d0554c7f433b384abca845599b24ecefd5677a8384fe2f03fd69b"
+  }
+}

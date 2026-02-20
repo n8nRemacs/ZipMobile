@@ -1,0 +1,86 @@
+{
+  "name": "05GSM - Check Price by Article/URL",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "05gsm/price",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "POST /price",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 300],
+      "webhookId": "05gsm-check-price"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $input.first().json.body || {};\nconst article = body.article || '';\nconst url = body.url || '';\n\nif (!article && !url) {\n  throw new Error('Article or URL is required');\n}\n\nreturn [{ json: { article, url } }];"
+      },
+      "id": "validate",
+      "name": "Validate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "={{ \n  const article = ($json.article || '').replace(/'/g, \"''\");\n  const url = ($json.url || '').replace(/'/g, \"''\");\n  \n  let where = '';\n  if (article) {\n    where = `n.article = '${article}'`;\n  } else if (url) {\n    where = `p.product_url LIKE '%${url}%'`;\n  }\n  \n  `SELECT n.article, n.name, n.category, p.price, p.in_stock, p.product_url, p.updated_at FROM gsm05_nomenclature n JOIN gsm05_prices p ON p.nomenclature_id = n.id WHERE ${where} LIMIT 1;`\n}}",
+        "options": {}
+      },
+      "id": "get-price",
+      "name": "Get Price",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [440, 300],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL 05GSM"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const result = $input.first().json;\nconst input = $('Validate').first().json;\n\nif (!result || !result.article) {\n  return [{ json: { success: false, error: 'Not found', article: input.article, url: input.url } }];\n}\n\nreturn [{\n  json: {\n    success: true,\n    shop: '05gsm',\n    article: result.article,\n    name: result.name,\n    category: result.category,\n    price: parseFloat(result.price) || 0,\n    in_stock: result.in_stock,\n    url: result.product_url,\n    updated_at: result.updated_at\n  }\n}];"
+      },
+      "id": "format",
+      "name": "Format",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [880, 300]
+    }
+  ],
+  "connections": {
+    "POST /price": {
+      "main": [[{ "node": "Validate", "type": "main", "index": 0 }]]
+    },
+    "Validate": {
+      "main": [[{ "node": "Get Price", "type": "main", "index": 0 }]]
+    },
+    "Get Price": {
+      "main": [[{ "node": "Format", "type": "main", "index": 0 }]]
+    },
+    "Format": {
+      "main": [[{ "node": "Response", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": { "executionOrder": "v1" },
+  "staticData": null,
+  "tags": ["05gsm", "api", "price"]
+}

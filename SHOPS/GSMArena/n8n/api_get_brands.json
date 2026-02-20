@@ -1,0 +1,122 @@
+{
+  "name": "GSMArena API - GET Brands",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "GET",
+        "path": "gsmarena/brands",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "GET /brands",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 200],
+      "webhookId": "gsmarena-brands"
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://www.gsmarena.com/makers.php3",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+            }
+          ]
+        }
+      },
+      "id": "http-request",
+      "name": "Fetch GSMArena",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [220, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\n\nconst html = $input.first().json.data;\nconst $ = cheerio.load(html);\n\nconst brands = [];\n\n$('div.st-text a').each((i, el) => {\n  const href = $(el).attr('href') || '';\n  const text = $(el).text().trim();\n  \n  const match = text.match(/(.+?)\\s*(\\d+)\\s*devices?/);\n  \n  if (match && href.includes('-phones-')) {\n    const name = match[1].trim();\n    const deviceCount = parseInt(match[2]);\n    const code = href.replace('-phones-', '_').replace('.php', '').split('_')[0];\n    \n    brands.push({\n      name: name,\n      code: code.toLowerCase(),\n      url: `https://www.gsmarena.com/${href}`,\n      device_count: deviceCount\n    });\n  }\n});\n\n// Sort by device count (most popular first)\nbrands.sort((a, b) => b.device_count - a.device_count);\n\nreturn [{\n  json: {\n    success: true,\n    count: brands.length,\n    brands: brands\n  }\n}];"
+      },
+      "id": "parse",
+      "name": "Parse Brands",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [440, 200]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [660, 200]
+    }
+  ],
+  "connections": {
+    "GET /brands": {
+      "main": [
+        [
+          {
+            "node": "Fetch GSMArena",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch GSMArena": {
+      "main": [
+        [
+          {
+            "node": "Parse Brands",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Brands": {
+      "main": [
+        [
+          {
+            "node": "Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["gsmarena", "api"]
+}

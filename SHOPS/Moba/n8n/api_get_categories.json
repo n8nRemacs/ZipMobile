@@ -1,0 +1,160 @@
+{
+  "name": "Moba API - Get Categories",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "GET",
+        "path": "moba/categories",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "GET /categories",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 300],
+      "webhookId": "moba-get-categories"
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://proxy-manager:8000/get",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {"name": "type", "value": "http"},
+            {"name": "exclude", "value": "moba"}
+          ]
+        },
+        "options": {
+          "timeout": 5000,
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "get-proxy",
+      "name": "Get Proxy",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [220, 200],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://mcp-playwright:3001/tools/get_cookies",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\"site\": \"moba\"}",
+        "options": {
+          "timeout": 120000,
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "get-mcp-cookies",
+      "name": "Get Cookies from MCP",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [220, 400],
+      "continueOnFail": true,
+      "notes": "MCP Playwright solves Yandex SmartCaptcha and returns cookies"
+    },
+    {
+      "parameters": {
+        "jsCode": "const proxyResult = $('Get Proxy').first().json;\nconst mcpResult = $('Get Cookies from MCP').first().json;\n\n// Proxy setup\nlet proxyUrl = null;\nlet proxyAddress = null;\nif (proxyResult?.proxy) {\n  proxyAddress = proxyResult.proxy;\n  proxyUrl = `http://${proxyResult.proxy}`;\n  console.log(`[PROXY] Using: ${proxyAddress}`);\n}\n\n// MCP cookies\nlet cookieHeader = '';\nlet userAgent = 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 Chrome/131.0.0.0 Mobile Safari/537.36';\n\nif (mcpResult?.success) {\n  cookieHeader = mcpResult.cookie_string || '';\n  userAgent = mcpResult.user_agent || userAgent;\n  console.log(`[MCP] Got ${mcpResult.cookies_count || 0} cookies`);\n} else {\n  console.log('[MCP] Failed to get cookies - site may block');\n}\n\nreturn [{\n  json: {\n    proxy_url: proxyUrl,\n    proxy_address: proxyAddress,\n    cookie_header: cookieHeader,\n    user_agent: userAgent\n  }\n}];"
+      },
+      "id": "merge-setup",
+      "name": "Merge Proxy + Cookies",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://moba.ru/catalog/",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000,
+          "proxy": "={{ $json.proxy_url }}"
+        },
+        "headerParameters": {
+          "parameters": [
+            {"name": "User-Agent", "value": "={{ $json.user_agent }}"},
+            {"name": "Accept", "value": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},
+            {"name": "Accept-Language", "value": "ru-RU,ru;q=0.9,en;q=0.8"},
+            {"name": "Cookie", "value": "={{ $json.cookie_header }}"},
+            {"name": "Sec-Ch-Ua-Mobile", "value": "?1"},
+            {"name": "Sec-Ch-Ua-Platform", "value": "\"Android\""}
+          ]
+        }
+      },
+      "id": "fetch-catalog",
+      "name": "Fetch Catalog",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [660, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\nconst html = $input.first().json.data;\nconst $ = cheerio.load(html);\n\n// Check for captcha\nif (html.includes('SmartCaptcha') || html.includes('captcha')) {\n  throw new Error('Blocked by SmartCaptcha - cookies may be expired');\n}\n\nconst categories = [];\nconst seen = new Set();\n\n$('a[href*=\"/catalog/\"]').each((i, el) => {\n  const href = $(el).attr('href') || '';\n  \n  // Filter valid category URLs\n  if (href.startsWith('/catalog/') && \n      href !== '/catalog/' &&\n      !href.includes('filter') &&\n      !href.includes('?') &&\n      href.split('/').filter(p => p).length >= 2) {\n    \n    const cleanUrl = href.split('?')[0].replace(/\\/$/, '');\n    \n    if (!seen.has(cleanUrl)) {\n      seen.add(cleanUrl);\n      const name = $(el).text().trim();\n      if (name && name.length > 1 && name.length < 100) {\n        categories.push({\n          url: cleanUrl,\n          full_url: `https://moba.ru${cleanUrl}`,\n          name: name\n        });\n      }\n    }\n  }\n});\n\nconsole.log(`[CATEGORIES] Found ${categories.length} categories`);\n\nreturn [{\n  json: {\n    success: true,\n    total: categories.length,\n    categories: categories\n  }\n}];"
+      },
+      "id": "parse-categories",
+      "name": "Parse Categories",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [880, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1100, 300]
+    }
+  ],
+  "connections": {
+    "GET /categories": {
+      "main": [[{ "node": "Get Proxy", "type": "main", "index": 0 }, { "node": "Get Cookies from MCP", "type": "main", "index": 0 }]]
+    },
+    "Get Proxy": {
+      "main": [[{ "node": "Merge Proxy + Cookies", "type": "main", "index": 0 }]]
+    },
+    "Get Cookies from MCP": {
+      "main": [[{ "node": "Merge Proxy + Cookies", "type": "main", "index": 0 }]]
+    },
+    "Merge Proxy + Cookies": {
+      "main": [[{ "node": "Fetch Catalog", "type": "main", "index": 0 }]]
+    },
+    "Fetch Catalog": {
+      "main": [[{ "node": "Parse Categories", "type": "main", "index": 0 }]]
+    },
+    "Parse Categories": {
+      "main": [[{ "node": "Response", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["moba", "api", "proxy-manager", "mcp"]
+}

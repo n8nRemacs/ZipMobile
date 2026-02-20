@@ -1,0 +1,19 @@
+{
+  "name": "MemsTech - Check Price",
+  "nodes": [
+    {"parameters": {"httpMethod": "POST", "path": "memstech/price", "responseMode": "responseNode", "options": {}}, "id": "webhook", "name": "POST /price", "type": "n8n-nodes-base.webhook", "typeVersion": 2, "position": [0, 300]},
+    {"parameters": {"jsCode": "const body = $input.first().json.body || {};\nconst article = body.article || '';\nconst url = body.url || '';\nif (!article && !url) throw new Error('Article or URL required');\nreturn [{ json: { article, url } }];"}, "id": "validate", "name": "Validate", "type": "n8n-nodes-base.code", "typeVersion": 2, "position": [220, 300]},
+    {"parameters": {"operation": "executeQuery", "query": "={{ `SELECT n.article, n.name, n.category, p.price, p.in_stock, p.product_url, o.city, p.updated_at FROM memstech_nomenclature n JOIN memstech_prices p ON p.nomenclature_id = n.id JOIN outlets o ON o.id = p.outlet_id WHERE ${$json.article ? \"n.article = '\" + $json.article.replace(/'/g, \"''\") + \"'\" : \"p.product_url LIKE '%\" + $json.url.replace(/'/g, \"''\") + \"%'\"} ORDER BY p.updated_at DESC;` }}", "options": {}}, "id": "get-price", "name": "Get Price", "type": "n8n-nodes-base.postgres", "typeVersion": 2.5, "position": [440, 300], "credentials": {"postgres": {"id": "POSTGRES_CREDENTIAL_ID", "name": "PostgreSQL MemsTech"}}},
+    {"parameters": {"jsCode": "const results = $input.all().map(i => i.json);\nconst input = $('Validate').first().json;\nif (!results.length || !results[0].article) return [{ json: { success: false, error: 'Not found', article: input.article, url: input.url } }];\nreturn [{ json: { success: true, shop: 'memstech', article: results[0].article, name: results[0].name, category: results[0].category, prices_by_city: results.map(r => ({ city: r.city, price: parseFloat(r.price) || 0, in_stock: r.in_stock, url: r.product_url, updated_at: r.updated_at })) } }];"}, "id": "format", "name": "Format", "type": "n8n-nodes-base.code", "typeVersion": 2, "position": [660, 300]},
+    {"parameters": {"respondWith": "json", "responseBody": "={{ $json }}", "options": {}}, "id": "response", "name": "Response", "type": "n8n-nodes-base.respondToWebhook", "typeVersion": 1.1, "position": [880, 300]}
+  ],
+  "connections": {
+    "POST /price": {"main": [[{"node": "Validate", "type": "main", "index": 0}]]},
+    "Validate": {"main": [[{"node": "Get Price", "type": "main", "index": 0}]]},
+    "Get Price": {"main": [[{"node": "Format", "type": "main", "index": 0}]]},
+    "Format": {"main": [[{"node": "Response", "type": "main", "index": 0}]]}
+  },
+  "settings": {"executionOrder": "v1"},
+  "staticData": null,
+  "tags": ["memstech", "api", "price"]
+}

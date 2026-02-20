@@ -1,0 +1,115 @@
+{
+  "name": "Normalizer — 03 Validate Brand",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "normalizer/validate-brand",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "vb-webhook",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "webhookId": "normalizer-validate-brand"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// === Prepare Brands List ===\n// Форматируем список существующих брендов в компактный вид для промпта.\n// Это отдельная нода, чтобы можно было видеть и менять формат.\n\nconst input = $input.first().json.body;\nconst brandRaw = input.brand_raw || '';\nconst allBrands = input.all_brands || [];\n\n// Компактный формат: \"id:name\" по одному на строку\nconst brandsText = allBrands\n  .map(b => `${b.id}: ${b.name}`)\n  .join('\\n');\n\nconst brandsCount = allBrands.length;\n\nreturn [{\n  json: {\n    brandRaw,\n    brandsText,\n    brandsCount,\n    allBrands\n  }\n}];"
+      },
+      "id": "vb-format-brands",
+      "name": "Format Brands List",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// === Prepare Prompt ===\n// Формируем промпт для валидации бренда.\nconst model = 'gpt-4o-mini';\n\nconst { brandRaw, brandsText, brandsCount } = $input.first().json;\n\nconst systemPrompt = `Ты — эксперт по брендам мобильных устройств.\nТебе дан бренд, извлечённый AI из названия товара, и список всех существующих брендов в справочнике (${brandsCount} шт).\n\nЗадача: определить, есть ли этот бренд в списке (возможно с опечаткой или другим написанием).\n\nПримеры совпадений:\n- \"Aple\" → \"Apple\" (опечатка)\n- \"SAMSUNG\" → \"Samsung\" (регистр)\n- \"Хуавей\" → \"Huawei\" (транслитерация)\n- \"Редми\" → \"Xiaomi\" (суббренд)\n\nЕсли бренд НЕ найден в списке — это новый бренд.\n\nОтветь строго в формате JSON:\n{\n  \"is_new\": true/false,\n  \"match_id\": число или null (ID из списка, если найдено совпадение),\n  \"match\": \"точное имя из списка\" или null,\n  \"confidence\": 0.0-1.0,\n  \"reasoning\": \"краткое объяснение на русском\"\n}`;\n\nconst userPrompt = `Бренд для проверки: \"${brandRaw}\"\n\nСписок существующих брендов (id: name):\n${brandsText}`;\n\nreturn [{\n  json: {\n    model,\n    systemPrompt,\n    userPrompt\n  }\n}];"
+      },
+      "id": "vb-prepare",
+      "name": "Prepare Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: $json.model, messages: [ { role: 'system', content: $json.systemPrompt }, { role: 'user', content: $json.userPrompt } ], temperature: 0.05, response_format: { type: 'json_object' } }) }}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "vb-openai",
+      "name": "OpenAI Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [900, 300],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "CONFIGURE_ME",
+          "name": "OpenAI API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// === Parse Response ===\n// Парсим ответ AI и валидируем match_id.\n\nconst response = $input.first().json;\n\ntry {\n  const content = response.choices[0].message.content;\n  const parsed = JSON.parse(content);\n  \n  return [{\n    json: {\n      is_new: parsed.is_new === true,\n      match_id: typeof parsed.match_id === 'number' ? parsed.match_id : null,\n      match: parsed.match || null,\n      confidence: typeof parsed.confidence === 'number' ? parsed.confidence : 0.5,\n      reasoning: parsed.reasoning || ''\n    }\n  }];\n} catch (error) {\n  return [{\n    json: {\n      is_new: true,\n      match_id: null,\n      match: null,\n      confidence: 0.0,\n      reasoning: 'Failed to parse AI response: ' + error.message\n    }\n  }];\n}"
+      },
+      "id": "vb-parse",
+      "name": "Parse Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1120, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "vb-respond",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1340, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [[{ "node": "Format Brands List", "type": "main", "index": 0 }]]
+    },
+    "Format Brands List": {
+      "main": [[{ "node": "Prepare Prompt", "type": "main", "index": 0 }]]
+    },
+    "Prepare Prompt": {
+      "main": [[{ "node": "OpenAI Request", "type": "main", "index": 0 }]]
+    },
+    "OpenAI Request": {
+      "main": [[{ "node": "Parse Response", "type": "main", "index": 0 }]]
+    },
+    "Parse Response": {
+      "main": [[{ "node": "Respond", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [{ "name": "normalizer" }],
+  "triggerCount": 0,
+  "versionId": "1"
+}

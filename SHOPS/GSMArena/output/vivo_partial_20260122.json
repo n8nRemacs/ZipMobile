@@ -1,0 +1,2853 @@
+[
+  {
+    "name": "V5s",
+    "url": "https://www.gsmarena.com/vivo_v5s-8664.php",
+    "parsed_at": "2026-01-22T09:55:25.980490",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y25",
+    "url": "https://www.gsmarena.com/vivo_y25-8616.php",
+    "parsed_at": "2026-01-22T09:56:01.357566",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 40 - Malaysia",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2017, March. Released 2017, March",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "130.7 x 66.4 x 9.2 mm (5.15 x 2.61 x 0.36 in)",
+      "weight": "-",
+      "sim": "Dual SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.5 inches, 55.8 cm2(~64.3% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~218 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Funtouch 2.1",
+      "chipset": "Mediatek MT6580 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 1900 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "White/Gray",
+      "models": "1613",
+      "price": "About 120 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y25.jpg",
+    "price": "About 120 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y55L (vivo 1603)",
+    "url": "https://www.gsmarena.com/vivo_y55l_(vivo_1603)-9522.php",
+    "parsed_at": "2026-01-22T09:56:13.667014",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, October. Released 2016, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "147.9 x 72.9 x 7.5 mm (5.82 x 2.87 x 0.30 in)",
+      "weight": "142 g (5.01 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.2 inches, 74.5 cm2(~69.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6 (Marshmallow), Funtouch 2.6",
+      "chipset": "Qualcomm MSM8937 Snapdragon 430 (28 nm)",
+      "cpu": "Octa-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 505"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2650 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Gold, Gray",
+      "models": "1603",
+      "price": "About 9500 INR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y55l-1603.jpg",
+    "price": "About 9500 INR",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y55s (2017)",
+    "url": "https://www.gsmarena.com/vivo_y55s_(2017)-8588.php",
+    "parsed_at": "2026-01-22T09:56:25.634349",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 40 - Malaysia, Vietnam",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2017, February. Released 2017, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "147.9 x 72.9 x 7.5 mm (5.82 x 2.87 x 0.30 in)",
+      "weight": "142 g (5.01 oz)",
+      "build": "Glass front, aluminum back, aluminum frame",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.2 inches, 74.5 cm2(~69.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6 (Marshmallow), Funtouch 3",
+      "chipset": "Qualcomm MSM8917 Snapdragon 425 (28 nm)",
+      "cpu": "Quad-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 16GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2730 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Crown Gold, Rose Gold, Space Gray",
+      "models": "1610",
+      "price": "About 200 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y55s.jpg",
+    "price": "About 200 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "V5 Lite (vivo 1609)",
+    "url": "https://www.gsmarena.com/vivo_v5_lite_(vivo_1609)-8532.php",
+    "parsed_at": "2026-01-22T09:56:35.613687",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2017, January. Released 2017, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.8 x 75.5 x 7.6 mm (6.06 x 2.97 x 0.30 in)",
+      "weight": "155 g (5.47 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 6 (Marshmallow), Funtouch 3",
+      "cpu": "Octa-core"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.0, 26mm (wide), 1/3.06\", 1.0µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Crown Gold, Rose Gold",
+      "models": "1609",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v5-lite.jpg",
+    "price": "About 160 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "V5 Plus",
+    "url": "https://www.gsmarena.com/vivo_v5_plus-8528.php",
+    "parsed_at": "2026-01-22T10:01:39.700268",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2017, January. Released 2017, January",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.6 x 74 x 7.3 mm (6.01 x 2.91 x 0.29 in)",
+      "weight": "158.6 g (5.61 oz)",
+      "build": "Glass front (Gorilla Glass 5), aluminum back, aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~73.8% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 5"
+    },
+    "platform": {
+      "os": "Android 6 (Marshmallow), Funtouch 3",
+      "chipset": "Qualcomm MSM8953 Snapdragon 625 (14 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "Adreno 506"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.0, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "dual": "20 MP, f/2.0, (wide), 1/2.8\", 1.0µm8 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, DLNA",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3160 mAh, non-removable",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Gold, Gray",
+      "models": "1611",
+      "price": "About 450 EUR"
+    },
+    "our_tests": {
+      "performance": "GFXBench: 3.4fps (ES 3.1 onscreen)",
+      "display": "Contrast ratio: 1365 (nominal), 2.371 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 65dB / Noise 73dB / Ring 80dB",
+      "audio_quality": "Noise -92.0dB / Crosstalk -88.5dB",
+      "battery_(old)": "Endurance rating 76h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v5-plus.jpg",
+    "price": "About 450 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y67",
+    "url": "https://www.gsmarena.com/vivo_y67-8417.php",
+    "parsed_at": "2026-01-22T10:01:50.800520",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, November. Released 2016, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.8 x 75.5 x 7.6 mm (6.06 x 2.97 x 0.30 in)",
+      "weight": "154 g (5.43 oz)",
+      "sim": "Dual SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), Funtouch 2.6",
+      "chipset": "Mediatek MT6750 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "32GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.0, 26mm (wide), 1/3.06\", 1.0µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Gold, Pink Gold",
+      "models": "Y67L",
+      "price": "About 270 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y67.jpg",
+    "price": "About 270 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "Xplay6",
+    "url": "https://www.gsmarena.com/vivo_xplay6-8436.php",
+    "parsed_at": "2026-01-22T10:02:02.237576",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / EVDO / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, November. Released 2016, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.8 x 73.6 x 8.4 mm (6.06 x 2.90 x 0.33 in)",
+      "weight": "178 g (6.28 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.46 inches, 82.2 cm2(~72.6% screen-to-body ratio)",
+      "resolution": "1440 x 2560 pixels, 16:9 ratio (~538 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 6.1 (Marshmallow), upgradable to Android 8 (Oreo), Funtouch 3",
+      "chipset": "Qualcomm MSM8996 Snapdragon 820 (14 nm)",
+      "cpu": "Quad-core (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)",
+      "gpu": "Adreno 530"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/1.7, 1/2.55\", 1.4µm, dual pixel PDAF, 4-axis OISAuxiliary lens",
+      "features": "Dual-LED dual-tone flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.0, 26mm (wide), 1/3.06\", 1.0µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4080 mAh, non-removable",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Gold, Rose Gold",
+      "price": "About 700 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-xplay6.jpg",
+    "price": "About 700 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "X9 Plus",
+    "url": "https://www.gsmarena.com/vivo_x9_plus-8434.php",
+    "parsed_at": "2026-01-22T10:02:29.419008",
+    "network": {
+      "technology": "GSM / HSPA / EVDO / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 4, 5, 8, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, November. Released 2016, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "162 x 79 x 7.5 mm (6.38 x 3.11 x 0.30 in)",
+      "weight": "199 g (7.02 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.88 inches, 95.3 cm2(~74.5% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~375 ppi density)",
+      "protection": "Corning Gorilla Glass 5"
+    },
+    "platform": {
+      "os": "Android 6.1 (Marshmallow), upgradable to Android 8 (Oreo), Funtouch 3",
+      "chipset": "Qualcomm MSM8976 Pro Snapdragon 653 (28 nm)",
+      "cpu": "Octa-core (4x1.95 GHz Cortex-A72 & 4x1.44 GHz Cortex-A53)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 6GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.0, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "dual": "20 MP, f/2.0, (wide), 1/2.8\", 1.0µm8 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4000 mAh, non-removable",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Gold, Rose Gold",
+      "price": "About 580 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x9-plus.jpg",
+    "price": "About 580 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "X9",
+    "url": "https://www.gsmarena.com/vivo_x9-8433.php",
+    "parsed_at": "2026-01-22T10:02:34.908013",
+    "network": {
+      "technology": "GSM / HSPA / CDMA2000 / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 8, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, November. Released 2016, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.6 x 74 x 7 mm (6.01 x 2.91 x 0.28 in)",
+      "weight": "154 g (5.43 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.5 inches, 83.4 cm2(~73.8% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 5"
+    },
+    "platform": {
+      "os": "Android 6.1 (Marshmallow), upgradable to Android 8 (Oreo), Funtouch 3",
+      "chipset": "Qualcomm MSM8953 Snapdragon 625 (14 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "Adreno 506"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 4GB RAM, 128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.0, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "dual": "20 MP, f/2.0, (wide), 1/2.8\", 1.0µm8 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3050 mAh, non-removable",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Gold, Rose Gold",
+      "price": "About 460 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x9-.jpg",
+    "price": "About 460 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "V5",
+    "url": "https://www.gsmarena.com/vivo_v5-8430.php",
+    "parsed_at": "2026-01-22T10:02:37.305397",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, November. Released 2016, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.8 x 75.5 x 7.6 mm (6.06 x 2.97 x 0.30 in)",
+      "weight": "154 g (5.43 oz)",
+      "build": "Glass front (Gorilla Glass 3), aluminum back, aluminum frame",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), Funtouch 2.6",
+      "chipset": "Mediatek MT6750 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "20 MP, f/2.0, (wide), 1/2.8\", 1.0µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, Wi-Fi Direct, DLNA",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Gold, Gray",
+      "models": "1601",
+      "sar": "0.22 W/kg (head) 0.77 W/kg (body)",
+      "price": "About 250 EUR"
+    },
+    "our_tests": {
+      "performance": "GFXBench: 3.7fps (ES 3.1 onscreen)",
+      "display": "Contrast ratio: 1021:1 (nominal), 2.059 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 62dB / Noise 73dB / Ring 83dB",
+      "audio_quality": "Noise -92.9dB / Crosstalk -89.8dB",
+      "battery_(old)": "Endurance rating 60h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v5.jpg",
+    "price": "About 250 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "X7 Plus",
+    "url": "https://www.gsmarena.com/vivo_x7_plus-8181.php",
+    "parsed_at": "2026-01-22T10:02:39.224413",
+    "network": {
+      "technology": "GSM / HSPA / CDMA2000 / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, June. Released 2016, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "158.9 x 78 x 7.5 mm (6.26 x 3.07 x 0.30 in)",
+      "weight": "183.5 g (6.49 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.7 inches, 89.6 cm2(~72.3% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~386 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Funtouch 2.5",
+      "chipset": "Qualcomm MSM8976 Snapdragon 652 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A72 & 4x1.4 GHz Cortex-A53)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.0, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.0, 26mm (wide), 1/3.06\", 1.0µm",
+      "features": "LED flash"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4000 mAh, non-removable",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Gold, Rose Gold",
+      "price": "About 680 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x7-plus.jpg",
+    "price": "About 680 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "X7",
+    "url": "https://www.gsmarena.com/vivo_x7-8180.php",
+    "parsed_at": "2026-01-22T10:02:41.011621",
+    "network": {
+      "technology": "GSM / HSPA / CDMA2000 / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, June. Released 2016, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "147.3 x 71.3 x 7.2 mm (5.80 x 2.81 x 0.28 in)",
+      "weight": "151 g (5.33 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.2 inches, 74.5 cm2(~71.0% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~424 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Funtouch 2.5",
+      "chipset": "Qualcomm MSM8976 Snapdragon 652 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A72 & 4x1.4 GHz Cortex-A53)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.0, 26mm (wide), 1/3.06\", 1.0µm",
+      "features": "LED flash"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Gold, Rose Gold",
+      "price": "About 640 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x7.jpg",
+    "price": "About 640 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "V3Max",
+    "url": "https://www.gsmarena.com/vivo_v3max-8024.php",
+    "parsed_at": "2026-01-22T10:02:43.259677",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, April. Released 2016, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.9 x 77.1 x 7.6 mm (6.06 x 3.04 x 0.30 in)",
+      "weight": "168 g (5.93 oz)",
+      "sim": "Hybrid Dual SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~70.3% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Funtouch 2.5",
+      "chipset": "Qualcomm MSM8976 Snapdragon 652 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A72 & 4x1.4 GHz Cortex-A53)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable",
+      "charging": "18W wired, QC3, 50% in 30 min"
+    },
+    "misc": {
+      "colors": "Gold",
+      "models": "V3Max",
+      "price": "About 300 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 1919Basemark X: 15430",
+      "display": "Contrast ratio: 903:1 (nominal), 2.659 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 74dB / Noise 75dB / Ring 68dB",
+      "audio_quality": "Noise -93.1dB / Crosstalk -93.4dB",
+      "battery_(old)": "Endurance rating 70h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v3.jpg",
+    "price": "About 300 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "V3",
+    "url": "https://www.gsmarena.com/vivo_v3-8023.php",
+    "parsed_at": "2026-01-22T10:02:45.301968",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 40 - Malaysia, Philippines",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, April. Released 2016, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143.6 x 71 x 7.5 mm (5.65 x 2.80 x 0.30 in)",
+      "weight": "138 g (4.87 oz)",
+      "sim": "Dual SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.6% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Funtouch 2.5",
+      "chipset": "Qualcomm MSM8939v2 Snapdragon 616 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 3GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.1, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.3"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2550 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Gold",
+      "models": "V3",
+      "price": "About 260 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v3.jpg",
+    "price": "About 260 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "X6S Plus",
+    "url": "https://www.gsmarena.com/vivo_x6s_plus-8020.php",
+    "parsed_at": "2026-01-22T10:02:47.336142",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 8, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, March. Released 2016, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "158.4 x 80.1 x 6.9 mm (6.24 x 3.15 x 0.27 in)",
+      "weight": "172.5 g (6.10 oz)",
+      "sim": "Hybrid Dual SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.7 inches, 89.6 cm2(~70.6% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~386 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Funtouch 2.5",
+      "chipset": "Qualcomm MSM8976 Snapdragon 652 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A72 & 4x1.4 GHz Cortex-A53)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.0, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Silver, Gold, Rose Gold",
+      "price": "About 410 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x6s-plus.jpg",
+    "price": "About 410 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "X6S",
+    "url": "https://www.gsmarena.com/vivo_x6s-8019.php",
+    "parsed_at": "2026-01-22T10:02:53.259768",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 4, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, March. Released 2016, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "147.9 x 73.8 x 6.7 mm (5.82 x 2.91 x 0.26 in)",
+      "weight": "140.5 g (4.97 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.2 inches, 74.5 cm2(~68.3% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~424 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Funtouch 2.5",
+      "chipset": "Qualcomm MSM8976 Snapdragon 652 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A72 & 4x1.4 GHz Cortex-A53)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.4"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2400 mAh, non-removable",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Silver, Gold, Rose Gold",
+      "price": "About 350 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x6-.jpg",
+    "price": "About 350 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "Xplay5 Elite",
+    "url": "https://www.gsmarena.com/vivo_xplay5_elite-7970.php",
+    "parsed_at": "2026-01-22T10:02:56.719463",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / EVDO / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, March. Released 2016, March",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.5 x 76.2 x 7.6 mm (6.04 x 3.00 x 0.30 in)",
+      "weight": "167.8 g (5.93 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.43 inches, 81.3 cm2(~69.5% screen-to-body ratio)",
+      "resolution": "1440 x 2560 pixels, 16:9 ratio (~541 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), Funtouch 2.6",
+      "chipset": "Qualcomm MSM8996 Snapdragon 820 (14 nm)",
+      "cpu": "Quad-core (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)",
+      "gpu": "Adreno 530"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.0, 1/2.8\", 1.12µm, PDAF",
+      "features": "Dual-LED dual-tone flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.4"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3600 mAh, non-removable",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Silver, Gold, Rose Gold",
+      "price": "About 610 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 2175Basemark X: 35180",
+      "display": "Contrast ratio: 7160 (nominal), 3.983 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 62dB / Noise 72dB / Ring 66dB",
+      "audio_quality": "Noise -92.9dB / Crosstalk -85.5dB",
+      "battery_(old)": "Endurance rating 85h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-xplay5-elite.jpg",
+    "price": "About 610 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "Xplay5",
+    "url": "https://www.gsmarena.com/vivo_xplay5-7966.php",
+    "parsed_at": "2026-01-22T10:02:59.030174",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / EVDO / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, March. Released 2016, March",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.5 x 76.2 x 7.6 mm (6.04 x 3.00 x 0.30 in)",
+      "weight": "167.8 g (5.93 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.43 inches, 81.3 cm2(~69.5% screen-to-body ratio)",
+      "resolution": "1440 x 2560 pixels, 16:9 ratio (~541 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Funtouch 2.5",
+      "chipset": "Qualcomm MSM8976 Snapdragon 652 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A72 & 4x1.4 GHz Cortex-A53)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.0, 1/2.8\", 1.12µm, PDAF",
+      "features": "Dual-LED dual-tone flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.4"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3600 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Silver, Gold, Rose Gold",
+      "price": "About 520 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-xplay5.jpg",
+    "price": "About 520 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y51 (2015)",
+    "url": "https://www.gsmarena.com/vivo_y51_(2015)-7785.php",
+    "parsed_at": "2026-01-22T10:03:01.432695",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "LTE 850 / 900 / 1800 / 2100 / 2600 - Malaysia",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, December. Released 2015, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143.8 x 71.7 x 7.5 mm (5.66 x 2.82 x 0.30 in)",
+      "weight": "157 g (5.54 oz)",
+      "sim": "Dual SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~66.8% screen-to-body ratio)",
+      "resolution": "540 x 960 pixels, 16:9 ratio (~220 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.0.2 (Lollipop), Funtouch 2.5",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2350 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "White",
+      "models": "Y51L, Y51, 1707, Y51A",
+      "price": "About 130 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y51.jpg",
+    "price": "About 130 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "X6",
+    "url": "https://www.gsmarena.com/vivo_x6-7778.php",
+    "parsed_at": "2026-01-22T10:03:05.193451",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, November. Released 2015, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "147.9 x 73.8 x 6.7 mm (5.82 x 2.91 x 0.26 in)",
+      "weight": "135.5 g (4.80 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.2 inches, 74.5 cm2(~68.3% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~424 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Funtouch 2.1",
+      "chipset": "Mediatek MT6752 (28 nm)",
+      "cpu": "Octa-core 1.7 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.4"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2400 mAh, non-removable",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Silver, Gold, Rose Gold",
+      "models": "X6A"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x6-.jpg",
+    "brand": "vivo"
+  },
+  {
+    "name": "X6Plus",
+    "url": "https://www.gsmarena.com/vivo_x6plus-7779.php",
+    "parsed_at": "2026-01-22T10:03:09.234485",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, November. Released 2015, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "158.4 x 80 x 6.9 mm (6.24 x 3.15 x 0.27 in)",
+      "weight": "171 g (6.03 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.7 inches, 89.6 cm2(~70.7% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~386 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Funtouch 2.1",
+      "chipset": "Mediatek MT6752 (28 nm)",
+      "cpu": "Octa-core 1.7 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Silver, Gold, Rose Gold"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x6-.jpg",
+    "brand": "vivo"
+  },
+  {
+    "name": "V1",
+    "url": "https://www.gsmarena.com/vivo_v1-7522.php",
+    "parsed_at": "2026-01-22T10:03:12.150667",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE 850 / 900 / 1900 / 2100 / TD-LTE 2300",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, July. Released 2015, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143.3 x 71 x 6.8 mm (5.64 x 2.80 x 0.27 in)",
+      "weight": "153 g (5.40 oz)",
+      "sim": "Hybrid Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.7% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), Funtouch 2.1",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "2300 mAh, non-removable",
+      "stand-by": "Up to 410 h (2G) / Up to 410 h (3G)",
+      "talk_time": "Up to 13 h (2G) / Up to 13 h (3G)",
+      "music_play": "Up to 32 h"
+    },
+    "misc": {
+      "colors": "White/Gold",
+      "models": "V1",
+      "sar": "0.53 W/kg (head) 1.34 W/kg (body)",
+      "sar_eu": "0.28 W/kg (head) 0.70 W/kg (body)"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v1.jpg",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y15S (2015)",
+    "url": "https://www.gsmarena.com/vivo_y15s_(2015)-7518.php",
+    "parsed_at": "2026-01-22T10:03:16.227839",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2015, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "131.4 x 66.2 x 9 mm (5.17 x 2.61 x 0.35 in)",
+      "weight": "130 g (4.59 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.5 inches, 55.8 cm2(~64.1% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~218 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Mediatek MT6580 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "1900 mAh, removable",
+      "stand-by": "Up to 410 h (2G) / Up to 410 h (3G)",
+      "talk_time": "Up to 10 h (2G) / Up to 8 h (3G)",
+      "music_play": "Up to 45 h"
+    },
+    "misc": {
+      "colors": "White, Black",
+      "models": "Y15S",
+      "sar": "0.62 W/kg (head) 0.59 W/kg (body)",
+      "sar_eu": "0.76 W/kg (head) 0.73 W/kg (body)"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y15s.jpg",
+    "brand": "vivo"
+  },
+  {
+    "name": "V1 Max",
+    "url": "https://www.gsmarena.com/vivo_v1_max-7521.php",
+    "parsed_at": "2026-01-22T10:03:18.941648",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE 850 / 900 / 1800 / 2100 / TD-LTE 2300",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2015, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "154 x 77 x 6.8 mm (6.06 x 3.03 x 0.27 in)",
+      "weight": "165 g (5.82 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~70.3% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), Funtouch 2.1",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.4 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "2720 mAh, non-removable",
+      "stand-by": "Up to 410 h (2G) / Up to 410 h (3G)",
+      "talk_time": "Up to 14 h (2G) / Up to 12 h (3G)",
+      "music_play": "Up to 50 h"
+    },
+    "misc": {
+      "colors": "White",
+      "sar_eu": "0.34 W/kg (head) 0.97 W/kg (body)"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-v1-max.jpg",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y31 (2015)",
+    "url": "https://www.gsmarena.com/vivo_y31_(2015)-7734.php",
+    "parsed_at": "2026-01-22T10:03:22.835202",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "speed": "HSPA"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "137.2 x 68.8 x 8.4 mm (5.40 x 2.71 x 0.33 in)",
+      "weight": "137 g (4.83 oz)",
+      "sim": "Dual SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.7 inches, 60.9 cm2(~64.5% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~312 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Funtouch 2.1",
+      "chipset": "Mediatek MT6580 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP",
+      "features": "LED flash, HDR",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "2100 mAh, removable"
+    },
+    "misc": {
+      "colors": "White, Black",
+      "models": "Y31L, Y31",
+      "price": "About 130 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y31.jpg",
+    "price": "About 130 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y37 (2015)",
+    "url": "https://www.gsmarena.com/vivo_y37_(2015)-7520.php",
+    "parsed_at": "2026-01-22T10:03:27.061277",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE 850 / 900 / 1800 / 2100",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2015, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "154 x 77 x 6.8 mm (6.06 x 3.03 x 0.27 in)",
+      "weight": "165 g (5.82 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~70.3% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), Funtouch 2.1",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.4 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "2720 mAh, non-removable",
+      "stand-by": "Up to 410 h (2G) / Up to 410 h (3G)",
+      "talk_time": "Up to 14 h (2G) / Up to 12 h (3G)",
+      "music_play": "Up to 50 h"
+    },
+    "misc": {
+      "colors": "White",
+      "sar_eu": "0.34 W/kg (head) 0.97 W/kg (body)"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y37.jpg",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y35 (2015)",
+    "url": "https://www.gsmarena.com/vivo_y35_(2015)-7519.php",
+    "parsed_at": "2026-01-22T10:03:29.939397",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE 850 / 900 / 1800 / 2100",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, July. Released 2015, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143.3 x 71 x 6.8 mm (5.64 x 2.80 x 0.27 in)",
+      "weight": "153 g (5.40 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.7% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), Funtouch 2.1",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "2300 mAh, non-removable",
+      "stand-by": "Up to 410 h (2G) / Up to 410 h (3G)",
+      "talk_time": "Up to 13 h (2G) / Up to 13 h (3G)",
+      "music_play": "Up to 32 h"
+    },
+    "misc": {
+      "colors": "White/Gold",
+      "models": "Y35",
+      "sar": "0.53 W/kg (head) 1.34 W/kg (body)",
+      "sar_eu": "0.28 W/kg (head) 0.70 W/kg (body)",
+      "price": "About 100 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y35.jpg",
+    "price": "About 100 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "X5Max Platinum Edition",
+    "url": "https://www.gsmarena.com/vivo_x5max_platinum_edition-7277.php",
+    "parsed_at": "2026-01-22T10:03:33.598411",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "TD-SCDMA",
+      "4g_bands": "3, 7, 38, 39, 40, 41",
+      "speed": "HSPA, LTE",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2015, June. Released 2015, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.9 x 78 x 7.3 mm (6.06 x 3.07 x 0.29 in)",
+      "weight": "194 g (6.84 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.5 inches, 83.4 cm2(~69.5% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.4 (KitKat), Funtouch 2",
+      "chipset": "Mediatek MT6752 (28 nm)",
+      "cpu": "Octa-core 1.7 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4150 mAh, non-removable",
+      "talk_time": "Up to 25 h",
+      "music_play": "Up to 40 h"
+    },
+    "misc": {
+      "colors": "White",
+      "price": "About 440 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x5-max-platinum-edition.jpg",
+    "price": "About 440 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "X5Pro",
+    "url": "https://www.gsmarena.com/vivo_x5pro-7246.php",
+    "parsed_at": "2026-01-22T10:03:40.002849",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, May. Released 2015, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "147.9 x 73.5 x 6.4 mm (5.82 x 2.89 x 0.25 in)",
+      "weight": "151 g (5.33 oz)",
+      "sim": "Hybrid Dual SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.2 inches, 74.5 cm2(~68.6% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~424 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), Funtouch 2.1",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.1 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.4",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "2450 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 300 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 738Basemark X: 5091",
+      "display": "Contrast ratio: Infinite (nominal), 3.706 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 68dB / Noise 66dB / Ring 76dB",
+      "audio_quality": "Noise -93.6dB / Crosstalk -90.0dB",
+      "battery_(old)": "Endurance rating 67h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x5-pro.jpg",
+    "price": "About 300 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "X5Max+",
+    "url": "https://www.gsmarena.com/vivo_x5max+-7104.php",
+    "parsed_at": "2026-01-22T10:03:42.932265",
+    "network": {
+      "technology": "GSM / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "TD-SCDMA",
+      "4g_bands": "38, 39, 40, 41",
+      "speed": "HSPA, LTE",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, March",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.9 x 78 x 5.1 mm (6.06 x 3.07 x 0.20 in)",
+      "weight": "-",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.5 inches, 83.4 cm2(~69.5% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.4 (KitKat), Funtouch 2",
+      "chipset": "Mediatek MT6752 (28 nm)",
+      "cpu": "Octa-core 1.7 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2300 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "White",
+      "price": "About 430 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-max-plus.jpg",
+    "price": "About 430 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "X5Max",
+    "url": "https://www.gsmarena.com/vivo_x5max-6865.php",
+    "parsed_at": "2026-01-22T10:03:45.958774",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 1900 / 2100",
+      "4g_bands": "LTE 1800 / 2100 / 2600 TD-LTE 2300",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2014, December. Released 2014, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.9 x 78 x 4.8 mm (6.06 x 3.07 x 0.19 in)",
+      "weight": "156 g (5.50 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.5 inches, 83.4 cm2(~69.5% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.4 (KitKat), Funtouch 2",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.7 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.4"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "2300 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "White",
+      "price": "About 470 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 656Basemark X: 4893",
+      "display": "Contrast ratio: Infinite (nominal), 3.472 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 66dB / Noise 61dB / Ring 68dB",
+      "audio_quality": "Noise -93.4dB / Crosstalk -93.8dB",
+      "battery_(old)": "Endurance rating 71h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x5-max.jpg",
+    "price": "About 470 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y11",
+    "url": "https://www.gsmarena.com/vivo_y11-7219.php",
+    "parsed_at": "2026-01-22T10:03:48.687351",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA 21.1/7.2 Mbps"
+    },
+    "launch": {
+      "announced": "2014, Q4. Released 2014, Q4",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "123 x 62.5 x 8.8 mm (4.84 x 2.46 x 0.35 in)",
+      "weight": "124 g (4.37 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.0 inches, 45.5 cm2(~59.2% screen-to-body ratio)",
+      "resolution": "480 x 800 pixels, 5:3 ratio (~233 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.4 (KitKat)",
+      "chipset": "Mediatek MT6582М",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "4GB 512MB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "1700 mAh, removable",
+      "talk_time": "Up to 11 h (2G) / Up to 8 h (3G)",
+      "music_play": "Up to 34 h"
+    },
+    "misc": {
+      "colors": "White, Black",
+      "models": "Y11",
+      "price": "About 70 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y11.jpg",
+    "price": "About 70 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "X5",
+    "url": "https://www.gsmarena.com/vivo_x5-6870.php",
+    "parsed_at": "2026-01-22T10:03:51.098088",
+    "network": {
+      "technology": "GSM / CDMA / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2 - X5vGSM 850 / 900 / 1800 / 1900 - X5L",
+      "3g_bands": "TD-SCDMA - X5L, X5s",
+      "4g_bands": "3, 38 - X5v",
+      "speed": "CDMA, LTE",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2014. Released 2014",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143.3 x 71.1 x 6.3 mm (5.64 x 2.80 x 0.25 in)",
+      "weight": "141 g (4.97 oz)",
+      "sim": "Hybrid Dual SIM ( X5v, X5s)/ Single SIM (X5L)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.6% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat), Funtouch 2",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2250 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "White"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x5v.jpg",
+    "brand": "vivo"
+  },
+  {
+    "name": "Xplay3S",
+    "url": "https://www.gsmarena.com/vivo_xplay3s-6800.php",
+    "parsed_at": "2026-01-22T10:03:54.892299",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 7",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps, EV-DO Rev.A 3.1 Mbps"
+    },
+    "launch": {
+      "announced": "2013. Released 2013",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "158.2 x 82.6 x 8.7 mm (6.23 x 3.25 x 0.34 in)",
+      "weight": "174 g (6.14 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.0 inches, 99.2 cm2(~75.9% screen-to-body ratio)",
+      "resolution": "1440 x 2560 pixels, 16:9 ratio (~490 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.3 (Jelly Bean)",
+      "chipset": "Qualcomm Snapdragon 801 (28 nm)",
+      "cpu": "Quad-core 2.3 GHz Krait 400",
+      "gpu": "Adreno 330"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@60fps, 720p@120fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "3200 mAh, non-removable",
+      "stand-by": "Up to 490 h (2G) / Up to 490 h (3G)",
+      "talk_time": "Up to 17 h (2G) / Up to 16 h (3G)",
+      "music_play": "Up to 38 h"
+    },
+    "misc": {
+      "colors": "White",
+      "sar_eu": "0.24 W/kg (head) 1.30 W/kg (body)"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-xplay-3s.jpg",
+    "brand": "vivo"
+  },
+  {
+    "name": "Xshot",
+    "url": "https://www.gsmarena.com/vivo_xshot-6799.php",
+    "parsed_at": "2026-01-22T10:03:57.062588",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 7",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps, EV-DO Rev.A 3.1 Mbps"
+    },
+    "launch": {
+      "announced": "2014. Released 2014",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "146.5 x 73.3 x 8 mm (5.77 x 2.89 x 0.31 in)",
+      "weight": "148 g (5.22 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.2 inches, 74.5 cm2(~69.4% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~424 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.3 (Jelly Bean)",
+      "chipset": "Qualcomm MSM8974AA Snapdragon 801 (28 nm)",
+      "cpu": "Quad-core 2.3 GHz Krait 400",
+      "gpu": "Adreno 330"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF, OIS",
+      "features": "Dual-LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@60fps, 720p@120fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "2600 mAh, non-removable",
+      "stand-by": "Up to 430 h (2G) / Up to 430 h (3G)",
+      "talk_time": "Up to 14 h (2G) / Up to 13 h (3G)",
+      "music_play": "Up to 32 h"
+    },
+    "misc": {
+      "colors": "White/Black",
+      "models": "X710L",
+      "sar": "0.47 W/kg (head) 1.33 W/kg (body)",
+      "sar_eu": "0.32 W/kg (head) 0.98 W/kg (body)"
+    },
+    "our_tests": {
+      "camera": "Photo/Video"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-xshot.jpg",
+    "brand": "vivo"
+  },
+  {
+    "name": "X3S",
+    "url": "https://www.gsmarena.com/vivo_x3s-6801.php",
+    "parsed_at": "2026-01-22T10:04:00.916784",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2014. Released 2014",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143.3 x 71 x 6 mm (5.64 x 2.80 x 0.24 in)",
+      "weight": "150 g (5.29 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.7% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.2.2 (Jelly Bean)",
+      "chipset": "Mediatek MT6592 (28 nm)",
+      "cpu": "Octa-core 1.7 GHz Cortex-A7",
+      "gpu": "Mali-450MP4"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "2000 mAh, non-removable",
+      "stand-by": "Up to 450 h (2G) / Up to 450 h (3G)",
+      "talk_time": "Up to 14 h (2G) / Up to 11 h (3G)",
+      "music_play": "Up to 30 h"
+    },
+    "misc": {
+      "colors": "White, Blue",
+      "sar": "0.46 W/kg (head) 1.05 W/kg (body)",
+      "sar_eu": "0.35 W/kg (head) 0.69 W/kg (body)",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-x3s.jpg",
+    "price": "About 110 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y28 (2014)",
+    "url": "https://www.gsmarena.com/vivo_y28_(2014)-6881.php",
+    "parsed_at": "2026-01-22T10:04:03.005527",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2014, December. Released 2014, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "137.4 x 68.6 x 9.8 mm (5.41 x 2.70 x 0.39 in)",
+      "weight": "156 g (5.50 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.7 inches, 64.2 cm2(~68.1% screen-to-body ratio)",
+      "resolution": "540 x 960 pixels, 16:10 ratio (~216 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.2.2 (Jelly Bean)",
+      "chipset": "Mediatek MT6582 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "2100 mAh, removable",
+      "stand-by": "Up to 430 h (2G) / Up to 430 h (3G)",
+      "talk_time": "Up to 14 h (2G) / Up to 13 h (3G)",
+      "music_play": "Up to 32 h"
+    },
+    "misc": {
+      "colors": "White",
+      "models": "Y28",
+      "price": "About 100 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y28.jpg",
+    "price": "About 100 EUR",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y27 (2014)",
+    "url": "https://www.gsmarena.com/vivo_y27_(2014)-6880.php",
+    "parsed_at": "2026-01-22T10:04:06.839161",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 7",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2014, December. Released 2014, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "136.9 x 68.1 x 7 mm (5.39 x 2.68 x 0.28 in)",
+      "weight": "137 g (4.83 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.7 inches, 60.9 cm2(~65.3% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~312 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.4 (KitKat)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "2260 mAh, non-removable",
+      "stand-by": "Up to 410 h (2G) / Up to 410 h (3G)",
+      "talk_time": "Up to 13 h (2G) / Up to 13 h (3G)",
+      "music_play": "Up to 32 h"
+    },
+    "misc": {
+      "colors": "White",
+      "models": "Y27L",
+      "sar_eu": "0.40 W/kg (head) 0.48 W/kg (body)"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y27.jpg",
+    "brand": "vivo"
+  },
+  {
+    "name": "Y22 (2013)",
+    "url": "https://www.gsmarena.com/vivo_y22_(2013)-6805.php",
+    "parsed_at": "2026-01-22T10:04:11.241602",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2013. Released 2013",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "130.5 x 66.9 x 8.6 mm (5.14 x 2.63 x 0.34 in)",
+      "weight": "126 g (4.44 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.5 inches, 55.8 cm2(~63.9% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~218 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.2.2 (Jelly Bean)",
+      "chipset": "Mediatek MT6582 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "4GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS",
+      "nfc": "No",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 1900 mAh, removable",
+      "stand-by": "Up to 410 h (2G) / Up to 410 h (3G)",
+      "talk_time": "Up to 12 h (2G) / Up to 10 h (3G)",
+      "music_play": "Up to 45 h"
+    },
+    "misc": {
+      "colors": "White, Black",
+      "sar": "0.36 W/kg (head) 0.90 W/kg (body)",
+      "sar_eu": "0.52 W/kg (head) 1.17 W/kg (body)"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/vivo-y22.jpg",
+    "brand": "vivo"
+  }
+]

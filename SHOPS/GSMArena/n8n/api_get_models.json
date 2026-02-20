@@ -1,0 +1,318 @@
+{
+  "name": "GSMArena API - GET Models",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "GET",
+        "path": "gsmarena/models/:brand",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "GET /models/:brand",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 200],
+      "webhookId": "gsmarena-models"
+    },
+    {
+      "parameters": {
+        "jsCode": "const params = $input.first().json.params;\nconst query = $input.first().json.query;\n\nconst brandCode = params?.brand?.toLowerCase();\nif (!brandCode) {\n  throw new Error('Brand code is required. Use: /gsmarena/models/apple');\n}\n\n// Optional: max pages to fetch (default 50)\nconst maxPages = parseInt(query?.max_pages) || 50;\n\nreturn [{\n  json: {\n    brand_code: brandCode,\n    max_pages: maxPages,\n    current_page: 0,\n    brand_url: null,\n    brand_name: null,\n    models: []\n  }\n}];"
+      },
+      "id": "init",
+      "name": "Init",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://www.gsmarena.com/makers.php3",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+          ]
+        }
+      },
+      "id": "http-brands",
+      "name": "Fetch Brands Page",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\n\nconst state = $('Init').first().json;\nconst html = $input.first().json.data;\nconst $ = cheerio.load(html);\n\nlet brandInfo = null;\n\n$('div.st-text a').each((i, el) => {\n  const href = $(el).attr('href') || '';\n  const text = $(el).text().trim();\n  const match = text.match(/(.+?)\\s*(\\d+)\\s*devices?/);\n  \n  if (match && href.includes('-phones-')) {\n    const code = href.replace('-phones-', '_').replace('.php', '').split('_')[0].toLowerCase();\n    \n    if (code === state.brand_code) {\n      brandInfo = {\n        name: match[1].trim(),\n        url: `https://www.gsmarena.com/${href}`,\n        device_count: parseInt(match[2])\n      };\n      return false;\n    }\n  }\n});\n\nif (!brandInfo) {\n  throw new Error(`Brand '${state.brand_code}' not found`);\n}\n\nreturn [{\n  json: {\n    ...state,\n    brand_name: brandInfo.name,\n    brand_url: brandInfo.url,\n    device_count: brandInfo.device_count,\n    current_page: 1,\n    has_more: true\n  }\n}];"
+      },
+      "id": "find-brand",
+      "name": "Find Brand",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "has-more",
+              "leftValue": "={{ $json.has_more }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "under-limit",
+              "leftValue": "={{ $json.current_page }}",
+              "rightValue": "={{ $json.max_pages }}",
+              "operator": {
+                "type": "number",
+                "operation": "lte"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-more",
+      "name": "More Pages?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [880, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const state = $input.first().json;\nlet url;\n\nif (state.current_page === 1) {\n  url = state.brand_url;\n} else {\n  const match = state.brand_url.match(/-(\\d+)\\.php/);\n  const brandId = match ? match[1] : null;\n  const brandSlug = state.brand_url.split('/').pop().replace(`-${brandId}.php`, '');\n  \n  if (brandId && brandSlug) {\n    url = `https://www.gsmarena.com/${brandSlug}-f-${brandId}-0-p${state.current_page}.php`;\n  } else {\n    return [{ json: { ...state, has_more: false } }];\n  }\n}\n\nreturn [{ json: { ...state, fetch_url: url } }];"
+      },
+      "id": "build-url",
+      "name": "Build URL",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1140, 100]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $json.fetch_url }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            }
+          ]
+        }
+      },
+      "id": "http-models",
+      "name": "Fetch Models Page",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1360, 100]
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\n\nconst state = $('Build URL').first().json;\nconst html = $input.first().json.data;\nconst $ = cheerio.load(html);\n\nconst newModels = [];\n\n$('div.makers ul li').each((i, el) => {\n  const link = $(el).find('a');\n  const href = link.attr('href') || '';\n  const nameElem = link.find('span');\n  const imgElem = link.find('img');\n  \n  if (nameElem.length && href) {\n    const idMatch = href.match(/-(\\d+)\\.php/);\n    \n    newModels.push({\n      name: nameElem.text().trim(),\n      url: `https://www.gsmarena.com/${href}`,\n      thumbnail: imgElem.attr('src') || '',\n      brief_specs: imgElem.attr('title') || imgElem.attr('alt') || '',\n      gsmarena_id: idMatch ? idMatch[1] : null\n    });\n  }\n});\n\n// Check next page\nconst navPages = $('div.nav-pages a');\nconst nextPage = state.current_page + 1;\nlet hasNext = false;\nnavPages.each((i, el) => {\n  if (($(el).attr('href') || '').includes(`p${nextPage}`)) {\n    hasNext = true;\n    return false;\n  }\n});\n\nreturn [{\n  json: {\n    ...state,\n    models: [...state.models, ...newModels],\n    current_page: nextPage,\n    has_more: hasNext && newModels.length > 0\n  }\n}];"
+      },
+      "id": "parse-models",
+      "name": "Parse Models",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1580, 100]
+    },
+    {
+      "parameters": {
+        "amount": 1,
+        "unit": "seconds"
+      },
+      "id": "wait",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1800, 100]
+    },
+    {
+      "parameters": {
+        "jsCode": "const state = $input.first().json;\n\nreturn [{\n  json: {\n    success: true,\n    brand: {\n      name: state.brand_name,\n      code: state.brand_code,\n      url: state.brand_url\n    },\n    count: state.models.length,\n    models: state.models\n  }\n}];"
+      },
+      "id": "format-response",
+      "name": "Format Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1140, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1360, 300]
+    }
+  ],
+  "connections": {
+    "GET /models/:brand": {
+      "main": [
+        [
+          {
+            "node": "Init",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Init": {
+      "main": [
+        [
+          {
+            "node": "Fetch Brands Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Brands Page": {
+      "main": [
+        [
+          {
+            "node": "Find Brand",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Find Brand": {
+      "main": [
+        [
+          {
+            "node": "More Pages?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "More Pages?": {
+      "main": [
+        [
+          {
+            "node": "Build URL",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Format Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build URL": {
+      "main": [
+        [
+          {
+            "node": "Fetch Models Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Models Page": {
+      "main": [
+        [
+          {
+            "node": "Parse Models",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Models": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "More Pages?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Response": {
+      "main": [
+        [
+          {
+            "node": "Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["gsmarena", "api"]
+}

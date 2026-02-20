@@ -1,0 +1,236 @@
+{
+  "name": "MoySklad Naffas - Parse All",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "moysklad/parse/all",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "POST /parse/all",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 300],
+      "webhookId": "moysklad-parse-all",
+      "notes": "POST body:\n{\n  \"save_to_db\": true\n}"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $input.first().json.body || {};\nreturn [{\n  json: {\n    save_to_db: body.save_to_db !== false\n  }\n}];"
+      },
+      "id": "validate",
+      "name": "Validate Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://b2b.moysklad.ru/desktop-api/public/S1AlNWEsMzM7/products.json",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {"name": "offset", "value": "0"}
+          ]
+        },
+        "options": {
+          "timeout": 60000,
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "json"
+            }
+          }
+        },
+        "headerParameters": {
+          "parameters": [
+            {"name": "User-Agent", "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"},
+            {"name": "Accept", "value": "application/json"}
+          ]
+        }
+      },
+      "id": "fetch-products",
+      "name": "Fetch Products from API",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 300],
+      "notes": "MoySklad public API - no auth needed"
+    },
+    {
+      "parameters": {
+        "jsCode": "const config = $('Validate Input').first().json;\nconst data = $input.first().json;\n\nconst products = (data.products || []).map(p => ({\n  article: p.article || p.code || '',\n  name: p.name || '',\n  price: p.price || 0,\n  category: p.category || '',\n  in_stock: (p.stock || 0) > 0 || p.available === true,\n  quantity: p.stock || 0,\n  url: '',\n  image: p.imageURL || ''\n}));\n\nreturn [{\n  json: {\n    products: products,\n    total: data.size || products.length,\n    save_to_db: config.save_to_db\n  }\n}];"
+      },
+      "id": "process-products",
+      "name": "Process Products",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "save-db",
+              "leftValue": "={{ $json.save_to_db }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "has-products",
+              "leftValue": "={{ $json.products.length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-save",
+      "name": "Save to DB?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [880, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO outlets (code, city, name, catalog_id, is_active) VALUES ('moysklad-naffas', 'Интернет', 'Naffas', 'S1AlNWEsMzM7', true) ON CONFLICT (code) DO NOTHING;",
+        "options": {}
+      },
+      "id": "ensure-outlet",
+      "name": "Ensure Outlet",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1100, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL MoySklad"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "={{ \n  const products = $('Process Products').first().json.products;\n  \n  const values = products.filter(p => p.article).map(p => {\n    const name = (p.name || '').replace(/'/g, \"''\").slice(0, 500);\n    const article = (p.article || '').replace(/'/g, \"''\");\n    const category = (p.category || '').replace(/'/g, \"''\");\n    return `('${article}', '${name}', '${category}', NOW(), NOW())`;\n  }).join(',');\n  \n  if (!values) return 'SELECT 1';\n  \n  `INSERT INTO nomenclature (article, name, category_raw, first_seen_at, updated_at) VALUES ${values} ON CONFLICT (article) DO UPDATE SET name = EXCLUDED.name, category_raw = EXCLUDED.category_raw, updated_at = NOW();`;\n}}",
+        "options": {}
+      },
+      "id": "save-nomenclature",
+      "name": "Save Nomenclature",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1320, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL MoySklad"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "={{ \n  const products = $('Process Products').first().json.products;\n  \n  const queries = products.filter(p => p.article).map(p => {\n    const article = (p.article || '').replace(/'/g, \"''\");\n    const price = p.price || 0;\n    const inStock = p.in_stock ? 'true' : 'false';\n    \n    return `INSERT INTO current_prices (nomenclature_id, outlet_id, price, in_stock, updated_at) SELECT n.id, o.id, ${price}, ${inStock}, NOW() FROM nomenclature n, outlets o WHERE n.article = '${article}' AND o.code = 'moysklad-naffas' ON CONFLICT (nomenclature_id, outlet_id) DO UPDATE SET price = EXCLUDED.price, in_stock = EXCLUDED.in_stock, updated_at = NOW();`;\n  }).join('');\n  \n  queries || 'SELECT 1';\n}}",
+        "options": {}
+      },
+      "id": "save-prices",
+      "name": "Save Prices",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1540, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL MoySklad"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $('Process Products').first().json;\nreturn [{\n  json: {\n    success: true,\n    shop: 'moysklad-naffas',\n    products_total: data.products.length,\n    saved_to_db: true,\n    in_stock: data.products.filter(p => p.in_stock).length\n  }\n}];"
+      },
+      "id": "summary-saved",
+      "name": "Summary (Saved)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1760, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.first().json;\nreturn [{\n  json: {\n    success: true,\n    shop: 'moysklad-naffas',\n    products_total: data.products.length,\n    saved_to_db: false,\n    in_stock: data.products.filter(p => p.in_stock).length,\n    products: data.products\n  }\n}];"
+      },
+      "id": "summary-nosave",
+      "name": "Summary (No Save)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1100, 400]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1980, 300]
+    }
+  ],
+  "connections": {
+    "POST /parse/all": {
+      "main": [[{ "node": "Validate Input", "type": "main", "index": 0 }]]
+    },
+    "Validate Input": {
+      "main": [[{ "node": "Fetch Products from API", "type": "main", "index": 0 }]]
+    },
+    "Fetch Products from API": {
+      "main": [[{ "node": "Process Products", "type": "main", "index": 0 }]]
+    },
+    "Process Products": {
+      "main": [[{ "node": "Save to DB?", "type": "main", "index": 0 }]]
+    },
+    "Save to DB?": {
+      "main": [
+        [{ "node": "Ensure Outlet", "type": "main", "index": 0 }],
+        [{ "node": "Summary (No Save)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Ensure Outlet": {
+      "main": [[{ "node": "Save Nomenclature", "type": "main", "index": 0 }]]
+    },
+    "Save Nomenclature": {
+      "main": [[{ "node": "Save Prices", "type": "main", "index": 0 }]]
+    },
+    "Save Prices": {
+      "main": [[{ "node": "Summary (Saved)", "type": "main", "index": 0 }]]
+    },
+    "Summary (Saved)": {
+      "main": [[{ "node": "Response", "type": "main", "index": 0 }]]
+    },
+    "Summary (No Save)": {
+      "main": [[{ "node": "Response", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["moysklad", "naffas", "api", "parser"]
+}

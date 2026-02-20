@@ -1,0 +1,2346 @@
+[
+  {
+    "name": "Surface Duo 2",
+    "url": "https://www.gsmarena.com/microsoft_surface_duo_2-11117.php",
+    "parsed_at": "2026-01-23T03:59:52.413744",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 19, 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 42, 46, 48, 66, 71",
+      "5g_bands": "1, 2, 3, 5, 7, 20, 25, 28, 38, 41, 66, 71, 77, 78, 79 SA/NSA/Sub6 - International",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (5CA) Cat20 2000/150 Mbps, 5G 6 Gbps DL"
+    },
+    "launch": {
+      "announced": "2021, September 22. Released 2021, October 21",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "Unfolded: 184.5 x 145.2 x 5.5 mmFolded: 145.2 x 92.1 x 11 mm",
+      "weight": "284 g (10.02 oz)",
+      "build": "Glass front (Gorilla Glass Victus), glass back (Gorilla Glass)",
+      "sim": "Nano-SIM +eSIM"
+    },
+    "display": {
+      "type": "AMOLED, 90Hz, HDR, 800 nits (peak)",
+      "size": "8.3 inches, 204.0 cm2(~152.6% screen-to-body ratio)",
+      "resolution": "1892 x 2688 pixels (~401 ppi density)",
+      "protection": "Corning Gorilla Glass Victus"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Qualcomm SM8350 Snapdragon 888 5G (5 nm)",
+      "cpu": "Octa-core (1x2.84 GHz Cortex-X1 & 3x2.42 GHz Cortex-A78 & 4x1.80 GHz Cortex-A55)",
+      "gpu": "Adreno 660"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "12 MP, f/1.7, 27mm (wide), 1.4µm, dual pixel PDAF, OIS12 MP, f/2.4, 51mm (telephoto), 1.0µm, PDAF, OIS, 2x optical zoom16 MP, f/2.2, 13mm (ultrawide), 1.0µmTOF 3D, (depth)",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "4K@30/60fps, 1080p@30/60/120/240fps, gyro-EIS, HDR"
+    },
+    "selfie_camera": {
+      "single": "12 MP, f/2.0, 24mm (wide), 1.0µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.1, A2DP, LE, aptX Adaptive",
+      "positioning": "GPS, GLONASS, GALILEO, QZSS, BDS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 3.2, DisplayPort"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), dual accelerometer, dual gyro, dual proximity, dual compass"
+    },
+    "battery": {
+      "type": "Li-Po 4449 mAh",
+      "charging": "23W wired"
+    },
+    "misc": {
+      "colors": "Glacier, Obsidian",
+      "price": "About 1480 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-surface-duo2.jpg",
+    "price": "About 1480 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Surface Duo",
+    "url": "https://www.gsmarena.com/microsoft_surface_duo-10365.php",
+    "parsed_at": "2026-01-23T03:59:54.442917",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 19 20, 25, 26, 28, 29, 30, 38, 39, 40, 41, 46, 66",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat18 1200/150 Mbps"
+    },
+    "launch": {
+      "announced": "2020, August 12. Released 2020, September 10",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "Unfolded: 186.9 x 145.2 x 4.8 mmFolded: 145.2 x 93.3 x 9.9 mm",
+      "weight": "250 g (8.82 oz)",
+      "build": "Glass front (Gorilla Glass 5), glass back (Gorilla Glass 5)",
+      "sim": "Nano-SIM +eSIM"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "8.1 inches, 195.4 cm2(~144.2% screen-to-body ratio)",
+      "resolution": "1800 x 2700 pixels, 3:2 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 5"
+    },
+    "platform": {
+      "os": "Android 10, upgradable to Android 12",
+      "chipset": "Qualcomm SM8150 Snapdragon 855 (7 nm)",
+      "cpu": "Octa-core (1x2.84 GHz Kryo 485 & 3x2.42 GHz Kryo 485 & 4x1.78 GHz Kryo 485)",
+      "gpu": "Adreno 640"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 6GB RAM, 256GB 6GB RAM"
+    },
+    "main_camera": {
+      "single": "11 MP, f/2.0, 23mm (wide), 1.0µm, PDAF",
+      "features": "HDR, panorama",
+      "video": "4K@30/60fps, 1080p@30/60/120/240fps, gyro-EIS, HDR"
+    },
+    "selfie_camera": {
+      "single": "Uses main camera",
+      "features": "HDR, panorama",
+      "video": "4K@30/60fps, 1080p@30/60fps, gyro-EIS, HDR"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE, aptX Adaptive",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 3.1"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), dual accelerometer, dual gyro, proximity, dual compass"
+    },
+    "battery": {
+      "type": "Li-Po 3577 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "White",
+      "price": "About 650 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-surface-duo.jpg",
+    "price": "About 650 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 650",
+    "url": "https://www.gsmarena.com/microsoft_lumia_650-7859.php",
+    "parsed_at": "2026-01-23T03:59:55.962722",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM model only)",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, February. Released 2016, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "142 x 70.9 x 6.9 mm (5.59 x 2.79 x 0.27 in)",
+      "weight": "122 g (4.30 oz)",
+      "build": "Glass front (Gorilla Glass 3), plastic back, aluminum frame",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "OLED",
+      "size": "5.0 inches, 67.5 cm2(~67.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~297 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8909v2 Snapdragon 212 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Adreno 304"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.2, 28mm (wide), 1/4.0\", AF",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, DLNA, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2000 mAh, removable",
+      "stand-by": "Up to 624 h (3G)",
+      "talk_time": "Up to 16 h (2G) / Up to 13 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 150 EUR"
+    },
+    "our_tests": {
+      "display": "Contrast ratio: Infinite (nominal), 3.77(sunlight)",
+      "camera": "Photo",
+      "battery_(old)": "Endurance rating 55h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-650-s.jpg",
+    "price": "About 150 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 950 XL Dual SIM",
+    "url": "https://www.gsmarena.com/microsoft_lumia_950_xl_dual_sim-7631.php",
+    "parsed_at": "2026-01-23T03:59:57.391863",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 38, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, October. Released 2015, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151.9 x 78.4 x 8.1 mm (5.98 x 3.09 x 0.32 in)",
+      "weight": "165 g (5.82 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "5.7 inches, 89.6 cm2(~75.2% screen-to-body ratio)",
+      "resolution": "1440 x 2560 pixels, 16:9 ratio (~515 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8994 Snapdragon 810 (20 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x2.0 GHz Cortex-A57)",
+      "gpu": "Adreno 430"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "20 MP, f/1.9, 26mm (wide), 1/2.4\", 1.12µm, AF, OIS",
+      "features": "Zeiss optics, triple-LED RGB flash, panorama, HDR",
+      "video": "4K@30fps, stereo sound rec., 1080p@30/60fps (after SW update)"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.4",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, hotspot",
+      "bluetooth": "4.1, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 3.1"
+    },
+    "features": {
+      "sensors": "Iris scanner, accelerometer, gyro, proximity, compass, barometer, sensor core"
+    },
+    "battery": {
+      "type": "Li-Ion 3340 mAh, removable",
+      "charging": "18W wiredWireless (Qi) (market dependent)",
+      "stand-by": "Up to 288 h (2G) / Up to 288 h (3G)",
+      "talk_time": "Up to 25 h (2G) / Up to 19 h (3G)",
+      "music_play": "Up to 75 h"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 350 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 1472Basemark X: 32178",
+      "display": "Contrast ratio: Infinite (nominal), 3.837 (sunlight)",
+      "loudspeaker": "Voice 74dB / Noise 75dB / Ring 84dB",
+      "audio_quality": "Noise -91.6dB / Crosstalk -89.3dB",
+      "battery_(old)": "Endurance rating 47h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-950-xl--.jpg",
+    "price": "About 350 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 950 XL",
+    "url": "https://www.gsmarena.com/microsoft_lumia_950_xl-7263.php",
+    "parsed_at": "2026-01-23T03:59:59.277470",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 20, 28, 38, 40 - EMEA",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, October. Released 2015, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151.9 x 78.4 x 8.1 mm (5.98 x 3.09 x 0.32 in)",
+      "weight": "165 g (5.82 oz)",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "5.7 inches, 88.5 cm2(~74.3% screen-to-body ratio)",
+      "resolution": "1440 x 2560 pixels, 16:9 ratio (~518 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8994 Snapdragon 810 (20 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x2.0 GHz Cortex-A57)",
+      "gpu": "Adreno 430"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "20 MP, f/1.9, 26mm (wide), 1/2.4\", 1.12µm, AF, OIS",
+      "features": "Zeiss optics, triple-LED RGB flash, panorama, HDR",
+      "video": "4K@30fps, stereo sound rec., 1080p@30/60fps (after SW update)"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.4",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, hotspot",
+      "bluetooth": "4.1, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 3.1"
+    },
+    "features": {
+      "sensors": "Iris scanner, accelerometer, gyro, proximity, compass, barometer, sensor core"
+    },
+    "battery": {
+      "type": "Li-Ion 3340 mAh, removable",
+      "charging": "18W wiredWireless (Qi) (market dependent)",
+      "stand-by": "Up to 288 h (2G) / Up to 288 h (3G)",
+      "talk_time": "Up to 25 h (2G) / Up to 19 h (3G)",
+      "music_play": "Up to 75 h"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 350 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 1472Basemark X: 32178",
+      "display": "Contrast ratio: Infinite (nominal), 3.837 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 74dB / Noise 75dB / Ring 84dB",
+      "audio_quality": "Noise -91.6dB / Crosstalk -89.3dB",
+      "battery_(old)": "Endurance rating 62h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-950-xl--.jpg",
+    "price": "About 350 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 950 Dual SIM",
+    "url": "https://www.gsmarena.com/microsoft_lumia_950_dual_sim-7632.php",
+    "parsed_at": "2026-01-23T04:00:00.829224",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 38, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, October. Released 2015, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "145 x 73.2 x 8.2 mm (5.71 x 2.88 x 0.32 in)",
+      "weight": "150 g (5.29 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "5.2 inches, 74.5 cm2(~70.2% screen-to-body ratio)",
+      "resolution": "1440 x 2560 pixels, 16:9 ratio (~565 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8992 Snapdragon 808 (20 nm)",
+      "cpu": "Hexa-core (4x1.4 GHz Cortex-A53 & 2x1.8 GHz Cortex-A57)",
+      "gpu": "Adreno 418"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "20 MP, f/1.9, 26mm (wide), 1/2.4\", 1.12µm, AF, OIS",
+      "features": "Zeiss optics, triple-LED RGB flash, panorama, HDR",
+      "video": "4K@30fps, stereo sound rec., 1080p@30/60fps (after SW update)"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.4",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, hotspot",
+      "bluetooth": "4.1, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 3.1"
+    },
+    "features": {
+      "sensors": "Iris scanner, accelerometer, gyro, proximity, compass, barometer, sensor core"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, removable",
+      "charging": "18W wiredWireless (Qi)",
+      "stand-by": "Up to 288 h (2G) / Up to 288 h (3G)",
+      "talk_time": "Up to 23 h (2G) / Up to 18 h (3G)",
+      "music_play": "Up to 67 h"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 280 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-950-1.jpg",
+    "price": "About 280 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 950",
+    "url": "https://www.gsmarena.com/microsoft_lumia_950-7262.php",
+    "parsed_at": "2026-01-23T04:00:02.435794",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 38, 40 - EMEA",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, October. Released 2015, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "145 x 73.2 x 8.2 mm (5.71 x 2.88 x 0.32 in)",
+      "weight": "150 g (5.29 oz)",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "5.2 inches, 74.8 cm2(~70.5% screen-to-body ratio)",
+      "resolution": "1440 x 2560 pixels, 16:9 ratio (~564 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8992 Snapdragon 808 (20 nm)",
+      "cpu": "Hexa-core (4x1.4 GHz Cortex-A53 & 2x1.8 GHz Cortex-A57)",
+      "gpu": "Adreno 418"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "20 MP, f/1.9, 26mm (wide), 1/2.4\", 1.12µm, AF, OIS",
+      "features": "Zeiss optics, triple-LED RGB flash, panorama, HDR",
+      "video": "4K@30fps, stereo sound rec., 1080p@30/60fps (after SW update)"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.4",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, hotspot",
+      "bluetooth": "4.1, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 3.1"
+    },
+    "features": {
+      "sensors": "Iris scanner, accelerometer, gyro, proximity, compass, barometer, sensor core"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, removable",
+      "charging": "18W wiredWireless (Qi) (market dependent)",
+      "stand-by": "Up to 288 h (2G) / Up to 288 h (3G)",
+      "talk_time": "Up to 23 h (2G) / Up to 18 h (3G)",
+      "music_play": "Up to 67 h"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 280 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 1281Basemark X: 26330",
+      "display": "Contrast ratio: Infinite (nominal), 3512 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 71dB / Noise 73dB / Ring 77dB",
+      "audio_quality": "Noise -91.3dB / Crosstalk -91.6dB",
+      "battery_(old)": "Endurance rating 48h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-950-1.jpg",
+    "price": "About 280 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 550",
+    "url": "https://www.gsmarena.com/microsoft_lumia_550-7612.php",
+    "parsed_at": "2026-01-23T04:00:04.460505",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, October. Released 2015, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "136.1 x 67.8 x 9.9 mm (5.36 x 2.67 x 0.39 in)",
+      "weight": "141.9 (5.01 oz)",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD,",
+      "size": "4.7 inches, 59.7 cm2(~64.7% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~315 ppi density)"
+    },
+    "platform": {
+      "os": "Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8909 Snapdragon 210 (28 nm)",
+      "cpu": "Quad-core 1.1 GHz Cortex-A7",
+      "gpu": "Adreno 304"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, f/2.4, 1/4.0\", AF",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP, f/2.8",
+      "video": "480p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.1, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2100 mAh, removable",
+      "stand-by": "Up to 672 h (2G) / Up to 672 h (3G)",
+      "talk_time": "Up to 16 h (2G) / Up to 14 h (3G)",
+      "music_play": "Up to 60 h"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 90 EUR"
+    },
+    "our_tests": {
+      "camera": "Photo/Video",
+      "battery_(old)": "Endurance rating 42h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-550-.jpg",
+    "price": "About 90 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 540 Dual SIM",
+    "url": "https://www.gsmarena.com/microsoft_lumia_540_dual_sim-7196.php",
+    "parsed_at": "2026-01-23T04:00:06.305909",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, April. Released 2015, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "144 x 73.7 x 8.6 mm (5.67 x 2.90 x 0.34 in)",
+      "weight": "152 g (5.36 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~64.9% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1 with Lumia Denim",
+      "chipset": "Qualcomm Snapdragon 200 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 302"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.2, 28mm (wide), 1/4.0\", AF",
+      "features": "LED flash",
+      "video": "480p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "480p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, DLNA, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2200 mAh, removable",
+      "stand-by": "Up to 576 h (2G) / Up to 576 h (3G)",
+      "talk_time": "Up to 26 h (2G) / Up to 15 h (3G)",
+      "music_play": "Up to 81 h"
+    },
+    "misc": {
+      "colors": "Orange, white, black, gray, blue",
+      "price": "About 100 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-540-ds1.jpg",
+    "price": "About 100 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 430 Dual SIM",
+    "url": "https://www.gsmarena.com/microsoft_lumia_430_dual_sim-7127.php",
+    "parsed_at": "2026-01-23T04:00:07.964092",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "120.5 x 63.2 x 10.6 mm (4.74 x 2.49 x 0.42 in)",
+      "weight": "127.9 g (4.52 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD,",
+      "size": "4.0 inches, 44.8 cm2(~58.8% screen-to-body ratio)",
+      "resolution": "480 x 800 pixels, 5:3 ratio (~235 ppi density)"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1, upgradable to Windows 10",
+      "chipset": "Qualcomm MSM8210 Snapdragon 200 (28 nm)",
+      "cpu": "Dual-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 302"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "2 MP, f/2.2, 1/5.0\"",
+      "video": "480p@30fps"
+    },
+    "selfie_camera": {
+      "single": "VGA",
+      "video": "480p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "A-GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 1500 mAh, removable",
+      "stand-by": "Up to 720 h (2G) / Up to 720 h (3G)",
+      "talk_time": "Up to 13 h (2G) / Up to 8 h 30 min (3G)",
+      "music_play": "Up to 47 h"
+    },
+    "misc": {
+      "colors": "Black, Orange",
+      "price": "About 70 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-430.jpg",
+    "price": "About 70 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 640 XL LTE Dual SIM",
+    "url": "https://www.gsmarena.com/microsoft_lumia_640_xl_lte_dual_sim-7086.php",
+    "parsed_at": "2026-01-23T04:00:09.537441",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1700 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 38, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "157.9 x 81.5 x 9 mm (6.22 x 3.21 x 0.35 in)",
+      "weight": "171 g (6.03 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.7 inches, 88.9 cm2(~69.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~259 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1, upgradable to Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8226 Snapdragon 400 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, 28mm (wide), 1/3.0\", AF",
+      "features": "Zeiss optics, LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, DLNA, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass, sensor core"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, removable",
+      "stand-by": "Up to 936 h (2G) / Up to 936 h (3G)",
+      "talk_time": "Up to 31 h 20 min (2G) / Up to 23 h 40 min (3G)"
+    },
+    "misc": {
+      "colors": "Matte cyan, Orange, Black, Matte white, Glossy white",
+      "price": "About 200 EUR"
+    },
+    "our_tests": {
+      "display": "Contrast ratio: 1119:1 (nominal), 3.065 (sunlight)",
+      "loudspeaker": "Voice 72dB / Noise 67dB / Ring 73dB",
+      "audio_quality": "Noise -93.0dB / Crosstalk -94.4dB",
+      "battery_(old)": "Endurance rating 74h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nokia-lumia-640-xl-4g-ds.jpg",
+    "price": "About 200 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 640 XL LTE",
+    "url": "https://www.gsmarena.com/microsoft_lumia_640_xl_lte-7087.php",
+    "parsed_at": "2026-01-23T04:00:11.492280",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "157.9 x 81.5 x 9 mm (6.22 x 3.21 x 0.35 in)",
+      "weight": "171 g (6.03 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.7 inches, 88.9 cm2(~69.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~259 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1, upgradable to Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8226 Snapdragon 400 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, 28mm (wide), 1/3.0\", AF",
+      "features": "Zeiss optics, LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, DLNA, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass, sensor core"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, removable",
+      "stand-by": "Up to 888 h (2G) / Up to 888 h (3G)",
+      "talk_time": "Up to 30 h 20 min (2G) / Up to 24 h (3G)"
+    },
+    "misc": {
+      "colors": "Matte cyan, Orange, Black, Matte white, Glossy white",
+      "price": "About 200 EUR"
+    },
+    "our_tests": {
+      "display": "Contrast ratio: 1119:1 (nominal), 3.065 (sunlight)",
+      "loudspeaker": "Voice 72dB / Noise 67dB / Ring 73dB",
+      "audio_quality": "Noise -93.0dB / Crosstalk -94.4dB",
+      "battery_(old)": "Endurance rating 74h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nokia-lumia-640-xl-4g.jpg",
+    "price": "About 200 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 640 XL Dual SIM",
+    "url": "https://www.gsmarena.com/microsoft_lumia_640_xl_dual_sim-7085.php",
+    "parsed_at": "2026-01-23T04:00:13.204739",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "157.9 x 81.5 x 9 mm (6.22 x 3.21 x 0.35 in)",
+      "weight": "171 g (6.03 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.7 inches, 88.9 cm2(~69.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~259 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1, upgradable to Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8226 Snapdragon 400 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, 28mm (wide), 1/3.0\", AF",
+      "features": "Zeiss optics, LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, DLNA, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass, sensor core"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, removable",
+      "stand-by": "Up to 936 h (2G) / Up to 936 h (3G)",
+      "talk_time": "Up to 31 h 20 min (2G) / Up to 23 h 40 min (3G)"
+    },
+    "misc": {
+      "colors": "Matte cyan, Orange, Black, Matte white, Glossy white",
+      "price": "About 170 EUR"
+    },
+    "our_tests": {
+      "display": "Contrast ratio: 1119:1 (nominal), 3.065 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 72dB / Noise 67dB / Ring 73dB",
+      "audio_quality": "Noise -93.0dB / Crosstalk -94.4dB",
+      "battery_(old)": "Endurance rating 74h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nokia-lumia-640-xl-3g-ds.jpg",
+    "price": "About 170 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 640 XL",
+    "url": "https://www.gsmarena.com/microsoft_lumia_640_xl-7084.php",
+    "parsed_at": "2026-01-23T04:00:15.063960",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "157.9 x 81.5 x 9 mm (6.22 x 3.21 x 0.35 in)",
+      "weight": "171 g (6.03 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.7 inches, 88.9 cm2(~69.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~259 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1, upgradable to Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8226 Snapdragon 400 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, 28mm (wide), 1/3.0\", AF",
+      "features": "Zeiss optics, LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, DLNA, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass, sensor core"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, removable",
+      "stand-by": "Up to 936 h (2G) / Up to 936 h (3G)",
+      "talk_time": "Up to 31 h 20 min (2G) / Up to 23 h 40 min (3G)"
+    },
+    "misc": {
+      "colors": "Matte cyan, Orange, Black, Matte white, Glossy white",
+      "price": "About 170 EUR"
+    },
+    "our_tests": {
+      "display": "Contrast ratio: 1119:1 (nominal), 3.065 (sunlight)",
+      "audio_quality": "Noise -93.0dB / Crosstalk -94.4dB",
+      "battery_(old)": "Endurance rating 74h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nokia-lumia-640-xl-3g.jpg",
+    "price": "About 170 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 640 LTE Dual SIM",
+    "url": "https://www.gsmarena.com/microsoft_lumia_640_lte_dual_sim-7083.php",
+    "parsed_at": "2026-01-23T04:00:16.543243",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1700 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 38, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141.3 x 72.2 x 8.8 mm (5.56 x 2.84 x 0.35 in)",
+      "weight": "145 g (5.11 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.6% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1, upgradable to Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8926 Snapdragon 400 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.2, 28mm (wide), 1/4.0\", AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "1 MP",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, DLNA, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2500 mAh, removable",
+      "stand-by": "Up to 864 h (2G) / Up to 864 h (3G)",
+      "talk_time": "Up to 26 h 30 min (2G) / Up to 17 h 30 min (3G)"
+    },
+    "misc": {
+      "colors": "Glossy cyan, Orange, White, Matte black",
+      "price": "About 150 EUR"
+    },
+    "our_tests": {
+      "display": "Contrast ratio: 1034 (nominal), 2.563 (sunlight)",
+      "loudspeaker": "Voice 70dB / Noise 65dB / Ring 75dB",
+      "audio_quality": "Noise -93.1dB / Crosstalk -93.2dB",
+      "battery_(old)": "Endurance rating 76h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nokia-lumia-640-4g-ds.jpg",
+    "price": "About 150 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 640 LTE",
+    "url": "https://www.gsmarena.com/microsoft_lumia_640_lte-7055.php",
+    "parsed_at": "2026-01-23T04:00:18.574101",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141.3 x 72.2 x 8.8 mm (5.56 x 2.84 x 0.35 in)",
+      "weight": "145 g (5.11 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.6% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1, upgradable to Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8926 Snapdragon 400 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.2, 28mm (wide), 1/4.0\", AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "1 MP",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, DLNA, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2500 mAh, removable",
+      "stand-by": "Up to 864 h (2G) / Up to 864 h (3G)",
+      "talk_time": "Up to 26 h 30 min (2G) / Up to 17 h 30 min (3G)"
+    },
+    "misc": {
+      "colors": "Glossy cyan, Orange, White, Matte black",
+      "price": "About 120 EUR"
+    },
+    "our_tests": {
+      "display": "Contrast ratio: 1034 (nominal), 2.563 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 70dB / Noise 65dB / Ring 75dB",
+      "audio_quality": "Noise -93.1dB / Crosstalk -93.2dB",
+      "battery_(old)": "Endurance rating 76h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nokia-lumia-640-4g.jpg",
+    "price": "About 120 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 640 Dual SIM",
+    "url": "https://www.gsmarena.com/microsoft_lumia_640_dual_sim-7082.php",
+    "parsed_at": "2026-01-23T04:00:19.975087",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141.3 x 72.2 x 8.8 mm (5.56 x 2.84 x 0.35 in)",
+      "weight": "145 g (5.11 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.6% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1, upgradable to Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8926 Snapdragon 400 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.2, 28mm (wide), 1/4.0\", AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "1 MP",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, DLNA, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2500 mAh, removable",
+      "stand-by": "Up to 840 h (2G) / Up to 840 h (3G)",
+      "talk_time": "Up to 27 h 30 min (2G) / Up to 20 h 30 min (3G)"
+    },
+    "misc": {
+      "colors": "Glossy cyan, Orange, White, Matte black",
+      "price": "About 170 EUR"
+    },
+    "our_tests": {
+      "display": "Contrast ratio: 1034 (nominal), 2.563 (sunlight)",
+      "loudspeaker": "Voice 70dB / Noise 65dB / Ring 75dB",
+      "audio_quality": "Noise -93.1dB / Crosstalk -93.2dB",
+      "battery_(old)": "Endurance rating 76h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nokia-lumia-640-3g-ds.jpg",
+    "price": "About 170 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 532 Dual SIM",
+    "url": "https://www.gsmarena.com/microsoft_lumia_532_dual_sim-6951.php",
+    "parsed_at": "2026-01-23T04:00:21.940177",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, January. Released 2015, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "118.9 x 65.5 x 11.6 mm (4.68 x 2.58 x 0.46 in)",
+      "weight": "136.3 g (4.80 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD,",
+      "size": "4.0 inches, 45.5 cm2(~58.5% screen-to-body ratio)",
+      "resolution": "480 x 800 pixels, 5:3 ratio (~233 ppi density)"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1",
+      "chipset": "Qualcomm MSM8212 Snapdragon 200 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 302"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, f/2.4, 28mm (wide), 1/4.0\"",
+      "video": "480p@30fps"
+    },
+    "selfie_camera": {
+      "single": "VGA",
+      "video": "480p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "A-GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio, RDS",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 1560 mAh, removable",
+      "stand-by": "Up to 528 h (2G) / Up to 528 h (3G)",
+      "talk_time": "Up to 21 h (2G) / Up to 12 h (3G)",
+      "music_play": "Up to 61 h"
+    },
+    "misc": {
+      "colors": "Black, White, Green, Orange",
+      "price": "About 90 EUR"
+    },
+    "our_tests": {
+      "camera": "Photo",
+      "battery_(old)": "Endurance rating 60h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-532.jpg",
+    "price": "About 90 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 532",
+    "url": "https://www.gsmarena.com/microsoft_lumia_532-6950.php",
+    "parsed_at": "2026-01-23T04:00:23.804355",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, January. Released 2015, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "118.9 x 65.5 x 11.6 mm (4.68 x 2.58 x 0.46 in)",
+      "weight": "136.3 g (4.80 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD,",
+      "size": "4.0 inches, 45.5 cm2(~58.5% screen-to-body ratio)",
+      "resolution": "480 x 800 pixels, 5:3 ratio (~233 ppi density)"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1",
+      "chipset": "Qualcomm MSM8212 Snapdragon 200 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 302"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, f/2.4, 28mm (wide)",
+      "video": "480p@30fps"
+    },
+    "selfie_camera": {
+      "single": "VGA",
+      "video": "480p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "A-GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio, RDS",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 1560 mAh, removable",
+      "stand-by": "Up to 528 h (2G) / Up to 528 h (3G)",
+      "talk_time": "Up to 21 h (2G) / Up to 12 h (3G)",
+      "music_play": "Up to 61 h"
+    },
+    "misc": {
+      "colors": "Black, White, Green, Orange",
+      "price": "About 90 EUR"
+    },
+    "our_tests": {
+      "battery_(old)": "Endurance rating 55h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-532.jpg",
+    "price": "About 90 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 435 Dual SIM",
+    "url": "https://www.gsmarena.com/microsoft_lumia_435_dual_sim-6949.php",
+    "parsed_at": "2026-01-23T04:00:25.525362",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, January. Released 2015, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "118.1 x 64.7 x 11.7 mm (4.65 x 2.55 x 0.46 in)",
+      "weight": "134.1 g (4.73 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD,",
+      "size": "4.0 inches, 45.5 cm2(~59.6% screen-to-body ratio)",
+      "resolution": "480 x 800 pixels, 5:3 ratio (~233 ppi density)"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1, upgradable to Windows 10",
+      "chipset": "Qualcomm MSM8210 Snapdragon 200 (28 nm)",
+      "cpu": "Dual-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 302"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "2 MP, f/2.7, 36mm (standard), 1/5.0\"",
+      "video": "480p@30fps"
+    },
+    "selfie_camera": {
+      "single": "VGA",
+      "video": "480p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "A-GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio, RDS",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 1560 mAh, removable",
+      "stand-by": "Up to 504 h (2G) / Up to 504 h (3G)",
+      "talk_time": "Up to 21 h (2G) / Up to 11 h 45 min (3G)",
+      "music_play": "Up to 64 h"
+    },
+    "misc": {
+      "colors": "Black, White, Green, Orange",
+      "sar": "1.05 W/kg (head) 0.57 W/kg (body)",
+      "sar_eu": "0.58 W/kg (head) 0.54 W/kg (body)",
+      "price": "About 70 EUR"
+    },
+    "our_tests": {
+      "battery_(old)": "Endurance rating 64h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-435.jpg",
+    "price": "About 70 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 435",
+    "url": "https://www.gsmarena.com/microsoft_lumia_435-6942.php",
+    "parsed_at": "2026-01-23T04:00:27.275081",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 535 Dual SIM",
+    "url": "https://www.gsmarena.com/microsoft_lumia_535_dual_sim-6792.php",
+    "parsed_at": "2026-01-23T04:00:30.874617",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100 - RM-1090",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2014, November. Released 2014, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "140.2 x 72.4 x 8.8 mm (5.52 x 2.85 x 0.35 in)",
+      "weight": "146 g (5.15 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.9% screen-to-body ratio)",
+      "resolution": "540 x 960 pixels, 16:9 ratio (~220 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1",
+      "chipset": "Qualcomm Snapdragon 200 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 302"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, f/2.4, 28mm (wide), 1/4.0\", AF",
+      "features": "LED flash",
+      "video": "480p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, DLNA, hotspot",
+      "bluetooth": "4.0, A2DP, LE, aptX",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 1905 mAh, removable (BL-L4A)",
+      "stand-by": "Up to 336 h",
+      "talk_time": "Up to 11 h (2G) / Up to 13 h (3G)",
+      "music_play": "Up to 78 h"
+    },
+    "misc": {
+      "colors": "Orange, green, white, black, gray, blue",
+      "sar": "0.49 W/kg (head) 0.44 W/kg (body)",
+      "sar_eu": "0.60 W/kg (head) 0.55 W/kg (body)",
+      "price": "About 80 EUR"
+    },
+    "our_tests": {
+      "camera": "Photo",
+      "loudspeaker": "Voice 66dB / Noise 64dB / Ring 71dB",
+      "audio_quality": "Noise -93.9dB / Crosstalk -94.2dB",
+      "battery_(old)": "Endurance rating 44h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nokia-lumia-535-ds.jpg",
+    "price": "About 80 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 535",
+    "url": "https://www.gsmarena.com/microsoft_lumia_535-6791.php",
+    "parsed_at": "2026-01-23T04:00:32.698797",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2014, November. Released 2014, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "140.2 x 72.4 x 8.8 mm (5.52 x 2.85 x 0.35 in)",
+      "weight": "146 g (5.15 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.9% screen-to-body ratio)",
+      "resolution": "540 x 960 pixels, 16:9 ratio (~220 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1, upgradable to Microsoft Windows 10",
+      "chipset": "Qualcomm Snapdragon 200 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 302"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, f/2.4, 28mm (wide), 1/4.0\", AF",
+      "features": "LED flash",
+      "video": "480p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, DLNA, hotspot",
+      "bluetooth": "4.0, A2DP, LE, aptX",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 1905 mAh, removable (BL-L4A)",
+      "stand-by": "Up to 552 h",
+      "talk_time": "Up to 11 h (2G) / Up to 13 h (3G)",
+      "music_play": "Up to 78 h"
+    },
+    "misc": {
+      "colors": "Orange, green, white, black, gray, blue",
+      "sar": "0.46 W/kg (head) 0.38 W/kg (body)",
+      "sar_eu": "0.62 W/kg (head) 0.57 W/kg (body)",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/nokia-lumia-535.jpg",
+    "price": "About 80 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Surface 2",
+    "url": "https://www.gsmarena.com/microsoft_surface_2-5725.php",
+    "parsed_at": "2026-01-23T04:00:35.039515",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2013, September. Released 2013, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "274.6 x 172.5 x 8.9 mm (10.81 x 6.79 x 0.35 in)",
+      "weight": "675.9 g (1.49 lb)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "10.6 inches, 309.8 cm2(~65.4% screen-to-body ratio)",
+      "resolution": "1920 x 1080 pixels, 16:9 ratio (~208 ppi density)"
+    },
+    "platform": {
+      "os": "Microsoft Windows RT",
+      "chipset": "Nvidia Tegra 4 T40",
+      "cpu": "Quad-core 1.7 GHz Cortex-A15",
+      "gpu": "ULP GeForce (72 cores)"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 2GB RAM, 64GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "3.5 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB 3.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, compass"
+    },
+    "battery": {
+      "type": "Li-Ion, non-removable"
+    },
+    "misc": {
+      "colors": "Dark Titanium",
+      "price": "About 330 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-surface-2.jpg",
+    "price": "About 330 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Surface",
+    "url": "https://www.gsmarena.com/microsoft_surface-5082.php",
+    "parsed_at": "2026-01-23T04:00:37.080830",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2012, October. Released 2012, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "274.6 x 172 x 9.4 mm (10.81 x 6.77 x 0.37 in)",
+      "weight": "680.4 g (1.50 lb)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "10.6 inches, 309.7 cm2(~65.6% screen-to-body ratio)",
+      "resolution": "1366 x 768 pixels, 16:9 ratio (~148 ppi density)"
+    },
+    "platform": {
+      "os": "Microsoft Windows RT",
+      "chipset": "Nvidia Tegra 3 T30",
+      "cpu": "Quad-core 1.3 GHz Cortex-A9",
+      "gpu": "ULP GeForce"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 2GB RAM, 64GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "1.2 MP",
+      "video": "720p"
+    },
+    "selfie_camera": {
+      "single": "1.2 MP",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, compass"
+    },
+    "battery": {
+      "type": "Li-Ion battery, non-removable (31.5 Wh)",
+      "stand-by": "Up to 360 h",
+      "talk_time": "Up to 8 h"
+    },
+    "misc": {
+      "colors": "Dark Titanium",
+      "price": "About 260 EUR"
+    },
+    "our_tests": {
+      "display": "Contrast ratio: 1324:1 (nominal)",
+      "audio_quality": "Noise -82.6dB / Crosstalk -81.7dB"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-surface.jpg",
+    "price": "About 260 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Kin TWOm",
+    "url": "https://www.gsmarena.com/microsoft_kin_twom-3635.php",
+    "parsed_at": "2026-01-23T04:00:38.861754",
+    "network": {
+      "technology": "CDMA / EVDO",
+      "2g_bands": "CDMA 800 / 1900",
+      "3g_bands": "CDMA2000 1xEV-DO",
+      "speed": "EV-DO Rev.A 3.1 Mbps"
+    },
+    "launch": {
+      "announced": "2010, November. Released 2010, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "111.3 x 59.9 x 16.3 mm (4.38 x 2.36 x 0.64 in)",
+      "weight": "133 g (4.69 oz)",
+      "keyboard": "QWERTY",
+      "sim": "Mini-SIM"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "3.4 inches, 34.4 cm2(~51.6% screen-to-body ratio)",
+      "resolution": "320 x 480 pixels, 3:2 ratio (~170 ppi density)"
+    },
+    "platform": {
+      "chipset": "Nvidia Tegra",
+      "cpu": "600MHz ARM 11"
+    },
+    "memory": {
+      "card_slot": "No",
+      "phonebook": "Practically unlimited entries and fields, Photocal",
+      "call_records": "Practically unlimited",
+      "internal": "8GB 256MB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "720p"
+    },
+    "selfie_camera": {},
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g",
+      "bluetooth": "2.1, A2DP",
+      "positioning": "No",
+      "radio": "Stereo FM radio, RDS",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity",
+      "messaging": "SMS(threaded view), MMS, Email, Push Email",
+      "browser": "WAP 2.0/xHTML, HTML",
+      "games": "No",
+      "java": "Yes, MIDP 2.0"
+    },
+    "battery": {
+      "type": "Removable Li-Ion battery",
+      "stand-by": "Up to 232 h",
+      "talk_time": "Up to 6 h"
+    },
+    "misc": {
+      "colors": "Black",
+      "sar": "1.29 W/kg (head) 0.76 W/kg (body)",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/kin-twom.jpg",
+    "price": "About 160 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Kin ONEm",
+    "url": "https://www.gsmarena.com/microsoft_kin_onem-3633.php",
+    "parsed_at": "2026-01-23T04:00:40.863722",
+    "network": {
+      "technology": "CDMA / EVDO",
+      "2g_bands": "CDMA 800 / 1900",
+      "3g_bands": "CDMA2000 1xEV-DO",
+      "speed": "EV-DO Rev.A 3.1 Mbps"
+    },
+    "launch": {
+      "announced": "2010, November. Released 2010, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "84.1 x 67.6 x 18.5 mm (3.31 x 2.66 x 0.73 in)",
+      "weight": "110.6 (3.88 oz)",
+      "keyboard": "QWERTY",
+      "sim": "Mini-SIM"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "2.6 inches, 20.9 cm2(~36.8% screen-to-body ratio)",
+      "resolution": "320 x 240 pixels, 4:3 ratio (~154 ppi density)"
+    },
+    "platform": {
+      "chipset": "Nvidia Tegra",
+      "cpu": "600MHz ARM 11"
+    },
+    "memory": {
+      "card_slot": "No",
+      "phonebook": "Practically unlimited entries and fields, Photocal",
+      "call_records": "Practically unlimited",
+      "internal": "4GB 256MB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "features": "Dual-LED flash",
+      "video": "480p@30fps"
+    },
+    "selfie_camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g",
+      "bluetooth": "2.1, A2DP",
+      "positioning": "GPS, A-GPS",
+      "radio": "Stereo FM radio, RDS",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity",
+      "messaging": "SMS(threaded view), MMS, Email, Push Email",
+      "browser": "WAP 2.0/xHTML, HTML",
+      "games": "Yes + downloadable",
+      "java": "Yes, MIDP 2.1"
+    },
+    "battery": {
+      "type": "Removable Li-Ion 1240 mAh battery",
+      "stand-by": "Up to 210 h",
+      "talk_time": "Up to 5 h 40 min"
+    },
+    "misc": {
+      "colors": "Black",
+      "sar": "1.38 W/kg (head) 0.49 W/kg (body)",
+      "price": "About 90 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/kin-onem.jpg",
+    "price": "About 90 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Kin Two",
+    "url": "https://www.gsmarena.com/microsoft_kin_two-3266.php",
+    "parsed_at": "2026-01-23T04:00:42.814273",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA 7.2/2 Mbps"
+    },
+    "launch": {
+      "announced": "2010, April",
+      "status": "Cancelled"
+    },
+    "body": {
+      "dimensions": "115.1 x 65.3 x TBC mm",
+      "weight": "-",
+      "keyboard": "QWERTY",
+      "sim": "Mini-SIM"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "3.4 inches, 34.4 cm2(~45.8% screen-to-body ratio)",
+      "resolution": "320 x 480 pixels, 3:2 ratio (~170 ppi density)"
+    },
+    "platform": {
+      "chipset": "Nvidia Tegra",
+      "cpu": "600MHz ARM 11"
+    },
+    "memory": {
+      "card_slot": "No",
+      "phonebook": "Practically unlimited entries and fields, Photocal",
+      "call_records": "Practically unlimited",
+      "internal": "8GB 256MB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "720p"
+    },
+    "selfie_camera": {},
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g",
+      "bluetooth": "2.1, A2DP",
+      "positioning": "GPS, A-GPS",
+      "radio": "Stereo FM radio, RDS",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity",
+      "messaging": "SMS(threaded view), MMS, Email, Push Email",
+      "browser": "WAP 2.0/xHTML, HTML",
+      "games": "Yes + downloadable",
+      "java": "Yes, MIDP 2.1"
+    },
+    "battery": {
+      "type": "Removable Li-Ion 1390 mAh battery",
+      "stand-by": "Up to 232 h"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 330 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-kin-two-new.jpg",
+    "price": "About 330 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Kin One",
+    "url": "https://www.gsmarena.com/microsoft_kin_one-3265.php",
+    "parsed_at": "2026-01-23T04:00:44.392598",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA 7.2/2 Mbps"
+    },
+    "launch": {
+      "announced": "2010, April",
+      "status": "Cancelled"
+    },
+    "body": {
+      "dimensions": "82.6 x 63.5 x 19.1 mm (3.25 x 2.5 x 0.75 in)",
+      "weight": "110.6 (3.88 oz)",
+      "keyboard": "QWERTY",
+      "sim": "Mini-SIM"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "2.6 inches, 20.9 cm2(~39.9% screen-to-body ratio)",
+      "resolution": "320 x 240 pixels, 4:3 ratio (~154 ppi density)"
+    },
+    "platform": {
+      "chipset": "Nvidia Tegra",
+      "cpu": "600MHz ARM 11"
+    },
+    "memory": {
+      "card_slot": "No",
+      "phonebook": "Practically unlimited entries and fields, Photocal",
+      "call_records": "Practically unlimited",
+      "internal": "4GB 256MB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "features": "Dual-LED flash",
+      "video": "480p@30fps"
+    },
+    "selfie_camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g",
+      "bluetooth": "2.1, A2DP",
+      "positioning": "GPS, A-GPS",
+      "radio": "Stereo FM radio, RDS",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity",
+      "messaging": "SMS(threaded view), MMS, Email, Push Email",
+      "browser": "WAP 2.0/xHTML, HTML",
+      "games": "Yes + downloadable",
+      "java": "Yes, MIDP 2.1"
+    },
+    "battery": {
+      "type": "Removable Li-Ion 1240 mAh battery",
+      "stand-by": "Up to 200 h"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 290 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-kin-one-new.jpg",
+    "price": "About 290 EUR",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 850",
+    "url": "https://www.gsmarena.com/microsoft_lumia_850-7823.php",
+    "parsed_at": "2026-01-23T04:00:46.521904",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM model only)",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "Not announced yet",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "-",
+      "weight": "-",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)",
+      "protection": "(To be confirmed)"
+    },
+    "platform": {
+      "os": "Microsoft Windows 10",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "10 MP, 1/3.4\", AF, OIS",
+      "features": "Carl Zeiss optics, LED flash, panorama",
+      "video": "1080p@30fps, stereo sound rec."
+    },
+    "selfie_camera": {
+      "single": "2 MP",
+      "features": "LED flash"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, DLNA, hotspot",
+      "bluetooth": "4.1, A2DP, EDR, LE, aptX",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion, removable",
+      "charging": "Wireless (Qi)"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-850-.jpg",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 1030",
+    "url": "https://www.gsmarena.com/microsoft_lumia_1030-6981.php",
+    "parsed_at": "2026-01-23T04:00:48.437780",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - all versions",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "Not announced yet",
+      "status": "Cancelled"
+    },
+    "body": {
+      "dimensions": "-",
+      "weight": "-",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "5.5 inches, 83.4 cm2",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Microsoft Windows 8.1",
+      "cpu": "Quad-core"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "20 MP, 1/1.2\", AF, OIS",
+      "features": "Carl Zeiss optics, dual-LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30fps, 4x lossless digital zoom"
+    },
+    "selfie_camera": {
+      "single": "2 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, DLNA, hotspot",
+      "bluetooth": "4.0, A2DP, EDR, LE, aptX",
+      "positioning": "GPS, GLONASS",
+      "nfc": "Yes",
+      "radio": "Stereo FM radio, RDS",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass, barometer"
+    },
+    "battery": {
+      "type": "Li-Ion 2600 mAh battery (BV-F4A)"
+    },
+    "misc": {
+      "colors": "Black, Gray, Silver"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft-lumia-1030.jpg",
+    "brand": "Microsoft"
+  },
+  {
+    "name": "Lumia 1330",
+    "url": "https://www.gsmarena.com/microsoft_lumia_1330-6883.php",
+    "parsed_at": "2026-01-23T04:00:50.270156",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "3, 7, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "Not announced yet",
+      "status": "Cancelled"
+    },
+    "body": {
+      "dimensions": "-",
+      "weight": "-",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.7 inches, 89.6 cm2(~63.5% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~258 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Microsoft Windows Phone 8.1",
+      "chipset": "Qualcomm MSM8930AB Snapdragon 400 (28 nm)",
+      "cpu": "Dual-core 1.7 GHz Krait 300",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "To be confirmed",
+      "internal": "32GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "14 MP, AF",
+      "features": "LED flash, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP, EDR, LE, aptX",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion, non-removable"
+    },
+    "misc": {
+      "colors": "Yellow, white, black, red"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/microsoft.jpg",
+    "brand": "Microsoft"
+  }
+]

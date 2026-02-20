@@ -1,0 +1,115 @@
+{
+  "name": "Normalizer — 04 Validate Models",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "normalizer/validate-models",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "vm-webhook",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "webhookId": "normalizer-validate-models"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// === Format Models List ===\n// Форматируем входные данные: список моделей для проверки и список существующих.\n\nconst input = $input.first().json.body;\nconst modelsRaw = input.models_raw || [];\nconst brandId = input.brand_id;\nconst allModels = input.all_models || [];\n\n// Компактный формат для промпта\nconst modelsText = allModels\n  .map(m => `${m.id}: ${m.name}`)\n  .join('\\n');\n\nconst modelsRawText = modelsRaw\n  .map((m, i) => `${i + 1}. \"${m}\"`)\n  .join('\\n');\n\nconst modelsCount = allModels.length;\n\nreturn [{\n  json: {\n    modelsRaw,\n    modelsRawText,\n    modelsText,\n    modelsCount,\n    brandId\n  }\n}];"
+      },
+      "id": "vm-format",
+      "name": "Format Models List",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// === Prepare Prompt ===\n// Формируем промпт для валидации моделей.\nconst model = 'gpt-4o-mini';\n\nconst { modelsRaw, modelsRawText, modelsText, modelsCount, brandId } = $input.first().json;\n\nconst systemPrompt = `Ты — эксперт по моделям мобильных устройств.\nТебе даны модели, извлечённые AI из названия товара, и список всех существующих моделей данного бренда в справочнике (${modelsCount} шт).\n\nЗадача: для каждой входной модели определить, есть ли она в списке существующих (возможно с другим написанием).\n\nПримеры совпадений:\n- \"iPhone14 Pro\" → \"iPhone 14 Pro\" (пробел)\n- \"Galaxy S24Ultra\" → \"Galaxy S24 Ultra\" (пробел)\n- \"Redmi Note 12pro\" → \"Redmi Note 12 Pro\" (регистр + пробел)\n- \"A52s 5G\" → \"Galaxy A52s 5G\" (неполное имя)\n- \"SM-A525F\" → \"Galaxy A52\" (по коду модели)\n\nЕсли модель НЕ найдена — это новая модель.\n\nОтветь строго в формате JSON:\n{\n  \"matches\": [\n    {\n      \"model\": \"исходная строка модели\",\n      \"is_new\": true/false,\n      \"match_id\": число или null (ID из списка),\n      \"match\": \"точное имя из списка\" или null,\n      \"confidence\": 0.0-1.0,\n      \"reasoning\": \"краткое объяснение на русском\"\n    }\n  ]\n}\n\nВерни по одному объекту в matches на каждую входную модель, в том же порядке.`;\n\nconst userPrompt = `Модели для проверки:\\n${modelsRawText}\\n\\nСписок существующих моделей бренда (id: name):\\n${modelsText || '(пустой список — все модели будут новыми)'}`;\n\nreturn [{\n  json: {\n    model,\n    systemPrompt,\n    userPrompt,\n    modelsRaw\n  }\n}];"
+      },
+      "id": "vm-prepare",
+      "name": "Prepare Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: $json.model, messages: [ { role: 'system', content: $json.systemPrompt }, { role: 'user', content: $json.userPrompt } ], temperature: 0.05, response_format: { type: 'json_object' } }) }}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "vm-openai",
+      "name": "OpenAI Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [900, 300],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "CONFIGURE_ME",
+          "name": "OpenAI API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// === Parse Response ===\n// Парсим массив matches из ответа AI.\n// Валидируем каждый элемент и сопоставляем с исходным порядком.\n\nconst response = $input.first().json;\n\ntry {\n  const content = response.choices[0].message.content;\n  const parsed = JSON.parse(content);\n  \n  let matches = parsed.matches || [];\n  if (!Array.isArray(matches)) matches = [];\n  \n  // Валидация каждого match\n  matches = matches.map(m => ({\n    model: m.model || '',\n    is_new: m.is_new === true,\n    match_id: typeof m.match_id === 'number' ? m.match_id : null,\n    match: m.match || null,\n    confidence: typeof m.confidence === 'number' ? m.confidence : 0.5,\n    reasoning: m.reasoning || ''\n  }));\n  \n  return [{\n    json: { matches }\n  }];\n} catch (error) {\n  // Fallback: все модели как новые\n  return [{\n    json: {\n      matches: [{\n        model: '',\n        is_new: true,\n        match_id: null,\n        match: null,\n        confidence: 0.0,\n        reasoning: 'Failed to parse AI response: ' + error.message\n      }]\n    }\n  }];\n}"
+      },
+      "id": "vm-parse",
+      "name": "Parse Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1120, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "vm-respond",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1340, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [[{ "node": "Format Models List", "type": "main", "index": 0 }]]
+    },
+    "Format Models List": {
+      "main": [[{ "node": "Prepare Prompt", "type": "main", "index": 0 }]]
+    },
+    "Prepare Prompt": {
+      "main": [[{ "node": "OpenAI Request", "type": "main", "index": 0 }]]
+    },
+    "OpenAI Request": {
+      "main": [[{ "node": "Parse Response", "type": "main", "index": 0 }]]
+    },
+    "Parse Response": {
+      "main": [[{ "node": "Respond", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [{ "name": "normalizer" }],
+  "triggerCount": 0,
+  "versionId": "1"
+}

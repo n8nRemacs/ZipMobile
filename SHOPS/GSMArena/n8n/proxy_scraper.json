@@ -1,0 +1,334 @@
+{
+  "name": "Proxy Scraper - Fetch Free Proxies",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual",
+      "name": "Manual Start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 200]
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 6
+            }
+          ]
+        }
+      },
+      "id": "schedule",
+      "name": "Every 6 Hours",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "// GitHub sources with free proxy lists\nconst PROXY_SOURCES = [\n  // TheSpeedX/PROXY-List (~40,000 proxies)\n  'https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/http.txt',\n  // clarketm/proxy-list\n  'https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt',\n  // ShiftyTR/Proxy-List\n  'https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/http.txt',\n  // monosans/proxy-list\n  'https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/http.txt',\n  // proxifly\n  'https://raw.githubusercontent.com/proxifly/free-proxy-list/main/proxies/protocols/http/data.txt',\n  // sunny9577/proxy-scraper\n  'https://raw.githubusercontent.com/sunny9577/proxy-scraper/master/proxies.txt',\n  // mmpx12/proxy-list\n  'https://raw.githubusercontent.com/mmpx12/proxy-list/master/http.txt',\n];\n\nreturn PROXY_SOURCES.map(url => ({ json: { url } }));"
+      },
+      "id": "sources",
+      "name": "Proxy Sources",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 100],
+      "notes": "Список GitHub источников с бесплатными прокси"
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "loop-sources",
+      "name": "Loop Sources",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [440, 100]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $json.url }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+            }
+          ]
+        }
+      },
+      "id": "http-fetch",
+      "name": "Fetch Proxy List",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [660, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "const url = $('Loop Sources').first().json.url;\nconst text = $input.first().json.data || '';\n\n// Parse proxies (ip:port per line)\nconst proxies = [];\nconst lines = text.split('\\n');\n\nfor (const line of lines) {\n  const trimmed = line.trim();\n  // Match ip:port pattern\n  if (trimmed && trimmed.includes(':') && /^\\d/.test(trimmed)) {\n    const proxy = trimmed.split(/\\s+/)[0]; // Take only ip:port part\n    if (/^\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}:\\d{2,5}$/.test(proxy)) {\n      proxies.push(proxy);\n    }\n  }\n}\n\nconst sourceName = url.split('/')[4] || 'unknown'; // Get repo name\nconsole.log(`[${sourceName}] Found ${proxies.length} proxies`);\n\nreturn [{\n  json: {\n    source: sourceName,\n    source_url: url,\n    count: proxies.length,\n    proxies: proxies\n  }\n}];"
+      },
+      "id": "parse-proxies",
+      "name": "Parse Proxies",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [880, 0],
+      "notes": "Парсим ip:port из текста"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Collect all proxies from all sources\nconst items = $input.all();\n\nconst allProxies = [];\nconst stats = [];\n\nfor (const item of items) {\n  const data = item.json;\n  if (data.proxies && data.proxies.length > 0) {\n    stats.push(`${data.source}: ${data.count}`);\n    allProxies.push(...data.proxies);\n  }\n}\n\n// Remove duplicates\nconst unique = [...new Set(allProxies)];\n\nconsole.log(`\\n=== Total unique proxies: ${unique.length} ==`);\nconsole.log(`Sources: ${stats.join(', ')}`);\n\nreturn [{\n  json: {\n    total_unique: unique.length,\n    sources_stats: stats,\n    proxies: unique\n  }\n}];"
+      },
+      "id": "merge-all",
+      "name": "Merge & Dedupe",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 200],
+      "notes": "Объединяем и удаляем дубликаты"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Split proxies into batches for DB insert\nconst data = $input.first().json;\nconst proxies = data.proxies;\nconst BATCH_SIZE = 500;\n\nconst batches = [];\nfor (let i = 0; i < proxies.length; i += BATCH_SIZE) {\n  batches.push({\n    batch_num: Math.floor(i / BATCH_SIZE) + 1,\n    total_batches: Math.ceil(proxies.length / BATCH_SIZE),\n    proxies: proxies.slice(i, i + BATCH_SIZE)\n  });\n}\n\nconsole.log(`Created ${batches.length} batches of ${BATCH_SIZE} proxies each`);\n\nreturn batches.map(b => ({ json: b }));"
+      },
+      "id": "split-batches",
+      "name": "Split into Batches",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [880, 200],
+      "notes": "Разбиваем на батчи по 500 для вставки в БД"
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "loop-batches",
+      "name": "Loop Batches",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [1100, 200]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "={{ \n  'INSERT INTO zip_proxies (proxy, status) VALUES ' +\n  $json.proxies.map(p => `('${p}', 'raw')`).join(',') +\n  ' ON CONFLICT (proxy) DO NOTHING'\n}}",
+        "options": {}
+      },
+      "id": "postgres-insert",
+      "name": "Insert to PostgreSQL",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1320, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GSMArena"
+        }
+      },
+      "notes": "INSERT ... ON CONFLICT DO NOTHING"
+    },
+    {
+      "parameters": {
+        "jsCode": "const batch = $('Loop Batches').first().json;\nconsole.log(`Batch ${batch.batch_num}/${batch.total_batches}: inserted ${batch.proxies.length} proxies`);\nreturn $input.all();"
+      },
+      "id": "log-batch",
+      "name": "Log Progress",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1540, 200]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT status, COUNT(*) as count FROM zip_proxies GROUP BY status ORDER BY count DESC",
+        "options": {}
+      },
+      "id": "get-stats",
+      "name": "Get Stats",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1320, 400],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GSMArena"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const stats = $input.first().json;\nconst rows = Array.isArray(stats) ? stats : [stats];\n\nconsole.log('\\n=== PROXY STATS ===');\nlet total = 0;\nfor (const row of rows) {\n  if (row.status && row.count) {\n    console.log(`${row.status}: ${row.count}`);\n    total += parseInt(row.count);\n  }\n}\nconsole.log(`TOTAL: ${total}`);\n\nreturn [{\n  json: {\n    success: true,\n    message: 'Proxy scraping completed',\n    stats: rows,\n    total: total\n  }\n}];"
+      },
+      "id": "summary",
+      "name": "Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1540, 400]
+    }
+  ],
+  "connections": {
+    "Manual Start": {
+      "main": [
+        [
+          {
+            "node": "Proxy Sources",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Every 6 Hours": {
+      "main": [
+        [
+          {
+            "node": "Proxy Sources",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Proxy Sources": {
+      "main": [
+        [
+          {
+            "node": "Loop Sources",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Sources": {
+      "main": [
+        [
+          {
+            "node": "Fetch Proxy List",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Merge & Dedupe",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Proxy List": {
+      "main": [
+        [
+          {
+            "node": "Parse Proxies",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Proxies": {
+      "main": [
+        [
+          {
+            "node": "Loop Sources",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge & Dedupe": {
+      "main": [
+        [
+          {
+            "node": "Split into Batches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split into Batches": {
+      "main": [
+        [
+          {
+            "node": "Loop Batches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Batches": {
+      "main": [
+        [
+          {
+            "node": "Insert to PostgreSQL",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get Stats",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Insert to PostgreSQL": {
+      "main": [
+        [
+          {
+            "node": "Log Progress",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log Progress": {
+      "main": [
+        [
+          {
+            "node": "Loop Batches",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Stats": {
+      "main": [
+        [
+          {
+            "node": "Summary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["proxy", "scraper"]
+}

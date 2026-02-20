@@ -1,0 +1,5729 @@
+[
+  {
+    "name": "A6600 Plus",
+    "url": "https://www.gsmarena.com/lenovo_a6600_plus-8376.php",
+    "parsed_at": "2026-01-22T17:57:28.735986",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5 - India",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, September. Released 2016, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141 x 71 x 8.8 mm (5.55 x 2.80 x 0.35 in)",
+      "weight": "142 g (5.01 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~68.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Mediatek MT6735P (28 nm)",
+      "cpu": "Quad-core 1.0 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2300 mAh, removable",
+      "stand-by": "Up to 400 h (3G)",
+      "talk_time": "Up to 6 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "models": "A6600d40, A6600a40",
+      "price": "About 130 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a6600.jpg",
+    "price": "About 130 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A6600",
+    "url": "https://www.gsmarena.com/lenovo_a6600-8375.php",
+    "parsed_at": "2026-01-22T17:57:30.458329",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5 - India",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, September. Released 2016, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141 x 71 x 8.8 mm (5.55 x 2.80 x 0.35 in)",
+      "weight": "142 g (5.01 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~68.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Mediatek MT6735P (28 nm)",
+      "cpu": "Quad-core 1.0 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2300 mAh, removable",
+      "stand-by": "Up to 400 h (3G)",
+      "talk_time": "Up to 6 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a6600.jpg",
+    "price": "About 110 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "B",
+    "url": "https://www.gsmarena.com/lenovo_b-8506.php",
+    "parsed_at": "2026-01-22T17:57:31.609247",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM model only)",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 38, 40, 41",
+      "speed": "HSPA 21.1/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, October. Released 2016, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "132.5 x 66 x 9.9 mm (5.22 x 2.60 x 0.39 in)",
+      "weight": "144 g (5.08 oz)",
+      "sim": "Single SIM (Micro-SIM) or Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "4.5 inches, 57.6 cm2(~65.9% screen-to-body ratio)",
+      "resolution": "480 x 800 pixels, 5:3 ratio (~207 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Mediatek MT6735 (28 nm)",
+      "cpu": "Quad-core 1.0 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 2000 mAh, removable",
+      "stand-by": "Up to 170 h (3G)",
+      "talk_time": "Up to 11 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, White, Gold",
+      "models": "A2016a40, A2016b30",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-b.jpg",
+    "price": "About 80 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A Plus",
+    "url": "https://www.gsmarena.com/lenovo_a_plus-8320.php",
+    "parsed_at": "2026-01-22T17:57:33.296137",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 1900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2016, September. Released 2016, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "133 x 66 x 9.9 mm (5.24 x 2.60 x 0.39 in)",
+      "weight": "146 g (5.15 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.5 inches, 55.8 cm2(~63.6% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~218 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Mediatek MT6580 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "2.1, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Po 2000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Onyx Black, Pearl White",
+      "models": "A1010a20",
+      "price": "About 70 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a-plus-A1010.jpg",
+    "price": "About 70 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "P2",
+    "url": "https://www.gsmarena.com/lenovo_p2-8319.php",
+    "parsed_at": "2026-01-22T17:57:34.951301",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM model only)",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 4, 5, 7, 8, 20, 28, 38, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, September. Released 2016, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153 x 76 x 8.3 mm (6.02 x 2.99 x 0.33 in)",
+      "weight": "177 g (6.24 oz)",
+      "build": "Glass front (Gorilla Glass 3), aluminum back, aluminum frame",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.5 inches, 83.4 cm2(~71.7% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 6.0.1 (Marshmallow), upgradable to 7.0 (Nougat)",
+      "chipset": "Qualcomm MSM8953 Snapdragon 625 (14 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "Adreno 506"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 32GB 4GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, 21mm (ultrawide), 1/3.1\", 1.12µm, PDAF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "Yes",
+      "radio": "FM radio; recording",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 5100 mAh, non-removable",
+      "charging": "18W wired",
+      "stand-by": "Up to 768 h (3G)",
+      "talk_time": "Up to 79 h (3G)"
+    },
+    "misc": {
+      "colors": "Champagne gold, Graphite gray",
+      "models": "P2a42",
+      "price": "About 240 EUR"
+    },
+    "our_tests": {
+      "performance": "GFXBench: 3.7fps (ES 3.1 onscreen)",
+      "display": "Contrast ratio: Infinite (nominal), 3.316 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 67dB / Noise 72dB / Ring 86dB",
+      "audio_quality": "Noise -92.6dB / Crosstalk -92.4dB",
+      "battery_(old)": "Endurance rating 149h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-p2.jpg",
+    "price": "About 240 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "K6 Note",
+    "url": "https://www.gsmarena.com/lenovo_k6_note-8318.php",
+    "parsed_at": "2026-01-22T17:57:36.626549",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM model only)",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 38, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, September. Released 2016, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151 x 76 x 8.4 mm (5.94 x 2.99 x 0.33 in)",
+      "weight": "169 g (5.96 oz)",
+      "build": "Glass front, aluminum/plastic back, aluminum frame",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~72.7% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Qualcomm MSM8937 Snapdragon 430 (28 nm)",
+      "cpu": "Octa-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 505"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 32GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, PDAF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh, non-removable",
+      "stand-by": "Up to 600 h (2G) / Up to 600 h (3G)",
+      "talk_time": "Up to 46 h (2G) / Up to 31 h (3G)"
+    },
+    "misc": {
+      "colors": "Silver, Gold, Dark Grey",
+      "models": "K53a48",
+      "price": "About 250 EUR"
+    },
+    "our_tests": {
+      "performance": "GFXBench: 2.4fps (ES 3.1 onscreen)",
+      "display": "Contrast ratio: 65125 (nominal), 2.544 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 63dB / Noise 69dB / Ring 71dB",
+      "audio_quality": "Noise-92.7dB / Crosstalk -86.8dB",
+      "battery_(old)": "Endurance rating 91h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-k6-note.jpg",
+    "price": "About 250 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "K6 Power",
+    "url": "https://www.gsmarena.com/lenovo_k6_power-8317.php",
+    "parsed_at": "2026-01-22T17:57:38.087095",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM model only)",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 38, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, September. Released 2016, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141.9 x 70.3 x 9.3 mm (5.59 x 2.77 x 0.37 in)",
+      "weight": "145 g (5.11 oz)",
+      "build": "Glass front, aluminum back, aluminum frame",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~69.1% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~441 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), upgradable to 7.0 (Nougat)",
+      "chipset": "Qualcomm MSM8937 Snapdragon 430 (28 nm)",
+      "cpu": "Octa-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 505"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, PDAF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh, non-removable",
+      "stand-by": "Up to 649 h (3G)",
+      "talk_time": "Up to 50 h (2G) / Up to 33 h (3G)"
+    },
+    "misc": {
+      "colors": "Silver, Gold, Dark Grey",
+      "models": "K33a42",
+      "price": "About 170 EUR"
+    },
+    "our_tests": {
+      "performance": "GFXBench: 2.4fps (ES 3.1 onscreen)"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-k6-power.jpg",
+    "price": "About 170 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "K6",
+    "url": "https://www.gsmarena.com/lenovo_k6-8316.php",
+    "parsed_at": "2026-01-22T17:57:39.710336",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM model only)",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, September. Released 2016, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141.9 x 70.3 x 8.2 mm (5.59 x 2.77 x 0.32 in)",
+      "weight": "140 g (4.94 oz)",
+      "sim": "· Nano-SIM· Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~69.1% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~441 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Qualcomm MSM8937 Snapdragon 430 (28 nm)",
+      "cpu": "Octa-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 505"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Silver, Gold, Dark Grey",
+      "models": "K33a48, K33b36",
+      "price": "About 200 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-k6.jpg",
+    "price": "About 200 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Yoga Tab 3 10",
+    "url": "https://www.gsmarena.com/lenovo_yoga_tab_3_10-9744.php",
+    "parsed_at": "2026-01-22T17:57:41.412452",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100 - EMEA",
+      "4g_bands": "1, 3, 4, 5, 7, 8, 19, 20, 38, 40 - EMEA",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016. Released 2016",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "253 x 185 x 9.5 mm (9.96 x 7.28 x 0.37 in)",
+      "weight": "655 g (Wi-Fi)/ 665 g (3G/LTE) (1.40 lb)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~63.2% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~149 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Qualcomm MSM8909 Snapdragon 210 (28 nm) - 3G/LTE modelQualcomm APQ8009 (28 nm) - Wi-Fi model",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Adreno 304"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "Rotating main camera module",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 8400 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black",
+      "models": "YT3-X50M, YT3-X50F",
+      "price": "About 180 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-yoga-tablet-3-10.jpg",
+    "price": "About 180 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Yoga Tab 3 Plus",
+    "url": "https://www.gsmarena.com/lenovo_yoga_tab_3_plus-8311.php",
+    "parsed_at": "2026-01-22T17:57:42.590601",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - EMEA",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20, 38, 39, 40, 41 - EMEA",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, September. Released 2016, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "247 x 179 mm",
+      "weight": "637 g (Wi-Fi)/ 644 g (3G/LTE) (1.40 lb)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~66.9% screen-to-body ratio)",
+      "resolution": "1600 x 2560 pixels, 16:10 ratio (~299 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0.1 (Marshmallow), upgradable to 7.1.1 (Nougat)",
+      "chipset": "Qualcomm MSM8953 Snapdragon 625 (14 nm) - 3G/LTE modelQualcomm MSM8976 Snapdragon 652 (28 nm) - Wi-Fi model",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53 - 3G/LTE modelOcta-core (4x1.8 GHz Cortex-A72 & 4x1.4 GHz Cortex-A53) - Wi-Fi model",
+      "gpu": "Adreno 506 - 3G/LTE modelAdreno 510 - Wi-Fi model"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers (4 speakers)",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 9300 mAh, non-removable",
+      "charging": "18W wired",
+      "talk_time": "Up to 18 h (3G)"
+    },
+    "misc": {
+      "colors": "Black",
+      "models": "YT-X703F, YT-X703L, YT-X703X",
+      "price": "About 300 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-yoga-tab3-plusr.jpg",
+    "price": "About 300 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe A",
+    "url": "https://www.gsmarena.com/lenovo_vibe_a-8208.php",
+    "parsed_at": "2026-01-22T17:57:44.287446",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2016, July. Released 2016, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "124.5 x 64 x 10.6 mm (4.90 x 2.52 x 0.42 in)",
+      "weight": "132 g (4.66 oz)",
+      "sim": "Dual SIM (Mini-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "4.0 inches, 45.5 cm2(~57.2% screen-to-body ratio)",
+      "resolution": "480 x 800 pixels, 5:3 ratio (~233 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Spreadtrum SC7731G",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "4GB 512MB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "VGA"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "2.1, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Po 1700 mAh, removable"
+    },
+    "misc": {
+      "colors": "Onyx Black, Pearl White",
+      "models": "A1000m",
+      "price": "About 50 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-a.jpg",
+    "price": "About 50 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "C2 Power",
+    "url": "https://www.gsmarena.com/lenovo_c2_power-8368.php",
+    "parsed_at": "2026-01-22T17:57:45.679411",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, September. Released 2016, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "9.6 mm thickness",
+      "weight": "155.6 g (5.50 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Mediatek MT6735P (28 nm)",
+      "cpu": "Quad-core 1.0 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 3500 mAh, removable",
+      "stand-by": "Up to 408 h (3G)",
+      "talk_time": "Up to 35 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 170 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-c2-power.jpg",
+    "price": "About 170 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "C2",
+    "url": "https://www.gsmarena.com/lenovo_c2-8193.php",
+    "parsed_at": "2026-01-22T17:57:47.158335",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 38, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, July. Released 2016, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143 x 71.4 x 8.6 mm (5.63 x 2.81 x 0.34 in)",
+      "weight": "139 g (4.90 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.5% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Mediatek MT6735P (28 nm)",
+      "cpu": "Quad-core 1.0 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM, 16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, 1/4.0\", AF",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2750 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "models": "K10a40",
+      "price": "About 200 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/Lenovo-Vibe-C2r.jpg",
+    "price": "About 200 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Phab2 Plus",
+    "url": "https://www.gsmarena.com/lenovo_phab2_plus-8147.php",
+    "parsed_at": "2026-01-22T17:57:48.390876",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - EMEA",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20, 38, 40, 41 - ЕМЕА",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, June. Released 2016, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "173.9 x 88.3 x 9.6 mm (6.85 x 3.48 x 0.38 in)",
+      "weight": "218 g (7.69 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.4 inches, 112.9 cm2(~73.5% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~344 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Mediatek MT8783",
+      "cpu": "Octa-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T720MP3"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, PDAFAuxiliary lens",
+      "features": "Laser AF, Dual-LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.2, 1/3.2\", 1.4µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4050 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Gunmetal Grey, Champagne Gold",
+      "models": "PB2-670M, PB2-670N, PB2-670Y",
+      "price": "About 250 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-phab2-plus.jpg",
+    "price": "About 250 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Phab2",
+    "url": "https://www.gsmarena.com/lenovo_phab2-8146.php",
+    "parsed_at": "2026-01-22T17:57:49.594329",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - EMEA",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20, 38, 40, 41 - EMEA",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, June. Released 2016, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "175 x 89.5 x 9.6 mm (6.89 x 3.52 x 0.38 in)",
+      "weight": "225 g (7.94 oz)",
+      "sim": "Hybrid Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.4 inches, 112.9 cm2(~72.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~229 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Mediatek MT8735",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, PDAF",
+      "features": "LED flash, HDR, panorama",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4050 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Gunmetal Grey, Champagne Gold",
+      "models": "PB2-650M, PB2-650Y",
+      "price": "About 230 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-phab2.jpg",
+    "price": "About 230 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Phab2 Pro",
+    "url": "https://www.gsmarena.com/lenovo_phab2_pro-8145.php",
+    "parsed_at": "2026-01-22T17:57:51.051990",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - EMEA",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20, 38, 40, 41 - ЕМЕА",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat7 300/100 Mbps"
+    },
+    "launch": {
+      "announced": "2016, June. Released 2016, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "179.8 x 88.6 x 10.7 mm (7.08 x 3.49 x 0.42 in)",
+      "weight": "259 g (9.14 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.4 inches, 112.9 cm2(~70.9% screen-to-body ratio)",
+      "resolution": "1440 x 2560 pixels, 16:9 ratio (~459 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Qualcomm MSM8976 Snapdragon 652 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A72 & 4x1.4 GHz Cortex-A53)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, PDAF",
+      "features": "Depth & motion tracking sensors, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.2, 1/3.2\", 1.4µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4050 mAh, non-removable",
+      "charging": "18W wired, QC3"
+    },
+    "misc": {
+      "colors": "Gunmetal Grey, Champagne Gold",
+      "models": "PB2-690M, PB2-690Y",
+      "price": "About 350 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 1596Basemark X: 15210",
+      "display": "Contrast ratio: 1784:1",
+      "loudspeaker": "Voice 64dB / Noise 66dB / Ring 81dB",
+      "audio_quality": "Noise - 92.2 / Crosstalk - 63.5",
+      "battery_(old)": "Endurance rating 96h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-phab2-pro.jpg",
+    "price": "About 350 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "ZUK Z2",
+    "url": "https://www.gsmarena.com/lenovo_zuk_z2-8125.php",
+    "parsed_at": "2026-01-22T17:57:52.706107",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, May. Released 2016, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141.7 x 68.9 x 8.5 mm (5.58 x 2.71 x 0.33 in)",
+      "weight": "149 g (5.26 oz)",
+      "build": "Glass front, glass back, aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~70.6% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~441 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0.1 (Marshmallow), upgradable to Android 8.0 (Oreo), ZUI 2.5",
+      "chipset": "Qualcomm MSM8996 Snapdragon 820 (14 nm)",
+      "cpu": "Quad-core (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)",
+      "gpu": "Adreno 530"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "32GB 3GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, 1/2.6\", 1.34µm, PDAF",
+      "features": "LED flash, HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps, 720p@120fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0, 1/3.2\", 1.4µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, DLNA",
+      "bluetooth": "4.1, A2DP, LE, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3500 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Titanium Black, Ceramic White",
+      "models": "ZUK Z2132, ZUK Z2131, Z2 Plus, Z2131",
+      "price": "About 220 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/zuk-z2-.jpg",
+    "price": "About 220 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe C",
+    "url": "https://www.gsmarena.com/lenovo_vibe_c-8101.php",
+    "parsed_at": "2026-01-22T17:57:54.046803",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 4, 5, 7, 8, 20, 38, B40, B41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, May. Released 2016, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143.5 x 71.8 x 9 mm (5.65 x 2.83 x 0.35 in)",
+      "weight": "166 g (5.86 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~66.9% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~196 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1.1 (Lollipop)",
+      "chipset": "Qualcomm MSM8909 Snapdragon 210 (28 nm)",
+      "cpu": "Quad-core 1.1 GHz Cortex-A7",
+      "gpu": "Adreno 304"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Po 2300 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "models": "A2020a40",
+      "price": "About 90 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-c.jpg",
+    "price": "About 90 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "ZUK Z2 Pro",
+    "url": "https://www.gsmarena.com/lenovo_zuk_z2_pro-8038.php",
+    "parsed_at": "2026-01-22T17:57:55.860229",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 20, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, April. Released 2016, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "145.4 x 70.5 x 7.5 mm (5.72 x 2.78 x 0.30 in)",
+      "weight": "145 g (5.11 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.2 inches, 74.5 cm2(~72.7% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~424 ppi density)",
+      "protection": "Corning Gorilla Glass (unspecified version)"
+    },
+    "platform": {
+      "os": "Android 6.0.1 (Marshmallow), upgradable to 7.0 (Nougat), ZUI 2.5",
+      "chipset": "Qualcomm MSM8996 Snapdragon 820 (14 nm)",
+      "cpu": "Quad-core (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)",
+      "gpu": "Adreno 530"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 4GB RAM, 128GB 6GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/1.8, 1.34µm, PDAF, OIS",
+      "features": "Dual-LED dual-tone flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0, 1/3.2\", 1.4µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 3.1"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, heart rate, altimeter"
+    },
+    "battery": {
+      "type": "Li-Ion 3100 mAh, non-removable",
+      "charging": "18W wired, QC3"
+    },
+    "misc": {
+      "colors": "Titanium Black, Ceramic White",
+      "models": "ZUK Z2121",
+      "price": "About 350 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/zuk-z2-pro-.jpg",
+    "price": "About 350 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Tab3 10",
+    "url": "https://www.gsmarena.com/lenovo_tab3_10-7953.php",
+    "parsed_at": "2026-01-22T17:57:57.211423",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 1900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2016, February. Released 2016, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "247 x 171 x 8.9 mm (9.72 x 6.73 x 0.35 in)",
+      "weight": "509 g (1.12 lb)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~70.0% screen-to-body ratio)",
+      "resolution": "1920 x 1200 pixels, 16:10 ratio (~224 ppi density)",
+      "protection": "Corning Gorilla Glass (unspecified version)"
+    },
+    "platform": {
+      "os": "Android 6.0.1 (Marshmallow)",
+      "chipset": "Mediatek MT8161 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 2GB RAM, 64GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes, dual speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 7000 mAh, non-removable",
+      "talk_time": "Up to 17 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Black",
+      "models": "TB-X103F",
+      "price": "About 280 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-tab3-10.jpg",
+    "price": "About 280 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Tab3 8",
+    "url": "https://www.gsmarena.com/lenovo_tab3_8-7952.php",
+    "parsed_at": "2026-01-22T17:57:58.729915",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Tab3 7",
+    "url": "https://www.gsmarena.com/lenovo_tab3_7-7951.php",
+    "parsed_at": "2026-01-22T17:59:17.714030",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA 21.1/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, February. Released 2016, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "191 x 100 x 8.8 mm (7.52 x 3.94 x 0.35 in)",
+      "weight": "260 g (9.17 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "7.0 inches, 137.9 cm2(~72.2% screen-to-body ratio)",
+      "resolution": "600 x 1024 pixels, 16:9 ratio (~170 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow) or 5.0 (Lollipop)",
+      "chipset": "Mediatek MT8161 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM, 16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "2 MP, AF or 5 MP, AF",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "VGA or 2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 3450 mAh, non-removable",
+      "talk_time": "Up to 9 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Black",
+      "models": "TB3-710I, TB-7703X, TB3-730X, TB3-710F",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-tab3-711.jpg",
+    "price": "About 80 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe K5 Plus",
+    "url": "https://www.gsmarena.com/lenovo_vibe_k5_plus-7947.php",
+    "parsed_at": "2026-01-22T17:59:19.999746",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, February. Released 2016, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "142 x 71 x 8 mm (5.59 x 2.80 x 0.31 in)",
+      "weight": "142 g (5.01 oz)",
+      "build": "Glass front, aluminum/plastic back, aluminum frame",
+      "sim": "Dual SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~68.4% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~441 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Qualcomm MSM8939v2 Snapdragon 616 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.2 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.8"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2750 mAh, removable"
+    },
+    "misc": {
+      "colors": "Silver, Gold",
+      "models": "A6020a46, Vibe K5 Plus",
+      "price": "About 140 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 884Basemark X: 4863",
+      "display": "Contrast ratio: 998 (nominal), 2.473 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 72dB / Noise 71dB / Ring 81dB",
+      "audio_quality": "Noise -93.8dB / Crosstalk -91.3dB",
+      "battery_(old)": "Endurance rating 62h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-k5-plus.jpg",
+    "price": "About 140 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe K5",
+    "url": "https://www.gsmarena.com/lenovo_vibe_k5-7946.php",
+    "parsed_at": "2026-01-22T17:59:22.035555",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 38, 40, 41",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, February 21. Released 2016, June 13",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "142 x 71 x 8 mm (5.59 x 2.80 x 0.31 in)",
+      "weight": "142 g (5.01 oz)",
+      "build": "Glass front, aluminum/plastic back, aluminum frame",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~68.4% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Qualcomm MSM8929 Snapdragon 415 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.2 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.8"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2750 mAh, removable"
+    },
+    "misc": {
+      "colors": "Champagne Gold, Platinum Silver",
+      "models": "A6020a40, A6020a41, A6020l36, A6020l37",
+      "price": "About 120 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 789Basemark X: 4263",
+      "display": "Contrast ratio: 804 (nominal), 2.459 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 70dB / Noise 70dB / Ring 78dB",
+      "audio_quality": "Noise -90.0dB / Crosstalk -91.5dB",
+      "battery_(old)": "Endurance rating 64h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-k5.jpg",
+    "price": "About 120 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A7000 Turbo",
+    "url": "https://www.gsmarena.com/lenovo_a7000_turbo-7939.php",
+    "parsed_at": "2026-01-22T17:59:24.247835",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, January. Released 2016, January",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.6 x 76.2 x 8 mm (6.01 x 3.00 x 0.31 in)",
+      "weight": "150 g (5.29 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.7% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5 (Lollipop), Vibe UI 2",
+      "chipset": "Mediatek MT6752 (28 nm)",
+      "cpu": "Octa-core 1.7 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "features": "Dual-LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2900 mAh, removable"
+    },
+    "misc": {
+      "colors": "Matte Black",
+      "price": "About 180 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a7000-turbo.jpg",
+    "price": "About 180 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe P1 Turbo",
+    "url": "https://www.gsmarena.com/lenovo_vibe_p1_turbo-7918.php",
+    "parsed_at": "2026-01-22T17:59:26.608464",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 20, 40",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, February. Released 2016, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.9 x 75.6 x 9.9 mm (6.02 x 2.98 x 0.39 in)",
+      "weight": "189 g (6.67 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~72.1% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Qualcomm MSM8939v2 Snapdragon 616 (28 nm)",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A53 & 4x1.2 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.8"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n/ac, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4900 mAh, non-removable",
+      "charging": "18W wired, QC2",
+      "stand-by": "Up to 648 h (2G) / Up to 600 h (3G)",
+      "talk_time": "Up to 49 h (2G) / Up to 44 h (3G)"
+    },
+    "misc": {
+      "colors": "Platinum, Graphite Grey, Gold",
+      "models": "P1a42, P1c72",
+      "price": "About 260 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-p1-turbo.jpg",
+    "price": "About 260 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "K5 Note",
+    "url": "https://www.gsmarena.com/lenovo_k5_note-7878.php",
+    "parsed_at": "2026-01-22T17:59:28.578347",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 38, 40, 41",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, January. Released 2016, January",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152 x 75.7 x 8.5 mm (5.98 x 2.98 x 0.33 in)",
+      "weight": "165 g (5.82 oz)",
+      "build": "Glass front, aluminum/plastic back, aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~72.5% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Mediatek MT6755 Helio P10 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 32GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n/ac, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3500 mAh, non-removable",
+      "stand-by": "Up to 543 h (3G)",
+      "talk_time": "Up to 34 h (2G) / Up to 27 h 30 min (3G)"
+    },
+    "misc": {
+      "colors": "Silver, Gold, Gray",
+      "models": "A7020a48, K52e78, A7020a40",
+      "sar_eu": "1.10 W/kg (head) 1.18 W/kg (body)",
+      "price": "About 190 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-k5-note.jpg",
+    "price": "About 190 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Lemon 3",
+    "url": "https://www.gsmarena.com/lenovo_lemon_3-7865.php",
+    "parsed_at": "2026-01-22T17:59:30.358379",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, January. Released 2016, January",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "142 x 71 x 8 mm (5.59 x 2.80 x 0.31 in)",
+      "weight": "142 g (5.01 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~68.4% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~441 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Qualcomm MSM8939v2 Snapdragon 616 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.2 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2750 mAh, removable",
+      "stand-by": "Up to 360 h (3G)",
+      "talk_time": "Up to 32 h (3G)"
+    },
+    "misc": {
+      "colors": "Silver, Gold",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-lemon-3-.jpg",
+    "price": "About 110 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe S1 Lite",
+    "url": "https://www.gsmarena.com/lenovo_vibe_s1_lite-7850.php",
+    "parsed_at": "2026-01-22T17:59:32.656410",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 4, 7, 5, 8, 20, 38, 40, 41",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, January. Released 2016, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "145 x 71 x 8.6 mm (5.71 x 2.80 x 0.34 in)",
+      "weight": "129 g (4.55 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~66.9% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~441 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Mediatek MT6753 (28 nm)",
+      "cpu": "Octa-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.2, 1/3.2\", 1.4µm",
+      "features": "LED flash"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 2700 mAh, non-removable",
+      "stand-by": "Up to 225 h (2G) / Up to 225 h (3G)",
+      "talk_time": "Up to 18 h (3G)"
+    },
+    "misc": {
+      "colors": "Matte White, Matte Blue",
+      "models": "S1La40",
+      "price": "About 210 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-s1-lite1.jpg",
+    "price": "About 210 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe K4 Note",
+    "url": "https://www.gsmarena.com/lenovo_vibe_k4_note-7802.php",
+    "parsed_at": "2026-01-22T17:59:34.600100",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20 - A7010",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, January 05. Released 2016, January 05",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.6 x 76.5 x 9.2 mm (6.05 x 3.01 x 0.36 in)",
+      "weight": "158 g (5.57 oz)",
+      "build": "Glass front (Gorilla Glass 3), plastic back, aluminum frame",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.0% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.1.1 (Lollipop), upgradable to 6.0 (Marshmallow)",
+      "chipset": "Mediatek MT6753 (28 nm)",
+      "cpu": "Octa-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T720MP3"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 2GB RAM, 16GB 2GB RAM, 16GB 3GB RAM (A7010 a48), 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "FM radio, recording",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3300 mAh, non-removable",
+      "stand-by": "Up to 265 h (3G)",
+      "talk_time": "Up to 23 h (2G) / Up to 22 h (3G)"
+    },
+    "misc": {
+      "colors": "Black",
+      "models": "A7010a48",
+      "sar_eu": "0.84 W/kg (head)",
+      "price": "About 190 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 729Basemark X: 4072",
+      "display": "Contrast ratio: 940:1 (nominal), 2.254 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 74dB / Noise 66dB / Ring 72dB",
+      "audio_quality": "Noise -93.3dB / Crosstalk -93.6dB",
+      "battery_(old)": "Endurance rating 73h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a7010.jpg",
+    "price": "About 190 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe X3 c78",
+    "url": "https://www.gsmarena.com/lenovo_vibe_x3_c78-7756.php",
+    "parsed_at": "2026-01-22T17:59:36.740781",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, November. Released 2015, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.6 x 76.5 x 9.2 mm (6.05 x 3.01 x 0.36 in)",
+      "weight": "-",
+      "sim": "Hybrid Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.0% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Mediatek MT6753 (28 nm)",
+      "cpu": "Octa-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T720MP3"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, PDAF",
+      "features": "Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3300 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "White, Black",
+      "models": "K51c78",
+      "price": "About 320 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-x3-k51c78-.jpg",
+    "price": "About 320 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe X3",
+    "url": "https://www.gsmarena.com/lenovo_vibe_x3-7755.php",
+    "parsed_at": "2026-01-22T17:59:39.064785",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 38, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, November. Released 2015, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "154 x 76.5 x 9.3 mm (6.06 x 3.01 x 0.37 in)",
+      "weight": "175 g (6.17 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~70.8% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Qualcomm MSM8992 Snapdragon 808 (20 nm)",
+      "cpu": "Hexa-core (4x1.4 GHz Cortex-A53 & 2x1.8 GHz Cortex-A57)",
+      "gpu": "Adreno 418"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 64GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "21 MP, f/2.0, 27mm (wide), PDAF",
+      "features": "Dual-LED dual-tone flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "Yes",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3500 mAh, non-removable",
+      "charging": "18W wired, QC2 (market dependent)",
+      "stand-by": "Up to 618 h (3G)",
+      "talk_time": "Up to 31 h (3G)"
+    },
+    "misc": {
+      "colors": "White, Black",
+      "models": "X3a40, X3c50",
+      "price": "About 300 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-x3-.jpg",
+    "price": "About 300 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A3690",
+    "url": "https://www.gsmarena.com/lenovo_a3690-7742.php",
+    "parsed_at": "2026-01-22T17:59:41.316112",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE 1800 / 2100 / 2600",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, October. Released 2015, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141.2 x 71.2 x 8.8 mm (5.56 x 2.80 x 0.35 in)",
+      "weight": "140 g (4.94 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~68.6% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Mediatek MT6735P (28 nm)",
+      "cpu": "Quad-core 1.0 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2300 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a3690.jpg",
+    "price": "About 110 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Yoga Tab 3 Pro",
+    "url": "https://www.gsmarena.com/lenovo_yoga_tab_3_pro-8549.php",
+    "parsed_at": "2026-01-22T17:59:43.013800",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1800 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 9, 18, 19, 21, 25, 26, 28, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, December. Released 2016, Q1",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "246.9 x 179.1 x 4.7 mm (9.72 x 7.05 x 0.19 in)",
+      "weight": "666.8 g (1.47 lb)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~66.9% screen-to-body ratio)",
+      "resolution": "1600 x 2560 pixels, 16:10 ratio (~299 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Intel® Atom x5-Z8500",
+      "cpu": "Quad-core 2.4 GHz"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers (4 speakers)",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, compass"
+    },
+    "battery": {
+      "type": "Li-Po 10,200 mAh, non-removable",
+      "charging": "24W wired",
+      "stand-by": "Up to 1176 h",
+      "talk_time": "Up to 18 h"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 380 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-yoga-tab-3-pro.jpg",
+    "price": "About 380 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Yoga Tab 3 8.0",
+    "url": "https://www.gsmarena.com/lenovo_yoga_tab_3_8_0-7642.php",
+    "parsed_at": "2026-01-22T17:59:44.768446",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2015, October. Released 2015, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "209.8 x 145.8 x 7 mm (8.26 x 5.74 x 0.28 in)",
+      "weight": "467.2 g (1.03 lb)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "8.0 inches, 185.6 cm2(~60.7% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~189 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Qualcomm MSM8909 Snapdragon 210 (28 nm)",
+      "cpu": "Quad-core 1.1 GHz Cortex-A7",
+      "gpu": "Adreno 304"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "video": "Yes"
+    },
+    "selfie_camera": {},
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 6200 mAh, non-removable",
+      "stand-by": "Up to 2280 h",
+      "talk_time": "Up to 20 h"
+    },
+    "misc": {
+      "colors": "Black",
+      "models": "YT3-850M, YT3-850F",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-yoga-tablet-3-8.jpg",
+    "price": "About 160 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A1000",
+    "url": "https://www.gsmarena.com/lenovo_a1000-7605.php",
+    "parsed_at": "2026-01-22T17:59:46.562547",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 1900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, September 01. Released 2015, September 01",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "124.5 x 64 x 10.6 mm (4.90 x 2.52 x 0.42 in)",
+      "weight": "132 g (4.66 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Dual SIM (Mini-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "4.0 inches, 45.5 cm2(~57.2% screen-to-body ratio)",
+      "resolution": "480 x 800 pixels, 5:3 ratio (~233 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop)",
+      "chipset": "Spreadtrum SC7731",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP",
+      "features": "LED flash",
+      "video": "720p"
+    },
+    "selfie_camera": {
+      "single": "VGA"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "2.1, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Po 2000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Onyx Black, Pearl White",
+      "models": "A1000",
+      "price": "About 60 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a1000.jpg",
+    "price": "About 60 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Phab",
+    "url": "https://www.gsmarena.com/lenovo_phab-8142.php",
+    "parsed_at": "2026-01-22T17:59:48.588811",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 7, 8, 20, 38, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "186 x 97 x 8.9 mm (7.32 x 3.82 x 0.35 in)",
+      "weight": "250 g (8.82 oz)",
+      "sim": "Hybrid Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.98 inches, 134.3 cm2(~74.4% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~210 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4250 mAh, non-removable",
+      "stand-by": "Up to 480 h (3G)",
+      "talk_time": "Up to 24 h (3G)"
+    },
+    "misc": {
+      "colors": "Tuxedo Black, Polar White, Aqua Blue, Cherry Red",
+      "models": "PB1-750M, PB1-750P",
+      "price": "About 180 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-phab.jpg",
+    "price": "About 180 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Phab Plus",
+    "url": "https://www.gsmarena.com/lenovo_phab_plus-7557.php",
+    "parsed_at": "2026-01-22T17:59:50.576780",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 38, 39, 40, 41",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "186.6 x 96.6 x 7.6 mm (7.35 x 3.80 x 0.30 in)",
+      "weight": "229 g (8.08 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.8 inches, 127.5 cm2(~70.7% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~324 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop)",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3500 mAh, non-removable",
+      "stand-by": "Up to 480 h (3G)",
+      "talk_time": "Up to 24 h (3G)"
+    },
+    "misc": {
+      "colors": "Gunmetal Grey, Titanium Silver, Champagne Gold",
+      "models": "PB1-770M",
+      "price": "About 250 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-phab-plus.jpg",
+    "price": "About 250 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe P1",
+    "url": "https://www.gsmarena.com/lenovo_vibe_p1-7539.php",
+    "parsed_at": "2026-01-22T17:59:52.919080",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 20, 40",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.9 x 75.6 x 9.9 mm (6.02 x 2.98 x 0.39 in)",
+      "weight": "189 g (6.67 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~72.1% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.1 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.1, LE",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 5000 mAh, non-removable",
+      "charging": "18W wired, QC2",
+      "stand-by": "Up to 648 h (2G) / Up to 600 h (3G)",
+      "talk_time": "Up to 49 h (2G) / Up to 44 h (3G)"
+    },
+    "misc": {
+      "colors": "Platinum, Graphite Grey",
+      "models": "P1c58, P1a41",
+      "price": "About 380 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-p1-new.jpg",
+    "price": "About 380 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A6010 Plus",
+    "url": "https://www.gsmarena.com/lenovo_a6010_plus-7711.php",
+    "parsed_at": "2026-01-22T17:59:54.902583",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141 x 70 x 8.2 mm (5.55 x 2.76 x 0.32 in)",
+      "weight": "128 g (4.52 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~69.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5 (Lollipop)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2300 mAh, removable",
+      "stand-by": "Up to 348 h (2G) / Up to 288 h (3G)",
+      "talk_time": "Up to 24 h (2G) / Up to 12 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, White, Yellow",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a6010.jpg",
+    "price": "About 160 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A6010",
+    "url": "https://www.gsmarena.com/lenovo_a6010-7552.php",
+    "parsed_at": "2026-01-22T17:59:56.631583",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM model only)",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141 x 70 x 8.2 mm (5.55 x 2.76 x 0.32 in)",
+      "weight": "128 g (4.52 oz)",
+      "sim": "Single SIM (Micro-SIM) or Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~69.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5 (Lollipop)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.5, AF",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP, f/2.3"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2300 mAh, removable",
+      "stand-by": "Up to 348 h (2G) / Up to 288 h (3G)",
+      "talk_time": "Up to 24 h (2G) / Up to 12 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, White, Yellow",
+      "models": "A6010",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a6010.jpg",
+    "price": "About 150 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe P1m",
+    "url": "https://www.gsmarena.com/lenovo_vibe_p1m-7540.php",
+    "parsed_at": "2026-01-22T17:59:59.056297",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 40",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141 x 71.8 x 9.3 mm (5.55 x 2.83 x 0.37 in)",
+      "weight": "148 g (5.22 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~68.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Mediatek MT6735P (28 nm)",
+      "cpu": "Quad-core 1.0 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.2, AF",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh, non-removable",
+      "charging": "15W wired",
+      "stand-by": "Up to 456 h (2G) / Up to 566 h (3G)",
+      "talk_time": "Up to 36 h (2G) / Up to 16 h (3G)"
+    },
+    "misc": {
+      "colors": "Onyx Black, Pearl White",
+      "models": "P1ma40",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-p1m.jpg",
+    "price": "About 110 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe S1",
+    "url": "https://www.gsmarena.com/lenovo_vibe_s1-7354.php",
+    "parsed_at": "2026-01-22T18:00:00.993650",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 40",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143.3 x 70.8 x 7.8 mm (5.64 x 2.79 x 0.31 in)",
+      "weight": "132 g (4.66 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.9% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~441 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), upgradable to 6.0 (Marshmallow)",
+      "chipset": "Mediatek MT6752 (28 nm)",
+      "cpu": "Octa-core 1.7 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "dual": "8 MP2 MP, depth sensor"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2420 mAh, non-removable",
+      "stand-by": "Up to 264 h (2G) / Up to 240 h (3G)",
+      "talk_time": "Up to 26 h (2G) / Up to 12 h (3G)"
+    },
+    "misc": {
+      "colors": "Pearl White, Midnight Blue",
+      "models": "S1a40, S1c50",
+      "price": "About 270 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-s1.jpg",
+    "price": "About 270 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "ZUK Z1",
+    "url": "https://www.gsmarena.com/lenovo_zuk_z1-7511.php",
+    "parsed_at": "2026-01-22T18:00:03.053167",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2015, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "155.7 x 77.3 x 8.9 mm (6.13 x 3.04 x 0.35 in)",
+      "weight": "175 g (6.17 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~69.3% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1.1 (Lollipop), upgradable to 6.0 (Marshmallow)",
+      "chipset": "Qualcomm MSM8974AC Snapdragon 801 (28 nm)",
+      "cpu": "Quad-core 2.5 GHz Krait 400",
+      "gpu": "Adreno 330"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, 1/3.1\", 1.12µm, AF, OIS",
+      "features": "Dual-LED flash, panorama",
+      "video": "1080p@30fps, 1080p@60fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.2",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 3.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4100 mAh, non-removable",
+      "charging": "18W wired",
+      "stand-by": "Up to 526 h (3G)",
+      "talk_time": "Up to 38 h (3G)"
+    },
+    "misc": {
+      "colors": "White, Dark Gray",
+      "models": "ZUK Z1",
+      "price": "About 320 EUR"
+    },
+    "our_tests": {
+      "camera": "Photo/Video",
+      "battery_(old)": "Endurance rating 97h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-zuk-z1.jpg",
+    "price": "About 320 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A2010",
+    "url": "https://www.gsmarena.com/lenovo_a2010-7507.php",
+    "parsed_at": "2026-01-22T18:00:05.050415",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 1900 / 2100",
+      "4g_bands": "3, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2015, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "131.5 x 66.5 x 9.9 mm (5.18 x 2.62 x 0.39 in)",
+      "weight": "137 g (4.83 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Dual SIM"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "4.5 inches, 55.8 cm2(~63.8% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~218 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Mediatek MT6735M (28 nm)",
+      "cpu": "Quad-core 1.0 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Po 2000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Pearl White",
+      "models": "A2010-a, A2010-l",
+      "price": "About 70 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a2010.jpg",
+    "price": "About 70 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A616",
+    "url": "https://www.gsmarena.com/lenovo_a616-8043.php",
+    "parsed_at": "2026-01-22T18:00:07.130533",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015. Released 2015",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "149.9 x 77.1 x 9.2 mm (5.90 x 3.04 x 0.36 in)",
+      "weight": "174 g (6.14 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~72.1% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~178 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4 (KitKat)",
+      "chipset": "Mediatek MT6732M (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "4GB 512MB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "VGA"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2250 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 50 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a616.jpg",
+    "price": "About 50 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A3900",
+    "url": "https://www.gsmarena.com/lenovo_a3900-7233.php",
+    "parsed_at": "2026-01-22T18:00:08.962807",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, May. Released 2015, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "142.8 x 71.8 x 9 mm (5.62 x 2.83 x 0.35 in)",
+      "weight": "157 g (5.54 oz)",
+      "sim": "Dual SIM (Mini-SIM/ Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.2% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~196 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat)",
+      "chipset": "Mediatek MT6752 (28 nm)",
+      "cpu": "Octa-core 1.2 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "4GB 512MB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2300 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Pearl White, Silver",
+      "price": "About 70 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a3900r.jpg",
+    "price": "About 70 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "K80",
+    "url": "https://www.gsmarena.com/lenovo_k80-7216.php",
+    "parsed_at": "2026-01-22T18:00:11.111898",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, April. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "8.5 mm thickness",
+      "weight": "158 g (5.57 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop)",
+      "chipset": "Intel Atom Z3560",
+      "cpu": "Quad-core 1.83 GHz"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "32GB 2GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF, OIS",
+      "features": "Dual-LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4000 mAh, non-removable",
+      "stand-by": "Up to 520 h (3G)",
+      "talk_time": "Up to 33 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, Silver, Red",
+      "price": "About 280 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-k80-.jpg",
+    "price": "About 280 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "S60",
+    "url": "https://www.gsmarena.com/lenovo_s60-7214.php",
+    "parsed_at": "2026-01-22T18:00:12.877394",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 20",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, January. Released 2015, March",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143.3 x 72 x 7.7 mm (5.64 x 2.83 x 0.30 in)",
+      "weight": "128 g (4.52 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~66.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat), upgradable to 5 (Lollipop)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 2150 mAh, non-removable",
+      "stand-by": "Up to 336 h (2G) / Up to 240 h (3G)",
+      "talk_time": "Up to 30 h (2G) / Up to 16 h 30 min (3G)"
+    },
+    "misc": {
+      "colors": "Pearl White, Graphite Grey, Yellow",
+      "models": "S60-a, S60",
+      "price": "About 280 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-s60.jpg",
+    "price": "About 280 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A6000 Plus",
+    "url": "https://www.gsmarena.com/lenovo_a6000_plus-7197.php",
+    "parsed_at": "2026-01-22T18:00:15.123415",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 2100",
+      "4g_bands": "1, 3, 7, 20, 40 - Data only, no voice",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, April. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141 x 70 x 8.2 mm (5.55 x 2.76 x 0.32 in)",
+      "weight": "128 g (4.52 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~69.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.4 (KitKat), upgradable to 5.2 (Lollipop)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.2, AF",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2300 mAh, removable",
+      "stand-by": "Up to 264 h (2G) / Up to 264 h (3G)",
+      "talk_time": "Up to 22 h (2G) / Up to 13 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, White, Yellow, Red",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a6000.jpg",
+    "price": "About 110 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A1900",
+    "url": "https://www.gsmarena.com/lenovo_a1900-7192.php",
+    "parsed_at": "2026-01-22T18:00:16.849085",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 2100",
+      "speed": "HSPA"
+    },
+    "launch": {
+      "announced": "2015, April. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "121 x 62 x 9.5 mm (4.76 x 2.44 x 0.37 in)",
+      "weight": "117 g (4.13 oz)",
+      "sim": "Dual SIM (Mini-SIM/ Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.0 inches, 45.5 cm2(~60.7% screen-to-body ratio)",
+      "resolution": "480 x 800 pixels, 5:3 ratio (~233 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat)",
+      "chipset": "Spreadtrum SC7730",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Mali-400"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "4GB 512MB RAM"
+    },
+    "main_camera": {
+      "single": "2 MP",
+      "video": "Yes"
+    },
+    "selfie_camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "2.0",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 1500 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 60 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a1900.jpg",
+    "price": "About 60 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "K3 Note",
+    "url": "https://www.gsmarena.com/lenovo_k3_note-7147.php",
+    "parsed_at": "2026-01-22T18:00:30.626188",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 38, 39, 40, 41",
+      "speed": "HSPA, TD-SCDMA, LTE, TD-LTE"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, March",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.6 x 76.2 x 8 mm (6.01 x 3.00 x 0.31 in)",
+      "weight": "150 g (5.29 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.7% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Asahi Dragontrail Glass"
+    },
+    "platform": {
+      "os": "Android 5.2 (Lollipop), upgradable to 6 (Marshmallow)",
+      "chipset": "Mediatek MT6752 (28 nm)",
+      "cpu": "Octa-core 1.7 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "features": "Dual-LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.4"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, removable",
+      "stand-by": "Up to 750 h (3G)",
+      "talk_time": "Up to 36 h (3G)"
+    },
+    "misc": {
+      "colors": "Onyx Black, Pearl White, Laser Yellow",
+      "models": "K50a40, K50-t5, K50-t3s",
+      "price": "About 150 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 984Basemark X: 5656",
+      "display": "Contrast ratio: 1793:1 (nominal)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 65dB / Noise 66dB / Ring 76dB",
+      "battery_(old)": "Endurance rating 53h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-k3-note.jpg",
+    "price": "About 150 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe Shot",
+    "url": "https://www.gsmarena.com/lenovo_vibe_shot-7046.php",
+    "parsed_at": "2026-01-22T18:00:34.033035",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE 800 / 1800 / 2100 / 2600 - Lenovo Z90-7",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "142 x 70 x 7.3 mm (5.59 x 2.76 x 0.29 in)",
+      "weight": "145 g (5.11 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~69.3% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~441 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.0.2 (Lollipop)",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.7 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.2, AF, OIS",
+      "features": "Triple-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.2",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual band, hotspot",
+      "bluetooth": "4.1, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3000 mAh, non-removable",
+      "stand-by": "Up to 456 h (3G)",
+      "talk_time": "Up to 30 h (2G) / Up to 21 h (3G)"
+    },
+    "misc": {
+      "colors": "Crimson, Pearl White, Graphite Grey",
+      "models": "Z90a40, Z90-7",
+      "price": "About 300 EUR"
+    },
+    "our_tests": {
+      "display": "Contrast ratio: 1728 (nominal), 3.113 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 66dB / Noise 65dB / Ring 71dB",
+      "audio_quality": "Noise -83.0dB / Crosstalk -94.5dB",
+      "battery_(old)": "Endurance rating 54h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-shot.jpg",
+    "price": "About 300 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A7000 Plus",
+    "url": "https://www.gsmarena.com/lenovo_a7000_plus-7886.php",
+    "parsed_at": "2026-01-22T18:00:36.904533",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.6 x 76.2 x 8 mm (6.01 x 3.00 x 0.31 in)",
+      "weight": "140 g (4.94 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.7% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), upgradable to 6.0 (Marshmallow)",
+      "chipset": "Mediatek MT6752 (28 nm)",
+      "cpu": "Octa-core 1.7 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "features": "Dual-LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 2900 mAh, removable"
+    },
+    "misc": {
+      "colors": "Onyx Black, Pearl White, Yellow",
+      "price": "About 190 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a7000-plus.jpg",
+    "price": "About 190 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A7000",
+    "url": "https://www.gsmarena.com/lenovo_a7000-7088.php",
+    "parsed_at": "2026-01-22T18:00:40.482990",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 2100",
+      "4g_bands": "1, 3, 7, 20, 40 - Data only, no voice",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, March 02. Released 2015, April 07",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.6 x 76.2 x 8 mm (6.01 x 3.00 x 0.31 in)",
+      "weight": "140 g (4.94 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.7% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.0.2 (Lollipop), upgradable to 6.0 (Marshmallow)",
+      "chipset": "Mediatek MT6752m",
+      "cpu": "Octa-core 1.5 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.2, AF",
+      "features": "Dual-LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2900 mAh, removable",
+      "stand-by": "Up to 264 h (2G) / Up to 264 h (3G)",
+      "talk_time": "Up to 39 h (2G) / Up to 16 h (3G)"
+    },
+    "misc": {
+      "colors": "Onyx Black, Pearl White, Yellow",
+      "models": "A7000-a",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a7000.jpg",
+    "price": "About 150 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A5000",
+    "url": "https://www.gsmarena.com/lenovo_a5000-7167.php",
+    "parsed_at": "2026-01-22T18:00:43.365270",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, February. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "140 x 71.4 x 10 mm (5.51 x 2.81 x 0.39 in)",
+      "weight": "160 g (5.64 oz)",
+      "sim": "Dual SIM (Mini-SIM/ Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~68.9% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat), upgradable to 5.0.2 (Lollipop)",
+      "chipset": "Mediatek MT6582 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.2, AF",
+      "features": "LED flash, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh, non-removable",
+      "stand-by": "Up to 768 h (2G) / Up to 804 h (3G)",
+      "talk_time": "Up to 35 h (2G) / Up to 17 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "models": "A5000",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a5000.jpg",
+    "price": "About 150 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Tab 2 A10-70",
+    "url": "https://www.gsmarena.com/lenovo_tab_2_a10_70-7089.php",
+    "parsed_at": "2026-01-22T18:00:46.774633",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE - cellular model only",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "247 x 171 x 8.9 mm (9.72 x 6.73 x 0.35 in)",
+      "weight": "509 g (1.12 lb)",
+      "sim": "Micro-SIM - cellular model only"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 312.3 cm2(~73.9% screen-to-body ratio)",
+      "resolution": "1200 x 1920 pixels, 16:10 ratio (~218 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.4 (KitKat), upgradable to 5.0 (Lollipop)",
+      "chipset": "Mediatek MT8732 (28 nm) - 4G modelMediatek MT8165 - Wi-Fi model",
+      "cpu": "Quad-core 1.7 GHz Cortex-A53",
+      "gpu": "Mali-T760"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with multiple speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "Unspecified",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 7000 mAh, non-removable",
+      "talk_time": "Up to 15 h 30 min (multimedia)"
+    },
+    "misc": {
+      "colors": "Pearl White, Midnight Blue",
+      "price": "About 180 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-tab-2-a10.jpg",
+    "price": "About 180 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Tab 2 A8-50",
+    "url": "https://www.gsmarena.com/lenovo_tab_2_a8_50-7090.php",
+    "parsed_at": "2026-01-22T18:00:49.703095",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps - cellular model only",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2015, March. Released 2015, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "210 x 125 x 8.9 mm (8.27 x 4.92 x 0.35 in)",
+      "weight": "360 g (12.70 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by) - cellular model only"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "8.0 inches, 195.8 cm2(~74.6% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~184 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop)",
+      "chipset": "Mediatek MT8735 (28 nm) - 4G modelMediatek MT8161 (28 nm) - Wi-Fi model",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM, 16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "Unspecified",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 4290 mAh, non-removable",
+      "stand-by": "Up to 696 h",
+      "talk_time": "Up to 8 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Pearl White, Ebony, Midnight Blue, Neon Pink",
+      "models": "TAB 2 A8-50LC",
+      "price": "About 120 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-tab-2-a8.jpg",
+    "price": "About 120 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "P70",
+    "url": "https://www.gsmarena.com/lenovo_p70-7063.php",
+    "parsed_at": "2026-01-22T18:00:52.170014",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 20 - Data only, no voice",
+      "speed": "HSPA 21.1/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, January. Released 2015, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "142 x 71.8 x 8.9 mm (5.59 x 2.83 x 0.35 in)",
+      "weight": "149 g (5.26 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.6% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4 (KitKat)",
+      "chipset": "Mediatek MT6752 (28 nm)",
+      "cpu": "Octa-core 1.7 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh, non-removable",
+      "stand-by": "Up to 816 h (2G) / Up to 696 h (3G)",
+      "talk_time": "Up to 46 h (2G) / Up to 18 h (3G)"
+    },
+    "misc": {
+      "colors": "Midnight Blue",
+      "models": "P70-A",
+      "price": "About 240 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-p70.jpg",
+    "price": "About 240 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Tab 2 A7-30",
+    "url": "https://www.gsmarena.com/lenovo_tab_2_a7_30-6956.php",
+    "parsed_at": "2026-01-22T18:00:54.437428",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 1900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps - cellular model only"
+    },
+    "launch": {
+      "announced": "2015, January. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "191 x 105 x 8.9 mm (7.52 x 4.13 x 0.35 in)",
+      "weight": "269 g (9.49 oz)",
+      "sim": "Mini-SIM - cellular model only"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "7.0 inches, 137.9 cm2(~68.8% screen-to-body ratio)",
+      "resolution": "600 x 1024 pixels, 16:9 ratio (~170 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat), upgradable to 5.0 (Lollipop)",
+      "chipset": "Mediatek MT8382M (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "2 MP",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "VGA"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS - cellular model only",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 3450 mAh, non-removable",
+      "stand-by": "Up to 432 h (3G)",
+      "talk_time": "Up to 8 h (3G)"
+    },
+    "misc": {
+      "colors": "Pearl White, Ebony Black, Aqua Blue, Cotton Candy",
+      "models": "TAB 2 A7-30HC, 2 A7-30HC, TAB 2 A7-30GC",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-tab-2-a7-30.jpg",
+    "price": "About 110 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Tab 2 A7-20",
+    "url": "https://www.gsmarena.com/lenovo_tab_2_a7_20-8185.php",
+    "parsed_at": "2026-01-22T18:00:56.869683",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2015, January. Released 2015, January",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "189 x 105 x 9.3 mm (7.44 x 4.13 x 0.37 in)",
+      "weight": "269 g (9.49 oz)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "7.0 inches, 137.9 cm2(~69.5% screen-to-body ratio)",
+      "resolution": "600 x 1024 pixels, 16:9 ratio (~170 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4 (KitKat), upgradable to 5.0 (Lollipop)",
+      "chipset": "Mediatek MT8127 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-450MP4"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM, 16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "2 MP",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "VGA"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 3450 mAh, non-removable",
+      "stand-by": "Up to 432 h",
+      "talk_time": "Up to 8 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 100 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-tab2-a7-20.jpg",
+    "price": "About 100 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Tab 2 A7-10",
+    "url": "https://www.gsmarena.com/lenovo_tab_2_a7_10-6955.php",
+    "parsed_at": "2026-01-22T18:00:58.915126",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2015, January. Released 2015, January",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "189 x 105 x 9.3 mm (7.44 x 4.13 x 0.37 in)",
+      "weight": "269 g (9.49 oz)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "7.0 inches, 137.9 cm2(~69.5% screen-to-body ratio)",
+      "resolution": "600 x 1024 pixels, 16:9 ratio (~170 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4 (KitKat), upgradable to 5.0 (Lollipop)",
+      "chipset": "Mediatek MT8127 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-450MP4"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM, 16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "VGA",
+      "video": "Yes"
+    },
+    "selfie_camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 3450 mAh, non-removable",
+      "stand-by": "Up to 432 h",
+      "talk_time": "Up to 8 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 90 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-tab-2-a7-10.jpg",
+    "price": "About 90 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A6000",
+    "url": "https://www.gsmarena.com/lenovo_a6000-6938.php",
+    "parsed_at": "2026-01-22T18:01:01.569678",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 2100",
+      "4g_bands": "1, 3, 7, 20, 40",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, January 09. Released 2015, January 28",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141 x 70 x 8.2 mm (5.55 x 2.76 x 0.32 in)",
+      "weight": "128 g (4.52 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~69.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.4 (KitKat)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.0, AF",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes, dual speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2300 mAh, removable",
+      "stand-by": "Up to 264 h (2G) / Up to 264 h (3G)",
+      "talk_time": "Up to 22 h (2G) / Up to 13 h (3G)"
+    },
+    "misc": {
+      "colors": "Black",
+      "models": "A6000",
+      "price": "About 100 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a6000.jpg",
+    "price": "About 100 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "P90",
+    "url": "https://www.gsmarena.com/lenovo_p90-6920.php",
+    "parsed_at": "2026-01-22T18:01:03.902937",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, January. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "150 x 77.4 x 8.5 mm (5.91 x 3.05 x 0.33 in)",
+      "weight": "156 g (5.50 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.8% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4 (KitKat)",
+      "chipset": "Intel Atom Z3560",
+      "cpu": "Quad-core 1.83 GHz",
+      "gpu": "PowerVR G6430"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF, OIS",
+      "features": "Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n/ac, dual band, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Pearl White, Lava Red, Onyx Black",
+      "price": "About 450 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-p90.jpg",
+    "price": "About 450 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe X2 Pro",
+    "url": "https://www.gsmarena.com/lenovo_vibe_x2_pro-6919.php",
+    "parsed_at": "2026-01-22T18:01:05.740860",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, January. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "146.3 x 71 x 7 mm (5.76 x 2.80 x 0.28 in)",
+      "weight": "140 g (4.94 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.3 inches, 77.4 cm2(~74.6% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~416 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4 (KitKat), Vibe UI 2",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "13 MP, AF"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n/ac, dual band, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 2410 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Champagne Gold, Rock Pink, Electric Blue",
+      "price": "About 330 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-x2-pror.jpg",
+    "price": "About 330 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "K3",
+    "url": "https://www.gsmarena.com/lenovo_k3-6848.php",
+    "parsed_at": "2026-01-22T18:01:07.782004",
+    "network": {
+      "technology": "GSM / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "TD-SCDMA",
+      "4g_bands": "LTE",
+      "speed": "TD-SCDMA, TD-LTE",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2014, December. Released 2014, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141 x 70.5 x 7.9 mm (5.55 x 2.78 x 0.31 in)",
+      "weight": "128 g (4.52 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~69.3% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.2, 28mm (wide), 1/4.0\", 1.12µm, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2300 mAh, removable",
+      "stand-by": "Up to 580 h",
+      "talk_time": "Up to 31 h"
+    },
+    "misc": {
+      "colors": "Yellow",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-lemon-k31.jpg",
+    "price": "About 80 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Golden Warrior Note 8",
+    "url": "https://www.gsmarena.com/lenovo_golden_warrior_note_8-6842.php",
+    "parsed_at": "2026-01-22T18:01:09.963425",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2014, December. Released 2014, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "169.3 x 83.6 x 8.7 mm (6.67 x 3.29 x 0.34 in)",
+      "weight": "170 g (6.00 oz)",
+      "sim": "Dual SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.0 inches, 99.2 cm2(~70.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~245 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat)",
+      "chipset": "Mediatek MT6752 (28 nm)",
+      "cpu": "Octa-core 1.7 GHz Cortex-A53",
+      "gpu": "Mali-T760"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 3300 mAh, removable"
+    },
+    "misc": {
+      "colors": "White",
+      "models": "A936",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-golden-warrior-note-8.jpg",
+    "price": "About 160 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A916",
+    "url": "https://www.gsmarena.com/lenovo_a916-6855.php",
+    "parsed_at": "2026-01-22T18:01:13.920280",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2014, November. Released 2014, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "149.5 x 76.6 x 8.7 mm (5.89 x 3.02 x 0.34 in)",
+      "weight": "173 g (6.10 oz)",
+      "sim": "Dual SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~72.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat)",
+      "chipset": "Mediatek MT6592 (28 nm)",
+      "cpu": "Octa-core 1.4 GHz Cortex-A7",
+      "gpu": "Mali-450MP4"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "Dual-LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2500 mAh, removable"
+    },
+    "misc": {
+      "colors": "White, Black",
+      "models": "A916",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a916.jpg",
+    "price": "About 160 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A319",
+    "url": "https://www.gsmarena.com/lenovo_a319-6789.php",
+    "parsed_at": "2026-01-22T18:01:16.391767",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2014, October. Released 2014, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "123.5 x 63.8 x 10.2 mm (4.86 x 2.51 x 0.40 in)",
+      "weight": "130 g (4.59 oz)",
+      "sim": "Dual SIM (Mini-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "4.0 inches, 45.5 cm2(~57.8% screen-to-body ratio)",
+      "resolution": "480 x 800 pixels, 5:3 ratio (~233 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat)",
+      "chipset": "Mediatek MT6572 (28 nm)",
+      "cpu": "Dual-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "4GB 512MB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP",
+      "video": "480p"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 1500 mAh, removable",
+      "stand-by": "Up to 372 h (2G) / Up to 240 h (3G)",
+      "talk_time": "Up to 4 h (2G) / Up to 3 h 30 min (3G)"
+    },
+    "misc": {
+      "colors": "White, Black, Red",
+      "models": "A319",
+      "price": "About 70 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a319.jpg",
+    "price": "About 70 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "S856",
+    "url": "https://www.gsmarena.com/lenovo_s856-6788.php",
+    "parsed_at": "2026-01-22T18:01:19.052538",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 20",
+      "speed": "HSPA 21.1/5.76 Mbps, LTE Cat3 100/50 Mbps"
+    },
+    "launch": {
+      "announced": "2014, October. Released 2014, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151 x 77.8 x 9 mm (5.94 x 3.06 x 0.35 in)",
+      "weight": "175 g (6.17 oz)",
+      "sim": "Dual SIM (Mini-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.0% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat)",
+      "chipset": "Qualcomm MSM8926 Snapdragon 400 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "1.6 MP",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2500 mAh, removable",
+      "stand-by": "Up to 456 h (2G) / Up to 312 h (3G)",
+      "talk_time": "Up to 24 h (2G) / Up to 25 h (3G)"
+    },
+    "misc": {
+      "colors": "Silver",
+      "price": "About 210 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-s856.jpg",
+    "price": "About 210 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "S580",
+    "url": "https://www.gsmarena.com/lenovo_s580-6787.php",
+    "parsed_at": "2026-01-22T18:01:21.937717",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2014, September. Released 2014, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "139.8 x 69.9 x 8.1 mm (5.50 x 2.75 x 0.32 in)",
+      "weight": "129 g (4.55 oz)",
+      "sim": "Dual SIM (Mini-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~70.5% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.3 (Jelly Bean)",
+      "chipset": "Qualcomm Snapdragon 200 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 302"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2150 mAh, removable",
+      "stand-by": "Up to 444 h (2G) / Up to 312 h (3G)",
+      "talk_time": "Up to 19 h (2G) / Up to 14 h (3G)"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 170 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-s580.jpg",
+    "price": "About 170 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "S90 Sisley",
+    "url": "https://www.gsmarena.com/lenovo_s90_sisley-6739.php",
+    "parsed_at": "2026-01-22T18:01:26.329495",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100 - S90-a",
+      "4g_bands": "1, 3, 41 - S90-u",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2014, November. Released 2014, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "146 x 71.7 x 6.9 mm (5.75 x 2.82 x 0.27 in)",
+      "weight": "129 g (4.55 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.0 inches, 68.9 cm2(~65.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.4 (KitKat)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16GB 1GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, 1/3.2\", 1.4µm, AF",
+      "features": "LED flash, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2300 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "White/silver, gray, pink, soft orange, blue",
+      "models": "S90-A",
+      "price": "About 260 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 513Basemark X: 1909",
+      "display": "Contrast ratio: Infinite (nominal) / 2.892 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 66dB / Noise 65dB / Ring 75dB",
+      "battery_(old)": "Endurance rating 54h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-sisley-s90.jpg",
+    "price": "About 260 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A606",
+    "url": "https://www.gsmarena.com/lenovo_a606-6746.php",
+    "parsed_at": "2026-01-22T18:01:29.208971",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 20",
+      "speed": "HSPA 21.1/5.76 Mbps, LTE Cat3 100/50 Mbps"
+    },
+    "launch": {
+      "announced": "2014, September. Released 2014, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141.5 x 73.2 x 9.1 mm (5.57 x 2.88 x 0.36 in)",
+      "weight": "170 g (6.00 oz)",
+      "sim": "Mini-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~66.5% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~196 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat)",
+      "chipset": "Mediatek MT6582M (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2000 mAh, removable",
+      "stand-by": "Up to 350 h (3G)",
+      "talk_time": "Up to 24 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "models": "A606",
+      "price": "About 120 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a606.jpg",
+    "price": "About 120 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Yoga Tablet 2 Pro",
+    "url": "https://www.gsmarena.com/lenovo_yoga_tablet_2_pro-6852.php",
+    "parsed_at": "2026-01-22T18:01:32.370277",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2014, October. Released 2014, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "333 x 233 x 12.6 mm (13.11 x 9.17 x 0.50 in)",
+      "weight": "950 g (2.09 lb)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "13.3 inches, 13.3, 487.6 cm2(~62.8% screen-to-body ratio)",
+      "resolution": "2560 x 1440 pixels, 16:9 ratio (~221 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat)",
+      "chipset": "Intel Atom Z3745",
+      "cpu": "Quad-core 1.33 GHz",
+      "gpu": "Intel Gen 7 (Ivy Bridge)"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "1.6 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers (1.5 Watt)",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 9600 mAh, non-removable",
+      "talk_time": "Up to 15 h (3G)"
+    },
+    "misc": {
+      "colors": "Platinum",
+      "price": "About 410 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark X: 9634"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-tablet-yoga-tablet-2-pro.jpg",
+    "price": "About 410 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Yoga Tablet 2 10.1",
+    "url": "https://www.gsmarena.com/lenovo_yoga_tablet_2_10_1-6731.php",
+    "parsed_at": "2026-01-22T18:01:37.063636",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2014, October. Released 2014, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "255 x 183 x 7.2 mm (10.04 x 7.20 x 0.28 in)",
+      "weight": "619 g (1.36 lb)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~63.4% screen-to-body ratio)",
+      "resolution": "1920 x 1200 pixels, 16:10 ratio (~224 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat), upgradable to 5.0 (Lollipop)",
+      "chipset": "Intel Atom Z3745",
+      "cpu": "Quad-core 1.86 GHz",
+      "gpu": "Intel Gen 7 (Ivy Bridge)"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "1.6 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 9600 mAh, non-removable",
+      "stand-by": "Up to 384 h (3G)",
+      "talk_time": "Up to 18 h (3G)"
+    },
+    "misc": {
+      "colors": "Platinum",
+      "price": "About 300 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-yoga-tablet-2.jpg",
+    "price": "About 300 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Yoga Tablet 2 8.0",
+    "url": "https://www.gsmarena.com/lenovo_yoga_tablet_2_8_0_-6730.php",
+    "parsed_at": "2026-01-22T18:01:40.220870",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA"
+    },
+    "launch": {
+      "announced": "2014, October. Released 2014, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "210 x 149 x 7 mm (8.27 x 5.87 x 0.28 in)",
+      "weight": "419 g (14.78 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "8.0 inches, 185.6 cm2(~59.3% screen-to-body ratio)",
+      "resolution": "1200 x 1920 pixels, 16:10 ratio (~283 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat), upgradable to 5.0 (Lollipop)",
+      "chipset": "Intel Atom Z3745",
+      "cpu": "Quad-core 1.33 GHz",
+      "gpu": "Intel Gen 7 (Ivy Bridge)"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "1.6 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 6400 mAh, non-removable",
+      "stand-by": "Up to 324 h (3G)",
+      "talk_time": "Up to 18 h (3G)"
+    },
+    "misc": {
+      "colors": "Platinum",
+      "price": "About 230 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-yoga-tablet-2.jpg",
+    "price": "About 230 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Tab S8",
+    "url": "https://www.gsmarena.com/lenovo_tab_s8-6681.php",
+    "parsed_at": "2026-01-22T18:01:42.976791",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2014, September. Released 2014, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "209.8 x 123.8 x 7.9 mm (8.26 x 4.87 x 0.31 in)",
+      "weight": "299 g (10.55 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "8.0 inches, 185.6 cm2(~71.4% screen-to-body ratio)",
+      "resolution": "1200 x 1920 pixels, 16:10 ratio (~283 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4.2 (KitKat)",
+      "chipset": "Intel Atom Z3745",
+      "cpu": "Quad-core 1.86 GHz",
+      "gpu": "Intel Gen 7 (Ivy Bridge)"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "1.6 MP",
+      "video": "720p"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 3.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 4290 mAh, non-removable",
+      "stand-by": "Up to 400 h (3G)",
+      "talk_time": "Up to 7 h (3G)"
+    },
+    "misc": {
+      "colors": "Ebony, Blue, Canary Yellow, White",
+      "models": "TAB S8-50LC",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-tablet-s8.jpg",
+    "price": "About 150 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe X2",
+    "url": "https://www.gsmarena.com/lenovo_vibe_x2-6643.php",
+    "parsed_at": "2026-01-22T18:01:46.895394",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM model only)",
+      "3g_bands": "HSDPA 850 / 900 / 1700 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2014, September. Released 2014, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "140.2 x 68.6 x 7.3 mm (5.52 x 2.70 x 0.29 in)",
+      "weight": "120 g (4.23 oz)",
+      "sim": "· Micro-SIM· Micro-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~71.7% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~441 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4 (KitKat), upgradable to 5.0 (Lollipop)",
+      "chipset": "Mediatek MT6595M",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A17 & 4x1.7 GHz Cortex-A7)",
+      "gpu": "PowerVR G600"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n/ac, dual band, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 2300 mAh, non-removable",
+      "stand-by": "Up to 228 h (2G) / Up to 216 h (3G)",
+      "talk_time": "Up to 17 h (2G) / Up to 19 h (3G)"
+    },
+    "misc": {
+      "colors": "White, Gold, Red, Charcoal",
+      "models": "X2-AP, X2-EU, X2-CU",
+      "price": "About 270 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark X: 6512",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 66dB / Noise 67dB / Ring 71dB",
+      "audio_quality": "Noise -92.5dB / Crosstalk -92.2dB",
+      "battery_(old)": "Endurance rating 50h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-x2new.jpg",
+    "price": "About 270 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "Vibe Z2",
+    "url": "https://www.gsmarena.com/lenovo_vibe_z2-6642.php",
+    "parsed_at": "2026-01-22T18:01:51.106092",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1700 / 1900 / 2100 - SIM 1 & SIM 2",
+      "4g_bands": "1, 3, 7, 20 - SIM 1 & SIM 2",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2014, September. Released 2014, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "148.5 x 76.4 x 7.8 mm (5.85 x 3.01 x 0.31 in)",
+      "weight": "158 g (5.57 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~73.5% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4 (KitKat)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF, OIS",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n/ac, dual band, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3000 mAh, non-removable",
+      "stand-by": "Up to 408 h (3G)",
+      "talk_time": "Up to 30 h (2G) / Up to 28 h (3G)"
+    },
+    "misc": {
+      "colors": "White, Gold, Titanium",
+      "price": "About 430 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-vibe-z2.jpg",
+    "price": "About 430 EUR",
+    "brand": "Lenovo"
+  },
+  {
+    "name": "A850+",
+    "url": "https://www.gsmarena.com/lenovo_a850+-6595.php",
+    "parsed_at": "2026-01-22T18:01:54.413740",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA"
+    },
+    "launch": {
+      "announced": "2014, March. Released 2014, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "150 x 77 x 8.9 mm (5.91 x 3.03 x 0.35 in)",
+      "weight": "161 g (5.68 oz)",
+      "sim": "Dual SIM (Dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~72.2% screen-to-body ratio)",
+      "resolution": "540 x 960 pixels, 16:9 ratio (~200 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.2.2 (Jelly Bean)",
+      "chipset": "Mediatek MT6592M (28 nm)",
+      "cpu": "Octa-core 1.4 GHz Cortex-A7",
+      "gpu": "Mali-450MP4"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "4GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "VGA"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 2500 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black",
+      "models": "A850",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/lenovo-a850-plus.jpg",
+    "price": "About 160 EUR",
+    "brand": "Lenovo"
+  }
+]

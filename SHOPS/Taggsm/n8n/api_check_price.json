@@ -1,0 +1,19 @@
+{
+  "name": "Taggsm - Check Price (Multi-City)",
+  "nodes": [
+    {"parameters": {"httpMethod": "POST", "path": "taggsm/price", "responseMode": "responseNode", "options": {}}, "id": "webhook", "name": "POST /price", "type": "n8n-nodes-base.webhook", "typeVersion": 2, "position": [0, 300], "notes": "POST body:\n{\n  \"article\": \"zm12345\",\n  \"city\": \"Москва\"\n}"},
+    {"parameters": {"jsCode": "const body = $input.first().json.body || {};\nconst article = body.article || '';\nconst url = body.url || '';\nconst city = body.city || null;\nif (!article && !url) throw new Error('Article or URL required');\nreturn [{ json: { article, url, city } }];"}, "id": "validate", "name": "Validate", "type": "n8n-nodes-base.code", "typeVersion": 2, "position": [220, 300]},
+    {"parameters": {"operation": "executeQuery", "query": "={{ \n  const article = ($json.article || '').replace(/'/g, \"''\");\n  const url = ($json.url || '').replace(/'/g, \"''\");\n  const city = ($json.city || '').replace(/'/g, \"''\");\n  \n  let where = article ? `n.article = '${article}'` : `p.product_url LIKE '%${url}%'`;\n  if (city) where += ` AND o.city = '${city}'`;\n  \n  `SELECT n.article, n.name, n.category, p.price, p.in_stock, p.product_url, o.city, p.updated_at FROM taggsm_nomenclature n JOIN taggsm_prices p ON p.nomenclature_id = n.id JOIN outlets o ON o.id = p.outlet_id WHERE ${where} ORDER BY o.city;`\n}}", "options": {}}, "id": "get-price", "name": "Get Price", "type": "n8n-nodes-base.postgres", "typeVersion": 2.5, "position": [440, 300], "credentials": {"postgres": {"id": "POSTGRES_CREDENTIAL_ID", "name": "PostgreSQL Taggsm"}}},
+    {"parameters": {"jsCode": "const results = $input.all().map(i => i.json);\nconst input = $('Validate').first().json;\n\nif (!results.length || !results[0].article) {\n  return [{ json: { success: false, error: 'Not found', article: input.article, url: input.url } }];\n}\n\nconst first = results[0];\nreturn [{\n  json: {\n    success: true,\n    shop: 'taggsm',\n    article: first.article,\n    name: first.name,\n    category: first.category,\n    availability_by_city: results.map(r => ({\n      city: r.city,\n      price: parseFloat(r.price) || 0,\n      in_stock: r.in_stock,\n      url: r.product_url,\n      updated_at: r.updated_at\n    }))\n  }\n}];"}, "id": "format", "name": "Format", "type": "n8n-nodes-base.code", "typeVersion": 2, "position": [660, 300]},
+    {"parameters": {"respondWith": "json", "responseBody": "={{ $json }}", "options": {}}, "id": "response", "name": "Response", "type": "n8n-nodes-base.respondToWebhook", "typeVersion": 1.1, "position": [880, 300]}
+  ],
+  "connections": {
+    "POST /price": {"main": [[{"node": "Validate", "type": "main", "index": 0}]]},
+    "Validate": {"main": [[{"node": "Get Price", "type": "main", "index": 0}]]},
+    "Get Price": {"main": [[{"node": "Format", "type": "main", "index": 0}]]},
+    "Format": {"main": [[{"node": "Response", "type": "main", "index": 0}]]}
+  },
+  "settings": {"executionOrder": "v1"},
+  "staticData": null,
+  "tags": ["taggsm", "api", "price"]
+}

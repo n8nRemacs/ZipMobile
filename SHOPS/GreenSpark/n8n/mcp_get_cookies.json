@@ -1,0 +1,202 @@
+{
+  "name": "GreenSpark MCP - Get Cookies",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "greenspark/mcp/cookies",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "POST /mcp/cookies",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 200],
+      "webhookId": "greenspark-mcp-cookies"
+    },
+    {
+      "parameters": {
+        "jsCode": "// MCP Configuration\n// This workflow calls external MCP server with Playwright\n// to get fresh cookies from green-spark.ru\n\nconst body = $input.first().json.body || {};\nconst cityId = body.city_id || '16344';\n\nreturn [{\n  json: {\n    city_id: cityId,\n    mcp_endpoint: 'http://localhost:3001/mcp',\n    mcp_tool: 'playwright_get_cookies',\n    target_url: `https://green-spark.ru/?magazine=${cityId}`\n  }\n}];"
+      },
+      "id": "config",
+      "name": "MCP Config",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 200]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $json.mcp_endpoint }}",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"tools/call\",\n  \"params\": {\n    \"name\": \"{{ $json.mcp_tool }}\",\n    \"arguments\": {\n      \"url\": \"{{ $json.target_url }}\",\n      \"wait_for\": \".header-city\",\n      \"timeout\": 30000\n    }\n  }\n}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 60000
+        }
+      },
+      "id": "call-mcp",
+      "name": "Call MCP Server",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse MCP response and extract cookies\nconst mcpResponse = $input.first().json;\nconst cityId = $('MCP Config').first().json.city_id;\n\n// MCP should return cookies in result.content\nlet cookies = [];\nlet cookieString = '';\n\ntry {\n  if (mcpResponse.result && mcpResponse.result.content) {\n    const content = mcpResponse.result.content[0];\n    if (content.type === 'text') {\n      const data = JSON.parse(content.text);\n      cookies = data.cookies || [];\n      \n      // Build cookie string for HTTP requests\n      cookieString = cookies.map(c => `${c.name}=${c.value}`).join('; ');\n      \n      // Ensure magazine cookie is set\n      if (!cookieString.includes('magazine=')) {\n        cookieString += `; magazine=${cityId}`;\n      }\n      if (!cookieString.includes('global_magazine=')) {\n        cookieString += `; global_magazine=${cityId}`;\n      }\n    }\n  }\n} catch (e) {\n  // MCP failed - return default cookies\n  cookieString = `magazine=${cityId}; global_magazine=${cityId}; catalog-per-page=100`;\n}\n\n// Fallback if empty\nif (!cookieString) {\n  cookieString = `magazine=${cityId}; global_magazine=${cityId}; catalog-per-page=100`;\n}\n\nreturn [{\n  json: {\n    success: true,\n    city_id: cityId,\n    cookie_string: cookieString,\n    cookies_count: cookies.length,\n    raw_cookies: cookies\n  }\n}];"
+      },
+      "id": "parse-cookies",
+      "name": "Parse Cookies",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 200]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [880, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "mcp-error",
+              "leftValue": "={{ $json.error }}",
+              "rightValue": "",
+              "operator": {
+                "type": "object",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "check-error",
+      "name": "MCP Error?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [440, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "// MCP Error fallback - return default cookies\nconst cityId = $('MCP Config').first().json.city_id;\n\nreturn [{\n  json: {\n    success: false,\n    error: 'MCP server unavailable',\n    city_id: cityId,\n    cookie_string: `magazine=${cityId}; global_magazine=${cityId}; catalog-per-page=100`,\n    cookies_count: 0,\n    raw_cookies: [],\n    fallback: true\n  }\n}];"
+      },
+      "id": "fallback",
+      "name": "Fallback Cookies",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 400]
+    }
+  ],
+  "connections": {
+    "POST /mcp/cookies": {
+      "main": [
+        [
+          {
+            "node": "MCP Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Config": {
+      "main": [
+        [
+          {
+            "node": "Call MCP Server",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call MCP Server": {
+      "main": [
+        [
+          {
+            "node": "MCP Error?",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Parse Cookies",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "MCP Error?": {
+      "main": [
+        [
+          {
+            "node": "Fallback Cookies",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Parse Cookies": {
+      "main": [
+        [
+          {
+            "node": "Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fallback Cookies": {
+      "main": [
+        [
+          {
+            "node": "Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["greenspark", "mcp", "cookies"]
+}

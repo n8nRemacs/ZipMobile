@@ -1,0 +1,446 @@
+{
+  "name": "GSMArena 2/3 - Get Models",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "gsmarena-get-models",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 200],
+      "webhookId": "gsmarena-get-models",
+      "notes": "Принимает POST с данными бренда:\n{\n  name, code, url, device_count,\n  delay_seconds, max_models\n}"
+    },
+    {
+      "parameters": {},
+      "id": "manual",
+      "name": "Manual Test",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 0],
+      "notes": "Для ручного тестирования"
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "name",
+              "value": "Apple"
+            },
+            {
+              "name": "code",
+              "value": "apple"
+            },
+            {
+              "name": "url",
+              "value": "https://www.gsmarena.com/apple-phones-48.php"
+            }
+          ],
+          "number": [
+            {
+              "name": "device_count",
+              "value": 143
+            },
+            {
+              "name": "delay_seconds",
+              "value": 2
+            },
+            {
+              "name": "max_models",
+              "value": 5
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "test-data",
+      "name": "Test Data",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [220, 0],
+      "notes": "Тестовые данные для ручного запуска"
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "id": "merge",
+      "name": "Merge",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [440, 100]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Get brand info from webhook or test data\nconst brand = $input.first().json;\n\n// Validate required fields\nif (!brand.url) {\n  throw new Error('Missing required field: url');\n}\n\nconsole.log(`\\n=== BRAND: ${brand.name} ===`);\nconsole.log(`URL: ${brand.url}`);\nconsole.log(`Expected devices: ${brand.device_count}`);\n\nreturn [{\n  json: {\n    brand_name: brand.name,\n    brand_code: brand.code,\n    brand_url: brand.url,\n    device_count: brand.device_count,\n    delay_seconds: brand.delay_seconds || 2,\n    max_models: brand.max_models || 0,\n    current_page: 1,\n    models: [],\n    has_more: true\n  }\n}];"
+      },
+      "id": "init",
+      "name": "Init State",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 100],
+      "notes": "Инициализация состояния пагинации"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "has-more",
+              "leftValue": "={{ $json.has_more }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-more",
+      "name": "More Pages?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [880, 100],
+      "notes": "Проверяем есть ли ещё страницы"
+    },
+    {
+      "parameters": {
+        "jsCode": "const state = $input.first().json;\nlet url;\n\nif (state.current_page === 1) {\n  url = state.brand_url;\n} else {\n  // Extract brand ID from URL: apple-phones-48.php -> 48\n  const match = state.brand_url.match(/-(\\d+)\\.php/);\n  const brandId = match ? match[1] : null;\n  \n  // Extract brand slug: apple-phones-48.php -> apple-phones\n  const brandSlug = state.brand_url.split('/').pop().replace(`-${brandId}.php`, '');\n  \n  if (brandId && brandSlug) {\n    // Pagination URL format: apple-phones-f-48-0-p2.php\n    url = `https://www.gsmarena.com/${brandSlug}-f-${brandId}-0-p${state.current_page}.php`;\n  } else {\n    console.log('Cannot build pagination URL, stopping');\n    return [{ json: { ...state, has_more: false } }];\n  }\n}\n\nconsole.log(`Page ${state.current_page}: ${url}`);\n\nreturn [{ json: { ...state, fetch_url: url } }];"
+      },
+      "id": "build-url",
+      "name": "Build Page URL",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1140, 0],
+      "notes": "Строим URL для текущей страницы"
+    },
+    {
+      "parameters": {
+        "amount": "={{ $json.delay_seconds }}",
+        "unit": "seconds"
+      },
+      "id": "wait-page",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1360, 0],
+      "notes": "Задержка перед запросом"
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $json.fetch_url }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+            }
+          ]
+        }
+      },
+      "id": "http-models",
+      "name": "GET Models Page",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1580, 0],
+      "notes": "Получаем страницу со списком моделей"
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\n\nconst state = $('Wait').first().json;\nconst html = $input.first().json.data;\nconst $ = cheerio.load(html);\n\nconst newModels = [];\n\n$('div.makers ul li').each((i, el) => {\n  const link = $(el).find('a');\n  const href = link.attr('href') || '';\n  const nameElem = link.find('span');\n  const imgElem = link.find('img');\n  \n  if (nameElem.length && href) {\n    const modelName = nameElem.text().trim();\n    const briefSpecs = imgElem.attr('title') || imgElem.attr('alt') || '';\n    const imgSrc = imgElem.attr('src') || '';\n    \n    // Extract GSMArena ID: samsung_galaxy_s24-12677.php -> 12677\n    const idMatch = href.match(/-(\\d+)\\.php/);\n    const gsmId = idMatch ? idMatch[1] : null;\n    \n    newModels.push({\n      brand: state.brand_name,\n      name: modelName,\n      url: `https://www.gsmarena.com/${href}`,\n      thumbnail: imgSrc,\n      brief_specs: briefSpecs,\n      gsmarena_id: gsmId\n    });\n  }\n});\n\nconsole.log(`Page ${state.current_page}: found ${newModels.length} models`);\n\n// Check for next page\nconst navPages = $('div.nav-pages a');\nconst nextPage = state.current_page + 1;\nlet hasNext = false;\n\nnavPages.each((i, el) => {\n  const href = $(el).attr('href') || '';\n  if (href.includes(`p${nextPage}`)) {\n    hasNext = true;\n    return false; // break\n  }\n});\n\n// Combine all models\nconst allModels = [...state.models, ...newModels];\n\n// Check max_models limit\nlet shouldStop = false;\nif (state.max_models > 0 && allModels.length >= state.max_models) {\n  console.log(`Reached max_models limit: ${state.max_models}`);\n  shouldStop = true;\n}\n\nreturn [{\n  json: {\n    ...state,\n    models: allModels,\n    current_page: nextPage,\n    has_more: hasNext && newModels.length > 0 && !shouldStop\n  }\n}];"
+      },
+      "id": "parse-models",
+      "name": "Parse Models HTML",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1800, 0],
+      "notes": "Парсим HTML страницы с моделями"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Pagination done, now process models\nconst state = $input.first().json;\n\n// Apply max_models limit\nlet models = state.models;\nif (state.max_models > 0) {\n  models = models.slice(0, state.max_models);\n}\n\nconsole.log(`\\n=== ${state.brand_name}: ${models.length} models to process ===\\n`);\n\n// Return models as separate items for sub-workflow\nreturn models.map((model, index) => ({\n  json: {\n    ...model,\n    index: index + 1,\n    total: models.length,\n    delay_seconds: state.delay_seconds\n  }\n}));"
+      },
+      "id": "models-to-items",
+      "name": "Models to Items",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1140, 200],
+      "notes": "Преобразуем список моделей в отдельные items"
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "loop-models",
+      "name": "Loop Models",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [1360, 200],
+      "notes": "Обрабатываем модели по одной"
+    },
+    {
+      "parameters": {
+        "amount": "={{ $json.delay_seconds }}",
+        "unit": "seconds"
+      },
+      "id": "wait-model",
+      "name": "Wait Model",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1580, 200],
+      "notes": "Задержка между моделями"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "options": {}
+      },
+      "id": "call-parse-model",
+      "name": "Call: Parse Model",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.1,
+      "position": [1800, 200],
+      "notes": "Вызываем workflow '03_parse_model'\nПередаём: model info"
+    },
+    {
+      "parameters": {
+        "jsCode": "const model = $('Wait Model').first().json;\nconsole.log(`[${model.index}/${model.total}] Done: ${model.name}`);\nreturn $input.all();"
+      },
+      "id": "log-model",
+      "name": "Log Model Done",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2020, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconsole.log(`\\n=== BRAND COMPLETE: ${items.length} models processed ===`);\nreturn items;"
+      },
+      "id": "brand-done",
+      "name": "Brand Complete",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1580, 400],
+      "notes": "Бренд полностью обработан"
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Test": {
+      "main": [
+        [
+          {
+            "node": "Test Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Test Data": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Init State",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Init State": {
+      "main": [
+        [
+          {
+            "node": "More Pages?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "More Pages?": {
+      "main": [
+        [
+          {
+            "node": "Build Page URL",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Models to Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Page URL": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "GET Models Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET Models Page": {
+      "main": [
+        [
+          {
+            "node": "Parse Models HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Models HTML": {
+      "main": [
+        [
+          {
+            "node": "More Pages?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Models to Items": {
+      "main": [
+        [
+          {
+            "node": "Loop Models",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Models": {
+      "main": [
+        [
+          {
+            "node": "Wait Model",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Brand Complete",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait Model": {
+      "main": [
+        [
+          {
+            "node": "Call: Parse Model",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call: Parse Model": {
+      "main": [
+        [
+          {
+            "node": "Log Model Done",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log Model Done": {
+      "main": [
+        [
+          {
+            "node": "Loop Models",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["gsmarena", "parser", "step-2"]
+}

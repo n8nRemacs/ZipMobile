@@ -1,0 +1,444 @@
+{
+  "name": "Moba API - Parse Catalog (with Proxy + MCP)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "moba/parse/catalog",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "POST /parse/catalog",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 300],
+      "webhookId": "moba-parse-catalog",
+      "notes": "POST body:\n{\n  \"category_url\": \"/catalog/zapchasti-dlya-telefonov/\",\n  \"max_pages\": 10,\n  \"delay_seconds\": 1,\n  \"save_to_db\": true\n}"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $input.first().json.body || {};\n\nconst categoryUrl = body.category_url || '/catalog/';\n\nreturn [{\n  json: {\n    category_url: categoryUrl,\n    category_name: body.category_name || 'All',\n    max_pages: body.max_pages || 50,\n    delay_seconds: body.delay_seconds || 1,\n    save_to_db: body.save_to_db !== false\n  }\n}];"
+      },
+      "id": "validate",
+      "name": "Validate Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://proxy-manager:8000/get",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {"name": "type", "value": "http"},
+            {"name": "exclude", "value": "moba"}
+          ]
+        },
+        "options": {
+          "timeout": 5000,
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "get-proxy",
+      "name": "Get Proxy from Manager",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 200],
+      "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://mcp-playwright:3001/tools/get_cookies",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\"site\": \"moba\"}",
+        "options": {
+          "timeout": 120000,
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "json"
+            }
+          }
+        }
+      },
+      "id": "get-mcp-cookies",
+      "name": "Get Cookies from MCP",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 400],
+      "continueOnFail": true,
+      "notes": "MCP Playwright handles Yandex SmartCaptcha"
+    },
+    {
+      "parameters": {
+        "jsCode": "const config = $('Validate Input').first().json;\nconst proxyResult = $('Get Proxy from Manager').first().json;\nconst mcpResult = $('Get Cookies from MCP').first().json;\n\n// Proxy setup\nlet proxyUrl = null;\nlet proxyAddress = null;\nif (proxyResult?.proxy) {\n  proxyAddress = proxyResult.proxy;\n  proxyUrl = `http://${proxyResult.proxy}`;\n  console.log(`[PROXY] Using: ${proxyAddress}`);\n}\n\n// MCP cookies (critical for Moba - has Yandex SmartCaptcha)\nlet cookieHeader = '';\nlet userAgent = 'Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 Chrome/131.0.0.0 Mobile Safari/537.36';\n\nif (mcpResult?.success) {\n  cookieHeader = mcpResult.cookie_string || '';\n  userAgent = mcpResult.user_agent || userAgent;\n  console.log(`[MCP] Got ${mcpResult.cookies_count || 0} cookies`);\n} else {\n  console.log('[MCP] WARNING: No cookies - will likely be blocked');\n}\n\nreturn [{\n  json: {\n    ...config,\n    proxy_url: proxyUrl,\n    proxy_address: proxyAddress,\n    cookie_header: cookieHeader,\n    user_agent: userAgent,\n    current_page: 1,\n    products: [],\n    request_count: 0,\n    success_count: 0,\n    fail_count: 0,\n    blocked: false\n  }\n}];"
+      },
+      "id": "merge-setup",
+      "name": "Merge Proxy + Cookies",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "not-blocked",
+              "leftValue": "={{ $json.blocked }}",
+              "rightValue": false,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "under-limit",
+              "leftValue": "={{ $json.current_page }}",
+              "rightValue": "={{ $json.max_pages }}",
+              "operator": {
+                "type": "number",
+                "operation": "lte"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-continue",
+      "name": "Continue?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [880, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const state = $input.first().json;\n\nlet url = state.category_url;\nif (state.current_page > 1) {\n  url = url.includes('?') \n    ? `${url}&PAGEN_1=${state.current_page}`\n    : `${url}?PAGEN_1=${state.current_page}`;\n}\n\nconst fullUrl = url.startsWith('http') ? url : `https://moba.ru${url}`;\n\nreturn [{\n  json: {\n    ...state,\n    fetch_url: fullUrl\n  }\n}];"
+      },
+      "id": "build-url",
+      "name": "Build URL",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1140, 200]
+    },
+    {
+      "parameters": {
+        "amount": "={{ $json.delay_seconds }}",
+        "unit": "seconds"
+      },
+      "id": "wait",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1360, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $json.fetch_url }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000,
+          "proxy": "={{ $json.proxy_url }}"
+        },
+        "headerParameters": {
+          "parameters": [
+            {"name": "User-Agent", "value": "={{ $json.user_agent }}"},
+            {"name": "Accept", "value": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"},
+            {"name": "Accept-Language", "value": "ru-RU,ru;q=0.9,en;q=0.8"},
+            {"name": "Cookie", "value": "={{ $json.cookie_header }}"},
+            {"name": "Sec-Ch-Ua", "value": "\"Chromium\";v=\"131\", \"Not_A Brand\";v=\"24\""},
+            {"name": "Sec-Ch-Ua-Mobile", "value": "?1"},
+            {"name": "Sec-Ch-Ua-Platform", "value": "\"Android\""},
+            {"name": "Sec-Fetch-Dest", "value": "document"},
+            {"name": "Sec-Fetch-Mode", "value": "navigate"}
+          ]
+        }
+      },
+      "id": "fetch-page",
+      "name": "Fetch Page",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1580, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\nconst state = $('Wait').first().json;\nconst html = $input.first().json.data;\nconst $ = cheerio.load(html);\n\n// Check for captcha/block\nif (html.includes('SmartCaptcha') || html.includes('captcha') || html.includes('Подозрительный')) {\n  console.log('[BLOCKED] SmartCaptcha detected');\n  return [{\n    json: {\n      ...state,\n      blocked: true,\n      fail_count: state.fail_count + 1,\n      request_count: state.request_count + 1\n    }\n  }];\n}\n\n// Parse products (Moba uses table-based layout)\nconst newProducts = [];\n\n// Main selector for Moba products\nconst items = $('tr.item.main_item_wrapper');\n\nitems.each((i, item) => {\n  try {\n    const $item = $(item);\n    const product = {};\n    \n    // Find product link\n    let productId = null;\n    $item.find('a[href*=\"/catalog/\"]').each((j, a) => {\n      const href = $(a).attr('href') || '';\n      if (href.split('/').filter(p => p).length >= 3) {\n        const text = $(a).text().trim();\n        if (text && text.length > 5) {\n          product.name = text;\n          product.url = href.startsWith('http') ? href : `https://moba.ru${href}`;\n          \n          // Extract ID from URL\n          const parts = href.replace(/\\/$/, '').split('/');\n          const lastPart = parts[parts.length - 1];\n          if (lastPart && /^\\d+$/.test(lastPart)) {\n            productId = lastPart;\n          }\n          return false; // break\n        }\n      }\n    });\n    \n    if (productId) {\n      product.article = `MOBA-${productId}`;\n    }\n    \n    // Get price\n    const priceElem = $item.find('.cost, .price').first();\n    if (priceElem.length) {\n      const priceText = priceElem.text().replace(/[^\\d]/g, '');\n      product.price = priceText ? parseFloat(priceText) : 0;\n    }\n    \n    // Get image\n    const img = $item.find('img').first();\n    if (img.length) {\n      const src = img.attr('src') || img.attr('data-src');\n      if (src) {\n        product.image = src.startsWith('http') ? src : `https://moba.ru${src}`;\n      }\n    }\n    \n    product.in_stock = true;\n    product.category = state.category_name;\n    \n    if (product.name && product.article) {\n      newProducts.push(product);\n    }\n  } catch (e) {\n    console.log(`Parse error: ${e.message}`);\n  }\n});\n\nconsole.log(`[PAGE ${state.current_page}] Parsed ${newProducts.length} products`);\n\n// Check for next page\nlet hasNextPage = false;\nconst nextPage = state.current_page + 1;\n\n// Moba pagination\nconst nextLink = $('a.flex-next, a.next, a[rel=\"next\"]').length > 0;\nconst pagenLink = $(`a[href*=\"PAGEN_1=${nextPage}\"]`).length > 0;\nhasNextPage = nextLink || pagenLink;\n\nreturn [{\n  json: {\n    ...state,\n    products: [...state.products, ...newProducts],\n    current_page: hasNextPage && newProducts.length > 0 ? nextPage : state.max_pages + 1,\n    request_count: state.request_count + 1,\n    success_count: state.success_count + 1,\n    has_more: hasNextPage && newProducts.length > 0\n  }\n}];"
+      },
+      "id": "parse-page",
+      "name": "Parse Products",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1800, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "save-db",
+              "leftValue": "={{ $json.save_to_db }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "has-products",
+              "leftValue": "={{ $json.products.length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-save",
+      "name": "Save to DB?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1140, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Prepare batch for DB save\nconst state = $input.first().json;\nconst BATCH_SIZE = 100;\n\nconst products = state.products;\nconst batches = [];\n\nfor (let i = 0; i < products.length; i += BATCH_SIZE) {\n  batches.push({\n    batch_num: Math.floor(i / BATCH_SIZE) + 1,\n    total_batches: Math.ceil(products.length / BATCH_SIZE),\n    products: products.slice(i, i + BATCH_SIZE),\n    category_name: state.category_name,\n    proxy_address: state.proxy_address,\n    request_count: state.request_count,\n    success_count: state.success_count\n  });\n}\n\nconsole.log(`[SAVE] Preparing ${batches.length} batches (${products.length} products)`);\n\nreturn batches.map(b => ({ json: b }));"
+      },
+      "id": "prepare-batches",
+      "name": "Prepare Batches",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1400, 400]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "loop-batches",
+      "name": "Loop Batches",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [1620, 400]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "={{ \n  const products = $json.products;\n  \n  // Ensure outlet exists\n  const ensureOutlet = \"INSERT INTO outlets (code, city, name, is_active) VALUES ('moba-online', 'Москва', 'Moba.ru', true) ON CONFLICT (code) DO NOTHING;\";\n  \n  // UPSERT to moba_nomenclature\n  const nomValues = products.map(p => {\n    const name = (p.name || '').replace(/'/g, \"''\").slice(0, 500);\n    const article = (p.article || '').replace(/'/g, \"''\");\n    const category = (p.category || '').replace(/'/g, \"''\");\n    return `('${name}', '${article}', '${category}', NOW(), NOW())`;\n  }).join(',');\n  \n  const nomUpsert = `INSERT INTO moba_nomenclature (name, article, category, first_seen_at, updated_at) VALUES ${nomValues} ON CONFLICT (article) DO UPDATE SET name = EXCLUDED.name, category = EXCLUDED.category, updated_at = NOW();`;\n  \n  ensureOutlet + nomUpsert;\n}}",
+        "options": {}
+      },
+      "id": "save-nomenclature",
+      "name": "Save Nomenclature",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1840, 400],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL Moba"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "={{ \n  const products = $json.products;\n  \n  // UPSERT prices\n  const priceQueries = products.map(p => {\n    const article = (p.article || '').replace(/'/g, \"''\");\n    const price = p.price || 0;\n    const inStock = p.in_stock ? 'true' : 'false';\n    const url = (p.url || '').replace(/'/g, \"''\");\n    \n    return `\n      INSERT INTO moba_prices (nomenclature_id, outlet_id, price, in_stock, product_url, updated_at)\n      SELECT n.id, o.id, ${price}, ${inStock}, '${url}', NOW()\n      FROM moba_nomenclature n, outlets o\n      WHERE n.article = '${article}' AND o.code = 'moba-online'\n      ON CONFLICT (nomenclature_id, outlet_id) DO UPDATE SET\n        price = EXCLUDED.price,\n        in_stock = EXCLUDED.in_stock,\n        product_url = EXCLUDED.product_url,\n        updated_at = NOW();\n    `;\n  }).join('');\n  \n  priceQueries;\n}}",
+        "options": {}
+      },
+      "id": "save-prices",
+      "name": "Save Prices",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [2060, 400],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL Moba"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const batch = $('Loop Batches').first().json;\nconsole.log(`[SAVE] Batch ${batch.batch_num}/${batch.total_batches} saved`);\nreturn $input.all();"
+      },
+      "id": "log-batch",
+      "name": "Log Batch",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2280, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Summary\nconst items = $input.all();\nconst lastItem = items[items.length - 1]?.json || {};\n\nreturn [{\n  json: {\n    success: true,\n    category: lastItem.category_name || 'All',\n    products_total: lastItem.products?.length || 0,\n    saved_to_db: true,\n    proxy_address: lastItem.proxy_address,\n    request_count: lastItem.request_count || 0,\n    success_count: lastItem.success_count || 0\n  }\n}];"
+      },
+      "id": "summary-saved",
+      "name": "Summary (Saved)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2060, 600]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Summary without save\nconst state = $input.first().json;\n\nreturn [{\n  json: {\n    success: !state.blocked,\n    blocked: state.blocked,\n    category: state.category_name || 'All',\n    products_total: state.products.length,\n    saved_to_db: false,\n    proxy_address: state.proxy_address,\n    request_count: state.request_count || 0,\n    success_count: state.success_count || 0,\n    products: state.products\n  }\n}];"
+      },
+      "id": "summary-nosave",
+      "name": "Summary (No Save)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1400, 600]
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "id": "merge-summary",
+      "name": "Merge Summary",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [2280, 600]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://proxy-manager:8000/report",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {"name": "proxy", "value": "={{ $json.proxy_address }}"},
+            {"name": "success", "value": "={{ $json.success ? 'true' : 'false' }}"},
+            {"name": "response_time", "value": "={{ $json.request_count * 1000 }}"},
+            {"name": "banned_site", "value": "={{ $json.blocked ? 'moba' : '' }}"}
+          ]
+        },
+        "options": {
+          "timeout": 5000
+        }
+      },
+      "id": "report-proxy",
+      "name": "Report Proxy Result",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2500, 600],
+      "continueOnFail": true,
+      "notes": "Report proxy result - if blocked, mark as banned for moba"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $('Merge Summary').first().json }}",
+        "options": {}
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [2720, 600]
+    }
+  ],
+  "connections": {
+    "POST /parse/catalog": {
+      "main": [[{ "node": "Validate Input", "type": "main", "index": 0 }]]
+    },
+    "Validate Input": {
+      "main": [[{ "node": "Get Proxy from Manager", "type": "main", "index": 0 }, { "node": "Get Cookies from MCP", "type": "main", "index": 0 }]]
+    },
+    "Get Proxy from Manager": {
+      "main": [[{ "node": "Merge Proxy + Cookies", "type": "main", "index": 0 }]]
+    },
+    "Get Cookies from MCP": {
+      "main": [[{ "node": "Merge Proxy + Cookies", "type": "main", "index": 0 }]]
+    },
+    "Merge Proxy + Cookies": {
+      "main": [[{ "node": "Continue?", "type": "main", "index": 0 }]]
+    },
+    "Continue?": {
+      "main": [
+        [{ "node": "Build URL", "type": "main", "index": 0 }],
+        [{ "node": "Save to DB?", "type": "main", "index": 0 }]
+      ]
+    },
+    "Build URL": {
+      "main": [[{ "node": "Wait", "type": "main", "index": 0 }]]
+    },
+    "Wait": {
+      "main": [[{ "node": "Fetch Page", "type": "main", "index": 0 }]]
+    },
+    "Fetch Page": {
+      "main": [[{ "node": "Parse Products", "type": "main", "index": 0 }]]
+    },
+    "Parse Products": {
+      "main": [[{ "node": "Continue?", "type": "main", "index": 0 }]]
+    },
+    "Save to DB?": {
+      "main": [
+        [{ "node": "Prepare Batches", "type": "main", "index": 0 }],
+        [{ "node": "Summary (No Save)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Prepare Batches": {
+      "main": [[{ "node": "Loop Batches", "type": "main", "index": 0 }]]
+    },
+    "Loop Batches": {
+      "main": [
+        [{ "node": "Save Nomenclature", "type": "main", "index": 0 }],
+        [{ "node": "Summary (Saved)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Save Nomenclature": {
+      "main": [[{ "node": "Save Prices", "type": "main", "index": 0 }]]
+    },
+    "Save Prices": {
+      "main": [[{ "node": "Log Batch", "type": "main", "index": 0 }]]
+    },
+    "Log Batch": {
+      "main": [[{ "node": "Loop Batches", "type": "main", "index": 0 }]]
+    },
+    "Summary (Saved)": {
+      "main": [[{ "node": "Merge Summary", "type": "main", "index": 0 }]]
+    },
+    "Summary (No Save)": {
+      "main": [[{ "node": "Merge Summary", "type": "main", "index": 1 }]]
+    },
+    "Merge Summary": {
+      "main": [[{ "node": "Report Proxy Result", "type": "main", "index": 0 }]]
+    },
+    "Report Proxy Result": {
+      "main": [[{ "node": "Response", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["moba", "api", "parser", "proxy-manager", "mcp"]
+}

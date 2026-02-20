@@ -1,0 +1,283 @@
+{
+  "name": "GSMArena 1/3 - Get Brands",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "manual-trigger",
+      "name": "Start",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [0, 200],
+      "notes": "Запуск вручную"
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 7
+            }
+          ]
+        }
+      },
+      "id": "schedule",
+      "name": "Weekly Schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0],
+      "notes": "Автозапуск раз в неделю"
+    },
+    {
+      "parameters": {
+        "values": {
+          "string": [
+            {
+              "name": "target_brands",
+              "value": "apple,samsung,xiaomi,huawei,honor,oppo,vivo,realme,oneplus,google,motorola,nokia,sony,lg,asus,nothing,zte,meizu,lenovo,poco"
+            }
+          ],
+          "number": [
+            {
+              "name": "delay_seconds",
+              "value": 3
+            },
+            {
+              "name": "max_models_per_brand",
+              "value": 0
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "config",
+      "name": "Config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [220, 100],
+      "notes": "target_brands: список брендов через запятую\nmax_models_per_brand: 0 = все модели\ndelay_seconds: задержка между запросами"
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "https://www.gsmarena.com/makers.php3",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "text"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "en-US,en;q=0.5"
+            }
+          ]
+        }
+      },
+      "id": "http-brands",
+      "name": "GET /makers.php3",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 100],
+      "notes": "Получаем страницу со списком всех брендов"
+    },
+    {
+      "parameters": {
+        "jsCode": "const cheerio = require('cheerio');\n\nconst config = $('Config').first().json;\nconst html = $input.first().json.data;\nconst targetBrands = config.target_brands.toLowerCase().split(',').map(b => b.trim());\n\nconst $ = cheerio.load(html);\nconst allBrands = [];\n\n$('div.st-text a').each((i, el) => {\n  const href = $(el).attr('href') || '';\n  const text = $(el).text().trim();\n  \n  // Pattern: \"Brand Name 123 devices\"\n  const match = text.match(/(.+?)\\s*(\\d+)\\s*devices?/);\n  \n  if (match && href.includes('-phones-')) {\n    const name = match[1].trim();\n    const deviceCount = parseInt(match[2]);\n    const code = href.replace('-phones-', '_').replace('.php', '').split('_')[0];\n    \n    allBrands.push({\n      name: name,\n      code: code.toLowerCase(),\n      url: `https://www.gsmarena.com/${href}`,\n      device_count: deviceCount\n    });\n  }\n});\n\nconsole.log(`Всего брендов на сайте: ${allBrands.length}`);\n\n// Фильтруем только целевые бренды\nconst filteredBrands = allBrands.filter(b => targetBrands.includes(b.code));\n\nconsole.log(`Целевых брендов: ${filteredBrands.length}`);\nconsole.log(filteredBrands.map(b => `${b.name} (${b.device_count})`).join(', '));\n\n// Возвращаем как отдельные items\nreturn filteredBrands.map(brand => ({\n  json: {\n    ...brand,\n    delay_seconds: config.delay_seconds,\n    max_models: config.max_models_per_brand\n  }\n}));"
+      },
+      "id": "parse-brands",
+      "name": "Parse Brands HTML",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 100],
+      "notes": "Парсим HTML и фильтруем целевые бренды"
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "loop-brands",
+      "name": "Loop Brands",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [880, 100],
+      "notes": "Обрабатываем бренды по одному"
+    },
+    {
+      "parameters": {
+        "amount": "={{ $json.delay_seconds }}",
+        "unit": "seconds"
+      },
+      "id": "wait",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [1100, 0],
+      "notes": "Задержка между брендами"
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "mode": "list",
+          "value": ""
+        },
+        "options": {}
+      },
+      "id": "call-get-models",
+      "name": "Call: Get Models",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.1,
+      "position": [1320, 0],
+      "notes": "Вызываем workflow '02_get_models'\nПередаём: brand info + config"
+    },
+    {
+      "parameters": {
+        "jsCode": "const brand = $('Wait').first().json;\nconsole.log(`Завершён бренд: ${brand.name}`);\nreturn $input.all();"
+      },
+      "id": "log-brand-done",
+      "name": "Log Brand Done",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1540, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "const brands = $input.all();\nconsole.log('\\n========================================');\nconsole.log(`ЗАВЕРШЕНО: ${brands.length} брендов обработано`);\nconsole.log('========================================');\nreturn brands;"
+      },
+      "id": "summary",
+      "name": "Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1100, 200],
+      "notes": "Итоговая статистика"
+    }
+  ],
+  "connections": {
+    "Start": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Weekly Schedule": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Config": {
+      "main": [
+        [
+          {
+            "node": "GET /makers.php3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "GET /makers.php3": {
+      "main": [
+        [
+          {
+            "node": "Parse Brands HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Brands HTML": {
+      "main": [
+        [
+          {
+            "node": "Loop Brands",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Brands": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Summary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Call: Get Models",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call: Get Models": {
+      "main": [
+        [
+          {
+            "node": "Log Brand Done",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log Brand Done": {
+      "main": [
+        [
+          {
+            "node": "Loop Brands",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["gsmarena", "parser", "step-1"]
+}

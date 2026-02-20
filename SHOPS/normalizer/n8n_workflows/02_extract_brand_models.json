@@ -1,0 +1,101 @@
+{
+  "name": "Normalizer — 02 Extract Brand & Models",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "normalizer/extract-brand-models",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "e1-webhook",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "webhookId": "normalizer-extract-brand-models"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// === Prepare Prompt ===\n// Формируем промпт для извлечения бренда и моделей из названия товара.\nconst model = 'gpt-4o-mini';\n\nconst input = $input.first().json.body;\nconst name = input.name || '';\n\nconst systemPrompt = `Ты — эксперт по мобильным устройствам и запчастям.\nИз названия товара извлеки:\n1. Бренд устройства (Apple, Samsung, Xiaomi, Huawei, Honor, Oppo, Vivo, Realme, OnePlus, Google, Motorola, Nokia, Sony, LG, Meizu, ZTE, Tecno, Infinix, Itel, и др.)\n2. Модели устройства (может быть несколько — \"совместимость с iPhone 14/14 Pro\")\n\nПравила:\n- Бренд = производитель устройства, НЕ производитель запчасти (GX, OCA, OLED — это НЕ бренды)\n- \"iPhone\" → бренд \"Apple\"\n- \"Galaxy\" → бренд \"Samsung\"\n- \"Redmi\", \"Poco\" → бренд \"Xiaomi\"\n- Если бренд не определяется — верни null\n- Модели: верни массив строк. \"iPhone 14 Pro Max\" — одна модель. \"iPhone 14/14 Pro\" — две модели.\n- Убери из моделей лишние слова (\"для\", \"на\", \"к\" и т.д.)\n\nОтветь строго в формате JSON:\n{\n  \"brand\": \"Apple\" или null,\n  \"models\": [\"iPhone 14 Pro\"],\n  \"confidence\": 0.0-1.0\n}`;\n\nconst userPrompt = `Название товара: \"${name}\"\n\nИзвлеки бренд и модели.`;\n\nreturn [{\n  json: {\n    model,\n    systemPrompt,\n    userPrompt,\n    originalInput: input\n  }\n}];"
+      },
+      "id": "e1-prepare",
+      "name": "Prepare Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: $json.model, messages: [ { role: 'system', content: $json.systemPrompt }, { role: 'user', content: $json.userPrompt } ], temperature: 0.1, response_format: { type: 'json_object' } }) }}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "e1-openai",
+      "name": "OpenAI Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [680, 300],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "CONFIGURE_ME",
+          "name": "OpenAI API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// === Parse Response ===\n// Извлекаем бренд и модели из ответа OpenAI.\n\nconst response = $input.first().json;\n\ntry {\n  const content = response.choices[0].message.content;\n  const parsed = JSON.parse(content);\n  \n  // Нормализация: models всегда массив строк\n  let models = parsed.models || [];\n  if (!Array.isArray(models)) models = [models];\n  models = models.filter(m => m && typeof m === 'string').map(m => m.trim());\n  \n  return [{\n    json: {\n      brand: parsed.brand || null,\n      models: models,\n      confidence: typeof parsed.confidence === 'number' ? parsed.confidence : 0.5\n    }\n  }];\n} catch (error) {\n  return [{\n    json: {\n      brand: null,\n      models: [],\n      confidence: 0.0\n    }\n  }];\n}"
+      },
+      "id": "e1-parse",
+      "name": "Parse Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "e1-respond",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1120, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [[{ "node": "Prepare Prompt", "type": "main", "index": 0 }]]
+    },
+    "Prepare Prompt": {
+      "main": [[{ "node": "OpenAI Request", "type": "main", "index": 0 }]]
+    },
+    "OpenAI Request": {
+      "main": [[{ "node": "Parse Response", "type": "main", "index": 0 }]]
+    },
+    "Parse Response": {
+      "main": [[{ "node": "Respond", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [{ "name": "normalizer" }],
+  "triggerCount": 0,
+  "versionId": "1"
+}

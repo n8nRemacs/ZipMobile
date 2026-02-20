@@ -1,0 +1,565 @@
+{
+  "name": "GreenSpark API - Parse City",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "greenspark/parse/city",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "POST /parse/city",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 300],
+      "webhookId": "greenspark-parse-city",
+      "notes": "POST body:\n{\n  \"city_id\": 290112,\n  \"city_name\": \"\u041c\u043e\u0441\u043a\u0432\u0430\",\n  \"category\": \"komplektuyushchie_dlya_remonta\",\n  \"max_pages\": 0,\n  \"delay_seconds\": 1.5,\n  \"use_proxy\": true,\n  \"cookies\": {...} // optional, from MCP\n}"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $input.first().json.body || {};\n\nconst cityId = body.city_id;\nconst cityName = body.city_name || `City ${cityId}`;\n\nif (!cityId) {\n  throw new Error('Missing required field: city_id');\n}\n\nreturn [{\n  json: {\n    city_id: cityId,\n    city_name: cityName,\n    category: body.category || 'komplektuyushchie_dlya_remonta',\n    max_pages: body.max_pages || 0, // 0 = all\n    delay_seconds: body.delay_seconds || 1.5,\n    use_proxy: body.use_proxy !== false,\n    cookies: body.cookies || null,\n    save_to_db: body.save_to_db !== false\n  }\n}];"
+      },
+      "id": "validate",
+      "name": "Validate Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "has-cookies",
+              "leftValue": "={{ $json.cookies }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-cookies",
+      "name": "Has Cookies?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// TODO: Call MCP server to get fresh cookies\n// For now, use default cookies (will work for public pages)\n\nconst config = $input.first().json;\n\nconst defaultCookies = {\n  magazine: String(config.city_id),\n  global_magazine: String(config.city_id),\n  'catalog-per-page': '100'\n};\n\nconsole.log('[MCP] Using default cookies (MCP integration pending)');\n\nreturn [{\n  json: {\n    ...config,\n    cookies: defaultCookies\n  }\n}];"
+      },
+      "id": "mcp-cookies",
+      "name": "Get Cookies (MCP)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [700, 400],
+      "notes": "TODO: \u0418\u043d\u0442\u0435\u0433\u0440\u0430\u0446\u0438\u044f \u0441 MCP \u0434\u043b\u044f \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0438\u044f cookies \u0447\u0435\u0440\u0435\u0437 Playwright"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Use provided cookies\nconst config = $input.first().json;\n\nconsole.log('[COOKIES] Using provided cookies');\n\nreturn [{ json: config }];"
+      },
+      "id": "use-provided-cookies",
+      "name": "Use Provided Cookies",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [700, 200]
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "id": "merge-cookies",
+      "name": "Merge",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [920, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "use-proxy",
+              "leftValue": "={{ $json.use_proxy }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-proxy",
+      "name": "Use Proxy?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1140, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT proxy FROM zip_proxies WHERE status = 'working' AND NOT ('greenspark' = ANY(banned_sites)) ORDER BY last_used_at NULLS FIRST, success_count DESC LIMIT 1",
+        "options": {}
+      },
+      "id": "get-proxy",
+      "name": "Get Working Proxy",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1400, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GreenSpark"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const config = $('Use Proxy?').first().json;\nconst proxyResult = $input.first().json;\n\nconst proxy = proxyResult?.proxy || null;\n\nif (proxy) {\n  console.log(`[PROXY] Using: ${proxy}`);\n} else {\n  console.log('[PROXY] No working proxy available, using direct connection');\n}\n\nreturn [{\n  json: {\n    ...config,\n    proxy: proxy\n  }\n}];"
+      },
+      "id": "set-proxy",
+      "name": "Set Proxy",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1620, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const config = $input.first().json;\n\nconsole.log('[PROXY] Disabled, using direct connection');\n\nreturn [{\n  json: {\n    ...config,\n    proxy: null\n  }\n}];"
+      },
+      "id": "no-proxy",
+      "name": "No Proxy",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1400, 400]
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "id": "merge-proxy",
+      "name": "Merge Proxy",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [1840, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Initialize parsing state\nconst config = $input.first().json;\n\nreturn [{\n  json: {\n    ...config,\n    current_category: config.category,\n    categories_to_parse: [config.category],\n    parsed_categories: [],\n    products: [],\n    errors: [],\n    stats: {\n      products_total: 0,\n      categories_total: 0,\n      pages_total: 0\n    }\n  }\n}];"
+      },
+      "id": "init-state",
+      "name": "Init Parsing State",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2060, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "has-categories",
+              "leftValue": "={{ $json.categories_to_parse.length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "has-more-categories",
+      "name": "More Categories?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [2280, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const state = $input.first().json;\n\n// Get next category\nconst nextCategory = state.categories_to_parse[0];\nconst remainingCategories = state.categories_to_parse.slice(1);\n\n// Build cookie header\nconst cookies = state.cookies;\nconst cookieHeader = Object.entries(cookies).map(([k, v]) => `${k}=${v}`).join('; ');\n\nreturn [{\n  json: {\n    ...state,\n    current_category: nextCategory,\n    categories_to_parse: remainingCategories,\n    cookie_header: cookieHeader,\n    current_page: 1\n  }\n}];"
+      },
+      "id": "prepare-category",
+      "name": "Prepare Category Request",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2540, 200]
+    },
+    {
+      "parameters": {
+        "amount": "={{ $json.delay_seconds }}",
+        "unit": "seconds"
+      },
+      "id": "wait",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [2760, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://green-spark.ru/local/api/catalog/products/?path[]={{ $json.current_category }}&orderBy=quantity&orderDirection=desc&perPage=100&page={{ $json.current_page }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json, text/plain, */*"
+            },
+            {
+              "name": "Accept-Language",
+              "value": "ru,en;q=0.9"
+            },
+            {
+              "name": "Cookie",
+              "value": "={{ $json.cookie_header }}"
+            }
+          ]
+        }
+      },
+      "id": "fetch-category",
+      "name": "Fetch Category",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [2980, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const state = $('Wait').first().json;\nconst response = $input.first().json;\n\n// Check for block\nconst contentType = response.headers?.['content-type'] || '';\nif (!contentType.includes('application/json')) {\n  console.log('[BLOCK] Non-JSON response - possibly blocked');\n  return [{\n    json: {\n      ...state,\n      blocked: true,\n      error: 'Non-JSON response'\n    }\n  }];\n}\n\nconst data = response.body || response;\nconst subsections = data.subsections || [];\nconst productsData = data.products || {};\nconst productsList = productsData.data || [];\nconst meta = productsData.meta || {};\n\n// Get category name from breadcrumbs\nconst sectionMeta = data.sectionMeta || {};\nconst breadcrumbs = sectionMeta.breadcrumbs || [];\nconst categoryName = breadcrumbs.map(b => b.name).join(' / ');\n\n// If has subsections - add them to queue and skip products\nif (subsections.length > 0) {\n  console.log(`[${state.current_category}] Has ${subsections.length} subcategories`);\n  \n  const newCategories = subsections.map(sub => {\n    const url = sub.url || '';\n    const match = url.match(/\\/catalog\\/(.+?)\\/?$/);\n    return match ? match[1].replace(/\\/$/, '') : null;\n  }).filter(c => c && !state.parsed_categories.includes(c));\n  \n  return [{\n    json: {\n      ...state,\n      categories_to_parse: [...state.categories_to_parse, ...newCategories],\n      parsed_categories: [...state.parsed_categories, state.current_category],\n      stats: {\n        ...state.stats,\n        categories_total: state.stats.categories_total + 1\n      }\n    }\n  }];\n}\n\n// Parse products\nconst newProducts = [];\nfor (const p of productsList) {\n  const urlPath = p.url || '';\n  const fullUrl = urlPath ? `https://green-spark.ru${urlPath}` : '';\n  \n  // Extract article from picture URL\n  let article = p.article || '';\n  if (!article) {\n    const picture = p.picture || {};\n    const picUrl = picture.original || picture.webp || '';\n    const gsMatch = picUrl.match(/gs-(\\d+)/i);\n    const ipMatch = picUrl.match(/ip-(\\d+)/i);\n    article = gsMatch ? `GS-${gsMatch[1]}` : (ipMatch ? `\u0418\u041f-${ipMatch[1]}` : '');\n  }\n  \n  // Extract prices\n  const prices = p.prices || [];\n  let priceRetail = 0;\n  let priceWholesale = 0;\n  for (const pr of prices) {\n    const name = (pr.name || '').toLowerCase();\n    const val = pr.price || 0;\n    if (name.includes('\u0440\u043e\u0437\u043d\u0438\u0446')) priceRetail = parseFloat(val);\n    else if (name.includes('\u0433\u0440\u0438\u043d 5')) priceWholesale = parseFloat(val);\n  }\n  \n  const qty = p.quantity || 'none';\n  const inStock = qty.toLowerCase() !== 'none' && qty !== '';\n  \n  newProducts.push({\n    url: fullUrl,\n    category: categoryName,\n    article: article,\n    name: p.name || '',\n    price: priceRetail,\n    price_wholesale: priceWholesale,\n    in_stock: inStock,\n    city_id: state.city_id,\n    city_name: state.city_name\n  });\n}\n\nconsole.log(`[${state.current_category}] Page ${state.current_page}: ${newProducts.length} products`);\n\n// Pagination\nconst totalPages = meta.pageCount || 1;\nconst hasMorePages = state.current_page < totalPages && (state.max_pages === 0 || state.current_page < state.max_pages);\n\nreturn [{\n  json: {\n    ...state,\n    products: [...state.products, ...newProducts],\n    current_page: hasMorePages ? state.current_page + 1 : 1,\n    has_more_pages: hasMorePages,\n    parsed_categories: hasMorePages ? state.parsed_categories : [...state.parsed_categories, state.current_category],\n    stats: {\n      ...state.stats,\n      products_total: state.stats.products_total + newProducts.length,\n      pages_total: state.stats.pages_total + 1,\n      categories_total: hasMorePages ? state.stats.categories_total : state.stats.categories_total + 1\n    }\n  }\n}];"
+      },
+      "id": "parse-response",
+      "name": "Parse Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3200, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "has-more-pages",
+              "leftValue": "={{ $json.has_more_pages }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-pages",
+      "name": "More Pages?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [3420, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Prepare for next page\nconst state = $input.first().json;\n\nreturn [{\n  json: {\n    ...state,\n    has_more_pages: false\n  }\n}];"
+      },
+      "id": "next-page",
+      "name": "Next Page",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3680, 100]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Finished with products, check for blocked\nconst state = $input.first().json;\n\nif (state.blocked) {\n  console.log('[PARSE] Blocked - returning partial results');\n}\n\nreturn [{ json: state }];"
+      },
+      "id": "check-blocked",
+      "name": "Check Blocked",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3680, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "save-db",
+              "leftValue": "={{ $json.save_to_db }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            },
+            {
+              "id": "has-products",
+              "leftValue": "={{ $json.products.length }}",
+              "rightValue": 0,
+              "operator": {
+                "type": "number",
+                "operation": "gt"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "check-save",
+      "name": "Save to DB?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [2540, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Convert products to items for batch save\nconst state = $input.first().json;\nconst BATCH_SIZE = 100;\n\nconst products = state.products;\nconst batches = [];\n\nfor (let i = 0; i < products.length; i += BATCH_SIZE) {\n  batches.push({\n    batch_num: Math.floor(i / BATCH_SIZE) + 1,\n    total_batches: Math.ceil(products.length / BATCH_SIZE),\n    products: products.slice(i, i + BATCH_SIZE),\n    city_id: state.city_id,\n    city_name: state.city_name,\n    stats: state.stats\n  });\n}\n\nconsole.log(`[SAVE] Preparing ${batches.length} batches (${products.length} products)`);\n\nreturn batches.map(b => ({ json: b }));"
+      },
+      "id": "prepare-batches",
+      "name": "Prepare Batches",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2800, 400]
+    },
+    {
+      "parameters": {
+        "batchSize": 1,
+        "options": {}
+      },
+      "id": "loop-batches",
+      "name": "Loop Batches",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [3020, 400]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "={{ \n  // Build batch UPSERT for nomenclature\n  const products = $json.products;\n  const cityId = $json.city_id;\n  const outletCode = `greenspark-${cityId}`;\n  \n  // First, ensure outlet exists\n  const ensureOutlet = `INSERT INTO outlets (code, city, name, is_active) VALUES ('${outletCode}', '${$json.city_name}', 'GreenSpark ${$json.city_name}', true) ON CONFLICT (code) DO NOTHING;`;\n  \n  // Then upsert nomenclature\n  const nomValues = products.map(p => {\n    const name = (p.name || '').replace(/'/g, \"''\");\n    const url = (p.url || '').replace(/'/g, \"''\");\n    const article = p.article ? `'${p.article.replace(/'/g, \"''\")}'` : 'NULL';\n    const category = (p.category || '').replace(/'/g, \"''\");\n    return `('${name}', '${url}', ${article}, '${category}', NOW(), NOW())`;\n  }).join(',');\n  \n  const nomUpsert = `INSERT INTO greenspark_nomenclature (name, product_url, article, category, first_seen_at, updated_at) VALUES ${nomValues} ON CONFLICT (product_url) DO UPDATE SET name = EXCLUDED.name, article = COALESCE(EXCLUDED.article, greenspark_nomenclature.article), category = EXCLUDED.category, updated_at = NOW();`;\n  \n  ensureOutlet + nomUpsert;\n}}",
+        "options": {}
+      },
+      "id": "save-nomenclature",
+      "name": "Save Nomenclature",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [3240, 400],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GreenSpark"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const batch = $('Loop Batches').first().json;\nconsole.log(`[SAVE] Batch ${batch.batch_num}/${batch.total_batches} saved`);\nreturn $input.all();"
+      },
+      "id": "log-batch",
+      "name": "Log Batch",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3460, 400]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Summary\nconst items = $input.all();\nconst lastItem = items[items.length - 1]?.json || {};\n\nconst stats = lastItem.stats || {};\n\nreturn [{\n  json: {\n    success: true,\n    city_id: lastItem.city_id,\n    city_name: lastItem.city_name,\n    products_total: stats.products_total || 0,\n    categories_total: stats.categories_total || 0,\n    pages_total: stats.pages_total || 0,\n    saved_to_db: true\n  }\n}];"
+      },
+      "id": "summary-saved",
+      "name": "Summary (Saved)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3240, 600]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Summary without save\nconst state = $input.first().json;\n\nreturn [{\n  json: {\n    success: true,\n    city_id: state.city_id,\n    city_name: state.city_name,\n    products_total: state.stats.products_total,\n    categories_total: state.stats.categories_total,\n    pages_total: state.stats.pages_total,\n    saved_to_db: false,\n    products: state.products\n  }\n}];"
+      },
+      "id": "summary-nosave",
+      "name": "Summary (No Save)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2800, 600]
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {}
+      },
+      "id": "merge-summary",
+      "name": "Merge Summary",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [3460, 600]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [3680, 600]
+    }
+  ],
+  "connections": {
+    "POST /parse/city": {
+      "main": [[{ "node": "Validate Input", "type": "main", "index": 0 }]]
+    },
+    "Validate Input": {
+      "main": [[{ "node": "Has Cookies?", "type": "main", "index": 0 }]]
+    },
+    "Has Cookies?": {
+      "main": [
+        [{ "node": "Use Provided Cookies", "type": "main", "index": 0 }],
+        [{ "node": "Get Cookies (MCP)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Use Provided Cookies": {
+      "main": [[{ "node": "Merge", "type": "main", "index": 0 }]]
+    },
+    "Get Cookies (MCP)": {
+      "main": [[{ "node": "Merge", "type": "main", "index": 1 }]]
+    },
+    "Merge": {
+      "main": [[{ "node": "Use Proxy?", "type": "main", "index": 0 }]]
+    },
+    "Use Proxy?": {
+      "main": [
+        [{ "node": "Get Working Proxy", "type": "main", "index": 0 }],
+        [{ "node": "No Proxy", "type": "main", "index": 0 }]
+      ]
+    },
+    "Get Working Proxy": {
+      "main": [[{ "node": "Set Proxy", "type": "main", "index": 0 }]]
+    },
+    "Set Proxy": {
+      "main": [[{ "node": "Merge Proxy", "type": "main", "index": 0 }]]
+    },
+    "No Proxy": {
+      "main": [[{ "node": "Merge Proxy", "type": "main", "index": 1 }]]
+    },
+    "Merge Proxy": {
+      "main": [[{ "node": "Init Parsing State", "type": "main", "index": 0 }]]
+    },
+    "Init Parsing State": {
+      "main": [[{ "node": "More Categories?", "type": "main", "index": 0 }]]
+    },
+    "More Categories?": {
+      "main": [
+        [{ "node": "Prepare Category Request", "type": "main", "index": 0 }],
+        [{ "node": "Save to DB?", "type": "main", "index": 0 }]
+      ]
+    },
+    "Prepare Category Request": {
+      "main": [[{ "node": "Wait", "type": "main", "index": 0 }]]
+    },
+    "Wait": {
+      "main": [[{ "node": "Fetch Category", "type": "main", "index": 0 }]]
+    },
+    "Fetch Category": {
+      "main": [[{ "node": "Parse Response", "type": "main", "index": 0 }]]
+    },
+    "Parse Response": {
+      "main": [[{ "node": "More Pages?", "type": "main", "index": 0 }]]
+    },
+    "More Pages?": {
+      "main": [
+        [{ "node": "Next Page", "type": "main", "index": 0 }],
+        [{ "node": "Check Blocked", "type": "main", "index": 0 }]
+      ]
+    },
+    "Next Page": {
+      "main": [[{ "node": "Wait", "type": "main", "index": 0 }]]
+    },
+    "Check Blocked": {
+      "main": [[{ "node": "More Categories?", "type": "main", "index": 0 }]]
+    },
+    "Save to DB?": {
+      "main": [
+        [{ "node": "Prepare Batches", "type": "main", "index": 0 }],
+        [{ "node": "Summary (No Save)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Prepare Batches": {
+      "main": [[{ "node": "Loop Batches", "type": "main", "index": 0 }]]
+    },
+    "Loop Batches": {
+      "main": [
+        [{ "node": "Save Nomenclature", "type": "main", "index": 0 }],
+        [{ "node": "Summary (Saved)", "type": "main", "index": 0 }]
+      ]
+    },
+    "Save Nomenclature": {
+      "main": [[{ "node": "Log Batch", "type": "main", "index": 0 }]]
+    },
+    "Log Batch": {
+      "main": [[{ "node": "Loop Batches", "type": "main", "index": 0 }]]
+    },
+    "Summary (Saved)": {
+      "main": [[{ "node": "Merge Summary", "type": "main", "index": 0 }]]
+    },
+    "Summary (No Save)": {
+      "main": [[{ "node": "Merge Summary", "type": "main", "index": 1 }]]
+    },
+    "Merge Summary": {
+      "main": [[{ "node": "Response", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["greenspark", "api", "parser"]
+}

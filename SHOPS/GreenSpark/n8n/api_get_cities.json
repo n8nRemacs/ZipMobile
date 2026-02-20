@@ -1,0 +1,108 @@
+{
+  "name": "GreenSpark API - GET Cities",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "GET",
+        "path": "greenspark/cities",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "GET /cities",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 200],
+      "webhookId": "greenspark-cities"
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT \n  SUBSTRING(o.code FROM 'greenspark-(.+)')::int as city_id,\n  o.city as name,\n  o.name as outlet_name,\n  o.is_active,\n  (SELECT COUNT(*) FROM greenspark_prices gp WHERE gp.outlet_id = o.id) as products_count,\n  (SELECT MAX(gp.updated_at) FROM greenspark_prices gp WHERE gp.outlet_id = o.id) as last_parsed\nFROM outlets o\nWHERE o.code LIKE 'greenspark-%'\nORDER BY o.city",
+        "options": {}
+      },
+      "id": "get-cities-db",
+      "name": "Get Cities from DB",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [220, 200],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GreenSpark"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const cities = $input.all().map(item => item.json);\n\n// Filter out nulls and format\nconst formatted = cities\n  .filter(c => c.city_id)\n  .map(c => ({\n    city_id: parseInt(c.city_id),\n    name: c.name,\n    outlet_name: c.outlet_name,\n    is_active: c.is_active,\n    products_count: parseInt(c.products_count) || 0,\n    last_parsed: c.last_parsed\n  }));\n\nreturn [{\n  json: {\n    success: true,\n    count: formatted.length,\n    cities: formatted\n  }\n}];"
+      },
+      "id": "format",
+      "name": "Format Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [440, 200]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        }
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [660, 200]
+    }
+  ],
+  "connections": {
+    "GET /cities": {
+      "main": [
+        [
+          {
+            "node": "Get Cities from DB",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Cities from DB": {
+      "main": [
+        [
+          {
+            "node": "Format Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Response": {
+      "main": [
+        [
+          {
+            "node": "Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["greenspark", "api"]
+}

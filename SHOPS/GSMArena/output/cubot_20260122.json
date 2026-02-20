@@ -1,0 +1,6645 @@
+[
+  {
+    "name": "KingKong Ace 5",
+    "url": "https://www.gsmarena.com/cubot_kingkong_ace_5-14381.php",
+    "parsed_at": "2026-01-22T18:37:43.719376",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 26, 28, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, December",
+      "status": "Available. Released 2025, December"
+    },
+    "body": {
+      "dimensions": "177.2 x 83.3 x 15.6 mm (6.98 x 3.28 x 0.61 in)",
+      "weight": "352 g (12.42 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz",
+      "size": "6.75 inches, 110.0 cm2(~74.5% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~260 ppi density)"
+    },
+    "platform": {
+      "os": "Android 16",
+      "chipset": "Unisoc T620 (12 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A75 & 6xX.X GHz Cortex-A55)"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "48 MP, (wide), PDAF2 MP (macro)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "10200 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-ace5.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Note 60",
+    "url": "https://www.gsmarena.com/cubot_note_60-14287.php",
+    "parsed_at": "2026-01-22T18:37:46.233796",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 26, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, November",
+      "status": "Available. Released 2025, November"
+    },
+    "body": {
+      "dimensions": "177.4 x 84.3 x 9.8 mm (6.98 x 3.32 x 0.39 in)",
+      "weight": "254 g (8.96 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz",
+      "size": "7.2 inches, 127.3 cm2(~85.1% screen-to-body ratio)",
+      "resolution": "720 x 1560 pixels, 19.5:9 ratio (~239 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Unisoc T615 (12 nm)",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP (wide), PDAF5 MP (ultrawide)2 MP (macro)",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "7000 mAh"
+    },
+    "misc": {
+      "colors": "Black, Titan Grey",
+      "price": "$ 124.99 / € 129.95 / £ 139.99"
+    },
+    "eu_label": {
+      "energy": "Class G",
+      "battery": "27:38h endurance, 1000 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-note60.jpg",
+    "price": "$ 124.99 / € 129.95 / £ 139.99",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Tab KingKong S",
+    "url": "https://www.gsmarena.com/cubot_tab_kingkong_s-14197.php",
+    "parsed_at": "2026-01-22T18:37:47.898083",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 26, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, September",
+      "status": "Available. Released 2025, October"
+    },
+    "body": {
+      "dimensions": "246.4 x 164.4 x 15.6 mm (9.70 x 6.47 x 0.61 in)",
+      "weight": "912 g (2.01 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "10.1 inches, 295.8 cm2(~73.0% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~149 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Unisoc Tiger T616 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 6GB RAM"
+    },
+    "main_camera": {
+      "single": "48 MP, PDAF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "15300 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "eu_label": {
+      "energy": "Class G",
+      "battery": "36:59h endurance, 1400 cycles",
+      "free_fall": "Class A (208 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-tab-kingkong-s.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Tab KingKong Mini",
+    "url": "https://www.gsmarena.com/cubot_tab_kingkong_mini-14196.php",
+    "parsed_at": "2026-01-22T18:37:49.878588",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 26, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, September",
+      "status": "Available. Released 2025, October"
+    },
+    "body": {
+      "dimensions": "217.4 x 142.4 x 14.6 mm (8.56 x 5.61 x 0.57 in)",
+      "weight": "642 g (1.42 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "8.68 inches, 213.9 cm2(~69.1% screen-to-body ratio)",
+      "resolution": "800 x 1340 pixels, 5:3 ratio (~180 ppi density)",
+      "protection": "Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Unisoc T615 (12 nm)",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "single": "48 MP, PDAF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "10200 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "eu_label": {
+      "energy": "Class E",
+      "battery": "154:50h endurance, 1400 cycles",
+      "free_fall": "Class A (208 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-tab-kingkong-mini.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong Mini 4",
+    "url": "https://www.gsmarena.com/cubot_kingkong_mini_4-14099.php",
+    "parsed_at": "2026-01-22T18:37:51.282721",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 26, 28, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, August",
+      "status": "Available. Released 2025, August"
+    },
+    "body": {
+      "dimensions": "128.7 x 61 x 16.9 mm (5.07 x 2.40 x 0.67 in)",
+      "weight": "192 g (6.77 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "4.7 inches, 53.3 cm2(~67.9% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~373 ppi density)"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Unisoc Tiger T616 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 6GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "single": "48 MP, (wide), AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4700 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Black/Red, Black/Green, Black/Gray"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-mini4.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "X100",
+    "url": "https://www.gsmarena.com/cubot_x100_5g-14098.php",
+    "parsed_at": "2026-01-22T18:37:53.390081",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 34, 38, 39, 40, 41, 66, 71",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 20, 25, 28, 38, 40, 41, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, August",
+      "status": "Available. Released 2025, August"
+    },
+    "body": {
+      "dimensions": "171.9 x 78.1 x 8.9 mm (6.77 x 3.07 x 0.35 in)",
+      "weight": "207 g (7.30 oz)",
+      "build": "Glass front, plastic frame, plastic back",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz",
+      "size": "6.88 inches, 112.4 cm2(~83.7% screen-to-body ratio)",
+      "resolution": "720 x 1640 pixels (~260 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Mediatek Dimensity 7025 (6 nm)",
+      "cpu": "Octa-core (2x2.5 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "IMG BXM-8-256"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "64 MP, (wide), PDAF5 MP, (ultrawide)2 MP (macro)",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.1, A2DP",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5100 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Gray, Gold",
+      "price": "$ 213.21 / € 199.95"
+    },
+    "eu_label": {
+      "energy": "Class E",
+      "battery": "31:15h endurance, 1400 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-x100.jpg",
+    "price": "$ 213.21 / € 199.95",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong 11",
+    "url": "https://www.gsmarena.com/cubot_kingkong_11_5g-14063.php",
+    "parsed_at": "2026-01-22T18:37:55.493327",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 34, 38, 39, 40, 41, 66, 71",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 20, 25, 28, 38, 40, 41, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, August",
+      "status": "Available. Released 2025, August"
+    },
+    "body": {
+      "dimensions": "176 x 84.1 x 18.7 mm (6.93 x 3.31 x 0.74 in)",
+      "weight": "-",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz",
+      "size": "6.72 inches, 109.0 cm2(~73.7% screen-to-body ratio)",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~392 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Mediatek Dimensity 7025 (6 nm)",
+      "cpu": "Octa-core (2x2.5 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "IMG BXM-8-256"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 16GB RAM"
+    },
+    "main_camera": {
+      "dual": "108 MP, (wide), PDAF8 MP, (ultrawide), AF",
+      "features": "LED flash, dual infrared LED",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.1, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "10200 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "$ 239.99 / € 254.95"
+    },
+    "eu_label": {
+      "energy": "Class G",
+      "battery": "40:46h endurance, 1400 cycles",
+      "free_fall": "Class C (90 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-11.jpg",
+    "price": "$ 239.99 / € 254.95",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong ES 3",
+    "url": "https://www.gsmarena.com/cubot_kingkong_es_3-14062.php",
+    "parsed_at": "2026-01-22T18:37:56.942868",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 26, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, August",
+      "status": "Available. Released 2025, August"
+    },
+    "body": {
+      "dimensions": "177.4 x 83.7 x 15.3 mm (6.98 x 3.30 x 0.60 in)",
+      "weight": "352 g (12.42 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.75 inches, 110.0 cm2(~74.1% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~260 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Unisoc T615 (12 nm)",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 6GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, (wide), PDAF2 MP (macro)Auxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "10200 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 160 EUR"
+    },
+    "eu_label": {
+      "energy": "Class E",
+      "battery": "61:01h endurance, 1300 cycles",
+      "free_fall": "Class C (90 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-es3.jpg",
+    "price": "About 160 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "A40",
+    "url": "https://www.gsmarena.com/cubot_a40-14019.php",
+    "parsed_at": "2026-01-22T18:37:58.796595",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 26, 28, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, July",
+      "status": "Available. Released 2025, July"
+    },
+    "body": {
+      "dimensions": "172.3 x 78.1 x 8.8 mm (6.78 x 3.07 x 0.35 in)",
+      "weight": "-",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz",
+      "size": "6.88 inches, 112.4 cm2(~83.5% screen-to-body ratio)",
+      "resolution": "720 x 1640 pixels (~260 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Unisoc T606 (12 nm)",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "64GB 4GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "48 MP, (wide), PDAF2 MP, (ultrawide)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "5100 mAh"
+    },
+    "misc": {
+      "colors": "Black, Purple, Titan Grey"
+    },
+    "eu_label": {
+      "energy": "Class C",
+      "battery": "43:53h endurance, 1300 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-a40.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "P90",
+    "url": "https://www.gsmarena.com/cubot_p90-13962.php",
+    "parsed_at": "2026-01-22T18:38:01.109283",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 26, 28, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, June",
+      "status": "Available. Released 2025, June"
+    },
+    "body": {
+      "dimensions": "172.3 x 78.1 x 8.6 mm (6.78 x 3.07 x 0.34 in)",
+      "weight": "209 g (7.37 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz",
+      "size": "6.88 inches, 112.4 cm2(~83.5% screen-to-body ratio)",
+      "resolution": "720 x 1640 pixels (~260 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Mediatek Helio G100 (6 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 6GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "64 MP, (wide), PDAF5 MP, (ultrawide)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5100 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Black, Purple"
+    },
+    "eu_label": {
+      "energy": "Class D",
+      "battery": "37:42h endurance, 1300 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-p90.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong Power 5",
+    "url": "https://www.gsmarena.com/cubot_kingkong_power_5-13876.php",
+    "parsed_at": "2026-01-22T18:38:03.095101",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 26, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, April",
+      "status": "Available. Released 2025, May 12"
+    },
+    "body": {
+      "dimensions": "182.9 x 83.9 x 24.6 mm (7.20 x 3.30 x 0.97 in)",
+      "weight": "538 g (1.19 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz, 1000 nits (HBM)",
+      "size": "6.88 inches, 112.4 cm2(~73.3% screen-to-body ratio)",
+      "resolution": "720 x 1640 pixels (~260 ppi density)",
+      "protection": "Corning Gorilla Glass (unspecified version), Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Mediatek Helio G100 (6 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "dual": "64 MP, (wide), PDAF2 MP (macro)",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes (136 dB, 5W peak)",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.1, A2DP",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "15300 mAh",
+      "charging": "33W wiredReverse wired"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 220 EUR"
+    },
+    "eu_label": {
+      "energy": "Class B",
+      "battery": "148:05h endurance, 1400 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-power5.jpg",
+    "price": "About 220 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Tab 65",
+    "url": "https://www.gsmarena.com/cubot_tab_65-13880.php",
+    "parsed_at": "2026-01-22T18:38:04.674327",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "gprs": "N/A",
+      "edge": "N/A"
+    },
+    "launch": {
+      "announced": "2025, May",
+      "status": "Available. Released 2025, May"
+    },
+    "body": {
+      "dimensions": "241.4 x 160.2 x 8.3 mm (9.50 x 6.31 x 0.33 in)",
+      "weight": "530 g (1.17 lb)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~76.5% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~149 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Unisoc T615 (12 nm)",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0",
+      "positioning": "GPS, GALILEO, GLONASS, BDS, QZSS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "6200 mAh"
+    },
+    "misc": {
+      "colors": "Gray"
+    },
+    "eu_label": {
+      "energy": "Class E",
+      "battery": "92:02h endurance, 1400 cycles",
+      "free_fall": "Class E (52 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-tab-65.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "GT3",
+    "url": "https://www.gsmarena.com/cubot_gt3-13765.php",
+    "parsed_at": "2026-01-22T18:38:06.624298",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2025, March",
+      "status": "Available. Released 2025, March"
+    },
+    "body": {
+      "dimensions": "59.3 x 48.2 x 13.4 mm (2.33 x 1.90 x 0.53 in)",
+      "weight": "57 g (2.01 oz)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "1.96 inches",
+      "resolution": "410 x 502 pixels (~331 ppi density)"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "32MB"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS (L1+L5)",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, barometer, compass, heart rate, SpO2"
+    },
+    "battery": {
+      "type": "530 mAh"
+    },
+    "misc": {
+      "colors": "Black, Gray"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-gt3.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "X3",
+    "url": "https://www.gsmarena.com/cubot_x3-13732.php",
+    "parsed_at": "2026-01-22T18:38:08.203656",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2025, March",
+      "status": "Available. Released 2025, March"
+    },
+    "body": {
+      "dimensions": "53.8 x 53.8 x 13.5 mm (2.12 x 2.12 x 0.53 in)",
+      "weight": "94.6 g (3.35 oz)",
+      "build": "Zinc alloy frame and rear",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "1.73 inches",
+      "resolution": "466 x 466 pixels (~381 ppi density)"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16MB"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.3, A2DP",
+      "positioning": "Unspecified",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, heart rate, SpO2, barometer, compass"
+    },
+    "battery": {
+      "type": "900 mAh"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-x3.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "U1",
+    "url": "https://www.gsmarena.com/cubot_u1-13731.php",
+    "parsed_at": "2026-01-22T18:38:10.028822",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2025, February",
+      "status": "Available. Released 2025, February"
+    },
+    "body": {
+      "dimensions": "49.8 x 42.4 x 11.4 mm (1.96 x 1.67 x 0.45 in)",
+      "weight": "43.8 g (1.55 oz)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "1.93 inches",
+      "resolution": "240 x 288 pixels (~194 ppi density)"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16MB"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.4, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, heart rate, SpO2"
+    },
+    "battery": {
+      "type": "300 mAh"
+    },
+    "misc": {
+      "colors": "Black, Pink"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-u1.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Tab 70",
+    "url": "https://www.gsmarena.com/cubot_tab_70-13630.php",
+    "parsed_at": "2026-01-22T18:38:11.623357",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, December 26",
+      "status": "Available. Released 2025, January 09"
+    },
+    "body": {
+      "dimensions": "257.6 x 169 x 8.1 mm (10.14 x 6.65 x 0.32 in)",
+      "weight": "555 g (1.22 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.95 inches, 347.7 cm2(~79.9% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~138 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Unisoc Tiger T616 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, AF2 MP (macro)",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, compass"
+    },
+    "battery": {
+      "type": "8200 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Gray",
+      "price": "About 180 EUR"
+    },
+    "eu_label": {
+      "energy": "Class E",
+      "battery": "112:07h endurance, 1500 cycles",
+      "free_fall": "Class B (156 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-tab70.jpg",
+    "price": "About 180 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Tab KingKong 2",
+    "url": "https://www.gsmarena.com/cubot_tab_kingkong_2-13561.php",
+    "parsed_at": "2026-01-22T18:38:13.731444",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1800 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 34, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, December 01",
+      "status": "Available. Released 2024, December 01"
+    },
+    "body": {
+      "dimensions": "273.8 x 181.4 x 16.8 mm (10.78 x 7.14 x 0.66 in)",
+      "weight": "1055 g (2.33 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.95 inches, 347.7 cm2(~70.0% screen-to-body ratio)",
+      "resolution": "1200 x 1920 pixels, 16:10 ratio (~207 ppi density)",
+      "protection": "Panda Glass, Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Mediatek Helio G99 (6 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "single": "64 MP, PDAF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, compass"
+    },
+    "battery": {
+      "type": "20400 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 220 EUR"
+    },
+    "eu_label": {
+      "energy": "Class F",
+      "battery": "166:39h endurance, 1200 cycles",
+      "free_fall": "Class A (208 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-tab-kingkong2.jpg",
+    "price": "About 220 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "A30",
+    "url": "https://www.gsmarena.com/cubot_a30-13532.php",
+    "parsed_at": "2026-01-22T18:38:15.883465",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024",
+      "status": "Available. Released 2024"
+    },
+    "body": {
+      "dimensions": "170.4 x 77.5 x 9.6 mm (6.71 x 3.05 x 0.38 in)",
+      "weight": "216 g (7.62 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.75 inches, 110.0 cm2(~83.3% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~260 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Unisoc Tiger T616 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "single": "48 MP, (wide), PDAFAuxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "5100 mAh"
+    },
+    "misc": {
+      "colors": "Gray, Pink"
+    },
+    "eu_label": {
+      "energy": "Class B",
+      "battery": "52:43h endurance, 800 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-a30.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong Ace 2",
+    "url": "https://www.gsmarena.com/cubot_kingkong_ace_2-13533.php",
+    "parsed_at": "2026-01-22T18:38:17.535849",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024",
+      "status": "Available. Released 2024"
+    },
+    "body": {
+      "dimensions": "173.9 x 81.8 x 12.7 mm (6.85 x 3.22 x 0.5 in)",
+      "weight": "283 g (9.98 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.56 inches, 103.4 cm2(~72.7% screen-to-body ratio)",
+      "resolution": "720 x 1612 pixels, 20:9 ratio (~269 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Mediatek Helio G85 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G52 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "dual": "48 MP, (wide), PDAF2 MP (macro)Auxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "5100 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Black/Orange, Black/Green"
+    },
+    "eu_label": {
+      "energy": "Class C",
+      "battery": "43:59h endurance, 900 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kk-ace2.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "GT1",
+    "url": "https://www.gsmarena.com/cubot_gt1-13534.php",
+    "parsed_at": "2026-01-22T18:38:19.163310",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2024",
+      "status": "Available. Released 2024"
+    },
+    "body": {
+      "dimensions": "53.9 x 51.9 x 13.2 mm (2.12 x 2.04 x 0.52 in)",
+      "weight": "92 g (3.25 oz)",
+      "build": "Zinc alloy frame",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "1.43 inches",
+      "resolution": "466 x 466 pixels (~461 ppi density)",
+      "protection": "Panda Glass"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.3, A2DP",
+      "positioning": "GPS (L1+L5)",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, heart rate, SpO2, barometer, compass"
+    },
+    "battery": {
+      "type": "480 mAh"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-gt1.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong X Pro",
+    "url": "https://www.gsmarena.com/cubot_kingkong_x_pro-13485.php",
+    "parsed_at": "2026-01-22T18:38:21.033579",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong Power 3",
+    "url": "https://www.gsmarena.com/cubot_kingkong_power_3-13370.php",
+    "parsed_at": "2026-01-22T18:38:56.952943",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, September",
+      "status": "Available. Released 2024, October"
+    },
+    "body": {
+      "dimensions": "175.3 x 82.7 x 20 mm (6.90 x 3.26 x 0.79 in)",
+      "weight": "425 g (14.99 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz",
+      "size": "6.72 inches, 108.8 cm2(~75.0% screen-to-body ratio)",
+      "resolution": "1080 x 2408 pixels, 20:9 ratio (~393 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Mediatek MT8781"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "100 MP, (wide), PDAF5 MP (macro)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes (123-decibel)",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.2, A2DP",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "10200 mAh",
+      "charging": "33W wiredReverse wired"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 180 EUR"
+    },
+    "eu_label": {
+      "energy": "Class C",
+      "battery": "89:12h endurance, 1400 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-power3.jpg",
+    "price": "About 180 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong Star 2",
+    "url": "https://www.gsmarena.com/cubot_kingkong_star_2-13369.php",
+    "parsed_at": "2026-01-22T18:38:58.631693",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 34, 38, 39, 40, 41, 66, 71",
+      "5g_bands": "1, 2, 3, 5, 7, 8, , 20, 25, 28, 38, 40, 41, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2024, September 30",
+      "status": "Available. Released 2024, October"
+    },
+    "body": {
+      "dimensions": "177.7 x 81.8 x 13.5 mm (7.00 x 3.22 x 0.53 in)",
+      "weight": "305 g (10.76 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 144Hz, 1500 nits (peak)",
+      "size": "6.72 inches, 109.0 cm2(~75.0% screen-to-body ratio)",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~392 ppi density)",
+      "protection": "Corning Gorilla Glass, Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Mediatek Dimensity 8200 (4 nm)",
+      "cpu": "Octa-core (1x3.1 GHz Cortex-A78 & 3x3.0 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G610 MC6"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "100 MP, (wide), PDAF5 MP (macro), AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS (L1+L5), GALILEO, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5100 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 250 EUR"
+    },
+    "eu_label": {
+      "energy": "Class C",
+      "battery": "43:41h endurance, 900 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-star2.jpg",
+    "price": "About 250 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "A20",
+    "url": "https://www.gsmarena.com/cubot_a20-13368.php",
+    "parsed_at": "2026-01-22T18:39:01.916550",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, September",
+      "status": "Available. Released 2024, September"
+    },
+    "body": {
+      "dimensions": "169.4 x 77.8 x 9.6 mm (6.67 x 3.06 x 0.38 in)",
+      "weight": "214 g (7.55 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.75 inches, 110.0 cm2(~83.5% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~260 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Unisoc Tiger T616 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "48 MP, (wide), PDAFAuxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "5100 mAh"
+    },
+    "misc": {
+      "colors": "Black, Blue, Pink"
+    },
+    "eu_label": {
+      "energy": "Class B",
+      "battery": "52:52h endurance, 800 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-a20.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "C29",
+    "url": "https://www.gsmarena.com/cubot_c29-13282.php",
+    "parsed_at": "2026-01-22T18:39:04.286641",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2024, August",
+      "status": "Available. Released 2024, August"
+    },
+    "body": {
+      "dimensions": "51.9 x 49.5 x 13.4 mm (2.04 x 1.95 x 0.53 in)",
+      "weight": "42.1 g (1.48 oz)",
+      "build": "Zinc alloy/ Stainless steel frame, titanium bezel",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "1.52 inches",
+      "resolution": "360 x 360 pixels (~335 ppi density)"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128Mb"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.3, A2DP",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, heart rate, SpO2, blood pressure"
+    },
+    "battery": {
+      "type": "410 mAh"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-c29.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong ES",
+    "url": "https://www.gsmarena.com/cubot_kingkong_es-13271.php",
+    "parsed_at": "2026-01-22T18:39:06.424989",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, August 20",
+      "status": "Available. Released 2024, August"
+    },
+    "body": {
+      "dimensions": "172.6 x 81.2 x 12.8 mm (6.80 x 3.20 x 0.50 in)",
+      "weight": "268 g (9.45 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.56 inches, 103.4 cm2(~73.8% screen-to-body ratio)",
+      "resolution": "720 x 1612 pixels, 20:9 ratio (~269 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Unisoc T606 (12 nm)",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, (wide), PDAF2 MP (macro)Auxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "5100 mAh",
+      "charging": "Wired"
+    },
+    "misc": {
+      "colors": "Black/Orange",
+      "price": "About 120 EUR"
+    },
+    "eu_label": {
+      "energy": "Class B",
+      "battery": "53:11h endurance, 1400 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-es.jpg",
+    "price": "About 120 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "C28",
+    "url": "https://www.gsmarena.com/cubot_c28-13256.php",
+    "parsed_at": "2026-01-22T18:39:08.328043",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2024, August",
+      "status": "Available. Released 2024, August"
+    },
+    "body": {
+      "dimensions": "58.3 x 46.1 x 13.3 mm (2.30 x 1.81 x 0.52 in)",
+      "weight": "44.5 g (1.59 oz)",
+      "build": "Zinc alloy frame",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "2.02 inches",
+      "resolution": "320 x 390 pixels (~250 ppi density)"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128Mb"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "Yes",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, heart rate, SpO2, blood pressure"
+    },
+    "battery": {
+      "type": "410 mAh"
+    },
+    "misc": {
+      "colors": "Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-c28.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Max 5",
+    "url": "https://www.gsmarena.com/cubot_max_5-13206.php",
+    "parsed_at": "2026-01-22T18:39:11.101056",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 34, 38, 39, 40, 41, 66, 71",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 20, 25, 28, 38, 40, 41, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2024, July 03",
+      "status": "Available. Released 2024, July 22"
+    },
+    "body": {
+      "dimensions": "173.9 x 78.9 x 9.2 mm (6.85 x 3.11 x 0.36 in)",
+      "weight": "223 g (7.87 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 144Hz",
+      "size": "6.95 inches, 114.7 cm2(~83.6% screen-to-body ratio)",
+      "resolution": "1080 x 2460 pixels (~387 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Mediatek Dimensity 8200 (4 nm)",
+      "cpu": "Octa-core (1x3.1 GHz Cortex-A78 & 3x3.0 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G610 MC6"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "100 MP, (wide), PDAF5 MP (macro)",
+      "features": "LED flash, HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "32 MP, AF",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG, DisplayPort"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5100 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Tech Black, Pearl White",
+      "price": "About 300 EUR"
+    },
+    "eu_label": {
+      "energy": "Class E",
+      "battery": "29:38h endurance, 900 cycles",
+      "free_fall": "Class B (180 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-max5.jpg",
+    "price": "About 300 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong X",
+    "url": "https://www.gsmarena.com/cubot_kingkong_x-13185.php",
+    "parsed_at": "2026-01-22T18:39:13.019988",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 20, 25, 26, 28, 34, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, June 28",
+      "status": "Available. Released 2024, July 23"
+    },
+    "body": {
+      "dimensions": "170.9 x 82.2 x 18.7 mm (6.73 x 3.24 x 0.74 in)",
+      "weight": "388 g (13.69 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz",
+      "size": "6.58 inches, 104.3 cm2(~74.2% screen-to-body ratio)",
+      "resolution": "1080 x 2408 pixels, 20:9 ratio (~401 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Mediatek Dimensity 7050 (6 nm)",
+      "cpu": "Octa-core (2x2.6 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G68 MC4"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 16GB RAM, 512GB 16GB RAM"
+    },
+    "main_camera": {
+      "dual": "100 MP, (wide), PDAF5 MP (macro)",
+      "features": "LED flash, HDR",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "10200 mAh",
+      "charging": "33W wired, PD"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 280 EUR"
+    },
+    "eu_label": {
+      "energy": "Class G",
+      "battery": "15:41h endurance, 1400 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-x.jpg",
+    "price": "About 280 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong Ace 3",
+    "url": "https://www.gsmarena.com/cubot_kingkong_ace_3-13184.php",
+    "parsed_at": "2026-01-22T18:39:15.722630",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 26, 28, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, June 28",
+      "status": "Available. Released 2024, July 23"
+    },
+    "body": {
+      "dimensions": "173.9 x 81.8 x 12.7 mm (6.85 x 3.22 x 0.5 in)",
+      "weight": "284 g (10.02 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.58 inches, 104.3 cm2(~73.3% screen-to-body ratio)",
+      "resolution": "1080 x 2408 pixels, 20:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Mediatek Helio G88 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G52 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "100 MP, (wide), PDAF5 MP (macro)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5100 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Black/Orange"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-ace3.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "A10",
+    "url": "https://www.gsmarena.com/cubot_a10-13139.php",
+    "parsed_at": "2026-01-22T18:39:17.914249",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, June",
+      "status": "Available. Released 2024, June"
+    },
+    "body": {
+      "dimensions": "165.6 x 75.5 x 10.4 mm (6.52 x 2.97 x 0.41 in)",
+      "weight": "200 g (7.05 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.56 inches, 103.4 cm2(~82.7% screen-to-body ratio)",
+      "resolution": "720 x 1612 pixels, 20:9 ratio (~269 ppi density)"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Unisoc T606 (12 nm)",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "48 MP, (wide), AFAuxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "5100 mAh"
+    },
+    "misc": {
+      "colors": "Black, Blue, Purple",
+      "price": "About 90 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-a10.jpg",
+    "price": "About 90 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "X90",
+    "url": "https://www.gsmarena.com/cubot_x90-12997.php",
+    "parsed_at": "2026-01-22T18:39:21.385262",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, May",
+      "status": "Available. Released 2024, May"
+    },
+    "body": {
+      "dimensions": "162.2 x 74 x 9.4 mm (6.39 x 2.91 x 0.37 in)",
+      "weight": "207 g (7.30 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED, 1B colors, 120Hz, 1500 nits (peak)",
+      "size": "6.67 inches, 107.4 cm2(~89.5% screen-to-body ratio)",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~395 ppi density)"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Mediatek Helio G99 (6 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 16GB RAM"
+    },
+    "main_camera": {
+      "triple": "100 MP, f/1.9, (wide), 1/1.8\", PDAF16 MP, 117˚ (ultrawide)5 MP (macro)",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.2, A2DP",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5100 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Green, Black",
+      "price": "About 290 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-x90.jpg",
+    "price": "About 290 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "X1",
+    "url": "https://www.gsmarena.com/cubot_x1-12983.php",
+    "parsed_at": "2026-01-22T18:39:23.986494",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2024, May",
+      "status": "Available. Released 2024, May"
+    },
+    "body": {
+      "dimensions": "52.7 x 44.5 x 14.2 mm (2.07 x 1.75 x 0.56 in)",
+      "weight": "-",
+      "sim": "No"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "2.13 inches",
+      "resolution": "410 x 502 pixels (~304 ppi density)",
+      "protection": "Tempered glass"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "Unspecified"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.2",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, heart rate, SpO2, blood pressure, barometer, compass"
+    },
+    "battery": {
+      "type": "850 mAh"
+    },
+    "misc": {
+      "colors": "Gray",
+      "price": "About 50 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/oukitel-bt80.jpg",
+    "price": "About 50 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Hafury V1",
+    "url": "https://www.gsmarena.com/cubot_hafury_v1-12924.php",
+    "parsed_at": "2026-01-22T18:39:29.116589",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 26, 28, 34, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, April 02",
+      "status": "Available. Released 2024, April"
+    },
+    "body": {
+      "dimensions": "165.8 x 75.8 x 9 mm (6.53 x 2.98 x 0.35 in)",
+      "weight": "200 g (7.05 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.58 inches, 104.3 cm2(~83.0% screen-to-body ratio)",
+      "resolution": "1080 x 2408 pixels, 20:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Mediatek MT8788V/WA (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)",
+      "gpu": "Mali-G72 MP3"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "64 MP, (wide), PDAF2 MP (macro)Auxiliary lens",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GALILEO, GLONASS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4350 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Black, Pink, Light Blue",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-hafury-v1.jpg",
+    "price": "About 150 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Hafury Meet",
+    "url": "https://www.gsmarena.com/cubot_hafury_meet-12923.php",
+    "parsed_at": "2026-01-22T18:39:31.335706",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, April 02",
+      "status": "Available. Released 2024, April"
+    },
+    "body": {
+      "dimensions": "162.2 x 74 x 9.4 mm (6.39 x 2.91 x 0.37 in)",
+      "weight": "211 g (7.44 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED, 1B colors, 120Hz, 1500 nits (peak)",
+      "size": "6.67 inches, 107.4 cm2(~89.5% screen-to-body ratio)",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~395 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Mediatek Helio G99 (6 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "100 MP, (wide), PDAF16 MP, 117˚ (ultrawide)5 MP (macro)",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.2, A2DP",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5100 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Green",
+      "price": "About 200 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-hafury-meet.jpg",
+    "price": "About 200 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong AX",
+    "url": "https://www.gsmarena.com/cubot_kingkong_ax-12916.php",
+    "parsed_at": "2026-01-22T18:39:33.430717",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, March",
+      "status": "Available. Released 2024, April"
+    },
+    "body": {
+      "dimensions": "172 x 80.9 x 12.7 mm (6.77 x 3.19 x 0.5 in)",
+      "weight": "296 g (10.44 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz",
+      "size": "6.58 inches, 104.3 cm2(~75.0% screen-to-body ratio)",
+      "resolution": "1080 x 2408 pixels, 20:9 ratio (~401 ppi density)",
+      "protection": "Mohs level 6"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Mediatek Helio G99 (6 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "100 MP, (wide), PDAF5 MP (macro)Auxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5100 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 240 EUR"
+    },
+    "eu_label": {
+      "energy": "Class E",
+      "battery": "30:30h endurance, 900 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-ax.jpg",
+    "price": "About 240 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "A1",
+    "url": "https://www.gsmarena.com/cubot_a1-12915.php",
+    "parsed_at": "2026-01-22T18:39:35.451532",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, March",
+      "status": "Available. Released 2024, April"
+    },
+    "body": {
+      "dimensions": "165.6 x 75.5 x 10.4 mm (6.52 x 2.97 x 0.41 in)",
+      "weight": "205 g (7.23 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.56 inches, 103.4 cm2(~82.7% screen-to-body ratio)",
+      "resolution": "720 x 1612 pixels, 20:9 ratio (~269 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Unisoc SC9863A (28 nm)",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+      "gpu": "IMG8322"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, (wide), AFAuxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "5100 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Black, Blue, Green",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-a1.jpg",
+    "price": "About 80 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Tab 60",
+    "url": "https://www.gsmarena.com/cubot_tab_60-12857.php",
+    "parsed_at": "2026-01-22T18:39:37.778670",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "gprs": "N/A",
+      "edge": "N/A"
+    },
+    "launch": {
+      "announced": "2024, February 24",
+      "status": "Available. Released 2024, March"
+    },
+    "body": {
+      "dimensions": "241.4 x 160.2 x 8.3 mm (9.50 x 6.31 x 0.33 in)",
+      "weight": "530 g (1.17 lb)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~76.5% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~149 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Allwinner A523",
+      "cpu": "Octa-core 1.8 GHz"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.2",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "6000 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Gray"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-tab60-.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Tab 50",
+    "url": "https://www.gsmarena.com/cubot_tab_50-12856.php",
+    "parsed_at": "2026-01-22T18:39:39.650883",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, February 24",
+      "status": "Available. Released 2024, March"
+    },
+    "body": {
+      "dimensions": "246.4 x 161.5 x 7.7 mm (9.70 x 6.36 x 0.30 in)",
+      "weight": "455 g (1.00 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.4 inches, 307.9 cm2(~77.4% screen-to-body ratio)",
+      "resolution": "1200 x 2000 pixels, 5:3 ratio (~224 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Mediatek Helio G99",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers (4 speakers)",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.2",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, compass"
+    },
+    "battery": {
+      "type": "7500 mAh"
+    },
+    "misc": {
+      "colors": "Gray"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-tab50.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "C21",
+    "url": "https://www.gsmarena.com/cubot_c21-12996.php",
+    "parsed_at": "2026-01-22T18:39:41.798914",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2023, November",
+      "status": "Available. Released 2023, November"
+    },
+    "body": {
+      "dimensions": "46.5 x 46.5 x 13 mm (1.83 x 1.83 x 0.51 in)",
+      "weight": "-",
+      "build": "Zinc alloy frame",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "1.32 inches",
+      "resolution": "360 x 360 pixels (~386 ppi density)",
+      "protection": "Corning Gorilla Glass"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128MB"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "No",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.0, A2DP",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, heart rate, SpO2, blood pressure"
+    },
+    "battery": {
+      "type": "300 mAh"
+    },
+    "misc": {
+      "colors": "Black, Silver",
+      "price": "About 40 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-c21.jpg",
+    "price": "About 40 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "C20 Pro",
+    "url": "https://www.gsmarena.com/cubot_c20_pro-12995.php",
+    "parsed_at": "2026-01-22T18:39:44.138071",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2023, November",
+      "status": "Available. Released 2023, November"
+    },
+    "body": {
+      "dimensions": "54 x 43 x 12.9 mm (2.13 x 1.69 x 0.51 in)",
+      "weight": "-",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "1.81 inches",
+      "resolution": "240 x 286 pixels (~206 ppi density)"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128MB"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "No",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.0, A2DP",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, heart rate, SpO2, blood pressure"
+    },
+    "battery": {
+      "type": "380 mAh"
+    },
+    "misc": {
+      "colors": "Gray, Orange",
+      "price": "About 50 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-c20-pro.jpg",
+    "price": "About 50 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong 8",
+    "url": "https://www.gsmarena.com/cubot_kingkong_8-12640.php",
+    "parsed_at": "2026-01-22T18:39:46.745991",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2023, October 23",
+      "status": "Available. Released 2023, October 23"
+    },
+    "body": {
+      "dimensions": "169.9 x 80.2 x 20 mm (6.69 x 3.16 x 0.79 in)",
+      "weight": "382 g (13.47 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.53 inches, 102.4 cm2(~75.2% screen-to-body ratio)",
+      "resolution": "720 x 1612 pixels, 20:9 ratio (~270 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Mediatek MT8788V/WA (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, (wide), PDAF2 MP (macro)0.3 MP",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "10600 mAh",
+      "charging": "WiredReverse wired"
+    },
+    "misc": {
+      "colors": "Black, Red, Green",
+      "price": "About 170 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-8.jpg",
+    "price": "About 170 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Note 40",
+    "url": "https://www.gsmarena.com/cubot_note_40-12627.php",
+    "parsed_at": "2026-01-22T18:39:49.094704",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2023, October 16",
+      "status": "Available. Released 2023, October 16"
+    },
+    "body": {
+      "dimensions": "165.8 x 75.8 x 10.1 mm (6.53 x 2.98 x 0.40 in)",
+      "weight": "222 g (7.83 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.56 inches, 103.4 cm2(~82.3% screen-to-body ratio)",
+      "resolution": "720 x 1612 pixels, 20:9 ratio (~269 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Unisoc T606 (12 nm)",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 6GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, (wide)2 MP (macro)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "5200 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Black, Purple, Green, Blue",
+      "price": "About 90 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-note-40.jpg",
+    "price": "About 90 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Tab 40",
+    "url": "https://www.gsmarena.com/cubot_tab_40-12554.php",
+    "parsed_at": "2026-01-22T18:39:51.604047",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2023, September 11",
+      "status": "Available. Released 2023, September 18"
+    },
+    "body": {
+      "dimensions": "247.3 x 157.1 x 7.7 mm (9.74 x 6.19 x 0.30 in)",
+      "weight": "449 g (15.84 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.4 inches, 307.9 cm2(~79.2% screen-to-body ratio)",
+      "resolution": "1200 x 2000 pixels, 5:3 ratio (~224 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Unisoc Tiger T616 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 8GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, compass"
+    },
+    "battery": {
+      "type": "7000 mAh"
+    },
+    "misc": {
+      "colors": "Gray",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-tab40.jpg",
+    "price": "About 150 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Note 21",
+    "url": "https://www.gsmarena.com/cubot_note_21-12544.php",
+    "parsed_at": "2026-01-22T18:39:53.493899",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2023, August 24",
+      "status": "Available. Released 2023, September 18"
+    },
+    "body": {
+      "dimensions": "165.8 x 75.9 x 10.6 mm (6.53 x 2.99 x 0.42 in)",
+      "weight": "214 g (7.55 oz)",
+      "build": "Glass front, plastic frame, plastic back",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.56 inches, 103.4 cm2(~82.2% screen-to-body ratio)",
+      "resolution": "720 x 1612 pixels, 20:9 ratio (~269 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Unisoc T606 (12 nm)",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, (wide), PDAF2 MP (macro)",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "5200 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Black, Orange, Green",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-note-21.jpg",
+    "price": "About 80 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Note 50",
+    "url": "https://www.gsmarena.com/cubot_note_50-12441.php",
+    "parsed_at": "2026-01-22T18:39:55.196465",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2023, July",
+      "status": "Available. Released 2023, August 07"
+    },
+    "body": {
+      "dimensions": "165.8 x 75.8 x 10.1 mm (6.53 x 2.98 x 0.40 in)",
+      "weight": "233 g (8.22 oz)",
+      "build": "Glass front, plastic frame, plastic back",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.56 inches, 103.4 cm2(~82.3% screen-to-body ratio)",
+      "resolution": "720 x 1612 pixels, 20:9 ratio (~269 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Unisoc T606 (12 nm)",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, (wide), PDAF2 MP (macro)",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5200 mAh"
+    },
+    "misc": {
+      "colors": "Black, Purple, Green, Blue",
+      "price": "About 130 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-note-50.jpg",
+    "price": "About 130 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Tab KingKong",
+    "url": "https://www.gsmarena.com/cubot_tab_kingkong-12434.php",
+    "parsed_at": "2026-01-22T18:39:57.039104",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 17, 20, 28, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2023, July 19",
+      "status": "Available. Released 2023, August 07"
+    },
+    "body": {
+      "dimensions": "251.2 x 170.2 x 15.6 mm (9.89 x 6.70 x 0.61 in)",
+      "weight": "820 g (1.81 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~69.2% screen-to-body ratio)",
+      "resolution": "1200 x 1920 pixels, 16:10 ratio (~224 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Mediatek MT8788 (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)",
+      "gpu": "Mali-G72 MP3"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "4.2",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro"
+    },
+    "battery": {
+      "type": "10600 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-tab-kingkong.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong Star",
+    "url": "https://www.gsmarena.com/cubot_kingkong_star-12431.php",
+    "parsed_at": "2026-01-22T18:39:59.848318",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 34, 38, 39, 40, 41, 66, 71",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 20, 25, 28, 38, 41, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2023, July 19",
+      "status": "Available. Released 2023, August 07"
+    },
+    "body": {
+      "dimensions": "180.2 x 80.8 x 17.8 mm (7.09 x 3.18 x 0.70 in)",
+      "weight": "395 g (13.93 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.78 inches, 109.2 cm2(~75.0% screen-to-body ratio)",
+      "resolution": "1080 x 2460 pixels (~396 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Mediatek Dimensity 700 (7 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "100 MP, (wide), PDAF24 MP, (night vision camera), 2 IR emitters5 MP (macro)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "10600 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Black, Black/Red",
+      "price": "About 280 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-star.jpg",
+    "price": "About 280 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong 9",
+    "url": "https://www.gsmarena.com/cubot_kingkong_9-12302.php",
+    "parsed_at": "2026-01-22T18:40:01.690405",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2023",
+      "status": "Available. Released 2023"
+    },
+    "body": {
+      "dimensions": "172 x 81.6 x 17.7 mm (6.77 x 3.21 x 0.70 in)",
+      "weight": "390 g (13.76 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz",
+      "size": "6.58 inches, 104.3 cm2(~74.3% screen-to-body ratio)",
+      "resolution": "1080 x 2408 pixels, 20:9 ratio (~401 ppi density)",
+      "protection": "Mohs level 7"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Mediatek Helio G99 (6 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "100 MP, (wide), PDAF24 MP, (night vision camera), 2 IR emitters5 MP (macro)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "10600 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 230 EUR"
+    },
+    "eu_label": {
+      "energy": "Class C",
+      "battery": "90:55h endurance, 1600 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-9.jpg",
+    "price": "About 230 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong Power",
+    "url": "https://www.gsmarena.com/cubot_kingkong_power-12303.php",
+    "parsed_at": "2026-01-22T18:40:04.961178",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 26, 28, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2023",
+      "status": "Available. Released 2023"
+    },
+    "body": {
+      "dimensions": "169.9 x 80.2 x 20 mm (6.69 x 3.16 x 0.79 in)",
+      "weight": "382 g (13.47 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.5 inches, 102.0 cm2(~74.9% screen-to-body ratio)",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~405 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Mediatek MT8788V/WA",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, (wide), PDAF20 MP, (night vision camera), 2 IR emitters2 MP (macro)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "10600 mAh",
+      "charging": "33W wiredReverse wired"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 210 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-king-power.jpg",
+    "price": "About 210 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "P80",
+    "url": "https://www.gsmarena.com/cubot_p80-12304.php",
+    "parsed_at": "2026-01-22T18:40:07.721300",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 26, 28, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2023",
+      "status": "Available. Released 2023"
+    },
+    "body": {
+      "dimensions": "165.8 x 75.8 x 9.8 mm (6.53 x 2.98 x 0.39 in)",
+      "weight": "217 g (7.65 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.58 inches, 104.3 cm2(~83.0% screen-to-body ratio)",
+      "resolution": "1080 x 2408 pixels, 20:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Mediatek MT8788V/WA",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM, 512GB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, (wide), PDAF2 MP (macro)0.3 MP",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "24 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5200 mAh"
+    },
+    "misc": {
+      "colors": "Black, Blue, Purple, Pink, Light Blue",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-p80.jpg",
+    "price": "About 160 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "X70",
+    "url": "https://www.gsmarena.com/cubot_x70-12305.php",
+    "parsed_at": "2026-01-22T18:40:09.864161",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2023",
+      "status": "Available. Released 2023"
+    },
+    "body": {
+      "dimensions": "165.1 x 75.3 x 10.2 mm (6.5 x 2.96 x 0.40 in)",
+      "weight": "220 g (7.76 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz",
+      "size": "6.58 inches, 104.3 cm2(~83.9% screen-to-body ratio)",
+      "resolution": "1080 x 2408 pixels, 20:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Mediatek Helio G99 (6 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "100 MP, (wide), PDAF5 MP (macro)Auxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.2, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5200 mAh"
+    },
+    "misc": {
+      "colors": "Tech Black, Space Black",
+      "price": "About 200 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-x70.jpg",
+    "price": "About 200 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Tab 20",
+    "url": "https://www.gsmarena.com/cubot_tab_20-12306.php",
+    "parsed_at": "2026-01-22T18:40:12.158162",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2023",
+      "status": "Available. Released 2023"
+    },
+    "body": {
+      "dimensions": "241.4 x 160.2 x 8.3 mm (9.50 x 6.31 x 0.33 in)",
+      "weight": "530 g (1.17 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~76.5% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~149 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13",
+      "chipset": "Unisoc SC9863A (28 nm)",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+      "gpu": "IMG8322"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {},
+    "battery": {
+      "type": "6000 mAh"
+    },
+    "misc": {
+      "colors": "Dark Purple"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-tab20.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong 6",
+    "url": "https://www.gsmarena.com/cubot_kingkong_6-12312.php",
+    "parsed_at": "2026-01-22T18:40:14.291460",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 19, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "165.2 x 79 x 13.8 mm (6.50 x 3.11 x 0.54 in)",
+      "weight": "261 g (9.21 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.1 inches, 91.3 cm2(~70.0% screen-to-body ratio)",
+      "resolution": "720 x 1560 pixels, 19.5:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Unisoc Tiger T310 (12 nm)",
+      "cpu": "Quad-core (1x2.0 GHz Cortex-A75 & 3x1.8 GHz Cortex-A55)",
+      "gpu": "PowerVR GE8300"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "dual": "16 MP, (wide), AF0.3 MP",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5000 mAh"
+    },
+    "misc": {
+      "colors": "Black/Orange"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-king-kong-6.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "J20",
+    "url": "https://www.gsmarena.com/cubot_j20-12313.php",
+    "parsed_at": "2026-01-22T18:40:16.232140",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 19, 20, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "126.3 x 60.6 x 12.7 mm (4.97 x 2.39 x 0.5 in)",
+      "weight": "143 g (5.04 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "TN TFT",
+      "size": "4.0 inches, 44.1 cm2(~57.6% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~245 ppi density)"
+    },
+    "platform": {
+      "os": "Android 12 (Go edition)",
+      "chipset": "Mediatek MT6739WA (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "PowerVR GE8100"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, (wide), AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "Yes"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "2350 mAh, removable"
+    },
+    "misc": {
+      "colors": "Blue, Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-j20.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Pocket 3",
+    "url": "https://www.gsmarena.com/cubot_pocket_3-12314.php",
+    "parsed_at": "2026-01-22T18:40:17.804401",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 19, 20, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "133.2 x 58.5 x 12.3 mm (5.24 x 2.30 x 0.48 in)",
+      "weight": "135 g (4.76 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "4.5 inches, 45.9 cm2(~58.9% screen-to-body ratio)",
+      "resolution": "480 x 1170 pixels (~281 ppi density)"
+    },
+    "platform": {
+      "os": "Android 12",
+      "chipset": "Mediatek MT6769CZ Helio G85 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G52 MC2"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "20 MP, (wide)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "3000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Blue, Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-pocket3.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Note 30",
+    "url": "https://www.gsmarena.com/cubot_note_30-12315.php",
+    "parsed_at": "2026-01-22T18:40:19.948175",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 19, 20, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "165 x 75.7 x 9 mm (6.50 x 2.98 x 0.35 in)",
+      "weight": "195 g (6.88 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.52 inches, 102.6 cm2(~82.2% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~269 ppi density)"
+    },
+    "platform": {
+      "os": "Android 12",
+      "chipset": "Mediatek MT6765 Helio P35 (12 nm)",
+      "cpu": "Octa-core (4x2.35 GHz Cortex-A53 & 4x1.8 GHz Cortex-A53)",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "dual": "20 MP, (wide)2 MP (macro)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band",
+      "bluetooth": "5.0, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "4000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-note30.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong Mini 3",
+    "url": "https://www.gsmarena.com/cubot_kingkong_mini_3-12316.php",
+    "parsed_at": "2026-01-22T18:40:23.291900",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 19, 20, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "131 x 58.1 x 13.4 mm (5.16 x 2.29 x 0.53 in)",
+      "weight": "149 g (5.26 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.5 inches, 45.9 cm2(~60.3% screen-to-body ratio)",
+      "resolution": "480 x 1170 pixels (~281 ppi density)"
+    },
+    "platform": {
+      "os": "Android 12",
+      "chipset": "Mediatek MT6769CZ Helio G85 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G52 MC2"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "single": "20 MP, (wide)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "3000 mAh"
+    },
+    "misc": {
+      "colors": "Black/Red",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-king-kong-mini3.jpg",
+    "price": "About 160 EUR",
+    "brand": "Cubot"
+  },
+  {
+    "name": "P60",
+    "url": "https://www.gsmarena.com/cubot_p60-12317.php",
+    "parsed_at": "2026-01-22T18:40:24.255260",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 19, 20, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "165 x 76.3 x 9 mm (6.50 x 3.00 x 0.35 in)",
+      "weight": "198.6 g (7.02 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.52 inches, 102.6 cm2(~81.5% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~269 ppi density)"
+    },
+    "platform": {
+      "os": "Android 12",
+      "chipset": "Mediatek MT6765 Helio P35 (12 nm)",
+      "cpu": "Octa-core (4x2.35 GHz Cortex-A53 & 4x1.8 GHz Cortex-A53)",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "dual": "20 MP, (wide), 1/2.8\", 1.0µm0.3 MP",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "5000 mAh"
+    },
+    "misc": {
+      "colors": "Black, White"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-p60-.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong Mini 2 Pro",
+    "url": "https://www.gsmarena.com/cubot_kingkong_mini_2_pro-12318.php",
+    "parsed_at": "2026-01-22T18:40:25.875778",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "119 x 58 x 12.5 mm (4.69 x 2.28 x 0.49 in)",
+      "weight": "122.7 g (4.34 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.0 inches, 41.3 cm2(~59.8% screen-to-body ratio)",
+      "resolution": "540 x 1080 pixels, 18:9 ratio (~302 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Mediatek MT6762 Helio P22 (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A53 & 4x1.5 GHz Cortex-A53)",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, (wide)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "3000 mAh"
+    },
+    "misc": {
+      "colors": "Black/Red, Black/Orange"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-mini-2-pro.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Note 8",
+    "url": "https://www.gsmarena.com/cubot_note_8-12319.php",
+    "parsed_at": "2026-01-22T18:40:27.419791",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 19, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "138 x 65 x 10.8 mm (5.43 x 2.56 x 0.43 in)",
+      "weight": "143 g (5.04 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 74.1 cm2(~82.7% screen-to-body ratio)",
+      "resolution": "442 x 960 pixels, 19.5:9 ratio (~192 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Mediatek MT6739WW (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "PowerVR GE8100"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, (wide), AF0.3 MP",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "Yes"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "3100 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-note8.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Pocket",
+    "url": "https://www.gsmarena.com/cubot_pocket-12320.php",
+    "parsed_at": "2026-01-22T18:40:28.362638",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 19, 20, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "119 x 58 x 12.5 mm (4.69 x 2.28 x 0.49 in)",
+      "weight": "128 g (4.52 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.0 inches, 41.3 cm2(~59.8% screen-to-body ratio)",
+      "resolution": "540 x 1080 pixels, 18:9 ratio (~302 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Unisoc Tiger T310 (12 nm)",
+      "cpu": "Quad-core (1x2.0 GHz Cortex-A75 & 3x1.8 GHz Cortex-A55)",
+      "gpu": "PowerVR GE8300"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, (wide), AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "3000 mAh"
+    },
+    "misc": {
+      "colors": "Black, Black/Red, Green/Gold"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-pocket.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "P50",
+    "url": "https://www.gsmarena.com/cubot_p50-12324.php",
+    "parsed_at": "2026-01-22T18:40:29.408092",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 19, 20, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "156.2 x 74.6 x 9.4 mm (6.15 x 2.94 x 0.37 in)",
+      "weight": "-",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.22 inches, 96.6 cm2(~82.9% screen-to-body ratio)",
+      "resolution": "720 x 1520 pixels, 19:9 ratio (~270 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Mediatek MT6762 Helio P22 (12 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "triple": "12 MP, (wide), 1/2.9\"5 MP (macro)Auxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "20 MP, (wide), 1/2.8\"",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4200 mAh"
+    },
+    "misc": {
+      "colors": "Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-p50-.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Tab 30",
+    "url": "https://www.gsmarena.com/cubot_tab_30-12325.php",
+    "parsed_at": "2026-01-22T18:40:30.849259",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "237.5 x 157.5 x 8 mm (9.35 x 6.20 x 0.31 in)",
+      "weight": "421 g (14.85 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~79.1% screen-to-body ratio)",
+      "resolution": "1200 x 1920 pixels, 16:10 ratio (~224 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Unisoc T618",
+      "cpu": "Octa-core"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, magnetic connector"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro"
+    },
+    "battery": {
+      "type": "6580 mAh"
+    },
+    "misc": {
+      "colors": "Gray"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-tab30.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "J10",
+    "url": "https://www.gsmarena.com/cubot_j10-12326.php",
+    "parsed_at": "2026-01-22T18:40:32.182663",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA"
+    },
+    "launch": {
+      "announced": "2021",
+      "status": "Available. Released 2021"
+    },
+    "body": {
+      "dimensions": "126.3 x 60.6 x 12.7 mm (4.97 x 2.39 x 0.5 in)",
+      "weight": "143 g (5.04 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.0 inches, 44.1 cm2(~57.6% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~245 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Unisoc SC7731e",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400 MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, (wide), AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "microUSB"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "2350 mAh, removable"
+    },
+    "misc": {
+      "colors": "Blue, Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-j10.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Max 3",
+    "url": "https://www.gsmarena.com/cubot_max_3-12327.php",
+    "parsed_at": "2026-01-22T18:40:33.280923",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 19, 20, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2021",
+      "status": "Available. Released 2021"
+    },
+    "body": {
+      "dimensions": "173 x 77 x 9.4 mm (6.81 x 3.03 x 0.37 in)",
+      "weight": "-",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.95 inches, 114.7 cm2(~86.1% screen-to-body ratio)",
+      "resolution": "720 x 1640 pixels (~258 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Mediatek MT6762 Helio P22 (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A53 & 4x1.5 GHz Cortex-A53)",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, (wide), PDAF5 MP (macro)Auxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "16 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band",
+      "bluetooth": "5.0, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-max3.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong 7",
+    "url": "https://www.gsmarena.com/cubot_kingkong_7-12329.php",
+    "parsed_at": "2026-01-22T18:40:34.307244",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "166.8 x 83.5 x 14 mm (6.57 x 3.29 x 0.55 in)",
+      "weight": "267 g (9.42 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.36 inches, 100.4 cm2(~72.1% screen-to-body ratio)",
+      "resolution": "1080 x 2300 pixels (~400 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Mediatek MT6771V/CA Helio P60 (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)",
+      "gpu": "Mali-G72 MP3"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "64 MP, (wide), AF16 MP, (ultrawide)5 MP (macro)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5000 mAh"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-king-kong7.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong 5",
+    "url": "https://www.gsmarena.com/cubot_kingkong_5-12330.php",
+    "parsed_at": "2026-01-22T18:40:35.626993",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 19, 20, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "160.3 x 78.6 x 15 mm (6.31 x 3.09 x 0.59 in)",
+      "weight": "-",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.01 inches, 88.7 cm2(~70.4% screen-to-body ratio)",
+      "resolution": "720 x 1560 pixels, 19.5:9 ratio (~286 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Mediatek MT6762 Helio P22 (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A53 & 4x1.5 GHz Cortex-A53)",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 4GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, (wide), AF5 MP (macro), AFAuxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5000 mAh"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-king-kong5.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Note 9",
+    "url": "https://www.gsmarena.com/cubot_note_9-12331.php",
+    "parsed_at": "2026-01-22T18:40:37.214008",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 19, 20, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2022",
+      "status": "Available. Released 2022"
+    },
+    "body": {
+      "dimensions": "153 x 77 x 11 mm (6.02 x 3.03 x 0.43 in)",
+      "weight": "-",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.99 inches",
+      "resolution": "Unspecified"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Unisoc SC9863A (28 nm)",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+      "gpu": "IMG8322"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "triple": "16 MP, (wide), AFother unspecified cameras",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "5900 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-note9.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "J9",
+    "url": "https://www.gsmarena.com/cubot_j9-12332.php",
+    "parsed_at": "2026-01-22T18:40:38.358786",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "156.2 x 74.6 x 9.4 mm (6.15 x 2.94 x 0.37 in)",
+      "weight": "185 g (6.53 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.2 inches, 95.9 cm2(~82.3% screen-to-body ratio)",
+      "resolution": "720 x 1520 pixels, 19:9 ratio (~271 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6580 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "triple": "13 MP, (wide), AF2 MP0.3 MP",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "4200 mAh, removable"
+    },
+    "misc": {
+      "colors": "Blue, Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-j9.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "X50",
+    "url": "https://www.gsmarena.com/cubot_x50-12333.php",
+    "parsed_at": "2026-01-22T18:40:39.634776",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2021",
+      "status": "Available. Released 2021"
+    },
+    "body": {
+      "dimensions": "166.8 x 77.6 x 8.8 mm (6.57 x 3.06 x 0.35 in)",
+      "weight": "213 g (7.51 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.67 inches, 107.4 cm2(~83.0% screen-to-body ratio)",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~395 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Mediatek MT6771V/CA Helio P60 (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)",
+      "gpu": "Mali-G72 MP3"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 8GB RAM"
+    },
+    "main_camera": {
+      "quad": "64 MP, (wide), PDAF16 MP, 125˚ (ultrawide)5 MP (macro), AFAuxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "microUSB, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4500 mAh"
+    },
+    "misc": {
+      "colors": "Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-x50.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong 5 Pro",
+    "url": "https://www.gsmarena.com/cubot_kingkong_5_pro-12334.php",
+    "parsed_at": "2026-01-22T18:40:40.904903",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2021",
+      "status": "Available. Released 2021"
+    },
+    "body": {
+      "dimensions": "165.8 x 81.4 x 18.8 mm (6.53 x 3.20 x 0.74 in)",
+      "weight": "319 g (11.25 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.01 inches, 88.7 cm2(~65.7% screen-to-body ratio)",
+      "resolution": "720 x 1560 pixels, 19.5:9 ratio (~286 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Mediatek MT6762D Helio P22 (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A53 & 4x1.5 GHz Cortex-A53)",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, (wide), AF5 MP (macro), AFAuxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "25 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "8000 mAh"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-king-kong5-pro.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "C20",
+    "url": "https://www.gsmarena.com/cubot_c20-12335.php",
+    "parsed_at": "2026-01-22T18:40:42.380374",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "155 x 74 x 10 mm (6.10 x 2.91 x 0.39 in)",
+      "weight": "192.8 g (6.81 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.18 inches, 96.2 cm2(~83.9% screen-to-body ratio)",
+      "resolution": "1080 x 2246 pixels, 18.7:9 ratio (~403 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6762D Helio P22 (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A53 & 4x1.5 GHz Cortex-A53)",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "triple": "12 MP, (wide), PDAF5 MP (macro)Auxiliary lens",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4200 mAh, removable"
+    },
+    "misc": {
+      "colors": "Blue, Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-c20.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "J8",
+    "url": "https://www.gsmarena.com/cubot_j8-12336.php",
+    "parsed_at": "2026-01-22T18:40:43.565324",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "135 x 63 x 11 mm (5.31 x 2.48 x 0.43 in)",
+      "weight": "144 g (5.08 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 74.1 cm2(~87.2% screen-to-body ratio)",
+      "resolution": "442 x 960 pixels, 19.5:9 ratio (~192 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6580 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "triple": "13 MP, (wide), AF0.3 MPthird unspecified camera",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "Yes"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "3100 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Red, Blue, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-j8.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong Mini 2",
+    "url": "https://www.gsmarena.com/cubot_kingkong_mini_2-12337.php",
+    "parsed_at": "2026-01-22T18:40:44.698729",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "119 x 58 x 12.1 mm (4.69 x 2.28 x 0.48 in)",
+      "weight": "122.7 g (4.34 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.0 inches, 41.3 cm2(~59.8% screen-to-body ratio)",
+      "resolution": "540 x 1080 pixels, 18:9 ratio (~302 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6761 Helio A22 (12 nm)",
+      "cpu": "Quad-core 2.0 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, (wide)",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "3000 mAh"
+    },
+    "misc": {
+      "colors": "Red/Black, Orange/Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-king-kong-mini2.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Note 7",
+    "url": "https://www.gsmarena.com/cubot_note_7-12338.php",
+    "parsed_at": "2026-01-22T18:40:45.733683",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "138 x 65 x 10.8 mm (5.43 x 2.56 x 0.43 in)",
+      "weight": "144 g (5.08 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 74.1 cm2(~82.7% screen-to-body ratio)",
+      "resolution": "442 x 960 pixels, 19.5:9 ratio (~192 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6737 (28 nm)",
+      "cpu": "Quad-core 1.4 GHz Cortex-A53",
+      "gpu": "Mali-T720MP1"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "triple": "13 MP, (wide), AF0.3 MPthird unspecified camera",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "Yes"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "3100 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Red, Blue, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-note-7.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Note 20 Pro",
+    "url": "https://www.gsmarena.com/cubot_note_20_pro-12339.php",
+    "parsed_at": "2026-01-22T18:40:46.978397",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "162.8 x 75.4 x 9.1 mm (6.41 x 2.97 x 0.36 in)",
+      "weight": "200 g (7.05 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.5 inches, 102.0 cm2(~83.1% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~270 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6771 Helio P60 (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)",
+      "gpu": "Mali-G72 MP3"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "128GB 8GB RAM"
+    },
+    "main_camera": {
+      "quad": "12 MP, (wide), 1/2.9\", AF20 MP, (depth), 1/2.78\"Auxiliary lenses",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "microUSB, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4200 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Blue, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-note20-pro.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "C30",
+    "url": "https://www.gsmarena.com/cubot_c30-12340.php",
+    "parsed_at": "2026-01-22T18:40:48.463657",
+    "brand": "Cubot"
+  },
+  {
+    "name": "X30",
+    "url": "https://www.gsmarena.com/cubot_x30-12342.php",
+    "parsed_at": "2026-01-22T18:42:03.893874",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "157.1 x 76.4 x 8.5 mm (6.19 x 3.01 x 0.33 in)",
+      "weight": "193 g (6.81 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.4 inches, 101.4 cm2(~84.5% screen-to-body ratio)",
+      "resolution": "1080 x 2310 pixels (~398 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6771 Helio P60 (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)",
+      "gpu": "Mali-G72 MP3"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "penta": "48 MP, (wide), 1/2.0\", AF16 MP, (ultrawide)5 MP (macro)Auxiliary lenses",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "32 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4200 mAh"
+    },
+    "misc": {
+      "colors": "Blue, Black, Gradient Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-x30.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "P40",
+    "url": "https://www.gsmarena.com/cubot_p40-12343.php",
+    "parsed_at": "2026-01-22T18:42:06.292187",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "155 x 73 x 10 mm (6.10 x 2.87 x 0.39 in)",
+      "weight": "184 g (6.49 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.2 inches, 95.9 cm2(~84.8% screen-to-body ratio)",
+      "resolution": "720 x 1520 pixels, 19:9 ratio (~271 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6761 Helio A22 (12 nm)",
+      "cpu": "Quad-core 1.8 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "128GB 4GB RAM"
+    },
+    "main_camera": {
+      "triple": "12 MP, (wide), 1/2.9\", PDAF5 MP (macro)Auxiliary lenses",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "20 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4200 mAh, removable",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Blue, Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-p40.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Note 20",
+    "url": "https://www.gsmarena.com/cubot_note_20-12344.php",
+    "parsed_at": "2026-01-22T18:42:08.866159",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "162.8 x 75.4 x 9.1 mm (6.41 x 2.97 x 0.36 in)",
+      "weight": "200 g (7.05 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.5 inches, 102.0 cm2(~83.1% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~270 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10",
+      "chipset": "Mediatek MT6761D Helio A20 (12 nm)",
+      "cpu": "Quad-core 1.8 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "64GB 3GB RAM"
+    },
+    "main_camera": {
+      "quad": "12 MP, (wide), 1/2.9\", AF20 MP, (depth), 1/2.78\"Auxiliary lenses",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "microUSB"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "4200 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Blue, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-note20.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "X20",
+    "url": "https://www.gsmarena.com/cubot_x20-12345.php",
+    "parsed_at": "2026-01-22T18:42:11.661110",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "157.1 x 74.6 x 8.1 mm (6.19 x 2.94 x 0.32 in)",
+      "weight": "240 g (8.47 oz)",
+      "build": "Glass front, plastic frame, glass back",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.3 inches, 97.4 cm2(~83.1% screen-to-body ratio)",
+      "resolution": "1080 x 2340 pixels, 19.5:9 ratio (~409 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie)",
+      "chipset": "Mediatek MT6763 Helio P23 (16 nm)",
+      "cpu": "Octa-core 2.5 GHz Cortex-A53",
+      "gpu": "Mali-G71 MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "triple": "12 MP, (wide), 1/2.9\", AF8 MP, 125˚ (ultrawide)20 MP, (depth), 1/2.78\"",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "13 MP, (wide), 1/3.06\"",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4000 mAh"
+    },
+    "misc": {
+      "colors": "Blue, Gold, Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-x20.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "KingKong CS",
+    "url": "https://www.gsmarena.com/cubot_kingkong_cs-12346.php",
+    "parsed_at": "2026-01-22T18:42:14.075993",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 1700 / 1900 / 2100",
+      "speed": "HSPA"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153 x 80.2 x 14.9 mm (6.02 x 3.16 x 0.59 in)",
+      "weight": "236.5 g (8.36 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~56.2% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10 (Go edition)",
+      "chipset": "Mediatek MT6580 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, (wide), AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "microUSB"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4400 mAh"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-kingkong-cs.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "X19S",
+    "url": "https://www.gsmarena.com/cubot_x19s-12347.php",
+    "parsed_at": "2026-01-22T18:42:16.616255",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "155 x 74.7 x 9.6 mm (6.10 x 2.94 x 0.38 in)",
+      "weight": "178.9 g (6.31 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.93 inches, 90.7 cm2(~78.4% screen-to-body ratio)",
+      "resolution": "1080 x 2160 pixels, 18:9 ratio (~407 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie)",
+      "chipset": "Mediatek MT6763 Helio P23 (16 nm)",
+      "cpu": "Octa-core 2.5 GHz Cortex-A53",
+      "gpu": "Mali-G71 MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 4GB RAM"
+    },
+    "main_camera": {
+      "dual": "16 MP, f/2.0, (wide), PDAF2 MP",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "microUSB, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4000 mAh"
+    },
+    "misc": {
+      "colors": "Gradient, Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-x19s.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "X19",
+    "url": "https://www.gsmarena.com/cubot_x19-12348.php",
+    "parsed_at": "2026-01-22T18:42:19.633432",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20, 28",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "155 x 74.7 x 9.6 mm (6.10 x 2.94 x 0.38 in)",
+      "weight": "192 g (6.77 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.93 inches, 90.7 cm2(~78.4% screen-to-body ratio)",
+      "resolution": "1080 x 2160 pixels, 18:9 ratio (~407 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie)",
+      "chipset": "Mediatek MT6763T Helio P23 (16 nm)",
+      "cpu": "Octa-core 2.5 GHz Cortex-A53",
+      "gpu": "Mali-G71 MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "dual": "16 MP, f/2.0, (wide), PDAF2 MP",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "microUSB, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4000 mAh"
+    },
+    "misc": {
+      "colors": "Gradient, Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-x19s.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "X20 Pro",
+    "url": "https://www.gsmarena.com/cubot_x20_pro-12349.php",
+    "parsed_at": "2026-01-22T18:42:22.010856",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "157.1 x 74.6 x 8.1 mm (6.19 x 2.94 x 0.32 in)",
+      "weight": "240 g (8.47 oz)",
+      "build": "Glass front, plastic frame, glass back",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.3 inches, 97.4 cm2(~83.1% screen-to-body ratio)",
+      "resolution": "1080 x 2340 pixels, 19.5:9 ratio (~409 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie)",
+      "chipset": "Mediatek MT6771 Helio P60 (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A73 & 4x2.0 GHz Cortex-A53)",
+      "gpu": "Mali-G72 MP3"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "128GB 6GB RAM"
+    },
+    "main_camera": {
+      "triple": "12 MP, (wide), 1/2.9\", AF8 MP, 125˚ (ultrawide)20 MP, (depth), 1/2.78\"",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "13 MP, (wide), 1/3.06\"",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4000 mAh"
+    },
+    "misc": {
+      "colors": "Blue, Gold, Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-x20.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "P30",
+    "url": "https://www.gsmarena.com/cubot_p30-12350.php",
+    "parsed_at": "2026-01-22T18:42:25.216394",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "156.6 x 74.3 x 8.1 mm (6.17 x 2.93 x 0.32 in)",
+      "weight": "186.4 g (6.56 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.3 inches, 97.4 cm2(~83.7% screen-to-body ratio)",
+      "resolution": "1080 x 2340 pixels, 19.5:9 ratio (~409 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie)",
+      "chipset": "Mediatek MT6763 Helio P23 (16 nm)",
+      "cpu": "Octa-core 2.5 GHz Cortex-A53",
+      "gpu": "Mali-G71 MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "triple": "12 MP, (wide), 1/2.9\", AF8 MP, 125˚ (ultrawide)20 MP, (depth), 1/2.78\"",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "13 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4000 mAh"
+    },
+    "misc": {
+      "colors": "Blue, Black, Green"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-p30.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Quest",
+    "url": "https://www.gsmarena.com/cubot_quest-12351.php",
+    "parsed_at": "2026-01-22T18:42:27.439443",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "157 x 73.7 x 8.8 mm (6.18 x 2.90 x 0.35 in)",
+      "weight": "216 g (7.62 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 78.1 cm2(~67.5% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~293 ppi density)",
+      "protection": "Corning Gorilla Glass 5"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie)",
+      "chipset": "Mediatek MT6762 Helio P22 (12 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Cortex-A53 & 4x1.5 GHz Cortex-A53)",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/1.8, (wide), 1/2.9\", PDAF2 MP",
+      "features": "Dual-LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "4000 mAh"
+    },
+    "misc": {
+      "colors": "Red/Black, Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-quest.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Quest Lite",
+    "url": "https://www.gsmarena.com/cubot_quest_lite-12352.php",
+    "parsed_at": "2026-01-22T18:42:29.700529",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152 x 74 x 8.8 mm (5.98 x 2.91 x 0.35 in)",
+      "weight": "219.7 g (7.76 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~61.3% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)",
+      "protection": "Corning Gorilla Glass 5"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie)",
+      "chipset": "Mediatek MT6761 Helio A22 (12 nm)",
+      "cpu": "Quad-core 2.0 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, f/2.2, (wide), PDAF2 MP",
+      "features": "Dual-LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "3000 mAh"
+    },
+    "misc": {
+      "colors": "Red/Black, Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-quest-lite.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Tab 10",
+    "url": "https://www.gsmarena.com/cubot_tab_10-12353.php",
+    "parsed_at": "2026-01-22T18:42:32.280362",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2021",
+      "status": "Available. Released 2021"
+    },
+    "body": {
+      "dimensions": "243.5 x 164 x 8.8 mm (9.59 x 6.46 x 0.35 in)",
+      "weight": "575 g (1.27 lb)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~74.1% screen-to-body ratio)",
+      "resolution": "1200 x 1920 pixels, 16:10 ratio (~224 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11",
+      "chipset": "Unisoc SC9863A (28 nm)",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+      "gpu": "IMG8322"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "6000 mAh"
+    },
+    "misc": {
+      "colors": "Gray"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-tab10.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "C9",
+    "url": "https://www.gsmarena.com/cubot_c9-12354.php",
+    "parsed_at": "2026-01-22T18:42:34.808144",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2021",
+      "status": "Available. Released 2021"
+    },
+    "body": {
+      "dimensions": "43 x 43 x 10 mm (1.69 x 1.69 x 0.39 in)",
+      "weight": "-",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "1.28 inches",
+      "resolution": "240 x 240 pixels (~265 ppi density)",
+      "protection": "Scratch-resistant glass"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16MB"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "No",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, heart rate"
+    },
+    "battery": {
+      "type": "210 mAh"
+    },
+    "misc": {
+      "colors": "Black, Blue, Pink"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-c9.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "C7",
+    "url": "https://www.gsmarena.com/cubot_c7-12355.php",
+    "parsed_at": "2026-01-22T18:42:37.397855",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2021",
+      "status": "Available. Released 2021"
+    },
+    "body": {
+      "dimensions": "44 x 44 x 12 mm (1.73 x 1.73 x 0.47 in)",
+      "weight": "34 g (1.20 oz)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "1.54 inches",
+      "resolution": "240 x 240 pixels (~220 ppi density)",
+      "protection": "Scratch-resistant glass"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "No",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, heart rate"
+    },
+    "battery": {
+      "type": "260 mAh"
+    },
+    "misc": {
+      "colors": "Black, Pink"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-c7.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "C5",
+    "url": "https://www.gsmarena.com/cubot_c5-12356.php",
+    "parsed_at": "2026-01-22T18:42:39.912189",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "43 x 43 x 10 mm (1.69 x 1.69 x 0.39 in)",
+      "weight": "-",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "1.7 inches",
+      "resolution": "240 x 280 pixels (~217 ppi density)",
+      "protection": "Scratch-resistant glass"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16MB"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "No",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.1, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, heart rate"
+    },
+    "battery": {
+      "type": "260 mAh"
+    },
+    "misc": {
+      "colors": "Black, Pink"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-c5.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "C3",
+    "url": "https://www.gsmarena.com/cubot_c3-12357.php",
+    "parsed_at": "2026-01-22T18:42:42.288752",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "46 x 46 x 14.8 mm (1.81 x 1.81 x 0.58 in)",
+      "weight": "-",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "1.3 inches",
+      "resolution": "240 x 240 pixels (~261 ppi density)",
+      "protection": "Scratch-resistant glass"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "No",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.1, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, heart rate"
+    },
+    "battery": {
+      "type": "260 mAh"
+    },
+    "misc": {
+      "colors": "Black, Gray"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-c3.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "N1",
+    "url": "https://www.gsmarena.com/cubot_n1-12358.php",
+    "parsed_at": "2026-01-22T18:42:45.033921",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2021",
+      "status": "Available. Released 2021"
+    },
+    "body": {
+      "dimensions": "49.5 x 49.5 x 14.5 mm (1.95 x 1.95 x 0.57 in)",
+      "weight": "55 g (1.94 oz)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "1.28 inches",
+      "resolution": "240 x 240 pixels (~265 ppi density)",
+      "protection": "Scratch-resistant glass"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "No",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, heart rate, SpO2"
+    },
+    "battery": {
+      "type": "450 mAh"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-n1.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "W03",
+    "url": "https://www.gsmarena.com/cubot_w03-12359.php",
+    "parsed_at": "2026-01-22T18:42:47.398130",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2021",
+      "status": "Available. Released 2021"
+    },
+    "body": {
+      "dimensions": "43 x 43 x 12 mm (1.69 x 1.69 x 0.47 in)",
+      "weight": "-",
+      "build": "Glass front, aluminum frame, plastic back",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "1.7 inches",
+      "resolution": "240 x 240 pixels (~200 ppi density)",
+      "protection": "Scratch-resistant glass"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "No",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.1, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, heart rate"
+    },
+    "battery": {
+      "type": "260 mAh"
+    },
+    "misc": {
+      "colors": "Black, Blue, Pink"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-w03.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "Smart Watch",
+    "url": "https://www.gsmarena.com/cubot_smart_watch-12362.php",
+    "parsed_at": "2026-01-22T18:42:50.323539",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "41.6 x 41.6 x 11.6 mm (1.64 x 1.64 x 0.46 in)",
+      "weight": "-",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "1.3 inches",
+      "resolution": "240 x 240 pixels (~261 ppi density)",
+      "protection": "Scratch-resistant glass"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "No",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, heart rate"
+    },
+    "battery": {
+      "type": "210 mAh"
+    },
+    "misc": {
+      "colors": "Black, Pink"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-smartwatch.jpg",
+    "brand": "Cubot"
+  },
+  {
+    "name": "ID206",
+    "url": "https://www.gsmarena.com/cubot_id206-12363.php",
+    "parsed_at": "2026-01-22T18:42:53.091031",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "speed": "No",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2020. Released 2020",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "40 x 40 x 12 mm (1.57 x 1.57 x 0.47 in)",
+      "weight": "-",
+      "sim": "No"
+    },
+    "display": {
+      "type": "TFT LCD",
+      "size": "1.7 inches",
+      "resolution": "240 x 280 pixels (~217 ppi density)",
+      "protection": "Scratch-resistant glass"
+    },
+    "platform": {
+      "os": "Proprietary OS"
+    },
+    "memory": {
+      "card_slot": "No"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "No",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, heart rate, SpO2"
+    },
+    "battery": {
+      "type": "300 mAh"
+    },
+    "misc": {
+      "colors": "Black, Pink"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/cubot-id206-2.jpg",
+    "brand": "Cubot"
+  }
+]

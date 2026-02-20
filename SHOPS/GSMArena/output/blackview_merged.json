@@ -1,0 +1,1643 @@
+[
+  {
+    "name": "Xplore 2",
+    "url": "https://www.gsmarena.com/blackview_xplore_2_5g-14229.php",
+    "parsed_at": "2026-01-23T03:39:43.850186",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1800 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 34, 38, 39, 40, 41, 66",
+      "5g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41, 77, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, September 25",
+      "status": "Available. Released 2025, October"
+    },
+    "body": {
+      "dimensions": "186 x 87.8 x 29 mm (7.32 x 3.46 x 1.14 in)",
+      "weight": "670 g (1.48 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "LTPO AMOLED, 68B colors, 120Hz, HDR, 500 nits (typ), 1300 nits (HBM), 2600 nits (peak)",
+      "size": "6.73 inches, 109.4 cm2(~67.0% screen-to-body ratio)",
+      "resolution": "1440 x 3200 pixels, 20:9 ratio (~521 ppi density)",
+      "protection": "Corning Gorilla Glass 5, Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15, up to 3 major Android upgrades, DokeOS 4.2",
+      "chipset": "Mediatek Dimensity 8300 (4 nm)",
+      "cpu": "Octa-core (1x3.35 GHz Cortex-A715 & 3x3.20 GHz Cortex-A715 & 4x2.20 GHz Cortex-A510)",
+      "gpu": "Mali G615-MC6"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 12GB RAM, 1TB 16GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.9, (wide), 1/1.57\", PDAF, OIS20 MP, f/1.8, (night vision), 1/2.8\", 2 infrared night vision lights",
+      "features": "LED flash, HDR, panorama",
+      "video": "4K@30/60fps, HDR10+"
+    },
+    "selfie_camera": {
+      "single": "50 MP, f/2.5, (wide), 1/2.76\"",
+      "video": "4K@30/60fps, HDR10+"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e, tri-band",
+      "bluetooth": "5.4, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, GALILEO, BDS, QZSS",
+      "nfc": "Yes",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass, barometer"
+    },
+    "battery": {
+      "type": "20000 mAh",
+      "charging": "120W wired10W reverse wired"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "$ 413.99 / £ 499.99 / € 509.99"
+    },
+    "eu_label": {
+      "energy": "Class F",
+      "battery": "188:00h endurance, 800 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-xplore2.jpg",
+    "price": "$ 413.99 / £ 499.99 / € 509.99",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Zeno 1",
+    "url": "https://www.gsmarena.com/blackview_zeno_1-14154.php",
+    "parsed_at": "2026-01-23T03:39:45.555575",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20, 28, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, September",
+      "status": "Available. Released 2025, September"
+    },
+    "body": {
+      "dimensions": "198.6 x 125.9 x 8.2 mm (7.82 x 4.96 x 0.32 in)",
+      "weight": "336.5 g (11.89 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz, 350 nits",
+      "size": "8.0 inches, 185.6 cm2(~74.2% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~189 ppi density)",
+      "protection": "Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15, DokeOS 4.2",
+      "chipset": "Unisoc T615 (12 nm)",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM, 256GB 6GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.2, (wide), 1/5.0\"",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.2, (wide), 1/5.0\"",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "FM Radio",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Po 6000 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Rock Black, Space Orange, Jungle Green"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "166:39h endurance, 800 cycles",
+      "free_fall": "Class C (104 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-zeno1.jpg",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Shark 6",
+    "url": "https://www.gsmarena.com/blackview_shark_6_5g-14153.php",
+    "parsed_at": "2026-01-23T03:39:46.964210",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 19, 20, 26, 28, 38, 40, 41, 66",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 20, 26, 28, 38, 40, 41, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, September",
+      "status": "Available. Released 2025, September"
+    },
+    "body": {
+      "dimensions": "171.1 x 77.7 x 8.5 mm (6.74 x 3.06 x 0.33 in)",
+      "weight": "210.5 g (7.44 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz, 450 nits",
+      "size": "6.88 inches, 112.4 cm2(~84.6% screen-to-body ratio)",
+      "resolution": "720 x 1640 pixels (~260 ppi density)",
+      "protection": "Mohs level 7"
+    },
+    "platform": {
+      "os": "Android 15, DokeOS 4.2",
+      "chipset": "Unisoc T8100 (6 nm)",
+      "cpu": "Octa-core (4x2.2 GHz Cortex-A76 & 4x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "128GB 4GB RAM, 128GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "16 MP, (wide), AFAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, (wide)",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 5000 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Phantom Black, Glacier Blue, Mint Green",
+      "price": "$ 119.00 / £ 107.28 / € 114.88"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "53:38h endurance, 800 cycles",
+      "free_fall": "Class C (98 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-shark6.jpg",
+    "price": "$ 119.00 / £ 107.28 / € 114.88",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Color 6",
+    "url": "https://www.gsmarena.com/blackview_color_6-14152.php",
+    "parsed_at": "2026-01-23T03:39:48.450064",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20, 28, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, September",
+      "status": "Available. Released 2025, September"
+    },
+    "body": {
+      "dimensions": "165.7 x 76.5 x 8.7 mm (6.52 x 3.01 x 0.34 in)",
+      "weight": "199.4 g (7.05 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz, 650 nits",
+      "size": "6.67 inches, 107.2 cm2(~84.6% screen-to-body ratio)",
+      "resolution": "720 x 1604 pixels, 20:9 ratio (~264 ppi density)",
+      "protection": "Panda Glass, Mohs level 7"
+    },
+    "platform": {
+      "os": "Android 15, DokeOS 4.1",
+      "chipset": "Mediatek Helio G81 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G52 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "single": "50 MP, f/1.8, (wide), 1/2.76\", PDAF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "13 MP, f/2.0, (wide), 1/4.0\"",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 5000 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Midnight Black, Celestial Blue, Snowy White",
+      "price": "About 90 EUR"
+    },
+    "eu_label": {
+      "energy": "Class B",
+      "battery": "48:35h endurance, 800 cycles",
+      "free_fall": "Class C (156 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-color6.jpg",
+    "price": "About 90 EUR",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Fort 1",
+    "url": "https://www.gsmarena.com/blackview_fort_1-14151.php",
+    "parsed_at": "2026-01-23T03:39:50.340698",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 19, 20, 26, 28, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, September",
+      "status": "Available. Released 2025, September"
+    },
+    "body": {
+      "dimensions": "176.2 x 80.1 x 17.5 mm (6.94 x 3.15 x 0.69 in)",
+      "weight": "390 g (13.76 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz, 450 nits",
+      "size": "6.56 inches, 103.4 cm2(~73.2% screen-to-body ratio)",
+      "resolution": "720 x 1612 pixels, 20:9 ratio (~269 ppi density)",
+      "protection": "Panda Glass, Mohs level 8"
+    },
+    "platform": {
+      "os": "Android 15, DokeOS 4.2",
+      "chipset": "Unisoc T615 (12 nm)",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "128GB 4GB RAM, 256GB 6GB RAM"
+    },
+    "main_camera": {
+      "dual": "16 MP, f/1.8, (wide), 1/3.06\"Auxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.2, (wide), 1/5.0\"",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 10000 mAh",
+      "charging": "18W wired5W reverse wired"
+    },
+    "misc": {
+      "colors": "Black, Orange, Green"
+    },
+    "eu_label": {
+      "energy": "Class B",
+      "battery": "97:15h endurance, 800 cycles",
+      "free_fall": "Class A (276 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-fort1.jpg",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Xplore 1",
+    "url": "https://www.gsmarena.com/blackview_xplore_1_5g-14127.php",
+    "parsed_at": "2026-01-23T03:39:51.676682",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1800 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 34, 38, 39, 40, 41, 66",
+      "5g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, August 31",
+      "status": "Available. Released 2025, September"
+    },
+    "body": {
+      "dimensions": "184 x 83 x 29.5 mm (7.24 x 3.27 x 1.16 in)",
+      "weight": "638 g (1.41 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz, 700 nits",
+      "size": "6.78 inches, 109.2 cm2(~71.5% screen-to-body ratio)",
+      "resolution": "1080 x 2460 pixels (~396 ppi density)",
+      "protection": "Corning Gorilla Glass 5, Mohs level 7"
+    },
+    "platform": {
+      "os": "Android 15, DokeOS 4.2",
+      "chipset": "Mediatek Dimensity 7050 (6 nm)",
+      "cpu": "Octa-core (2x2.6 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G68 MC4"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 12GB RAM, 512GB 16GB RAM"
+    },
+    "main_camera": {
+      "dual": "64 MP, f/1.8, (wide), 1/2.0\", PDAF20 MP, f/1.8, (night vision), 1/2.8\", 2 infrared night vision lights",
+      "features": "LED flash, HDR, panorama",
+      "video": "4K@30fps, 1080p@60fps"
+    },
+    "selfie_camera": {
+      "single": "50 MP, f/1.8, (wide), 1/2.76\", PDAF",
+      "video": "4K@30fps, 1080p@60fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, GALILEO, BDS, QZSS",
+      "nfc": "Yes",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "20000 mAh",
+      "charging": "55W wired5W reverse wired"
+    },
+    "misc": {
+      "colors": "Black, Orange",
+      "price": "About 350 EUR"
+    },
+    "eu_label": {
+      "energy": "Class C",
+      "battery": "154:36h endurance, 800 cycles",
+      "free_fall": "Class A (275 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-xplore1.jpg",
+    "price": "About 350 EUR",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Active 12 Pro",
+    "url": "https://www.gsmarena.com/blackview_active_12_pro_5g-14064.php",
+    "parsed_at": "2026-01-23T03:39:53.285205",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 34, 38, 39, 40, 41, 66",
+      "5g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41, 77, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, August",
+      "status": "Available. Released 2025, August"
+    },
+    "body": {
+      "dimensions": "267.7 x 179 x 28.3 mm (10.54 x 7.05 x 1.11 in)",
+      "weight": "1522 g (3.36 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz, 650 nits",
+      "size": "11.0 inches, 350.9 cm2(~73.2% screen-to-body ratio)",
+      "resolution": "1200 x 1920 pixels, 16:10 ratio (~206 ppi density)",
+      "protection": "Corning Gorilla Glass 5, Mohs level 7"
+    },
+    "platform": {
+      "os": "Android 15, Doke OS_P 4.2",
+      "chipset": "Mediatek Dimensity 7300 (4 nm)",
+      "cpu": "Octa-core (4x2.5 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G615 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 12GB RAM, 1TB 16GB RAM"
+    },
+    "main_camera": {
+      "dual": "108 MP, f/1.9, (wide), 1/1.67\", PDAF20 MP, (night vision)",
+      "features": "LED flash",
+      "video": "1440p@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "50 MP, f/2.3, (wide), 1/2.76\", PDAF",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6e, dual-band",
+      "bluetooth": "5.4, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "FM Radio",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "30000 mAh",
+      "charging": "120W wired10W reverse wired"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 580 EUR"
+    },
+    "our_tests": {
+      "performance": "AnTuTu: 711905 (v10)GeekBench: 3220 (v6)3DMark: 878 (Wild Life Extreme)",
+      "display": "677 nits max brightness (measured)"
+    },
+    "eu_label": {
+      "energy": "Class G",
+      "battery": "159:42h endurance, 800 cycles",
+      "free_fall": "Class B (174 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-active-12-pro.jpg",
+    "price": "About 580 EUR",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Mega 3",
+    "url": "https://www.gsmarena.com/blackview_mega_3-13940.php",
+    "parsed_at": "2026-01-23T03:39:54.853418",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20, 28, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, June",
+      "status": "Available. Released 2025, June 16"
+    },
+    "body": {
+      "dimensions": "278.5 x 180.5 x 7.4 mm (10.96 x 7.11 x 0.29 in)",
+      "weight": "555 g (1.22 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "12.1 inches, 424.5 cm2(~84.5% screen-to-body ratio)",
+      "resolution": "1600 x 2560 pixels, 16:10 ratio (~249 ppi density)",
+      "protection": "Mohs level 7"
+    },
+    "platform": {
+      "os": "Android 15, DokeOS_P 4.1",
+      "chipset": "Mediatek Helio G100 (6 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 12GB RAM"
+    },
+    "main_camera": {
+      "single": "50 MP, f/1.8, (wide), 1/2.6\", AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "13 MP, (wide), 1/4\"",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers (4 speakers)",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac",
+      "bluetooth": "5.0",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 8800 mAh",
+      "charging": "33W wired"
+    },
+    "misc": {
+      "colors": "Grey, Blue"
+    },
+    "eu_label": {
+      "energy": "Class D",
+      "battery": "162:42h endurance, 800 cycles",
+      "free_fall": "Class C (121 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-mega3.jpg",
+    "brand": "Blackview"
+  },
+  {
+    "name": "BL7000",
+    "url": "https://www.gsmarena.com/blackview_bl7000_5g-13849.php",
+    "parsed_at": "2026-01-23T03:39:56.892389",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1800 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 34, 38, 39, 40, 41, 66",
+      "5g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41, 77, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, May",
+      "status": "Available. Released 2025, May"
+    },
+    "body": {
+      "dimensions": "182.2 x 86 x 14.5 mm (7.17 x 3.39 x 0.57 in)",
+      "weight": "357 g (12.59 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz, 750 nits",
+      "size": "6.78 inches, 109.2 cm2(~69.7% screen-to-body ratio)",
+      "resolution": "1080 x 2460 pixels (~396 ppi density)",
+      "protection": "Corning Gorilla Glass 5, Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15, DokeOS 4.1",
+      "chipset": "Mediatek Dimensity 6300 (6 nm)",
+      "cpu": "Octa-core (2x2.4 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.8, (wide), 1/2.76\", PDAF20 MP, f/2.0, (night vision), 1/2.8\", 2 infrared night vision lightsAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1440p@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.2, (wide)",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS, QZSS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "7500 mAh",
+      "charging": "33W wired6W reverse wired"
+    },
+    "misc": {
+      "colors": "Black, Orange",
+      "price": "$ 199.99 / £ 225.99 / € 258.99"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "118:45h endurance, 800 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-bl7000.jpg",
+    "price": "$ 199.99 / £ 225.99 / € 258.99",
+    "brand": "Blackview"
+  },
+  {
+    "name": "BV7300",
+    "url": "https://www.gsmarena.com/blackview_bv7300-13848.php",
+    "parsed_at": "2026-01-23T03:39:58.425373",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 20, 19, 26, 28, 40, 41, 38, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, April",
+      "status": "Available. Released 2025, May"
+    },
+    "body": {
+      "dimensions": "186 x 85 x 24 mm (7.32 x 3.35 x 0.94 in)",
+      "weight": "528 g (1.16 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz, 700 nits",
+      "size": "6.67 inches, 107.2 cm2(~67.8% screen-to-body ratio)",
+      "resolution": "720 x 1604 pixels, 20:9 ratio (~264 ppi density)",
+      "protection": "Corning Gorilla Glass 5, Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 14, DokeOS 4.0",
+      "chipset": "Mediatek Helio G81 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G52 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 6GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.8, (wide), 1/2.76\", PDAF20 MP, f/2.0, (night vision), 1/2.8\", 2 infrared night vision lights",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.2, (wide)",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "15000 mAh",
+      "charging": "45W wired7W reverse wired"
+    },
+    "misc": {
+      "colors": "Black, Orange"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "166:39h endurance, 800 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-bv7300.jpg",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Mega 2 WiFi",
+    "url": "https://www.gsmarena.com/blackview_mega_2_wifi-13840.php",
+    "parsed_at": "2026-01-23T03:39:59.841852",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2025, April",
+      "status": "Available. Released 2025, April"
+    },
+    "body": {
+      "dimensions": "281.7 x 177.2 x 8 mm (11.09 x 6.98 x 0.31 in)",
+      "weight": "615 g (1.36 lb)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "12.0 inches, 409.9 cm2(~82.1% screen-to-body ratio)",
+      "resolution": "1200 x 2000 pixels, 5:3 ratio (~194 ppi density)",
+      "protection": "Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15, DokeOS_P 4.1",
+      "chipset": "Allwinner A733 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A76 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "IMG BXM-4-64 MC01"
+    },
+    "memory": {
+      "card_slot": "Unspecified",
+      "internal": "256GB 12GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.2, A2DP",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Po 9000 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Celestial Grey, Ice Blue, Moss Green"
+    },
+    "eu_label": {
+      "energy": "Class E",
+      "battery": "114:00h endurance, 900 cycles",
+      "free_fall": "Class C (104 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-mega2-wifi.jpg",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Mega 8",
+    "url": "https://www.gsmarena.com/blackview_mega_8-13839.php",
+    "parsed_at": "2026-01-23T03:40:01.315372",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20, 28, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, April",
+      "status": "Available. Released 2025, May"
+    },
+    "body": {
+      "dimensions": "302 x 197.5 x 7.9 mm (11.89 x 7.78 x 0.31 in)",
+      "weight": "736 g (1.62 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "13.0 inches, 490.0 cm2(~82.2% screen-to-body ratio)",
+      "resolution": "1200 x 1920 pixels, 16:10 ratio (~174 ppi density)",
+      "protection": "Mohs level 4"
+    },
+    "platform": {
+      "os": "Android 15, DokeOS_P 4.1",
+      "chipset": "Unisoc T620 (12 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G57"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 12GB RAM, 512GB 12GB RAM"
+    },
+    "main_camera": {
+      "single": "50 MP",
+      "features": "LED flash, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "13 MP",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers (4 speakers)",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity (accessories only)"
+    },
+    "battery": {
+      "type": "Li-Ion 11000 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Space Grey, Twilight Blue, Lagoon Green"
+    },
+    "eu_label": {
+      "energy": "Class F",
+      "battery": "114:00h endurance, 1000 cycles",
+      "free_fall": "Class D (52 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-mega8.jpg",
+    "brand": "Blackview"
+  },
+  {
+    "name": "BV4800 Pro",
+    "url": "https://www.gsmarena.com/blackview_bv4800_pro-13716.php",
+    "parsed_at": "2026-01-23T03:40:03.027278",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "2, 3, 4, 5, 7, 12, 13, 17, 26, 28, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, December",
+      "status": "Available. Released 2024, December"
+    },
+    "body": {
+      "dimensions": "174.7 x 81.5 x 13.5 mm (6.88 x 3.21 x 0.53 in)",
+      "weight": "285 g (10.05 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.56 inches, 103.4 cm2(~72.6% screen-to-body ratio)",
+      "resolution": "720 x 1612 pixels, 20:9 ratio (~269 ppi density)",
+      "protection": "Corning Gorilla Glass 5, Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 14, DokeOS 4.0",
+      "chipset": "Unisoc T606 (12 nm)",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "128GB 4GB RAM"
+    },
+    "main_camera": {
+      "dual": "16 MP, f/2.2, (wide), AF2 MP, f/2.8",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.2, (wide)",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5180 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Black, Orange, Green"
+    },
+    "eu_label": {
+      "energy": "Class C",
+      "battery": "43:06h endurance, 800 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class C"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-bv4800-pro.jpg",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Wave 8C",
+    "url": "https://www.gsmarena.com/blackview_wave_8c-13638.php",
+    "parsed_at": "2026-01-23T03:40:04.395257",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100 - International",
+      "4g_bands": "1, 3, 7, 8, 19, 20, 38, 40, 41 - International",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, November",
+      "status": "Available. Released 2024, November"
+    },
+    "body": {
+      "dimensions": "163.2 x 75.2 x 8.8 mm (6.43 x 2.96 x 0.35 in)",
+      "weight": "193 g (6.81 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 450 nits",
+      "size": "6.56 inches, 103.4 cm2(~84.2% screen-to-body ratio)",
+      "resolution": "720 x 1612 pixels, 20:9 ratio (~269 ppi density)",
+      "protection": "Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 14 (Go edition), DokeOS 4.0",
+      "chipset": "Unisoc SC9863A (28 nm)",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+      "gpu": "IMG8322"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "64GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, (wide)",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, (wide)",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO",
+      "nfc": "No",
+      "radio": "FM radio, RDS, recording",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "5W wired"
+    },
+    "misc": {
+      "colors": "Sunset Purple, Dawn Blue, Dusk Black"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "71:45h endurance, 1100 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-wave8c.jpg",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Wave 8",
+    "url": "https://www.gsmarena.com/blackview_wave_8-13637.php",
+    "parsed_at": "2026-01-23T03:40:06.172728",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100 - International",
+      "4g_bands": "1, 3, 7, 8, 19, 20, 38, 40, 41 - International",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, November",
+      "status": "Available. Released 2024, November"
+    },
+    "body": {
+      "dimensions": "163.2 x 75.2 x 8.8 mm (6.43 x 2.96 x 0.35 in)",
+      "weight": "192 g (6.77 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 450 nits",
+      "size": "6.56 inches, 103.4 cm2(~84.2% screen-to-body ratio)",
+      "resolution": "720 x 1612 pixels, 20:9 ratio (~269 ppi density)",
+      "protection": "Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 14, DokeOS 4.0",
+      "chipset": "Unisoc T606 (12 nm)",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, (wide)",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, (wide)",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Sunset Purple, Dawn Blue, Dusk Black",
+      "sar": "0.70 W/kg (head) 1.40 W/kg (body)"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "71:07h endurance, 1100 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-wave8.jpg",
+    "brand": "Blackview"
+  },
+  {
+    "name": "BV8200",
+    "url": "https://www.gsmarena.com/blackview_bv8200-13636.php",
+    "parsed_at": "2026-01-23T03:40:07.517181",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 34, 38, 39, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, December 31",
+      "status": "Available. Released 2024, December 31"
+    },
+    "body": {
+      "dimensions": "174.6 x 81.1 x 16.5 mm (6.87 x 3.19 x 0.65 in)",
+      "weight": "370 g (13.05 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz, 500 nits",
+      "size": "6.5 inches, 102.0 cm2(~72.0% screen-to-body ratio)",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~405 ppi density)",
+      "protection": "Corning Gorilla Glass 5, Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 14, Doke OS 4.0",
+      "chipset": "Mediatek Helio G100 (6 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "256GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.9, (wide), 1/1.57\", PDAF, OIS13 MP, f/2.2, (ultrawide), 1/3.0\"",
+      "features": "LED flash, HDR",
+      "video": "1440p@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.2, (wide), 1/3.1\"",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "8800 mAh",
+      "charging": "45W wired5W reverse wired"
+    },
+    "misc": {
+      "colors": "Black, Green, Orange",
+      "price": "About 290 EUR"
+    },
+    "eu_label": {
+      "energy": "Class A",
+      "battery": "118:45h endurance, 800 cycles",
+      "free_fall": "Class A (270 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-bv8200.jpg",
+    "price": "About 290 EUR",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Mega 2",
+    "url": "https://www.gsmarena.com/blackview_mega_2-13635.php",
+    "parsed_at": "2026-01-23T03:40:08.806346",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20, 28, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, January",
+      "status": "Available. Released 2025, January"
+    },
+    "body": {
+      "dimensions": "281.7 x 177.2 x 8 mm (11.09 x 6.98 x 0.31 in)",
+      "weight": "615 g (1.36 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "12.0 inches, 409.9 cm2(~82.1% screen-to-body ratio)",
+      "resolution": "1200 x 2000 pixels, 5:3 ratio (~194 ppi density)",
+      "protection": "Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Unisoc T615 (12 nm)",
+      "cpu": "Octa-core (2x1.8 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Yes",
+      "bluetooth": "Yes",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "Unspecified",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "9000 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Grey, Blue, Green"
+    },
+    "eu_label": {
+      "energy": "Class D",
+      "battery": "108:47h endurance, 800 cycles",
+      "free_fall": "Class B (156 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-mega2.jpg",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Tab 60 Pro",
+    "url": "https://www.gsmarena.com/blackview_tab_60_pro-13634.php",
+    "parsed_at": "2026-01-23T03:40:10.127843",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 19, 20, 28, 38, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, January",
+      "status": "Available. Released 2025, January"
+    },
+    "body": {
+      "dimensions": "242.7 x 161.5 x 8.5 mm (9.56 x 6.36 x 0.33 in)",
+      "weight": "543 g (1.20 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~75.5% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~149 ppi density)",
+      "protection": "Mohs level 4"
+    },
+    "platform": {
+      "os": "Android 14, DokeOS_P 4.0",
+      "chipset": "Unisoc T606 (12 nm)",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 4GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "720p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "FM Radio",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 7700 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Grey, Blue, Green"
+    },
+    "eu_label": {
+      "energy": "Class D",
+      "battery": "142:30h endurance, 800 cycles",
+      "free_fall": "Class D (52 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-tab-60-pro.jpg",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Tab 60 WiFi",
+    "url": "https://www.gsmarena.com/blackview_tab_60_wifi-13633.php",
+    "parsed_at": "2026-01-23T03:40:12.178281",
+    "network": {
+      "technology": "GSM",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 N/A",
+      "3g_bands": "N/A",
+      "4g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2025, January",
+      "status": "Available. Released 2025, January"
+    },
+    "body": {
+      "dimensions": "242.7 x 161.5 x 8.5 mm (9.56 x 6.36 x 0.33 in)",
+      "weight": "538 g (1.19 lb)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~75.5% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~149 ppi density)",
+      "protection": "Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 14, Doke OS_P 4.0",
+      "chipset": "AllWinner A523",
+      "cpu": "Octa-core",
+      "gpu": "Mali-G57"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "FM Radio",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "5100 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Grey, Blue, Green",
+      "price": "About 90 EUR"
+    },
+    "eu_label": {
+      "energy": "Class E",
+      "battery": "67:13h endurance, 800 cycles",
+      "free_fall": "Class B (156 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-tab-60-wifi.jpg",
+    "price": "About 90 EUR",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Active 10 Pro",
+    "url": "https://www.gsmarena.com/blackview_active_10_pro-13566.php",
+    "parsed_at": "2026-01-23T03:40:13.762363",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 25, 26, 28, 30, 34, 38, 39, 40, 41, 66",
+      "5g_bands": "1, 3, 5, 7, 8, 20, 28, 38, 40, 41, 77, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2024, December 09",
+      "status": "Available. Released 2024, December 09"
+    },
+    "body": {
+      "dimensions": "267.6 x 179 x 19.5 mm (10.54 x 7.05 x 0.77 in)",
+      "weight": "1214 g (2.68 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz, 360 nits",
+      "size": "10.95 inches, 347.7 cm2(~72.6% screen-to-body ratio)",
+      "resolution": "1200 x 1920 pixels, 16:10 ratio (~207 ppi density)",
+      "protection": "Corning Gorilla Glass 5, Mohs level 5"
+    },
+    "platform": {
+      "os": "Android 14, Doke OS_P 4.0",
+      "chipset": "Mediatek Dimensity 7300 (4 nm)",
+      "cpu": "Octa-core (4x2.5 GHz Cortex-A78 & 4x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G615 MC2"
+    },
+    "memory": {
+      "card_slot": "Unspecified",
+      "internal": "256GB 12GB RAM, 512GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "108 MP, (wide)20 MP, (night vision)",
+      "features": "LED flash",
+      "video": "1080p@60fps"
+    },
+    "selfie_camera": {
+      "single": "50 MP, (wide)",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.4, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "FM Radio",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass, barometer"
+    },
+    "battery": {
+      "type": "30000 mAh",
+      "charging": "55W wired"
+    },
+    "misc": {
+      "colors": "Black, Orange",
+      "sar": "1.34 W/kg (body)",
+      "price": "About 330 EUR"
+    },
+    "eu_label": {
+      "energy": "Class D",
+      "battery": "166:39h endurance, 2000 cycles",
+      "free_fall": "Class A (208 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-active-10-pro.jpg",
+    "price": "About 330 EUR",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Shark 9",
+    "url": "https://www.gsmarena.com/blackview_shark_9-13453.php",
+    "parsed_at": "2026-01-23T03:40:15.093051",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 19, 20, 26, 28, 38, 39, 40, 41, 66",
+      "5g_bands": "1, 2, 3, 5, 7, 8, 20, 26, 28, 38, 40, 41, 66, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2024, October",
+      "status": "Available. Released 2024, November"
+    },
+    "body": {
+      "dimensions": "164.8 x 75.6 x 8.7 mm (6.49 x 2.98 x 0.34 in)",
+      "weight": "200 g (7.05 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz, 700 nits",
+      "size": "6.67 inches, 107.2 cm2(~86.1% screen-to-body ratio)",
+      "resolution": "720 x 1604 pixels, 20:9 ratio (~264 ppi density)",
+      "protection": "Mohs level 7"
+    },
+    "platform": {
+      "os": "Android 14, Doke OS 4.0",
+      "chipset": "Unisoc T820"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, (wide), PDAF2 MP (macro)Auxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, (wide)",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Starry Rock Black, Azure Wave Blue"
+    },
+    "eu_label": {
+      "energy": "Class B",
+      "battery": "49:06h endurance, 800 cycles",
+      "free_fall": "Class C (138 falls)",
+      "repairability": "Class B"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/blackview-shark-9.jpg",
+    "brand": "Blackview"
+  },
+  {
+    "name": "Tab9WiFi",
+    "url": "https://www.gsmarena.com/blackview_tab9wifi-13455.php",
+    "parsed_at": "2026-01-23T03:40:16.616635",
+    "brand": "Blackview"
+  }
+]

@@ -1,0 +1,555 @@
+{
+  "name": "GreenSpark - Parse with Proxy Rotation",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "greenspark/parse/products",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "POST /parse/products",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 200],
+      "webhookId": "greenspark-parse-products"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $input.first().json.body || {};\n\nreturn [{\n  json: {\n    city_id: body.city_id || '16344',\n    category: body.category || 'komplektuyushchie_dlya_remonta',\n    max_pages: body.max_pages || 100,\n    delay_ms: body.delay_ms || 1000,\n    use_proxy: body.use_proxy !== false,\n    save_to_db: body.save_to_db !== false\n  }\n}];"
+      },
+      "id": "config",
+      "name": "Parse Config",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 200]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT proxy FROM zip_proxies \nWHERE status = 'working' \n  AND 'greenspark' != ALL(COALESCE(banned_sites, '{}'))\nORDER BY last_used_at ASC NULLS FIRST, success_count DESC\nLIMIT 1",
+        "options": {}
+      },
+      "id": "get-proxy",
+      "name": "Get Working Proxy",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [440, 100],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GreenSpark"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:5678/webhook/greenspark/mcp/cookies",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={ \"city_id\": \"{{ $('Parse Config').item.json.city_id }}\" }",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 60000
+        }
+      },
+      "id": "get-cookies",
+      "name": "Get Cookies via MCP",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Merge config with proxy and cookies\nconst config = $('Parse Config').first().json;\nconst proxyResult = $('Get Working Proxy').first().json;\nconst cookiesResult = $('Get Cookies via MCP').first().json;\n\nconst proxy = proxyResult.proxy || null;\nconst cookies = cookiesResult.cookie_string || `magazine=${config.city_id}; global_magazine=${config.city_id}; catalog-per-page=100`;\n\nreturn [{\n  json: {\n    ...config,\n    proxy: proxy,\n    cookies: cookies,\n    current_page: 1,\n    total_products: 0,\n    products: []\n  }\n}];"
+      },
+      "id": "merge-config",
+      "name": "Merge Config",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://green-spark.ru/local/api/catalog/products/?path[]={{ $json.category }}&perPage=100&page={{ $json.current_page }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 30000,
+          "proxy": "={{ $json.proxy ? 'http://' + $json.proxy : '' }}"
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Cookie",
+              "value": "={{ $json.cookies }}"
+            },
+            {
+              "name": "Referer",
+              "value": "https://green-spark.ru/catalog/"
+            }
+          ]
+        }
+      },
+      "id": "fetch-page",
+      "name": "Fetch Products Page",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [880, 200]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "status-ok",
+              "leftValue": "={{ $json.statusCode }}",
+              "rightValue": 200,
+              "operator": {
+                "type": "number",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "check-response",
+      "name": "Response OK?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1100, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Parse products from API response\nconst response = $input.first().json;\nconst prevState = $('Merge Config').first().json;\nconst body = response.body || {};\n\nconst products = body.products || [];\nconst pagination = body.pagination || {};\n\n// Extract product data\nconst parsedProducts = products.map(p => ({\n  name: p.name,\n  article: p.article || p.code,\n  url: p.url,\n  price: p.price,\n  price_wholesale: p.opt_price || p.price,\n  in_stock: p.quantity > 0 || p.available,\n  category: prevState.category\n}));\n\nconst hasMore = pagination.current_page < pagination.total_pages && \n               prevState.current_page < prevState.max_pages;\n\nreturn [{\n  json: {\n    ...prevState,\n    current_page: prevState.current_page + 1,\n    total_products: prevState.total_products + parsedProducts.length,\n    products: parsedProducts,\n    has_more: hasMore,\n    pagination: pagination\n  }\n}];"
+      },
+      "id": "parse-products",
+      "name": "Parse Products",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1320, 100]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE zip_proxies SET \n  success_count = success_count + 1,\n  last_used_at = NOW()\nWHERE proxy = '{{ $('Merge Config').item.json.proxy }}'",
+        "options": {}
+      },
+      "id": "proxy-success",
+      "name": "Mark Proxy Success",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1320, 250],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GreenSpark"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "save-enabled",
+              "leftValue": "={{ $json.save_to_db }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "should-save",
+      "name": "Save to DB?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1540, 100]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Prepare products for batch insert\nconst state = $input.first().json;\nconst cityId = state.city_id;\n\nreturn state.products.map(p => ({\n  json: {\n    ...p,\n    city_id: cityId\n  }\n}));"
+      },
+      "id": "split-products",
+      "name": "Split Products",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1760, 0]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "INSERT INTO greenspark_nomenclature (name, product_url, article, category, first_seen_at, updated_at)\nVALUES (\n  '{{ $json.name.replace(/'/g, \"''\") }}',\n  '{{ $json.url }}',\n  '{{ $json.article }}',\n  '{{ $json.category }}',\n  NOW(),\n  NOW()\n)\nON CONFLICT (product_url) DO UPDATE SET\n  name = EXCLUDED.name,\n  article = EXCLUDED.article,\n  updated_at = NOW()\nRETURNING id",
+        "options": {}
+      },
+      "id": "upsert-nomenclature",
+      "name": "Upsert Nomenclature",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1980, 0],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GreenSpark"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH outlet AS (\n  SELECT id FROM outlets WHERE code = 'greenspark-{{ $('Split Products').item.json.city_id }}'\n)\nINSERT INTO greenspark_prices (nomenclature_id, outlet_id, price, price_wholesale, in_stock, updated_at)\nSELECT \n  {{ $json.id }},\n  outlet.id,\n  {{ $('Split Products').item.json.price || 0 }},\n  {{ $('Split Products').item.json.price_wholesale || 0 }},\n  {{ $('Split Products').item.json.in_stock ? 'true' : 'false' }},\n  NOW()\nFROM outlet\nON CONFLICT (nomenclature_id, outlet_id) DO UPDATE SET\n  price = EXCLUDED.price,\n  price_wholesale = EXCLUDED.price_wholesale,\n  in_stock = EXCLUDED.in_stock,\n  updated_at = NOW()",
+        "options": {}
+      },
+      "id": "upsert-price",
+      "name": "Upsert Price",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [2200, 0],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GreenSpark"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "has-more",
+              "leftValue": "={{ $('Parse Products').item.json.has_more }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "has-more",
+      "name": "Has More Pages?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [1760, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Prepare for next page with delay\nconst state = $('Parse Products').first().json;\n\n// Add delay\nconst delay = state.delay_ms || 1000;\nawait new Promise(r => setTimeout(r, delay));\n\nreturn [{ json: state }];"
+      },
+      "id": "delay-next",
+      "name": "Delay & Continue",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1980, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Final response\nconst state = $('Parse Products').first().json;\n\nreturn [{\n  json: {\n    success: true,\n    city_id: state.city_id,\n    category: state.category,\n    total_products: state.total_products,\n    pages_parsed: state.current_page - 1,\n    proxy_used: state.proxy || 'direct'\n  }\n}];"
+      },
+      "id": "final-response",
+      "name": "Build Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1980, 350]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [2200, 350]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Proxy failed - mark and try without proxy\nconst prevState = $('Merge Config').first().json;\nconst proxy = prevState.proxy;\n\nreturn [{\n  json: {\n    ...prevState,\n    failed_proxy: proxy,\n    proxy: null  // Retry without proxy\n  }\n}];"
+      },
+      "id": "proxy-failed",
+      "name": "Proxy Failed",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1320, 350]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE zip_proxies SET \n  fail_count = fail_count + 1,\n  status = CASE WHEN fail_count >= 3 THEN 'dead' ELSE status END,\n  banned_sites = array_append(COALESCE(banned_sites, '{}'), 'greenspark')\nWHERE proxy = '{{ $json.failed_proxy }}'",
+        "options": {}
+      },
+      "id": "mark-proxy-fail",
+      "name": "Mark Proxy Failed",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [1540, 350],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL GreenSpark"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "POST /parse/products": {
+      "main": [
+        [
+          {
+            "node": "Parse Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Config": {
+      "main": [
+        [
+          {
+            "node": "Get Working Proxy",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Get Cookies via MCP",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Working Proxy": {
+      "main": [
+        [
+          {
+            "node": "Merge Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Cookies via MCP": {
+      "main": [
+        [
+          {
+            "node": "Merge Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge Config": {
+      "main": [
+        [
+          {
+            "node": "Fetch Products Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Products Page": {
+      "main": [
+        [
+          {
+            "node": "Response OK?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Response OK?": {
+      "main": [
+        [
+          {
+            "node": "Parse Products",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Mark Proxy Success",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Proxy Failed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Products": {
+      "main": [
+        [
+          {
+            "node": "Save to DB?",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Has More Pages?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Save to DB?": {
+      "main": [
+        [
+          {
+            "node": "Split Products",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "Split Products": {
+      "main": [
+        [
+          {
+            "node": "Upsert Nomenclature",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upsert Nomenclature": {
+      "main": [
+        [
+          {
+            "node": "Upsert Price",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has More Pages?": {
+      "main": [
+        [
+          {
+            "node": "Delay & Continue",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Build Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Delay & Continue": {
+      "main": [
+        [
+          {
+            "node": "Fetch Products Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build Response": {
+      "main": [
+        [
+          {
+            "node": "Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Proxy Failed": {
+      "main": [
+        [
+          {
+            "node": "Mark Proxy Failed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mark Proxy Failed": {
+      "main": [
+        [
+          {
+            "node": "Fetch Products Page",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["greenspark", "parser", "proxy"]
+}

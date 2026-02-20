@@ -1,0 +1,248 @@
+{
+  "source": "siriust.ru (Profi)",
+  "date": "2026-01-26T18:41:00.956605",
+  "total": 0,
+  "outlets": [
+    {
+      "city": "Москва",
+      "shop": "Отдел оптовых продаж",
+      "outlet_code": "profi-optovyy",
+      "products_count": 0
+    },
+    {
+      "city": "Москва",
+      "shop": "Савеловский радиорынок",
+      "outlet_code": "profi-savelovo-1",
+      "products_count": 0
+    },
+    {
+      "city": "Москва",
+      "shop": "Митинский радиорынок",
+      "outlet_code": "profi-mitino--1",
+      "products_count": 0
+    },
+    {
+      "city": "Москва",
+      "shop": "Радиокомплекс Южный",
+      "outlet_code": "profi-yuzhnyy",
+      "products_count": 0
+    },
+    {
+      "city": "Адлер",
+      "shop": "Профи Адлер",
+      "outlet_code": "profi-adler",
+      "products_count": 0
+    },
+    {
+      "city": "Архангельск",
+      "shop": "Профи Архангельск",
+      "outlet_code": "profi-arxangelsk",
+      "products_count": 0
+    },
+    {
+      "city": "Астрахань",
+      "shop": "Профи Астрахань",
+      "outlet_code": "profi-astraxan",
+      "products_count": 0
+    },
+    {
+      "city": "Волгоград",
+      "shop": "Профи Волгоград",
+      "outlet_code": "profi-volgograd--2",
+      "products_count": 0
+    },
+    {
+      "city": "Воронеж",
+      "shop": "Профи Воронеж",
+      "outlet_code": "profi-voronezh",
+      "products_count": 0
+    },
+    {
+      "city": "Екатеринбург",
+      "shop": "Екатеринбург точка 1",
+      "outlet_code": "profi-ekaterinburg--1",
+      "products_count": 0
+    },
+    {
+      "city": "Ижевск",
+      "shop": "Профи Ижевск",
+      "outlet_code": "profi-izhevsk",
+      "products_count": 0
+    },
+    {
+      "city": "Казань",
+      "shop": "Казань точка 1",
+      "outlet_code": "profi-kazan--1",
+      "products_count": 0
+    },
+    {
+      "city": "Казань",
+      "shop": "Казань точка 2",
+      "outlet_code": "profi-kazan--2",
+      "products_count": 0
+    },
+    {
+      "city": "Калининград",
+      "shop": "Профи Калининград",
+      "outlet_code": "profi-kaliningrad",
+      "products_count": 0
+    },
+    {
+      "city": "Кемерово",
+      "shop": "Профи Кемерово",
+      "outlet_code": "profi-kemerovo--2",
+      "products_count": 0
+    },
+    {
+      "city": "Кострома",
+      "shop": "Профи Кострома",
+      "outlet_code": "profi-kostroma",
+      "products_count": 0
+    },
+    {
+      "city": "Краснодар",
+      "shop": "Краснодар точка 1",
+      "outlet_code": "profi-krasnodar--1",
+      "products_count": 0
+    },
+    {
+      "city": "Краснодар",
+      "shop": "Краснодар точка 2",
+      "outlet_code": "profi-krasnodar--2",
+      "products_count": 0
+    },
+    {
+      "city": "Набережные Челны",
+      "shop": "Профи Набережные Челны",
+      "outlet_code": "profi-naberezhnye-chelny?1553760037663",
+      "products_count": 0
+    },
+    {
+      "city": "Нижний Новгород",
+      "shop": "Профи Нижний Новгород",
+      "outlet_code": "profi-nizhniy-novgorod--1",
+      "products_count": 0
+    },
+    {
+      "city": "Оренбург",
+      "shop": "Профи Оренбург",
+      "outlet_code": "profi-orenburg",
+      "products_count": 0
+    },
+    {
+      "city": "Пенза",
+      "shop": "Профи Пенза",
+      "outlet_code": "profi-penza",
+      "products_count": 0
+    },
+    {
+      "city": "Пермь",
+      "shop": "Профи Пермь",
+      "outlet_code": "profi-perm",
+      "products_count": 0
+    },
+    {
+      "city": "Ростов-на-Дону",
+      "shop": "Профи Ростов",
+      "outlet_code": "profi-rostov-na-donu",
+      "products_count": 0
+    },
+    {
+      "city": "Рязань",
+      "shop": "Профи Рязань",
+      "outlet_code": "profi-ryazan",
+      "products_count": 0
+    },
+    {
+      "city": "Самара",
+      "shop": "Самара точка 1",
+      "outlet_code": "profi-samara--1",
+      "products_count": 0
+    },
+    {
+      "city": "Самара",
+      "shop": "Самара точка 2",
+      "outlet_code": "profi-samara--2",
+      "products_count": 0
+    },
+    {
+      "city": "Санкт-Петербург",
+      "shop": "Санкт-Петербург точка 3",
+      "outlet_code": "profi-sankt-peterburg--3?",
+      "products_count": 0
+    },
+    {
+      "city": "Санкт-Петербург",
+      "shop": "Санкт-Петербург точка 7",
+      "outlet_code": "profi-sankt-peterburg--7",
+      "products_count": 0
+    },
+    {
+      "city": "Санкт-Петербург",
+      "shop": "Санкт-Петербург точка 8",
+      "outlet_code": "profi-sankt-peterburg--8",
+      "products_count": 0
+    },
+    {
+      "city": "Саратов",
+      "shop": "Профи Саратов",
+      "outlet_code": "profi-saratov",
+      "products_count": 0
+    },
+    {
+      "city": "Смоленск",
+      "shop": "Профи Смоленск",
+      "outlet_code": "profi-smolensk",
+      "products_count": 0
+    },
+    {
+      "city": "Ставрополь",
+      "shop": "Профи Ставрополь",
+      "outlet_code": "profi-stavropol",
+      "products_count": 0
+    },
+    {
+      "city": "Тольятти",
+      "shop": "Профи Тольятти",
+      "outlet_code": "profi-tolyatti",
+      "products_count": 0
+    },
+    {
+      "city": "Тюмень",
+      "shop": "Профи Тюмень",
+      "outlet_code": "profi-tyumen",
+      "products_count": 0
+    },
+    {
+      "city": "Чебоксары",
+      "shop": "Профи Чебоксары",
+      "outlet_code": "profi-cheboksary",
+      "products_count": 0
+    },
+    {
+      "city": "Челябинск",
+      "shop": "Челябинск точка 1",
+      "outlet_code": "profi-chelyabinsk--1",
+      "products_count": 0
+    },
+    {
+      "city": "Челябинск",
+      "shop": "Челябинск точка 2",
+      "outlet_code": "profi-chelyabinsk--2",
+      "products_count": 0
+    },
+    {
+      "city": "Череповец",
+      "shop": "Профи Череповец",
+      "outlet_code": "profi-cherepovets",
+      "products_count": 0
+    },
+    {
+      "city": "Ярославль",
+      "shop": "Профи Ярославль",
+      "outlet_code": "profi-yaroslavl",
+      "products_count": 0
+    }
+  ],
+  "products": []
+}

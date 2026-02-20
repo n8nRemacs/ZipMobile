@@ -1,0 +1,245 @@
+{
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -200,
+        0
+      ],
+      "id": "manual-trigger",
+      "name": "When clicking 'Execute workflow'"
+    },
+    {
+      "parameters": {
+        "sshAuthenticateWith": "privateKey",
+        "command": "cd /opt/parsers/profi && python3 parse_profi.py",
+        "executeOnce": true
+      },
+      "type": "n8n-nodes-base.ssh",
+      "typeVersion": 1,
+      "position": [
+        40,
+        0
+      ],
+      "id": "ssh-parse",
+      "name": "Парсим прайс (SSH)",
+      "credentials": {
+        "sshPrivateKey": {
+          "id": "YOUR_SSH_CREDENTIAL_ID",
+          "name": "Server SSH"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE public.profi_price_for_update\nSET \n  brand_attr = CASE \n    WHEN brand_attr = '1. ЗАПЧАСТИ ДЛЯ APPLE' THEN 'Apple'\n    WHEN brand_attr = '2. ЗАПЧАСТИ ДЛЯ СОТОВЫХ' THEN 'ЗАПЧАСТИ ДЛЯ СОТОВЫХ'\n    ELSE brand_attr\n  END,\n  model_attr = CASE\n    WHEN model_attr = 'ЗАПЧАСТИ ДЛЯ APPLE IPAD'   THEN 'iPad'\n    WHEN model_attr = 'ЗАПЧАСТИ ДЛЯ APPLE IPHONE' THEN 'iPhone'\n    ELSE regexp_replace(model_attr, '^ЗАПЧАСТИ ДЛЯ\\s+', '', 'g')\n  END;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        280,
+        0
+      ],
+      "id": "normalize",
+      "name": "Нормализация",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "DELETE FROM public.profi_price_for_update\nWHERE NOT (\n  (brand_attr = '3. АКСЕССУАРЫ' AND model_attr = 'АКБ ДЛЯ МОБИЛЬНОЙ ТЕХНИКИ')\n  OR brand_attr IN ('2. ЗАПЧАСТИ ДЛЯ СОТОВЫХ','1. ЗАПЧАСТИ ДЛЯ APPLE', 'Apple', 'ЗАПЧАСТИ ДЛЯ СОТОВЫХ')\n);",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        520,
+        0
+      ],
+      "id": "filter-parts",
+      "name": "Удаляем не запчасти",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "UPDATE profi_price_for_update\nSET \n    brand_attr = TRIM(model_attr),\n    model_attr = NULL\nWHERE model_attr IS NOT NULL \n  AND TRIM(model_attr) != '';",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        760,
+        0
+      ],
+      "id": "move-model-to-brand",
+      "name": "Модели в Бренд",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH model_patterns AS (\n  SELECT unnest(ARRAY[\n    '16 Pro Max','15 Pro Max','14 Pro Max','13 Pro Max','12 Pro Max','11 Pro Max',\n    '16 Plus','15 Plus','14 Plus',\n    '16 Pro','15 Pro','14 Pro','13 Pro','12 Pro','11 Pro',\n    '13 Mini','12 Mini',\n    'XS Max','8 Plus','7 Plus','6S Plus','6 Plus',\n    'SE 2022','SE 2020',\n    '16e','16','15','14','13','12','11',\n    'XS','XR','X','8','7','6S','6','5S','5C','5','SE','4S','4'\n  ]) AS model\n),\nrows AS (\n  SELECT id, name\n  FROM public.profi_price_for_update\n  WHERE brand_attr = 'iPhone' AND name IS NOT NULL\n),\npat AS (\n  SELECT '(?i)\\y(' || string_agg(regexp_replace(model, '\\s+', ' ', 'g'), '|') || ')\\y' AS rx\n  FROM model_patterns\n),\nhits AS (\n  SELECT r.id, mp.model AS canonical_model,\n         position(lower(mp.model) in lower(r.name)) AS pos,\n         length(mp.model) AS len\n  FROM rows r\n  CROSS JOIN pat p\n  CROSS JOIN LATERAL regexp_matches(r.name, p.rx, 'g') AS m(m)\n  JOIN model_patterns mp ON lower(m.m[1]) = lower(mp.model)\n),\ndedup AS (\n  SELECT id, string_agg(canonical_model, '|' ORDER BY pos, len DESC) AS models_pipe\n  FROM (SELECT DISTINCT id, canonical_model, MIN(pos) AS pos, MAX(len) AS len FROM hits GROUP BY id, canonical_model) u\n  GROUP BY id\n)\nUPDATE public.profi_price_for_update pfu\nSET model_attr = d.models_pipe\nFROM dedup d\nWHERE d.id = pfu.id;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        1000,
+        0
+      ],
+      "id": "extract-models",
+      "name": "Извлекаем модели iPhone",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH ins AS (\n  INSERT INTO public.profi_price (fix, article, barcode, name, price_rub, stock_stars, note, brand_attr, model_attr, part_type_attr, seller, source_url, loaded_at)\n  SELECT NULL, u.article, u.barcode, u.name, u.price_rub, u.stock_stars, u.note, u.brand_attr, u.model_attr, u.part_type_attr, u.seller, NULL, NOW()\n  FROM public.profi_price_for_update u\n  LEFT JOIN public.profi_price p ON p.article = u.article\n  WHERE p.article IS NULL\n  RETURNING id\n)\nSELECT COUNT(*) AS inserted FROM ins;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        1240,
+        0
+      ],
+      "id": "insert-new",
+      "name": "Добавляем новые",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "WITH upd AS (\n  UPDATE public.profi_price AS p\n  SET price_rub = u.price_rub, stock_stars = u.stock_stars\n  FROM public.profi_price_for_update AS u\n  WHERE u.article = p.article\n    AND (p.price_rub IS DISTINCT FROM u.price_rub OR p.stock_stars IS DISTINCT FROM u.stock_stars)\n  RETURNING p.id\n)\nSELECT COUNT(*) AS updated FROM upd;",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        1480,
+        0
+      ],
+      "id": "update-prices",
+      "name": "Обновляем цены и наличие",
+      "credentials": {
+        "postgres": {
+          "id": "1DDkLrPkvDgZdhlw",
+          "name": "Postgres account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "When clicking 'Execute workflow'": {
+      "main": [
+        [
+          {
+            "node": "Парсим прайс (SSH)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Парсим прайс (SSH)": {
+      "main": [
+        [
+          {
+            "node": "Нормализация",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Нормализация": {
+      "main": [
+        [
+          {
+            "node": "Удаляем не запчасти",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Удаляем не запчасти": {
+      "main": [
+        [
+          {
+            "node": "Модели в Бренд",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Модели в Бренд": {
+      "main": [
+        [
+          {
+            "node": "Извлекаем модели iPhone",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Извлекаем модели iPhone": {
+      "main": [
+        [
+          {
+            "node": "Добавляем новые",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Добавляем новые": {
+      "main": [
+        [
+          {
+            "node": "Обновляем цены и наличие",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "instanceId": "530b9caf6d3d0554c7f433b384abca845599b24ecefd5677a8384fe2f03fd69b"
+  }
+}

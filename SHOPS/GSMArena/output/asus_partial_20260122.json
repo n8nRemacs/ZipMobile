@@ -1,0 +1,4137 @@
+[
+  {
+    "name": "Zenfone 4 Selfie ZD553KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_4_selfie_zd553kl-8784.php",
+    "parsed_at": "2026-01-22T13:15:43.090992",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100 - Global, India, Indonesia",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 40 - Global, India, Indonesia",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2017, August. Released 2017, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "155.7 x 75.9 x 7.9 mm (6.13 x 2.99 x 0.31 in)",
+      "weight": "144 g (5.08 oz)",
+      "build": "Glass front, aluminum back, aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~70.6% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)"
+    },
+    "platform": {
+      "os": "Android 7.0 (Nougat), upgradable to Android 8.1 (Oreo), ZenUI 5",
+      "chipset": "Qualcomm MSM8937 Snapdragon 430 (28 nm)",
+      "cpu": "Octa-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 505"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, 26mm (wide), PDAF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "dual": "20 MP, f/2.0, 31mm (standard), 1/2.8\", 1.0µm8 MP, 12mm (ultrawide)",
+      "features": "LED flash, panorama, HDR"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, EDR, LE",
+      "positioning": "GPS, GLONASS, BDS, GALILEO",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Deepsea Black, Mint Green, Rose Pink, Sunlight Gold",
+      "models": "X00LD",
+      "price": "About 250 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-4-selfie-zd553kl.jpg",
+    "price": "About 250 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 4 Max ZC520KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_4_max_zc520kl-8811.php",
+    "parsed_at": "2026-01-22T13:15:45.120094",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2017, August. Released 2017, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "150.5 x 73.3 x 8.8 mm (5.93 x 2.89 x 0.35 in)",
+      "weight": "156 g (5.50 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.2 inches, 74.5 cm2(~67.6% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 7 (Nougat), upgradable to Android 8 (Oreo), ZenUI 4",
+      "chipset": "Qualcomm MSM8917 Snapdragon 425 (28 nm)",
+      "cpu": "Quad-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 308"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, AFAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4100 mAh, non-removable",
+      "charging": "Reverse wired"
+    },
+    "misc": {
+      "colors": "Black, Gold, Silver",
+      "models": "X00HD",
+      "price": "About 180 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-ZC520KL.jpg",
+    "price": "About 180 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 4 Max Pro ZC554KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_4_max_pro_zc554kl-8814.php",
+    "parsed_at": "2026-01-22T13:15:46.339982",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100 - Global, India, Indonesia",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 40 - Global, India, Indonesia",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2017, August. Released 2017, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "154 x 76.9 x 8.9 mm (6.06 x 3.03 x 0.35 in)",
+      "weight": "181 g (6.38 oz)",
+      "build": "Glass front, aluminum back, aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~70.4% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)"
+    },
+    "platform": {
+      "os": "Android 7 (Nougat), ZenUI 4",
+      "chipset": "Qualcomm MSM8917 Snapdragon 425 (28 nm)Qualcomm MSM8937 Snapdragon 430 (28 nm)",
+      "cpu": "Quad-core 1.4 GHz Cortex-A53Octa-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 308Adreno 505"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.0, 26mm (wide), PDAF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.0, 18mm (ultrawide), 1/3.06\", 1.0µm",
+      "features": "LED"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS, GALILEO",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 5000 mAh, non-removable",
+      "charging": "18W wired2.5W reverse wired",
+      "stand-by": "Up to 1104 h (3G)",
+      "talk_time": "Up to 40 h (3G)"
+    },
+    "misc": {
+      "colors": "Deepsea Black, Sunlight Gold, Rose Pink",
+      "price": "About 250 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-4-max-zc554kl.jpg",
+    "price": "About 250 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 4 Max Plus ZC554KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_4_max_plus_zc554kl-8810.php",
+    "parsed_at": "2026-01-22T13:15:48.221033",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2017, August. Released 2017, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "154 x 76.9 x 8.9 mm (6.06 x 3.03 x 0.35 in)",
+      "weight": "181 g (6.38 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~70.4% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)"
+    },
+    "platform": {
+      "os": "Android 7 (Nougat), ZenUI 4",
+      "chipset": "Qualcomm MSM8917 Snapdragon 425 (28 nm)",
+      "cpu": "Quad-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 308"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, AFAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "features": "LED"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 5000 mAh, non-removable",
+      "charging": "Reverse wired"
+    },
+    "misc": {
+      "colors": "Deepsea Black, Sunlight Gold, Rose Pink",
+      "models": "ZC550TL, ZC554KL, X015D",
+      "price": "About 220 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-4-max-zc554kl.jpg",
+    "price": "About 220 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 4 Max ZC554KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_4_max_zc554kl-8749.php",
+    "parsed_at": "2026-01-22T13:15:49.957125",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2017, July. Released 2017, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "154 x 76.9 x 8.9 mm (6.06 x 3.03 x 0.35 in)",
+      "weight": "181 g (6.38 oz)",
+      "build": "Glass front (Gorilla Glass), aluminum back, aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "S-IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~70.4% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+      "protection": "Corning Gorilla Glass (unspecified version)"
+    },
+    "platform": {
+      "os": "Android 7 (Nougat), ZenUI 4",
+      "chipset": "Qualcomm MSM8937 Snapdragon 430 (28 nm)",
+      "cpu": "Octa-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 505"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, f/2.0, 25mm (wide), AF13 MP, f/2.0, 12mm, no AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.2, 24mm (wide)",
+      "features": "LED flash"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 5000 mAh, non-removable",
+      "charging": "10W wiredReverse wired"
+    },
+    "misc": {
+      "colors": "Titanium Gray, Rose Pink, Sand Gold, Deepsea Black",
+      "models": "X00ID, X00IS, X00HDA, ZC554KL",
+      "price": "About 270 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-4-max-zc554kl.jpg",
+    "price": "About 270 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad Z8s ZT582KL",
+    "url": "https://www.gsmarena.com/asus_zenpad_z8s_zt582kl-8801.php",
+    "parsed_at": "2026-01-22T13:15:51.704859",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA",
+      "4g_bands": "2, 4, 5, 13",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2017, August. Released 2017, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "204 x 133.9 x 6.9 mm (8.03 x 5.27 x 0.27 in)",
+      "weight": "306 g (10.79 oz)",
+      "build": "Glass front, aluminum back, aluminum frame",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "S-IPS LCD",
+      "size": "7.9 inches, 193.3 cm2(~70.8% screen-to-body ratio)",
+      "resolution": "1536 x 2048 pixels, 4:3 ratio (~324 ppi density)"
+    },
+    "platform": {
+      "os": "Android 7.0 (Nougat)",
+      "chipset": "Qualcomm MSM8976 Snapdragon 652 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A72 & 4x1.2 GHz Cortex-A53)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE, aptX",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4680 mAh, non-removable (18 Wh)"
+    },
+    "misc": {
+      "colors": "Black",
+      "sar": "1.19 W/kg (body)",
+      "price": "About 210 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-z8s-zt582kl.jpg",
+    "price": "About 210 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad 3s 8.0 Z582KL",
+    "url": "https://www.gsmarena.com/asus_zenpad_3s_8_0_z582kl-8711.php",
+    "parsed_at": "2026-01-22T13:15:53.058333",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2017, May. Released 2017, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "6.9 mm thickness",
+      "weight": "-",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "7.9 inches, 193.3 cm2",
+      "resolution": "1536 x 2048 pixels, 4:3 ratio (~324 ppi density)"
+    },
+    "platform": {
+      "os": "Android 7.1 (Nougat)",
+      "chipset": "Qualcomm MSM8976 Snapdragon 652 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A72 & 4x1.4 GHz Cortex-A53)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE, aptX",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4680 mAh, non-removable (18 Wh)"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 250 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-3-80-z581kl-.jpg",
+    "price": "About 250 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Go ZB552KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_go_zb552kl-8681.php",
+    "parsed_at": "2026-01-22T13:15:54.425492",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - Global",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20 - Global",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2017, May. Released 2017, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.4 x 76.4 x 10.9 mm (6.04 x 3.01 x 0.43 in)",
+      "weight": "168 g (5.93 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.2% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6 (Marshmallow), ZenUI 3",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0, AF"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable",
+      "stand-by": "Up to 480 h (3G)",
+      "talk_time": "Up to 16 h (3G)"
+    },
+    "misc": {
+      "colors": "Charcoal Black, Pearl White, Glamor Red, Sheer Gold, Glacier Gray, Silver Blue",
+      "models": "X007D, X007DA",
+      "price": "About 120 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-go-zb551kl.jpg",
+    "price": "About 120 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Live ZB501KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_live_zb501kl-8579.php",
+    "parsed_at": "2026-01-22T13:15:55.614767",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 8, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2017, February. Released 2017, March",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141.2 x 71.7 x 8 mm (5.56 x 2.82 x 0.31 in)",
+      "weight": "120 g (4.23 oz)",
+      "build": "Glass front, aluminum back, aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~68.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), ZenUI 3.5",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "features": "LED flash, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2, 1.4µm, AF",
+      "features": "LED falsh"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2650 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Shimmer Gold/Rose, Pink/Navy Black",
+      "models": "A007",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-live-zb501kl.jpg",
+    "price": "About 150 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 3s Max ZC521TL",
+    "url": "https://www.gsmarena.com/asus_zenfone_3s_max_zc521tl-8550.php",
+    "parsed_at": "2026-01-22T13:15:57.228008",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - Global",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 18, 19, 26, 28, 38, 41 - Taiwan",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2017, January. Released 2017, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "149.5 x 73.7 x 8.9 mm (5.89 x 2.90 x 0.35 in)",
+      "weight": "175 g (5.22 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.2 inches, 74.5 cm2(~67.7% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 7 (Nougat), ZenUI 3",
+      "chipset": "Mediatek MT6750 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "features": "Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 5000 mAh, non-removable",
+      "charging": "Reverse wired",
+      "stand-by": "Up to 816 h (3G)",
+      "talk_time": "Up to 28 h (3G)"
+    },
+    "misc": {
+      "colors": "Gold, Black",
+      "models": "X00GD",
+      "price": "About 180 EUR"
+    },
+    "our_tests": {
+      "performance": "GFXBench: 4.3fps (ES 3.1 onscreen)"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-3s-max-zc-521tl.jpg",
+    "price": "About 180 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad 3S 10 Z500KL",
+    "url": "https://www.gsmarena.com/asus_zenpad_3s_10_z500kl-8543.php",
+    "parsed_at": "2026-01-22T13:15:58.828103",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2 (dual-SIM model only)",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 9, 18, 19, 20, 26, 28, 38, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2017, January. Released 2017, January",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "242.3 x 164.2 x 6.8 mm (9.54 x 6.46 x 0.27 in)",
+      "weight": "490 g (1.08 lb)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "9.7 inches, 291.4 cm2(~73.2% screen-to-body ratio)",
+      "resolution": "1536 x 2048 pixels, 4:3 ratio (~264 ppi density)",
+      "protection": "Oleophobic coating"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Qualcomm MSM8956 Snapdragon 650",
+      "cpu": "Hexa-core (4x1.4 GHz Cortex-A53 & 2x1.8 GHz Cortex-A72)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE, EDR, aptX",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 7800 mAh, non-removable (30 Wh)",
+      "charging": "18W wired, QC3",
+      "talk_time": "Up to 16 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Silver, Grey",
+      "price": "About 350 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-3s.jpg",
+    "price": "About 350 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone AR ZS571KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_ar_zs571kl-8502.php",
+    "parsed_at": "2026-01-22T13:16:00.529901",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - Global",
+      "4g_bands": "1, 3, 5, 7, 8, 18, 19, 20, 26, 28, 38, 40, 41 - Global",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (3CA) Cat12 600/75 Mbps"
+    },
+    "launch": {
+      "announced": "2017, January. Released 2017, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "158.7 x 77.7 x 9 mm (6.25 x 3.06 x 0.35 in)",
+      "weight": "170 g (6.00 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.7 inches, 89.6 cm2(~72.6% screen-to-body ratio)",
+      "resolution": "1440 x 2560 pixels, 16:9 ratio (~515 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 7 (Nougat), ZenUI 3",
+      "chipset": "Qualcomm MSM8996 Snapdragon 821 (14 nm)",
+      "cpu": "Quad-core (2x2.35 GHz Kryo & 2x1.6 GHz Kryo)",
+      "gpu": "Adreno 530"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 6GB RAM, 128GB 6GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "single": "23 MP, f/2.0, 1/2.6\", 1.0µm, PDAF, 4-axis OIS, depth & motion tracking sensors",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "4K@24fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, barometer"
+    },
+    "battery": {
+      "type": "Li-Ion 3300 mAh, non-removable",
+      "charging": "18W wired, QC3, 60% in 39 min7.5W reverse wired"
+    },
+    "misc": {
+      "colors": "Black",
+      "models": "A002A, A002, V570KL, ZS571KL",
+      "price": "About 370 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-ar-.jpg",
+    "price": "About 370 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 3 Zoom ZE553KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_3_zoom_ze553kl-8509.php",
+    "parsed_at": "2026-01-22T13:16:02.067059",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - Global",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20 - Global",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps (Global), LTE (2CA) Cat6 300/50 Mbps (Taiwan)"
+    },
+    "launch": {
+      "announced": "2017, January. Released 2017, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "154.3 x 77 x 8 mm (6.07 x 3.03 x 0.31 in)",
+      "weight": "170 g (6.00 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "5.5 inches, 83.4 cm2(~70.2% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 5"
+    },
+    "platform": {
+      "os": "Android 6.1 (Marshmallow), upgradable to Android 8 (Oreo), ZenUI 3",
+      "chipset": "Qualcomm MSM8953 Snapdragon 625 (14 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "Adreno 506"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 32GB 4GB RAM, 64GB 4GB RAM, 128GB 4GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/1.7, 25mm (wide), 1/2.55\", 1.4µm, dual pixel PDAF, 4-axis OIS12 MP, f/2.8, 59mm (telephoto), AF, 2.3x optical zoom",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "4K@24fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "13 MP, f/2.0, (wide), 1/3.1\", 1.12µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.2, A2DP, EDR, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 5000 mAh, non-removable",
+      "charging": "18W wired2.5W reverse wired"
+    },
+    "misc": {
+      "colors": "Navy Black, Glacier Silver, Rose Gold",
+      "models": "Z01HD, Z01HDA, ZE553KL",
+      "price": "About 320 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-3-zoom-ze553kl.jpg",
+    "price": "About 320 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Go ZB690KG",
+    "url": "https://www.gsmarena.com/asus_zenfone_go_zb690kg-8503.php",
+    "parsed_at": "2026-01-22T13:16:03.522695",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "speed": "HSPA"
+    },
+    "launch": {
+      "announced": "2016, December. Released 2016, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "188 x 101.4 x 8.9 mm (7.40 x 3.99 x 0.35 in)",
+      "weight": "270 g (9.52 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.9 inches, 134.0 cm2(~70.3% screen-to-body ratio)",
+      "resolution": "600 x 1024 pixels, 16:9 ratio (~172 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "cpu": "Quad-core"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP or 8 MP, f/2.0, AF",
+      "features": "LED flash, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3480 mAh, non-removable",
+      "stand-by": "Up to 735 h (3G)",
+      "talk_time": "Up to 20 h (3G)"
+    },
+    "misc": {
+      "colors": "Glacier Grey, Pearl White",
+      "models": "L001",
+      "price": "About 120 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-go-zb690kg.jpg",
+    "price": "About 120 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad 3 8.0 Z581KL",
+    "url": "https://www.gsmarena.com/asus_zenpad_3_8_0_z581kl-8493.php",
+    "parsed_at": "2026-01-22T13:16:04.837927",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 18, 20, 26, 28, 38, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, December. Released 2017, January",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "205.4 x 136.4 x 7.6 mm (8.09 x 5.37 x 0.30 in)",
+      "weight": "320 g (11.29 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "7.9 inches, 193.3 cm2(~69.0% screen-to-body ratio)",
+      "resolution": "1536 x 2048 pixels, 4:3 ratio (~324 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Qualcomm MSM8956 Snapdragon 650",
+      "cpu": "Hexa-core (4x1.4 GHz Cortex-A53 & 2x1.8 GHz Cortex-A72)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE, aptX",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4680 mAh, non-removable (18 Wh)",
+      "talk_time": "Up to 10 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Black",
+      "price": "About 280 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-3-80-z581kl-.jpg",
+    "price": "About 280 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Go ZB500KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_go_zb500kl-8467.php",
+    "parsed_at": "2026-01-22T13:16:06.304919",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - Global, India",
+      "4g_bands": "1, 2, 3, 5, 6, 7, 8, 9, 18, 19, 28, 38, 41 - Brazil",
+      "speed": "HSPA 21.1/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, October. Released 2016, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143.7 x 70.9 x 11.3 mm (5.66 x 2.79 x 0.44 in)",
+      "weight": "150 g (5.29 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Hybrid Dual SIM (Dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.6% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.0 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0, AF"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2600 mAh, removable",
+      "stand-by": "Up to 440 h (3G)",
+      "talk_time": "Up to 9 h (3G)"
+    },
+    "misc": {
+      "colors": "Glacier Gray, Sheer Gold, Silver Blue, Glamour Red, Charcoal Black, Pearl White",
+      "models": "X00AD, X00BD, X00ADC, ZB500KL, ZB500KG",
+      "price": "About 130 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-go-zb500kl.jpg",
+    "price": "About 130 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 3 Max ZC553KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_3_max_zc553kl-8425.php",
+    "parsed_at": "2026-01-22T13:16:07.868348",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - Global",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20 - Global",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, November. Released 2016, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151.4 x 76.2 x 8.3 mm (5.96 x 3.00 x 0.33 in)",
+      "weight": "175 g (6.17 oz)",
+      "build": "Glass front, aluminum back, aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~72.3% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Oleophobic coating"
+    },
+    "platform": {
+      "os": "Android 6.0.1 (Marshmallow), upgradable to Android 8.1 (Oreo), ZenUI 4",
+      "chipset": "Qualcomm MSM8937 Snapdragon 430 (28 nm)",
+      "cpu": "Octa-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 505"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 2GB RAM, 32GB 3GB RAM, 32GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.0, 1/3.0\", PDAF",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.2"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4100 mAh, non-removable",
+      "charging": "18W wired2.5W reverse wired",
+      "stand-by": "Up to 912 h (3G)",
+      "talk_time": "Up to 17 h (3G)",
+      "music_play": "Up to 72 h"
+    },
+    "misc": {
+      "colors": "Titanium Gray, Glacier Silver, Rose Pink, Sand Gold",
+      "models": "X00DDB, X00DDA, X00DD",
+      "price": "About 190 EUR"
+    },
+    "our_tests": {
+      "performance": "GFXBench: 2.4fps (ES 3.1 onscreen)"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-3-max-zc553kl.jpg",
+    "price": "About 190 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 3 Deluxe 5.5 ZS550KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_3_deluxe_5_5_zs550kl-8384.php",
+    "parsed_at": "2026-01-22T13:16:09.325663",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 20, 26, 28",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, October. Released 2016, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151.5 x 76.7 x 7.8 mm (5.96 x 3.02 x 0.31 in)",
+      "weight": "151 g (5.33 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.8% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 6.1 (Marshmallow), upgradable to 7 (Nougat), ZenUI 3",
+      "chipset": "Qualcomm MSM8953 Snapdragon 625 (14 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "Adreno 506"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.0, PDAF, OIS",
+      "features": "Laser AF, Dual-LED dual-tone flash, HDR, panorama",
+      "video": "4K@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, EDR, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable",
+      "charging": "18W wired, QC3, 60% in 40 min"
+    },
+    "misc": {
+      "colors": "Shimmer Gold",
+      "models": "Z01FD",
+      "price": "About 280 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-3-deluxe-55-inch.jpg",
+    "price": "About 280 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad Z10 ZT500KL",
+    "url": "https://www.gsmarena.com/asus_zenpad_z10_zt500kl-8370.php",
+    "parsed_at": "2026-01-22T13:16:11.059183",
+    "network": {
+      "technology": "LTE",
+      "2g_bands": "N/A",
+      "4g_bands": "2, 4, 5, 13",
+      "speed": "LTE Cat6 300/50 Mbps",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2016, October. Released 2016, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "242.3 x 166.1 x 7.1 mm (9.54 x 6.54 x 0.28 in)",
+      "weight": "490 g (1.08 lb)",
+      "sim": "Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "9.7 inches, 291.4 cm2(~72.4% screen-to-body ratio)",
+      "resolution": "1536 x 2048 pixels, 4:3 ratio (~264 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), upgradable to 7.0 (Nougat)",
+      "chipset": "Qualcomm MSM8956 Snapdragon 650",
+      "cpu": "Hexa-core (4x1.4 GHz Cortex-A53 & 2x1.8 GHz Cortex-A72)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP",
+      "features": "HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 7800 mAh, non-removable",
+      "stand-by": "Up to 1344 h (3G)",
+      "talk_time": "Up to 20 h (3G)"
+    },
+    "misc": {
+      "colors": "Gray",
+      "sar": "1.25 W/kg (head)",
+      "price": "About 300 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-z10-zt500kl.jpg",
+    "price": "About 300 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenwatch 3 WI503Q",
+    "url": "https://www.gsmarena.com/asus_zenwatch_3_wi503q-8271.php",
+    "parsed_at": "2026-01-22T13:16:12.355057",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2016, August. Released 2016, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "45 x 45 x 10.8 mm (1.77 x 1.77 x 0.43 in)",
+      "weight": "48 g (1.69 oz)",
+      "build": "Glass front (Gorilla Glass 3), stainless steel 316L frame",
+      "sim": "No"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "1.39 inches",
+      "resolution": "400 x 400 pixels (~287 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android Wear OS 2.1",
+      "chipset": "Qualcomm MSM8909W Snapdragon Wear 2100",
+      "cpu": "Quad-core 1.1 GHz Cortex-A7",
+      "gpu": "Adreno 304"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "4GB 512MB RAM"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.1, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro"
+    },
+    "battery": {
+      "type": "Li-Ion 341 mAh, non-removable",
+      "charging": "18W wired, 60% in 15 min"
+    },
+    "misc": {
+      "colors": "Gunmetal, Silver, Rose gold",
+      "price": "About 230 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenwatch-3.jpg",
+    "price": "About 230 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad 3S 10 Z500M",
+    "url": "https://www.gsmarena.com/asus_zenpad_3s_10_z500m-8218.php",
+    "parsed_at": "2026-01-22T13:16:13.635376",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 3 Max ZC520TL",
+    "url": "https://www.gsmarena.com/asus_zenfone_3_max_zc520tl-8207.php",
+    "parsed_at": "2026-01-22T13:16:40.567548",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - Global",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 18, 19, 26, 28, 38, 41 - Taiwan",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, July. Released 2016, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "149.5 x 73.7 x 8.6 mm (5.89 x 2.90 x 0.34 in)",
+      "weight": "148 g (5.22 oz)",
+      "build": "Glass front, aluminum back, aluminum frame",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.2 inches, 74.5 cm2(~67.7% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0.1 (Marshmallow), upgradable to 7.0 (Nougat), ZenUI 3",
+      "chipset": "Mediatek MT6737M (28 nm)",
+      "cpu": "Quad-core 1.25 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDHC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4130 mAh, non-removable",
+      "charging": "Reverse wired",
+      "stand-by": "Up to 720 h (3G)",
+      "talk_time": "Up to 20 h (3G)",
+      "music_play": "Up to 87 h"
+    },
+    "misc": {
+      "colors": "Titanium Grey, Glacier Silver, Sand Gold",
+      "models": "X008D, X008DA, X008DC, X00KD",
+      "price": "About 230 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-3-max-zc520tl.jpg",
+    "price": "About 230 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 3 Laser ZC551KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_3_laser_zc551kl-8206.php",
+    "parsed_at": "2026-01-22T13:16:43.245696",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - Global",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20 - Global",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, July. Released 2016, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "149 x 76 x 7.9 mm (5.87 x 2.99 x 0.31 in)",
+      "weight": "150 g (5.29 oz)",
+      "sim": "Hybrid Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~73.6% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 6.1 (Marshmallow), upgradable to Android 8.0 (Oreo)",
+      "chipset": "Qualcomm MSM8937 Snapdragon 430 (28 nm)",
+      "cpu": "Octa-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 505"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, 1/3.1\", 1.12µm",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps (gyro-EIS)"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0, 24mm"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, EDR, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Sand Gold, Glacier Silver",
+      "models": "Z01BDB, Z01BDA, Z01BD, Z01BDC, Z01BS",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-3-laser-zc551kl.jpg",
+    "price": "About 160 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 3 ZE520KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_3_ze520kl-8197.php",
+    "parsed_at": "2026-01-22T13:16:44.915570",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 / 800 - Taiwan",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 18, 19, 26, 28, 38, 39, 40, 41 - Taiwan",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps (Global) or LTE (2CA) Cat6 300/50 Mbps (TW/HK/SG/PH)"
+    },
+    "launch": {
+      "announced": "2016, July. Released 2016, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "146.9 x 74 x 7.7 mm (5.78 x 2.91 x 0.30 in)",
+      "weight": "144 g (5.08 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "Super IPS+",
+      "size": "5.2 inches, 74.5 cm2(~68.6% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~424 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 6.1 (Marshmallow), upgradable to 8 (Oreo), ZenUI",
+      "chipset": "Qualcomm MSM8953 Snapdragon 625 (14 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "Adreno 506"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.0, PDAF, 4-axis OIS",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@60fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, EDR, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio, RDS",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2600 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Sapphire Black, Moonlight White, Shimmer Gold",
+      "models": "Z017DB, Z017D, Z017DA, Z017DC, ZE520KL, ZA520KL",
+      "price": "About 280 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-3-ZE520KL-1.jpg",
+    "price": "About 280 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Pegasus 3",
+    "url": "https://www.gsmarena.com/asus_zenfone_pegasus_3-8156.php",
+    "parsed_at": "2026-01-22T13:16:46.435873",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 & TD-SCDMA",
+      "4g_bands": "1, 3, 7, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, June. Released 2016, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "149.5 x 73.7 x 8.6 mm (5.89 x 2.90 x 0.34 in)",
+      "weight": "158.4 g (5.57 oz)",
+      "sim": "Hybrid Dual SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.2 inches, 74.5 cm2(~67.7% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0.1 (Marshmallow), ZenUI",
+      "chipset": "Mediatek MT6737 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4100 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Gold, silver, gray, rose gold",
+      "models": "X008, X008DB",
+      "price": "About 210 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-pegasus-3.jpg",
+    "price": "About 210 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad Z8",
+    "url": "https://www.gsmarena.com/asus_zenpad_z8-8160.php",
+    "parsed_at": "2026-01-22T13:16:48.929440",
+    "network": {
+      "technology": "LTE",
+      "4g_bands": "2, 4, 5, 13",
+      "speed": "LTE",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2016, June. Released 2016, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "205.2 mm x 136.4 mm x (unknown thickness) mm",
+      "weight": "320.1 g (11.29 oz)",
+      "sim": "Micro-SIM (built-in)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "7.9 inches, 193.3 cm2(~69.1% screen-to-body ratio)",
+      "resolution": "1536 x 2048 pixels, 4:3 ratio (~324 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Qualcomm MSM8956 Snapdragon 650",
+      "cpu": "Hexa-core (4x1.4 GHz Cortex-A53 & 2x1.8 GHz Cortex-A72)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, dual speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 4680 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-z8.jpg",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 3 Ultra ZU680KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_3_ultra_zu680kl-8130.php",
+    "parsed_at": "2026-01-22T13:16:50.657090",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 / 800",
+      "4g_bands": "1, 3, 5, 7, 8, 18, 19, 20, 26, 28, 38, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, May. Released 2016, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "186.4 x 93.9 x 6.8 mm (7.34 x 3.70 x 0.27 in)",
+      "weight": "233 g (8.22 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.8 inches, 127.5 cm2(~72.8% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~324 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 6.1 (Marshmallow), ZenUI 3",
+      "chipset": "Qualcomm MSM8976 Snapdragon 652 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A72 & 4x1.4 GHz Cortex-A53)",
+      "gpu": "Adreno 510"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 64GB 3GB RAM, 128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "23 MP, f/2.0, 1/2.6\", 1.0µm, PDAF, 4-axis OIS",
+      "features": "Laser AF, Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, dual speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, EDR, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4600 mAh, non-removable",
+      "charging": "18W wired, QC3, 60% in 45 min",
+      "talk_time": "Up to 34 h (3G)"
+    },
+    "misc": {
+      "colors": "Glacier Silver, Titanium Gray, Metallic Pink",
+      "price": "About 300 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-3-ultra-zu680kl.jpg",
+    "price": "About 300 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 3 Deluxe ZS570KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_3_deluxe_zs570kl-8129.php",
+    "parsed_at": "2026-01-22T13:16:53.686566",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 20, 26, 28, 29, 30, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (3CA) Cat12 600/150 Mbps"
+    },
+    "launch": {
+      "announced": "2016, May. Released 2016, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "156.4 x 77.4 x 7.5 mm (6.16 x 3.05 x 0.30 in)",
+      "weight": "170 g (6.00 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.7 inches, 89.6 cm2(~74.0% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~386 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 6.1 (Marshmallow), upgradable to Android 8 (Oreo), ZenUI 3",
+      "chipset": "Qualcomm MSM8996 Snapdragon 820 (14 nm)Qualcomm MSM8996 Snapdragon 821 (14 nm)",
+      "cpu": "Quad-core (2x2.15 GHz Kryo & 2x1.6 GHz Kryo)Quad-core (2x2.4 GHz Kryo & 2x2.0 GHz Kryo)",
+      "gpu": "Adreno 530"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 4GB RAM, 64GB 6GB RAM, 128GB 4GB RAM, 256GB 6GB RAM"
+    },
+    "main_camera": {
+      "single": "23 MP, f/2.0, 1/2.6\", 1.0µm, PDAF, 4-axis OIS",
+      "features": "Laser AF, Dual-LED dual-tone flash, HDR, panorama",
+      "video": "4K@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, EDR, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 3.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable",
+      "charging": "18W wired, QC3, 60% in 40 min"
+    },
+    "misc": {
+      "colors": "Glacier Silver, Titanium Gray, Shimmer Gold",
+      "models": "Z016D, Z016S",
+      "price": "About 230 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-3-deluxe-zs570kl.jpg",
+    "price": "About 230 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 3 ZE552KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_3_ze552kl-8106.php",
+    "parsed_at": "2026-01-22T13:16:56.038298",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - Global",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20 - Global",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps (Global), LTE (2CA) Cat6 300/50 Mbps (Taiwan)"
+    },
+    "launch": {
+      "announced": "2016, May. Released 2016, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.6 x 77.4 x 7.7 mm (6.01 x 3.05 x 0.30 in)",
+      "weight": "155 g (5.47 oz)",
+      "build": "Glass front (Gorilla Glass 3), glass back (Gorilla Glass 3), aluminum frame",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "Super IPS+",
+      "size": "5.5 inches, 83.4 cm2(~70.6% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 6.0.1 (Marshmallow), upgradable to 7.0 (Nougat), ZenUI 3",
+      "chipset": "Qualcomm MSM8953 Snapdragon 625 (14 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "Adreno 506"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, f/2.0, PDAF, 3-axis OIS",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "4K@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, EDR, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Sapphire Black, Moonlight White, Shimmer Gold",
+      "models": "Z012DB, Z012D, Z012DA, Z012DC, Z012S, Z012DE",
+      "price": "About 330 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 1205",
+      "display": "Contrast ratio: 1355 (nominal), 2.563 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 65dB / Noise 70dB / Ring 76dB",
+      "audio_quality": "Noise -86.6dB / Crosstalk -91.1dB",
+      "battery_(old)": "Endurance rating 74h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-3-ze552kl.jpg",
+    "price": "About 330 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Max ZC550KL (2016)",
+    "url": "https://www.gsmarena.com/asus_zenfone_max_zc550kl_(2016)-8111.php",
+    "parsed_at": "2026-01-22T13:16:59.628631",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - India",
+      "4g_bands": "1, 3, 5, 38, 39, 40, 41 - India",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, May. Released 2016, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "156 x 77.5 x 10.6 mm (6.14 x 3.05 x 0.42 in)",
+      "weight": "202 g (7.13 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~69.0% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 6.0.1 (Marshmallow), ZenUI",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 5000 mAh, non-removable",
+      "charging": "Reverse wired",
+      "stand-by": "Up to 914 h (3G)",
+      "talk_time": "Up to 38 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, White, Orange, Blue",
+      "models": "Z010DD",
+      "price": "About 170 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-max-zc550kl-1.jpg",
+    "price": "About 170 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Go ZB450KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_go_zb450kl-8262.php",
+    "parsed_at": "2026-01-22T13:17:01.095749",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 2100 - Global, India",
+      "4g_bands": "1, 3, 5, 7, 8 - Global",
+      "speed": "HSPA 21.1/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, July. Released 2016, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "136.5 x 66.7 x 11.2 mm (5.37 x 2.63 x 0.44 in)",
+      "weight": "135 g (4.76 oz)",
+      "sim": "Nano-SIM + Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.5 inches, 55.8 cm2(~61.3% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~218 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6 (Marshmallow), ZenUI 2",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.0, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "720p"
+    },
+    "selfie_camera": {
+      "single": "2 MP, f/2.4"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 2070 mAh, removable"
+    },
+    "misc": {
+      "colors": "Glacier Grey/Silver, Blue/Sheer Gold, Charcoal Black, Pearl White, Glamor Red, Lemon Yellow",
+      "models": "X009DA",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-go-zb452kg.jpg",
+    "price": "About 110 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Go ZB452KG",
+    "url": "https://www.gsmarena.com/asus_zenfone_go_zb452kg-8097.php",
+    "parsed_at": "2026-01-22T13:17:04.122550",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2016, April. Released 2016, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "136.5 x 66.7 x 11.2 mm (5.37 x 2.63 x 0.44 in)",
+      "weight": "125 g (4.41 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.5 inches, 55.8 cm2(~61.3% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~218 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Qualcomm MSM8212 Snapdragon 200 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 302"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP or 8 MP, f/2.0, AF",
+      "features": "LED flash, HDR, panorama"
+    },
+    "selfie_camera": {
+      "single": "VGA, f/2.8or2 MP, f/2.4"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 2070 mAh, removable"
+    },
+    "misc": {
+      "colors": "Lemon Yellow, Charcoal Black, Pearl White, Glacier Gray, Sheer Gold, Glamour Red, Silver Blue",
+      "models": "X014D",
+      "price": "About 90 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-go-zb452kg.jpg",
+    "price": "About 90 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Go ZB551KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_go_zb551kl-8095.php",
+    "parsed_at": "2026-01-22T13:17:06.210536",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20 - Global",
+      "speed": "HSPA 21.1/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, April. Released 2016, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151 x 76.9 x 10.7 mm (5.94 x 3.03 x 0.42 in)",
+      "weight": "160 g (5.64 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Qualcomm MSM8928 Snapdragon 400 (28 nm)",
+      "cpu": "Quad-core 1.6 GHz Cortex-A7",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP or 13 MP, f/2.0, AF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 3010 mAh, removable",
+      "stand-by": "Up to 335 h (3G)",
+      "talk_time": "Up to 16 h (3G)"
+    },
+    "misc": {
+      "colors": "Charcoal Black, Pearl White, Lake Blue, Glacier Gray, Sheer Gold, Glamour Red, Floral Pink, Silver Blue",
+      "models": "X013D, X013DC, X013DA, X013DB",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-go-zb551kl.jpg",
+    "price": "About 150 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Go T500",
+    "url": "https://www.gsmarena.com/asus_zenfone_go_t500-8045.php",
+    "parsed_at": "2026-01-22T13:17:07.951858",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 2100",
+      "4g_bands": "3, 40",
+      "speed": "HSPA 21.1/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, April. Released 2016, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "146 x 73 x 9.9 mm (5.75 x 2.87 x 0.39 in)",
+      "weight": "153 g (5.40 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~64.7% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 4.4 (KitKat)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2500 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-go-t500.jpg",
+    "price": "About 110 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Go ZC451TG",
+    "url": "https://www.gsmarena.com/asus_zenfone_go_zc451tg-8048.php",
+    "parsed_at": "2026-01-22T13:17:09.633763",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, December. Released 2015, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "135 x 67 x 10.1 mm (5.31 x 2.64 x 0.40 in)",
+      "weight": "133.5 g (4.73 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "4.5 inches, 55.8 cm2(~61.7% screen-to-body ratio)",
+      "resolution": "480 x 854 pixels, 16:9 ratio (~218 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Mediatek MT6580M (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, f/2.0, AF",
+      "features": "LED flash",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "VGA"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 1600 mAh, removable",
+      "stand-by": "Up to 355 h (3G)",
+      "talk_time": "Up to 11 h (3G)"
+    },
+    "misc": {
+      "colors": "Charcoal Black, Pearl White, Rouge Pink, Flash Blue",
+      "models": "Z00SD",
+      "price": "About 70 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-go-zc451tg.jpg",
+    "price": "About 70 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Live G500TG",
+    "url": "https://www.gsmarena.com/asus_live_g500tg-7866.php",
+    "parsed_at": "2026-01-22T13:17:12.042305",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2016, January. Released 2016, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "144.5 x 71 x 10 mm (5.69 x 2.80 x 0.39 in)",
+      "weight": "140 g (4.94 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.2% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Mediatek MT6580 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.0, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP, f/2.4"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Po 2070 mAh, removable"
+    },
+    "misc": {
+      "colors": "Rosa, Azul, Yellow",
+      "models": "Z00YD",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-live-g500tg-.jpg",
+    "price": "About 160 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenwatch 2 WI501Q",
+    "url": "https://www.gsmarena.com/asus_zenwatch_2_wi501q-7689.php",
+    "parsed_at": "2026-01-22T13:17:17.523679",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "49.6 x 40.7 x 10.9 mm (1.95 x 1.60 x 0.43 in)",
+      "weight": "-",
+      "build": "Glass front (Gorilla Glass 3), stainless steel frame",
+      "sim": "No"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "1.63 inches",
+      "resolution": "320 x 320 pixels (~278 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android Wear OS 2.1",
+      "chipset": "Qualcomm MSM8926 Snapdragon 400 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "4GB 512MB RAM"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g",
+      "bluetooth": "4.1, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 400 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Gunmetal, Silver, Rose gold",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenwatch-wi501q.jpg",
+    "price": "About 150 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenwatch 2 WI502Q",
+    "url": "https://www.gsmarena.com/asus_zenwatch_2_wi502q-7690.php",
+    "parsed_at": "2026-01-22T13:17:19.840632",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "45.2 x 37.2 x 11.8 mm (1.78 x 1.46 x 0.46 in)",
+      "weight": "-",
+      "build": "Glass front (Gorilla Glass 3), stainless steel frame",
+      "sim": "No"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "1.45 inches",
+      "resolution": "280 x 280 pixels (~273 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android Wear OS 2.1",
+      "chipset": "Qualcomm MSM8926 Snapdragon 400 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "4GB 512MB RAM"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g",
+      "bluetooth": "4.1, LE",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 300 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Gunmetal, Silver, Rose gold",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenwatch-wi502q.jpg",
+    "price": "About 150 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenwatch WI500Q",
+    "url": "https://www.gsmarena.com/asus_zenwatch_wi500q-7688.php",
+    "parsed_at": "2026-01-22T13:17:22.471762",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2014, September. Released 2014, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "51 x 39.9 x 9.4 mm (2.01 x 1.57 x 0.37 in)",
+      "weight": "75 g (50 g body) (2.65 oz)",
+      "build": "Glass front (Gorilla Glass 3), stainless steel frame",
+      "sim": "No"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "1.63 inches",
+      "resolution": "320 x 320 pixels (~278 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android Wear OS",
+      "chipset": "Qualcomm MSM8926 Snapdragon 400 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A7",
+      "gpu": "Adreno 305"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "4GB 512MB RAM"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "No",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "No",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Ion 370 mAh (1.4 Wh), non-removable"
+    },
+    "misc": {
+      "colors": "Silver/Rose gold",
+      "price": "About 100 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenwatch-wi500q.jpg",
+    "price": "About 100 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 2 Laser ZE551KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_2_laser_ze551kl-7733.php",
+    "parsed_at": "2026-01-22T13:17:24.073069",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 17, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, November. Released 2015, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.4 x 77.2 x 10.9 mm (6.00 x 3.04 x 0.43 in)",
+      "weight": "170.1 g (6.00 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~70.9% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 5 (Lollipop), upgradable to 6.1 (Marshmallow), ZenUI 2",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.7 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 3GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.1, A2DP, aptX",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Silver",
+      "models": "Z00TD",
+      "price": "About 180 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/zenfone-2-laser-ze550kl.jpg",
+    "price": "About 180 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Zoom ZX551ML",
+    "url": "https://www.gsmarena.com/asus_zenfone_zoom_zx551ml-7577.php",
+    "parsed_at": "2026-01-22T13:17:25.923229",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 9, 18, 19, 28",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4+ 250/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "158.9 x 78.8 x 12 mm (6.26 x 3.10 x 0.47 in)",
+      "weight": "185 g (6.53 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~66.6% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), upgradable to 6.0 (Marshmallow), ZenUI",
+      "chipset": "Intel Atom Z3590",
+      "cpu": "Quad-core 2.5 GHz",
+      "gpu": "PowerVR G6430"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "32GB 4GB RAM, 64GB 4GB RAM, 128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.7-4.8, 28-84mm (periscope telephoto zoom), OIS, 3x optical zoom",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3000 mAh, non-removable",
+      "charging": "18W wired, 60% in 40 min"
+    },
+    "misc": {
+      "colors": "Pure Black, Ceramic White",
+      "models": "Z00XS",
+      "price": "About 250 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-zoom-zx551ml.jpg",
+    "price": "About 250 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad 8.0 Z380M",
+    "url": "https://www.gsmarena.com/asus_zenpad_8_0_z380m-8474.php",
+    "parsed_at": "2026-01-22T13:17:27.210298",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad 10 Z300M",
+    "url": "https://www.gsmarena.com/asus_zenpad_10_z300m-8465.php",
+    "parsed_at": "2026-01-22T13:17:37.875265",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2016, May. Released 2016, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "251.6 x 172 x 7.9 mm (9.91 x 6.77 x 0.31 in)",
+      "weight": "490 g (1.08 lb)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~68.4% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~149 ppi density)",
+      "protection": "Oleophobic coating"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow)",
+      "chipset": "Mediatek MT8163 (28 nm)",
+      "cpu": "Quad-core 1.5 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.0, aptX",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4890 mAh, non-removable (18 Wh)",
+      "talk_time": "Up to 11 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Dark Gray, Pearl White, Rose Gold"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-10-z300c.jpg",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad 10 Z300C",
+    "url": "https://www.gsmarena.com/asus_zenpad_10_z300c-7532.php",
+    "parsed_at": "2026-01-22T13:17:44.213935",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2015, June. Released 2015, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "251.6 x 172 x 7.9 mm (9.91 x 6.77 x 0.31 in)",
+      "weight": "510 g (1.12 lb)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "10.1 inches, 295.8 cm2(~68.4% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~149 ppi density)",
+      "protection": "Corning Gorilla Glass"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop)",
+      "chipset": "Intel Atom x3-C3200",
+      "cpu": "Quad-core",
+      "gpu": "Mali-450MP4"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 2GB RAM, 16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF2 MP, no AF",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MPVGA"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4890 mAh, non-removable (18 Wh)",
+      "talk_time": "Up to 8 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Black, White, Aurora Metallic",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-10-z300c.jpg",
+    "price": "About 160 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Go ZC500TG",
+    "url": "https://www.gsmarena.com/asus_zenfone_go_zc500tg-7368.php",
+    "parsed_at": "2026-01-22T13:17:47.121783",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2015, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "144.5 x 71 x 10 mm (5.69 x 2.80 x 0.39 in)",
+      "weight": "135 g (4.76 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.2% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop)",
+      "chipset": "Mediatek MT6580 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 2GB RAM, 16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.0, AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP, f/2.4"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 2070 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, White, Red",
+      "models": "Z00VD",
+      "price": "About 130 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-go-zc500tg.jpg",
+    "price": "About 130 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone Max ZC550KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_max_zc550kl-7476.php",
+    "parsed_at": "2026-01-22T13:17:50.620043",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 38, 39, 40, 41 - India",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2016, January",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "156 x 77.5 x 10.6 mm (6.14 x 3.05 x 0.42 in)",
+      "weight": "202 g (7.13 oz)",
+      "build": "Glass front (Gorilla Glass 4), plastic back, plastic frame",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~69.0% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 5.0.1 (Lollipop), upgradable to 6.0.1 (Marshmallow), ZenUI",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 2GB RAM, 16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 5000 mAh, non-removable",
+      "charging": "Reverse wired",
+      "stand-by": "Up to 914 h (3G)",
+      "talk_time": "Up to 38 h (3G)"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "models": "Z010D, Z010DA",
+      "price": "About 170 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 624Basemark X: 1844",
+      "display": "Contrast ratio: 1093 (nominal), 2.068 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 63dB / Noise 66dB / Ring 75dB",
+      "audio_quality": "Noise -93.4dB / Crosstalk -95.2dB",
+      "battery_(old)": "Endurance rating 121h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-max-zc550kl-1.jpg",
+    "price": "About 170 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 2 Deluxe ZE551ML",
+    "url": "https://www.gsmarena.com/asus_zenfone_2_deluxe_ze551ml-7475.php",
+    "parsed_at": "2026-01-22T13:17:54.647991",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 8, 9, 18, 19, 28 - Taiwan",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4+ 250/50 Mbps, LTE (2CA) Cat6 300/50 Mbps (Special Edition)"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2015, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.5 x 77.2 x 10.9 mm (6.00 x 3.04 x 0.43 in)",
+      "weight": "170 g (6.00 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~70.8% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), upgradable to 6.0 (Marshmallow), ZenUI",
+      "chipset": "Intel Atom Z3580Intel Atom Z3560Intel Atom Z3590",
+      "cpu": "Quad-core 2.3 GHzQuad-core 1.8 GHzQuad-core 2.5 GHz",
+      "gpu": "PowerVR G6430"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "64GB 4GB RAM, 128GB 4GB RAM, 256GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "features": "Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio, RDS",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3000 mAh, non-removable",
+      "charging": "18W wired, 60% in 40 min"
+    },
+    "misc": {
+      "colors": "White, Pink, PurpleSilver Polygon/Carbon Night (Black) - Special Edition",
+      "sar_eu": "0.35 W/kg (head)",
+      "price": "About 350 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 1090Basemark X: 12565",
+      "loudspeaker": "Voice 62dB / Noise 61dB / Ring 67dB",
+      "battery_(old)": "Endurance rating 59h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/zenfone-2-deluxe-ze551ml.jpg",
+    "price": "About 350 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 2 Laser ZE601KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_2_laser_ze601kl-7479.php",
+    "parsed_at": "2026-01-22T13:17:59.289140",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - TW/WW version",
+      "4g_bands": "1, 2, 3, 5, 6, 8, 9, 18, 19, 28 - TW version",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2015, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "164.6 x 84 x 10.6 mm (6.48 x 3.31 x 0.42 in)",
+      "weight": "190 g (6.70 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.0 inches, 99.2 cm2(~71.8% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~367 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), upgradable to 6.0 (Marshmallow), ZenUI",
+      "chipset": "Qualcomm MSM8939v2 Snapdragon 616 (28 nm)",
+      "cpu": "Octa-core (4x1.7 GHz Cortex-A53 & 4x1.2 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps, 720p@60fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes, dual speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.1, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Glacier Gray, Sheer Gold, Glamour Red",
+      "models": "Z011D, Z011DD",
+      "price": "About 270 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-2-laser-ze601kl.jpg",
+    "price": "About 270 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 2 Laser ZE600KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_2_laser_ze600kl-7757.php",
+    "parsed_at": "2026-01-22T13:18:02.901204",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - TW/WW version",
+      "4g_bands": "1, 2, 3, 5, 8, 9, 28 - TW version",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, October. Released 2016, January",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "164.6 x 84 x 10.6 mm (6.48 x 3.31 x 0.42 in)",
+      "weight": "190 g (6.70 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.0 inches, 99.2 cm2(~71.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~245 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), upgradable to 6.0 (Marshmallow), ZenUI",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.7 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps, 720p@60fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes, dual speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.1, A2DP, EDR",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Glacier Gray, Sheer Gold, Glamour Red",
+      "models": "Z00MD",
+      "price": "About 310 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-2-laser-ze601kl.jpg",
+    "price": "About 310 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 2 Laser ZE550KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_2_laser_ze550kl-7477.php",
+    "parsed_at": "2026-01-22T13:18:06.580955",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - Global",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20 - Global",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2015, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.5 x 77.2 x 10.8 mm (6.00 x 3.04 x 0.43 in)",
+      "weight": "170 g (6.00 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~70.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~267 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), upgradable to 6.0 (Marshmallow), ZenUI",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 306Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0, AF"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, White, Red, Silver, Gold",
+      "models": "Z00LD, Z00LDD",
+      "price": "About 220 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/zenfone-2-laser-ze550kl.jpg",
+    "price": "About 220 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 2 Laser ZE500KG",
+    "url": "https://www.gsmarena.com/asus_zenfone_2_laser_ze500kg-7478.php",
+    "parsed_at": "2026-01-22T13:18:11.334788",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "speed": "HSPA 42.2/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2015, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143.7 x 71.5 x 10.5 mm (5.66 x 2.81 x 0.41 in)",
+      "weight": "140 g (4.94 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "5.0 inches, 68.9 cm2(~67.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), upgradable to 6.0 (Marshmallow), ZenUI",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 2GB RAM, 16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.0",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0, AF"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2040 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Ceramic White, Silver, Sheer Gold, Glamour Red",
+      "models": "Z00RD, Z00WD",
+      "price": "About 200 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/zenfone-2-laser-ze500.jpg",
+    "price": "About 200 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 2 Laser ZE500KL",
+    "url": "https://www.gsmarena.com/asus_zenfone_2_laser_ze500kl-7474.php",
+    "parsed_at": "2026-01-22T13:18:14.385652",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - Global",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20 - Global",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2015, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "143.7 x 71.5 x 10.5 mm (5.66 x 2.81 x 0.41 in)",
+      "weight": "140 g (4.94 oz)",
+      "build": "Glass front (Gorilla Glass 4), plastic back, plastic frame",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "5.0 inches, 68.9 cm2(~67.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), upgradable to 6.0 (Marshmallow), ZenUI",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)",
+      "cpu": "Quad-core 1.2 GHz Cortex-A53",
+      "gpu": "Adreno 306"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 2GB RAM, 16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0",
+      "features": "Laser AF, Dual-LED dual-tone flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0, AF"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, EDR",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 2400 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black/Ceramic White/Silver/Purple/Aqua Blue/Sheer Gold/Glamour Red",
+      "models": "Z00ED",
+      "price": "About 210 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/zenfone-2-laser-ze500.jpg",
+    "price": "About 210 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad 7.0 Z370CG",
+    "url": "https://www.gsmarena.com/asus_zenpad_7_0_z370cg-7473.php",
+    "parsed_at": "2026-01-22T13:18:17.517352",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "speed": "HSPA 21.1/5.76 Mbps"
+    },
+    "launch": {
+      "announced": "2015, August. Released 2015, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "189 x 110.9 x 8.7 mm (7.44 x 4.37 x 0.34 in)",
+      "weight": "272 g (9.59 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "7.0 inches, 142.1 cm2(~67.8% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~216 ppi density)",
+      "protection": "Corning Gorilla Glass, oleophobic coating"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop)",
+      "chipset": "Intel Atom x3-C3230",
+      "cpu": "Quad-core",
+      "gpu": "Mali-450MP4"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.0, AF",
+      "features": "LED flash",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3500 mAh, non-removable (13 Wh)",
+      "talk_time": "Up to 8 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Black, White, Aurora Metallic",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-70-z370cg.jpg",
+    "price": "About 160 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenfone 2E",
+    "url": "https://www.gsmarena.com/asus_zenfone_2e-7444.php",
+    "parsed_at": "2026-01-22T13:18:21.004127",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, July. Released 2015, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "148.1 x 71.4 x 10.9 mm (5.83 x 2.81 x 0.43 in)",
+      "weight": "155.1 g (5.47 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~65.2% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), ZenUI",
+      "chipset": "Intel Atom Z2560",
+      "cpu": "Dual-core 1.6 GHz",
+      "gpu": "PowerVR SGX544MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, AF",
+      "features": "LED flash, panorama, HDR",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 2500 mAh, non-removable",
+      "talk_time": "Up to 19 h (3G)"
+    },
+    "misc": {
+      "colors": "Charcoal Black, Pearl White",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenfone-2e.jpg",
+    "price": "About 110 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Pegasus 2 Plus",
+    "url": "https://www.gsmarena.com/asus_pegasus_2_plus-7378.php",
+    "parsed_at": "2026-01-22T13:18:24.353213",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, July. Released 2015, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151.8 x 75.5 x 8.1 mm (5.98 x 2.97 x 0.32 in)",
+      "weight": "156 g (5.50 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~72.8% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1.1 (Lollipop)",
+      "chipset": "Qualcomm MSM8939 Snapdragon 615 (28 nm)",
+      "cpu": "Octa-core (4x1.7 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDHC (dedicated slot)",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.0, AF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, hotspot",
+      "bluetooth": "4.1, A2DP",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3030 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Rose Gold, White",
+      "models": "X550",
+      "price": "About 300 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-pegasus-2-plus-.jpg",
+    "price": "About 300 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad S 8.0 Z580CA",
+    "url": "https://www.gsmarena.com/asus_zenpad_s_8_0_z580ca-7367.php",
+    "parsed_at": "2026-01-22T13:18:28.775069",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2015, June. Released 2015, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "203.2 x 134.5 x 6.6 mm (8.0 x 5.30 x 0.26 in)",
+      "weight": "298 g (10.51 oz)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "8.0 inches, 198.2 cm2(~72.5% screen-to-body ratio)",
+      "resolution": "1536 x 2048 pixels, 4:3 ratio (~320 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop)",
+      "chipset": "Intel Atom Z3560 or Z3580",
+      "cpu": "Quad-core",
+      "gpu": "PowerVR G6430"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac",
+      "bluetooth": "4.1, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Accelerometer, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3950 mAh, non-removable (15.2 Wh)",
+      "talk_time": "Up to 8 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Black, White"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-s-80.jpg",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad S 8.0 Z580C",
+    "url": "https://www.gsmarena.com/asus_zenpad_s_8_0_z580c-7366.php",
+    "parsed_at": "2026-01-22T13:18:31.611681",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2015, June. Released 2015, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "203.2 x 134.5 x 6.9 mm (8.0 x 5.30 x 0.27 in)",
+      "weight": "317 g (11.18 oz)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "8.0 inches, 198.2 cm2(~72.5% screen-to-body ratio)",
+      "resolution": "1536 x 2048 pixels, 4:3 ratio (~320 ppi density)",
+      "protection": "Oleophobic coating"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop)",
+      "chipset": "Intel Atom Z3530",
+      "cpu": "Quad-core",
+      "gpu": "PowerVR G6430"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac",
+      "bluetooth": "4.1, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh, non-removable (15.2 Wh)",
+      "talk_time": "Up to 8 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Black, White"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-s-80.jpg",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad 8.0 Z380KL",
+    "url": "https://www.gsmarena.com/asus_zenpad_8_0_z380kl-7255.php",
+    "parsed_at": "2026-01-22T13:18:36.378547",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, June. Released 2015, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "209 x 123 x 8.5 mm (8.23 x 4.84 x 0.33 in)",
+      "weight": "350 g (12.35 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "8.0 inches, 185.6 cm2(~72.2% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~189 ppi density)",
+      "protection": "Corning Gorilla Glass 1"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), upgradable to 6.0.1 (Marshmallow)",
+      "chipset": "Qualcomm MSM8916 Snapdragon 410 (28 nm)Qualcomm MSM8929 Snapdragon 415 (28 nm)",
+      "cpu": "Octa-core (4x Cortex-A53 & 4x Cortex-A53)Octa-core",
+      "gpu": "Adreno 306Adreno 405"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM, 16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP or 8 MP, f/2.0, AF",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "2 MP, f/2.2"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP, LE, aptX",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh, non-removable (15.2 Wh)",
+      "talk_time": "Up to 10 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Black, White, Aurora Metallic",
+      "models": "P024",
+      "price": "About 280 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-80.jpg",
+    "price": "About 280 EUR",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad 8.0 Z380C",
+    "url": "https://www.gsmarena.com/asus_zenpad_8_0_z380c-7365.php",
+    "parsed_at": "2026-01-22T13:18:39.150045",
+    "network": {
+      "technology": "No cellular connectivity",
+      "2g_bands": "N/A",
+      "gprs": "No",
+      "edge": "No"
+    },
+    "launch": {
+      "announced": "2015, June. Released 2015, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "209 x 123 x 8.5 mm (8.23 x 4.84 x 0.33 in)",
+      "weight": "350 g (12.35 oz)",
+      "sim": "No"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "8.0 inches, 185.6 cm2(~72.2% screen-to-body ratio)",
+      "resolution": "800 x 1280 pixels, 16:10 ratio (~189 ppi density)",
+      "protection": "Oleophobic coating"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop)",
+      "chipset": "Intel Atom x3-C3200",
+      "cpu": "Quad-core",
+      "gpu": "Mali-450MP4"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM, 16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP, AF2 MP, no AF",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "2 MPVGA"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh, non-removable (15.2 Wh)",
+      "talk_time": "Up to 8 h (multimedia)"
+    },
+    "misc": {
+      "colors": "Black, White, Aurora Metallic"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-80.jpg",
+    "brand": "Asus"
+  },
+  {
+    "name": "Zenpad C 7.0 Z170MG",
+    "url": "https://www.gsmarena.com/asus_zenpad_c_7_0_z170mg-7364.php",
+    "parsed_at": "2026-01-22T13:18:45.455997",
+    "network": {
+      "technology": "GSM / HSPA",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 2100",
+      "speed": "HSPA 21.1/11.5 Mbps"
+    },
+    "launch": {
+      "announced": "2015, June. Released 2015, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "189 x 108 x 9.5 mm (7.44 x 4.25 x 0.37 in)",
+      "weight": "275 g (9.70 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "7.0 inches, 137.9 cm2(~67.6% screen-to-body ratio)",
+      "resolution": "600 x 1024 pixels, 16:9 ratio (~170 ppi density)",
+      "protection": "Oleophobic coating"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop)",
+      "chipset": "Mediatek MT8382V/W (28 nm)",
+      "cpu": "Quad-core Cortex-A7",
+      "gpu": "Mali-400MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM, 16GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "5 MP",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "VGA"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer"
+    },
+    "battery": {
+      "type": "Li-Po 3500 mAh, non-removable (13 Wh)",
+      "talk_time": "Up to 8 h 30 min"
+    },
+    "misc": {
+      "colors": "Black, White"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/asus-zenpad-c-70.jpg",
+    "brand": "Asus"
+  }
+]

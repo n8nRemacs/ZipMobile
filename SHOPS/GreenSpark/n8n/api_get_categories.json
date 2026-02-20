@@ -1,0 +1,138 @@
+{
+  "name": "GreenSpark API - GET Categories",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "GET",
+        "path": "greenspark/categories",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "GET /categories",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 200],
+      "webhookId": "greenspark-categories"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Default cookies for categories request\nconst query = $input.first().json.query || {};\nconst cityId = query.city_id || '16344'; // Default: online store\n\nreturn [{\n  json: {\n    city_id: cityId,\n    root_category: 'komplektuyushchie_dlya_remonta'\n  }\n}];"
+      },
+      "id": "config",
+      "name": "Config",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 200]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "=https://green-spark.ru/local/api/catalog/products/?path[]={{ $json.root_category }}&perPage=1&page=1",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": false,
+              "responseFormat": "json"
+            }
+          },
+          "timeout": 30000
+        },
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Cookie",
+              "value": "=magazine={{ $json.city_id }}; global_magazine={{ $json.city_id }}; catalog-per-page=100"
+            }
+          ]
+        }
+      },
+      "id": "http",
+      "name": "Fetch Categories",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 200]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.first().json;\nconst subsections = data.subsections || [];\n\n// Extract categories\nconst categories = subsections.map(sub => {\n  const url = sub.url || '';\n  const match = url.match(/\\/catalog\\/(.+?)\\/?$/);\n  const slug = match ? match[1].split('/').pop() : '';\n  \n  return {\n    name: sub.name,\n    slug: slug,\n    url: sub.url,\n    full_path: match ? match[1] : ''\n  };\n});\n\nreturn [{\n  json: {\n    success: true,\n    count: categories.length,\n    categories: categories\n  }\n}];"
+      },
+      "id": "parse",
+      "name": "Parse Categories",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 200]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [880, 200]
+    }
+  ],
+  "connections": {
+    "GET /categories": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Config": {
+      "main": [
+        [
+          {
+            "node": "Fetch Categories",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Categories": {
+      "main": [
+        [
+          {
+            "node": "Parse Categories",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Categories": {
+      "main": [
+        [
+          {
+            "node": "Response",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["greenspark", "api"]
+}

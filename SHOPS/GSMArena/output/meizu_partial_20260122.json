@@ -1,0 +1,5053 @@
+[
+  {
+    "name": "22",
+    "url": "https://www.gsmarena.com/meizu_22_5g-14150.php",
+    "parsed_at": "2026-01-22T13:17:06.022089",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 2100",
+      "4g_bands": "1, 3, 4, 5, 8, 18, 19, 26, 28, 34, 38, 39, 40, 41, 42, 48, 66",
+      "5g_bands": "1, 3, 5, 8, 26, 28, 38, 40, 41, 48, 66, 77, 78, 80, 81, 83, 84, 89 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, September 16",
+      "status": "Available. Released 2025, September 19"
+    },
+    "body": {
+      "dimensions": "152 x 71 x 8.2 mm (5.98 x 2.80 x 0.32 in)",
+      "weight": "190 g (6.70 oz)",
+      "build": "Glass front, aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "LTPO OLED, 120Hz, HDR10+, 1800 nits (HBM), 6000 nits (peak)",
+      "size": "6.3 inches, 95.7 cm2(~88.7% screen-to-body ratio)",
+      "resolution": "1200 x 2670 pixels, 20:9 ratio (~465 ppi density)"
+    },
+    "platform": {
+      "os": "Android 15, Flyme AIOS 2",
+      "chipset": "Qualcomm SM8735 Snapdragon 8s Gen 4 (4 nm)",
+      "cpu": "Octa-core (1x3.21 GHz Cortex-X4 & 3x3.0 GHz Cortex-A720 & 2x2.8 GHz Cortex-A720 & 2x2.0 GHz Cortex-A720)",
+      "gpu": "Adreno 825"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 12GB RAM, 512GB 12GB RAM, 512GB 16GB RAM, 1TB 16GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.7, 24mm (wide), 1/1.3\", PDAF, OIS50 MP, f/2.5, 72mm (periscope telephoto), 1/1.95\", PDAF (15cm - ∞), OIS, 3x optical zoom50 MP, f/2.1, 13mm, 122˚ (ultrawide), 1/2.88\"",
+      "features": "Ring-LED flash, panorama, HDR",
+      "video": "4K@30/60fps, 1080p@30/60fps, gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "50 MP, f/2.1, 22mm (wide), 1/2.88\"",
+      "features": "HDR",
+      "video": "4K@30/60fps, 1080p@30/60fps, gyro-EIS"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6e/7, dual-band",
+      "bluetooth": "5.4, A2DP, LE, aptX HD",
+      "positioning": "GPS (L1+L5), GLONASS (G1), BDS (B1I+B1c+B2a), GALILEO (E1+E5a), QZSS (L1+L5), NavIC (L5)",
+      "nfc": "Yes",
+      "infrared_port": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0/3.2, Display Port (1TB only)"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5510 mAh",
+      "charging": "80W wired, PD3 PPS, QC4+66W wireless10W reverse wireless"
+    },
+    "misc": {
+      "colors": "Black, White, Pink",
+      "price": "About 360 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-22.jpg",
+    "price": "About 360 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Note 22 Pro",
+    "url": "https://www.gsmarena.com/meizu_note_22_pro_5g-13884.php",
+    "parsed_at": "2026-01-22T13:17:07.842645",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 8, 20, 28, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 2, 3, 5, 8, 20, 28, 38, 40, 41, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, May 20",
+      "status": "Available. Released 2025, May 20"
+    },
+    "body": {
+      "dimensions": "163.8 x 76.2 x 8.4 mm (6.45 x 3.00 x 0.33 in)",
+      "weight": "197.5 g (6.98 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "OLED, 1B colors, 144Hz, 700 nits (typ), 1600 nits (peak), 4500 nits (peak)",
+      "size": "6.78 inches, 111.0 cm2(~88.9% screen-to-body ratio)",
+      "resolution": "1224 x 2720 pixels, 20:9 ratio (~440 ppi density)"
+    },
+    "platform": {
+      "os": "Flyme AIOS 2",
+      "chipset": "Qualcomm SM7635 Snapdragon 7s Gen 3 (4 nm)",
+      "cpu": "Octa-core (1x2.5 GHz Cortex-A720 & 3x2.4 GHz Cortex-A720 & 4x1.8 GHz Cortex-A520)",
+      "gpu": "Adreno 810"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 8GB RAM, 256GB 12GB RAM, 512GB 12GB RAM, 512GB 16GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.8, 26mm (wide), PDAF8 MP, f/2.2, 15mm (ultrawide)2 MP, f/2.4",
+      "features": "LED flash, panorama, HDR",
+      "video": "Yes, gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.1",
+      "features": "HDR",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.4, A2DP, LE, aptX HD, aptX Adaptive",
+      "positioning": "GPS (L1+L5), BDS (B1I+B1C+B2a), GALILEO, QZSS, GLONASS",
+      "nfc": "Yes",
+      "infrared_port": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "6200 mAh",
+      "charging": "80W wired, QC4+, PD3.0, PPS, 50% in 22 min"
+    },
+    "misc": {
+      "colors": "Lake Glide, Cloud White, Star Ash",
+      "price": "About 300 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-note16-pro.jpg",
+    "price": "About 300 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Note 22",
+    "url": "https://www.gsmarena.com/meizu_note_22_5g-13883.php",
+    "parsed_at": "2026-01-22T13:17:09.291121",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 8, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 5, 8, 28, 41, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, May 20",
+      "status": "Available. Released 2025, May 20"
+    },
+    "body": {
+      "dimensions": "167.6 x 75.8 x 9.2 mm (6.60 x 2.98 x 0.36 in)",
+      "weight": "217 g (7.65 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz, 1050 nits (HBM), 5000 nits (peak)",
+      "size": "6.78 inches, 109.2 cm2(~85.9% screen-to-body ratio)",
+      "resolution": "1080 x 2460 pixels (~396 ppi density)"
+    },
+    "platform": {
+      "os": "Flyme AIOS 2",
+      "chipset": "Unisoc T8200 (6 nm)",
+      "cpu": "Octa-core (2x2.3 GHz Cortex-A76 & 6x2.1 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.8, 26mm (wide), PDAFAuxiliary lens",
+      "features": "LED flash, panorama, HDR",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0",
+      "features": "HDR",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE, aptX HD",
+      "positioning": "GPS, GALILEO, BDS",
+      "nfc": "Unspecified",
+      "radio": "Unspecified",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "6600 mAh",
+      "charging": "40W wired, QC3+"
+    },
+    "misc": {
+      "colors": "Pure Flame, Stonehold Black, Snow White",
+      "price": "About 210 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-note16.jpg",
+    "price": "About 210 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Mblu 22 Pro",
+    "url": "https://www.gsmarena.com/meizu_mblu_22_pro-13700.php",
+    "parsed_at": "2026-01-22T13:17:10.912045",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 20, 26, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, March 04",
+      "status": "Available. Released 2025, May 20"
+    },
+    "body": {
+      "dimensions": "170.8 x 77.5 x 8.5 mm (6.72 x 3.05 x 0.33 in)",
+      "weight": "212 g (7.48 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "TFT LCD, 120Hz, 400 nits (HBM)",
+      "size": "6.79 inches, 109.5 cm2(~82.7% screen-to-body ratio)",
+      "resolution": "720 x 1640 pixels (~264 ppi density)"
+    },
+    "platform": {
+      "os": "Android 15",
+      "chipset": "Mediatek Helio G81 (12 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55)",
+      "gpu": "Mali-G52 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "128GB 4GB RAM, 256GB 6GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.8, (wide), PDAF2 MP (macro)",
+      "features": "LED flash, panorama, HDR",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "Yes (market/region dependent)",
+      "radio": "Unspecified",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Si/C Li-Ion 5000 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Titan Black, Deep Sea Blue, Snow White",
+      "models": "M2512",
+      "price": "About 120 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-mblu-22-pro.jpg",
+    "price": "About 120 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Mblu 22",
+    "url": "https://www.gsmarena.com/meizu_mblu_22-13699.php",
+    "parsed_at": "2026-01-22T13:18:47.641631",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 20, 26, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, March 04",
+      "status": "Available. Released 2025, May 20"
+    },
+    "body": {
+      "dimensions": "170.8 x 77.5 x 8.9 mm (6.72 x 3.05 x 0.35 in)",
+      "weight": "200 g (7.05 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.79 inches, 109.5 cm2(~82.7% screen-to-body ratio)",
+      "resolution": "720 x 1640 pixels (~264 ppi density)"
+    },
+    "platform": {
+      "os": "Android 15 (Go edition)",
+      "chipset": "Unisoc SC9863A (28 nm)",
+      "cpu": "Octa-core (4x1.6 GHz Cortex-A55 & 4x1.2 GHz Cortex-A55)",
+      "gpu": "IMG8322"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "64GB 3GB RAM, 64GB 4GB RAM, 128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/1.8, 26mm (wide), AFauxiliary lens",
+      "features": "LED flash, panorama, HDR",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, proximity"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "10W wired"
+    },
+    "misc": {
+      "colors": "Titan Black, Snow White, Sea Blue",
+      "models": "M2511",
+      "price": "About 80 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-mblu-22.jpg",
+    "price": "About 80 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Note 22 4G",
+    "url": "https://www.gsmarena.com/meizu_note_22-13698.php",
+    "parsed_at": "2026-01-22T13:18:49.265299",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 20, 26, 28, 38, 40, 41, 66",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2025, March 04",
+      "status": "Available. Released 2025, May 20"
+    },
+    "body": {
+      "dimensions": "165.2 x 75.5 x 8.4 mm (6.50 x 2.97 x 0.33 in)",
+      "weight": "204 g (7.20 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED, 120Hz, 550 nits (typ), 1200 nits (HBM), 1800 nits (peak)",
+      "size": "6.78 inches, 109.9 cm2(~88.1% screen-to-body ratio)",
+      "resolution": "1080 x 2436 pixels (~393 ppi density)"
+    },
+    "platform": {
+      "os": "Android 15, Flyme OS",
+      "chipset": "Mediatek Helio G99 (6 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM, 1TB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "108 MP, f/1.7, (wide), PDAF8 MP, f/2.2, (ultrawide)2 MP (macro)",
+      "features": "LED flash, panorama, HDR",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.0",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "6.0, A2DP, LE",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "Yes",
+      "infrared_port": "Yes",
+      "radio": "FM radio",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "40W wired, 40W PD, PD3"
+    },
+    "misc": {
+      "colors": "Eclipse Black, Titanium Lux, Steel Blue, Graphite Mist",
+      "models": "M2513",
+      "price": "About 180 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-note-22.jpg",
+    "price": "About 180 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Note 16",
+    "url": "https://www.gsmarena.com/meizu_note_16_5g-13862.php",
+    "parsed_at": "2026-01-22T13:18:51.371286",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 8, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 5, 8, 28, 41, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, May 13",
+      "status": "Available. Released 2025, May 16"
+    },
+    "body": {
+      "dimensions": "167.6 x 75.8 x 9.2 mm (6.60 x 2.98 x 0.36 in)",
+      "weight": "217 g (7.65 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz, 1050 nits (peak)",
+      "size": "6.78 inches, 109.2 cm2(~85.9% screen-to-body ratio)",
+      "resolution": "1080 x 2460 pixels (~396 ppi density)"
+    },
+    "platform": {
+      "os": "Flyme AIOS 2",
+      "chipset": "Unisoc T8200 (6 nm)",
+      "cpu": "Octa-core (2x2.3 GHz Cortex-A76 & 6x2.1 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.8, 26mm (wide), PDAF2 MP, f/2.4",
+      "features": "LED flash, panorama, HDR",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0",
+      "features": "HDR",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP, LE, aptX HD",
+      "positioning": "GPS, GALILEO, BDS",
+      "nfc": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "6600 mAh",
+      "charging": "40W wired, QC3+"
+    },
+    "misc": {
+      "colors": "Black, White, Red",
+      "price": "About 100 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-note16.jpg",
+    "price": "About 100 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Note 16 Pro",
+    "url": "https://www.gsmarena.com/meizu_note_16_pro_5g-13861.php",
+    "parsed_at": "2026-01-22T13:18:53.287699",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 8, 20, 28, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 2, 3, 5, 8, 20, 28, 38, 40, 41, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2025, May 13",
+      "status": "Available. Released 2025, May 16"
+    },
+    "body": {
+      "dimensions": "163.8 x 76.2 x 8.4 mm (6.45 x 3.00 x 0.33 in)",
+      "weight": "197.5 g (6.98 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "OLED, 1B colors, 144Hz, 700 nits (typ), 1600 nits (peak), 4500 nits (peak)",
+      "size": "6.78 inches, 111.0 cm2(~88.9% screen-to-body ratio)",
+      "resolution": "1224 x 2720 pixels, 20:9 ratio (~440 ppi density)"
+    },
+    "platform": {
+      "os": "Flyme AIOS 2",
+      "chipset": "Qualcomm SM7635 Snapdragon 7s Gen 3 (4 nm)",
+      "cpu": "Octa-core (1x2.5 GHz Cortex-A720 & 3x2.4 GHz Cortex-A720 & 4x1.8 GHz Cortex-A520)",
+      "gpu": "Adreno 810"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 8GB RAM, 256GB 12GB RAM, 512GB 12GB RAM, 512GB 16GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.8, 26mm (wide), PDAF8 MP, f/2.2, 15mm (ultrawide)2 MP, f/2.4",
+      "features": "LED flash, panorama, HDR",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.1",
+      "features": "HDR",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac/6, dual-band",
+      "bluetooth": "5.4, A2DP, LE, aptX HD, aptX Adaptive",
+      "positioning": "GPS (L1+L5), BDS (B1I+B1C+B2a), GALILEO, QZSS, GLONASS",
+      "nfc": "Yes",
+      "infrared_port": "Yes",
+      "radio": "Unspecified",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "6200 mAh",
+      "charging": "80W wired, QC4+, PD3.0, PPS"
+    },
+    "misc": {
+      "colors": "Gray, Blue, White",
+      "price": "About 190 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-note16-pro.jpg",
+    "price": "About 190 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "mblu 21",
+    "url": "https://www.gsmarena.com/meizu_mblu_21-13530.php",
+    "parsed_at": "2026-01-22T13:18:54.938959",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, November 27",
+      "status": "Available. Released 2024, November"
+    },
+    "body": {
+      "dimensions": "-",
+      "weight": "-",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.79 inches, 109.5 cm2",
+      "resolution": "720 x 1640 pixels (~264 ppi density)"
+    },
+    "platform": {
+      "os": "Android 14",
+      "chipset": "Unisoc T606 (12 nm)",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "Unspecified",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, AFauxiliary lens",
+      "features": "LED flash, panorama, HDR",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Unspecified"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted); unspecified sensors"
+    },
+    "battery": {
+      "type": "4900 mAh"
+    },
+    "misc": {
+      "colors": "Black, Blue, White",
+      "models": "M2416"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-mblu-21.jpg",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Lucky 08",
+    "url": "https://www.gsmarena.com/meizu_lucky_08-13365.php",
+    "parsed_at": "2026-01-22T13:18:57.536468",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 8, 28, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 5, 8, 28, 38, 40, 41, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2024, September 25",
+      "status": "Available. Released 2024, September 20"
+    },
+    "body": {
+      "dimensions": "163 x 77.5 x 8.6 mm (6.42 x 3.05 x 0.34 in)",
+      "weight": "202 g (7.13 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "LTPO AMOLED, 1B colors, 144Hz, HDR, 800 nits (typ), 5000 nits (peak)",
+      "size": "6.78 inches, 111.7 cm2(~88.5% screen-to-body ratio)",
+      "resolution": "1264 x 2780 pixels (~450 ppi density)"
+    },
+    "platform": {
+      "os": "Flyme AIOS",
+      "chipset": "Qualcomm SM7435-AB Snapdragon 7s Gen 2 (4 nm)",
+      "cpu": "Octa-core (4x2.40 GHz Cortex-A78 & 4x1.95 GHz Cortex-A55)",
+      "gpu": "Adreno 710"
+    },
+    "memory": {
+      "card_slot": "Unspecified",
+      "internal": "256GB 8GB RAM, 256GB 12GB RAM, 512GB 12GB RAM"
+    },
+    "main_camera": {
+      "dual": "108 MP, f/1.7, 24mm (wide), 1/1.67\", 0.64µm, PDAF2 MP (macro)",
+      "features": "LED flash, panorama, HDR",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0",
+      "features": "HDR",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.1, A2DP, LE, aptX HD, aptX Adaptive, LHDC",
+      "positioning": "GPS (L1+L5), BDS (B1I+B1C+B2a), GLONASS, GALILEO, QZSS",
+      "nfc": "Unspecified",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "6000 mAh",
+      "charging": "45W wired, QC4+, PD3.0, PPS"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 210 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-lucky-08.jpg",
+    "price": "About 210 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Note 21 Pro",
+    "url": "https://www.gsmarena.com/meizu_note_21_pro-13341.php",
+    "parsed_at": "2026-01-22T13:18:59.812945",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, September 13",
+      "status": "Available. Released 2024, October"
+    },
+    "body": {
+      "dimensions": "-",
+      "weight": "-",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 120Hz, 550 nits",
+      "size": "6.78 inches, 111.0 cm2",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~388 ppi density)"
+    },
+    "platform": {
+      "os": "Flyme OS",
+      "chipset": "Mediatek Helio G99 (6 nm)",
+      "cpu": "Octa-core (2x2.2 GHz Cortex-A76 & 6x2.0 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "64 MP, AF2 MP",
+      "features": "LED flash, panorama, HDR",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "13 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.3, A2DP",
+      "positioning": "GPS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted); unspecified sensors"
+    },
+    "battery": {
+      "type": "5000 mAh",
+      "charging": "30W wired"
+    },
+    "misc": {
+      "colors": "Bay Blue, Sandstone, Marble"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-note-21-pro.jpg",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Note 21",
+    "url": "https://www.gsmarena.com/meizu_note_21-13342.php",
+    "parsed_at": "2026-01-22T13:19:01.908492",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2024, September 13",
+      "status": "Available. Released 2024, October"
+    },
+    "body": {
+      "dimensions": "-",
+      "weight": "-",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz, 450 nits",
+      "size": "6.74 inches, 109.7 cm2",
+      "resolution": "720 x 1600 pixels*, 20:9 ratio (~260 ppi density)"
+    },
+    "platform": {
+      "os": "Flyme OS",
+      "chipset": "Unisoc T606 (12 nm)",
+      "cpu": "Octa-core (2x1.6 GHz Cortex-A75 & 6x1.6 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "256GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, AF2 MP",
+      "features": "LED flash, panorama, HDR",
+      "video": "Yes"
+    },
+    "selfie_camera": {
+      "single": "8 MP",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.3, A2DP",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted); unspecified sensors"
+    },
+    "battery": {
+      "type": "6000 mAh",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Ivory, Diamond Black, Gulf Blue"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-note-21.jpg",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Blue 20",
+    "url": "https://www.gsmarena.com/meizu_blue_20-13212.php",
+    "parsed_at": "2026-01-22T13:19:04.887099",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "5g_bands": "SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2024, July 17",
+      "status": "Available. Released 2024, July"
+    },
+    "body": {
+      "dimensions": "8.3 mm thickness",
+      "weight": "-",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 90Hz",
+      "size": "6.52 inches, 102.6 cm2",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~404 ppi density)"
+    },
+    "platform": {
+      "os": "Flyme AIOS",
+      "chipset": "Unisoc T765 (6 nm)",
+      "cpu": "Octa-core (2x2.3 GHz Cortex-A76 & 6x2.1 GHz Cortex-A55)",
+      "gpu": "Mali-G57 MC2"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "128GB 6GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, AF (interpolated to 50 MP)Secondary unspecified camera",
+      "features": "LED flash, panorama, HDR",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP (interpolated to 8 MP)",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band",
+      "bluetooth": "5.0, A2DP",
+      "positioning": "GPS, GALILEO, GLONASS, BDS",
+      "nfc": "Unspecified",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (side-mounted); unspecified sensors"
+    },
+    "battery": {
+      "type": "5010 mAh"
+    },
+    "misc": {
+      "colors": "Black, White, Purple"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-blue-20.jpg",
+    "brand": "Meizu"
+  },
+  {
+    "name": "21 Note",
+    "url": "https://www.gsmarena.com/meizu_21_note-13007.php",
+    "parsed_at": "2026-01-22T13:19:07.029511",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 4, 5, 8, 28, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 5, 8, 28, 38, 40, 41, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2024, May 16",
+      "status": "Available. Released 2024, May 21"
+    },
+    "body": {
+      "dimensions": "162.4 x 76.9 x 8.2 mm (6.39 x 3.03 x 0.32 in)",
+      "weight": "205 g (7.23 oz)",
+      "build": "Glass front, aluminum frame, plastic back",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "LTPO OLED, 1B colors, 144Hz, HDR10+, 800 nits (typ), 1600 nits (HBM), 5000 nits (peak)",
+      "size": "6.78 inches, 111.7 cm2(~89.5% screen-to-body ratio)",
+      "resolution": "1264 x 2780 pixels (~450 ppi density)"
+    },
+    "platform": {
+      "os": "Flyme OS",
+      "chipset": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+      "cpu": "Octa-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)",
+      "gpu": "Adreno 740"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 16GB RAM, 512GB 16GB RAM"
+    },
+    "main_camera": {
+      "dual": "50 MP, f/1.7, 24mm (wide), 1/1.56\", PDAF, OIS13 MP, f/2.4, 16mm, 122˚ (ultrawide), AF",
+      "features": "Ring-LED flash, panorama, HDR",
+      "video": "8K, 4K, 1080p; gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.5, (wide)",
+      "features": "HDR",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6e/7, tri-band",
+      "bluetooth": "5.3, A2DP, LE, aptX HD, LHDC",
+      "positioning": "GPS (L1+L5), GLONASS, GALILEO, BDS, QZSS, NavIC",
+      "nfc": "Yes",
+      "infrared_port": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "5500 mAh",
+      "charging": "65W wired, PD3 PPS, QC4+"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 330 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-21-note.jpg",
+    "price": "About 330 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "21 Pro",
+    "url": "https://www.gsmarena.com/meizu_21_pro-12805.php",
+    "parsed_at": "2026-01-22T13:19:09.876020",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 17, 18, 19, 20, 26, 28, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 5, 8, 20, 28, 38, 40, 41, 77, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2024, February 29",
+      "status": "Available. Released 2024, March 02"
+    },
+    "body": {
+      "dimensions": "165 x 74.4 x 8 mm (6.50 x 2.93 x 0.31 in)",
+      "weight": "208 g or 214 g (7.34 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "LTPO AMOLED, 1B colors, 120Hz, HDR10+, 600 nits (typ), 1250 nits (HBM)",
+      "size": "6.79 inches, 107.3 cm2(~87.4% screen-to-body ratio)",
+      "resolution": "1368 x 3192 pixels, 21:9 ratio (~512 ppi density)",
+      "protection": "Meizu Titan Glass 2.0"
+    },
+    "platform": {
+      "os": "Flyme OS / Flyme AIOS 2",
+      "chipset": "Qualcomm SM8650-AB Snapdragon 8 Gen 3 (4 nm)",
+      "cpu": "Octa-core (1x3.3 GHz Cortex-X4 & 3x3.2 GHz Cortex-A720 & 2x3.0 GHz Cortex-A720 & 2x2.3 GHz Cortex-A520)",
+      "gpu": "Adreno 750"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 12GB RAM, 512GB 16GB RAM, 1TB 16GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.9, 24mm (wide), 1/1.3\", 1.2µm, PDAF, OIS10 MP, f/2.0, 72mm (periscope telephoto), PDAF, OIS, 3x optical zoom13 MP, f/2.4, 15mm, 122˚ (ultrawide)",
+      "features": "Ring-LED flash, panorama, HDR",
+      "video": "8K, 4K, 1080p; gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.4, (wide)",
+      "features": "HDR",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6e/7, dual-band",
+      "bluetooth": "5.4, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS (G1), BDS (B1I+B1c+B2a), GALILEO (E1+E5a), QZSS (L1+L5), NavIC (L5)",
+      "nfc": "Yes",
+      "infrared_port": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass, barometer"
+    },
+    "battery": {
+      "type": "5050 mAh",
+      "charging": "80W wired, PD3 PPS, QC4+50W wireless10W reverse wireless"
+    },
+    "misc": {
+      "colors": "Black, White, Blue, Green, Gray",
+      "price": "About 640 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-21-pro.jpg",
+    "price": "About 640 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "20 Classic",
+    "url": "https://www.gsmarena.com/meizu_20_classic-12630.php",
+    "parsed_at": "2026-01-22T13:19:49.832887",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 800 / 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 28, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 5, 8, 28, 38, 41, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2023, October 19",
+      "status": "Available. Released 2023, October 31"
+    },
+    "body": {
+      "dimensions": "157.9 x 73.5 x 8 mm (6.22 x 2.89 x 0.31 in)",
+      "weight": "190 g (6.70 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "OLED, 1B colors, 144Hz, 500 nits (typ), 800 nits (HBM)",
+      "size": "6.55 inches, 103.6 cm2(~89.2% screen-to-body ratio)",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~402 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13, Flyme 10",
+      "chipset": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+      "cpu": "Octa-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)",
+      "gpu": "Adreno 740"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 16GB RAM, 512GB 16GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.9, 24mm (wide), 1/1.56\", PDAF, OIS16 MP, f/2.4, 16mm, 122˚ (ultrawide)5 MP, f/2.4",
+      "features": "Ring-LED flash, panorama, HDR",
+      "video": "8K, 4K, 1080p; gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.5, (wide)",
+      "features": "HDR",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6e/7, dual-band",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, BDS (B1I+B1c+B2a), GALILEO, QZSS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4700 mAh",
+      "charging": "67W wired, PD3 PPS, QC4+"
+    },
+    "misc": {
+      "colors": "Gray, Silver, Green",
+      "price": "About 400 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-20classic.jpg",
+    "price": "About 400 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "20 Infinity",
+    "url": "https://www.gsmarena.com/meizu_20_infinity-12207.php",
+    "parsed_at": "2026-01-22T13:19:52.394859",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 13, 17, 18, 19, 20, 26, 34, 38, 39, 40, 41, 42",
+      "5g_bands": "1, 3, 5, 7, 8, 28, 38, 40, 41, 66, 77, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2023, March 30",
+      "status": "Available. Released 2023, June 12"
+    },
+    "body": {
+      "dimensions": "163.4 x 73.3 x 8.2 mm (6.43 x 2.89 x 0.32 in)",
+      "weight": "215 g (7.58 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "LTPO OLED, 1B colors, 120Hz, 600 nits (typ), 1800 nits (peak)",
+      "size": "6.79 inches, 107.7 cm2(~89.9% screen-to-body ratio)",
+      "resolution": "1368 x 3192 pixels, 21:9 ratio (~511 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13, Flyme 10",
+      "chipset": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+      "cpu": "Octa-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)",
+      "gpu": "Adreno 740"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "256GB 12GB RAM, 512GB 12GB RAM, 1TB 16GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.8, 23mm (wide), 1/1.56\", PDAF, OIS12 MP f/2.0, 50mm (telephoto), 1/2.9\", PDAF, OIS, optical zoom12 MP, f/2.2, 13mm, 122˚ (ultrawide), 1/2.55\"",
+      "features": "LED flash, panorama, HDR",
+      "video": "8K, 4K, 1080p; gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.4, (wide)",
+      "features": "HDR",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6e/7, tri-band",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, BDS, GALILEO",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass, barometer"
+    },
+    "battery": {
+      "type": "Li-Po 4800 mAh",
+      "charging": "65W wired, PD PPS, QC450W wireless"
+    },
+    "misc": {
+      "colors": "Gray, Green, Silver",
+      "price": "About 820 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-20-infinity.jpg",
+    "price": "About 820 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "20 Pro",
+    "url": "https://www.gsmarena.com/meizu_20_pro-12161.php",
+    "parsed_at": "2026-01-22T13:19:55.916085",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 28, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 5, 8, 28, 38, 41, 77, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2023, March 30",
+      "status": "Available. Released 2023, June 20"
+    },
+    "body": {
+      "dimensions": "164.2 x 76.4 x 7.8 mm (6.46 x 3.01 x 0.31 in)",
+      "weight": "209 g (7.37 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "LTPO OLED, 120Hz, HDR10+, 500 nits (typ), 1800 nits (peak)",
+      "size": "6.81 inches, 112.0 cm2(~89.3% screen-to-body ratio)",
+      "resolution": "1440 x 3200 pixels, 20:9 ratio (~515 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13, Flyme 10",
+      "chipset": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+      "cpu": "Octa-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)",
+      "gpu": "Adreno 740"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 12GB RAM, 256GB 12GB RAM, 512GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.9, (wide), PDAF, OIS50 MP f/1.9, (telephoto), PDAF, 2x optical zoom50 MP, f/2.2, 129˚ (ultrawide)",
+      "features": "Ring-LED flash, panorama, HDR",
+      "video": "8K, 4K, 1080p; gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.5, (wide)",
+      "features": "HDR",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6e/7, tri-band",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, BDS (B1I+B1c+B2a), GALILEO, QZSS",
+      "nfc": "Yes",
+      "infrared_port": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 5000 mAh",
+      "charging": "80W wired, PD3 PPS, QC4+50W wireless"
+    },
+    "misc": {
+      "colors": "Gray, Gold, Silver",
+      "price": "About 530 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-20-pro.jpg",
+    "price": "About 530 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "20",
+    "url": "https://www.gsmarena.com/meizu_20-12206.php",
+    "parsed_at": "2026-01-22T13:20:01.012022",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 28, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 5, 8, 28, 38, 41, 77, 78 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2023, March 30",
+      "status": "Available. Released 2023, May 22"
+    },
+    "body": {
+      "dimensions": "157.9 x 73.5 x 8 mm (6.22 x 2.89 x 0.31 in)",
+      "weight": "190 g (6.70 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "OLED, 1B colors, 144Hz, 500 nits (typ), 800 nits (HBM)",
+      "size": "6.55 inches, 103.6 cm2(~89.2% screen-to-body ratio)",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~402 ppi density)"
+    },
+    "platform": {
+      "os": "Android 13, Flyme 10",
+      "chipset": "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+      "cpu": "Octa-core (1x3.2 GHz Cortex-X3 & 2x2.8 GHz Cortex-A715 & 2x2.8 GHz Cortex-A710 & 3x2.0 GHz Cortex-A510)",
+      "gpu": "Adreno 740"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 12GB RAM, 256GB 12GB RAM, 512GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.9, 24mm (wide), 1/1.56\", PDAF, OIS16 MP, f/2.4, 16mm, 122˚ (ultrawide)5 MP, f/2.4",
+      "features": "Ring-LED flash, panorama, HDR",
+      "video": "8K, 4K, 1080p; gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "32 MP, f/2.5, (wide)",
+      "features": "HDR",
+      "video": "Yes"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6e/7, dual-band",
+      "bluetooth": "5.3, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, BDS (B1I+B1c+B2a), GALILEO, QZSS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4700 mAh",
+      "charging": "67W wired, PD3 PPS, QC4+"
+    },
+    "misc": {
+      "colors": "Gray, Yellow, Mint, Rose Gold",
+      "price": "About 400 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-20.jpg",
+    "price": "About 400 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "18s Pro",
+    "url": "https://www.gsmarena.com/meizu_18s_pro-11075.php",
+    "parsed_at": "2026-01-22T13:20:04.510535",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 41, 77, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2021, September 22. Released 2021, September 23",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "162.5 x 73 x 8.1 mm (6.40 x 2.87 x 0.32 in)",
+      "weight": "189 g (6.67 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED, 120Hz, HDR10+, 420 nits (typ), 1300 nits (peak)",
+      "size": "6.7 inches, 107.6 cm2(~90.7% screen-to-body ratio)",
+      "resolution": "1440 x 3200 pixels, 20:9 ratio (~526 ppi density)",
+      "protection": "Corning Gorilla Glass 6"
+    },
+    "platform": {
+      "os": "Android 11, Flyme 9.2",
+      "chipset": "Qualcomm SM8350 Snapdragon 888+ 5G (5 nm)",
+      "cpu": "Octa-core (1x3.0 GHz Cortex-X1 & 3x2.42 GHz Cortex-A78 & 4x1.80 GHz Cortex-A55)",
+      "gpu": "Adreno 660"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.9, 23mm (wide), 1/1.31\", 1.2µm, dual pixel PDAF, OIS8 MP f/2.4, 79mm (telephoto), 1/4.4\", 1.0µm, PDAF, 3x optical zoom32 MP, f/2.2, 15mm, 130˚ (ultrawide), 1/2.8\", 0.8µm0.3 MP, TOF 3D, f/1.4, (depth)",
+      "features": "LED flash, HDR, panorama",
+      "video": "8K, 4K@30/60fps, 1080p; gyro-EIS, HDR"
+    },
+    "selfie_camera": {
+      "single": "44 MP, f/2.4, (wide), 1/2.65”, 0.7µm",
+      "features": "HDR",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6e, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, BDS, GALILEO, QZSS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4500 mAh",
+      "charging": "40W wired, PD3.0, QC4, 40% in 15 min, 100% in 55 min40W wireless10W reverse wireless"
+    },
+    "misc": {
+      "colors": "Blue, White, Gray",
+      "models": "M192Q",
+      "price": "About 610 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-18s-pro.jpg",
+    "price": "About 610 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "18s",
+    "url": "https://www.gsmarena.com/meizu_18s-11115.php",
+    "parsed_at": "2026-01-22T13:20:08.384093",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 4, 5, 7, 8, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 41, 77, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2021, September 22. Released 2021, September 23",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.4 x 69.2 x 8.2 mm (6.00 x 2.72 x 0.32 in)",
+      "weight": "162 g (5.71 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED, 120Hz, HDR10+, 420 nits (typ), 1300 nits (peak)",
+      "size": "6.2 inches, 93.8 cm2(~88.9% screen-to-body ratio)",
+      "resolution": "1440 x 3200 pixels, 20:9 ratio (~563 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11, Flyme 9.2",
+      "chipset": "Qualcomm SM8350 Snapdragon 888+ 5G (5 nm)",
+      "cpu": "Octa-core (1x3.0 GHz Cortex-X1 & 3x2.42 GHz Cortex-A78 & 4x1.80 GHz Cortex-A55)",
+      "gpu": "Adreno 660"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "64 MP, f/1.6, 26mm (wide), 1/1.73\", 0.8µm, PDAF, OIS8 MP f/2.4, 79mm (telephoto), 1/4.4\", 1.0µm, PDAF, 3x optical zoom16 MP, f/2.2, 15mm, 122˚ (ultrawide), 1/3.0\", 1.0µm",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "4K@30/60fps, 1080p; gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "20 MP, f/2.2, 26mm (wide), 1/3.4\", 0.8µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6e, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, BDS, GALILEO, QZSS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh",
+      "charging": "36W wired, PD3.0, QC3, 80% in 33 min, 100% in 55 min"
+    },
+    "misc": {
+      "colors": "Light Blue, White, Aurora, Pink/Violet",
+      "price": "About 490 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-18s.jpg",
+    "price": "About 490 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "18x",
+    "url": "https://www.gsmarena.com/meizu_18x-11116.php",
+    "parsed_at": "2026-01-22T13:20:12.773930",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 41, 77, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2021, September 22. Released 2021, September 22",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "165.1 x 76.4 x 8 mm (6.5 x 3.01 x 0.31 in)",
+      "weight": "189 g (6.67 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "OLED, 1B colors, 120Hz, 500 nits (typ), 700 nits (peak)",
+      "size": "6.67 inches, 107.4 cm2(~85.2% screen-to-body ratio)",
+      "resolution": "1080 x 2400 pixels, 20:9 ratio (~395 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11, Flyme 9.2",
+      "chipset": "Qualcomm SM8250-AC Snapdragon 870 5G (7 nm)",
+      "cpu": "Octa-core (1x3.2 GHz Kryo 585 & 3x2.42 GHz Kryo 585 & 4x1.80 GHz Kryo 585)",
+      "gpu": "Adreno 650"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "64 MP, f/1.8, 26mm (wide), 1/1.97\", 0.7µm, PDAF8 MP, f/2.2, 15mm, 120˚ (ultrawide), 1/4.0\", 1.12µmAuxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "13 MP, f/2.0, (wide)",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6e, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS, GLONASS, GALILEO, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4300 mAh",
+      "charging": "30W wired, PD3.0, QC4, 70% in 30 min, 100% in 60 min"
+    },
+    "misc": {
+      "colors": "Light Blue, White, Gray",
+      "price": "About 340 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-18x.jpg",
+    "price": "About 340 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Watch",
+    "url": "https://www.gsmarena.com/meizu_watch-10939.php",
+    "parsed_at": "2026-01-22T13:20:17.094908",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2021, May 31. Released 2021, June 01",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "46 x 38.4 x 13 mm (1.81 x 1.51 x 0.51 in)",
+      "weight": "43 g (1.52 oz)",
+      "build": "Glass front (Gorilla Glass), ceramic back, aluminum frame",
+      "sim": "eSIM"
+    },
+    "display": {
+      "type": "AMOLED, 450 nits (typ)",
+      "size": "1.78 inches",
+      "resolution": "368 x 448 pixels (~326 ppi density)",
+      "protection": "Corning Gorilla Glass"
+    },
+    "platform": {
+      "os": "Flyme",
+      "chipset": "Qualcomm Snapdragon Wear 4100 (12 nm)",
+      "cpu": "Quad-core 1.7 GHz Cortex-A53",
+      "gpu": "Adreno 504"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "8GB 1GB RAM"
+    },
+    "camera": {},
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.2, A2DP",
+      "positioning": "GPS, GLONASS, BDS, QZSS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Accelerometer, heart rate, SpO2, gyro, barometer, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 430 mAh"
+    },
+    "misc": {
+      "colors": "Black, Azure",
+      "price": "About 190 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-watch.jpg",
+    "price": "About 190 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "18 Pro",
+    "url": "https://www.gsmarena.com/meizu_18_pro-10751.php",
+    "parsed_at": "2026-01-22T13:20:20.768883",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 12, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 41, 77, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2021, March 03. Released 2021, March 08",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "162.5 x 73 x 8.1 mm (6.40 x 2.87 x 0.32 in)",
+      "weight": "189 g (6.67 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED, 120Hz, HDR10+, 420 nits (typ), 1300 nits (peak)",
+      "size": "6.7 inches, 107.6 cm2(~90.7% screen-to-body ratio)",
+      "resolution": "1440 x 3200 pixels, 20:9 ratio (~526 ppi density)",
+      "protection": "Corning Gorilla Glass 6"
+    },
+    "platform": {
+      "os": "Android 11, Flyme 9",
+      "chipset": "Qualcomm SM8350 Snapdragon 888 5G (5 nm)",
+      "cpu": "Octa-core (1x2.84 GHz Cortex-X1 & 3x2.42 GHz Cortex-A78 & 4x1.80 GHz Cortex-A55)",
+      "gpu": "Adreno 660"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "50 MP, f/1.9, 23mm (wide), 1/1.31\", 1.2µm, dual pixel PDAF, OIS8 MP f/2.4, 79mm (telephoto), 1/4.4\", 1.0µm, PDAF, 3x optical zoom32 MP, f/2.2, 15mm, 130˚ (ultrawide), 1/2.8\", 0.8µm0.3 MP, TOF 3D, f/1.4, (depth)",
+      "features": "LED flash, HDR, panorama",
+      "video": "8K, 4K@30/60fps, 1080p; gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "44 MP, f/2.4, (wide), 1/2.65”, 0.7µm",
+      "features": "HDR",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6e, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, BDS, GALILEO, QZSS, NavIC",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4500 mAh",
+      "charging": "40W wired, PD3.0, QC4, 40% in 15 min, 100% in 50 min40W wireless10W reverse wireless"
+    },
+    "misc": {
+      "colors": "Blue, White, Gray",
+      "price": "About 640 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-18-pro.jpg",
+    "price": "About 640 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "18",
+    "url": "https://www.gsmarena.com/meizu_18-10766.php",
+    "parsed_at": "2026-01-22T13:20:24.416951",
+    "network": {
+      "technology": "GSM / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 4, 5, 7, 8, 34, 38, 39, 40, 41",
+      "5g_bands": "1, 3, 41, 77, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2021, March 03. Released 2021, March 08",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.4 x 69.2 x 8.2 mm (6.00 x 2.72 x 0.32 in)",
+      "weight": "162 g (5.71 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED, 120Hz, HDR10+, 420 nits (typ), 1300 nits (peak)",
+      "size": "6.2 inches, 93.8 cm2(~88.9% screen-to-body ratio)",
+      "resolution": "1440 x 3200 pixels, 20:9 ratio (~563 ppi density)"
+    },
+    "platform": {
+      "os": "Android 11, Flyme 9",
+      "chipset": "Qualcomm SM8350 Snapdragon 888 5G (5 nm)",
+      "cpu": "Octa-core (1x2.84 GHz Cortex-X1 & 3x2.42 GHz Cortex-A78 & 4x1.80 GHz Cortex-A55)",
+      "gpu": "Adreno 660"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "64 MP, f/1.6, 26mm (wide), 1/1.73\", 0.8µm, PDAF, OIS8 MP f/2.4, 79mm (telephoto), 1/4.4\", 1.0µm, PDAF, 3x optical zoom16 MP, f/2.2, 15mm, 122˚ (ultrawide), 1/3.0\", 1.0µm",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "4K@30/60fps, 1080p; gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "20 MP, f/2.2, 26mm (wide), 1/3.4\", 0.8µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6e, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.2, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, BDS, GALILEO, QZSS, NavIC",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, ultrasonic), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh",
+      "charging": "36W wired, PD3.0, QC3, 40% in 15 min, 100% in 50 min"
+    },
+    "misc": {
+      "colors": "Light Blue, White, Aurora",
+      "price": "About 560 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-18-.jpg",
+    "price": "About 560 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "17 Pro",
+    "url": "https://www.gsmarena.com/meizu_17_pro-10232.php",
+    "parsed_at": "2026-01-22T13:20:29.869239",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 34, 38, 39, 40, 41",
+      "5g_bands": "41, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2020, May 08. Released 2020, May 11",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "160 x 77.2 x 8.5 mm (6.30 x 3.04 x 0.33 in)",
+      "weight": "219 g (7.72 oz)",
+      "build": "Glass front, ceramic back, ceramic frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED, 120Hz, HDR10+, 700 nits (typ)",
+      "size": "6.6 inches, 106.9 cm2(~86.6% screen-to-body ratio)",
+      "resolution": "1080 x 2340 pixels, 19.5:9 ratio (~390 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10, Flyme 8.1",
+      "chipset": "Qualcomm SM8250 Snapdragon 865 5G (7 nm+)",
+      "cpu": "Octa-core (1x2.84 GHz Cortex-A77 & 3x2.42 GHz Cortex-A77 & 4x1.80 GHz Cortex-A55)",
+      "gpu": "Adreno 650"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 12GB RAM"
+    },
+    "main_camera": {
+      "triple": "64 MP, f/1.8, 26mm (wide), 1/1.72\", 0.8µm, PDAF8 MP, f/2.4, 79mm (telephoto), 1.0µm, PDAF32 MP, f/2.2, 15mm, 129˚ (ultrawide), 1/2.8\", 0.8µm0.3 MP, TOF 3D, f/1.4, (depth)",
+      "features": "5-LED dual-tone flash, Auto-HDR, panorama",
+      "video": "4K@30/60fps, 1080p; gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "20 MP, f/2.2, (wide), 0.8µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.1, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4500 mAh",
+      "charging": "30W wired, QC3, 45% in 30 min27W wireless"
+    },
+    "misc": {
+      "colors": "Mint, Black, White",
+      "price": "About 560 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m17-pro1.jpg",
+    "price": "About 560 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "17",
+    "url": "https://www.gsmarena.com/meizu_17-10129.php",
+    "parsed_at": "2026-01-22T13:20:34.132485",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE / 5G",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 34, 38, 39, 40, 41",
+      "5g_bands": "41, 78, 79 SA/NSA",
+      "speed": "HSPA, LTE, 5G"
+    },
+    "launch": {
+      "announced": "2020, May 08. Released 2020, May 11",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "160 x 77.2 x 8.5 mm (6.30 x 3.04 x 0.33 in)",
+      "weight": "199 g (7.02 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED, 120Hz, HDR10+, 700 nits (typ)",
+      "size": "6.6 inches, 106.9 cm2(~86.6% screen-to-body ratio)",
+      "resolution": "1080 x 2340 pixels, 19.5:9 ratio (~390 ppi density)"
+    },
+    "platform": {
+      "os": "Android 10, Flyme 8.1",
+      "chipset": "Qualcomm SM8250 Snapdragon 865 5G (7 nm+)",
+      "cpu": "Octa-core (1x2.84 GHz Cortex-A77 & 3x2.42 GHz Cortex-A77 & 4x1.80 GHz Cortex-A55)",
+      "gpu": "Adreno 650"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 8GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "quad": "64 MP, f/1.8, 26mm (wide), 1/1.72\", 0.8µm, PDAF12 MP, f/1.9, 24mm (wide), 1/2.55\", 1.4µm, PDAF8 MP, f/2.2, 16mm, 118˚ (ultrawide), 1/4.0\", 1.12µm5 MP (macro)",
+      "features": "5-LED dual-tone flash, Auto-HDR, panorama",
+      "video": "4K@30/60fps, 1080p; gyro-EIS"
+    },
+    "selfie_camera": {
+      "single": "20 MP, f/2.2, (wide), 0.8µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac/6, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.1, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4500 mAh",
+      "charging": "30W wired, QC3, 45% in 30 min"
+    },
+    "misc": {
+      "colors": "Green, Gray, Aurora White",
+      "price": "About 530 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m17.jpg",
+    "price": "About 530 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "16T",
+    "url": "https://www.gsmarena.com/meizu_16t-9926.php",
+    "parsed_at": "2026-01-22T13:20:37.815214",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 3, 4, 5, 7, 8, 20, 34, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (6CA) Cat20 2000/150 Mbps"
+    },
+    "launch": {
+      "announced": "2019, October. Released 2019, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "159.6 x 78.2 x 8.3 mm (6.28 x 3.08 x 0.33 in)",
+      "weight": "183 g (6.46 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED, 430 nits (typ)",
+      "size": "6.5 inches, 106.3 cm2(~85.2% screen-to-body ratio)",
+      "resolution": "1080 x 2232 pixels, 18.5:9 ratio (~382 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie), Flyme 8",
+      "chipset": "Qualcomm SM8150 Snapdragon 855 (7 nm)",
+      "cpu": "Octa-core (1x2.84 GHz Kryo 485 & 3x2.42 GHz Kryo 485 & 4x1.78 GHz Kryo 485)",
+      "gpu": "Adreno 640"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "12 MP, f/1.9, 24mm (wide), 1/2.55\", 1.4µm, PDAF8 MP, f/2.2, 15mm (ultrawide), 1/4.0\", 1.12µm, PDAF5 MP, f/1.9, 23mm (wide), 1/5.0\", 1.12µm, PDAF",
+      "features": "LED flash, HDR, panorama",
+      "video": "4K@30/60fps"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.2, 26mm (wide), 1/3.06\", 1.0µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4500 mAh, non-removable",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Orange, Blue, Green",
+      "price": "About 250 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-16t.jpg",
+    "price": "About 250 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M10",
+    "url": "https://www.gsmarena.com/meizu_m10-9953.php",
+    "parsed_at": "2026-01-22T13:20:40.228864",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - Global",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 20, 40 - Global",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2019, September. Released 2019, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "164.9 x 76.3 x 8.5 mm (6.49 x 3.00 x 0.33 in)",
+      "weight": "184 g (6.49 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD, 450 nits (typ)",
+      "size": "6.5 inches, 102.0 cm2(~81.1% screen-to-body ratio)",
+      "resolution": "720 x 1600 pixels, 20:9 ratio (~270 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie), Flyme 8",
+      "chipset": "Mediatek MT6757T Helio P25 (16 nm)",
+      "cpu": "Octa-core (4x2.5 GHz Cortex-A53 & 4x1.6 GHz Cortex-A53)",
+      "gpu": "Mali-T880MP2"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "32GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "triple": "13 MP, f/2.0, (wide), PDAF2 MP, f/2.22 MP, f/2.2",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Phantom Black, Purplish Red, Sea Blue",
+      "price": "About 180 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m10.jpg",
+    "price": "About 180 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "16s Pro",
+    "url": "https://www.gsmarena.com/meizu_16s_pro-9792.php",
+    "parsed_at": "2026-01-22T13:20:43.847852",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 8, 34, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (5CA) Cat18 1200/150 Mbps"
+    },
+    "launch": {
+      "announced": "2019, August. Released 2019, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151.9 x 73.4 x 7.7 mm (5.98 x 2.89 x 0.30 in)",
+      "weight": "166 g (5.86 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "6.2 inches, 95.8 cm2(~85.9% screen-to-body ratio)",
+      "resolution": "1080 x 2232 pixels, 18.5:9 ratio (~403 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie), Flyme 8",
+      "chipset": "Qualcomm SM8150 Snapdragon 855+ (7 nm)",
+      "cpu": "Octa-core (1x2.96 GHz Kryo 485 & 3x2.42 GHz Kryo 485 & 4x1.78 GHz Kryo 485)",
+      "gpu": "Adreno 640 (700 MHz)"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, f/1.7, (wide), 1/2.0\", 0.8µm, PDAF, OIS20MP, f/2.6, (telephoto), 1/2.8\", 1.0µm, PDAF16 MP, f/2.2, 16mm (ultrawide), 1/3.6\", 1.0µm",
+      "features": "Six-LED dual-tone flash, Auto-HDR, panorama",
+      "video": "4K@30/60fps, 1080p@30fps (gyro-EIS)"
+    },
+    "selfie_camera": {
+      "single": "20MP, f/2.2",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS (L1+L5), GLONASS, BDS, GALILEO",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3600 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Twilight Forest, Dream Unicorn, Black Mirror, White story",
+      "price": "About 340 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-16s-pro.jpg",
+    "price": "About 340 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "16Xs",
+    "url": "https://www.gsmarena.com/meizu_16xs-9724.php",
+    "parsed_at": "2026-01-22T13:20:47.219508",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 8, 34, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2019, May. Released 2019, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152 x 74.4 x 8.3 mm (5.98 x 2.93 x 0.33 in)",
+      "weight": "165 g (5.82 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "6.2 inches, 95.8 cm2(~84.7% screen-to-body ratio)",
+      "resolution": "1080 x 2232 pixels, 18.5:9 ratio (~403 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie), Flyme",
+      "chipset": "Qualcomm SDM675 Snapdragon 675 (11 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Kryo 460 Gold & 6x1.7 GHz Kryo 460 Silver)",
+      "gpu": "Adreno 612"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 6GB RAM, 128GB 6GB RAM"
+    },
+    "main_camera": {
+      "triple": "48 MP, f/1.7, 13mm (ultrawide), 1/2.0\", 0.8µm, PDAF8 MP, f/2.2Auxiliary lens",
+      "features": "LED flash, HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps (gyro-EIS)"
+    },
+    "selfie_camera": {
+      "single": "16 MP, f/2.2, 26mm (wide), 1/3.06\", 1.0µm",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 4000 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Carbon Black, Pearl White, Phantom Blue",
+      "price": "About 220 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-16xs.jpg",
+    "price": "About 220 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "16s",
+    "url": "https://www.gsmarena.com/meizu_16s-9424.php",
+    "parsed_at": "2026-01-22T13:20:50.437949",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 20, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (5CA) Cat18 1200/150 Mbps"
+    },
+    "launch": {
+      "announced": "2019, April. Released 2019, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151.9 x 73.4 x 7.6 mm (5.98 x 2.89 x 0.30 in)",
+      "weight": "165 g (5.82 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "6.2 inches, 97.2 cm2(~87.2% screen-to-body ratio)",
+      "resolution": "1080 x 2232 pixels, 18.5:9 ratio (~400 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie), Flyme 7.3",
+      "chipset": "Qualcomm SM8150 Snapdragon 855 (7 nm)",
+      "cpu": "Octa-core (1x2.84 GHz Kryo 485 & 3x2.42 GHz Kryo 485 & 4x1.78 GHz Kryo 485)",
+      "gpu": "Adreno 640"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "48 MP, f/1.7, (wide), 1/2.0\", 0.8µm, PDAF, OIS20MP, f/2.6, (telephoto), PDAF",
+      "features": "Six-LED dual-tone flash, Auto-HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps (gyro-EIS)"
+    },
+    "selfie_camera": {
+      "single": "20MP, f/2.2",
+      "features": "HDR",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, BDS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Po 3600 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Carbon Black, Pearl White, Phantom Blue",
+      "price": "About 420 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-16s.jpg",
+    "price": "About 420 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Note 9",
+    "url": "https://www.gsmarena.com/meizu_note_9-9555.php",
+    "parsed_at": "2026-01-22T13:20:54.036569",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 8, 34, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2019, March. Released 2019, March",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.1 x 74.4 x 8.7 mm (6.03 x 2.93 x 0.34 in)",
+      "weight": "170 g (6.00 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.2 inches, 96.4 cm2(~84.7% screen-to-body ratio)",
+      "resolution": "1080 x 2244 pixels, 18.7:9 ratio (~403 ppi density)"
+    },
+    "platform": {
+      "os": "Android 9.0 (Pie), Flyme 7.2",
+      "chipset": "Qualcomm SDM675 Snapdragon 675 (11 nm)",
+      "cpu": "Octa-core (2x2.0 GHz Kryo 460 Gold & 6x1.7 GHz Kryo 460 Silver)",
+      "gpu": "Adreno 612"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 4GB RAM, 64GB 6GB RAM, 128GB 6GB RAM"
+    },
+    "main_camera": {
+      "dual": "48 MP, f/1.7, (wide), 1/2.0\", 0.8µm, PDAFAuxiliary lens",
+      "features": "Dual-LED dual-tone flash, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "20 MP, f/2.0, (wide), 1/2.8\", 1.0µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4000 mAh, non-removable",
+      "charging": "18W wired"
+    },
+    "misc": {
+      "colors": "Black, White, Starlight Blue",
+      "price": "About 200 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-note-9.jpg",
+    "price": "About 200 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Zero",
+    "url": "https://www.gsmarena.com/meizu_zero-9528.php",
+    "parsed_at": "2026-01-22T13:21:00.964475",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100",
+      "4g_bands": "1, 3, 5, 8, 34, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (4CA) Cat16 1024/150 Mbps"
+    },
+    "launch": {
+      "announced": "2019, January",
+      "status": "Cancelled"
+    },
+    "body": {
+      "dimensions": "149.8 x 74.3 x 7.9 mm (5.90 x 2.93 x 0.31 in)",
+      "weight": "-",
+      "build": "Glass front, ceramic back, ceramic frame",
+      "sim": "eSIM"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "5.99 inches, 88.1 cm2(~79.1% screen-to-body ratio)",
+      "resolution": "1080 x 2340 pixels, 19.5:9 ratio (~430 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.1 (Oreo)",
+      "chipset": "Qualcomm SDM845 Snapdragon 845 (10 nm)",
+      "cpu": "Octa-core (4x2.8 GHz Kryo 385 Gold & 4x1.8 GHz Kryo 385 Silver)",
+      "gpu": "Adreno 630"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 6GB RAM, 128GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/1.8, 27mm (wide), 1/2.3\", 1.55µm, PDAF20 MP, PDAF",
+      "features": "Dual-LED dual-tone flash, panorama",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "20 MP, f/2.0, (wide), 1/2.8\", 1.0µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "No"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "No"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion, non-removable",
+      "charging": "18W wireless"
+    },
+    "misc": {
+      "colors": "Black, White"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-zero-.jpg",
+    "brand": "Meizu"
+  },
+  {
+    "name": "C9 Pro",
+    "url": "https://www.gsmarena.com/meizu_c9_pro-9453.php",
+    "parsed_at": "2026-01-22T13:21:04.878089",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 5, 7, 8, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2018, December. Released 2018, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "146.2 x 71.2 x 9.7 mm (5.76 x 2.80 x 0.38 in)",
+      "weight": "150 g (5.29 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IGZO IPS LCD",
+      "size": "5.45 inches, 76.7 cm2(~73.6% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~295 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.0 (Oreo), Flyme UI",
+      "chipset": "Unisoc SC9832E",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-820MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, 1/3.1\", 1.12µm, AF",
+      "features": "LED flash, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "13 MP, f/2.0, (wide), 1/3.1\", 1.12µm"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Gold",
+      "price": "About 110 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-c9-pro.jpg",
+    "price": "About 110 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "C9",
+    "url": "https://www.gsmarena.com/meizu_c9-9454.php",
+    "parsed_at": "2026-01-22T13:21:08.195465",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 2, 3, 5, 8, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2018, December. Released 2018, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "146.2 x 71.2 x 9.7 mm (5.76 x 2.80 x 0.38 in)",
+      "weight": "150 g (5.29 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IGZO IPS LCD",
+      "size": "5.45 inches, 76.7 cm2(~73.6% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~295 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.0 (Oreo), Flyme UI",
+      "chipset": "Unisoc SC9832E",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-820MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, 1/3.1\", 1.12µm, AF",
+      "features": "LED flash, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.2, 1/4.0\", 1.12µm"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, removable"
+    },
+    "misc": {
+      "colors": "Black, Blue",
+      "models": "C9",
+      "price": "About 90 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-c9.jpg",
+    "price": "About 90 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Note 8",
+    "url": "https://www.gsmarena.com/meizu_note_8-9384.php",
+    "parsed_at": "2026-01-22T13:21:11.438195",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100 - China",
+      "4g_bands": "1, 3, 5, 38, 39, 40, 41 - China",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2018, October. Released 2018, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.6 x 75.5 x 7.9 mm (6.05 x 2.97 x 0.31 in)",
+      "weight": "168 g (5.93 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.0 inches, 92.9 cm2(~80.1% screen-to-body ratio)",
+      "resolution": "1080 x 2160 pixels, 18:9 ratio (~402 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.0 (Oreo), Flyme 7.3",
+      "chipset": "Qualcomm SDM632 Snapdragon 632 (14 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Kryo 250 Gold & 4x1.8 GHz Kryo 250 Silver)",
+      "gpu": "Adreno 506"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/1.9, 1/2.55\", 1.4µm, dual pixel PDAFAuxiliary lens",
+      "features": "Dual-LED dual-tone flash, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3600 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Black, Blue, Red, Pink",
+      "price": "About 200 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-note-8-.jpg",
+    "price": "About 200 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "X8",
+    "url": "https://www.gsmarena.com/meizu_x8-9341.php",
+    "parsed_at": "2026-01-22T13:21:14.438435",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100 - China",
+      "4g_bands": "1, 3, 5, 8, 34, 38, 39, 40, 41 - China",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat15 800/150 Mbps"
+    },
+    "launch": {
+      "announced": "2018, September. Released 2018, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151.2 x 74.6 x 7.8 mm (5.95 x 2.94 x 0.31 in)",
+      "weight": "160 g (5.64 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.2 inches, 97.6 cm2(~86.5% screen-to-body ratio)",
+      "resolution": "1080 x 2220 pixels, 18.5:9 ratio (~398 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.0 (Oreo), Flyme UI",
+      "chipset": "Qualcomm SDM710 Snapdragon 710 (10 nm)",
+      "cpu": "Octa-core (2x2.2 GHz 360 Gold & 6x1.7 GHz Kryo 360 Silver)",
+      "gpu": "Adreno 616"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 4GB RAM, 64GB 6GB RAM, 128GB 6GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/1.9, 1/2.55\", 1.4µm, dual pixel PDAF5 MP",
+      "features": "Dual-LED dual-tone flash, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "20 MP, f/2.0, (wide), 1/2.8\", 1.0µm"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3210 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black, Blue, White",
+      "models": "X8",
+      "price": "About 200 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-x8.jpg",
+    "price": "About 200 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "V8 Pro",
+    "url": "https://www.gsmarena.com/meizu_v8_pro-9338.php",
+    "parsed_at": "2026-01-22T13:21:19.465447",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100 - China",
+      "4g_bands": "1, 3, 5, 8, 34, 38, 39, 40, 41 - China",
+      "speed": "HSPA 42.2/11.5 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2018, September. Released 2018, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "147.5 x 72.7 x 8.1 mm (5.81 x 2.86 x 0.32 in)",
+      "weight": "159 g (5.61 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.7 inches, 83.8 cm2(~78.2% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.0 (Oreo), Flyme UI",
+      "chipset": "Mediatek MT6762 Helio P22 (12 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "PowerVR GE8320"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/2.2, AF5 MP, f/2.2",
+      "features": "Dual-LED dual-tone flash, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/1.9"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3100 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black, Gold",
+      "price": "About 150 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-v8-pro.jpg",
+    "price": "About 150 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "V8",
+    "url": "https://www.gsmarena.com/meizu_v8-9339.php",
+    "parsed_at": "2026-01-22T13:21:24.037277",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 2100 - China",
+      "4g_bands": "1, 3, 5, 7, 8, 38, 39, 40, 41 - China",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2018, September. Released 2018, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "148 x 73 x 8.4 mm (5.83 x 2.87 x 0.33 in)",
+      "weight": "145 g (5.11 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.7 inches, 83.8 cm2(~77.6% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.0 (Oreo), Flyme UI",
+      "chipset": "Mediatek MT6739 (28 nm)",
+      "cpu": "Quad-core 1.5 GHz Cortex-A53",
+      "gpu": "PowerVR GE8100"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "Dual-LED dual-tone flash, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/1.9"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3200 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 100 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-v8.jpg",
+    "price": "About 100 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "16X",
+    "url": "https://www.gsmarena.com/meizu_16x-9337.php",
+    "parsed_at": "2026-01-22T13:21:28.761468",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - China",
+      "4g_bands": "1, 3, 4, 5, 8, 34, 38, 39, 40, 41 - China",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat15 800/150 Mbps"
+    },
+    "launch": {
+      "announced": "2018, September. Released 2018, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "151 x 73.5 x 7.5 mm (5.94 x 2.89 x 0.30 in)",
+      "weight": "154 g (5.43 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "6.0 inches, 92.9 cm2(~83.7% screen-to-body ratio)",
+      "resolution": "1080 x 2160 pixels, 18:9 ratio (~402 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.0 (Oreo), Flyme UI",
+      "chipset": "Qualcomm SDM710 Snapdragon 710 (10 nm)",
+      "cpu": "Octa-core (2x2.2 GHz 360 Gold & 6x1.7 GHz Kryo 360 Silver)",
+      "gpu": "Adreno 616"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 6GB RAM, 128GB 6GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/1.8, 1/2.3\", 1.55µm, dual pixel PDAF, 4-axis OIS20 MP, f/2.6, 1/2.6\", 1.0µm, AF",
+      "features": "Laser AF, Six-LED dual-tone flash, Auto-HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps (gyro-EIS)"
+    },
+    "selfie_camera": {
+      "single": "20 MP, f/2.0, (wide), 1/2.8\", 1.0µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3100 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black, White, Gold",
+      "price": "About 300 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m16x-.jpg",
+    "price": "About 300 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "16",
+    "url": "https://www.gsmarena.com/meizu_16-9280.php",
+    "parsed_at": "2026-01-22T13:21:32.089113",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100 - Global",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 20, 40 - Global",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (4CA) Cat16 1024/150 Mbps"
+    },
+    "launch": {
+      "announced": "2018, August. Released 2018, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "150.5 x 73.2 x 7.3 mm (5.93 x 2.88 x 0.29 in)",
+      "weight": "152 g (5.36 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "6.0 inches, 92.9 cm2(~84.3% screen-to-body ratio)",
+      "resolution": "1080 x 2160 pixels, 18:9 ratio (~402 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.1 (Oreo), Flyme UI",
+      "chipset": "Qualcomm SDM845 Snapdragon 845 (10 nm)",
+      "cpu": "Octa-core (4x2.8 GHz Kryo 385 Gold & 4x1.7 GHz Kryo 385 Silver)",
+      "gpu": "Adreno 630"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 6GB RAM, 128GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/1.8, 25mm (wide), 1/2.3\", 1.55µm, dual pixel PDAF, 4-axis OIS20 MP, f/2.6, 1/2.6\", 1.0µm",
+      "features": "Laser AF, Six-LED dual-tone flash, Auto-HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps (gyro-EIS)"
+    },
+    "selfie_camera": {
+      "single": "20 MP, f/2.0, 27mm (wide), 1/2.8\", 1.0µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS, GALILEO, SBAS, QZSS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3010 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 410 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-16.jpg",
+    "price": "About 410 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "16 Plus",
+    "url": "https://www.gsmarena.com/meizu_16_plus-9279.php",
+    "parsed_at": "2026-01-22T13:21:36.552681",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1700(AWS) / 1900 / 2100 - Global",
+      "4g_bands": "1, 2, 3, 4, 5, 7, 8, 20, 40 - Global",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (4CA) Cat16 1024/150 Mbps"
+    },
+    "launch": {
+      "announced": "2018, August. Released 2018, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "160.4 x 78.2 x 7.3 mm (6.31 x 3.08 x 0.29 in)",
+      "weight": "182 g (6.42 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "6.5 inches, 107.9 cm2(~86.0% screen-to-body ratio)",
+      "resolution": "1080 x 2160 pixels, 18:9 ratio (~374 ppi density)"
+    },
+    "platform": {
+      "os": "Android 8.1 (Oreo), Flyme UI",
+      "chipset": "Qualcomm SDM845 Snapdragon 845 (10 nm)",
+      "cpu": "Octa-core (4x2.8 GHz Kryo 385 Gold & 4x1.7 GHz Kryo 385 Silver)",
+      "gpu": "Adreno 630"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "128GB 6GB RAM, 128GB 8GB RAM, 256GB 8GB RAM"
+    },
+    "main_camera": {
+      "dual": "12 MP, f/1.8, 1/2.3\", 1.55µm, dual pixel PDAF, 4-axis OIS20 MP, f/2.6, 1/2.6\", 1.0µm, AF",
+      "features": "Laser AF, Six-LED dual-tone flash, Auto-HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps (gyro-EIS)"
+    },
+    "selfie_camera": {
+      "single": "20 MP, f/2.0, (wide), 1/2.8\", 1.0µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes, with stereo speakers",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 а/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "5.0, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS, GALILEO, SBAS, QZSS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (under display, optical), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3570 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Black, White",
+      "price": "About 480 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-16-plus.jpg",
+    "price": "About 480 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M6T",
+    "url": "https://www.gsmarena.com/meizu_m6t-9213.php",
+    "parsed_at": "2026-01-22T13:21:40.183844",
+    "network": {
+      "technology": "GSM / CDMA / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 8, 34, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2018, May. Released 2018, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "152.3 x 73 x 8.4 mm (6.00 x 2.87 x 0.33 in)",
+      "weight": "145 g (5.11 oz)",
+      "build": "Glass front, plastic back, plastic frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.7 inches, 83.8 cm2(~75.4% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 7.0 (Nougat), Flyme UI",
+      "chipset": "Mediatek MT6750 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 32GB 4GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "dual": "13 MP, f/2.2, PDAFAuxiliary lens",
+      "features": "LED flash, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (rear-mounted), accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3300 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black, Champagne Gold, Coral Red",
+      "models": "M6T",
+      "price": "About 130 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m6t.jpg",
+    "price": "About 130 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M8c",
+    "url": "https://www.gsmarena.com/meizu_m8c-9210.php",
+    "parsed_at": "2026-01-22T13:21:44.384822",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 40",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2018, May. Released 2018, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "146.4 x 70 x 8.5 mm (5.76 x 2.76 x 0.33 in)",
+      "weight": "140 g (4.94 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.45 inches, 76.7 cm2(~74.8% screen-to-body ratio)",
+      "resolution": "720 x 1440 pixels, 18:9 ratio (~295 ppi density)"
+    },
+    "platform": {
+      "os": "Android 7.0 (Nougat), Flyme UI",
+      "chipset": "Qualcomm MSM8917 Snapdragon 425 (28 nm)",
+      "cpu": "Quad-core 1.4 GHz Cortex-A53",
+      "gpu": "Adreno 308"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "FM radio",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity"
+    },
+    "battery": {
+      "type": "Li-Ion 3070 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black, Gold, Blue, Red",
+      "price": "About 140 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m8c.jpg",
+    "price": "About 140 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M5c",
+    "url": "https://www.gsmarena.com/meizu_m5c-8697.php",
+    "parsed_at": "2026-01-22T13:22:01.110720",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 38, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2017, May. Released 2017, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "144 x 70.5 x 8.3 mm (5.67 x 2.78 x 0.33 in)",
+      "weight": "135 g (4.76 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~67.9% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), Flyme 6",
+      "chipset": "Mediatek MT6737 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T720MP1"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "8 MP, f/2.0, AF",
+      "features": "Dual-LED dual-tone flash, panorama",
+      "video": "720p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro (digital), proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black, Blue, Red, Gold, Pink",
+      "models": "M5c, MZ-M5c",
+      "price": "About 140 EUR"
+    },
+    "our_tests": {
+      "performance": "GeekBench: 1285 (v4.4)"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m5c-.jpg",
+    "price": "About 140 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "E2",
+    "url": "https://www.gsmarena.com/meizu_e2-8659.php",
+    "parsed_at": "2026-01-22T13:22:02.919443",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2017, April. Released 2017, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.7 x 75.7 x 7.5 mm (6.05 x 2.98 x 0.30 in)",
+      "weight": "155 g (5.47 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 82.6 cm2(~71.0% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~403 ppi density)"
+    },
+    "platform": {
+      "os": "Android 7 (Nougat), Flyme 6",
+      "chipset": "Mediatek MT6757 Helio P20 (16 nm)",
+      "cpu": "Octa-core (4x2.3 GHz Cortex-A53 & 4x1.6 GHz Cortex-A53)",
+      "gpu": "Mali-T880MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Quad-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "8 MP, f/2.0, 1/3.2\", 1.4µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.2, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3400 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Black, Gold, Silver",
+      "price": "About 210 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-e2.jpg",
+    "price": "About 210 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M5s",
+    "url": "https://www.gsmarena.com/meizu_m5s-8500.php",
+    "parsed_at": "2026-01-22T13:22:04.611995",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 1900 / 2100",
+      "4g_bands": "LTE 1800 / 2100 / 2600 TD-LTE 2300 / 2600",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2017, February. Released 2017, February",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "148.2 x 72.5 x 8.4 mm (5.83 x 2.85 x 0.33 in)",
+      "weight": "143 g (5.04 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.2 inches, 74.5 cm2(~69.4% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), Flyme 5.2",
+      "chipset": "Mediatek MT6753 (28 nm)",
+      "cpu": "Octa-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 3GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro (digital), proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3000 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Champanage Gold, Rose Gold, Stay Gray, Moonlight Silver",
+      "models": "M5s, MZ-M5s",
+      "price": "About 130 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 781Basemark X: 4646",
+      "display": "Contrast ratio: 955:1 (nominal), 2.580 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 65dB / Noise 69dB / Ring 84dB",
+      "audio_quality": "Noise -91.3dB / Crosstalk -86.1dB",
+      "battery_(old)": "Endurance rating 56h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m5s.jpg",
+    "price": "About 130 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M5 Note",
+    "url": "https://www.gsmarena.com/meizu_m5_note-8450.php",
+    "parsed_at": "2026-01-22T13:22:06.406693",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, December. Released 2016, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.6 x 75.8 x 8.2 mm (6.05 x 2.98 x 0.32 in)",
+      "weight": "175 g (6.17 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 82.6 cm2(~70.9% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~403 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), Flyme 7.3",
+      "chipset": "Mediatek MT6755 Helio P10 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 4GB RAM, 32GB 3GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4000 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Gray, Silver, Gold, Blue",
+      "models": "M5 Note, MZ-M5 Note",
+      "price": "About 190 EUR"
+    },
+    "our_tests": {
+      "performance": "GFXBench: 1.9fps (ES 3.1 onscreen)",
+      "display": "Contrast ratio: 754:1 (nominal), 2.189 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 65dB / Noise 70dB / Ring 86dB",
+      "audio_quality": "Noise -93.8dB / Crosstalk -94.1dB",
+      "battery_(old)": "Endurance rating 98h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m5-note.jpg",
+    "price": "About 190 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M3x",
+    "url": "https://www.gsmarena.com/meizu_m3x-8452.php",
+    "parsed_at": "2026-01-22T13:22:08.078928",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2016, November. Released 2016, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.8 x 76 x 7.4 mm (6.06 x 2.99 x 0.29 in)",
+      "weight": "165 g (5.82 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~71.3% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6 (Marshmallow), Flyme 6",
+      "chipset": "Mediatek MT6757 Helio P20 (16 nm)",
+      "cpu": "Octa-core (4x2.3 GHz Cortex-A53 & 4x1.6 GHz Cortex-A53)",
+      "gpu": "Mali-T880MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "12 MP, f/2.0, 1/2.9\", 1.25µm, PDAF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0, 1/4.0\", 1.4µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3200 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Blue, Gold, Black, Silver"
+    },
+    "our_tests": {
+      "loudspeaker": "-26.0 LUFS (Very good)"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m3x.jpg",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Pro 6 Plus",
+    "url": "https://www.gsmarena.com/meizu_pro_6_plus-8451.php",
+    "parsed_at": "2026-01-22T13:22:09.595733",
+    "network": {
+      "technology": "GSM / HSPA / EVDO / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 38, 39, 40, 41",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, November. Released 2016, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "155.6 x 77.3 x 7.3 mm (6.13 x 3.04 x 0.29 in)",
+      "weight": "158 g (5.57 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.7 inches, 89.6 cm2(~74.5% screen-to-body ratio)",
+      "resolution": "1440 x 2560 pixels, 16:9 ratio (~515 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6 (Marshmallow), Flyme 7.3",
+      "chipset": "Exynos 8890 Octa (14 nm)",
+      "cpu": "Octa-core (4x2.0 GHz Mongoose & 4x1.5 GHz Cortex-A53) - 64 GB versionOcta-core (4x2.3 GHz Mongoose & 4x1.6 GHz Cortex-A53) - 128 GB version",
+      "gpu": "Mali-T880 MP10 - 64 GB versionMali-T880 MP12 - 128 GB version"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 4GB RAM, 128GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "12 MP, f/2.0, 1/2.9\", 1.25µm, PDAF, 4-axis OIS",
+      "features": "Laser AF, Ten-LED dual-tone flash, HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0, 1/4.0\", 1.4µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 3.1"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, heart rate"
+    },
+    "battery": {
+      "type": "Li-Ion 3400 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Gold, Silver, Gray",
+      "models": "PRO 6 Plus",
+      "price": "About 550 EUR"
+    },
+    "our_tests": {
+      "performance": "GFXBench: 7fps (ES 3.1 onscreen)",
+      "display": "Contrast ratio: Infinite (nominal), 3.935 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 60dB / Noise 69dB / Ring 70dB",
+      "audio_quality": "Noise -93.5dB / Crosstalk -92.6dB",
+      "battery_(old)": "Endurance rating 96h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-pro-6-plus.jpg",
+    "price": "About 550 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "MX5e",
+    "url": "https://www.gsmarena.com/meizu_mx5e-8446.php",
+    "parsed_at": "2026-01-22T13:22:11.433765",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2016, April. Released 2016, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "149.9 x 74.7 x 7.6 mm (5.90 x 2.94 x 0.30 in)",
+      "weight": "149 g (5.26 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "5.5 inches, 83.4 cm2(~74.5% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Flyme 5",
+      "chipset": "Mediatek MT6795 Helio X10 (28 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "PowerVR G6200"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16GB 3GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "16 MP, AF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3150 mAh, non-removable",
+      "charging": "24W wired, 60% in 40 min"
+    },
+    "misc": {
+      "colors": "Gray, Gold, Silver, Black/Silver",
+      "price": "About 190 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-mx5.jpg",
+    "price": "About 190 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "U10",
+    "url": "https://www.gsmarena.com/meizu_u10-8441.php",
+    "parsed_at": "2026-01-22T13:22:13.209200",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, August. Released 2016, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141.9 x 69.6 x 7.9 mm (5.59 x 2.74 x 0.31 in)",
+      "weight": "139 g (4.90 oz)",
+      "sim": "Dual SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~69.8% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android OS",
+      "chipset": "Mediatek MT6750 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 b/g/n, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2760 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black, White, Shampane Gold",
+      "price": "About 160 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-u10.jpg",
+    "price": "About 160 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "U20",
+    "url": "https://www.gsmarena.com/meizu_u20-8440.php",
+    "parsed_at": "2026-01-22T13:22:15.283510",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 2100",
+      "4g_bands": "LTE 1800 / 2100 / 2600",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, August. Released 2016, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153 x 75.4 x 7.7 mm (6.02 x 2.97 x 0.30 in)",
+      "weight": "158 g (5.57 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 83.4 cm2(~72.3% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Asahi Dragontrail Glass"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), Flyme UI",
+      "chipset": "Mediatek MT6755 Helio P10 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3260 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Black, Silver, Rose Gold, Gold",
+      "models": "MZ-U20, U20",
+      "price": "About 190 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-u20.jpg",
+    "price": "About 190 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Pro 6s",
+    "url": "https://www.gsmarena.com/meizu_pro_6s-8389.php",
+    "parsed_at": "2026-01-22T13:22:16.859838",
+    "network": {
+      "technology": "GSM / HSPA / EVDO / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, November. Released 2016, December",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "147.7 x 70.8 x 7.3 mm (5.81 x 2.79 x 0.29 in)",
+      "weight": "163 g (5.75 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.2 inches, 74.5 cm2(~71.3% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~424 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), Flyme 7.3",
+      "chipset": "Mediatek MT6797T Helio X25 (20 nm)",
+      "cpu": "Deca-core (2x2.5 GHz Cortex-A72, 4x2 GHz Cortex-A53, 4x1.4 GHz Cortex-A53)",
+      "gpu": "Mali-T880 MP4"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "12 MP, f/2.0, 1/2.9\", 1.25µm, PDAF, 4-axis OIS",
+      "features": "Laser AF, Ten-LED dual-tone flash, HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0, 1/4.0\", 1.4µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 3.1"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3060 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Black, Gold, Silver, Rose Gold",
+      "price": "About 430 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-pro-6s.jpg",
+    "price": "About 430 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M5",
+    "url": "https://www.gsmarena.com/meizu_m5-8408.php",
+    "parsed_at": "2026-01-22T13:22:18.691168",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 5, 7, 8, 20, 38, 40",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, October. Released 2016, November",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "147.3 x 72.8 x 8.2 mm (5.80 x 2.87 x 0.32 in)",
+      "weight": "138 g (4.87 oz)",
+      "build": "Glass front, aluminum back, aluminum frame",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.2 inches, 74.5 cm2(~69.5% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~282 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), Flyme 6.3",
+      "chipset": "Mediatek MT6750 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3070 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Mint Green, Glacier White, Champanage Gold, Sapphire Blue, Matte Black",
+      "models": "M5, MZ-MEIZU_M5, M611H",
+      "price": "About 120 EUR"
+    },
+    "our_tests": {
+      "performance": "GFXBench: 3.7fps (ES 3.1 onscreen)",
+      "display": "Contrast ratio: 1060:1 (nominal), 2.710 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 63dB / Noise 69dB / Ring 82dB",
+      "audio_quality": "Noise -93.3dB / Crosstalk -92.2dB",
+      "battery_(old)": "Endurance rating 76h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m5.jpg",
+    "price": "About 120 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M3 Max",
+    "url": "https://www.gsmarena.com/meizu_m3_max-8321.php",
+    "parsed_at": "2026-01-22T13:22:20.200906",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2016, September. Released 2016, September",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "163.4 x 81.6 x 7.9 mm (6.43 x 3.21 x 0.31 in)",
+      "weight": "189 g (6.67 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "6.0 inches, 99.2 cm2(~74.4% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~367 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), Flyme 5.2",
+      "chipset": "Mediatek MT6755 Helio P10 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "64GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, 1/3.0\", PDAF",
+      "features": "Dual-LED dual-tone flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 4100 mAh, non-removable",
+      "charging": "24W wired, 50% in 30 min"
+    },
+    "misc": {
+      "colors": "Champagne Gold, Silver, Gray, Rose Gold",
+      "price": "About 270 EUR"
+    },
+    "our_tests": {
+      "performance": "GFXBench: 1.9fps (ES 3.1 onscreen)",
+      "display": "Contrast ratio: 976:1 (nominal), 2.447 (sunlight)",
+      "loudspeaker": "Voice 62dB / Noise 70dB / Ring 84dB",
+      "battery_(old)": "Endurance rating 100h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m3m.jpg",
+    "price": "About 270 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M3e",
+    "url": "https://www.gsmarena.com/meizu_m3e-8264.php",
+    "parsed_at": "2026-01-22T13:22:21.658744",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2016, August. Released 2016, August",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.6 x 75.8 x 7.9 mm (6.05 x 2.98 x 0.31 in)",
+      "weight": "172 g (6.07 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 82.6 cm2(~70.9% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~403 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Flyme 5.2",
+      "chipset": "Mediatek MT6755 Helio P10 (28 nm)",
+      "cpu": "Octa-core (4x1.8 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC",
+      "internal": "32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, 1/3.0\", PDAF",
+      "features": "Dual-LED dual-tone flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3100 mAh, non-removable",
+      "charging": "24W wired, 50% in 30 min"
+    },
+    "misc": {
+      "colors": "Blue, Gold, Gray, Pink, Silver",
+      "price": "About 220 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m3e.jpg",
+    "price": "About 220 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "MX6",
+    "url": "https://www.gsmarena.com/meizu_mx6-8078.php",
+    "parsed_at": "2026-01-22T13:22:23.251496",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE (2CA) Cat6 300/50 Mbps",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2016, July. Released 2016, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "153.6 x 75.2 x 7.3 mm (6.05 x 2.96 x 0.29 in)",
+      "weight": "155 g (5.47 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "TDDI",
+      "size": "5.5 inches, 82.6 cm2(~71.5% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~403 ppi density)"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), Flyme 7.3",
+      "chipset": "Mediatek MT6797 Helio X20 (20 nm)",
+      "cpu": "Deca-core (2x2.3GHz Cortex-A72, 4x1.9GHz Cortex-A53, 4x1.4GHz Cortex-A53)",
+      "gpu": "Mali-T880 MP4"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "32GB 3GB RAM, 32GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "12 MP, f/2.0, 1/2.9\", 1.25µm, PDAF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3060 mAh, non-removable",
+      "charging": "24W wired"
+    },
+    "misc": {
+      "colors": "Gray, Silver, Champagne Gold, Rose Gold",
+      "models": "MX6, MZ-MX6",
+      "price": "About 300 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark X: 12621",
+      "display": "Contrast ratio: 1344:1 (nominal), 2.751 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 65dB / Noise 71dB / Ring 72dB",
+      "audio_quality": "Noise -94.2dB / Crosstalk -89.3dB",
+      "battery_(old)": "Endurance rating 68h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-mx6.jpg",
+    "price": "About 300 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M3s",
+    "url": "https://www.gsmarena.com/meizu_m3s-8148.php",
+    "parsed_at": "2026-01-22T13:22:24.981885",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, June. Released 2016, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141.9 x 69.9 x 8.3 mm (5.59 x 2.75 x 0.33 in)",
+      "weight": "138 g (4.87 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~69.5% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Flyme 5.1",
+      "chipset": "Mediatek MT6750 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3020 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Silver, Gray, Pink, Gold",
+      "models": "M3s, MZ-M3s",
+      "price": "About 120 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m3s.jpg",
+    "price": "About 120 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M3",
+    "url": "https://www.gsmarena.com/meizu_m3-8062.php",
+    "parsed_at": "2026-01-22T13:22:27.028473",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2016, April. Released 2016, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "141.5 x 69.5 x 8.3 mm (5.57 x 2.74 x 0.33 in)",
+      "weight": "132 g (4.66 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~70.1% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Flyme 5.1",
+      "chipset": "Mediatek MT6750 (28 nm)",
+      "cpu": "Octa-core (4x1.5 GHz Cortex-A53 & 4x1.0 GHz Cortex-A53)",
+      "gpu": "Mali-T860MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, PDAF",
+      "features": "Dual-LED dual-tone flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2870 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Gray, White, Blue, Pink, Gold",
+      "price": "About 130 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m3.jpg",
+    "price": "About 130 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "Pro 6",
+    "url": "https://www.gsmarena.com/meizu_pro_6-7971.php",
+    "parsed_at": "2026-01-22T13:22:29.084011",
+    "network": {
+      "technology": "GSM / HSPA / EVDO / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 38, 39, 40, 41",
+      "speed": "HSPA, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2016, April. Released 2016, May",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "147.7 x 70.8 x 7.3 mm (5.81 x 2.79 x 0.29 in)",
+      "weight": "160 g (5.64 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "Super AMOLED",
+      "size": "5.2 inches, 74.9 cm2(~71.6% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~423 ppi density)",
+      "protection": "Corning Gorilla Glass 4"
+    },
+    "platform": {
+      "os": "Android 6.0 (Marshmallow), Flyme 8",
+      "chipset": "Mediatek MT6797T Helio X25 (20 nm)",
+      "cpu": "Deca-core (2x2.5 GHz Cortex-A72, 4x2 GHz Cortex-A53, 4x1.4 GHz Cortex-A53)",
+      "gpu": "Mali-T880 MP4"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "32GB 4GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "21 MP, f/2.2, 31mm (standard), 1/2.4\", PDAF",
+      "features": "Laser AF, Ten-LED dual-tone flash, HDR, panorama",
+      "video": "4K@30fps, 720p@100fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0, 1/4.0\", 1.4µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C 3.1"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass, barometer"
+    },
+    "battery": {
+      "type": "Li-Ion 2560 mAh, non-removable",
+      "charging": "24W wired, 26% in 10 min, 100% in 60 min"
+    },
+    "misc": {
+      "colors": "Gray, Gold, Silver, Flames Red, Rose Gold",
+      "models": "PRO 6",
+      "price": "About 410 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 1919Basemark X: 15209",
+      "display": "Contrast ratio: 40000:1 (nominal), 3.659 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 64dB / Noise 71dB / Ring 89dB",
+      "audio_quality": "Noise -93.5dB / Crosstalk -92.3dB",
+      "battery_(old)": "Endurance rating 57h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-pro-6.jpg",
+    "price": "About 410 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M3 Note",
+    "url": "https://www.gsmarena.com/meizu_m3_note-8005.php",
+    "parsed_at": "2026-01-22T13:22:30.529874",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M1 Metal",
+    "url": "https://www.gsmarena.com/meizu_m1_metal-7674.php",
+    "parsed_at": "2026-01-22T13:22:34.916588",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, October. Released 2015, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "150.7 x 75.3 x 8.2 mm (5.93 x 2.96 x 0.32 in)",
+      "weight": "162g (5.71 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.5 inches, 82.6 cm2(~72.8% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~403 ppi density)",
+      "protection": "Dinorex T2X-1 scratch/shock resistant glass"
+    },
+    "platform": {
+      "os": "Android, 5.1.1 (Lollipop), Flyme 5.1",
+      "chipset": "Mediatek MT6795 Helio X10 (28 nm)",
+      "cpu": "Octa-core 2.0 GHz Cortex-A53",
+      "gpu": "PowerVR G6200"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3140 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "White, Gold, Gray, Blue, Pink",
+      "price": "About 170 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 1039Basemark X: 8526",
+      "display": "Contrast ratio: 780 (nominal), 2.675 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 68dB / Noise 66dB / Ring 73dB",
+      "audio_quality": "Noise -93.6dB / Crosstalk -93.9dB",
+      "battery_(old)": "Endurance rating 61h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-metal1.jpg",
+    "price": "About 170 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "PRO 5",
+    "url": "https://www.gsmarena.com/meizu_pro_5-7573.php",
+    "parsed_at": "2026-01-22T13:22:37.117519",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100 - M576 model",
+      "4g_bands": "1, 3, 7, 38, 39, 40, 41 - M576 model",
+      "speed": "HSPA, LTE (2CA) Cat6 300/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, September. Released 2015, October",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "156.7 x 78 x 7.5 mm (6.17 x 3.07 x 0.30 in)",
+      "weight": "168 g (5.93 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "5.7 inches, 89.6 cm2(~73.3% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~386 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Flyme 5",
+      "chipset": "Exynos 7420 Octa (14 nm)",
+      "cpu": "Octa-core (4x2.1 GHz Cortex-A57 & 4x1.5 GHz Cortex-A53)",
+      "gpu": "Mali-T760MP8"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "32GB 3GB RAM, 64GB 4GB RAM"
+    },
+    "main_camera": {
+      "single": "21 MP, f/2.2, 31mm (standard), 1/2.4\", 1.12µm, PDAF",
+      "features": "Laser AF, Dual-LED dual-tone flash, HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0, 27mm (wide)",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "Yes",
+      "radio": "No",
+      "usb": "USB Type-C"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3050 mAh, non-removable",
+      "charging": "24W wired, 65% in 30 min",
+      "music_play": "Up to 48 h"
+    },
+    "misc": {
+      "colors": "Gray, Gold, Silver, Black/Silver",
+      "price": "About 390 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 1837Basemark X: 20038",
+      "display": "Contrast ratio: Infinite (nominal), 3.781 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 67dB / Noise 66dB / Ring 68dB",
+      "audio_quality": "Noise -93.9dB / Crosstalk -95.7dB",
+      "battery_(old)": "Endurance rating 95h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-pro-5.jpg",
+    "price": "About 390 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M2",
+    "url": "https://www.gsmarena.com/meizu_m2-7455.php",
+    "parsed_at": "2026-01-22T13:22:39.461945",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 1900 / 2100",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE"
+    },
+    "launch": {
+      "announced": "2015, July. Released 2015, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "140.1 x 68.9 x 8.7 mm (5.52 x 2.71 x 0.34 in)",
+      "weight": "131 g (4.62 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IPS LCD",
+      "size": "5.0 inches, 68.9 cm2(~71.4% screen-to-body ratio)",
+      "resolution": "720 x 1280 pixels, 16:9 ratio (~294 ppi density)",
+      "protection": "Asahi Dragontrail Glass"
+    },
+    "platform": {
+      "os": "Android 5.1 (Lollipop), Flyme 4.5",
+      "chipset": "Mediatek MT6735 (28 nm)",
+      "cpu": "Quad-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T720MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "LED flash",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0"
+    },
+    "features": {
+      "sensors": "Accelerometer, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2500 mAh, non-removable",
+      "stand-by": "Up to 680 h",
+      "talk_time": "Up to 23 h",
+      "music_play": "Up to 45 h"
+    },
+    "misc": {
+      "colors": "Gray, White, Blue, Pink",
+      "models": "m2",
+      "price": "About 130 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m2.jpg",
+    "price": "About 130 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "MX5",
+    "url": "https://www.gsmarena.com/meizu_mx5-7240.php",
+    "parsed_at": "2026-01-22T13:22:42.180950",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA",
+      "4g_bands": "LTE",
+      "speed": "HSPA, LTE Cat4 150/50 Mbps",
+      "gprs": "Yes",
+      "edge": "Yes"
+    },
+    "launch": {
+      "announced": "2015, June. Released 2015, July",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "149.9 x 74.7 x 7.6 mm (5.90 x 2.94 x 0.30 in)",
+      "weight": "149 g (5.26 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "AMOLED",
+      "size": "5.5 inches, 83.4 cm2(~74.5% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~401 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 5.0.1 (Lollipop), Flyme 4.5",
+      "chipset": "Mediatek MT6795 Helio X10 (28 nm)",
+      "cpu": "Octa-core 2.2 GHz Cortex-A53",
+      "gpu": "PowerVR G6200"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16GB 3GB RAM, 32GB 3GB RAM, 64GB 3GB RAM"
+    },
+    "main_camera": {
+      "single": "20.7 MP, f/2.2, 1/2.3\", 1.2µm",
+      "features": "Laser AF, Dual-LED dual-tone flash, HDR, panorama",
+      "video": "4K@30fps, 1080p@30fps, 720p@100fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.2",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n/ac, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.1, A2DP, LE",
+      "positioning": "GPS, GLONASS, BDS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Fingerprint (front-mounted), accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3150 mAh, non-removable",
+      "charging": "24W wired, 60% in 40 min"
+    },
+    "misc": {
+      "colors": "Gray, Gold, Silver, Black/Silver",
+      "models": "MX5",
+      "price": "About 210 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 1252Basemark X: 10403",
+      "display": "Contrast ratio: Infinite (nominal), 3.416 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 75dB / Noise 73dB / Ring 79dB",
+      "audio_quality": "Noise -94.0dB / Crosstalk -95.0dB",
+      "battery_(old)": "Endurance rating 55h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-mx5.jpg",
+    "price": "About 210 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M2 Note",
+    "url": "https://www.gsmarena.com/meizu_m2_note-7266.php",
+    "parsed_at": "2026-01-22T13:22:43.936914",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 850 / 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 7, 38, 39, 40, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, June. Released 2015, June",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "150.9 x 75.2 x 8.7 mm (5.94 x 2.96 x 0.34 in)",
+      "weight": "149 g (5.26 oz)",
+      "sim": "Nano-SIM + Nano-SIM"
+    },
+    "display": {
+      "type": "IGZO IPS LCD",
+      "size": "5.5 inches, 82.6 cm2(~72.8% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~403 ppi density)",
+      "protection": "Asahi Dragontrail Glass or Dinorex T2X-1 scratch/shock resistant glass"
+    },
+    "platform": {
+      "os": "Android 5.0 (Lollipop), Flyme 4.5",
+      "chipset": "Mediatek MT6753 (28 nm)",
+      "cpu": "Octa-core 1.3 GHz Cortex-A53",
+      "gpu": "Mali-T720MP3"
+    },
+    "memory": {
+      "card_slot": "microSDXC (uses shared SIM slot)",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, 1/3.0\", AF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p, 1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0, 1/5.0\", 1.12µm",
+      "video": "1080p@30fps"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3100 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "Gray, White, Blue, Pink",
+      "models": "m2 note, MZ-m2 note",
+      "price": "About 200 EUR"
+    },
+    "our_tests": {
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 65dB / Noise 62dB / Ring 75dB",
+      "battery_(old)": "Endurance rating 69h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m1-note2.jpg",
+    "price": "About 200 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M1",
+    "url": "https://www.gsmarena.com/meizu_m1-6978.php",
+    "parsed_at": "2026-01-22T13:22:45.856109",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 900 / 1800 / 1900",
+      "3g_bands": "HSDPA 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 38, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2015, January. Released 2015, April",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "140.2 x 72.1 x 8.9 mm (5.52 x 2.84 x 0.35 in)",
+      "weight": "128 g (4.52 oz)",
+      "sim": "Micro-SIM"
+    },
+    "display": {
+      "type": "TFT",
+      "size": "5.0 inches, 70.7 cm2(~69.9% screen-to-body ratio)",
+      "resolution": "768 x 1280 pixels, 5:3 ratio (~300 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 4.4.4 (KitKat)",
+      "chipset": "Mediatek MT6732 (28 nm)",
+      "cpu": "Quad-core 1.5 GHz Cortex-A53",
+      "gpu": "Mali-T760MP2"
+    },
+    "memory": {
+      "card_slot": "microSDXC (dedicated slot)",
+      "internal": "8GB 1GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, AF",
+      "features": "LED flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 2500 mAh, non-removable"
+    },
+    "misc": {
+      "colors": "White, BLue, Yellow, Green, Pink, Mint",
+      "price": "About 100 EUR"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m1-note-mini.jpg",
+    "price": "About 100 EUR",
+    "brand": "Meizu"
+  },
+  {
+    "name": "M1 Note",
+    "url": "https://www.gsmarena.com/meizu_m1_note-6890.php",
+    "parsed_at": "2026-01-22T13:22:48.196880",
+    "network": {
+      "technology": "GSM / HSPA / LTE",
+      "2g_bands": "GSM 850 / 900 / 1800 / 1900 - SIM 1 & SIM 2",
+      "3g_bands": "HSDPA 900 / 1900 / 2100",
+      "4g_bands": "1, 3, 38, 41",
+      "speed": "HSPA 42.2/5.76 Mbps, LTE Cat4 150/50 Mbps"
+    },
+    "launch": {
+      "announced": "2014, December. Released 2015, January",
+      "status": "Discontinued"
+    },
+    "body": {
+      "dimensions": "150.7 x 75.2 x 8.9 mm (5.93 x 2.96 x 0.35 in)",
+      "weight": "145 g (5.11 oz)",
+      "sim": "Dual SIM (Micro-SIM, dual stand-by)"
+    },
+    "display": {
+      "type": "IGZO IPS LCD",
+      "size": "5.5 inches, 82.6 cm2(~72.9% screen-to-body ratio)",
+      "resolution": "1080 x 1920 pixels, 16:9 ratio (~403 ppi density)",
+      "protection": "Corning Gorilla Glass 3"
+    },
+    "platform": {
+      "os": "Android 4.4.4 (KitKat), Flyme 4",
+      "chipset": "Mediatek MT6752 (28 nm)",
+      "cpu": "Octa-core 1.7 GHz Cortex-A53",
+      "gpu": "Mali-T760"
+    },
+    "memory": {
+      "card_slot": "No",
+      "internal": "16GB 2GB RAM, 32GB 2GB RAM"
+    },
+    "main_camera": {
+      "single": "13 MP, f/2.2, 1/3.0\", AF",
+      "features": "Dual-LED dual-tone flash, HDR, panorama",
+      "video": "1080p@30fps"
+    },
+    "selfie_camera": {
+      "single": "5 MP, f/2.0"
+    },
+    "sound": {
+      "loudspeaker": "Yes",
+      "3.5mm_jack": "Yes"
+    },
+    "comms": {
+      "wlan": "Wi-Fi 802.11 a/b/g/n, dual-band, Wi-Fi Direct, hotspot",
+      "bluetooth": "4.0, A2DP, LE",
+      "positioning": "GPS, GLONASS",
+      "nfc": "No",
+      "radio": "No",
+      "usb": "microUSB 2.0, OTG"
+    },
+    "features": {
+      "sensors": "Accelerometer, gyro, proximity, compass"
+    },
+    "battery": {
+      "type": "Li-Ion 3140 mAh, non-removable",
+      "talk_time": "Up to 40 h",
+      "music_play": "Up to 60 h"
+    },
+    "misc": {
+      "colors": "White, Blue, Yellow, Green, Pink",
+      "price": "About 130 EUR"
+    },
+    "our_tests": {
+      "performance": "Basemark OS II 2.0: 880Basemark X: 4617",
+      "display": "Contrast ratio: 867:1 (nominal), 2.3624 (sunlight)",
+      "camera": "Photo/Video",
+      "loudspeaker": "Voice 67dB / Noise 66dB / Ring 75dB",
+      "audio_quality": "Noise -89.6dB / Crosstalk -86.0dB",
+      "battery_(old)": "Endurance rating 66h"
+    },
+    "image_url": "https://fdn2.gsmarena.com/vv/bigpic/meizu-m1-note-1.jpg",
+    "price": "About 130 EUR",
+    "brand": "Meizu"
+  }
+]

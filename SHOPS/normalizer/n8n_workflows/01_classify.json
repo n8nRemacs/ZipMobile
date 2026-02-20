@@ -1,0 +1,101 @@
+{
+  "name": "Normalizer — 01 Classify",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "normalizer/classify",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "c1-webhook",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [240, 300],
+      "webhookId": "normalizer-classify"
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// === Prepare Prompt ===\n// Формируем system prompt и user prompt для классификации товара.\n// Модель можно поменять здесь:\nconst model = 'gpt-4o-mini';\n\nconst input = $input.first().json.body;\nconst name = input.name || '';\nconst article = input.article || '';\n\nconst systemPrompt = `Ты — классификатор товаров для магазина запчастей мобильных устройств.\nТвоя задача — определить, является ли товар запасной частью для мобильного устройства.\n\nЗапчасти: дисплеи, тачскрины, батареи, камеры, шлейфы, динамики, микрофоны, разъёмы, корпуса, стёкла, защитные плёнки, матрицы, контроллеры, микросхемы и т.д.\n\nНЕ запчасти: чехлы, кабели, зарядки, наушники, аксессуары, инструменты, расходники для ремонта (клей, скотч).\n\nОтветь строго в формате JSON:\n{\n  \"is_spare_part\": true/false,\n  \"nomenclature_type\": \"тип товара (display, battery, camera, flex, speaker, connector, housing, glass, screen_protector, ic, other)\",\n  \"confidence\": 0.0-1.0\n}`;\n\nconst userPrompt = `Товар: \"${name}\"\nАртикул: \"${article}\"\n\nЭто запчасть для мобильного устройства?`;\n\nreturn [{\n  json: {\n    model,\n    systemPrompt,\n    userPrompt,\n    originalInput: input\n  }\n}];"
+      },
+      "id": "c1-prepare",
+      "name": "Prepare Prompt",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 300]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.openai.com/v1/chat/completions",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ model: $json.model, messages: [ { role: 'system', content: $json.systemPrompt }, { role: 'user', content: $json.userPrompt } ], temperature: 0.1, response_format: { type: 'json_object' } }) }}",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "id": "c1-openai",
+      "name": "OpenAI Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [680, 300],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "CONFIGURE_ME",
+          "name": "OpenAI API Key"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// === Parse Response ===\n// Извлекаем JSON из ответа OpenAI и валидируем поля.\n\nconst response = $input.first().json;\n\ntry {\n  const content = response.choices[0].message.content;\n  const parsed = JSON.parse(content);\n  \n  return [{\n    json: {\n      is_spare_part: parsed.is_spare_part === true,\n      nomenclature_type: parsed.nomenclature_type || null,\n      confidence: typeof parsed.confidence === 'number' ? parsed.confidence : 0.5\n    }\n  }];\n} catch (error) {\n  // Fallback: если AI не вернул валидный JSON\n  return [{\n    json: {\n      is_spare_part: true,\n      nomenclature_type: null,\n      confidence: 0.0\n    }\n  }];\n}"
+      },
+      "id": "c1-parse",
+      "name": "Parse Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [900, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify($json) }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "c1-respond",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1120, 300]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [[{ "node": "Prepare Prompt", "type": "main", "index": 0 }]]
+    },
+    "Prepare Prompt": {
+      "main": [[{ "node": "OpenAI Request", "type": "main", "index": 0 }]]
+    },
+    "OpenAI Request": {
+      "main": [[{ "node": "Parse Response", "type": "main", "index": 0 }]]
+    },
+    "Parse Response": {
+      "main": [[{ "node": "Respond", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [{ "name": "normalizer" }],
+  "triggerCount": 0,
+  "versionId": "1"
+}

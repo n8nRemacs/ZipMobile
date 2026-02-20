@@ -1,0 +1,4316 @@
+[
+  {
+    "shop_id": "281974",
+    "city_name": "Абакан",
+    "shop_name": "GreenSpark Абакан",
+    "address": "ул. Тараса Шевченко, 67а"
+  },
+  {
+    "shop_id": "70025",
+    "city_name": "Адлер",
+    "shop_name": "GreenSpark Адлер",
+    "address": "ул. Демократическая, 52А"
+  },
+  {
+    "shop_id": "16344",
+    "city_name": "Астрахань",
+    "shop_name": "GreenSpark Астрахань",
+    "address": "ул. Савушкина, 46"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Абинск",
+    "shop_name": "Абинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Азов",
+    "shop_name": "Азов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Аксай",
+    "shop_name": "Аксай",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Алапаевск",
+    "shop_name": "Алапаевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Алатырь",
+    "shop_name": "Алатырь",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Алдан",
+    "shop_name": "Алдан",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Алейск",
+    "shop_name": "Алейск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Александров",
+    "shop_name": "Александров",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Александровск",
+    "shop_name": "Александровск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Александровск-Сахалинский",
+    "shop_name": "Александровск-Сахалинский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Александровское",
+    "shop_name": "Александровское",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Алексеевка",
+    "shop_name": "Алексеевка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Алексин",
+    "shop_name": "Алексин",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Алупка",
+    "shop_name": "Алупка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Алушта",
+    "shop_name": "Алушта",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Альметьевск",
+    "shop_name": "Альметьевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Амурск",
+    "shop_name": "Амурск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Анадырь",
+    "shop_name": "Анадырь",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Анапа",
+    "shop_name": "Анапа",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ангарск",
+    "shop_name": "Ангарск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Анжеро-Судженск",
+    "shop_name": "Анжеро-Судженск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Анива",
+    "shop_name": "Анива",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Анна",
+    "shop_name": "Анна",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Апатиты",
+    "shop_name": "Апатиты",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Апрелевка",
+    "shop_name": "Апрелевка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Арзамас",
+    "shop_name": "Арзамас",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Арзгир",
+    "shop_name": "Арзгир",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Армавир",
+    "shop_name": "Армавир",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Армянск",
+    "shop_name": "Армянск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Арсеньев",
+    "shop_name": "Арсеньев",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Артем",
+    "shop_name": "Артем",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Артемовский",
+    "shop_name": "Артемовский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Архангельск",
+    "shop_name": "Архангельск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Асбест",
+    "shop_name": "Асбест",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Аткарск",
+    "shop_name": "Аткарск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ачинск",
+    "shop_name": "Ачинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Аша",
+    "shop_name": "Аша",
+    "address": ""
+  },
+  {
+    "shop_id": "16345",
+    "city_name": "Барнаул",
+    "shop_name": "GreenSpark Барнаул",
+    "address": "проспект Строителей, д.6"
+  },
+  {
+    "shop_id": "16347",
+    "city_name": "Белгород",
+    "shop_name": "GreenSpark Белгород",
+    "address": "ул Преображенская 74А"
+  },
+  {
+    "shop_id": "16346",
+    "city_name": "Брянск",
+    "shop_name": "GreenSpark Брянск",
+    "address": "ул. Красноармейская 62/1, офис 12"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Бабаево",
+    "shop_name": "Бабаево",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Багаевский",
+    "shop_name": "Багаевский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Байконур",
+    "shop_name": "Байконур",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Балабаново",
+    "shop_name": "Балабаново",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Балаково",
+    "shop_name": "Балаково",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Балахна",
+    "shop_name": "Балахна",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Балашиха",
+    "shop_name": "Балашиха",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Балашов",
+    "shop_name": "Балашов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Баргузин",
+    "shop_name": "Баргузин",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Батайск",
+    "shop_name": "Батайск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Бахчисарай",
+    "shop_name": "Бахчисарай",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Белая Калитва",
+    "shop_name": "Белая Калитва",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Белово",
+    "shop_name": "Белово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Белогорск",
+    "shop_name": "Белогорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Белорецк",
+    "shop_name": "Белорецк",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Белореченск",
+    "shop_name": "Белореченск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Бердск",
+    "shop_name": "Бердск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Березники",
+    "shop_name": "Березники",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Березовка",
+    "shop_name": "Березовка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Березовский",
+    "shop_name": "Березовский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Беслан",
+    "shop_name": "Беслан",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Бийск",
+    "shop_name": "Бийск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Биробиджан",
+    "shop_name": "Биробиджан",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Бирск",
+    "shop_name": "Бирск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Благовещенск",
+    "shop_name": "Благовещенск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Благодарный",
+    "shop_name": "Благодарный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Бобров",
+    "shop_name": "Бобров",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Богданович",
+    "shop_name": "Богданович",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Богородск",
+    "shop_name": "Богородск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Богучар",
+    "shop_name": "Богучар",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Бодайбо",
+    "shop_name": "Бодайбо",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Бологое",
+    "shop_name": "Бологое",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Большой Камень",
+    "shop_name": "Большой Камень",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Бор",
+    "shop_name": "Бор",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Борисоглебск",
+    "shop_name": "Борисоглебск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Боровичи",
+    "shop_name": "Боровичи",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Боровск",
+    "shop_name": "Боровск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Братск",
+    "shop_name": "Братск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Бронницы",
+    "shop_name": "Бронницы",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Буденновск",
+    "shop_name": "Буденновск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Бузулук",
+    "shop_name": "Бузулук",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Буйнакск",
+    "shop_name": "Буйнакск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Бутурлиновка",
+    "shop_name": "Бутурлиновка",
+    "address": ""
+  },
+  {
+    "shop_id": "16348",
+    "city_name": "Владикавказ",
+    "shop_name": "GreenSpark Владикавказ",
+    "address": "ул. Ватутина, д.62"
+  },
+  {
+    "shop_id": "16349",
+    "city_name": "Волгоград",
+    "shop_name": "GreenSpark Волгоград",
+    "address": "проспект Ленина, 15"
+  },
+  {
+    "shop_id": "75308",
+    "city_name": "Волгодонск",
+    "shop_name": "GreenSpark Волгодонск",
+    "address": "проспект Мира, 7А"
+  },
+  {
+    "shop_id": "115104",
+    "city_name": "Вологда",
+    "shop_name": "GreenSpark Вологда",
+    "address": "ул. Ленинградская, 81 ТЦ \"Арка\", 1 этаж"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Валуйки",
+    "shop_name": "Валуйки",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ванино",
+    "shop_name": "Ванино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Великие Луки",
+    "shop_name": "Великие Луки",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Великий Новгород",
+    "shop_name": "Великий Новгород",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Великий Устюг",
+    "shop_name": "Великий Устюг",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Вельск",
+    "shop_name": "Вельск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Верхний Уфалей",
+    "shop_name": "Верхний Уфалей",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Верхняя Пышма",
+    "shop_name": "Верхняя Пышма",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Верхняя Салда",
+    "shop_name": "Верхняя Салда",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Веселый",
+    "shop_name": "Веселый",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Вешенская",
+    "shop_name": "Вешенская",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Взморье",
+    "shop_name": "Взморье",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Видное",
+    "shop_name": "Видное",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Вилючинск",
+    "shop_name": "Вилючинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Вихоревка",
+    "shop_name": "Вихоревка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Владивосток",
+    "shop_name": "Владивосток",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Владимир",
+    "shop_name": "Владимир",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Внуково",
+    "shop_name": "Внуково",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Волжск",
+    "shop_name": "Волжск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Волжский",
+    "shop_name": "Волжский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Волоколамск",
+    "shop_name": "Волоколамск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Волоконовка",
+    "shop_name": "Волоконовка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Волосово",
+    "shop_name": "Волосово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Волхов",
+    "shop_name": "Волхов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Вольно-Надеждинское",
+    "shop_name": "Вольно-Надеждинское",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Вольск",
+    "shop_name": "Вольск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Воркута",
+    "shop_name": "Воркута",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Воробьевка",
+    "shop_name": "Воробьевка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Воронеж",
+    "shop_name": "Воронеж",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Воскресенск",
+    "shop_name": "Воскресенск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Воскресенское",
+    "shop_name": "Воскресенское",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Воткинск",
+    "shop_name": "Воткинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Всеволожск",
+    "shop_name": "Всеволожск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Вурнары",
+    "shop_name": "Вурнары",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Выборг",
+    "shop_name": "Выборг",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Выкса",
+    "shop_name": "Выкса",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Вырица",
+    "shop_name": "Вырица",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Выселки",
+    "shop_name": "Выселки",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Вышний Волочек",
+    "shop_name": "Вышний Волочек",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Вязовая",
+    "shop_name": "Вязовая",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Вязьма",
+    "shop_name": "Вязьма",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Вятские Поляны",
+    "shop_name": "Вятские Поляны",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Гаврилов-ям",
+    "shop_name": "Гаврилов-ям",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Гагарин",
+    "shop_name": "Гагарин",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Галенки",
+    "shop_name": "Галенки",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Гатчина",
+    "shop_name": "Гатчина",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Геленджик",
+    "shop_name": "Геленджик",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Георгиевск",
+    "shop_name": "Георгиевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Глазов",
+    "shop_name": "Глазов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Голицыно",
+    "shop_name": "Голицыно",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Горно-Алтайск",
+    "shop_name": "Горно-Алтайск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Горнозаводск",
+    "shop_name": "Горнозаводск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Городец",
+    "shop_name": "Городец",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Городище",
+    "shop_name": "Городище",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Гремячинск",
+    "shop_name": "Гремячинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Грозный",
+    "shop_name": "Грозный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Грязовец",
+    "shop_name": "Грязовец",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Губаха",
+    "shop_name": "Губаха",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Губкин",
+    "shop_name": "Губкин",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Гудермес",
+    "shop_name": "Гудермес",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Гуково",
+    "shop_name": "Гуково",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Гулькевичи",
+    "shop_name": "Гулькевичи",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Гусиноозерск",
+    "shop_name": "Гусиноозерск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Гусь Хрустальный",
+    "shop_name": "Гусь Хрустальный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Далматово",
+    "shop_name": "Далматово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Дальнегорск",
+    "shop_name": "Дальнегорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Дальнереченск",
+    "shop_name": "Дальнереченск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Дедовск",
+    "shop_name": "Дедовск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Демидово",
+    "shop_name": "Демидово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Дербент",
+    "shop_name": "Дербент",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Десногорск",
+    "shop_name": "Десногорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Джанкой",
+    "shop_name": "Джанкой",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Дзержинск",
+    "shop_name": "Дзержинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Дзержинский",
+    "shop_name": "Дзержинский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Дивногорск",
+    "shop_name": "Дивногорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Дивное",
+    "shop_name": "Дивное",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Димитровград",
+    "shop_name": "Димитровград",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Дмитров",
+    "shop_name": "Дмитров",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Добрянка",
+    "shop_name": "Добрянка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Долгопрудный",
+    "shop_name": "Долгопрудный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Домодедово",
+    "shop_name": "Домодедово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Донецк",
+    "shop_name": "Донецк",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Дубна",
+    "shop_name": "Дубна",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Дубовка",
+    "shop_name": "Дубовка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Дудинка",
+    "shop_name": "Дудинка",
+    "address": ""
+  },
+  {
+    "shop_id": "82240",
+    "city_name": "Екатеринбург",
+    "shop_name": "GreenSpark Екатеринбург (ул. Щорса)",
+    "address": "ул. Щорса, 62 (300м от метро «Чкаловская»)"
+  },
+  {
+    "shop_id": "16351",
+    "city_name": "Екатеринбург",
+    "shop_name": "GreenSpark Екатеринбург",
+    "address": "ул. Героев России, д.2 ТЦ «Свердловск», 1 этаж, вход с ул. Стрелочников, 3-й бутик справа"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Евпатория",
+    "shop_name": "Евпатория",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Егорлык",
+    "shop_name": "Егорлык",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Егорлыкская",
+    "shop_name": "Егорлыкская",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Егорьевск",
+    "shop_name": "Егорьевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ейск",
+    "shop_name": "Ейск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Елабуга",
+    "shop_name": "Елабуга",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Елань",
+    "shop_name": "Елань",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Елец",
+    "shop_name": "Елец",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Елизово",
+    "shop_name": "Елизово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Еманжелинск",
+    "shop_name": "Еманжелинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ерофей-Павлович",
+    "shop_name": "Ерофей-Павлович",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ессентуки",
+    "shop_name": "Ессентуки",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ефремов",
+    "shop_name": "Ефремов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Железноводск",
+    "shop_name": "Железноводск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Железногорск",
+    "shop_name": "Железногорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Железногорск-Илимский",
+    "shop_name": "Железногорск-Илимский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Железнодорожный",
+    "shop_name": "Железнодорожный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Жигулевск",
+    "shop_name": "Жигулевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Жирновск",
+    "shop_name": "Жирновск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Жуковка",
+    "shop_name": "Жуковка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Жуковский",
+    "shop_name": "Жуковский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Забайкальск",
+    "shop_name": "Забайкальск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Заволжье",
+    "shop_name": "Заволжье",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Заполярный",
+    "shop_name": "Заполярный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Зарайск",
+    "shop_name": "Зарайск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Заречный",
+    "shop_name": "Заречный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Заринск",
+    "shop_name": "Заринск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Звенигород",
+    "shop_name": "Звенигород",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Зеленогорск",
+    "shop_name": "Зеленогорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Зеленоград",
+    "shop_name": "Зеленоград",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Зеленокумск",
+    "shop_name": "Зеленокумск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Зерноград",
+    "shop_name": "Зерноград",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Зима",
+    "shop_name": "Зима",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Зимовники",
+    "shop_name": "Зимовники",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Златоуст",
+    "shop_name": "Златоуст",
+    "address": ""
+  },
+  {
+    "shop_id": "16353",
+    "city_name": "Иваново",
+    "shop_name": "GreenSpark Иваново",
+    "address": "площадь Революции, 8А, ТЦ \"Каскад\""
+  },
+  {
+    "shop_id": "16354",
+    "city_name": "Иркутск",
+    "shop_name": "GreenSpark Иркутск",
+    "address": "ул. Чехова, д.19, ТЦ «Рублев», павильон 225, 2-й этаж"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ивантеевка",
+    "shop_name": "Ивантеевка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ижевск",
+    "shop_name": "Ижевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Изобильный",
+    "shop_name": "Изобильный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Иланский",
+    "shop_name": "Иланский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Иловля",
+    "shop_name": "Иловля",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Инжавино",
+    "shop_name": "Инжавино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Инта",
+    "shop_name": "Инта",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ипатово",
+    "shop_name": "Ипатово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Искитим",
+    "shop_name": "Искитим",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Истра",
+    "shop_name": "Истра",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ишимбай",
+    "shop_name": "Ишимбай",
+    "address": ""
+  },
+  {
+    "shop_id": "86882",
+    "city_name": "Йошкар-Ола",
+    "shop_name": "GreenSpark Йошкар-Ола",
+    "address": "ул. Красноармейская, 59"
+  },
+  {
+    "shop_id": "16357",
+    "city_name": "Казань",
+    "shop_name": "GreenSpark Казань",
+    "address": "ул. Спартаковская, 2 ТЦ «Караван», помещение № 14"
+  },
+  {
+    "shop_id": "16355",
+    "city_name": "Калининград",
+    "shop_name": "GreenSpark Калининград",
+    "address": "ул. Генерала Соммера, 1-7"
+  },
+  {
+    "shop_id": "78123",
+    "city_name": "Каменск-Шахтинский",
+    "shop_name": "GreenSpark Каменск-Шахтинский",
+    "address": "ул. Ворошилова, 20 ТЦ «Этажи»"
+  },
+  {
+    "shop_id": "249529",
+    "city_name": "Комсомольск-на-Амуре",
+    "shop_name": "GreenSpark Комсомольск-на-Амуре",
+    "address": "проспект Ленина, 4"
+  },
+  {
+    "shop_id": "124145",
+    "city_name": "Краснодар",
+    "shop_name": "GreenSpark Краснодар, Российская",
+    "address": "ул. Российская, 74"
+  },
+  {
+    "shop_id": "72320",
+    "city_name": "Краснодар",
+    "shop_name": "GreenSpark Краснодар, Стасова",
+    "address": "ул.Ставропольская, 195"
+  },
+  {
+    "shop_id": "16362",
+    "city_name": "Краснодар",
+    "shop_name": "GreenSpark Краснодар, Гаврилова",
+    "address": "ул. Гаврилова, 98"
+  },
+  {
+    "shop_id": "16361",
+    "city_name": "Краснодар",
+    "shop_name": "GreenSpark Краснодар, Кооперативный рынок",
+    "address": "ул. Коммунаров,69"
+  },
+  {
+    "shop_id": "16360",
+    "city_name": "Краснодар",
+    "shop_name": "GreenSpark Краснодар, Вещевой рынок",
+    "address": "ул. Новороссийская, 2А, ТК «Вещевой рынок», магазин №20"
+  },
+  {
+    "shop_id": "16364",
+    "city_name": "Курск",
+    "shop_name": "GreenSpark Курск",
+    "address": "ул Дзержинского 40, пав 15, (ТЦ ГРИНН)"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кабанск",
+    "shop_name": "Кабанск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кавалерово",
+    "shop_name": "Кавалерово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кагальницкая",
+    "shop_name": "Кагальницкая",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Казанская",
+    "shop_name": "Казанская",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Казлук",
+    "shop_name": "Казлук",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Калач",
+    "shop_name": "Калач",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Калач-на-дону",
+    "shop_name": "Калач-на-дону",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Калтан",
+    "shop_name": "Калтан",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Калуга",
+    "shop_name": "Калуга",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Калязин",
+    "shop_name": "Калязин",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Каменоломни",
+    "shop_name": "Каменоломни",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Каменск-Уральский",
+    "shop_name": "Каменск-Уральский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Камень-Рыболов",
+    "shop_name": "Камень-Рыболов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Камышин",
+    "shop_name": "Камышин",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Канаш",
+    "shop_name": "Канаш",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кандалакша",
+    "shop_name": "Кандалакша",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Каневская",
+    "shop_name": "Каневская",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Канск",
+    "shop_name": "Канск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кантемировка",
+    "shop_name": "Кантемировка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Карабаш",
+    "shop_name": "Карабаш",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Карагай",
+    "shop_name": "Карагай",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Касимов",
+    "shop_name": "Касимов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Каспийск",
+    "shop_name": "Каспийск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Качканар",
+    "shop_name": "Качканар",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кашары",
+    "shop_name": "Кашары",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кашира",
+    "shop_name": "Кашира",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кемерово",
+    "shop_name": "Кемерово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Керчь",
+    "shop_name": "Керчь",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кизел",
+    "shop_name": "Кизел",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кизляр",
+    "shop_name": "Кизляр",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кимры",
+    "shop_name": "Кимры",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кинель",
+    "shop_name": "Кинель",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кинешма",
+    "shop_name": "Кинешма",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Киржач",
+    "shop_name": "Киржач",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кириллов",
+    "shop_name": "Кириллов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кириши",
+    "shop_name": "Кириши",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Киров",
+    "shop_name": "Киров",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кировград",
+    "shop_name": "Кировград",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кирово-Чепецк",
+    "shop_name": "Кирово-Чепецк",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кировск",
+    "shop_name": "Кировск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кировский",
+    "shop_name": "Кировский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Киселевск",
+    "shop_name": "Киселевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кисловодск",
+    "shop_name": "Кисловодск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Климовск",
+    "shop_name": "Климовск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Клин",
+    "shop_name": "Клин",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ковров",
+    "shop_name": "Ковров",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Когалым",
+    "shop_name": "Когалым",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кодинск",
+    "shop_name": "Кодинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кола",
+    "shop_name": "Кола",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Коломна",
+    "shop_name": "Коломна",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кольчугино",
+    "shop_name": "Кольчугино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Конаково",
+    "shop_name": "Конаково",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кондопога",
+    "shop_name": "Кондопога",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Константиновск",
+    "shop_name": "Константиновск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Копейск",
+    "shop_name": "Копейск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Коркино",
+    "shop_name": "Коркино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Королев",
+    "shop_name": "Королев",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Корсаков",
+    "shop_name": "Корсаков",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Коряжма",
+    "shop_name": "Коряжма",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кострома",
+    "shop_name": "Кострома",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Котельники",
+    "shop_name": "Котельники",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Котельниково",
+    "shop_name": "Котельниково",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Котово",
+    "shop_name": "Котово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Котовск",
+    "shop_name": "Котовск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Красноармейск",
+    "shop_name": "Красноармейск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Красновишерск",
+    "shop_name": "Красновишерск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Красногорск",
+    "shop_name": "Красногорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Краснознаменск",
+    "shop_name": "Краснознаменск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Краснокаменск",
+    "shop_name": "Краснокаменск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Краснокамск",
+    "shop_name": "Краснокамск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Красноперекопск",
+    "shop_name": "Красноперекопск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Краснотурьинск",
+    "shop_name": "Краснотурьинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Красноуральск",
+    "shop_name": "Красноуральск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Красноуфимск",
+    "shop_name": "Красноуфимск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Красноярск",
+    "shop_name": "Красноярск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Красный Сулин",
+    "shop_name": "Красный Сулин",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Красный Яр",
+    "shop_name": "Красный Яр",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Крымск",
+    "shop_name": "Крымск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кстово",
+    "shop_name": "Кстово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Куанда",
+    "shop_name": "Куанда",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кудымкар",
+    "shop_name": "Кудымкар",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кузнецк",
+    "shop_name": "Кузнецк",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Куйбышев",
+    "shop_name": "Куйбышев",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кулебаки",
+    "shop_name": "Кулебаки",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кумертау",
+    "shop_name": "Кумертау",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кунгур",
+    "shop_name": "Кунгур",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Купавна",
+    "shop_name": "Купавна",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Курагино",
+    "shop_name": "Курагино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Курган",
+    "shop_name": "Курган",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Курганинск",
+    "shop_name": "Курганинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Курсавка",
+    "shop_name": "Курсавка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Курчатов",
+    "shop_name": "Курчатов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кушва",
+    "shop_name": "Кушва",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кызыл",
+    "shop_name": "Кызыл",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Кыштым",
+    "shop_name": "Кыштым",
+    "address": ""
+  },
+  {
+    "shop_id": "84165",
+    "city_name": "Лесной",
+    "shop_name": "GreenSpark Лесной",
+    "address": "ул. Ленина, 76"
+  },
+  {
+    "shop_id": "16365",
+    "city_name": "Липецк",
+    "shop_name": "GreenSpark Липецк",
+    "address": "ул. Первомайская, 119"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лабытнанги",
+    "shop_name": "Лабытнанги",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лангепас",
+    "shop_name": "Лангепас",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лебедянь",
+    "shop_name": "Лебедянь",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Левокумское",
+    "shop_name": "Левокумское",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лениногорск",
+    "shop_name": "Лениногорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ленинск",
+    "shop_name": "Ленинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ленинск-Кузнецкий",
+    "shop_name": "Ленинск-Кузнецкий",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ленск",
+    "shop_name": "Ленск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лермонтов",
+    "shop_name": "Лермонтов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лесозаводск",
+    "shop_name": "Лесозаводск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лесосибирск",
+    "shop_name": "Лесосибирск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Летняя Ставка",
+    "shop_name": "Летняя Ставка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Линево",
+    "shop_name": "Линево",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лиски",
+    "shop_name": "Лиски",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лобня",
+    "shop_name": "Лобня",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лосино-Петровский",
+    "shop_name": "Лосино-Петровский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Луга",
+    "shop_name": "Луга",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Луховицы",
+    "shop_name": "Луховицы",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лучегорск",
+    "shop_name": "Лучегорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лысково",
+    "shop_name": "Лысково",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лысьва",
+    "shop_name": "Лысьва",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Лыткарино",
+    "shop_name": "Лыткарино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Люберцы",
+    "shop_name": "Люберцы",
+    "address": ""
+  },
+  {
+    "shop_id": "89760",
+    "city_name": "Майкоп",
+    "shop_name": "GreenSpark Майкоп",
+    "address": "ул. Крестьянская, 234Б"
+  },
+  {
+    "shop_id": "16366",
+    "city_name": "Москва",
+    "shop_name": "GreenSpark Москва, ТК «Митинский»",
+    "address": "Пятницкое шоссе, д. 18, ТК «Митинский радиорынок», 2 этаж, павильон 286"
+  },
+  {
+    "shop_id": "117542",
+    "city_name": "Мурманск",
+    "shop_name": "GreenSpark Мурманск",
+    "address": "ул. Воровского 5/23, ТЦ \"Меридиан\""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Магадан",
+    "shop_name": "Магадан",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Магнитогорск",
+    "shop_name": "Магнитогорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Малаховка",
+    "shop_name": "Малаховка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Малоярославец",
+    "shop_name": "Малоярославец",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Мариинск",
+    "shop_name": "Мариинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Маркс",
+    "shop_name": "Маркс",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Матвеев Курган",
+    "shop_name": "Матвеев Курган",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Махачкала",
+    "shop_name": "Махачкала",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Мегион",
+    "shop_name": "Мегион",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Медвежьегорск",
+    "shop_name": "Медвежьегорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Медногорск",
+    "shop_name": "Медногорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Междуреченск",
+    "shop_name": "Междуреченск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Менделеево",
+    "shop_name": "Менделеево",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Менделеевск",
+    "shop_name": "Менделеевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Миасс",
+    "shop_name": "Миасс",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Микунь",
+    "shop_name": "Микунь",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Миллерово",
+    "shop_name": "Миллерово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Минеральные Воды",
+    "shop_name": "Минеральные Воды",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Минусинск",
+    "shop_name": "Минусинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Мирный",
+    "shop_name": "Мирный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Михайловка",
+    "shop_name": "Михайловка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Михнево",
+    "shop_name": "Михнево",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Мичуринск",
+    "shop_name": "Мичуринск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Могоча",
+    "shop_name": "Могоча",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Можайск",
+    "shop_name": "Можайск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Можга",
+    "shop_name": "Можга",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Мончегорск",
+    "shop_name": "Мончегорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Морозовск",
+    "shop_name": "Морозовск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Муравленко",
+    "shop_name": "Муравленко",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Муром",
+    "shop_name": "Муром",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Мытищи",
+    "shop_name": "Мытищи",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Мышкин",
+    "shop_name": "Мышкин",
+    "address": ""
+  },
+  {
+    "shop_id": "16368",
+    "city_name": "Набережные Челны",
+    "shop_name": "GreenSpark Набережные Челны",
+    "address": "53 комплекс, 7 / проспект Московский 126а"
+  },
+  {
+    "shop_id": "85006",
+    "city_name": "Нефтекамск",
+    "shop_name": "GreenSpark Нефтекамск",
+    "address": "ул. Парковая 11"
+  },
+  {
+    "shop_id": "114656",
+    "city_name": "Ноябрьск",
+    "shop_name": "GreenSpark Ноябрьск",
+    "address": "ул. Советская 81/1"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Навашино",
+    "shop_name": "Навашино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Навля",
+    "shop_name": "Навля",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Надым",
+    "shop_name": "Надым",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Назарово",
+    "shop_name": "Назарово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Назрань",
+    "shop_name": "Назрань",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нальчик",
+    "shop_name": "Нальчик",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Наро-Фоминск",
+    "shop_name": "Наро-Фоминск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нарьян-Мар",
+    "shop_name": "Нарьян-Мар",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Научный",
+    "shop_name": "Научный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нахабино",
+    "shop_name": "Нахабино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Находка",
+    "shop_name": "Находка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Невинномысск",
+    "shop_name": "Невинномысск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Невьянск",
+    "shop_name": "Невьянск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нерехта",
+    "shop_name": "Нерехта",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нерюнгри",
+    "shop_name": "Нерюнгри",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нефтегорск",
+    "shop_name": "Нефтегорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нефтекумск",
+    "shop_name": "Нефтекумск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нефтеюганск",
+    "shop_name": "Нефтеюганск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нехаевский",
+    "shop_name": "Нехаевский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нижневартовск",
+    "shop_name": "Нижневартовск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нижнегорский",
+    "shop_name": "Нижнегорский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нижнекамск",
+    "shop_name": "Нижнекамск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нижнеудинск",
+    "shop_name": "Нижнеудинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нижние Серги",
+    "shop_name": "Нижние Серги",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нижний Архыз",
+    "shop_name": "Нижний Архыз",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нижний Новгород",
+    "shop_name": "Нижний Новгород",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нижний Тагил",
+    "shop_name": "Нижний Тагил",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нижняя Салда",
+    "shop_name": "Нижняя Салда",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нижняя Тура",
+    "shop_name": "Нижняя Тура",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Николаевск",
+    "shop_name": "Николаевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Николаевск-на-Амуре",
+    "shop_name": "Николаевск-на-Амуре",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новая Усмань",
+    "shop_name": "Новая Усмань",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новоалександровск",
+    "shop_name": "Новоалександровск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новоаннинский",
+    "shop_name": "Новоаннинский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нововоронеж",
+    "shop_name": "Нововоронеж",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новодвинск",
+    "shop_name": "Новодвинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новокубанск",
+    "shop_name": "Новокубанск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новокузнецк",
+    "shop_name": "Новокузнецк",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новокуйбышевск",
+    "shop_name": "Новокуйбышевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новомичуринск",
+    "shop_name": "Новомичуринск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новомосковск",
+    "shop_name": "Новомосковск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новониколаевский",
+    "shop_name": "Новониколаевский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новопавловск",
+    "shop_name": "Новопавловск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новороссийск",
+    "shop_name": "Новороссийск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новосибирск",
+    "shop_name": "Новосибирск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новотроицк",
+    "shop_name": "Новотроицк",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новоуральск",
+    "shop_name": "Новоуральск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новочебоксарск",
+    "shop_name": "Новочебоксарск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новочеркасск",
+    "shop_name": "Новочеркасск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новошахтинск",
+    "shop_name": "Новошахтинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новошахтинский",
+    "shop_name": "Новошахтинский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новый Оскол",
+    "shop_name": "Новый Оскол",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новый Рогачик",
+    "shop_name": "Новый Рогачик",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новый Ургал",
+    "shop_name": "Новый Ургал",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Новый Уренгой",
+    "shop_name": "Новый Уренгой",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ногинск",
+    "shop_name": "Ногинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Норильск",
+    "shop_name": "Норильск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Нытва",
+    "shop_name": "Нытва",
+    "address": ""
+  },
+  {
+    "shop_id": "16374",
+    "city_name": "Оренбург",
+    "shop_name": "GreenSpark Оренбург",
+    "address": "ул. 8 Марта, 49 ТЦ «Панорама»"
+  },
+  {
+    "shop_id": "86020",
+    "city_name": "Орск",
+    "shop_name": "GreenSpark Орск",
+    "address": "ул. Станиславского, 57 / проспект Мира, 15"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Обнинск",
+    "shop_name": "Обнинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Обь",
+    "shop_name": "Обь",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Одинцово",
+    "shop_name": "Одинцово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Озерск",
+    "shop_name": "Озерск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Октябрьский",
+    "shop_name": "Октябрьский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Оленегорск",
+    "shop_name": "Оленегорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ольга",
+    "shop_name": "Ольга",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ольховатка",
+    "shop_name": "Ольховатка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Омск",
+    "shop_name": "Омск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Орда",
+    "shop_name": "Орда",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Орел",
+    "shop_name": "Орел",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Орехово-Зуево",
+    "shop_name": "Орехово-Зуево",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Орлов",
+    "shop_name": "Орлов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Орловский",
+    "shop_name": "Орловский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Оса",
+    "shop_name": "Оса",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Отрадное",
+    "shop_name": "Отрадное",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Очер",
+    "shop_name": "Очер",
+    "address": ""
+  },
+  {
+    "shop_id": "16375",
+    "city_name": "Пенза",
+    "shop_name": "GreenSpark Пенза",
+    "address": "ул. Володарского / Бакунина, 78/62 "
+  },
+  {
+    "shop_id": "16376",
+    "city_name": "Пермь",
+    "shop_name": "GreenSpark Пермь",
+    "address": "ул. Механошина, 14"
+  },
+  {
+    "shop_id": "73531",
+    "city_name": "Подольск",
+    "shop_name": "GreenSpark Подольск",
+    "address": "ул. Советская, 35/33"
+  },
+  {
+    "shop_id": "85286",
+    "city_name": "Псков",
+    "shop_name": "GreenSpark Псков",
+    "address": "проспект Рижский 11, ТЦ «Европарк»"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Павлово",
+    "shop_name": "Павлово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Павловский Посад",
+    "shop_name": "Павловский Посад",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Палласовка",
+    "shop_name": "Палласовка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Панино",
+    "shop_name": "Панино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Первомайск",
+    "shop_name": "Первомайск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Первоуральск",
+    "shop_name": "Первоуральск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Переславль-Залесский",
+    "shop_name": "Переславль-Залесский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Песьянка",
+    "shop_name": "Песьянка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Петрозаводск",
+    "shop_name": "Петрозаводск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Петропавловск-Камчатский",
+    "shop_name": "Петропавловск-Камчатский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Печора",
+    "shop_name": "Печора",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Пикалево",
+    "shop_name": "Пикалево",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Питкяранта",
+    "shop_name": "Питкяранта",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Покров",
+    "shop_name": "Покров",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Покровка",
+    "shop_name": "Покровка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Покровское",
+    "shop_name": "Покровское",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Полевской",
+    "shop_name": "Полевской",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Поронайск",
+    "shop_name": "Поронайск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Похвистнево",
+    "shop_name": "Похвистнево",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Приморско-Ахтарск",
+    "shop_name": "Приморско-Ахтарск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Прокопьевск",
+    "shop_name": "Прокопьевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Протвино",
+    "shop_name": "Протвино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Прохоровка",
+    "shop_name": "Прохоровка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Пулково",
+    "shop_name": "Пулково",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Путилково",
+    "shop_name": "Путилково",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Пушкино",
+    "shop_name": "Пушкино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Пущино",
+    "shop_name": "Пущино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Пыть-ях",
+    "shop_name": "Пыть-ях",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Пятигорск",
+    "shop_name": "Пятигорск",
+    "address": ""
+  },
+  {
+    "shop_id": "84582",
+    "city_name": "Россошь",
+    "shop_name": "GreenSpark Россошь",
+    "address": "ул. Простеева, 18 "
+  },
+  {
+    "shop_id": "15226",
+    "city_name": "Ростов-на-Дону",
+    "shop_name": "GreenSpark Ростов-на-Дону (ул. Серафимовича)",
+    "address": "ул. Серафимовича, 53А"
+  },
+  {
+    "shop_id": "73529",
+    "city_name": "Ростов-на-Дону",
+    "shop_name": "GreenSpark Ростов-на-Дону (ул. Зорге)",
+    "address": "ул. Зорге, 52"
+  },
+  {
+    "shop_id": "121729",
+    "city_name": "Рубцовск",
+    "shop_name": "GreenSpark Рубцовск",
+    "address": "ул. Комсомольская, 138"
+  },
+  {
+    "shop_id": "16377",
+    "city_name": "Рязань",
+    "shop_name": "GreenSpark Рязань",
+    "address": "Первомайский проспект, д.29/2"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Радужный",
+    "shop_name": "Радужный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Раменское",
+    "shop_name": "Раменское",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ревда",
+    "shop_name": "Ревда",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ремонтное",
+    "shop_name": "Ремонтное",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Репьевка",
+    "shop_name": "Репьевка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Реутов",
+    "shop_name": "Реутов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ржакса",
+    "shop_name": "Ржакса",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Родионово-Несветайская",
+    "shop_name": "Родионово-Несветайская",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Романовская",
+    "shop_name": "Романовская",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Рославль",
+    "shop_name": "Рославль",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ростов",
+    "shop_name": "Ростов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Рудня",
+    "shop_name": "Рудня",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Руза",
+    "shop_name": "Руза",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Рузаевка",
+    "shop_name": "Рузаевка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Румянцево",
+    "shop_name": "Румянцево",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Рыбинск",
+    "shop_name": "Рыбинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ряжск",
+    "shop_name": "Ряжск",
+    "address": ""
+  },
+  {
+    "shop_id": "16378",
+    "city_name": "Самара",
+    "shop_name": "GreenSpark Самара (ул. Воронежская)",
+    "address": "Воронежская д.3 / Победы д.101"
+  },
+  {
+    "shop_id": "16383",
+    "city_name": "Санкт-Петербург",
+    "shop_name": "GreenSpark Санкт-Петербург, Дыбенко",
+    "address": "ул. Дыбенко, 20, корпус 1"
+  },
+  {
+    "shop_id": "84163",
+    "city_name": "Саранск",
+    "shop_name": "GreenSpark Саранск",
+    "address": "ул. Пролетарская, 108"
+  },
+  {
+    "shop_id": "16384",
+    "city_name": "Саратов",
+    "shop_name": "GreenSpark Саратов",
+    "address": "ул. Московская, 96"
+  },
+  {
+    "shop_id": "16385",
+    "city_name": "Смоленск",
+    "shop_name": "GreenSpark Смоленск",
+    "address": "ул. Дзержинского 2а"
+  },
+  {
+    "shop_id": "16386",
+    "city_name": "Сочи",
+    "shop_name": "GreenSpark Сочи",
+    "address": "ул. Навагинская, 9 Д, ТЦ «Атриум», 2-й этаж, помещение 203"
+  },
+  {
+    "shop_id": "16387",
+    "city_name": "Ставрополь",
+    "shop_name": "GreenSpark Ставрополь",
+    "address": "ул. Мира, 331 (2-й этаж)"
+  },
+  {
+    "shop_id": "84534",
+    "city_name": "Старый Оскол",
+    "shop_name": "GreenSpark Старый Оскол",
+    "address": "мкр-н Королёва, 28а"
+  },
+  {
+    "shop_id": "138178",
+    "city_name": "Стерлитамак",
+    "shop_name": "GreenSpark Стерлитамак",
+    "address": "ул. Коммунистическая, 32"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Саки",
+    "shop_name": "Саки",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Салават",
+    "shop_name": "Салават",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Салехард",
+    "shop_name": "Салехард",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Салым",
+    "shop_name": "Салым",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сальск",
+    "shop_name": "Сальск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Саракташ",
+    "shop_name": "Саракташ",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сарапул",
+    "shop_name": "Сарапул",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Саров",
+    "shop_name": "Саров",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сатка",
+    "shop_name": "Сатка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сафоново",
+    "shop_name": "Сафоново",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Саяногорск",
+    "shop_name": "Саяногорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Светлогорск",
+    "shop_name": "Светлогорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Светлоград",
+    "shop_name": "Светлоград",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Светлый",
+    "shop_name": "Светлый",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Светлый Яр",
+    "shop_name": "Светлый Яр",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Свободный",
+    "shop_name": "Свободный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Севастополь",
+    "shop_name": "Севастополь",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Северобайкальск",
+    "shop_name": "Северобайкальск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Северодвинск",
+    "shop_name": "Северодвинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Северск",
+    "shop_name": "Северск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сегежа",
+    "shop_name": "Сегежа",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Селятино",
+    "shop_name": "Селятино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Семенов",
+    "shop_name": "Семенов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Семикаракорск",
+    "shop_name": "Семикаракорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сергач",
+    "shop_name": "Сергач",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сергиев Посад",
+    "shop_name": "Сергиев Посад",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Серебряные Пруды",
+    "shop_name": "Серебряные Пруды",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Серов",
+    "shop_name": "Серов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Серпухов",
+    "shop_name": "Серпухов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сертолово",
+    "shop_name": "Сертолово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сестрорецк",
+    "shop_name": "Сестрорецк",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сибай",
+    "shop_name": "Сибай",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сковородино",
+    "shop_name": "Сковородино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Славянка",
+    "shop_name": "Славянка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Славянск-на-Кубани",
+    "shop_name": "Славянск-на-Кубани",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Снежинск",
+    "shop_name": "Снежинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Собинка",
+    "shop_name": "Собинка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Советск",
+    "shop_name": "Советск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Советская Гавань",
+    "shop_name": "Советская Гавань",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Советский",
+    "shop_name": "Советский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Совхоз имени Ленина",
+    "shop_name": "Совхоз имени Ленина",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Соликамск",
+    "shop_name": "Соликамск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Солнечная Долина",
+    "shop_name": "Солнечная Долина",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Солнечногорск",
+    "shop_name": "Солнечногорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сортавала",
+    "shop_name": "Сортавала",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сосновоборск",
+    "shop_name": "Сосновоборск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сосновый Бор",
+    "shop_name": "Сосновый Бор",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Спасск-Дальний",
+    "shop_name": "Спасск-Дальний",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Средняя Ахтуба",
+    "shop_name": "Средняя Ахтуба",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Старая Купавна",
+    "shop_name": "Старая Купавна",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Старая Полтавка",
+    "shop_name": "Старая Полтавка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Старая Русса",
+    "shop_name": "Старая Русса",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Старая Чара",
+    "shop_name": "Старая Чара",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Степное",
+    "shop_name": "Степное",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Стрежевой",
+    "shop_name": "Стрежевой",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ступино",
+    "shop_name": "Ступино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Суворов",
+    "shop_name": "Суворов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Судак",
+    "shop_name": "Судак",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сургут",
+    "shop_name": "Сургут",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сухой Лог",
+    "shop_name": "Сухой Лог",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сходня",
+    "shop_name": "Сходня",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сызрань",
+    "shop_name": "Сызрань",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Сыктывкар",
+    "shop_name": "Сыктывкар",
+    "address": ""
+  },
+  {
+    "shop_id": "70661",
+    "city_name": "Тамбов",
+    "shop_name": "GreenSpark Тамбов",
+    "address": "ул. Державинская, д.13"
+  },
+  {
+    "shop_id": "16388",
+    "city_name": "Тверь",
+    "shop_name": "GreenSpark Тверь",
+    "address": "проспект Волоколамский 15, корп. 2"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Таганрог",
+    "shop_name": "Таганрог",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тайга",
+    "shop_name": "Тайга",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тайшет",
+    "shop_name": "Тайшет",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Таксимо",
+    "shop_name": "Таксимо",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тарасовский",
+    "shop_name": "Тарасовский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тарко-сале",
+    "shop_name": "Тарко-сале",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Татищево",
+    "shop_name": "Татищево",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Таштагол",
+    "shop_name": "Таштагол",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тейково",
+    "shop_name": "Тейково",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Темрюк",
+    "shop_name": "Темрюк",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Терней",
+    "shop_name": "Терней",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тимашевск",
+    "shop_name": "Тимашевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тихвин",
+    "shop_name": "Тихвин",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тихорецк",
+    "shop_name": "Тихорецк",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тобольск",
+    "shop_name": "Тобольск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тольятти",
+    "shop_name": "Тольятти",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Томилино",
+    "shop_name": "Томилино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Томск",
+    "shop_name": "Томск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Топки",
+    "shop_name": "Топки",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тосно",
+    "shop_name": "Тосно",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Трехгорный",
+    "shop_name": "Трехгорный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Троицк",
+    "shop_name": "Троицк",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Трудовое",
+    "shop_name": "Трудовое",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Туапсе",
+    "shop_name": "Туапсе",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Туймазы",
+    "shop_name": "Туймазы",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тула",
+    "shop_name": "Тула",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тутаев",
+    "shop_name": "Тутаев",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тымовское",
+    "shop_name": "Тымовское",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тында",
+    "shop_name": "Тында",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Тюмень",
+    "shop_name": "Тюмень",
+    "address": ""
+  },
+  {
+    "shop_id": "77916",
+    "city_name": "Улан-Удэ",
+    "shop_name": "GreenSpark Улан-Удэ",
+    "address": "ул. Почтамтская, 1 ТЦ \"Сибирь\""
+  },
+  {
+    "shop_id": "16393",
+    "city_name": "Ульяновск",
+    "shop_name": "GreenSpark Ульяновск",
+    "address": "ул.Гончарова, 23 Центральный Дом Быта 2 этаж, бутик 9"
+  },
+  {
+    "shop_id": "16394",
+    "city_name": "Уфа",
+    "shop_name": "GreenSpark Уфа",
+    "address": "ул. 50-летия Октября, 6/8"
+  },
+  {
+    "shop_id": "112287",
+    "city_name": "Ухта",
+    "shop_name": "GreenSpark Ухта",
+    "address": "ул. Строительная, 2А ТРЦ Ярмарка"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Увельский",
+    "shop_name": "Увельский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Углич",
+    "shop_name": "Углич",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Удомля",
+    "shop_name": "Удомля",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Укромное",
+    "shop_name": "Укромное",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Унеча",
+    "shop_name": "Унеча",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Урай",
+    "shop_name": "Урай",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Урень",
+    "shop_name": "Урень",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Урюпинск",
+    "shop_name": "Урюпинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Усинск",
+    "shop_name": "Усинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Уссурийск",
+    "shop_name": "Уссурийск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Усть-Илимск",
+    "shop_name": "Усть-Илимск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Усть-Катав",
+    "shop_name": "Усть-Катав",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Усть-Кинельский",
+    "shop_name": "Усть-Кинельский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Усть-Кут",
+    "shop_name": "Усть-Кут",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Учалы",
+    "shop_name": "Учалы",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Фокино",
+    "shop_name": "Фокино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Фролово",
+    "shop_name": "Фролово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Фрязево",
+    "shop_name": "Фрязево",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Фрязино",
+    "shop_name": "Фрязино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Хабаровск",
+    "shop_name": "Хабаровск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ханты-Мансийск",
+    "shop_name": "Ханты-Мансийск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Хасавюрт",
+    "shop_name": "Хасавюрт",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Хилок",
+    "shop_name": "Хилок",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Химки",
+    "shop_name": "Химки",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Холмск",
+    "shop_name": "Холмск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Хороль",
+    "shop_name": "Хороль",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Целина",
+    "shop_name": "Целина",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Цимлянск",
+    "shop_name": "Цимлянск",
+    "address": ""
+  },
+  {
+    "shop_id": "144108",
+    "city_name": "Череповец",
+    "shop_name": "GreenSpark Череповец",
+    "address": "ул. Ленина, 121"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чайковский",
+    "shop_name": "Чайковский",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чалтырь",
+    "shop_name": "Чалтырь",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чамзинка",
+    "shop_name": "Чамзинка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чапаевск",
+    "shop_name": "Чапаевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чебаркуль",
+    "shop_name": "Чебаркуль",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чебоксары",
+    "shop_name": "Чебоксары",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чегдомын",
+    "shop_name": "Чегдомын",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Челябинск",
+    "shop_name": "Челябинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Черкесск",
+    "shop_name": "Черкесск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Черниговка",
+    "shop_name": "Черниговка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Черноголовка",
+    "shop_name": "Черноголовка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Черногорск",
+    "shop_name": "Черногорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чернушка",
+    "shop_name": "Чернушка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чернышевск",
+    "shop_name": "Чернышевск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Черняховск",
+    "shop_name": "Черняховск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чертково",
+    "shop_name": "Чертково",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чехов",
+    "shop_name": "Чехов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чита",
+    "shop_name": "Чита",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чудово",
+    "shop_name": "Чудово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Чусовой",
+    "shop_name": "Чусовой",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шадринск",
+    "shop_name": "Шадринск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шарыпово",
+    "shop_name": "Шарыпово",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шарья",
+    "shop_name": "Шарья",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шатура",
+    "shop_name": "Шатура",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шахты",
+    "shop_name": "Шахты",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шахунья",
+    "shop_name": "Шахунья",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шебекино",
+    "shop_name": "Шебекино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шелехов",
+    "shop_name": "Шелехов",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шерегеш",
+    "shop_name": "Шерегеш",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шилка",
+    "shop_name": "Шилка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шимановск",
+    "shop_name": "Шимановск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шумерля",
+    "shop_name": "Шумерля",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Шумиха",
+    "shop_name": "Шумиха",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Щёлкино",
+    "shop_name": "Щёлкино",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Щелково",
+    "shop_name": "Щелково",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Щербинка",
+    "shop_name": "Щербинка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Электрогорск",
+    "shop_name": "Электрогорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Электросталь",
+    "shop_name": "Электросталь",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Электроугли",
+    "shop_name": "Электроугли",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Элиста",
+    "shop_name": "Элиста",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Энгельс",
+    "shop_name": "Энгельс",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Юбилейный",
+    "shop_name": "Юбилейный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Югорск",
+    "shop_name": "Югорск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Южно-Сахалинск",
+    "shop_name": "Южно-Сахалинск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Южноуральск",
+    "shop_name": "Южноуральск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Юрга",
+    "shop_name": "Юрга",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Юрюзань",
+    "shop_name": "Юрюзань",
+    "address": ""
+  },
+  {
+    "shop_id": "16395",
+    "city_name": "Ярославль",
+    "shop_name": "GreenSpark Ярославль",
+    "address": "ул. Победы, д. 33"
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ядрин",
+    "shop_name": "Ядрин",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Яковлевка",
+    "shop_name": "Яковлевка",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Якутск",
+    "shop_name": "Якутск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Янаул",
+    "shop_name": "Янаул",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Яранск",
+    "shop_name": "Яранск",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ярцево",
+    "shop_name": "Ярцево",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Ясный",
+    "shop_name": "Ясный",
+    "address": ""
+  },
+  {
+    "shop_id": "",
+    "city_name": "Яхрома",
+    "shop_name": "Яхрома",
+    "address": ""
+  }
+]

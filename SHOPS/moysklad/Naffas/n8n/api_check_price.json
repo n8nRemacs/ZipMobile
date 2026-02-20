@@ -1,0 +1,89 @@
+{
+  "name": "MoySklad Naffas - Check Price by Article",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "moysklad/price",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "POST /price",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 300],
+      "webhookId": "moysklad-check-price",
+      "notes": "POST body:\n{\n  \"article\": \"SKU-12345\"\n}"
+    },
+    {
+      "parameters": {
+        "jsCode": "const body = $input.first().json.body || {};\nconst article = body.article || body.sku || '';\n\nif (!article) {\n  throw new Error('Article is required');\n}\n\nreturn [{\n  json: { article }\n}];"
+      },
+      "id": "validate",
+      "name": "Validate Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "={{ `SELECT n.article, n.name, n.category_raw as category, cp.price, cp.in_stock, cp.updated_at FROM nomenclature n JOIN current_prices cp ON cp.nomenclature_id = n.id JOIN outlets o ON o.id = cp.outlet_id WHERE n.article = '${$json.article.replace(/'/g, \"''\")}' AND o.code = 'moysklad-naffas' LIMIT 1;` }}",
+        "options": {}
+      },
+      "id": "get-price",
+      "name": "Get Price from DB",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.5,
+      "position": [440, 300],
+      "credentials": {
+        "postgres": {
+          "id": "POSTGRES_CREDENTIAL_ID",
+          "name": "PostgreSQL MoySklad"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const result = $input.first().json;\nconst article = $('Validate Input').first().json.article;\n\nif (!result || !result.article) {\n  return [{\n    json: {\n      success: false,\n      error: 'Product not found',\n      article: article\n    }\n  }];\n}\n\nreturn [{\n  json: {\n    success: true,\n    shop: 'moysklad-naffas',\n    article: result.article,\n    name: result.name,\n    category: result.category,\n    price: parseFloat(result.price) || 0,\n    in_stock: result.in_stock,\n    updated_at: result.updated_at\n  }\n}];"
+      },
+      "id": "format-response",
+      "name": "Format Response",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [660, 300]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ $json }}",
+        "options": {}
+      },
+      "id": "response",
+      "name": "Response",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [880, 300]
+    }
+  ],
+  "connections": {
+    "POST /price": {
+      "main": [[{ "node": "Validate Input", "type": "main", "index": 0 }]]
+    },
+    "Validate Input": {
+      "main": [[{ "node": "Get Price from DB", "type": "main", "index": 0 }]]
+    },
+    "Get Price from DB": {
+      "main": [[{ "node": "Format Response", "type": "main", "index": 0 }]]
+    },
+    "Format Response": {
+      "main": [[{ "node": "Response", "type": "main", "index": 0 }]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": ["moysklad", "naffas", "api", "price"]
+}
