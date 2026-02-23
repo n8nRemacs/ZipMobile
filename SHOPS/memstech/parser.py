@@ -503,7 +503,7 @@ def process_staging():
             ON CONFLICT (article) DO UPDATE SET
                 name = EXCLUDED.name,
                 category = EXCLUDED.category,
-                product_id = COALESCE(EXCLUDED.product_id, nomenclature.product_id),
+                product_id = COALESCE(NULLIF(EXCLUDED.product_id, ''), nomenclature.product_id),
                 updated_at = NOW()
         """)
         nom_count = cur.rowcount

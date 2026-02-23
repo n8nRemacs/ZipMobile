@@ -646,7 +646,7 @@ def process_staging():
             ON CONFLICT (article) DO UPDATE SET
                 name = EXCLUDED.name,
                 category = EXCLUDED.category,
-                product_id = COALESCE(EXCLUDED.product_id, taggsm_nomenclature.product_id),
+                product_id = COALESCE(NULLIF(EXCLUDED.product_id, ''), taggsm_nomenclature.product_id),
                 price = EXCLUDED.price,
                 updated_at = NOW()
         """)

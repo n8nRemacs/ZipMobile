@@ -519,7 +519,7 @@ def process_staging():
             WHERE article IS NOT NULL AND article != ''
             ON CONFLICT (article) DO UPDATE SET
                 name = EXCLUDED.name,
-                barcode = COALESCE(EXCLUDED.barcode, nomenclature.barcode),
+                barcode = COALESCE(NULLIF(EXCLUDED.barcode, ''), nomenclature.barcode),
                 category = EXCLUDED.category,
                 updated_at = NOW()
         """)
@@ -589,7 +589,7 @@ def save_to_db(products: List[Dict]):
                 VALUES (%s, %s, %s, %s, %s, NOW(), NOW())
                 ON CONFLICT (article) DO UPDATE SET
                     name = EXCLUDED.name,
-                    barcode = COALESCE(EXCLUDED.barcode, signal23_nomenclature.barcode),
+                    barcode = COALESCE(NULLIF(EXCLUDED.barcode, ''), signal23_nomenclature.barcode),
                     category = EXCLUDED.category,
                     price = EXCLUDED.price,
                     updated_at = NOW()
