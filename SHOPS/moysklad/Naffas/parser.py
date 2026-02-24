@@ -237,7 +237,7 @@ def save_staging(products: List[Dict]):
         conn.close()
 
 
-def process_staging():
+def process_staging(full_mode: bool = False):
     """Обработка staging: UPSERT в nomenclature (с price). Naffas не имеет URL — product_urls не заполняется."""
     conn = get_db()
     cur = conn.cursor()
@@ -246,17 +246,23 @@ def process_staging():
         ensure_outlet()
 
         # 1. UPSERT в nomenclature (price в nomenclature)
-        cur.execute("""
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+            if full_mode else
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+        )
+        cur.execute(f"""
             INSERT INTO moysklad_naffas_nomenclature (article, name, category, price, first_seen_at, updated_at)
             SELECT DISTINCT ON (article)
                 article, name, category, price, NOW(), NOW()
             FROM moysklad_naffas_staging
             WHERE article IS NOT NULL AND article != ''
             ON CONFLICT (article) DO UPDATE SET
-                name = EXCLUDED.name,
-                category = EXCLUDED.category,
-                price = EXCLUDED.price,
-                updated_at = NOW()
+                {_nom_update}
         """)
         nom_count = cur.rowcount
         print(f"Nomenclature: {nom_count} записей обновлено/добавлено (price в nomenclature)")
@@ -298,12 +304,14 @@ def main():
                            help='Только обработка staging (без парсинга)')
     arg_parser.add_argument('--no-db', action='store_true',
                            help='Не сохранять в БД (только CSV/JSON)')
+    arg_parser.add_argument('--full', action='store_true',
+                           help='Полный парсинг (UPSERT и так полный для этого парсера)')
     args = arg_parser.parse_args()
 
     # Только обработка staging
     if args.process:
         print("Обработка staging...")
-        process_staging()
+        process_staging(full_mode=args.full)
         print("\nОбработка завершена!")
         return
 
@@ -335,7 +343,7 @@ def main():
         save_staging(products)
 
         if args.all:
-            process_staging()
+            process_staging(full_mode=args.full)
 
     print("\nПарсинг завершён!")
 

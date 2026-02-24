@@ -502,13 +502,23 @@ def save_staging(products: List[Dict]):
         conn.close()
 
 
-def process_staging():
+def process_staging(full_mode: bool = False):
     """Обработка staging: UPSERT в nomenclature и current_prices (LEGACY)"""
     conn = get_db()
     cur = conn.cursor()
     try:
         # 1. UPSERT в nomenclature с brand/model/part_type
-        cur.execute("""
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "brand = EXCLUDED.brand, "
+            "model = EXCLUDED.model, "
+            "part_type = EXCLUDED.part_type, "
+            "updated_at = NOW()"
+            if full_mode else
+            "updated_at = NOW()"
+        )
+        cur.execute(f"""
             INSERT INTO nomenclature (article, name, category, brand, model, part_type,
                                       first_seen_at, updated_at)
             SELECT DISTINCT ON (article)
@@ -517,12 +527,7 @@ def process_staging():
             FROM staging
             WHERE article IS NOT NULL AND article != ''
             ON CONFLICT (article) DO UPDATE SET
-                name = EXCLUDED.name,
-                category = EXCLUDED.category,
-                brand = EXCLUDED.brand,
-                model = EXCLUDED.model,
-                part_type = EXCLUDED.part_type,
-                updated_at = NOW()
+                {_nom_update}
         """)
         nom_count = cur.rowcount
         print(f"Nomenclature: {nom_count} записей обновлено/добавлено")
@@ -557,7 +562,7 @@ def process_staging():
         conn.close()
 
 
-def save_to_db(products: List[Dict], outlets: List[Dict]):
+def save_to_db(products: List[Dict], outlets: List[Dict], full_mode: bool = False):
     """
     Сохранение в новую схему БД v10: profi_nomenclature (с price) + profi_product_urls
     Single-URL: один URL на товар (outlet_id = NULL), price в nomenclature
@@ -585,6 +590,18 @@ def save_to_db(products: List[Dict], outlets: List[Dict]):
         nom_updated = 0
         urls_inserted = 0
 
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "brand = EXCLUDED.brand, "
+            "model = EXCLUDED.model, "
+            "part_type = EXCLUDED.part_type, "
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+            if full_mode else
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+        )
         for p in products:
             # Генерируем product_url из артикула (у Profi нет реальных URL товаров)
             article = p.get("article", "")
@@ -596,17 +613,11 @@ def save_to_db(products: List[Dict], outlets: List[Dict]):
             # 1. UPSERT в profi_nomenclature (price в nomenclature)
             price = p.get("price", 0)
 
-            cur.execute("""
+            cur.execute(f"""
                 INSERT INTO profi_nomenclature (name, article, category, brand, model, part_type, price, first_seen_at, updated_at)
                 VALUES (%s, %s, %s, %s, %s, %s, %s, NOW(), NOW())
                 ON CONFLICT (article) DO UPDATE SET
-                    name = EXCLUDED.name,
-                    category = EXCLUDED.category,
-                    brand = EXCLUDED.brand,
-                    model = EXCLUDED.model,
-                    part_type = EXCLUDED.part_type,
-                    price = EXCLUDED.price,
-                    updated_at = NOW()
+                    {_nom_update}
                 RETURNING id, (xmax = 0) as inserted
             """, (
                 p.get("name", ""),
@@ -663,12 +674,14 @@ def main():
                            help='Не сохранять в БД (только CSV/JSON)')
     arg_parser.add_argument('--city', '-c', type=str, default=None,
                            help='Парсить только указанный город')
+    arg_parser.add_argument('--full', action='store_true',
+                           help='Полный парсинг (UPSERT и так полный для этого парсера)')
     args = arg_parser.parse_args()
 
     # Только обработка staging (LEGACY)
     if args.process:
         print("Обработка staging (LEGACY)...")
-        process_staging()
+        process_staging(full_mode=args.full)
         print("\nОбработка завершена!")
         return
 
@@ -703,10 +716,10 @@ def main():
             ensure_outlets(parser.outlets_parsed)
             save_staging(parser.products)
             if args.all:
-                process_staging()
+                process_staging(full_mode=args.full)
         else:
             # НОВАЯ СХЕМА: profi_nomenclature + profi_prices
-            save_to_db(parser.products, parser.outlets_parsed)
+            save_to_db(parser.products, parser.outlets_parsed, full_mode=args.full)
 
     print("\nПарсинг завершён!")
 

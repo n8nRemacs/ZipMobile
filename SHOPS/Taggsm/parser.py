@@ -622,7 +622,7 @@ def save_staging(products: List[Dict]):
         conn.close()
 
 
-def process_staging():
+def process_staging(full_mode: bool = False):
     """Обработка staging: UPSERT в taggsm_nomenclature (с price) + taggsm_product_urls"""
     conn = get_db()
     cur = conn.cursor()
@@ -631,7 +631,18 @@ def process_staging():
         ensure_outlets()
 
         # 1. UPSERT в nomenclature (с product_id и price)
-        cur.execute("""
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "product_id = COALESCE(NULLIF(EXCLUDED.product_id, ''), taggsm_nomenclature.product_id), "
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+            if full_mode else
+            "product_id = COALESCE(NULLIF(EXCLUDED.product_id, ''), taggsm_nomenclature.product_id), "
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+        )
+        cur.execute(f"""
             INSERT INTO taggsm_nomenclature (article, name, category, product_id, price, first_seen_at, updated_at)
             SELECT DISTINCT ON (article)
                 article,
@@ -644,11 +655,7 @@ def process_staging():
             FROM taggsm_staging
             WHERE article IS NOT NULL AND article != ''
             ON CONFLICT (article) DO UPDATE SET
-                name = EXCLUDED.name,
-                category = EXCLUDED.category,
-                product_id = COALESCE(NULLIF(EXCLUDED.product_id, ''), taggsm_nomenclature.product_id),
-                price = EXCLUDED.price,
-                updated_at = NOW()
+                {_nom_update}
         """)
         nom_count = cur.rowcount
         print(f"Nomenclature: {nom_count} записей")
@@ -681,7 +688,7 @@ def process_staging():
         conn.close()
 
 
-def save_to_db(products: List[Dict]):
+def save_to_db(products: List[Dict], full_mode: bool = False):
     """
     Сохранение в новую схему БД v10: taggsm_nomenclature (с price) + taggsm_product_urls
     Single-URL: один URL на товар (outlet_id = NULL), price в nomenclature
@@ -699,6 +706,15 @@ def save_to_db(products: List[Dict]):
         nom_updated = 0
         urls_inserted = 0
 
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+            if full_mode else
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+        )
         for p in products:
             product_url = p.get("url", "")
             if not product_url:
@@ -711,14 +727,11 @@ def save_to_db(products: List[Dict]):
 
             price = p.get("price", 0)
 
-            cur.execute("""
+            cur.execute(f"""
                 INSERT INTO taggsm_nomenclature (name, article, category, price, first_seen_at, updated_at)
                 VALUES (%s, %s, %s, %s, NOW(), NOW())
                 ON CONFLICT (article) DO UPDATE SET
-                    name = EXCLUDED.name,
-                    category = EXCLUDED.category,
-                    price = EXCLUDED.price,
-                    updated_at = NOW()
+                    {_nom_update}
                 RETURNING id, (xmax = 0) as inserted
             """, (
                 p.get("name", ""),
@@ -770,6 +783,8 @@ def main():
                            help='Только обработка staging (LEGACY)')
     arg_parser.add_argument('--old-schema', action='store_true',
                            help='Использовать старую схему БД (staging -> nomenclature)')
+    arg_parser.add_argument('--full', action='store_true',
+                           help='Полный парсинг (UPSERT и так полный для этого парсера)')
     arg_parser.add_argument('--no-db', action='store_true',
                            help='Не сохранять в БД')
     arg_parser.add_argument('--category', '-c', type=str, default=None,
@@ -779,7 +794,7 @@ def main():
     # Только обработка (LEGACY)
     if args.process:
         print("Обработка staging (LEGACY)...")
-        process_staging()
+        process_staging(full_mode=args.full)
         return
 
     # Парсинг
@@ -802,11 +817,11 @@ def main():
         if args.all:
             # Bulk: staging pipeline
             save_staging(parser.products)
-            process_staging()
+            process_staging(full_mode=args.full)
         elif args.old_schema:
             save_staging(parser.products)
         else:
-            save_to_db(parser.products)
+            save_to_db(parser.products, full_mode=args.full)
 
     print("\nГотово!")
 

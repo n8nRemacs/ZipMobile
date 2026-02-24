@@ -492,7 +492,7 @@ def save_staging(products: List[Dict]):
         conn.close()
 
 
-def process_staging():
+def process_staging(full_mode: bool = False):
     """Обработка staging: UPSERT в nomenclature и current_prices (старая схема)"""
     conn = get_db()
     cur = conn.cursor()
@@ -500,16 +500,21 @@ def process_staging():
         ensure_outlet()
 
         # 1. UPSERT в nomenclature
-        cur.execute("""
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "updated_at = NOW()"
+            if full_mode else
+            "updated_at = NOW()"
+        )
+        cur.execute(f"""
             INSERT INTO nomenclature (article, name, category, first_seen_at, updated_at)
             SELECT DISTINCT ON (article)
                 article, name, category, NOW(), NOW()
             FROM staging
             WHERE article IS NOT NULL AND article != ''
             ON CONFLICT (article) DO UPDATE SET
-                name = EXCLUDED.name,
-                category = EXCLUDED.category,
-                updated_at = NOW()
+                {_nom_update}
         """)
         nom_count = cur.rowcount
         print(f"Nomenclature: {nom_count} записей")
@@ -544,7 +549,7 @@ def process_staging():
         conn.close()
 
 
-def save_to_db(products: List[Dict]):
+def save_to_db(products: List[Dict], full_mode: bool = False):
     """
     Сохранение в новую схему БД v10: gsm05_nomenclature (с price) + gsm05_product_urls
     """
@@ -560,6 +565,15 @@ def save_to_db(products: List[Dict]):
         saved_nom = 0
         saved_urls = 0
 
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+            if full_mode else
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+        )
         for p in products:
             url = p.get("url", "").strip()
             name = p.get("name", "").strip()
@@ -570,14 +584,11 @@ def save_to_db(products: List[Dict]):
             category = p.get("category", "").strip() or None
 
             # UPSERT в gsm05_nomenclature (price в nomenclature)
-            cur.execute("""
+            cur.execute(f"""
                 INSERT INTO gsm05_nomenclature (name, article, category, price, first_seen_at, updated_at)
                 VALUES (%s, %s, %s, %s, NOW(), NOW())
                 ON CONFLICT (article) DO UPDATE SET
-                    name = EXCLUDED.name,
-                    category = EXCLUDED.category,
-                    price = EXCLUDED.price,
-                    updated_at = NOW()
+                    {_nom_update}
                 RETURNING id
             """, (name, article, category, p.get("price", 0)))
 
@@ -627,12 +638,14 @@ def main():
                            help='Парсить только указанную категорию')
     arg_parser.add_argument('--old-schema', action='store_true',
                            help='Использовать старую схему БД (staging)')
+    arg_parser.add_argument('--full', action='store_true',
+                           help='Полный парсинг (UPSERT и так полный для этого парсера)')
     args = arg_parser.parse_args()
 
     # Только обработка staging (старая схема)
     if args.process:
         print("Обработка staging (старая схема)...")
-        process_staging()
+        process_staging(full_mode=args.full)
         return
 
     # Парсинг
@@ -657,10 +670,10 @@ def main():
             # Старая схема через staging
             save_staging(parser.products)
             if args.all:
-                process_staging()
+                process_staging(full_mode=args.full)
         else:
             # Новая схема: gsm05_nomenclature + gsm05_prices
-            save_to_db(parser.products)
+            save_to_db(parser.products, full_mode=args.full)
 
     print("\nГотово!")
 

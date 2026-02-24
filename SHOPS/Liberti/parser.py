@@ -329,7 +329,7 @@ def save_staging(products: List[Dict]):
         conn.close()
 
 
-def process_staging():
+def process_staging(full_mode: bool = False):
     """Обработка staging: UPSERT в nomenclature и current_prices (старая схема)"""
     conn = get_db()
     cur = conn.cursor()
@@ -337,17 +337,23 @@ def process_staging():
         ensure_outlets()
 
         # 1. UPSERT в nomenclature
-        cur.execute("""
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "product_id = COALESCE(NULLIF(EXCLUDED.product_id, ''), nomenclature.product_id), "
+            "updated_at = NOW()"
+            if full_mode else
+            "product_id = COALESCE(NULLIF(EXCLUDED.product_id, ''), nomenclature.product_id), "
+            "updated_at = NOW()"
+        )
+        cur.execute(f"""
             INSERT INTO nomenclature (article, name, category, product_id, first_seen_at, updated_at)
             SELECT DISTINCT ON (article)
                 article, name, category, product_id, NOW(), NOW()
             FROM staging
             WHERE article IS NOT NULL AND article != ''
             ON CONFLICT (article) DO UPDATE SET
-                name = EXCLUDED.name,
-                category = EXCLUDED.category,
-                product_id = COALESCE(NULLIF(EXCLUDED.product_id, ''), nomenclature.product_id),
-                updated_at = NOW()
+                {_nom_update}
         """)
         nom_count = cur.rowcount
         print(f"Nomenclature: {nom_count} записей обновлено/добавлено")
@@ -385,7 +391,7 @@ def process_staging():
         conn.close()
 
 
-def save_to_db(products: List[Dict]):
+def save_to_db(products: List[Dict], full_mode: bool = False):
     """
     Сохранение в новую схему БД v10: liberti_nomenclature (с price) + liberti_product_urls
     Single-URL: один URL на товар (outlet_id = NULL), price в nomenclature
@@ -402,6 +408,15 @@ def save_to_db(products: List[Dict]):
         saved_nom = 0
         saved_urls = 0
 
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+            if full_mode else
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+        )
         for p in products:
             article = p.get("article", "").strip()
             name = p.get("name", "").strip()
@@ -413,14 +428,11 @@ def save_to_db(products: List[Dict]):
             category = p.get("category", "").strip() or None
 
             # UPSERT в liberti_nomenclature (price в nomenclature)
-            cur.execute("""
+            cur.execute(f"""
                 INSERT INTO liberti_nomenclature (name, article, category, price, first_seen_at, updated_at)
                 VALUES (%s, %s, %s, %s, NOW(), NOW())
                 ON CONFLICT (article) DO UPDATE SET
-                    name = EXCLUDED.name,
-                    category = EXCLUDED.category,
-                    price = EXCLUDED.price,
-                    updated_at = NOW()
+                    {_nom_update}
                 RETURNING id
             """, (name, article, category, p.get("price", 0)))
 
@@ -468,11 +480,13 @@ def main():
                            help='Лимит городов (0 = все)')
     arg_parser.add_argument('--old-schema', action='store_true',
                            help='Использовать старую схему БД (staging)')
+    arg_parser.add_argument('--full', action='store_true',
+                           help='Полный парсинг (UPSERT и так полный для этого парсера)')
     args = arg_parser.parse_args()
 
     if args.process:
         print("Обработка staging (старая схема)...")
-        process_staging()
+        process_staging(full_mode=args.full)
         print("\nОбработка завершена!")
         return
 
@@ -499,9 +513,9 @@ def main():
         if args.old_schema:
             save_staging(products)
             if args.all:
-                process_staging()
+                process_staging(full_mode=args.full)
         else:
-            save_to_db(products)
+            save_to_db(products, full_mode=args.full)
 
     print("\nПарсинг завершён!")
 

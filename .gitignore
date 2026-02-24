@@ -30,6 +30,16 @@ docker-compose.override.yml
 node_modules/
 .next/
 
+# Syncthing
+~syncthing~*
+*.syncthing*
+
+# Parser data dumps (too large for git)
+SHOPS/Moba/moba_data/
+
+# Screenshots
+*.png
+
 # Junk
 nul
 *.zip

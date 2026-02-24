@@ -55,12 +55,17 @@ async def health():
 
 
 @app.get("/proxy/get")
-async def proxy_get(protocol: str = "http", for_site: Optional[str] = None):
+async def proxy_get(
+    protocol: str = "http",
+    for_site: Optional[str] = None,
+    country: Optional[str] = None,
+):
     """
     Get a verified working proxy.
     Pre-checks the proxy before returning (up to 3 attempts).
+    Optional country filter (2-letter code, e.g. RU, US, DE).
     """
-    result = await pool.get_proxy(protocol=protocol, for_site=for_site)
+    result = await pool.get_proxy(protocol=protocol, for_site=for_site, country=country)
     if not result:
         raise HTTPException(status_code=404, detail="No working proxies available")
     return result

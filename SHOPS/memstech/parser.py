@@ -481,7 +481,7 @@ def save_staging(products: List[Dict]):
         conn.close()
 
 
-def process_staging():
+def process_staging(full_mode: bool = False):
     """Обработка staging: UPSERT в nomenclature и current_prices (LEGACY)"""
     conn = get_db()
     cur = conn.cursor()
@@ -489,7 +489,16 @@ def process_staging():
         ensure_outlets()
 
         # 1. UPSERT в nomenclature
-        cur.execute("""
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "product_id = COALESCE(NULLIF(EXCLUDED.product_id, ''), nomenclature.product_id), "
+            "updated_at = NOW()"
+            if full_mode else
+            "product_id = COALESCE(NULLIF(EXCLUDED.product_id, ''), nomenclature.product_id), "
+            "updated_at = NOW()"
+        )
+        cur.execute(f"""
             INSERT INTO nomenclature (article, name, category, product_id, first_seen_at, updated_at)
             SELECT DISTINCT ON (article)
                 article,
@@ -501,10 +510,7 @@ def process_staging():
             FROM staging
             WHERE article IS NOT NULL AND article != ''
             ON CONFLICT (article) DO UPDATE SET
-                name = EXCLUDED.name,
-                category = EXCLUDED.category,
-                product_id = COALESCE(NULLIF(EXCLUDED.product_id, ''), nomenclature.product_id),
-                updated_at = NOW()
+                {_nom_update}
         """)
         nom_count = cur.rowcount
         print(f"Nomenclature: {nom_count} записей обновлено/добавлено")
@@ -539,7 +545,7 @@ def process_staging():
         conn.close()
 
 
-def save_to_db(products: List[Dict]):
+def save_to_db(products: List[Dict], full_mode: bool = False):
     """
     Сохранение в новую схему БД v10: memstech_nomenclature (с price) + memstech_product_urls
     Multi-URL: разные URL по поддоменам (outlet_id сохраняется)
@@ -566,6 +572,15 @@ def save_to_db(products: List[Dict]):
         nom_updated = 0
         urls_inserted = 0
 
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+            if full_mode else
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+        )
         for i, p in enumerate(products):
             # Определяем outlet
             city_id = p.get("city_id", "memstech.ru")
@@ -584,14 +599,11 @@ def save_to_db(products: List[Dict]):
             article = p.get("article", "").strip()
             price = p.get("price", 0)
 
-            cur.execute("""
+            cur.execute(f"""
                 INSERT INTO memstech_nomenclature (name, article, category, price, first_seen_at, updated_at)
                 VALUES (%s, %s, %s, %s, NOW(), NOW())
                 ON CONFLICT (article) DO UPDATE SET
-                    name = EXCLUDED.name,
-                    category = EXCLUDED.category,
-                    price = EXCLUDED.price,
-                    updated_at = NOW()
+                    {_nom_update}
                 RETURNING id, (xmax = 0) as inserted
             """, (
                 p.get("name", ""),
@@ -654,6 +666,8 @@ def main():
                            help='Только обработка staging (LEGACY, без парсинга)')
     arg_parser.add_argument('--old-schema', action='store_true',
                            help='Использовать старую схему БД (staging -> nomenclature)')
+    arg_parser.add_argument('--full', action='store_true',
+                           help='Полный парсинг (UPSERT и так полный для этого парсера)')
     arg_parser.add_argument('--no-db', action='store_true',
                            help='Не сохранять в БД (только CSV/JSON)')
     arg_parser.add_argument('--limit', type=int, default=0,
@@ -662,7 +676,7 @@ def main():
 
     if args.process:
         print("Обработка staging (LEGACY)...")
-        process_staging()
+        process_staging(full_mode=args.full)
         print("\nОбработка завершена!")
         return
 
@@ -715,10 +729,10 @@ def main():
             # LEGACY: staging -> nomenclature -> current_prices
             save_staging(products)
             if args.all:
-                process_staging()
+                process_staging(full_mode=args.full)
         else:
             # НОВАЯ СХЕМА: memstech_nomenclature + memstech_prices
-            save_to_db(products)
+            save_to_db(products, full_mode=args.full)
 
     print("\nПарсинг завершён!")
 

@@ -364,7 +364,7 @@ class OrizhkaParser:
 
         print(f"[DB] Сохранено: {saved} новых, {updated} обновлено")
 
-    def save_to_new_schema(self):
+    def save_to_new_schema(self, full_mode: bool = False):
         """
         Сохранение в новую схему БД v10: orizhka_nomenclature (с price) + orizhka_product_urls
         Single-URL: один URL на товар (outlet_id = NULL), price в nomenclature
@@ -387,6 +387,16 @@ class OrizhkaParser:
         nom_updated = 0
         urls_inserted = 0
 
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "brand = EXCLUDED.brand, "
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+            if full_mode else
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+        )
         for p in self.products:
             # Используем sku как article, или uid если sku пустой
             article = p.sku.strip() if p.sku else p.uid
@@ -406,15 +416,11 @@ class OrizhkaParser:
             price = p.price
 
             # 1. UPSERT в orizhka_nomenclature (price в nomenclature)
-            cur.execute("""
+            cur.execute(f"""
                 INSERT INTO orizhka_nomenclature (name, article, category, brand, price, first_seen_at, updated_at)
                 VALUES (%s, %s, %s, %s, %s, NOW(), NOW())
                 ON CONFLICT (article) DO UPDATE SET
-                    name = EXCLUDED.name,
-                    category = EXCLUDED.category,
-                    brand = EXCLUDED.brand,
-                    price = EXCLUDED.price,
-                    updated_at = NOW()
+                    {_nom_update}
                 RETURNING id, (xmax = 0) as inserted
             """, (name, article, category, 'Apple', price))
 
@@ -542,7 +548,7 @@ def save_staging(products: List[Product]):
         conn.close()
 
 
-def process_staging():
+def process_staging(full_mode: bool = False):
     """Обработка staging → orizhka_nomenclature (с price) + orizhka_product_urls"""
     conn = get_db()
     cur = conn.cursor()
@@ -555,18 +561,24 @@ def process_staging():
         """)
 
         # 1. UPSERT в orizhka_nomenclature (price в nomenclature)
-        cur.execute("""
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "brand = EXCLUDED.brand, "
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+            if full_mode else
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+        )
+        cur.execute(f"""
             INSERT INTO orizhka_nomenclature (name, article, category, brand, price, first_seen_at, updated_at)
             SELECT DISTINCT ON (article)
                 name, article, category, brand, price, NOW(), NOW()
             FROM orizhka_staging
             WHERE article IS NOT NULL AND article != ''
             ON CONFLICT (article) DO UPDATE SET
-                name = EXCLUDED.name,
-                category = EXCLUDED.category,
-                brand = EXCLUDED.brand,
-                price = EXCLUDED.price,
-                updated_at = NOW()
+                {_nom_update}
         """)
         nom_count = cur.rowcount
         print(f"[DB] orizhka_nomenclature: {nom_count} записей")
@@ -600,6 +612,7 @@ def main():
     arg_parser.add_argument('--direct', action='store_true', help='Прямой UPSERT в nomenclature+prices (без staging)')
     arg_parser.add_argument('--old-schema', action='store_true', help='Использовать старую схему БД (products)')
     arg_parser.add_argument('--init-db', action='store_true', help='Только инициализация БД')
+    arg_parser.add_argument('--full', action='store_true', help='Полный парсинг (UPSERT и так полный для этого парсера)')
     args = arg_parser.parse_args()
 
     print("Orizhka.ru Parser v2.0")
@@ -612,7 +625,7 @@ def main():
     # Только обработка staging
     if args.process:
         print("Обработка staging...")
-        process_staging()
+        process_staging(full_mode=args.full)
         print("\nОбработка завершена!")
         return
 
@@ -622,14 +635,14 @@ def main():
         if not args.no_db:
             if args.direct:
                 # Прямой UPSERT (без staging)
-                parser.save_to_new_schema()
+                parser.save_to_new_schema(full_mode=args.full)
             elif args.old_schema:
                 parser.save_to_database()
             else:
                 # Стандарт: staging
                 save_staging(parser.products)
                 if args.all:
-                    process_staging()
+                    process_staging(full_mode=args.full)
 
         parser.save_json()
         parser.save_excel()

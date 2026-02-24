@@ -1,6 +1,7 @@
 """
 Multi-protocol proxy checker.
 Tests HTTP, HTTPS, SOCKS4, SOCKS5 for each proxy independently.
+Resolves proxy country via ip-api.com.
 """
 import asyncio
 import time
@@ -14,6 +15,7 @@ logger = logging.getLogger(__name__)
 
 TEST_URL_HTTP = "http://httpbin.org/ip"
 TEST_URL_HTTPS = "https://httpbin.org/ip"
+GEOIP_URL = "http://ip-api.com/json/{ip}?fields=countryCode"
 
 SITE_TESTS = {
     "moba": "https://moba.ru/",
@@ -35,20 +37,22 @@ class ProxyChecker:
         self.timeout = timeout
         self.concurrency = concurrency
         self._sem = asyncio.Semaphore(concurrency)
+        self._geo_sem = asyncio.Semaphore(40)  # ip-api.com: 45 req/min free tier
 
     async def check_proxy_protocols(self, host: str, port: int) -> Dict:
-        """Check all protocols for a single proxy. Returns protocol booleans + response_time."""
+        """Check all protocols + resolve country. Returns protocol booleans + response_time + country."""
         results = await asyncio.gather(
             self._test_http(host, port),
             self._test_https(host, port),
             self._test_socks4(host, port),
             self._test_socks5(host, port),
+            self._resolve_country(host),
             return_exceptions=True,
         )
 
         response_times = []
         protocols = {}
-        for proto, res in zip(("http", "https", "socks4", "socks5"), results):
+        for proto, res in zip(("http", "https", "socks4", "socks5"), results[:4]):
             if isinstance(res, Exception):
                 protocols[proto] = False
             else:
@@ -57,21 +61,22 @@ class ProxyChecker:
                 if ok and rt is not None:
                     response_times.append(rt)
 
+        country = results[4] if not isinstance(results[4], Exception) else None
         avg_rt = round(sum(response_times) / len(response_times), 2) if response_times else None
-        return {**protocols, "response_time_ms": avg_rt}
+        return {**protocols, "response_time_ms": avg_rt, "country": country}
 
     async def quick_test(self, host: str, port: int, protocol: str) -> Tuple[bool, Optional[float]]:
         """Quick single-protocol test for pre-delivery verification."""
-        async with self._sem:
-            if protocol == "http":
-                return await self._test_http(host, port)
-            elif protocol == "https":
-                return await self._test_https(host, port)
-            elif protocol == "socks4":
-                return await self._test_socks4(host, port)
-            elif protocol == "socks5":
-                return await self._test_socks5(host, port)
-            return False, None
+        # Note: _test_* methods already acquire self._sem, no need to acquire here
+        if protocol == "http":
+            return await self._test_http(host, port)
+        elif protocol == "https":
+            return await self._test_https(host, port)
+        elif protocol == "socks4":
+            return await self._test_socks4(host, port)
+        elif protocol == "socks5":
+            return await self._test_socks5(host, port)
+        return False, None
 
     async def check_for_site(
         self, host: str, port: int, protocol: str, site_key: str
@@ -175,6 +180,23 @@ class ProxyChecker:
             except Exception:
                 pass
             return False, None
+
+    async def _resolve_country(self, host: str) -> Optional[str]:
+        """Resolve proxy IP country via ip-api.com. Returns 2-letter code or None."""
+        async with self._geo_sem:
+            try:
+                timeout = aiohttp.ClientTimeout(total=5)
+                async with aiohttp.ClientSession(timeout=timeout) as session:
+                    async with session.get(GEOIP_URL.format(ip=host)) as resp:
+                        if resp.status == 200:
+                            data = await resp.json()
+                            return data.get("countryCode")
+                        elif resp.status == 429:
+                            await asyncio.sleep(2)
+                            return None
+            except Exception:
+                pass
+            return None
 
     @staticmethod
     def _make_connector(host: str, port: int, protocol: str):

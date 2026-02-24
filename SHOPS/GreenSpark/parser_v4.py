@@ -94,7 +94,7 @@ class ProxyClient:
         """Получить рабочий прокси от proxy-service"""
         try:
             url = f"{self.base_url}/proxy/get?protocol={self.protocol}&for_site={for_site}"
-            response = httpx.get(url, timeout=15)
+            response = httpx.get(url, timeout=60)
             if response.status_code == 200:
                 self.current_proxy = response.json()
                 return self.current_proxy
@@ -825,7 +825,7 @@ class GreenSparkParser:
 
     # === Допарсинг артикулов ===
 
-    def reparse_missing_articles(self):
+    def reparse_missing_articles(self, full_mode: bool = False):
         """Допарсинг артикулов через БД + HTTP"""
         missing = [(i, p) for i, p in enumerate(self.products) if not p.get("article")]
 
@@ -837,8 +837,8 @@ class GreenSparkParser:
         print(f"Допарсинг артикулов: {len(missing)} товаров без артикула")
         print(f"{'='*60}")
 
-        # ШАГ 1: Batch поиск по БД
-        if self.use_db:
+        # ШАГ 1: Batch поиск по БД (пропускаем в full_mode)
+        if self.use_db and not full_mode:
             print(f"\n[Шаг 1] Поиск артикулов в БД (batch)...")
 
             urls_to_lookup = []
@@ -863,6 +863,8 @@ class GreenSparkParser:
             print(f"  Применено из БД: {from_db}")
         else:
             from_db = 0
+            if full_mode:
+                print(f"\n[Шаг 1] Пропущен (--full режим, HTTP допарсинг всех артикулов)")
 
         # ШАГ 2: HTTP допарсинг оставшихся
         still_missing = [(i, p) for i, p in enumerate(self.products) if not p.get("article")]
@@ -918,7 +920,7 @@ class GreenSparkParser:
 
     # === Основные методы ===
 
-    def parse_catalog(self, start_category: str = None, reparse_articles: bool = True):
+    def parse_catalog(self, start_category: str = None, reparse_articles: bool = True, full_mode: bool = False):
         """Парсит каталог"""
         start = start_category or ROOT_CATEGORY
 
@@ -942,7 +944,7 @@ class GreenSparkParser:
 
         if reparse_articles and not self.blocked:
             print("\n[Этап 2] Допарсинг артикулов")
-            self.reparse_missing_articles()
+            self.reparse_missing_articles(full_mode=full_mode)
 
         # Сохраняем оставшиеся товары в staging
         self._flush_staging()
@@ -1086,7 +1088,7 @@ def ensure_db_schema():
         conn.close()
 
 
-def process_staging(verbose: bool = True) -> Dict[str, int]:
+def process_staging(verbose: bool = True, full_mode: bool = False) -> Dict[str, int]:
     """Перенести данные из staging → nomenclature + product_urls.
 
     price хранится в nomenclature (справочная цена).
@@ -1114,6 +1116,13 @@ def process_staging(verbose: bool = True) -> Dict[str, int]:
         if verbose:
             print(f"[PROCESS] Обработка {len(rows)} записей из staging...")
 
+        _nom_update = (
+            "name = EXCLUDED.name, article = COALESCE(NULLIF(EXCLUDED.article, ''), greenspark_nomenclature.article), "
+            "category = EXCLUDED.category, price = EXCLUDED.price, price_wholesale = EXCLUDED.price_wholesale, updated_at = NOW()"
+            if full_mode else
+            "article = COALESCE(NULLIF(EXCLUDED.article, ''), greenspark_nomenclature.article), "
+            "price = EXCLUDED.price, price_wholesale = EXCLUDED.price_wholesale, updated_at = NOW()"
+        )
         for idx, row in enumerate(rows):
             staging_id, name, url, article, category, price, price_wholesale = row
 
@@ -1121,16 +1130,11 @@ def process_staging(verbose: bool = True) -> Dict[str, int]:
                 cur.execute("SAVEPOINT sp")
 
                 # UPSERT в greenspark_nomenclature (по url) + price
-                cur.execute("""
+                cur.execute(f"""
                     INSERT INTO greenspark_nomenclature (name, url, article, category, price, price_wholesale, first_seen_at, updated_at)
                     VALUES (%s, %s, %s, %s, %s, %s, NOW(), NOW())
                     ON CONFLICT (url) DO UPDATE SET
-                        name = EXCLUDED.name,
-                        article = COALESCE(EXCLUDED.article, greenspark_nomenclature.article),
-                        category = EXCLUDED.category,
-                        price = EXCLUDED.price,
-                        price_wholesale = EXCLUDED.price_wholesale,
-                        updated_at = NOW()
+                        {_nom_update}
                     RETURNING id
                 """, (name, url, article, category, price, price_wholesale))
 
@@ -1449,6 +1453,7 @@ def main():
                             help='Не синхронизировать точки перед парсингом')
     arg_parser.add_argument('--category', type=str, help='Стартовая категория')
     arg_parser.add_argument('--no-reparse', action='store_true', help='Без допарсинга артикулов')
+    arg_parser.add_argument('--full', action='store_true', help='Полный парсинг: перезаписывать name/category + HTTP допарсинг всех артикулов')
     arg_parser.add_argument('--no-db', action='store_true', help='Без сохранения в БД')
     arg_parser.add_argument('--no-proxy', action='store_true', help='Без прокси (прямой доступ)')
     arg_parser.add_argument('--all', action='store_true', help='Парсинг + process_staging')
@@ -1471,7 +1476,7 @@ def main():
     if args.process:
         print("[*] Processing staging → nomenclature + prices...")
         ensure_db_schema()
-        result = process_staging()
+        result = process_staging(full_mode=args.full)
         print(f"Результат: {result}")
         return
 
@@ -1552,13 +1557,14 @@ def main():
     parser.parse_catalog(
         start_category=args.category,
         reparse_articles=not args.no_reparse,
+        full_mode=args.full,
     )
 
     if use_db and args.all:
         print(f"\n{'='*60}")
         print(f"[PROCESS] Перенос staging → nomenclature + prices")
         print(f"{'='*60}")
-        result = process_staging()
+        result = process_staging(full_mode=args.full)
 
     if notifier:
         duration_min = int((datetime.now() - parser.stats["start_time"]).total_seconds() / 60)

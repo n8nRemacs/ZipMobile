@@ -58,6 +58,8 @@ class Signal23Parser:
         self.errors: List[Dict] = []
         self.visited_urls: Set[str] = set()
         self.last_request_time = 0
+        self.known_urls: Dict[str, str] = {}  # url → article, для инкрементального режима
+        self.stats_skipped: int = 0
 
         os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -95,6 +97,24 @@ class Signal23Parser:
             return BeautifulSoup(response.text, 'html.parser')
         return None
 
+    def _load_known_urls(self) -> Dict[str, str]:
+        """Загрузить известные URL→article из БД для инкрементального режима"""
+        try:
+            conn = get_db()
+            cur = conn.cursor()
+            cur.execute("""
+                SELECT pu.url, n.article
+                FROM signal23_product_urls pu
+                JOIN signal23_nomenclature n ON n.id = pu.nomenclature_id
+            """)
+            result = {row[0]: row[1] for row in cur.fetchall()}
+            cur.close()
+            conn.close()
+            return result
+        except Exception as e:
+            print(f"[WARN] _load_known_urls: {e}")
+            return {}
+
     def parse_all(self, limit: int = None, parallel: bool = False) -> List[Dict]:
         """
         Основной метод парсинга.
@@ -128,6 +148,8 @@ class Signal23Parser:
 
         print(f"\n{'='*60}")
         print(f"Итого собрано товаров: {len(self.products)}")
+        if self.stats_skipped > 0:
+            print(f"Пропущено (уже в БД): {self.stats_skipped}")
         print(f"Ошибок: {len(self.errors)}")
         print(f"{'='*60}")
 
@@ -270,6 +292,30 @@ class Signal23Parser:
 
                 if link and link.get('href'):
                     product_url = urljoin(BASE_URL, link['href'])
+
+                    # Инкрементальный режим: пропускаем detail fetch для известных URL
+                    if self.known_urls and product_url in self.known_urls:
+                        known_article = self.known_urls[product_url]
+                        name_el = card.select_one('.caption .name a, .name a, .product-thumb__title a')
+                        price_el = card.select_one('.price .price-new, .price-new, .price')
+                        name = name_el.get_text(strip=True) if name_el else link.get_text(strip=True)
+                        price_text = price_el.get_text(strip=True) if price_el else "0"
+                        price_match = re.search(r'[\d\s]+[.,]?\d*', price_text.replace(' ', ''))
+                        price = float(price_match.group().replace(',', '.').replace(' ', '')) if price_match else 0
+                        products.append({
+                            "url": product_url,
+                            "name": name,
+                            "article": known_article,
+                            "price": price,
+                            "barcode": None,
+                            "category": "",
+                            "external_id": None,
+                            "parsed_at": datetime.now().isoformat(),
+                        })
+                        self.stats_skipped += 1
+                        if limit and len(products) >= limit:
+                            return products
+                        continue
 
                     # Парсим страницу товара
                     product = self._parse_product_page(product_url)
@@ -503,7 +549,7 @@ def save_staging(products: List[Dict]):
         conn.close()
 
 
-def process_staging():
+def process_staging(full_mode: bool = False):
     """Обработка staging: UPSERT в nomenclature и current_prices (старая схема)"""
     conn = get_db()
     cur = conn.cursor()
@@ -511,17 +557,23 @@ def process_staging():
         ensure_outlet()
 
         # 1. UPSERT в nomenclature
-        cur.execute("""
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "barcode = COALESCE(NULLIF(EXCLUDED.barcode, ''), nomenclature.barcode), "
+            "category = EXCLUDED.category, "
+            "updated_at = NOW()"
+            if full_mode else
+            "barcode = COALESCE(NULLIF(EXCLUDED.barcode, ''), nomenclature.barcode), "
+            "updated_at = NOW()"
+        )
+        cur.execute(f"""
             INSERT INTO nomenclature (article, name, barcode, category, first_seen_at, updated_at)
             SELECT DISTINCT ON (article)
                 article, name, barcode, category, NOW(), NOW()
             FROM staging
             WHERE article IS NOT NULL AND article != ''
             ON CONFLICT (article) DO UPDATE SET
-                name = EXCLUDED.name,
-                barcode = COALESCE(NULLIF(EXCLUDED.barcode, ''), nomenclature.barcode),
-                category = EXCLUDED.category,
-                updated_at = NOW()
+                {_nom_update}
         """)
         nom_count = cur.rowcount
         print(f"Nomenclature: {nom_count} записей")
@@ -556,7 +608,7 @@ def process_staging():
         conn.close()
 
 
-def save_to_db(products: List[Dict]):
+def save_to_db(products: List[Dict], full_mode: bool = False):
     """
     Сохранение в новую схему БД v10: signal23_nomenclature (с price) + signal23_product_urls
     Single-URL: один URL на товар (outlet_id = NULL), price в nomenclature
@@ -573,6 +625,17 @@ def save_to_db(products: List[Dict]):
         saved_nom = 0
         saved_urls = 0
 
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "barcode = COALESCE(NULLIF(EXCLUDED.barcode, ''), signal23_nomenclature.barcode), "
+            "category = EXCLUDED.category, "
+            "price = CASE WHEN EXCLUDED.price > 0 THEN EXCLUDED.price ELSE signal23_nomenclature.price END, "
+            "updated_at = NOW()"
+            if full_mode else
+            "barcode = COALESCE(NULLIF(EXCLUDED.barcode, ''), signal23_nomenclature.barcode), "
+            "price = CASE WHEN EXCLUDED.price > 0 THEN EXCLUDED.price ELSE signal23_nomenclature.price END, "
+            "updated_at = NOW()"
+        )
         for p in products:
             url = p.get("url", "").strip()
             name = p.get("name", "").strip()
@@ -584,15 +647,11 @@ def save_to_db(products: List[Dict]):
             category = p.get("category", "").strip() or None
 
             # UPSERT в signal23_nomenclature (price в nomenclature)
-            cur.execute("""
+            cur.execute(f"""
                 INSERT INTO signal23_nomenclature (name, article, barcode, category, price, first_seen_at, updated_at)
                 VALUES (%s, %s, %s, %s, %s, NOW(), NOW())
                 ON CONFLICT (article) DO UPDATE SET
-                    name = EXCLUDED.name,
-                    barcode = COALESCE(NULLIF(EXCLUDED.barcode, ''), signal23_nomenclature.barcode),
-                    category = EXCLUDED.category,
-                    price = EXCLUDED.price,
-                    updated_at = NOW()
+                    {_nom_update}
                 RETURNING id
             """, (name, article, barcode, category, p.get("price", 0)))
 
@@ -644,16 +703,23 @@ def main():
                            help='Параллельный парсинг категорий')
     arg_parser.add_argument('--old-schema', action='store_true',
                            help='Использовать старую схему БД (staging)')
+    arg_parser.add_argument('--full', action='store_true',
+                           help='Полный парсинг всех товаров (игнорировать кэш из БД)')
     args = arg_parser.parse_args()
 
     # Только обработка staging (старая схема)
     if args.process:
         print("Обработка staging (старая схема)...")
-        process_staging()
+        process_staging(full_mode=args.full)
         return
 
     # Парсинг
     parser = Signal23Parser()
+    if not args.full and not args.no_db:
+        parser.known_urls = parser._load_known_urls()
+        print(f"[DB] Известных URL: {len(parser.known_urls)}, инкрементальный режим")
+    elif args.full:
+        print(f"[FULL] Полный парсинг всех товаров")
     parser.parse_all(limit=args.limit, parallel=args.parallel)
     parser.save_to_json()
     parser.save_to_csv()
@@ -664,10 +730,10 @@ def main():
             # Старая схема через staging
             save_staging(parser.products)
             if args.all:
-                process_staging()
+                process_staging(full_mode=args.full)
         else:
             # Новая схема: signal23_nomenclature + signal23_prices
-            save_to_db(parser.products)
+            save_to_db(parser.products, full_mode=args.full)
 
     print("\nГотово!")
 

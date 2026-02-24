@@ -2,7 +2,6 @@
 CRUD for proxy_pool and proxy_cookies tables via asyncpg (Homelab PostgreSQL).
 """
 import asyncpg
-import json
 import logging
 from typing import Optional, List, Dict
 
@@ -49,6 +48,7 @@ class ProxyDatabase:
                     created_at      TIMESTAMP DEFAULT NOW(),
                     last_checked_at TIMESTAMP,
                     last_used_at    TIMESTAMP,
+                    country         VARCHAR(2),
                     UNIQUE(host, port)
                 )
             """)
@@ -60,20 +60,13 @@ class ProxyDatabase:
                 CREATE INDEX IF NOT EXISTS idx_proxy_pool_protocols
                 ON proxy_pool(http, https, socks4, socks5)
             """)
+            # Migrate: add country column if missing
             await conn.execute("""
-                CREATE TABLE IF NOT EXISTS proxy_cookies (
-                    id          SERIAL PRIMARY KEY,
-                    host        VARCHAR(45) NOT NULL,
-                    port        INTEGER NOT NULL,
-                    site_key    VARCHAR(50) NOT NULL,
-                    cookies     JSONB NOT NULL,
-                    fetched_at  TIMESTAMP DEFAULT NOW(),
-                    UNIQUE(host, port, site_key)
-                )
+                ALTER TABLE proxy_pool ADD COLUMN IF NOT EXISTS country VARCHAR(2)
             """)
             await conn.execute("""
-                CREATE INDEX IF NOT EXISTS idx_proxy_cookies_site
-                ON proxy_cookies(site_key)
+                CREATE INDEX IF NOT EXISTS idx_proxy_pool_country
+                ON proxy_pool(country)
             """)
 
     # ── Queries ──────────────────────────────────────────────
@@ -82,30 +75,40 @@ class ProxyDatabase:
         self,
         protocol: str = "http",
         for_site: Optional[str] = None,
+        country: Optional[str] = None,
         limit: int = 10,
     ) -> List[dict]:
-        """Get working proxies for a protocol, not banned for site."""
+        """Get working proxies for a protocol, not banned for site, optionally filtered by country."""
         protocol_col = protocol.lower()
         if protocol_col not in ("http", "https", "socks4", "socks5"):
             protocol_col = "http"
 
-        if for_site:
-            rows = await self._pool.fetch(f"""
-                SELECT host, port FROM proxy_pool
-                WHERE status = 'working'
-                  AND {protocol_col} = TRUE
-                  AND NOT (banned_sites @> ARRAY[$1]::text[])
-                ORDER BY last_used_at ASC NULLS FIRST, success_count DESC
-                LIMIT $2
-            """, for_site, limit)
-        else:
-            rows = await self._pool.fetch(f"""
-                SELECT host, port FROM proxy_pool
-                WHERE status = 'working' AND {protocol_col} = TRUE
-                ORDER BY last_used_at ASC NULLS FIRST, success_count DESC
-                LIMIT $1
-            """, limit)
+        conditions = [f"status = 'working'", f"{protocol_col} = TRUE"]
+        args = []
+        idx = 1
 
+        if for_site:
+            conditions.append(f"NOT (banned_sites @> ARRAY[${idx}]::text[])")
+            args.append(for_site)
+            idx += 1
+
+        if country:
+            conditions.append(f"country = ${idx}")
+            args.append(country.upper())
+            idx += 1
+
+        conditions.append(f"LIMIT ${idx}")
+        args.append(limit)
+
+        where = " AND ".join(conditions[:-1])
+        sql = f"""
+            SELECT host, port, country FROM proxy_pool
+            WHERE {where}
+            ORDER BY last_used_at ASC NULLS FIRST, success_count DESC
+            {conditions[-1]}
+        """
+
+        rows = await self._pool.fetch(sql, *args)
         return [dict(r) for r in rows]
 
     async def mark_used(self, host: str, port: int):
@@ -193,18 +196,27 @@ class ProxyDatabase:
         socks4: bool = False,
         socks5: bool = False,
         response_time_ms: Optional[float] = None,
+        country: Optional[str] = None,
     ):
-        await self._pool.execute("""
-            UPDATE proxy_pool SET
-                status = $3,
-                http = $4,
-                https = $5,
-                socks4 = $6,
-                socks5 = $7,
-                response_time_ms = COALESCE($8, response_time_ms),
-                last_checked_at = NOW()
-            WHERE host = $1 AND port = $2
-        """, host, port, status, http, https, socks4, socks5, response_time_ms)
+        if country:
+            await self._pool.execute("""
+                UPDATE proxy_pool SET
+                    status = $3,
+                    http = $4, https = $5, socks4 = $6, socks5 = $7,
+                    response_time_ms = COALESCE($8, response_time_ms),
+                    country = $9,
+                    last_checked_at = NOW()
+                WHERE host = $1 AND port = $2
+            """, host, port, status, http, https, socks4, socks5, response_time_ms, country)
+        else:
+            await self._pool.execute("""
+                UPDATE proxy_pool SET
+                    status = $3,
+                    http = $4, https = $5, socks4 = $6, socks5 = $7,
+                    response_time_ms = COALESCE($8, response_time_ms),
+                    last_checked_at = NOW()
+                WHERE host = $1 AND port = $2
+            """, host, port, status, http, https, socks4, socks5, response_time_ms)
 
     async def get_unchecked(self, limit: int = 500) -> List[dict]:
         rows = await self._pool.fetch("""
@@ -224,67 +236,6 @@ class ProxyDatabase:
         """, limit)
         return [dict(r) for r in rows]
 
-    # ── Cookie CRUD ───────────────────────────────────────────
-
-    async def save_cookies(self, host: str, port: int, site_key: str, cookies: dict):
-        """UPSERT cookies for a proxy+site pair."""
-        await self._pool.execute("""
-            INSERT INTO proxy_cookies (host, port, site_key, cookies, fetched_at)
-            VALUES ($1, $2, $3, $4::jsonb, NOW())
-            ON CONFLICT (host, port, site_key) DO UPDATE SET
-                cookies = EXCLUDED.cookies,
-                fetched_at = NOW()
-        """, host, port, site_key, json.dumps(cookies))
-
-    async def get_cookies(self, host: str, port: int, site_key: str) -> Optional[dict]:
-        """Get cookies for a proxy+site pair, or None if missing/expired."""
-        row = await self._pool.fetchrow("""
-            SELECT cookies FROM proxy_cookies
-            WHERE host = $1 AND port = $2 AND site_key = $3
-              AND fetched_at > NOW() - INTERVAL '1 hour' * $4
-        """, host, port, site_key, settings.cookie_max_age_hours)
-        if not row:
-            return None
-        val = row["cookies"]
-        if not val:
-            return None
-        # asyncpg may return JSONB as str or as native dict depending on version/codec
-        if isinstance(val, str):
-            return json.loads(val)
-        return dict(val)
-
-    async def get_proxies_without_cookies(
-        self,
-        site_key: str,
-        protocol: str = "socks5",
-        limit: int = 20,
-    ) -> List[dict]:
-        """Get working SOCKS5 proxies that have no fresh cookies for site_key."""
-        protocol_col = protocol.lower()
-        if protocol_col not in ("http", "https", "socks4", "socks5"):
-            protocol_col = "socks5"
-        rows = await self._pool.fetch(f"""
-            SELECT p.host, p.port FROM proxy_pool p
-            WHERE p.status = 'working'
-              AND p.{protocol_col} = TRUE
-              AND NOT (p.banned_sites @> ARRAY[$1]::text[])
-              AND NOT EXISTS (
-                SELECT 1 FROM proxy_cookies c
-                WHERE c.host = p.host AND c.port = p.port AND c.site_key = $1
-                  AND c.fetched_at > NOW() - INTERVAL '1 hour' * $2
-              )
-            ORDER BY p.last_checked_at ASC NULLS FIRST
-            LIMIT $3
-        """, site_key, settings.cookie_max_age_hours, limit)
-        return [dict(r) for r in rows]
-
-    async def delete_cookies_for_proxy(self, host: str, port: int):
-        """Delete all cookies for a proxy (called on ban)."""
-        await self._pool.execute(
-            "DELETE FROM proxy_cookies WHERE host = $1 AND port = $2",
-            host, port,
-        )
-
     # ── Stats / Maintenance ───────────────────────────────────
 
     async def get_stats(self) -> dict:
@@ -301,7 +252,17 @@ class ProxyDatabase:
         """)
         stats["banned_by_site"] = {r["site"]: r["cnt"] for r in ban_rows}
 
-        total = sum(v for k, v in stats.items() if k != "banned_by_site")
+        # Country stats for working proxies
+        country_rows = await self._pool.fetch("""
+            SELECT COALESCE(country, '??') as country, count(*) as cnt
+            FROM proxy_pool
+            WHERE status = 'working'
+            GROUP BY country
+            ORDER BY cnt DESC
+        """)
+        stats["working_by_country"] = {r["country"]: r["cnt"] for r in country_rows}
+
+        total = sum(v for k, v in stats.items() if k not in ("banned_by_site", "working_by_country"))
         stats["total"] = total
         return stats
 

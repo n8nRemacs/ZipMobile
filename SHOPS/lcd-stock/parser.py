@@ -175,6 +175,8 @@ class LcdStockParser:
         self.errors: List[Dict] = []
         self.last_request = 0
         self.parse_stock = parse_stock
+        self.known_urls: Dict[str, str] = {}  # url → article, для инкрементального режима
+        self.stats_skipped: int = 0
 
         os.makedirs(DATA_DIR, exist_ok=True)
 
@@ -287,6 +289,24 @@ class LcdStockParser:
 
         return result
 
+    def _load_known_urls(self) -> Dict[str, str]:
+        """Загрузить известные URL→article из БД для инкрементального режима"""
+        try:
+            conn = get_db()
+            cur = conn.cursor()
+            cur.execute(f"""
+                SELECT pu.url, n.article
+                FROM {TABLE_PRODUCT_URLS} pu
+                JOIN {TABLE_NOMENCLATURE} n ON n.id = pu.nomenclature_id
+            """)
+            result = {row[0]: row[1] for row in cur.fetchall()}
+            cur.close()
+            conn.close()
+            return result
+        except Exception as e:
+            print(f"[WARN] _load_known_urls: {e}")
+            return {}
+
     def parse_category(self, slug: str, name: str) -> List[Product]:
         """Парсить категорию"""
         products = []
@@ -359,7 +379,11 @@ class LcdStockParser:
             sku = ""
             color = ""
 
-            if self.parse_stock:
+            # Инкрементальный режим: пропускаем detail fetch для известных URL
+            if self.known_urls and p_data["url"] in self.known_urls:
+                sku = self.known_urls[p_data["url"]]  # article из БД
+                self.stats_skipped += 1
+            elif self.parse_stock:
                 details = self._get_product_details(p_data["url"])
                 stock = details["stock"]
                 sku = details["sku"]
@@ -404,6 +428,8 @@ class LcdStockParser:
 
         print(f"\n{'='*60}")
         print(f"ИТОГО: {len(self.products)} товаров")
+        if self.stats_skipped > 0:
+            print(f"Пропущено (уже в БД): {self.stats_skipped}")
         print(f"Ошибок: {len(self.errors)}")
         print(f"{'='*60}")
 
@@ -482,7 +508,7 @@ class LcdStockParser:
         print(f"[DB] Товары: {saved} новых, {updated} обновлено")
         print(f"[DB] Наличие: {stock_saved} записей")
 
-    def save_to_new_schema(self):
+    def save_to_new_schema(self, full_mode: bool = False):
         """
         Сохранение в новую схему БД v10: lcd_nomenclature (с price) + lcd_product_urls
         Single-URL: один URL на товар (outlet_id = NULL), price в nomenclature
@@ -507,6 +533,14 @@ class LcdStockParser:
         nom_updated = 0
         urls_inserted = 0
 
+        _nom_update = (
+            "name = EXCLUDED.name, category = EXCLUDED.category, "
+            "brand = COALESCE(NULLIF(EXCLUDED.brand, ''), lcd_nomenclature.brand), "
+            "color = COALESCE(NULLIF(EXCLUDED.color, ''), lcd_nomenclature.color), "
+            "price = EXCLUDED.price, updated_at = NOW()"
+            if full_mode else
+            "price = EXCLUDED.price, updated_at = NOW()"
+        )
         for p in self.products:
             # Используем sku как article, или product_id если sku пустой
             article = p.sku.strip() if p.sku else p.product_id
@@ -528,16 +562,11 @@ class LcdStockParser:
             price = p.price
 
             # 1. UPSERT в lcd_nomenclature (price в nomenclature)
-            cur.execute("""
+            cur.execute(f"""
                 INSERT INTO lcd_nomenclature (name, article, category, brand, color, price, first_seen_at, updated_at)
                 VALUES (%s, %s, %s, %s, %s, %s, NOW(), NOW())
                 ON CONFLICT (article) DO UPDATE SET
-                    name = EXCLUDED.name,
-                    category = EXCLUDED.category,
-                    brand = EXCLUDED.brand,
-                    color = EXCLUDED.color,
-                    price = EXCLUDED.price,
-                    updated_at = NOW()
+                    {_nom_update}
                 RETURNING id, (xmax = 0) as inserted
             """, (name, article, category, brand, color, price))
 
@@ -715,7 +744,7 @@ def save_staging(products: List[Product]):
         conn.close()
 
 
-def process_staging():
+def process_staging(full_mode: bool = False):
     """Обработка staging → lcdstock_nomenclature (с price) + lcdstock_product_urls"""
     conn = get_db()
     cur = conn.cursor()
@@ -730,6 +759,14 @@ def process_staging():
             """, (outlet_code, 'Москва', outlet['name'], outlet['address']))
 
         # 1. UPSERT в nomenclature (price в nomenclature)
+        _nom_update = (
+            f"name = EXCLUDED.name, category = EXCLUDED.category, "
+            f"brand = COALESCE(NULLIF(EXCLUDED.brand, ''), {TABLE_NOMENCLATURE}.brand), "
+            f"color = COALESCE(NULLIF(EXCLUDED.color, ''), {TABLE_NOMENCLATURE}.color), "
+            f"price = EXCLUDED.price, updated_at = NOW()"
+            if full_mode else
+            "price = EXCLUDED.price, updated_at = NOW()"
+        )
         cur.execute(f"""
             INSERT INTO {TABLE_NOMENCLATURE} (name, article, category, brand, color, price, first_seen_at, updated_at)
             SELECT DISTINCT ON (article)
@@ -737,12 +774,7 @@ def process_staging():
             FROM {TABLE_STAGING}
             WHERE article IS NOT NULL AND article != ''
             ON CONFLICT (article) DO UPDATE SET
-                name = EXCLUDED.name,
-                category = EXCLUDED.category,
-                brand = EXCLUDED.brand,
-                color = EXCLUDED.color,
-                price = EXCLUDED.price,
-                updated_at = NOW()
+                {_nom_update}
         """)
         nom_count = cur.rowcount
         print(f"[DB] {TABLE_NOMENCLATURE}: {nom_count} записей")
@@ -777,6 +809,7 @@ def main():
     arg_parser.add_argument('--no-stock', action='store_true', help='Без парсинга наличия (быстрый режим)')
     arg_parser.add_argument('--init-db', action='store_true', help='Только инициализация БД')
     arg_parser.add_argument('--category', type=str, help='Только одна категория')
+    arg_parser.add_argument('--full', action='store_true', help='Полный парсинг (detail fetch для всех товаров, игнорировать кэш из БД)')
     args = arg_parser.parse_args()
 
     print("LCD-Stock.ru Parser v3.0")
@@ -789,7 +822,7 @@ def main():
     # Только обработка staging
     if args.process:
         print("Обработка staging...")
-        process_staging()
+        process_staging(full_mode=args.full)
         print("\nОбработка завершена!")
         return
 
@@ -802,19 +835,25 @@ def main():
             return
 
     with LcdStockParser(parse_stock=not args.no_stock) as parser:
+        if not args.full and not args.no_db:
+            parser.known_urls = parser._load_known_urls()
+            print(f"[DB] Известных URL: {len(parser.known_urls)}, инкрементальный режим")
+        elif args.full:
+            print(f"[FULL] Полный парсинг — detail fetch для всех товаров")
+
         parser.parse_all(categories)
 
         if not args.no_db:
             if args.direct:
                 # Прямой UPSERT (без staging)
-                parser.save_to_new_schema()
+                parser.save_to_new_schema(full_mode=args.full)
             elif args.old_schema:
                 parser.save_to_database()
             else:
                 # Стандарт: staging
                 save_staging(parser.products)
                 if args.all:
-                    process_staging()
+                    process_staging(full_mode=args.full)
 
         parser.save_json()
         parser.save_excel()

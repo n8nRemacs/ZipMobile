@@ -63,6 +63,20 @@ TABLE_OUTLETS = "zip_outlets"
 
 SUCCESS_INDICATORS = ["каталог", "catalog", "main_item_wrapper", "корзин"]
 
+# Фиксированный список категорий для парсинга
+ROOT_CATEGORIES = [
+    {"url": "/catalog/displei/", "name": "Дисплеи"},
+    {"url": "/catalog/akkumulyatory-1/", "name": "Аккумуляторы"},
+    {"url": "/catalog/korpusa-zadnie-kryshki/", "name": "Корпуса, задние крышки"},
+    {"url": "/catalog/zapchasti/", "name": "Запчасти"},
+    {"url": "/catalog/zapchasti-dlya-igrovykh-pristavok/", "name": "Запчасти для игровых приставок"},
+    {"url": "/catalog/dlya-noutbukov/", "name": "Для ноутбуков"},
+    {"url": "/catalog/korpusnye-chasti-ramki-skotch-stilusy-tolkateli-i-t-p/", "name": "Корпусные части, рамки, скотч, стилусы"},
+    {"url": "/catalog/mikroskhemy-kontrollery-usiliteli-i-t-p/", "name": "Микросхемы, контроллеры, усилители"},
+    {"url": "/catalog/stekla-plenki-oca-polyarizatory-i-t-p-dlya-displeynykh-moduley/", "name": "Стёкла, плёнки, OCA, поляризаторы"},
+    {"url": "/catalog/shleyfy-platy/", "name": "Шлейфы, платы"},
+]
+
 
 # ─── Playwright-based HTTP layer ──────────────────────────────────────
 
@@ -252,7 +266,7 @@ async def parse_all(
     max_pages: int = MAX_PAGES_PER_CATEGORY,
 ) -> List[Dict]:
     all_products = []
-    categories = await get_categories(fetcher)
+    categories = list(ROOT_CATEGORIES)
     if max_categories:
         categories = categories[:max_categories]
 

@@ -619,7 +619,7 @@ async def parse_store(
 
 # ─── DB functions ─────────────────────────────────────────────────────
 
-def save_store_to_db(subdomain: str, cid: str, store_name: str, city: str, products: List[Dict]):
+def save_store_to_db(subdomain: str, cid: str, store_name: str, city: str, products: List[Dict], full_mode: bool = False):
     """Save store products to DB v10 — nomenclature (with price) + product_urls (per-store outlet)."""
     try:
         from db_wrapper import get_db
@@ -650,6 +650,15 @@ def save_store_to_db(subdomain: str, cid: str, store_name: str, city: str, produ
 
         count = 0
         BATCH = 500
+        _nom_update = (
+            "name = EXCLUDED.name, "
+            "category = EXCLUDED.category, "
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+            if full_mode else
+            "price = EXCLUDED.price, "
+            "updated_at = NOW()"
+        )
         for i, p in enumerate(products):
             article = p.get("article", "").strip()
             if not article:
@@ -661,10 +670,7 @@ def save_store_to_db(subdomain: str, cid: str, store_name: str, city: str, produ
                 INSERT INTO {TABLE_NOMENCLATURE} (name, article, category, price, first_seen_at, updated_at)
                 VALUES (%s, %s, %s, %s, NOW(), NOW())
                 ON CONFLICT (article) DO UPDATE SET
-                    name = EXCLUDED.name,
-                    category = EXCLUDED.category,
-                    price = EXCLUDED.price,
-                    updated_at = NOW()
+                    {_nom_update}
                 RETURNING id
             """, (p.get("name", ""), article, p.get("category"), price))
             row = cur.fetchone()
@@ -710,6 +716,7 @@ async def amain():
     ap.add_argument("--no-proxy", action="store_true", help="Direct connection (no proxy)")
     ap.add_argument("--proxies", type=str, default=None, help="Fixed proxies (comma-separated socks5://ip:port), distributed round-robin")
     ap.add_argument("--no-tg", action="store_true", help="Disable Telegram notifications")
+    ap.add_argument("--full", action="store_true", help="Full parse (UPSERT is already full for this parser)")
     args = ap.parse_args()
 
     stores = STORES[:]
@@ -814,7 +821,7 @@ async def amain():
                 }, f, ensure_ascii=False, indent=2)
 
             if not args.no_db:
-                save_store_to_db(subdomain, cid, store_name, city, products)
+                save_store_to_db(subdomain, cid, store_name, city, products, full_mode=args.full)
 
     # ── Summary ──
     duration = int((datetime.now() - shared_stats["start_time"]).total_seconds() / 60)
